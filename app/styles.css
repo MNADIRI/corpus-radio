@@ -1,0 +1,32 @@
+/* Radiologie : onglets, domaine, Bibliothèque, import */
+.tabs{display:flex;gap:2px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:3px}
+.tabs button{border:0;background:none;color:var(--muted);font:500 13.5px var(--body);padding:5px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-current="page"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.tabs button:focus-visible,.domwrap select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.domwrap select{font:500 13px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;max-width:200px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.libhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:4px 2px 8px}
+.booklist{display:grid;gap:6px;margin-bottom:12px}
+.bookrow{display:grid;gap:1px;padding:8px 10px;border:1px solid var(--line-soft);border-radius:8px;background:var(--surface)}
+.bookrow b{font-size:13.5px}.bookrow span{font-size:12px;color:var(--muted);min-width:0;overflow-wrap:anywhere}
+.bookrow .mono{font-family:var(--mono);font-size:11px;font-variant-numeric:tabular-nums}
+.entlist{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.entlist .item{width:100%;text-align:left;display:grid;gap:1px;padding:7px 10px;border:1px solid transparent;border-radius:8px;background:none;color:var(--fg);cursor:pointer}
+.entlist .item:hover{background:var(--sunk)}.entlist .item.on{border-color:var(--accent);background:var(--accent-soft)}
+.entlist .item b{font-size:13.5px;font-weight:500}.entlist .item span{font-size:11.5px;color:var(--muted)}
+.btitle{font-family:var(--display);font-weight:650;font-size:clamp(22px,3vw,30px);line-height:1.15;margin:4px 0 6px;text-wrap:balance}
+.bsech{font-family:var(--display);font-size:18px;margin:22px 0 8px;display:flex;gap:8px;align-items:baseline}
+.bthumbs{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(min(100%,132px),1fr))}
+.bthumb{display:grid;gap:4px;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--film);overflow:hidden;cursor:zoom-in;text-align:left}
+.bthumb img{width:100%;height:110px;object-fit:contain;background:var(--film)}
+.bthumb span{font-size:11px;color:var(--film-muted);padding:0 8px 6px;font-family:var(--mono)}
+.psg{border-top:1px solid var(--line-soft);padding:12px 0;display:grid;gap:6px;max-width:72ch}
+.psg .mono{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.psg p{margin:0;font-family:var(--display);font-weight:500;font-size:15px;line-height:1.6}
+.bempty{max-width:60ch;display:grid;gap:10px;padding:8px 0}
+.bempty h2{font-family:var(--display);font-size:24px;margin:0}
+.bback{display:none}
+@media (max-width:959px){.bback{display:inline-flex}}
+.note-ok{display:grid;gap:2px;padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--good);border-radius:8px;background:var(--surface);margin-bottom:14px;font-size:13.5px}
+.imp-prog{margin-bottom:14px;font-size:13.5px}.imp-prog textarea{width:100%;font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);padding:8px;margin:6px 0}
+@media (max-width:720px){.tabs button{padding:5px 10px}.domwrap select{max-width:130px}}
