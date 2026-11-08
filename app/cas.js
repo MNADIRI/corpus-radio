@@ -195,6 +195,13 @@ function carteRev(titre, n, txt, attr, actif) {
 }
 function casDroite() {
   const c = S.cas;
+  const rates0 = S.casHist.hist.filter((h) => h.note < 6).length, moy0 = S.casHist.hist.slice(-20);
+  const barre = `<div class="cas-top"><div class="seg" role="tablist"><button role="tab" aria-selected="${c.mode === "alea"}" data-casmode="alea">Aléatoire</button><button role="tab" aria-selected="${c.mode === "revision"}" data-casmode="revision">Révision</button></div>
+    <span class="hint">${esc(libDomaine(S.dom))}${moy0.length ? ` · moyenne ${(moy0.reduce((a, h) => a + h.note, 0) / moy0.length).toFixed(1)} / 10 sur les ${moy0.length} derniers cas` : ""}${rates0 ? ` · ${rates0} à refaire` : ""}</span></div>`;
+  return barre + casContenu();
+}
+function casContenu() {
+  const c = S.cas;
   if (!S.owner && !S.manifest && c.mode === "alea") return `<div class="bempty"><h2>Cas aléatoires</h2><p>Les cas sont tirés des livres de l'index, lus dans le dépôt GitHub corpus-radio. Ce compte n'y a pas accès : ajoute le connecteur GitHub dans claude.ai.</p></div>`;
   if (c.mode === "revision" && !["qcm", "qcm-gen", "question", "correction", "corrige", "tirage", "erreur"].includes(c.etat)) {
     const LR = window.LR, m = LR ? LR.dueMissed(null).length : 0, r = LR ? LR.rqTodo().length : 0;

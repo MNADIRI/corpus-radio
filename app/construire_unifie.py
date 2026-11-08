@@ -26,7 +26,18 @@ def rep(s, old, new, count=1):
 css = "".join(re.findall(r"<style>(.*?)</style>", O, re.S))
 css = css.replace(':root:not([data-theme="light"])', ":host").replace(':root[data-theme="dark"]', ':host-context([data-theme="dark"])')
 css = css.replace(":root", ":host").replace("html,body{", ":host{").replace("body::before{", ".jamais{").replace("\nbody{", "\n:host{display:block;")
-css += "\n.tabs{display:none!important}\n.top{top:var(--esp-h,0px)!important}\n"
+css += """
+.tabs{display:none!important}
+:host{padding:0!important;display:block}
+.top{top:var(--esp-h,0px)!important;background:var(--bg)!important}
+.topin,.desk{max-width:1180px!important}
+.domwrap select{max-width:none!important}
+.desk.cas{grid-template-columns:minmax(0,1fr)!important}
+.desk.cas .pane-left{display:none!important}
+.desk.cas .pane-right{display:grid!important;max-width:980px;width:100%;margin:0 auto}
+:host(.hors-notes) #newBtn{display:none!important}
+@media (max-width:720px){#newBtn{display:none!important}.topin{gap:8px!important}}
+"""
 corps = O[O.rindex("</style>") + len("</style>"):O.rindex("<script>")]
 js = O[O.rindex("<script>") + len("<script>"):O.rindex("</script>")]
 js = rep(js, 'const $ = (id) => document.getElementById(id);', 'const $ = (id) => ROOT.getElementById(id);')
@@ -37,9 +48,10 @@ js = rep(js, 'document.addEventListener("click"', 'ROOT.addEventListener("click"
 js = rep(js, 'document.addEventListener("keydown", (e) => {', 'document.addEventListener("keydown", (e) => { if (!window.OUTILS_VISIBLE) return;')
 js = rep(js, 'document.querySelectorAll("[data-tab]")', 'ROOT.querySelectorAll("[data-tab]")')
 js = rep(js, 'if (location.hash === "#bibliotheque") S.tab = "biblio";', '')
+js = rep(js, 'html = progressionHtml() + homeHtml();', 'html = homeHtml();')
 js = rep(js, 'history.replaceState(null, "", d.tab === "biblio" ? "#bibliotheque" : location.pathname + location.search); ', '')
 js += '''
-window.OUTILS = { onglet(t) { S.tab = t; S.detail = false; $("desk").classList.toggle("cas", t === "cas");
+window.OUTILS = { onglet(t) { S.tab = t; HOTE.classList.toggle("hors-notes", t !== "notes"); S.detail = false; $("desk").classList.toggle("cas", t === "cas");
   if (t === "biblio" && S.entState === "idle") chargerEntites();
   $("q").value = t === "biblio" ? S.bq : t === "notes" ? S.query : ""; $("q").closest(".searchwrap").hidden = t === "cas"; render(); } };
 '''
@@ -51,11 +63,23 @@ outils_js = outils_js.replace("</script", "<\\/script")
 L = L[L.index("<title>"):]
 L = re.sub(r"</body></html>\s*$", "", L)
 L = rep(L, "<title>Learning Radiology</title>", '<title>Radiologie</title>\n<meta name="claude:viewport-fit-sides" content="cover">' if 'claude:viewport-fit-sides' not in L else "<title>Radiologie</title>")
-L = rep(L, '<header class="top">', '''<nav class="espaces" id="espaces" aria-label="Espaces">
-  <span class="esp-brand">Radiologie</span><button data-esp="apprentissage" aria-current="page">Apprentissage</button><button data-esp="notes">Notes</button><button data-esp="cas">Cas</button><button data-esp="biblio">Bibliothèque</button>
-</nav>
+ICO = {
+  "apprentissage": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4.5h5.5a2 2 0 0 1 2 2V16a1.6 1.6 0 0 0-1.6-1.6H3zM17 4.5h-5.5a2 2 0 0 0-2 2V16a1.6 1.6 0 0 1 1.6-1.6H17z"/></svg>',
+  "notes": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3h7l3 3v11H5z"/><path d="M8 9h5M8 12h5"/></svg>',
+  "cas": '<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="2"/><circle cx="10" cy="9" r="3"/><path d="M6 16c.8-2 2.2-3 4-3s3.2 1 4 3"/></svg>',
+  "biblio": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3v14M8 3v14M12 4l3.5 12.5"/></svg>',
+}
+LIB = {"apprentissage": "Apprentissage", "notes": "Notes", "cas": "Cas", "biblio": "Bibliothèque"}
+boutons = "".join(f'<button data-esp="{k}"{" aria-current=\"page\"" if k == "apprentissage" else ""}>{ICO[k]}<span>{v}</span></button>' for k, v in LIB.items())
+L = rep(L, '<header class="top">', f'''<nav class="espaces" id="espaces" aria-label="Espaces"><div class="esp-in"><span class="esp-brand">Radiologie</span><div class="esp-tabs">{boutons}</div></div></nav>
 <header class="top">''')
 L = rep(L, '<main class="wrap" id="app"></main>', '<main class="wrap" id="app"></main>\n<div id="outils" hidden></div>')
+ds = L.index("<script>")
+tete, script = L[:ds], L[ds:]
+script = script.replace('"Bibliothèque MSK"', '"Apprentissage"').replace("<h1>Bibliothèque</h1>", "<h1>Apprentissage</h1>").replace("Retour à la bibliothèque", "Retour aux ouvrages").replace(">Bibliothèque<", ">Ouvrages<").replace('"Bibliothèque"', '"Ouvrages"')
+tete = tete.replace(">Bibliothèque MSK<", ">Apprentissage<").replace(">Bibliothèque<", ">Ouvrages<")
+L = tete + script
+L = L.replace('<button data-esp="biblio">' + ICO["biblio"] + '<span>Ouvrages</span>', '<button data-esp="biblio">' + ICO["biblio"] + '<span>Bibliothèque</span>')
 # révision : déplacée dans Cas
 i = L.index("function rapidSection(){")
 j = L.index("\nfunction ", i + 10)
@@ -68,16 +92,26 @@ L = L[:i] + '''function rapidSection(){
 L = re.sub(r'<button class="btn primary" id="revBtn">[^<]*</button>', '<button class="btn primary" data-vers-cas="1">Réviser dans Cas</button>', L)
 
 css_esp = '''
-.espaces{position:sticky;top:env(safe-area-inset-top,0px);z-index:12;display:flex;gap:2px;justify-content:center;flex-wrap:wrap;padding:6px max(16px,env(safe-area-inset-right,0px)) 6px max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-bottom:1px solid var(--line)}
-.esp-brand{font-family:var(--display,Georgia,serif);font-weight:650;font-size:16px;margin-right:auto;align-self:center;color:var(--fg)}
-.espaces{justify-content:flex-start!important;align-items:center}
-@media (max-width:560px){.esp-brand{display:none}.espaces{justify-content:center!important}}
-.espaces button{border:0;background:none;color:var(--muted);font:500 14px var(--body,system-ui);padding:7px 14px;border-radius:999px;cursor:pointer}
-.espaces button[aria-current="page"]{background:var(--accent-soft,rgba(35,80,168,.12));color:var(--accent);font-weight:600}
+.espaces{position:sticky;top:0;z-index:12;margin-inline:-16px;padding:8px 16px;padding-top:calc(8px + env(safe-area-inset-top,0px));background:var(--bg);border-bottom:1px solid var(--line)}
+.esp-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:16px}
+.esp-brand{font-family:var(--display,Georgia,serif);font-weight:650;font-size:17px;color:var(--fg);margin-right:auto}
+.esp-tabs{display:flex;gap:2px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:3px}
+.espaces button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;color:var(--muted);font:500 13.5px var(--body,system-ui);padding:6px 14px;border-radius:999px;cursor:pointer}
+.espaces button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.espaces button:hover{color:var(--fg)}
+.espaces button[aria-current="page"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .espaces button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 body.esp-outils header.top,body.esp-outils #app,body.esp-outils #fab{display:none!important}
 header.top{top:var(--esp-h,0px)}
-.domh{font-family:var(--display,Georgia,serif);font-size:20px;margin:18px 0 6px;grid-column:1/-1}
+.domh{font-family:var(--display,Georgia,serif);font-size:20px;margin:22px 0 8px;grid-column:1/-1}
+@media (max-width:720px){
+  .espaces{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);border-bottom:0;background:var(--surface)}
+  .esp-brand{display:none}.esp-tabs{flex:1;background:none;border:0;padding:0;justify-content:space-around}
+  .espaces button{flex:1;flex-direction:column;gap:2px;font-size:11px;padding:6px 2px;border-radius:10px}
+  .espaces button svg{width:21px;height:21px}
+  .espaces button[aria-current="page"]{background:var(--accent-soft);color:var(--accent);box-shadow:none}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}
+}
 '''
 L = rep(L, "</style>", css_esp + "</style>", L.count("</style>")) if False else L
 k = L.rindex("</style>", 0, L.index("<header") if "<header" in L else len(L))
@@ -141,7 +175,7 @@ window.ESPACE = function (e) {
 };
 document.getElementById("espaces").addEventListener("click", (ev) => { const b = ev.target.closest("[data-esp]"); if (b) window.ESPACE(b.dataset.esp); });
 document.addEventListener("click", (ev) => { if (ev.target.closest("[data-vers-cas]")) { window.ESPACE("cas"); if (window.OUTILS) { window.OUTILS.onglet("cas"); } } });
-if ("ResizeObserver" in window) new ResizeObserver(() => document.documentElement.style.setProperty("--esp-h", document.getElementById("espaces").offsetHeight + "px")).observe(document.getElementById("espaces"));
+if ("ResizeObserver" in window) new ResizeObserver(() => { const n = document.getElementById("espaces"); document.documentElement.style.setProperty("--esp-h", (getComputedStyle(n).position === "fixed" ? 0 : n.offsetHeight) + "px"); }).observe(document.getElementById("espaces"));
 '''
 last = L.rindex("</script>")
 L = L[:last] + pont + L[last:]
