@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/passage.schema.json",
+  "title": "passage",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+:p[0-9]{5}$"
+    },
+    "livre": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "chapitre": {
+      "type": "integer"
+    },
+    "section": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sous_section": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "langue": {
+      "type": "string"
+    },
+    "texte": {
+      "type": "string",
+      "minLength": 1
+    },
+    "figures_citees": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+:fig[0-9A-Za-z.]+$"
+      }
+    },
+    "entites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ent:[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "ancien_id": {
+      "type": "string"
+    },
+    "remplace_par": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "livre",
+    "chapitre",
+    "section",
+    "sous_section",
+    "page",
+    "langue",
+    "texte",
+    "figures_citees",
+    "entites"
+  ],
+  "additionalProperties": false
+}

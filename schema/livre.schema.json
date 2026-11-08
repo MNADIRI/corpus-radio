@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/livre.schema.json",
+  "title": "livre",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "titre_court": {
+      "type": "string"
+    },
+    "auteurs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "edition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "annee": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "langue": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "domaines": {
+      "type": "object",
+      "properties": {
+        "principal": {
+          "type": "string"
+        },
+        "secondaires": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "principal",
+        "secondaires"
+      ],
+      "additionalProperties": false
+    },
+    "chapitres": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "n": {
+            "type": "integer"
+          },
+          "titre": {
+            "type": "string"
+          },
+          "pages": {
+            "type": "object",
+            "properties": {
+              "debut": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fin": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "debut",
+              "fin"
+            ],
+            "additionalProperties": false
+          },
+          "domaines": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "n",
+          "titre",
+          "pages",
+          "domaines"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "pdf-texte",
+            "scan-ocr"
+          ]
+        },
+        "fichier": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        },
+        "ocr": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "fichier"
+      ],
+      "additionalProperties": false
+    },
+    "statistiques": {
+      "type": "object",
+      "properties": {
+        "passages": {
+          "type": "integer"
+        },
+        "figures": {
+          "type": "integer"
+        },
+        "figures_sans_image": {
+          "type": "integer"
+        },
+        "figures_image_secours": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "passages",
+        "figures"
+      ],
+      "additionalProperties": true
+    },
+    "remplace_par": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "titre",
+    "auteurs",
+    "edition",
+    "annee",
+    "langue",
+    "domaines",
+    "chapitres",
+    "source",
+    "statistiques"
+  ],
+  "additionalProperties": false
+}

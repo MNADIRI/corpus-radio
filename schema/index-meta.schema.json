@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/index-meta.schema.json",
+  "title": "index-meta",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "portee": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "termes",
+        "legendes"
+      ]
+    },
+    "n_docs": {
+      "type": "integer"
+    },
+    "longueur_moyenne": {
+      "type": "number"
+    },
+    "prefixes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "taille_octets": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "version",
+    "portee",
+    "type",
+    "n_docs",
+    "longueur_moyenne",
+    "prefixes"
+  ],
+  "additionalProperties": false
+}

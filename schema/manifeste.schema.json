@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/manifeste.schema.json",
+  "title": "manifeste",
+  "type": "object",
+  "properties": {
+    "version_corpus": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "livres": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "titre": {
+            "type": "string"
+          },
+          "titre_court": {
+            "type": "string"
+          },
+          "langue": {
+            "type": "string"
+          },
+          "domaine_principal": {
+            "type": "string"
+          },
+          "domaines": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "chapitres": {
+            "type": "integer"
+          },
+          "passages": {
+            "type": "integer"
+          },
+          "figures": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "titre",
+          "langue",
+          "domaine_principal",
+          "domaines",
+          "passages",
+          "figures"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "domaines": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "livres": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entites": {
+            "type": "integer"
+          },
+          "passages": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "livres"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "statistiques": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "version_corpus",
+    "date",
+    "livres",
+    "domaines",
+    "statistiques"
+  ],
+  "additionalProperties": false
+}

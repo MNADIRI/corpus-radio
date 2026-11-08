@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/figure.schema.json",
+  "title": "figure",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+:fig[0-9A-Za-z.]+$"
+    },
+    "livre": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "chapitre": {
+      "type": "integer"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "panneau": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "panneaux": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "page": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page_pdf": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "legende": {
+      "type": "string"
+    },
+    "legende_fr": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modalites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "domaines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ent:[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "role": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "image": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "lecture": {
+              "type": "string"
+            },
+            "vignette": {
+              "type": "string"
+            },
+            "largeur": {
+              "type": "integer"
+            },
+            "hauteur": {
+              "type": "integer"
+            },
+            "provenance": {
+              "enum": [
+                "pdf",
+                "secours-base"
+              ]
+            }
+          },
+          "required": [
+            "lecture",
+            "vignette",
+            "provenance"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "remplace_par": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "livre",
+    "chapitre",
+    "numero",
+    "panneaux",
+    "page",
+    "legende",
+    "legende_fr",
+    "modalites",
+    "region",
+    "domaines",
+    "entites",
+    "role",
+    "image"
+  ],
+  "additionalProperties": false
+}

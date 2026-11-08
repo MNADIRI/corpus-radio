@@ -1,0 +1,366 @@
+{
+  "id": "cotten-t1",
+  "titre": "Imagerie musculosquelettique : pathologies générales",
+  "titre_court": "Cotten t1",
+  "auteurs": [
+    "Anne Cotten"
+  ],
+  "edition": null,
+  "annee": 2014,
+  "langue": "fr",
+  "domaines": {
+    "principal": "msk",
+    "secondaires": [
+      "general",
+      "neuro",
+      "pediatrie",
+      "thorax",
+      "urgences"
+    ]
+  },
+  "chapitres": [
+    {
+      "n": 1,
+      "titre": "Arthrose",
+      "pages": {
+        "debut": "1",
+        "fin": "22"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 2,
+      "titre": "Affections microcristallines",
+      "pages": {
+        "debut": "2",
+        "fin": "95"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 3,
+      "titre": "Polyarthrite rhumatoïde",
+      "pages": {
+        "debut": "3",
+        "fin": "136"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 4,
+      "titre": "Spondyloarthrites",
+      "pages": {
+        "debut": "4",
+        "fin": "187"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 5,
+      "titre": "Arthrites juvéniles idiopathiques",
+      "pages": {
+        "debut": "5",
+        "fin": "200"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    },
+    {
+      "n": 6,
+      "titre": "Syndrome SAPHO et ostéomyélite chronique récurrente multifocale",
+      "pages": {
+        "debut": "6",
+        "fin": "218"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 7,
+      "titre": "Maladies systémiques et vascularites",
+      "pages": {
+        "debut": "7",
+        "fin": "258"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 8,
+      "titre": "Hémophilie",
+      "pages": {
+        "debut": "8",
+        "fin": "268"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 9,
+      "titre": "Diabète et ostéoarthropathies nerveuses",
+      "pages": {
+        "debut": "9",
+        "fin": "286"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 10,
+      "titre": "Endocrinopathies",
+      "pages": {
+        "debut": "10",
+        "fin": "306"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 11,
+      "titre": "Infections rachidiennes",
+      "pages": {
+        "debut": "11",
+        "fin": "335"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 12,
+      "titre": "Infections ostéoarticulaires extra-rachidiennes",
+      "pages": {
+        "debut": "12",
+        "fin": "382"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 13,
+      "titre": "Ostéopathies",
+      "pages": {
+        "debut": "13",
+        "fin": "444"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 14,
+      "titre": "Troubles minéraux et osseux associés à la maladie rénale chronique",
+      "pages": {
+        "debut": "14",
+        "fin": "460"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 15,
+      "titre": "Tumeurs osseuses",
+      "pages": {
+        "debut": "15",
+        "fin": "520"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 16,
+      "titre": "Pseudo-tumeurs des tissus mous",
+      "pages": {
+        "debut": "16",
+        "fin": "527"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 17,
+      "titre": "Tumeurs des tissus mous",
+      "pages": {
+        "debut": "17",
+        "fin": "597"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 18,
+      "titre": "Métastases",
+      "pages": {
+        "debut": "18",
+        "fin": "631"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 19,
+      "titre": "Dyscrasies plasmocytaires",
+      "pages": {
+        "debut": "19",
+        "fin": "647"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 20,
+      "titre": "Néoplasies lymphoïdes et myéloïdes",
+      "pages": {
+        "debut": "20",
+        "fin": "683"
+      },
+      "domaines": [
+        "msk",
+        "general"
+      ]
+    },
+    {
+      "n": 21,
+      "titre": "Histiocytoses",
+      "pages": {
+        "debut": "21",
+        "fin": "712"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 22,
+      "titre": "Hémoglobinopathies et autres anémies",
+      "pages": {
+        "debut": "22",
+        "fin": "730"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 23,
+      "titre": "Ostéochondrodysplasies",
+      "pages": {
+        "debut": "23",
+        "fin": "786"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    },
+    {
+      "n": 24,
+      "titre": "Myopathies",
+      "pages": {
+        "debut": "24",
+        "fin": "801"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 25,
+      "titre": "Autres affections",
+      "pages": {
+        "debut": "25",
+        "fin": "827"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 26,
+      "titre": "Traumatismes du membre supétieur",
+      "pages": {
+        "debut": "26",
+        "fin": "893"
+      },
+      "domaines": [
+        "msk",
+        "urgences"
+      ]
+    },
+    {
+      "n": 27,
+      "titre": "Traumatismes du rachis et de la paroi thoracique",
+      "pages": {
+        "debut": "27",
+        "fin": "941"
+      },
+      "domaines": [
+        "msk",
+        "urgences",
+        "thorax"
+      ]
+    },
+    {
+      "n": 28,
+      "titre": "Traumatismes du membre inférieur",
+      "pages": {
+        "debut": "28",
+        "fin": "1026"
+      },
+      "domaines": [
+        "msk",
+        "urgences"
+      ]
+    },
+    {
+      "n": 29,
+      "titre": "Traumatismes non accidentels de l'enfant",
+      "pages": {
+        "debut": "29",
+        "fin": "1048"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie",
+        "urgences"
+      ]
+    }
+  ],
+  "source": {
+    "type": "pdf-texte",
+    "fichier": "cotten-t1.pdf",
+    "sha256": "df7b8fef39bbfb337b779c3cd6ea22d9a2ef0e1349e2ed272ab61a4b24200392",
+    "ocr": null
+  },
+  "statistiques": {
+    "passages": 3353,
+    "figures": 2260,
+    "figures_sans_image": 0,
+    "figures_image_secours": 11,
+    "passages_base_origine": 2736
+  },
+  "remplace_par": null
+}

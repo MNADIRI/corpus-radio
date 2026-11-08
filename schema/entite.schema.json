@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/entite.schema.json",
+  "title": "entite",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ent:[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "nom_fr": {
+      "type": "string"
+    },
+    "synonymes_fr": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "synonymes_en": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "abreviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sigle": {
+            "type": "string"
+          },
+          "forme": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sigle",
+          "forme"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "domaines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categorie": {
+      "type": "string"
+    },
+    "passages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+:p[0-9]{5}$"
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+:fig[0-9A-Za-z.]+$"
+      }
+    },
+    "entites_liees": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ent:[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "remplace_par": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "nom_fr",
+    "synonymes_fr",
+    "synonymes_en",
+    "abreviations",
+    "domaines",
+    "regions",
+    "categorie",
+    "passages",
+    "figures",
+    "entites_liees"
+  ],
+  "additionalProperties": false
+}

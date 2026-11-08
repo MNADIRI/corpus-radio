@@ -1,0 +1,80 @@
+{
+  "version_corpus": "2.0",
+  "date": "2026-11-08",
+  "livres": [
+    {
+      "id": "cotten-t1",
+      "titre": "Imagerie musculosquelettique : pathologies générales",
+      "titre_court": "Cotten t1",
+      "langue": "fr",
+      "domaine_principal": "msk",
+      "domaines": [
+        "msk",
+        "general",
+        "neuro",
+        "pediatrie",
+        "thorax",
+        "urgences"
+      ],
+      "chapitres": 29,
+      "passages": 3353,
+      "figures": 2260
+    }
+  ],
+  "domaines": {
+    "general": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 97,
+      "figures": 83,
+      "entites": 0
+    },
+    "msk": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 3353,
+      "figures": 2260,
+      "entites": 0
+    },
+    "neuro": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 90,
+      "figures": 65,
+      "entites": 0
+    },
+    "pediatrie": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 282,
+      "figures": 161,
+      "entites": 0
+    },
+    "thorax": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 124,
+      "figures": 195,
+      "entites": 0
+    },
+    "urgences": {
+      "livres": [
+        "cotten-t1"
+      ],
+      "passages": 691,
+      "figures": 536,
+      "entites": 0
+    }
+  },
+  "statistiques": {
+    "livres": 1,
+    "passages": 3353,
+    "figures": 2260,
+    "entites": 0
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/index-termes.schema.json",
+  "title": "index-termes",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "portee": {
+      "type": "string"
+    },
+    "prefixe": {
+      "type": "string"
+    },
+    "termes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ],
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "description": "[identifiant (passage ou figure), fréquence du terme, longueur du document en termes]"
+      }
+    },
+    "df": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "description": "df réel des termes dont la liste a été plafonnée"
+    }
+  },
+  "required": [
+    "version",
+    "portee",
+    "prefixe",
+    "termes"
+  ],
+  "additionalProperties": false
+}

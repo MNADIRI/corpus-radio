@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "corpus-radio/module.schema.json",
+  "title": "module",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "domaine": {
+      "type": "string"
+    },
+    "livre": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "chapitre": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "titre": {
+      "type": "string"
+    },
+    "pages": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "objectifs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "essentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "titre": {
+            "type": "string"
+          },
+          "texte": {
+            "type": "string"
+          },
+          "figures": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+:fig[0-9A-Za-z.]+$"
+            }
+          },
+          "cle": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "piege": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pourquoi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "titre",
+          "texte",
+          "figures"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "cartes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recto": {
+            "type": "string"
+          },
+          "verso": {
+            "type": "string"
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "recto",
+          "verso"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "quiz": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "figure": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+:fig[0-9A-Za-z.]+$"
+              }
+            ]
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reponse": {
+            "type": "integer"
+          },
+          "explication": {
+            "type": "string"
+          },
+          "page": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "question",
+          "options",
+          "reponse",
+          "explication"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "images_non_rattachees": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "domaine",
+    "livre",
+    "chapitre",
+    "titre",
+    "pages",
+    "objectifs",
+    "essentiels",
+    "sections",
+    "cartes",
+    "quiz"
+  ],
+  "additionalProperties": false
+}
