@@ -1,0 +1,444 @@
+{
+  "id": "cotten-t2",
+  "titre": "Imagerie musculosquelettique : pathologies locorégionales",
+  "titre_court": "Cotten t2",
+  "auteurs": [
+    "Anne Cotten"
+  ],
+  "edition": "2e",
+  "annee": null,
+  "langue": "fr",
+  "domaines": {
+    "principal": "msk",
+    "secondaires": [
+      "neuro",
+      "pediatrie",
+      "thorax"
+    ]
+  },
+  "chapitres": [
+    {
+      "n": 1,
+      "titre": "Épaule — Pathologies de la coiffe des rotateurs",
+      "pages": {
+        "debut": "5",
+        "fin": "52"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 2,
+      "titre": "Épaule — Instabilité glénohumérale",
+      "pages": {
+        "debut": "53",
+        "fin": "96"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 3,
+      "titre": "Épaule — Pathologies nerveuses de la ceinture scapulaire",
+      "pages": {
+        "debut": "97",
+        "fin": "126"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 4,
+      "titre": "Épaule — Autres pathologies de la ceinture scapulaire",
+      "pages": {
+        "debut": "127",
+        "fin": "155"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 5,
+      "titre": "Coude — Pathologies du compartiment latéral",
+      "pages": {
+        "debut": "159",
+        "fin": "174"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 6,
+      "titre": "Coude — Pathologies du compartiment médial",
+      "pages": {
+        "debut": "175",
+        "fin": "181"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 7,
+      "titre": "Coude — Pathologies du compartiment antérieur",
+      "pages": {
+        "debut": "183",
+        "fin": "191"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 8,
+      "titre": "Coude — Pathologies du compartiment postérieur",
+      "pages": {
+        "debut": "193",
+        "fin": "197"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 9,
+      "titre": "Coude — Affections diverses et présentations particulières",
+      "pages": {
+        "debut": "199",
+        "fin": "203"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 10,
+      "titre": "Poignet — Pathologies osseuses et dégénératives du poignet",
+      "pages": {
+        "debut": "207",
+        "fin": "232"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 11,
+      "titre": "Poignet — Pathologies ligamentaires du poignet",
+      "pages": {
+        "debut": "233",
+        "fin": "262"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 12,
+      "titre": "Poignet — Pathologies tendineuses et ténosynoviales du poignet",
+      "pages": {
+        "debut": "263",
+        "fin": "286"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 13,
+      "titre": "Poignet et main — Pathologies vasculonerveuses",
+      "pages": {
+        "debut": "287",
+        "fin": "311"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 14,
+      "titre": "Main — Pathologies tendineuses et dégénératives de la main et des doigts",
+      "pages": {
+        "debut": "313",
+        "fin": "334"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 15,
+      "titre": "Rachis — Discopathies dégénératives cervicales",
+      "pages": {
+        "debut": "337",
+        "fin": "354"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 16,
+      "titre": "Rachis — Affections mécaniques et dégénératives du rachis thoracolombaire",
+      "pages": {
+        "debut": "355",
+        "fin": "418"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 17,
+      "titre": "Rachis — Autres affections rachidiennes",
+      "pages": {
+        "debut": "419",
+        "fin": "446"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 18,
+      "titre": "Hanche — Pathologies osseuses de la hanche",
+      "pages": {
+        "debut": "451",
+        "fin": "491"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 19,
+      "titre": "Hanche — Pathologies articulaires de la hanche",
+      "pages": {
+        "debut": "493",
+        "fin": "539"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 20,
+      "titre": "Hanche — Pathologies abarticulaires de la hanche",
+      "pages": {
+        "debut": "541",
+        "fin": "586"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 21,
+      "titre": "Bassin — Pathologies du plexus lombosacré",
+      "pages": {
+        "debut": "587",
+        "fin": "609"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 22,
+      "titre": "Bassin — Autres pathologies de la ceinture pelvienne",
+      "pages": {
+        "debut": "611",
+        "fin": "626"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 23,
+      "titre": "Genou — Pathologies antérieures (appareil extenseur et patella)",
+      "pages": {
+        "debut": "629",
+        "fin": "659"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 24,
+      "titre": "Genou — Pathologies des ménisques",
+      "pages": {
+        "debut": "661",
+        "fin": "683"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 25,
+      "titre": "Genou — Pathologies des ligaments croisés",
+      "pages": {
+        "debut": "685",
+        "fin": "705"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 26,
+      "titre": "Genou — Pathologies des tissus mous collatéraux et postérieurs",
+      "pages": {
+        "debut": "707",
+        "fin": "744"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 27,
+      "titre": "Genou — Autres pathologies du genou",
+      "pages": {
+        "debut": "745",
+        "fin": "793"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 28,
+      "titre": "Jambe — Pathologies de la jambe",
+      "pages": {
+        "debut": "797",
+        "fin": "823"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 29,
+      "titre": "Cheville et pied — Pathologies des tissus mous (tendons et ligaments)",
+      "pages": {
+        "debut": "827",
+        "fin": "889"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 30,
+      "titre": "Cheville et pied — Autres pathologies de la cheville et du pied",
+      "pages": {
+        "debut": "891",
+        "fin": "929"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 31,
+      "titre": "Malformations — Dysostoses crâniennes",
+      "pages": {
+        "debut": "933",
+        "fin": "938"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie",
+        "neuro"
+      ]
+    },
+    {
+      "n": 32,
+      "titre": "Malformations — Dysostoses rachidiennes",
+      "pages": {
+        "debut": "939",
+        "fin": "960"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    },
+    {
+      "n": 33,
+      "titre": "Malformations — Dysostoses de la paroi thoracique",
+      "pages": {
+        "debut": "961",
+        "fin": "969"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie",
+        "thorax"
+      ]
+    },
+    {
+      "n": 34,
+      "titre": "Malformations — Dysostoses de la ceinture scapulaire et du membre supérieur",
+      "pages": {
+        "debut": "971",
+        "fin": "984"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    },
+    {
+      "n": 35,
+      "titre": "Malformations — Dysostoses du membre inférieur",
+      "pages": {
+        "debut": "985",
+        "fin": "993"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    },
+    {
+      "n": 36,
+      "titre": "Malformations — Déformations du pied du nourrisson",
+      "pages": {
+        "debut": "995",
+        "fin": "1006"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    }
+  ],
+  "source": {
+    "type": "pdf-texte",
+    "fichier": "cotten-t2.pdf",
+    "sha256": "c88e29a53dff77a58db3f14cfae09caa3879281020c48affc4a8ff65be2db99d",
+    "ocr": null
+  },
+  "statistiques": {
+    "passages": 1817,
+    "figures": 1506,
+    "figures_sans_image": 0,
+    "figures_image_secours": 47,
+    "figures_recadrees": 398,
+    "passages_base_origine": 1623
+  },
+  "remplace_par": null
+}

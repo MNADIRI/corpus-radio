@@ -359,7 +359,8 @@
     "passages": 3353,
     "figures": 2260,
     "figures_sans_image": 0,
-    "figures_image_secours": 11,
+    "figures_image_secours": 1,
+    "figures_recadrees": 10,
     "passages_base_origine": 2736
   },
   "remplace_par": null

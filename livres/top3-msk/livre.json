@@ -1,0 +1,150 @@
+{
+  "id": "top3-msk",
+  "titre": "Top 3 Differentials in Musculoskeletal Imaging: A Case Review",
+  "titre_court": "Top 3 MSK",
+  "auteurs": [
+    "Jasjeet Bindra",
+    "Robert D. Boutin",
+    "William T. O'Brien"
+  ],
+  "edition": "1re",
+  "annee": 2020,
+  "langue": "en",
+  "domaines": {
+    "principal": "msk",
+    "secondaires": [
+      "neuro",
+      "pediatrie",
+      "urgences"
+    ]
+  },
+  "chapitres": [
+    {
+      "n": 1,
+      "titre": "Trauma",
+      "pages": {
+        "debut": "2",
+        "fin": "29"
+      },
+      "domaines": [
+        "msk",
+        "urgences"
+      ]
+    },
+    {
+      "n": 2,
+      "titre": "Bone Tumors",
+      "pages": {
+        "debut": "30",
+        "fin": "75"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 3,
+      "titre": "Upper Extremity",
+      "pages": {
+        "debut": "76",
+        "fin": "154"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 4,
+      "titre": "Lower Extremity",
+      "pages": {
+        "debut": "108",
+        "fin": "157"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 5,
+      "titre": "Arthropathies",
+      "pages": {
+        "debut": "158",
+        "fin": "179"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 6,
+      "titre": "Infection",
+      "pages": {
+        "debut": "180",
+        "fin": "197"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 7,
+      "titre": "Soft Tissue Tumors",
+      "pages": {
+        "debut": "198",
+        "fin": "223"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 8,
+      "titre": "Metabolic Musculoskeletal Conditions",
+      "pages": {
+        "debut": "224",
+        "fin": "241"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 9,
+      "titre": "Spine",
+      "pages": {
+        "debut": "242",
+        "fin": "269"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 10,
+      "titre": "Pediatric or Developmental Musculoskeletal Conditions",
+      "pages": {
+        "debut": "270",
+        "fin": "311"
+      },
+      "domaines": [
+        "msk",
+        "pediatrie"
+      ]
+    }
+  ],
+  "source": {
+    "type": "pdf-texte",
+    "fichier": "top3-msk.pdf",
+    "sha256": "c433bd2c8527da6a916ce85dadb6ec6b6d11d47a7d756276e5cf2181813eaca1",
+    "ocr": null
+  },
+  "statistiques": {
+    "passages": 208,
+    "figures": 146,
+    "figures_sans_image": 0,
+    "figures_image_secours": 0,
+    "passages_base_origine": 146
+  },
+  "remplace_par": null
+}

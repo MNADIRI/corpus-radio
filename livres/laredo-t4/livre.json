@@ -1,0 +1,524 @@
+{
+  "id": "laredo-t4",
+  "titre": "Imagerie rhumatologique et orthopédique, tome 4 : tumeurs",
+  "titre_court": "Laredo t4",
+  "auteurs": [
+    "Jean-Denis Laredo"
+  ],
+  "edition": null,
+  "annee": null,
+  "langue": "fr",
+  "domaines": {
+    "principal": "msk",
+    "secondaires": [
+      "neuro",
+      "thorax"
+    ]
+  },
+  "chapitres": [
+    {
+      "n": 1,
+      "titre": "Méthode d'analyse d’une image radiologique unique d’aspect tumoral",
+      "pages": {
+        "debut": "2477",
+        "fin": "2499"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 2,
+      "titre": "Mélorhéostose, ostéopoécilie, ostéopathie striée",
+      "pages": {
+        "debut": "2501",
+        "fin": "2510"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 3,
+      "titre": "Syndrome de Gardner",
+      "pages": {
+        "debut": "2512",
+        "fin": "2512"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 4,
+      "titre": "Enchondromatoses",
+      "pages": {
+        "debut": "2513",
+        "fin": "2528"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 5,
+      "titre": "Maladie exostosante",
+      "pages": {
+        "debut": "2529",
+        "fin": "2534"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 6,
+      "titre": "Dysplasie épiphysaire hémimélique",
+      "pages": {
+        "debut": "2535",
+        "fin": "2568"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 7,
+      "titre": "Syndrome de Jaffe-Campanacci",
+      "pages": {
+        "debut": "2569",
+        "fin": "2570"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 8,
+      "titre": "Maladie de Paget",
+      "pages": {
+        "debut": "2571",
+        "fin": "2596"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 9,
+      "titre": "Atteintes vertébrales de la maladie de Paget",
+      "pages": {
+        "debut": "2597",
+        "fin": "2622"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 10,
+      "titre": "Ostéolyse massive locorégionale : maladie de Gorham",
+      "pages": {
+        "debut": "2623",
+        "fin": "2628"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 11,
+      "titre": "Angiomatoses kystiques",
+      "pages": {
+        "debut": "2630",
+        "fin": "2640"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 12,
+      "titre": "Varice intra-osseuse tibiale",
+      "pages": {
+        "debut": "2641",
+        "fin": "2645"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 13,
+      "titre": "Métastases osseuses des cancers",
+      "pages": {
+        "debut": "2647",
+        "fin": "2667"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 14,
+      "titre": "Classification OMS 2013 des tumeurs osseuses primitives",
+      "pages": {
+        "debut": "2013",
+        "fin": "2670"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 15,
+      "titre": "Principes de prise en charge des sarcomes osseux",
+      "pages": {
+        "debut": "2671",
+        "fin": "2676"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 16,
+      "titre": "Tumeurs cartilagineuses",
+      "pages": {
+        "debut": "1980",
+        "fin": "2734"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 17,
+      "titre": "Tumeurs ostéogéniques",
+      "pages": {
+        "debut": "1962",
+        "fin": "2773"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 18,
+      "titre": "Tumeurs fibroblastiques, myofibroblastiques et fibro-histiocytaires",
+      "pages": {
+        "debut": "1956",
+        "fin": "2806"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 19,
+      "titre": "Sarcome osseux indifférencié pléomorphe de haut grade",
+      "pages": {
+        "debut": "2807",
+        "fin": "2808"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 20,
+      "titre": "Sarcome d’Ewing",
+      "pages": {
+        "debut": "1959",
+        "fin": "2817"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 21,
+      "titre": "Tumeurs osseuses hématopoïétiques",
+      "pages": {
+        "debut": "1960",
+        "fin": "2832"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 22,
+      "titre": "Tumeurs osseuses riches en cellules géantes multinuclées de type ostéoclastique",
+      "pages": {
+        "debut": "1940",
+        "fin": "2852"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 23,
+      "titre": "Tumeurs osseuses notochordales",
+      "pages": {
+        "debut": "1997",
+        "fin": "2864"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 24,
+      "titre": "Tumeurs osseuses vasculaires",
+      "pages": {
+        "debut": "2008",
+        "fin": "2890"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 25,
+      "titre": "Tumeurs osseuses musculaires",
+      "pages": {
+        "debut": "1994",
+        "fin": "2894"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 26,
+      "titre": "Tumeurs osseuses adipeuses",
+      "pages": {
+        "debut": "1973",
+        "fin": "2902"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 27,
+      "titre": "Lésion kystique et graisseuse",
+      "pages": {
+        "debut": "2903",
+        "fin": "2908"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 28,
+      "titre": "Dysplasie ostéo-fibreuse, adamantinome",
+      "pages": {
+        "debut": "118",
+        "fin": "2917"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 29,
+      "titre": "Kyste essentiel des os",
+      "pages": {
+        "debut": "2919",
+        "fin": "2926"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 30,
+      "titre": "Kyste osseux anévrysmal",
+      "pages": {
+        "debut": "238",
+        "fin": "2942"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 31,
+      "titre": "Tumeurs bénignes des tissus mous occasionnellement primitivement osseuses",
+      "pages": {
+        "debut": "144",
+        "fin": "2945"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 32,
+      "titre": "Tumeurs dont la différenciation est incertaine",
+      "pages": {
+        "debut": "252",
+        "fin": "2954"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 33,
+      "titre": "Sarcomes osseux sur lésions préexistantes",
+      "pages": {
+        "debut": "2955",
+        "fin": "2960"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 34,
+      "titre": "Liste des affections génétiques associées à une tumeur osseuse",
+      "pages": {
+        "debut": "2961",
+        "fin": "2964"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 35,
+      "titre": "Myosite ossifiante circonscrite",
+      "pages": {
+        "debut": "2967",
+        "fin": "2978"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 36,
+      "titre": "Para-ostéo-arthropathies neurogènes",
+      "pages": {
+        "debut": "1997",
+        "fin": "2992"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 37,
+      "titre": "Exostose sous-unguéale et Exostose en tourelle",
+      "pages": {
+        "debut": "2993",
+        "fin": "2998"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 38,
+      "titre": "Lésions responsables d’une image minéralisée de la surface des os",
+      "pages": {
+        "debut": "1587",
+        "fin": "3042"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 39,
+      "titre": "Lésions responsables d’une image d’érosion de la surface des os",
+      "pages": {
+        "debut": "1992",
+        "fin": "3064"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 40,
+      "titre": "Diagnostic d’une lacune de la voûte du crâne",
+      "pages": {
+        "debut": "106",
+        "fin": "3086"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 41,
+      "titre": "Diagnostic d’une condensation unique de la voûte du crâne",
+      "pages": {
+        "debut": "498",
+        "fin": "3095"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 42,
+      "titre": "Diagnostic d’une lésion vertébrale unique d’allure tumorale",
+      "pages": {
+        "debut": "1136",
+        "fin": "3162"
+      },
+      "domaines": [
+        "msk",
+        "neuro"
+      ]
+    },
+    {
+      "n": 43,
+      "titre": "Diagnostic des images costales anormales",
+      "pages": {
+        "debut": "3163",
+        "fin": "3176"
+      },
+      "domaines": [
+        "msk",
+        "thorax"
+      ]
+    },
+    {
+      "n": 44,
+      "titre": "Diagnostic d’une lacune épiphysaire",
+      "pages": {
+        "debut": "100",
+        "fin": "3195"
+      },
+      "domaines": [
+        "msk"
+      ]
+    }
+  ],
+  "source": {
+    "type": "pdf-texte",
+    "fichier": "laredo-t4.pdf",
+    "sha256": "1f17382ff34dc3110986ad41540309b33e05e7dfd075e6b06dc486db30105994",
+    "ocr": null
+  },
+  "statistiques": {
+    "passages": 772,
+    "figures": 1485,
+    "figures_sans_image": 0,
+    "figures_image_secours": 83,
+    "figures_recadrees": 1399,
+    "passages_base_origine": 652
+  },
+  "remplace_par": null
+}

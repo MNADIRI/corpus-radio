@@ -15,10 +15,13 @@ import argparse
 import glob
 import hashlib
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
+import cv2
 import imagehash
+import numpy as np
 import pymupdf
 from PIL import Image
 
@@ -26,6 +29,7 @@ from commun import (RACINE, decouper, ecrire_json, ecrire_jsonl, exporter_webp, 
                     modalites_par_regles, nom_image, resoudre_renvois)
 
 SEUIL_HASH = 12
+SEUIL_CORRELATION = 0.70
 
 
 def charger_export(export, livre):
@@ -46,37 +50,76 @@ def sha256(chemin):
     return h.hexdigest()
 
 
+def propre(fid):
+    """Identifiant conforme au format : caractères hors [0-9A-Za-z.] supprimés (« - » devient « v »)."""
+    livre, reste = fid.split(":", 1)
+    return livre + ":" + re.sub(r"[^0-9A-Za-z.]", "", reste.replace("-", "v"))
+
+
+def nouvel_id(livre, g, groupes):
+    """Numérotation du livre. Livres numérotés par chapitre (« Fig. 12 ») : fig<ch>.<n>[lettre]."""
+    if "." in g["fig"]:
+        return propre(g["id"])
+    num = g["fig"] if not g["fig"].startswith("x") else f"x{g['pp']}"
+    membres = groupes[(g["ch"], num)]
+    lettre = chr(97 + membres.index(g["id"])) if len(membres) > 1 else ""
+    return propre(f"{livre}:fig{g['ch']}.{num}{lettre}")
+
+
 def etape_figures(livre, figures_db, dossier, domaines_ch):
-    """Écrit figures/chNN.jsonl (sans images si absentes) et renvoie l'index numéro → {lettre: id}."""
+    """Écrit figures/chNN.jsonl et renvoie l'index de résolution des renvois."""
+    par_chapitre = all("." not in g["fig"] for g in figures_db)
     groupes = defaultdict(list)
     for g in figures_db:
-        groupes[g["fig"]].append(g["pa"] or "")
+        cle = (g["ch"], g["fig"] if not g["fig"].startswith("x") else f"x{g['pp']}")
+        groupes[cle].append(g["id"])
     anciennes = {}
     for f in (dossier / "figures").glob("*.jsonl"):
         for x in lire_jsonl(f):
-            anciennes[x["id"]] = x
+            anciennes[x.get("ancien_id") or x["id"]] = x
     par_ch = defaultdict(list)
+    index = defaultdict(dict)
     for g in figures_db:
+        fid = nouvel_id(livre, g, groupes)
         ancien = anciennes.get(g["id"], {})
-        par_ch[g["ch"]].append({
-            "id": g["id"], "livre": livre, "chapitre": g["ch"], "numero": g["fig"],
-            "panneau": g["pa"] or None, "panneaux": sorted(x for x in groupes[g["fig"]] if x),
-            "page": g["pg"] or None, "page_pdf": g["pp"],
+        img = ancien.get("image")
+        if img and fid != g["id"]:
+            for k in ("lecture", "vignette"):
+                src = RACINE / img[k]
+                dst = src.with_name(nom_image(fid))
+                if src.exists() and src != dst:
+                    src.rename(dst)
+                img[k] = str(dst.relative_to(RACINE))
+        lettre = fid.rsplit(".", 1)[1].lstrip("0123456789x")[-1:] if not g["pa"] else g["pa"]
+        cle = (g["ch"], g["fig"]) if par_chapitre else g["fig"]
+        index[cle][lettre or ""] = fid
+        ligne = {
+            "id": fid, "livre": livre, "chapitre": g["ch"], "numero": g["fig"],
+            "panneau": (g["pa"] or lettre) or None,
+            "panneaux": [], "page": g["pg"] or None, "page_pdf": g["pp"],
             "legende": g["cap"], "legende_fr": ancien.get("legende_fr"),
             "modalites": ancien.get("modalites") or modalites_par_regles(g["cap"]),
             "region": ancien.get("region"), "domaines": ancien.get("domaines") or domaines_ch(g["ch"]),
             "entites": ancien.get("entites") or [], "role": ancien.get("role"),
-            "image": ancien.get("image"),
-        })
+            "image": img,
+        }
+        if fid != g["id"]:
+            ligne["ancien_id"] = g["id"]
+        par_ch[g["ch"]].append(ligne)
+    for lignes in par_ch.values():
+        freres = defaultdict(list)
+        for l in lignes:
+            freres[l["numero"]].append(l)
+        for groupe in freres.values():
+            lettres = sorted(x["panneau"] for x in groupe if x["panneau"])
+            for l in groupe:
+                l["panneaux"] = lettres
     for ch, lignes in par_ch.items():
         ecrire_jsonl(dossier / "figures" / f"ch{ch:02d}.jsonl", lignes)
-    index = defaultdict(dict)
-    for g in figures_db:
-        index[g["fig"]][g["pa"] or ""] = g["id"]
-    return index
+    return index, par_chapitre
 
 
-def etape_passages(livre, passages_db, index_figs, dossier, langue):
+def etape_passages(livre, passages_db, index_figs, dossier, langue, par_chapitre=False):
     par_ch, n = defaultdict(list), 0
     stats = {"decoupes": 0, "renvois": 0}
     for p in passages_db:
@@ -85,7 +128,11 @@ def etape_passages(livre, passages_db, index_figs, dossier, langue):
             stats["decoupes"] += 1
         for k, texte in enumerate(morceaux):
             n += 1
-            figs = resoudre_renvois(texte, livre, index_figs)
+            if par_chapitre:
+                idx = {num: d for (ch, num), d in index_figs.items() if ch == p["ch"]}
+            else:
+                idx = index_figs
+            figs = resoudre_renvois(texte, livre, idx)
             stats["renvois"] += len(figs)
             par_ch[p["ch"]].append({
                 "id": f"{livre}:p{n:05d}", "livre": livre, "chapitre": p["ch"],
@@ -154,6 +201,63 @@ def etape_images(livre, dossier, pdf, secours):
     return bilan
 
 
+def _page_gris(doc, pi, zoom):
+    pix = doc[pi].get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), colorspace=pymupdf.csGRAY)
+    return np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width)
+
+
+def localiser(doc, pi, vignette):
+    """Retrouve la vignette dans le rendu de la page (corrélation normalisée, multi-échelle).
+    Retourne (score, rectangle en points PDF)."""
+    P = _page_gris(doc, pi, 1.0)
+    T = np.array(vignette.convert("L"))
+    meilleur = (-1.0, None)
+    for s in np.geomspace(0.12, 1.0, 30):
+        w = int(P.shape[1] * s)
+        h = int(T.shape[0] * w / T.shape[1])
+        if w < 20 or h < 20 or h > P.shape[0] or w > P.shape[1]:
+            continue
+        t = cv2.resize(T, (w, h), interpolation=cv2.INTER_AREA)
+        _, mv, _, ml = cv2.minMaxLoc(cv2.matchTemplate(P, t, cv2.TM_CCOEFF_NORMED))
+        if mv > meilleur[0]:
+            meilleur = (float(mv), pymupdf.Rect(ml[0], ml[1], ml[0] + w, ml[1] + h))
+    return meilleur
+
+
+def etape_recadrage(livre, dossier, pdf, secours):
+    """Deuxième passe pour les figures restées en image de secours (scans, planches découpées) :
+    on localise la vignette dans la page et on recadre le rendu de la page en haute résolution."""
+    doc = pymupdf.open(pdf)
+    bilan = {"recadrees": 0, "restent_secours": 0}
+    for f in sorted((dossier / "figures").glob("*.jsonl")):
+        lignes = lire_jsonl(f)
+        modif = False
+        for g in lignes:
+            img = g.get("image") or {}
+            if img.get("provenance") != "secours-base" or img.get("essai_recadrage"):
+                continue
+            ref = Path(secours) / nom_image(g["id"])
+            vig = Image.open(ref)
+            pp = g["page_pdf"]
+            essais = [(localiser(doc, pi, vig), pi) for pi in (pp - 1, pp - 2, pp) if 0 <= pi < doc.page_count]
+            (score, rect), pi = max(essais, key=lambda x: x[0][0])
+            if score >= SEUIL_CORRELATION:
+                zoom = min(4.0, 1200 / max(rect.width, rect.height))
+                pix = doc[pi].get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=rect)
+                im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples) if pix.n == 3 else \
+                    Image.frombytes("RGB", (pix.width, pix.height), pymupdf.Pixmap(pymupdf.csRGB, pix).samples)
+                lec, vg, l, ht = exporter_webp(im, livre, g["id"])
+                g["image"] = {"lecture": lec, "vignette": vg, "largeur": l, "hauteur": ht, "provenance": "pdf-recadre"}
+                bilan["recadrees"] += 1
+            else:
+                img["essai_recadrage"] = round(score, 3)
+                bilan["restent_secours"] += 1
+            modif = True
+        if modif:
+            ecrire_jsonl(f, lignes)
+    return bilan
+
+
 def etape_livre(livre, meta_db, meta_extra, dossier, pdf, passages_db, figures_db):
     pages = defaultdict(list)
     for p in passages_db:
@@ -184,6 +288,7 @@ def etape_livre(livre, meta_db, meta_extra, dossier, pdf, passages_db, figures_d
             "passages": nb_p, "figures": len(figs),
             "figures_sans_image": sum(1 for g in figs if not g.get("image")),
             "figures_image_secours": sum(1 for g in figs if (g.get("image") or {}).get("provenance") == "secours-base"),
+            "figures_recadrees": sum(1 for g in figs if (g.get("image") or {}).get("provenance") == "pdf-recadre"),
             "passages_base_origine": len(passages_db),
         },
         "remplace_par": None,
@@ -197,7 +302,7 @@ def main():
     ap.add_argument("--export", required=True)
     ap.add_argument("--secours", required=True)
     ap.add_argument("--meta", required=True, help="JSON : titre, auteurs, edition, annee, langue, domaine_principal, domaines_chapitres")
-    ap.add_argument("--etape", default="tout", choices=["figures", "passages", "images", "livre", "tout"])
+    ap.add_argument("--etape", default="tout", choices=["figures", "passages", "images", "recadrage", "livre", "tout"])
     a = ap.parse_args()
     livre = a.livre
     dossier = RACINE / "livres" / livre
@@ -208,14 +313,16 @@ def main():
     if a.etape in ("figures", "passages", "tout"):
         principal = meta_extra["domaine_principal"]
         dch = meta_extra.get("domaines_chapitres", {})
-        index = etape_figures(livre, figures_db, dossier,
+        index, par_chapitre = etape_figures(livre, figures_db, dossier,
                               lambda ch: [principal] + [d for d in dch.get(str(ch), []) if d != principal])
         print(f"Figures écrites : {len(figures_db)}")
     if a.etape in ("passages", "tout"):
-        n, st = etape_passages(livre, passages_db, index, dossier, meta_extra["langue"])
+        n, st = etape_passages(livre, passages_db, index, dossier, meta_extra["langue"], par_chapitre)
         print(f"Passages écrits : {n} (dont {st['decoupes']} passages d'origine redécoupés), {st['renvois']} renvois de figures")
     if a.etape in ("images", "tout"):
         print("Images :", etape_images(livre, dossier, pdf, a.secours))
+    if a.etape in ("recadrage", "tout"):
+        print("Recadrage :", etape_recadrage(livre, dossier, pdf, a.secours))
     if a.etape in ("livre", "tout"):
         etape_livre(livre, meta_db, meta_extra, dossier, pdf, passages_db, figures_db)
         print("livre.json écrit")

@@ -1,0 +1,370 @@
+{
+  "id": "laredo-t5",
+  "titre": "Imagerie rhumatologique et orthopédique, tome 5",
+  "titre_court": "Laredo t5",
+  "auteurs": [
+    "Jean-Denis Laredo"
+  ],
+  "edition": null,
+  "annee": null,
+  "langue": "fr",
+  "domaines": {
+    "principal": "msk",
+    "secondaires": [
+      "abdo-digestif",
+      "thorax",
+      "uro-genital"
+    ]
+  },
+  "chapitres": [
+    {
+      "n": 1,
+      "titre": "Approche diagnostique devant une masse tumorale des tissus mous",
+      "pages": {
+        "debut": "3199",
+        "fin": "3223"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 2,
+      "titre": "Pseudotumeurs des tissus mous",
+      "pages": {
+        "debut": "2231",
+        "fin": "8253"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 3,
+      "titre": "Malformations vasculaires des tissus mous",
+      "pages": {
+        "debut": "3255",
+        "fin": "3266"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 4,
+      "titre": "Hématome versus tumeurs des tissus mous",
+      "pages": {
+        "debut": "2271",
+        "fin": "3272"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 5,
+      "titre": "Infections pseudo-tumorales des tissus mous",
+      "pages": {
+        "debut": "3273",
+        "fin": "3288"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 6,
+      "titre": "Maladie des dépôts extra-articulaires d’apatite",
+      "pages": {
+        "debut": "3285",
+        "fin": "3302"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 7,
+      "titre": "Masses des tissus mous pouvant s'accompagner d’une opacité calcique",
+      "pages": {
+        "debut": "2013",
+        "fin": "8349"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 8,
+      "titre": "Tumeurs des tissus mous adipocytaires",
+      "pages": {
+        "debut": "2362",
+        "fin": "8361"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 9,
+      "titre": "Tumeurs des tissus mous fibroblastiques ou myofibroblastiques",
+      "pages": {
+        "debut": "380",
+        "fin": "3891"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 10,
+      "titre": "Tumeurs musculaires lisses, tumeurs péricytaires, tumeurs musculaires striées des tissus mous",
+      "pages": {
+        "debut": "3415",
+        "fin": "3428"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 11,
+      "titre": "Tumeurs vasculaires des tissus mous",
+      "pages": {
+        "debut": "3429",
+        "fin": "3439"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 12,
+      "titre": "Tumeurs des tissus mous cartilagineuses et osseuses",
+      "pages": {
+        "debut": "3441",
+        "fin": "3447"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 13,
+      "titre": "Tumeurs des nerfs périphériques",
+      "pages": {
+        "debut": "3449",
+        "fin": "3468"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 14,
+      "titre": "Tumeurs dont la différenciation est incertaine",
+      "pages": {
+        "debut": "3469",
+        "fin": "3512"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 15,
+      "titre": "Sarcome d’Ewing extra-squelettique",
+      "pages": {
+        "debut": "2313",
+        "fin": "3516"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 16,
+      "titre": "Tumeurs et pseudotumeurs des tissus mous superficiels",
+      "pages": {
+        "debut": "3517",
+        "fin": "3532"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 17,
+      "titre": "Tumeurs des tissus mous entrant dans le cadre d'affections génétiques",
+      "pages": {
+        "debut": "3533",
+        "fin": "3538"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 18,
+      "titre": "Affections génétiques pouvant s'accompagner de tumeurs des tissus mous",
+      "pages": {
+        "debut": "3539",
+        "fin": "3541"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 19,
+      "titre": "Tumeurs synoviales des articulations, des bourses séreuses et des gaines tendineuses",
+      "pages": {
+        "debut": "3543",
+        "fin": "3577"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 20,
+      "titre": "Pseudo-tumeurs et tumeurs bénignes",
+      "pages": {
+        "debut": "3579",
+        "fin": "3992"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 21,
+      "titre": "Sarcomes et lésions pseudo-sarcomateuses de la main, des doigts et des ongles",
+      "pages": {
+        "debut": "3607",
+        "fin": "3620"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 22,
+      "titre": "Tumeurs et pseudotumeurs de l’appareil unguéal",
+      "pages": {
+        "debut": "3621",
+        "fin": "3636"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 23,
+      "titre": "Tumeurs et pseudo-tumeurs des tissus mous du pied et de la cheville",
+      "pages": {
+        "debut": "3637",
+        "fin": "3656"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 24,
+      "titre": "Masses para-vertébrales thoraciques",
+      "pages": {
+        "debut": "3657",
+        "fin": "3662"
+      },
+      "domaines": [
+        "msk",
+        "thorax"
+      ]
+    },
+    {
+      "n": 25,
+      "titre": "Masses para-vertébrales lombaires",
+      "pages": {
+        "debut": "3663",
+        "fin": "3672"
+      },
+      "domaines": [
+        "msk",
+        "abdo-digestif"
+      ]
+    },
+    {
+      "n": 26,
+      "titre": "Masses pré-sacrées",
+      "pages": {
+        "debut": "3672",
+        "fin": "3691"
+      },
+      "domaines": [
+        "msk",
+        "abdo-digestif",
+        "uro-genital"
+      ]
+    },
+    {
+      "n": 27,
+      "titre": "Masse des tissus mous d’allure tumorale : bénin où malin ?",
+      "pages": {
+        "debut": "3693",
+        "fin": "3696"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 28,
+      "titre": "Tumeurs des tissus mous à laisser en place",
+      "pages": {
+        "debut": "3697",
+        "fin": "3700"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 29,
+      "titre": "Principes de prise en charge d’une masse des tissus mous",
+      "pages": {
+        "debut": "3703",
+        "fin": "3704"
+      },
+      "domaines": [
+        "msk"
+      ]
+    },
+    {
+      "n": 30,
+      "titre": "Biopsie et traitement des formes localisés des sarcomes des tissus mous",
+      "pages": {
+        "debut": "1464",
+        "fin": "3720"
+      },
+      "domaines": [
+        "msk"
+      ]
+    }
+  ],
+  "source": {
+    "type": "pdf-texte",
+    "fichier": "laredo-t5.pdf",
+    "sha256": "139c5262f064f6f5558ae5a2ac05e973371a23450cf29752d16768cfdbdc9024",
+    "ocr": null
+  },
+  "statistiques": {
+    "passages": 655,
+    "figures": 704,
+    "figures_sans_image": 0,
+    "figures_image_secours": 56,
+    "figures_recadrees": 647,
+    "passages_base_origine": 527
+  },
+  "remplace_par": null
+}

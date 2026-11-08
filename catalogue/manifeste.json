@@ -1,5 +1,5 @@
 {
-  "version_corpus": "2.0",
+  "version_corpus": "5.0",
   "date": "2026-11-08",
   "livres": [
     {
@@ -19,62 +19,154 @@
       "chapitres": 29,
       "passages": 3353,
       "figures": 2260
+    },
+    {
+      "id": "cotten-t2",
+      "titre": "Imagerie musculosquelettique : pathologies locorégionales",
+      "titre_court": "Cotten t2",
+      "langue": "fr",
+      "domaine_principal": "msk",
+      "domaines": [
+        "msk",
+        "neuro",
+        "pediatrie",
+        "thorax"
+      ],
+      "chapitres": 36,
+      "passages": 1817,
+      "figures": 1506
+    },
+    {
+      "id": "laredo-t4",
+      "titre": "Imagerie rhumatologique et orthopédique, tome 4 : tumeurs",
+      "titre_court": "Laredo t4",
+      "langue": "fr",
+      "domaine_principal": "msk",
+      "domaines": [
+        "msk",
+        "neuro",
+        "thorax"
+      ],
+      "chapitres": 44,
+      "passages": 772,
+      "figures": 1485
+    },
+    {
+      "id": "laredo-t5",
+      "titre": "Imagerie rhumatologique et orthopédique, tome 5",
+      "titre_court": "Laredo t5",
+      "langue": "fr",
+      "domaine_principal": "msk",
+      "domaines": [
+        "msk",
+        "abdo-digestif",
+        "thorax",
+        "uro-genital"
+      ],
+      "chapitres": 30,
+      "passages": 655,
+      "figures": 704
+    },
+    {
+      "id": "top3-msk",
+      "titre": "Top 3 Differentials in Musculoskeletal Imaging: A Case Review",
+      "titre_court": "Top 3 MSK",
+      "langue": "en",
+      "domaine_principal": "msk",
+      "domaines": [
+        "msk",
+        "neuro",
+        "pediatrie",
+        "urgences"
+      ],
+      "chapitres": 10,
+      "passages": 208,
+      "figures": 146
     }
   ],
   "domaines": {
+    "abdo-digestif": {
+      "livres": [
+        "laredo-t5"
+      ],
+      "passages": 27,
+      "figures": 27,
+      "entites": 28
+    },
     "general": {
       "livres": [
         "cotten-t1"
       ],
       "passages": 97,
       "figures": 83,
-      "entites": 0
+      "entites": 41
     },
     "msk": {
       "livres": [
-        "cotten-t1"
+        "cotten-t1",
+        "cotten-t2",
+        "laredo-t4",
+        "laredo-t5",
+        "top3-msk"
       ],
-      "passages": 3353,
-      "figures": 2260,
-      "entites": 0
+      "passages": 6805,
+      "figures": 6101,
+      "entites": 1700
     },
     "neuro": {
       "livres": [
-        "cotten-t1"
+        "cotten-t1",
+        "cotten-t2",
+        "laredo-t4",
+        "top3-msk"
       ],
-      "passages": 90,
-      "figures": 65,
-      "entites": 0
+      "passages": 481,
+      "figures": 611,
+      "entites": 241
     },
     "pediatrie": {
       "livres": [
-        "cotten-t1"
+        "cotten-t1",
+        "cotten-t2",
+        "top3-msk"
       ],
-      "passages": 282,
-      "figures": 161,
-      "entites": 0
+      "passages": 437,
+      "figures": 301,
+      "entites": 339
     },
     "thorax": {
       "livres": [
-        "cotten-t1"
+        "cotten-t1",
+        "cotten-t2",
+        "laredo-t4",
+        "laredo-t5"
       ],
-      "passages": 124,
-      "figures": 195,
-      "entites": 0
+      "passages": 161,
+      "figures": 255,
+      "entites": 73
     },
     "urgences": {
       "livres": [
-        "cotten-t1"
+        "cotten-t1",
+        "top3-msk"
       ],
-      "passages": 691,
-      "figures": 536,
-      "entites": 0
+      "passages": 712,
+      "figures": 549,
+      "entites": 383
+    },
+    "uro-genital": {
+      "livres": [
+        "laredo-t5"
+      ],
+      "passages": 18,
+      "figures": 22,
+      "entites": 18
     }
   },
   "statistiques": {
-    "livres": 1,
-    "passages": 3353,
-    "figures": 2260,
-    "entites": 0
+    "livres": 5,
+    "passages": 6805,
+    "figures": 6101,
+    "entites": 1700
   }
 }

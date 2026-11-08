@@ -76,7 +76,14 @@
               "string",
               "null"
             ]
-          }
+          },
+          "legendes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verification": {}
         },
         "required": [
           "titre",
@@ -163,6 +170,28 @@
       "items": {
         "type": "string"
       }
+    },
+    "chapitre_libelle": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "introduction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sous_parties": {},
+    "ancien_id": {
+      "type": "string"
+    },
+    "genere_par": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

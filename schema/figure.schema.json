@@ -105,8 +105,12 @@
             "provenance": {
               "enum": [
                 "pdf",
+                "pdf-recadre",
                 "secours-base"
               ]
+            },
+            "essai_recadrage": {
+              "type": "number"
             }
           },
           "required": [
@@ -123,6 +127,9 @@
         "string",
         "null"
       ]
+    },
+    "ancien_id": {
+      "type": "string"
     }
   },
   "required": [
