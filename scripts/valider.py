@@ -176,7 +176,7 @@ def main():
             err(lieu, f"remplace_par vers une entité inexistante {e['remplace_par']}")
 
     # Index et manifeste
-    for f in sorted((RACINE / "index").rglob("*.json")):
+    for f in sorted(p for p in (RACINE / "index").rglob("*.json") if "artefact" not in p.parts):
         doc = json.loads(f.read_text())
         lieu = f.relative_to(RACINE)
         if f.name == "_meta.json":
