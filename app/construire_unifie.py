@@ -74,14 +74,57 @@ css_esp = '''
 .espaces button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 body.esp-outils header.top,body.esp-outils #app,body.esp-outils #fab{display:none!important}
 header.top{top:var(--esp-h,0px)}
+.domh{font-family:var(--display,Georgia,serif);font-size:20px;margin:18px 0 6px;grid-column:1/-1}
 '''
 L = rep(L, "</style>", css_esp + "</style>", L.count("</style>")) if False else L
 k = L.rindex("</style>", 0, L.index("<header") if "<header" in L else len(L))
 L = L[:k] + css_esp + L[k:]
 
+# ---------------------------------------------------------------- nouveaux ouvrages : un module par chapitre, leçon créée à la demande
+RAC = Path(__file__).resolve().parent.parent
+SUPP = [("cotten-t2", "cotten2", "d", "Cotten t2", "A. Cotten", "Imagerie musculosquelettique,", "Pathologies locorégionales"),
+        ("laredo-t5", "laredo5", "e", "Laredo t5", "J.-D. Laredo", "Imagerie rhumatologique et orthopédique,", "Tumeurs et pseudotumeurs des tissus mous")]
+livres_supp = []
+for lid, bid, pre, court, aut, sub, titre in SUPP:
+    Lj = json.loads((RAC / "livres" / lid / "livre.json").read_text())
+    mods = [{"id": f"{pre}{c['n']:02d}", "title": c["titre"], "chapter": f"Chapitre {c['n']}", "pages": "", "goals": [], "essentials": [],
+             "intro": "", "lesson": None, "cards": [], "quiz": [], "book": bid, "subs": [], "stub": True, "src": {"livre": lid, "ch": c["n"]}}
+            for c in Lj["chapitres"] if c["n"] > 0]
+    livres_supp.append({"id": bid, "title": titre, "short": court, "author": aut, "sub": sub, "domaine": "msk", "modules": mods})
+L = rep(L, "const BOOKS = DATA.books;", "DATA.books.forEach(b=>{ b.domaine=b.domaine||\"msk\"; });\nconst BOOKS = DATA.books.concat(" + json.dumps(livres_supp, ensure_ascii=False) + ");")
+L = rep(L, "function renderModule(app){", "function renderModule(app){ { const m0=modById[view.id]; if(m0&&m0.stub) return renderStub(app,m0); }")
+L = rep(L, "function loadBundle(mid){", "function loadBundle(mid){ if(String(mid).includes(\":\")){ if(!BUN[mid]) BUN[mid]=(window.OUTILS_IMG?window.OUTILS_IMG(mid):Promise.resolve(null)).then(u=>{ if(!u) throw 0; IMG[mid]=u; }).catch(()=>{ setTimeout(()=>{ delete BUN[mid]; },5000); }); return BUN[mid]; }")
+L = rep(L, "const cards=BOOKS.map(b=>{", "const cards=parDomaine(BOOKS,b=>{")
+L = rep(L, "</div></article>`;}).join(\"\");", "</div></article>`;});")
+
 pont = '''
 /* ---------- pont vers les outils (Notes, Cas, Bibliothèque) ---------- */
 window.LR = { etat: () => S, sauver: save, aller: go, startReview, startRapid, rqTodo, rqAll, dueMissed, dueCards, modById, BOOKS, ALL };
+const DOMAINES = { msk: "Musculosquelettique", neuro: "Neuroradiologie", "tete-cou": "Tête et cou", thorax: "Thorax", "cardio-vasc": "Cardiovasculaire", "abdo-digestif": "Abdomen et digestif", "uro-genital": "Urogénital", sein: "Sein", pediatrie: "Pédiatrie", interventionnel: "Radiologie interventionnelle" };
+function parDomaine(books, carte) {
+  const g = {}; for (const b of books) (g[b.domaine || "msk"] = g[b.domaine || "msk"] || []).push(b);
+  return Object.entries(g).map(([d, bs]) => `<h2 class="domh">${esc(DOMAINES[d] || d)}</h2>` + bs.map(carte).join("")).join("");
+}
+function renderStub(app, m) {
+  const bk = BOOK[m.book];
+  app.innerHTML = `<div class="crumbs"><button data-lib>Bibliothèque</button><span>›</span><button data-home>${esc(bk.short)}</button></div>
+  <section class="card" style="margin-top:16px"><div class="label">${esc(m.chapter)} · ${esc(bk.short)} · leçon à créer</div><h1>${esc(m.title)}</h1>
+  <p class="muted">Ce chapitre n'a pas encore de leçon. Claude peut la créer maintenant à partir des passages et des figures du livre, lus dans l'index : 6 à 8 sections illustrées, puis 10 questions. Compte une à trois minutes. La leçon est ensuite enregistrée dans l'application et disponible pour tous ses lecteurs.</p>
+  <div class="row"><button class="btn primary" id="genBtn">Créer la leçon</button></div><p class="muted" id="genEtape"></p></section>`;
+  app.querySelector("[data-lib]").onclick = () => go({ name: "lib" });
+  app.querySelector("[data-home]").onclick = () => go({ name: "home", book: m.book });
+  const btn = document.getElementById("genBtn"), et = document.getElementById("genEtape");
+  if (!window.OUTILS_GEN) { btn.disabled = true; et.textContent = "La création de leçon n'est pas disponible dans cette vue."; return; }
+  btn.onclick = async () => {
+    btn.disabled = true; btn.textContent = "Création en cours…";
+    try { const g = await window.OUTILS_GEN.genererModule(m.src, m.id, (t) => { et.textContent = t + "…"; }); Object.assign(m, g, { stub: false }); toast("Leçon créée."); render(); }
+    catch (er) { btn.disabled = false; btn.textContent = "Réessayer"; et.textContent = "Échec : " + ((er && (er.message || er.code)) || "erreur inconnue"); }
+  };
+}
+(function chargerGeneres(k) {
+  if (!window.OUTILS_GEN || !window.OUTILS_GEN.pret()) { if (k < 60) setTimeout(() => chargerGeneres(k + 1), 500); return; }
+  window.OUTILS_GEN.chargerModulesGeneres().then((lst) => { let n = 0; for (const g of lst) { const m = modById[g.id]; if (m && m.stub) { Object.assign(m, g, { stub: false }); n++; } } if (n) render(); });
+})(0);
 window.ESPACE = function (e) {
   const outils = e !== "apprentissage";
   document.body.classList.toggle("esp-outils", outils);

@@ -81,7 +81,7 @@ rep('''  renderHeader();
   $("desk").classList.toggle("detail", S.detail);''', '''  renderHeader();
   $("desk").classList.toggle("detail", S.detail);
   if (S.tab !== "notes") { leftSig = ""; rightSig = ""; renderBiblio(); return; }
-  biblioSig = ""; $("right").dataset.h = "";''')
+  biblioSig = ""; $("right").dataset.h = ""; $("left").dataset.h = "";''')
 
 # 11. recherche selon l'onglet
 rep('''$("q").oninput = () => { S.query = $("q").value;''', '''$("q").oninput = () => { if (S.tab === "biblio") { S.bq = $("q").value; render(); return; } S.query = $("q").value;''')
@@ -97,7 +97,7 @@ rep('''  loadCorpusMeta();
 # 13. nouveaux éléments et événements, styles
 css = (ICI / "styles.css").read_text(encoding="utf-8")
 rep("</style>\n\n<header", css + "\n</style>\n\n<header")
-vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8")
+vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8") + "\n" + (ICI / "modules_gen.js").read_text(encoding="utf-8")
 evts = '''
 document.addEventListener("click", (e) => {
   const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");

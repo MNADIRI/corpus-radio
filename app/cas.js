@@ -27,7 +27,8 @@ async function contexteLivre(f) {
 async function tirerCas(source) {
   if (!S.manifest) { toast("Le corpus n'est pas accessible : vérifie le connecteur GitHub."); return; }
   if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
-  S.cas = { mode: S.cas.mode, etat: "tirage" }; render();
+  S.cas = { mode: S.cas.mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
+  const etape = (t) => { S.cas.etape = t; render(); };
   try {
     let f = null;
     if (source && source.fid) f = (await figsParId([source.fid]))[0] || null;
@@ -35,12 +36,15 @@ async function tirerCas(source) {
       const b = livrePondere(); if (!b) break;
       const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
       const ch = chs[Math.floor(Math.random() * chs.length)];
+      etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
       const figs = (await figsChapitre(b, ch)).filter((g) => (g.il || g.iv) && (g.capo || g.cap).length > 60 && g.role !== "schema" && !(g.m || []).includes("schema"));
       if (figs.length) f = figs[Math.floor(Math.random() * figs.length)];
     }
     if (!f) throw { message: "Aucune figure exploitable dans ce domaine." };
-    const extraits = await contexteLivre(f);
-    const ctx = await S.sample.json(`Tu prépares un cas d'entraînement en radiologie pour un interne, comme à la vacation.
+    etape("Lecture des passages qui citent la figure");
+    const extraits = await contexteLivre(f).catch(() => []);
+    etape("Claude rédige le contexte clinique");
+    const ctx = await avecDelai(S.sample.json(`Tu prépares un cas d'entraînement en radiologie pour un interne, comme à la vacation.
 À partir de la légende d'une figure et des extraits du livre qui la citent, rédige en français :
 - "contexte" : la présentation clinique (âge, sexe, symptômes, antécédents utiles) en 1 à 3 phrases, en reprenant les éléments cliniques des extraits quand ils existent ;
 - "examen" : la modalité, la région et l'incidence ou la séquence montrées.
@@ -48,10 +52,18 @@ Ne révèle NI le diagnostic, NI la sémiologie décrite dans la légende. Déve
 Réponds uniquement par {"contexte":"…","examen":"…"}.
 
 Légende (${bookShort(f.b)}) : ${f.capo || f.cap}
-${extraits.map((x) => `Extrait (${x.src}) : ${x.t}`).join("\n")}`, { modelTier: "quick", cache: false });
+${extraits.map((x) => `Extrait (${x.src}) : ${x.t}`).join("\n")}`, { modelTier: "quick", cache: false }), 60000);
     S.cas = { mode: S.cas.mode, etat: "question", f, extraits, ctx: ctx || {}, source: source && source.origine };
-  } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: (e && (e.message || e.code)) || "erreur" }; }
+  } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: messageErreur(e) }; }
   render();
+}
+function messageErreur(e) {
+  const c = e && e.code;
+  if (c === "timeout") return "Pas de réponse en temps voulu (GitHub ou Claude).";
+  if (c === "not_granted") return "L'accès a été refusé pour cette page : autorise le connecteur GitHub et Claude.";
+  if (c === "server_not_connected" || c === "server_not_found") return "Le connecteur GitHub n'est pas connecté sur ce compte.";
+  if (c === "rate_limited") return "Trop de demandes d'un coup : réessaie dans un instant.";
+  return (e && (e.message || c)) || "Erreur inconnue.";
 }
 async function corrigerCas() {
   const c = S.cas, rep = (casRoot().querySelector("#casRep")?.value || "").trim();
@@ -147,17 +159,19 @@ function casDroite() {
       ${carteRev("QCM sur mes notes", nf, "Six QCM écrits par Claude à partir de tes fiches, avec leurs références.", 'data-rev="qcm"')}
       ${carteRev("Cas sur mes notes", nf, "Une figure d'une de tes fiches, à décrire et diagnostiquer.", 'data-rev="casnotes"')}
       ${carteRev("Cas aléatoires ratés", rates, "Les cas notés moins de 6 / 10, à refaire.", 'data-rev="casrates"')}
+      ${carteRev("QCM d'images Top 3", S.bookById.has("top3-msk") ? 5 : 0, "Cinq cas de Top 3 Differentials en QCM : image, énoncé, quatre diagnostics.", 'data-rev="top3"')}
       ${carteRev("Erreurs de QCM sur mes notes", S.casHist.qcm.length, "Les QCM générés que tu as ratés.", 'data-rev="qcmerr"')}
     </div>`;
   }
   if (c.etat === "vide") return `<div class="bempty"><h2>Cas aléatoire</h2><p>Une image tirée au hasard dans les livres${S.dom !== "tous" ? ` du domaine ${esc(libDomaine(S.dom))}` : ""}, avec son contexte clinique. Décris la sémiologie, donne ton diagnostic, puis Claude te corrige d'après la légende du livre.</p><button class="btn primary" data-tirer="1">Tirer un cas</button></div>`;
-  if (c.etat === "tirage") return `<p class="hint">Tirage d'un cas dans les livres…</p>`;
+  if (c.etat === "tirage") return `<div class="bempty"><h2>Préparation du cas…</h2><p class="hint">${esc(c.etape || "")}</p></div>`;
   if (c.etat === "qcm-gen") return `<p class="hint">Claude écrit des QCM à partir de tes fiches…</p>`;
   if (c.etat === "erreur") return `<div class="alert"><b>Cas indisponible</b><span>${esc(String(c.err))} <button class="btn small" data-tirer="1">Réessayer</button></span></div>`;
   if (c.etat === "qcm") {
     const q = c.items[c.pos];
     if (!q) return `<div class="bempty"><h2>Série terminée</h2><p>${c.score} / ${c.items.length} bonnes réponses. Les erreurs reviendront dans « Erreurs de QCM sur mes notes ».</p><button class="btn primary" data-casmode="revision">Retour à la révision</button></div>`;
     return `<span class="label">QCM ${c.pos + 1} / ${c.items.length}${q.slug ? ` · fiche ${esc((S.fiches.get(q.slug) || {}).entite || q.slug)}` : ""}</span>
+      ${q.fid ? `<figure class="casfig"><img data-img="${esc(q.fid)}" data-full="1" alt="Image du cas"></figure>` : ""}
       <h2 class="btitle" style="font-size:20px">${esc(q.question)}</h2>
       <div class="qopts">${q.options.map((o, i) => `<button class="qopt${c.choix == null ? "" : i === q.reponse ? " ok" : i === c.choix ? " ko" : ""}" data-qrep="${i}" ${c.choix == null ? "" : "disabled"}>${esc(o)}</button>`).join("")}</div>
       ${c.choix != null ? `<p class="expl">${esc(q.explication || "")}</p><button class="btn primary" data-qnext="1">${c.pos + 1 < c.items.length ? "Question suivante" : "Terminer"}</button>` : ""}`;
@@ -194,6 +208,7 @@ function clicCas(t) {
     else if (d.rev === "qcmerr") qcmErreurs();
     else if (d.rev === "casnotes") casSurNotes();
     else if (d.rev === "casrates") casRates();
+    else if (d.rev === "top3") qcmTop3();
     return true;
   }
   return false;
