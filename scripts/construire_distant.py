@@ -115,10 +115,28 @@ def main():
         "entites": {"docs": docs_ent}, "mots_vides": sorted(MOTS_VIDES),
         "domaines": tax["domaines"], "regions": tax["regions"], "modalites": tax["modalites"], "categories": tax["categories_entite"],
     }, compact=True)
+    construire_citations()
     fichiers = [f for f in SORTIE.rglob("*.json")]
     print(f"index/artefact : {len(fichiers)} fichiers, {sum(f.stat().st_size for f in fichiers) / 1e6:.1f} Mo, "
           f"plus gros {max(f.stat().st_size for f in fichiers) / 1e3:.0f} Ko · seaux ix {n_ix}, lx {n_lx}")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and "--citations" not in __import__("sys").argv:
     main()
+
+
+def construire_citations():
+    """index/artefact/cp/<livre>.json : figure → passages qui la citent (identifiants seulement)."""
+    for fl in sorted((RACINE / "livres").glob("*/livre.json")):
+        lid = fl.parent.name
+        cp = defaultdict(list)
+        for f in sorted((fl.parent / "passages").glob("*.jsonl")):
+            for p in lire_jsonl(f):
+                for fid in p["figures_citees"]:
+                    if len(cp[fid]) < 4:
+                        cp[fid].append(p["id"])
+        ecrire_json(SORTIE / "cp" / f"{lid}.json", cp, compact=True)
+
+
+if __name__ == "__main__" and "--citations" in __import__("sys").argv:
+    construire_citations()
