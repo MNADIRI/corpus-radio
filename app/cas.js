@@ -4,7 +4,7 @@ S.casHist = { hist: [], qcm: [] };
 const POIDS_TOP3 = 3;   // Top 3 MSK est une banque de cas : tiré plus souvent
 async function chargerCasHist() {
   if (!S.uid || !S.db) return;
-  try { const d = await S.db.doc(`data/users/${S.uid}/cas`).get(); if (d.exists) S.casHist = { hist: [], qcm: [], ...d.data() }; } catch {}
+  try { const d = await S.db.doc(`data/users/${S.uid}/cas`).get(); if (d.exists) S.casHist = JSON.parse(JSON.stringify({ hist: [], qcm: [], ...d.data() })); } catch {}
 }
 function sauverCasHist() {
   if (!S.uid || !S.db) return;
@@ -45,28 +45,31 @@ async function panneauxDe(f) {
   const g = groupesFigures(tous.filter((x) => x.fig === f.fig));
   return g[0] || null;
 }
-async function tirerCas(source) {
-  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
-  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
-  S.cas = { mode: S.cas.mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
-  const etape = (t) => { S.cas.etape = t; render(); };
-  try {
-    let panels = null;
-    if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
-    for (let essai = 0; !panels && essai < 10; essai++) {
-      const b = livrePondere(); if (!b) break;
-      const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
-      const ch = chs[Math.floor(Math.random() * chs.length)];
-      etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
-      const gs = groupesFigures(await figsChapitre(b, ch));
-      if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
-    }
-    if (!panels) throw { message: "Aucune figure complète et exploitable trouvée dans ce domaine." };
-    const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
-    etape("Lecture des passages qui citent la figure");
-    const extraits = await contexteLivre(f).catch(() => []);
-    etape("Claude construit le cas");
-    const r = await avecDelai(S.sample.json(`Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
+async function preparerCas(source, livreId, etape) {
+  etape = etape || (() => {});
+  let panels = null;
+  if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
+  for (let essai = 0; !panels && essai < 10; essai++) {
+    const b = livreId ? S.bookById.get(livreId) : livrePondere(); if (!b) break;
+    const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
+    const ch = chs[Math.floor(Math.random() * chs.length)];
+    etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
+    const gs = groupesFigures(await figsChapitre(b, ch));
+    if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
+  }
+  if (!panels) throw { message: "Aucune figure complète et exploitable trouvée." };
+  const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
+  etape("Lecture des passages qui citent la figure");
+  const extraits = await contexteLivre(f).catch(() => []);
+  etape("Claude construit le cas");
+  const r0 = await avecDelai(S.sample.json(PROMPT_CAS(f, lettres, extraits), { modelTier: "default", cache: false }), 90000);
+  const r = JSON.parse(JSON.stringify(r0 || {}));
+  const desc = new Map((r.images || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
+  const images = panels.map((p) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
+  return { f, panels: panels.map((p) => ({ id: p.id, pa: p.pa })), images, extraits, ctx: r, source: source && source.origine, livre: f.b, prepare: Date.now() };
+}
+function PROMPT_CAS(f, lettres, extraits) {
+  return `Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
 
 DONNÉES DU LIVRE (${bookShort(f.b)})
 Légende de la figure : ${f.capo || f.cap}
@@ -81,12 +84,52 @@ CONSIGNES
 - "question" : la consigne posée à l'interne, adaptée au cas.
 - Français, chaque acronyme développé entre parenthèses à sa première occurrence.
 
-Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`, { modelTier: "default", cache: false }), 90000);
-    const desc = new Map(((r && r.images) || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
-    const images = panels.map((p, i) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
-    S.cas = { mode: S.cas.mode, etat: "question", f, panels, images, extraits, ctx: r || {}, source: source && source.origine };
-  } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: messageErreur(e) }; }
-  render();
+Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`;
+}
+/* Réserve de cas prêts, par collection (Mélange ou un ouvrage), conservée entre les sessions */
+S.reserve = { items: [], col: "melange", charge: false };
+const RESERVE_PAR_COL = 3;
+let reserveEnCours = false;
+async function chargerReserve() {
+  if (!S.uid || !S.db) return;
+  try { const d = await S.db.doc(`data/users/${S.uid}/casprets`).get(); if (d.exists) S.reserve.items = JSON.parse(JSON.stringify(d.data().items || [])); } catch {}
+  S.reserve.charge = true;
+}
+function sauverReserve() {
+  if (!S.uid || !S.db) return;
+  S.reserve.items = S.reserve.items.slice(-18);
+  S.db.doc(`data/users/${S.uid}/casprets`).set({ items: JSON.parse(JSON.stringify(S.reserve.items)) }).catch(() => {});
+}
+const dansCol = (it, col) => col === "melange" || it.livre === col;
+function nbPrets(col) { return S.reserve.items.filter((it) => dansCol(it, col)).length; }
+async function remplirReserve() {
+  if (reserveEnCours || !S.manifest || !S.sample || !S.reserve.charge) return;
+  reserveEnCours = true;
+  try {
+    for (let n = 0; n < 4; n++) {
+      const col = S.reserve.col;
+      if (nbPrets(col) >= RESERVE_PAR_COL && nbPrets("melange") >= RESERVE_PAR_COL) break;
+      const cible = nbPrets(col) < RESERVE_PAR_COL ? col : "melange";
+      const it = await preparerCas(null, cible === "melange" ? null : cible).catch(() => null);
+      if (!it) break;
+      S.reserve.items.push(it); sauverReserve(); render();
+    }
+  } finally { reserveEnCours = false; }
+}
+async function tirerCas(source) {
+  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
+  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
+  const mode = S.cas.mode;
+  if (!source) {
+    const k = S.reserve.items.findIndex((it) => dansCol(it, S.reserve.col));
+    if (k >= 0) { const it = S.reserve.items.splice(k, 1)[0]; sauverReserve(); S.cas = { mode, etat: "question", ...it }; render(); remplirReserve(); return; }
+  }
+  S.cas = { mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
+  try {
+    const it = await preparerCas(source, source ? null : (S.reserve.col === "melange" ? null : S.reserve.col), (t) => { if (S.cas.etat === "tirage") { S.cas.etape = t; render(); } });
+    S.cas = { mode, etat: "question", ...it };
+  } catch (e) { S.cas = { mode, etat: "erreur", err: messageErreur(e) }; }
+  render(); remplirReserve();
 }
 function messageErreur(e) {
   const c = e && e.code;
@@ -101,7 +144,7 @@ async function corrigerCas() {
   if (rep.length < 10) { toast("Décris la sémiologie et donne ton diagnostic avant de soumettre."); return; }
   c.rep = rep; c.etat = "correction"; render();
   try {
-    const r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
+    let r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
 
 CAS
 Contexte : ${c.ctx.contexte || ""}
@@ -122,7 +165,8 @@ CONSIGNES
 - N'invente aucune donnée absente de la référence. Français, chaque acronyme développé entre parenthèses à sa première occurrence, phrases courtes.
 
 Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
-    const B = (r && r.bareme) || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
+    r = JSON.parse(JSON.stringify(r || {}));
+    const B = r.bareme || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
     r.bareme = { semiologie: borne(B.semiologie, 4), diagnostic: borne(B.diagnostic, 4), differentiel: borne(B.differentiel, 2) };
     r.note = Math.round((r.bareme.semiologie + r.bareme.diagnostic + r.bareme.differentiel) * 10) / 10;
     c.corr = r; c.etat = "corrige";
@@ -133,23 +177,17 @@ Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"diffe
 }
 
 /* QCM générés sur les entités des notes */
-async function qcmNotes() {
+async function genQcmNotes() {
   const fs = [...S.fiches.values()].filter((f) => f.kind === "corpus" && f.fiche);
-  if (!fs.length) { toast("Aucune fiche issue du corpus pour l'instant : crée d'abord des notes."); return; }
-  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
-  S.cas = { mode: "revision", etat: "qcm-gen" }; render();
+  if (!fs.length || !S.sample) return [];
   const choix = fs.sort(() => Math.random() - 0.5).slice(0, 3);
-  try {
-    const r = await S.sample.json(`Tu écris des QCM de radiologie pour un interne, en français, à partir de fiches de révision sourcées.
+    const r0 = await avecDelai(S.sample.json(`Tu écris des QCM de radiologie pour un interne, en français, à partir de fiches de révision sourcées.
 Écris 6 QCM au total, répartis sur les fiches. Chaque QCM : un énoncé clinique ou sémiologique court, 4 propositions plausibles, une seule bonne réponse, une explication de 2 à 3 phrases qui cite la ou les références de la fiche ([P1], [F2]…). Développe chaque acronyme entre parenthèses à sa première occurrence. N'utilise que le contenu des fiches.
 Réponds uniquement par {"qcm":[{"slug":"…","question":"…","options":["…","…","…","…"],"reponse":0,"explication":"…"}]}
 
-${choix.map((f) => `### Fiche ${f.slug} — ${f.entite}\n${flatLines(f.fiche).map((l) => `- ${l.t || l.text || ""} ${(l.refs || []).map((x) => "[" + x + "]").join("")}`).join("\n").slice(0, 3500)}`).join("\n\n")}`, { modelTier: "default", cache: false });
-    const q = (r?.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2);
-    if (!q.length) throw { message: "Claude n'a pas renvoyé de QCM exploitable." };
-    S.cas = { mode: "revision", etat: "qcm", items: q, pos: 0, choix: null, score: 0 };
-  } catch (e) { S.cas = { mode: "revision", etat: "erreur", err: (e && (e.message || e.code)) || "erreur" }; }
-  render();
+${choix.map((f) => `### Fiche ${f.slug} — ${f.entite}\n${flatLines(f.fiche).map((l) => `- ${l.t || l.text || ""} ${(l.refs || []).map((x) => "[" + x + "]").join("")}`).join("\n").slice(0, 3500)}`).join("\n\n")}`, { modelTier: "default", cache: false }), 120000);
+  const r = JSON.parse(JSON.stringify(r0 || {}));
+  return (r.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2 && Number.isInteger(x.reponse));
 }
 function repondreQcm(i) {
   const c = S.cas, q = c.items[c.pos]; if (c.choix != null) return;
@@ -198,25 +236,13 @@ function casDroite() {
   const rates0 = S.casHist.hist.filter((h) => h.note < 6).length, moy0 = S.casHist.hist.slice(-20);
   const barre = `<div class="cas-top"><div class="seg" role="tablist"><button role="tab" aria-selected="${c.mode === "alea"}" data-casmode="alea">Aléatoire</button><button role="tab" aria-selected="${c.mode === "revision"}" data-casmode="revision">Révision</button></div>
     <span class="hint">${esc(libDomaine(S.dom))}${moy0.length ? ` · moyenne ${(moy0.reduce((a, h) => a + h.note, 0) / moy0.length).toFixed(1)} / 10 sur les ${moy0.length} derniers cas` : ""}${rates0 ? ` · ${rates0} à refaire` : ""}</span></div>`;
-  return barre + casContenu();
+  const cols = c.mode === "alea" ? `<div class="chips cols">${[["melange", "Mélange"], ...livresVisibles().map((b) => [b.id, b.court])].map(([id, lib]) => `<button class="chip${S.reserve.col === id ? " on" : ""}" data-col="${esc(id)}">${esc(lib)}<span class="nb">${nbPrets(id)}</span></button>`).join("")}</div>` : "";
+  return barre + cols + casContenu();
 }
 function casContenu() {
   const c = S.cas;
+  if (c.mode === "revision" && !c.f) return revContenu();
   if (!S.owner && !S.manifest && c.mode === "alea") return `<div class="bempty"><h2>Cas aléatoires</h2><p>Les cas sont tirés des livres de l'index, lus dans le dépôt GitHub corpus-radio. Ce compte n'y a pas accès : ajoute le connecteur GitHub dans claude.ai.</p></div>`;
-  if (c.mode === "revision" && !["qcm", "qcm-gen", "question", "correction", "corrige", "tirage", "erreur"].includes(c.etat)) {
-    const LR = window.LR, m = LR ? LR.dueMissed(null).length : 0, r = LR ? LR.rqTodo().length : 0;
-    const rates = S.casHist.hist.filter((h) => h.note < 6).length, nf = [...S.fiches.values()].filter((f) => f.kind === "corpus").length;
-    return `<div class="bempty"><h2>Révision</h2><p>Tout ce qui est à revoir, au même endroit : les erreurs des QCM et des défis du jour d'Apprentissage, les cas ratés, et des QCM et cas créés par Claude sur les entités de tes notes.</p></div>
-    <div class="revgrid">
-      ${carteRev("Erreurs de QCM et de défis", m, "Les questions ratées d'Apprentissage, puis les cas ratés en question ouverte.", 'data-rev="erreurs"', true)}
-      ${carteRev("Cas ouverts à reprendre", r, "Image seule et « Quel est votre diagnostic ? », tous modules mélangés.", 'data-rev="rapide"')}
-      ${carteRev("QCM sur mes notes", nf, "Six QCM écrits par Claude à partir de tes fiches, avec leurs références.", 'data-rev="qcm"')}
-      ${carteRev("Cas sur mes notes", nf, "Une figure d'une de tes fiches, à décrire et diagnostiquer.", 'data-rev="casnotes"')}
-      ${carteRev("Cas aléatoires ratés", rates, "Les cas notés moins de 6 / 10, à refaire.", 'data-rev="casrates"')}
-      ${carteRev("QCM d'images Top 3", S.bookById.has("top3-msk") ? 5 : 0, "Cinq cas de Top 3 Differentials en QCM : image, énoncé, quatre diagnostics.", 'data-rev="top3"')}
-      ${carteRev("Erreurs de QCM sur mes notes", S.casHist.qcm.length, "Les QCM générés que tu as ratés.", 'data-rev="qcmerr"')}
-    </div>`;
-  }
   if (c.etat === "vide") return `<div class="bempty"><h2>Cas aléatoire</h2><p>Une image tirée au hasard dans les livres${S.dom !== "tous" ? ` du domaine ${esc(libDomaine(S.dom))}` : ""}, avec son contexte clinique. Décris la sémiologie, donne ton diagnostic, puis Claude te corrige d'après la légende du livre.</p><button class="btn primary" data-tirer="1">Tirer un cas</button></div>`;
   if (c.etat === "tirage") return `<div class="bempty"><h2>Préparation du cas…</h2><p class="hint">${esc(c.etape || "")}</p></div>`;
   if (c.etat === "qcm-gen") return `<p class="hint">Claude écrit des QCM à partir de tes fiches…</p>`;
@@ -255,23 +281,18 @@ function casContenu() {
       ${r.a_retenir ? `<div class="fb cle"><h3>À retenir</h3><p>${esc(r.a_retenir)}</p></div>` : ""}
       <details class="fb src"><summary>Ta réponse et la source du livre</summary><p><b>Ta réponse :</b> ${esc(c.rep)}</p><p><b>Légende (${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${f.pg ? `, p. ${esc(f.pg)}` : ""}) :</b> ${esc(f.capo || f.cap)}</p>${(c.extraits || []).map((x) => `<p class="hint">${esc(x.src)}</p>`).join("")}</details>
     </section>
-    <div class="row"><button class="btn primary" data-tirer="1">Cas suivant</button>${c.mode === "revision" ? `<button class="btn small" data-casmode="revision">Retour à la révision</button>` : ""}</div>`;
+    <div class="row"><button class="btn primary" data-tirer="1">${c.mode === "revision" ? "Élément suivant" : "Cas suivant"}</button></div>`;
 }
 function clicCas(t) {
   const d = t.dataset;
-  if (d.casmode) { S.cas = { mode: d.casmode, etat: "vide" }; render(); return true; }
-  if (d.tirer) { tirerCas(S.cas.mode === "revision" && S.cas.f && S.cas.source ? null : null); return true; }
+  if (d.casmode) { if (d.casmode === "revision" && (!S.rev.file.length || S.rev.pos >= S.rev.file.length)) S.rev.construit = false; S.cas = { mode: d.casmode, etat: "vide" }; if (d.casmode === "alea") tirerCas(); else render(); return true; }
+  if (d.tirer) { if (S.cas.mode === "revision") revSuivant(); else tirerCas(); return true; }
+  if (d.col) { S.reserve.col = d.col; S.cas = { mode: "alea", etat: "vide" }; tirerCas(); remplirReserve(); return true; }
+  if (d.rrep != null && t.matches("[data-rrep]")) { revRepondre(+d.rrep); return true; }
+  if (d.rsuiv) { revSuivant(); return true; }
+  if (d.revnouv) { S.rev.construit = false; S.cas = { mode: "revision", etat: "vide" }; render(); return true; }
   if (d.corriger) { corrigerCas(); return true; }
   if (d.qrep != null && d.qrep !== undefined && t.matches("[data-qrep]")) { repondreQcm(+d.qrep); return true; }
   if (d.qnext) { S.cas.pos++; S.cas.choix = null; render(); return true; }
-  if (d.rev) {
-    if (d.rev === "erreurs" || d.rev === "rapide") { if (window.ESPACE) window.ESPACE("apprentissage"); if (window.LR) (d.rev === "erreurs" ? window.LR.startReview(null) : window.LR.startRapid(false)); }
-    else if (d.rev === "qcm") qcmNotes();
-    else if (d.rev === "qcmerr") qcmErreurs();
-    else if (d.rev === "casnotes") casSurNotes();
-    else if (d.rev === "casrates") casRates();
-    else if (d.rev === "top3") qcmTop3();
-    return true;
-  }
   return false;
 }

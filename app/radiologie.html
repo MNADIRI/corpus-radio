@@ -326,6 +326,11 @@ ol.steps li.fail::before{border-color:var(--bad);background:var(--bad)}
 .bempty .btn,.bempty button{justify-self:start}
 .revgrid .btn{justify-self:start}
 
+.cols{margin:2px 0 12px}.chip .nb{display:inline-grid;place-items:center;min-width:1.4em;height:1.4em;margin-left:6px;padding:0 4px;border-radius:999px;background:var(--sunk);font-size:11px;font-variant-numeric:tabular-nums}
+.chip.on .nb{background:var(--accent);color:var(--surface)}
+.revhead{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;margin-bottom:10px}
+.revbar{grid-column:1/-1;height:4px;border-radius:2px;background:var(--sunk);overflow:hidden}.revbar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+
 </style>
 
 <header class="top" id="top"><div class="topin">
@@ -1362,6 +1367,7 @@ function renderBiblio() {
   if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); }
 }
 async function chargerImagesVisibles() {
+  for (const img of $("right").querySelectorAll("img[data-lrimg]")) { if (img.src || !window.LR) continue; window.LR.image(img.dataset.lrimg).then((s) => { if (s) img.src = s; }).catch(() => {}); }
   for (const img of $("right").querySelectorAll("img[data-img]")) {
     if (img.src) continue;
     figImage(img.dataset.img, img.dataset.slug || null, !!img.dataset.full).then((src) => { if (src) img.src = src; }).catch(() => {});
@@ -1402,7 +1408,7 @@ S.casHist = { hist: [], qcm: [] };
 const POIDS_TOP3 = 3;   // Top 3 MSK est une banque de cas : tiré plus souvent
 async function chargerCasHist() {
   if (!S.uid || !S.db) return;
-  try { const d = await S.db.doc(`data/users/${S.uid}/cas`).get(); if (d.exists) S.casHist = { hist: [], qcm: [], ...d.data() }; } catch {}
+  try { const d = await S.db.doc(`data/users/${S.uid}/cas`).get(); if (d.exists) S.casHist = JSON.parse(JSON.stringify({ hist: [], qcm: [], ...d.data() })); } catch {}
 }
 function sauverCasHist() {
   if (!S.uid || !S.db) return;
@@ -1443,28 +1449,31 @@ async function panneauxDe(f) {
   const g = groupesFigures(tous.filter((x) => x.fig === f.fig));
   return g[0] || null;
 }
-async function tirerCas(source) {
-  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
-  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
-  S.cas = { mode: S.cas.mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
-  const etape = (t) => { S.cas.etape = t; render(); };
-  try {
-    let panels = null;
-    if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
-    for (let essai = 0; !panels && essai < 10; essai++) {
-      const b = livrePondere(); if (!b) break;
-      const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
-      const ch = chs[Math.floor(Math.random() * chs.length)];
-      etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
-      const gs = groupesFigures(await figsChapitre(b, ch));
-      if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
-    }
-    if (!panels) throw { message: "Aucune figure complète et exploitable trouvée dans ce domaine." };
-    const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
-    etape("Lecture des passages qui citent la figure");
-    const extraits = await contexteLivre(f).catch(() => []);
-    etape("Claude construit le cas");
-    const r = await avecDelai(S.sample.json(`Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
+async function preparerCas(source, livreId, etape) {
+  etape = etape || (() => {});
+  let panels = null;
+  if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
+  for (let essai = 0; !panels && essai < 10; essai++) {
+    const b = livreId ? S.bookById.get(livreId) : livrePondere(); if (!b) break;
+    const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
+    const ch = chs[Math.floor(Math.random() * chs.length)];
+    etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
+    const gs = groupesFigures(await figsChapitre(b, ch));
+    if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
+  }
+  if (!panels) throw { message: "Aucune figure complète et exploitable trouvée." };
+  const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
+  etape("Lecture des passages qui citent la figure");
+  const extraits = await contexteLivre(f).catch(() => []);
+  etape("Claude construit le cas");
+  const r0 = await avecDelai(S.sample.json(PROMPT_CAS(f, lettres, extraits), { modelTier: "default", cache: false }), 90000);
+  const r = JSON.parse(JSON.stringify(r0 || {}));
+  const desc = new Map((r.images || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
+  const images = panels.map((p) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
+  return { f, panels: panels.map((p) => ({ id: p.id, pa: p.pa })), images, extraits, ctx: r, source: source && source.origine, livre: f.b, prepare: Date.now() };
+}
+function PROMPT_CAS(f, lettres, extraits) {
+  return `Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
 
 DONNÉES DU LIVRE (${bookShort(f.b)})
 Légende de la figure : ${f.capo || f.cap}
@@ -1479,12 +1488,52 @@ CONSIGNES
 - "question" : la consigne posée à l'interne, adaptée au cas.
 - Français, chaque acronyme développé entre parenthèses à sa première occurrence.
 
-Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`, { modelTier: "default", cache: false }), 90000);
-    const desc = new Map(((r && r.images) || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
-    const images = panels.map((p, i) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
-    S.cas = { mode: S.cas.mode, etat: "question", f, panels, images, extraits, ctx: r || {}, source: source && source.origine };
-  } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: messageErreur(e) }; }
-  render();
+Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`;
+}
+/* Réserve de cas prêts, par collection (Mélange ou un ouvrage), conservée entre les sessions */
+S.reserve = { items: [], col: "melange", charge: false };
+const RESERVE_PAR_COL = 3;
+let reserveEnCours = false;
+async function chargerReserve() {
+  if (!S.uid || !S.db) return;
+  try { const d = await S.db.doc(`data/users/${S.uid}/casprets`).get(); if (d.exists) S.reserve.items = JSON.parse(JSON.stringify(d.data().items || [])); } catch {}
+  S.reserve.charge = true;
+}
+function sauverReserve() {
+  if (!S.uid || !S.db) return;
+  S.reserve.items = S.reserve.items.slice(-18);
+  S.db.doc(`data/users/${S.uid}/casprets`).set({ items: JSON.parse(JSON.stringify(S.reserve.items)) }).catch(() => {});
+}
+const dansCol = (it, col) => col === "melange" || it.livre === col;
+function nbPrets(col) { return S.reserve.items.filter((it) => dansCol(it, col)).length; }
+async function remplirReserve() {
+  if (reserveEnCours || !S.manifest || !S.sample || !S.reserve.charge) return;
+  reserveEnCours = true;
+  try {
+    for (let n = 0; n < 4; n++) {
+      const col = S.reserve.col;
+      if (nbPrets(col) >= RESERVE_PAR_COL && nbPrets("melange") >= RESERVE_PAR_COL) break;
+      const cible = nbPrets(col) < RESERVE_PAR_COL ? col : "melange";
+      const it = await preparerCas(null, cible === "melange" ? null : cible).catch(() => null);
+      if (!it) break;
+      S.reserve.items.push(it); sauverReserve(); render();
+    }
+  } finally { reserveEnCours = false; }
+}
+async function tirerCas(source) {
+  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
+  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
+  const mode = S.cas.mode;
+  if (!source) {
+    const k = S.reserve.items.findIndex((it) => dansCol(it, S.reserve.col));
+    if (k >= 0) { const it = S.reserve.items.splice(k, 1)[0]; sauverReserve(); S.cas = { mode, etat: "question", ...it }; render(); remplirReserve(); return; }
+  }
+  S.cas = { mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
+  try {
+    const it = await preparerCas(source, source ? null : (S.reserve.col === "melange" ? null : S.reserve.col), (t) => { if (S.cas.etat === "tirage") { S.cas.etape = t; render(); } });
+    S.cas = { mode, etat: "question", ...it };
+  } catch (e) { S.cas = { mode, etat: "erreur", err: messageErreur(e) }; }
+  render(); remplirReserve();
 }
 function messageErreur(e) {
   const c = e && e.code;
@@ -1499,7 +1548,7 @@ async function corrigerCas() {
   if (rep.length < 10) { toast("Décris la sémiologie et donne ton diagnostic avant de soumettre."); return; }
   c.rep = rep; c.etat = "correction"; render();
   try {
-    const r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
+    let r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
 
 CAS
 Contexte : ${c.ctx.contexte || ""}
@@ -1520,7 +1569,8 @@ CONSIGNES
 - N'invente aucune donnée absente de la référence. Français, chaque acronyme développé entre parenthèses à sa première occurrence, phrases courtes.
 
 Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
-    const B = (r && r.bareme) || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
+    r = JSON.parse(JSON.stringify(r || {}));
+    const B = r.bareme || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
     r.bareme = { semiologie: borne(B.semiologie, 4), diagnostic: borne(B.diagnostic, 4), differentiel: borne(B.differentiel, 2) };
     r.note = Math.round((r.bareme.semiologie + r.bareme.diagnostic + r.bareme.differentiel) * 10) / 10;
     c.corr = r; c.etat = "corrige";
@@ -1531,23 +1581,17 @@ Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"diffe
 }
 
 /* QCM générés sur les entités des notes */
-async function qcmNotes() {
+async function genQcmNotes() {
   const fs = [...S.fiches.values()].filter((f) => f.kind === "corpus" && f.fiche);
-  if (!fs.length) { toast("Aucune fiche issue du corpus pour l'instant : crée d'abord des notes."); return; }
-  if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
-  S.cas = { mode: "revision", etat: "qcm-gen" }; render();
+  if (!fs.length || !S.sample) return [];
   const choix = fs.sort(() => Math.random() - 0.5).slice(0, 3);
-  try {
-    const r = await S.sample.json(`Tu écris des QCM de radiologie pour un interne, en français, à partir de fiches de révision sourcées.
+    const r0 = await avecDelai(S.sample.json(`Tu écris des QCM de radiologie pour un interne, en français, à partir de fiches de révision sourcées.
 Écris 6 QCM au total, répartis sur les fiches. Chaque QCM : un énoncé clinique ou sémiologique court, 4 propositions plausibles, une seule bonne réponse, une explication de 2 à 3 phrases qui cite la ou les références de la fiche ([P1], [F2]…). Développe chaque acronyme entre parenthèses à sa première occurrence. N'utilise que le contenu des fiches.
 Réponds uniquement par {"qcm":[{"slug":"…","question":"…","options":["…","…","…","…"],"reponse":0,"explication":"…"}]}
 
-${choix.map((f) => `### Fiche ${f.slug} — ${f.entite}\n${flatLines(f.fiche).map((l) => `- ${l.t || l.text || ""} ${(l.refs || []).map((x) => "[" + x + "]").join("")}`).join("\n").slice(0, 3500)}`).join("\n\n")}`, { modelTier: "default", cache: false });
-    const q = (r?.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2);
-    if (!q.length) throw { message: "Claude n'a pas renvoyé de QCM exploitable." };
-    S.cas = { mode: "revision", etat: "qcm", items: q, pos: 0, choix: null, score: 0 };
-  } catch (e) { S.cas = { mode: "revision", etat: "erreur", err: (e && (e.message || e.code)) || "erreur" }; }
-  render();
+${choix.map((f) => `### Fiche ${f.slug} — ${f.entite}\n${flatLines(f.fiche).map((l) => `- ${l.t || l.text || ""} ${(l.refs || []).map((x) => "[" + x + "]").join("")}`).join("\n").slice(0, 3500)}`).join("\n\n")}`, { modelTier: "default", cache: false }), 120000);
+  const r = JSON.parse(JSON.stringify(r0 || {}));
+  return (r.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2 && Number.isInteger(x.reponse));
 }
 function repondreQcm(i) {
   const c = S.cas, q = c.items[c.pos]; if (c.choix != null) return;
@@ -1596,25 +1640,13 @@ function casDroite() {
   const rates0 = S.casHist.hist.filter((h) => h.note < 6).length, moy0 = S.casHist.hist.slice(-20);
   const barre = `<div class="cas-top"><div class="seg" role="tablist"><button role="tab" aria-selected="${c.mode === "alea"}" data-casmode="alea">Aléatoire</button><button role="tab" aria-selected="${c.mode === "revision"}" data-casmode="revision">Révision</button></div>
     <span class="hint">${esc(libDomaine(S.dom))}${moy0.length ? ` · moyenne ${(moy0.reduce((a, h) => a + h.note, 0) / moy0.length).toFixed(1)} / 10 sur les ${moy0.length} derniers cas` : ""}${rates0 ? ` · ${rates0} à refaire` : ""}</span></div>`;
-  return barre + casContenu();
+  const cols = c.mode === "alea" ? `<div class="chips cols">${[["melange", "Mélange"], ...livresVisibles().map((b) => [b.id, b.court])].map(([id, lib]) => `<button class="chip${S.reserve.col === id ? " on" : ""}" data-col="${esc(id)}">${esc(lib)}<span class="nb">${nbPrets(id)}</span></button>`).join("")}</div>` : "";
+  return barre + cols + casContenu();
 }
 function casContenu() {
   const c = S.cas;
+  if (c.mode === "revision" && !c.f) return revContenu();
   if (!S.owner && !S.manifest && c.mode === "alea") return `<div class="bempty"><h2>Cas aléatoires</h2><p>Les cas sont tirés des livres de l'index, lus dans le dépôt GitHub corpus-radio. Ce compte n'y a pas accès : ajoute le connecteur GitHub dans claude.ai.</p></div>`;
-  if (c.mode === "revision" && !["qcm", "qcm-gen", "question", "correction", "corrige", "tirage", "erreur"].includes(c.etat)) {
-    const LR = window.LR, m = LR ? LR.dueMissed(null).length : 0, r = LR ? LR.rqTodo().length : 0;
-    const rates = S.casHist.hist.filter((h) => h.note < 6).length, nf = [...S.fiches.values()].filter((f) => f.kind === "corpus").length;
-    return `<div class="bempty"><h2>Révision</h2><p>Tout ce qui est à revoir, au même endroit : les erreurs des QCM et des défis du jour d'Apprentissage, les cas ratés, et des QCM et cas créés par Claude sur les entités de tes notes.</p></div>
-    <div class="revgrid">
-      ${carteRev("Erreurs de QCM et de défis", m, "Les questions ratées d'Apprentissage, puis les cas ratés en question ouverte.", 'data-rev="erreurs"', true)}
-      ${carteRev("Cas ouverts à reprendre", r, "Image seule et « Quel est votre diagnostic ? », tous modules mélangés.", 'data-rev="rapide"')}
-      ${carteRev("QCM sur mes notes", nf, "Six QCM écrits par Claude à partir de tes fiches, avec leurs références.", 'data-rev="qcm"')}
-      ${carteRev("Cas sur mes notes", nf, "Une figure d'une de tes fiches, à décrire et diagnostiquer.", 'data-rev="casnotes"')}
-      ${carteRev("Cas aléatoires ratés", rates, "Les cas notés moins de 6 / 10, à refaire.", 'data-rev="casrates"')}
-      ${carteRev("QCM d'images Top 3", S.bookById.has("top3-msk") ? 5 : 0, "Cinq cas de Top 3 Differentials en QCM : image, énoncé, quatre diagnostics.", 'data-rev="top3"')}
-      ${carteRev("Erreurs de QCM sur mes notes", S.casHist.qcm.length, "Les QCM générés que tu as ratés.", 'data-rev="qcmerr"')}
-    </div>`;
-  }
   if (c.etat === "vide") return `<div class="bempty"><h2>Cas aléatoire</h2><p>Une image tirée au hasard dans les livres${S.dom !== "tous" ? ` du domaine ${esc(libDomaine(S.dom))}` : ""}, avec son contexte clinique. Décris la sémiologie, donne ton diagnostic, puis Claude te corrige d'après la légende du livre.</p><button class="btn primary" data-tirer="1">Tirer un cas</button></div>`;
   if (c.etat === "tirage") return `<div class="bempty"><h2>Préparation du cas…</h2><p class="hint">${esc(c.etape || "")}</p></div>`;
   if (c.etat === "qcm-gen") return `<p class="hint">Claude écrit des QCM à partir de tes fiches…</p>`;
@@ -1653,24 +1685,19 @@ function casContenu() {
       ${r.a_retenir ? `<div class="fb cle"><h3>À retenir</h3><p>${esc(r.a_retenir)}</p></div>` : ""}
       <details class="fb src"><summary>Ta réponse et la source du livre</summary><p><b>Ta réponse :</b> ${esc(c.rep)}</p><p><b>Légende (${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${f.pg ? `, p. ${esc(f.pg)}` : ""}) :</b> ${esc(f.capo || f.cap)}</p>${(c.extraits || []).map((x) => `<p class="hint">${esc(x.src)}</p>`).join("")}</details>
     </section>
-    <div class="row"><button class="btn primary" data-tirer="1">Cas suivant</button>${c.mode === "revision" ? `<button class="btn small" data-casmode="revision">Retour à la révision</button>` : ""}</div>`;
+    <div class="row"><button class="btn primary" data-tirer="1">${c.mode === "revision" ? "Élément suivant" : "Cas suivant"}</button></div>`;
 }
 function clicCas(t) {
   const d = t.dataset;
-  if (d.casmode) { S.cas = { mode: d.casmode, etat: "vide" }; render(); return true; }
-  if (d.tirer) { tirerCas(S.cas.mode === "revision" && S.cas.f && S.cas.source ? null : null); return true; }
+  if (d.casmode) { if (d.casmode === "revision" && (!S.rev.file.length || S.rev.pos >= S.rev.file.length)) S.rev.construit = false; S.cas = { mode: d.casmode, etat: "vide" }; if (d.casmode === "alea") tirerCas(); else render(); return true; }
+  if (d.tirer) { if (S.cas.mode === "revision") revSuivant(); else tirerCas(); return true; }
+  if (d.col) { S.reserve.col = d.col; S.cas = { mode: "alea", etat: "vide" }; tirerCas(); remplirReserve(); return true; }
+  if (d.rrep != null && t.matches("[data-rrep]")) { revRepondre(+d.rrep); return true; }
+  if (d.rsuiv) { revSuivant(); return true; }
+  if (d.revnouv) { S.rev.construit = false; S.cas = { mode: "revision", etat: "vide" }; render(); return true; }
   if (d.corriger) { corrigerCas(); return true; }
   if (d.qrep != null && d.qrep !== undefined && t.matches("[data-qrep]")) { repondreQcm(+d.qrep); return true; }
   if (d.qnext) { S.cas.pos++; S.cas.choix = null; render(); return true; }
-  if (d.rev) {
-    if (d.rev === "erreurs" || d.rev === "rapide") { if (window.ESPACE) window.ESPACE("apprentissage"); if (window.LR) (d.rev === "erreurs" ? window.LR.startReview(null) : window.LR.startRapid(false)); }
-    else if (d.rev === "qcm") qcmNotes();
-    else if (d.rev === "qcmerr") qcmErreurs();
-    else if (d.rev === "casnotes") casSurNotes();
-    else if (d.rev === "casrates") casRates();
-    else if (d.rev === "top3") qcmTop3();
-    return true;
-  }
   return false;
 }
 
@@ -1746,11 +1773,9 @@ async function chargerModulesGeneres() {
 }
 
 /* QCM d'images tirés de Top 3 MSK (banque de cas) */
-async function qcmTop3() {
-  if (!S.manifest) { toast("L'index des livres n'est pas accessible."); return; }
-  const b = S.bookById.get("top3-msk"); if (!b) { toast("Top 3 MSK n'est pas dans l'index."); return; }
-  S.cas = { mode: "revision", etat: "qcm-gen" }; render();
-  try {
+async function genQcmTop3() {
+  const b = S.manifest && S.bookById.get("top3-msk"); if (!b || !S.sample) return [];
+  {
     const chs = b.chapitres.map((c) => c.n).sort(() => Math.random() - 0.5).slice(0, 3);
     const figs = (await Promise.all(chs.map((ch) => figsChapitre(b, ch)))).flat().filter((g) => g.il || g.iv).sort(() => Math.random() - 0.5).slice(0, 5);
     const r = await avecDelai(S.sample.json(`Tu écris des QCM d'imagerie à partir de cas d'un livre de diagnostic différentiel (Top 3 Differentials in Musculoskeletal Imaging).
@@ -1758,11 +1783,8 @@ Pour chaque cas ci-dessous, écris un QCM en français : un court énoncé clini
 Réponds uniquement par {"qcm":[{"fid":"identifiant","question":"…","options":["…","…","…","…"],"reponse":0,"explication":"…"}]}
 
 ${figs.map((g) => `${g.id} : ${g.capo || g.cap}`).join("\n")}`, { modelTier: "default", cache: false }), 120000);
-    const q = (r?.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2);
-    if (!q.length) throw { message: "Claude n'a pas renvoyé de QCM exploitable." };
-    S.cas = { mode: "revision", etat: "qcm", items: q, pos: 0, choix: null, score: 0 };
-  } catch (e) { S.cas = { mode: "revision", etat: "erreur", err: messageErreur(e) }; }
-  render();
+    return JSON.parse(JSON.stringify((r && r.qcm) || [])).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2 && Number.isInteger(x.reponse));
+  }
 }
 
 window.OUTILS_IMG = (id) => figImage(id, null, true).catch(() => null);
@@ -1873,8 +1895,80 @@ function clicBiblio(t) {
   return false;
 }
 
+/* ================= Révision unifiée : une seule file, un élément toujours prêt =================
+   Sources mélangées : erreurs de QCM et de défis d'Apprentissage (même enregistrement que Learning),
+   QCM ratés sur les notes, cas ratés, cas tirés des figures des fiches, QCM générés sur les notes,
+   QCM d'images Top 3. L'élément suivant est préparé pendant qu'on répond au courant. */
+S.rev = { file: [], pos: 0, construit: false, fait: 0, bons: 0 };
+function melanger(a) { for (let i = a.length - 1; i > 0; i--) { const k = Math.floor(Math.random() * (i + 1)); [a[i], a[k]] = [a[k], a[i]]; } return a; }
+function construireFile() {
+  const LR = window.LR, f = [];
+  if (LR) for (const x of LR.dueMissed(null).slice(0, 15)) f.push({ type: "lr", mid: x.m.id, i: x.i, lib: "Erreur d'Apprentissage" });
+  for (const q of S.casHist.qcm.slice(-8)) f.push({ type: "qcm", q, lib: "QCM raté sur tes notes", err: true });
+  const rates = [...new Set(S.casHist.hist.filter((h) => h.note < 6).map((h) => h.fid))].slice(-6);
+  for (const fid of rates) f.push({ type: "cas", fid, origine: "ratés", lib: "Cas à refaire" });
+  const figsNotes = [];
+  for (const fi of S.fiches.values()) for (const [k, r] of Object.entries(fi.refs || {})) if (k.startsWith("F") && r.id) figsNotes.push(r.id);
+  for (const fid of melanger([...new Set(figsNotes)]).slice(0, 3)) f.push({ type: "cas", fid, origine: "notes", lib: "Cas sur tes notes" });
+  if ([...S.fiches.values()].some((x) => x.kind === "corpus")) f.push({ type: "gen", gen: "notes", lib: "QCM sur tes notes" });
+  if (S.bookById.has("top3-msk")) f.push({ type: "gen", gen: "top3", lib: "QCM d'images Top 3" });
+  const lr = f.filter((x) => x.type === "lr"), autres = melanger(f.filter((x) => x.type !== "lr"));
+  const file = [];                                   // erreurs d'Apprentissage en tête, puis alternance
+  while (lr.length || autres.length) { if (lr.length) file.push(lr.shift()); if (lr.length) file.push(lr.shift()); if (autres.length) file.push(autres.shift()); }
+  S.rev = { file, pos: 0, construit: true, fait: 0, bons: 0 };
+  preparer(0); preparer(1);
+}
+function qcmDepuisLR(it) {
+  const m = window.LR.modById[it.mid], q = m && m.quiz[it.i]; if (!q) return null;
+  return { question: q.q, options: q.options, reponse: q.answer, explication: q.explain || "", lrimg: q.img || "", ref: `${m.chapter || ""}${q.ref ? " · " + q.ref : ""} · ${m.title}` };
+}
+function preparer(k) {
+  const it = S.rev.file[k]; if (!it || it.p) return;
+  if (it.type === "lr") { it.pret = qcmDepuisLR(it); it.p = Promise.resolve(); return; }
+  if (it.type === "qcm") { it.pret = it.q; it.p = Promise.resolve(); return; }
+  if (it.type === "cas") { it.p = preparerCas({ fid: it.fid, origine: it.origine }).then((c) => { it.pret = c; }).catch((e) => { it.err = messageErreur(e); }).finally(render); return; }
+  if (it.type === "gen") {
+    it.p = (it.gen === "notes" ? genQcmNotes() : genQcmTop3()).then((qs) => {
+      const items = qs.map((q) => ({ type: "qcm", q, pret: q, p: Promise.resolve(), lib: it.lib }));
+      const pos = S.rev.file.indexOf(it); if (pos >= 0) S.rev.file.splice(pos, 1, ...items);
+    }).catch((e) => { it.err = messageErreur(e); }).finally(render);
+  }
+}
+function itemCourant() { return S.rev.file[S.rev.pos]; }
+function revSuivant() {
+  S.rev.pos++; S.cas = { mode: "revision", etat: "vide" };
+  preparer(S.rev.pos); preparer(S.rev.pos + 1);
+  const it = itemCourant(); if (it && it.type === "cas" && it.pret) S.cas = { mode: "revision", etat: "question", ...it.pret };
+  render(); window.scrollTo(0, 0);
+}
+function revRepondre(i) {
+  const it = itemCourant(); if (!it || it.choix != null) return;
+  const q = it.pret; it.choix = i; const ok = i === q.reponse;
+  S.rev.fait++; if (ok) S.rev.bons++;
+  if (it.type === "lr" && window.LR) window.LR.repondre(it.mid, it.i, i);
+  else if (!ok && !it.err) { S.casHist.qcm.push({ ...q, at: Date.now() }); sauverCasHist(); }
+  else if (ok && it.err) { S.casHist.qcm = S.casHist.qcm.filter((x) => x.question !== q.question); sauverCasHist(); }
+  render();
+}
+function revContenu() {
+  if (!S.rev.construit) construireFile();
+  const R = S.rev, it = itemCourant(), total = R.file.length;
+  const tete = `<div class="revhead"><span class="label">${it ? esc(it.lib) : "Révision"}</span><span class="hint">${Math.min(R.pos + 1, total)} / ${total}${R.fait ? ` · ${R.bons} / ${R.fait} réussis` : ""}</span>
+    <span class="revbar"><i style="width:${total ? Math.round(100 * R.pos / total) : 0}%"></i></span></div>`;
+  if (!total) return tete + `<div class="bempty"><h2>Rien à réviser</h2><p>Les erreurs de QCM et de défis d'Apprentissage, les cas ratés et des QCM sur les entités de tes notes apparaîtront ici.</p><button class="btn primary" data-casmode="alea">Faire un cas aléatoire</button></div>`;
+  if (!it) return tete + `<div class="bempty"><h2>Révision terminée</h2><p>${R.bons} bonnes réponses sur ${R.fait}. Les éléments ratés reviendront dans une prochaine révision.</p><div class="row"><button class="btn primary" data-revnouv="1">Nouvelle révision</button><button class="btn small" data-casmode="alea">Cas aléatoire</button></div></div>`;
+  if (it.err) return tete + `<div class="alert"><b>Élément indisponible</b><span>${esc(it.err)} <button class="btn small" data-rsuiv="1">Passer</button></span></div>`;
+  if (!it.pret) { preparer(R.pos); return tete + `<div class="bempty"><h2>Préparation…</h2><p class="hint">${it.type === "cas" ? "Claude construit le cas à partir du livre." : "Claude écrit les questions."}</p></div>`; }
+  if (it.type === "cas") { S.cas = { mode: "revision", etat: "question", ...it.pret }; return casContenu(); }
+  const q = it.pret, c = it.choix;
+  const img = q.lrimg ? `<figure class="casfig"><img data-lrimg="${esc(q.lrimg)}" alt="Image de la question"></figure>` : q.fid ? `<figure class="casfig"><img data-img="${esc(q.fid)}" data-full="1" alt="Image de la question"></figure>` : "";
+  return tete + img + `<h2 class="btitle" style="font-size:20px">${esc(q.question)}</h2>
+    <div class="qopts">${q.options.map((o, i) => `<button class="qopt${c == null ? "" : i === q.reponse ? " ok" : i === c ? " ko" : ""}" data-rrep="${i}" ${c == null ? "" : "disabled"}>${esc(o)}</button>`).join("")}</div>
+    ${c != null ? `<div class="fb ${c === q.reponse ? "ok" : "ko"}"><h3>${c === q.reponse ? "Bonne réponse" : "Réponse attendue : " + esc(q.options[q.reponse] || "")}</h3><p>${esc(q.explication || "")}</p>${q.ref ? `<p class="hint">${esc(q.ref)}</p>` : ""}</div><div class="row"><button class="btn primary" data-rsuiv="1">Élément suivant</button></div>` : ""}`;
+}
+
 document.addEventListener("click", (e) => {
-  const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");
+  const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-col],[data-rrep],[data-rsuiv],[data-revnouv]");
   if (tc && !tc.disabled && clicCas(tc)) return;
   const tb = e.target.closest("[data-bvue],[data-bcat],[data-livre]");
   if (tb && clicBiblio(tb)) return;
@@ -1921,7 +2015,7 @@ render();
     S.notes = remote.sort((a, b) => b.at - a.at); render();
   }, () => {});
   loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
-  chargerProgression(); chargerCasHist().then(render);
+  chargerProgression(); chargerCasHist().then(chargerReserve).then(() => { render(); setTimeout(remplirReserve, 1500); });
 })();
 routeFromHash();
 </script>

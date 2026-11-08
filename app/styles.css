@@ -92,3 +92,8 @@
 .cas-top{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:6px}.cas-top .seg{margin:0}
 .bempty .btn,.bempty button{justify-self:start}
 .revgrid .btn{justify-self:start}
+
+.cols{margin:2px 0 12px}.chip .nb{display:inline-grid;place-items:center;min-width:1.4em;height:1.4em;margin-left:6px;padding:0 4px;border-radius:999px;background:var(--sunk);font-size:11px;font-variant-numeric:tabular-nums}
+.chip.on .nb{background:var(--accent);color:var(--surface)}
+.revhead{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;margin-bottom:10px}
+.revbar{grid-column:1/-1;height:4px;border-radius:2px;background:var(--sunk);overflow:hidden}.revbar i{display:block;height:100%;background:var(--accent);transition:width .3s}

@@ -53,6 +53,7 @@ function renderBiblio() {
   if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); }
 }
 async function chargerImagesVisibles() {
+  for (const img of $("right").querySelectorAll("img[data-lrimg]")) { if (img.src || !window.LR) continue; window.LR.image(img.dataset.lrimg).then((s) => { if (s) img.src = s; }).catch(() => {}); }
   for (const img of $("right").querySelectorAll("img[data-img]")) {
     if (img.src) continue;
     figImage(img.dataset.img, img.dataset.slug || null, !!img.dataset.full).then((src) => { if (src) img.src = src; }).catch(() => {});

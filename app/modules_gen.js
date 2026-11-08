@@ -70,11 +70,9 @@ async function chargerModulesGeneres() {
 }
 
 /* QCM d'images tirés de Top 3 MSK (banque de cas) */
-async function qcmTop3() {
-  if (!S.manifest) { toast("L'index des livres n'est pas accessible."); return; }
-  const b = S.bookById.get("top3-msk"); if (!b) { toast("Top 3 MSK n'est pas dans l'index."); return; }
-  S.cas = { mode: "revision", etat: "qcm-gen" }; render();
-  try {
+async function genQcmTop3() {
+  const b = S.manifest && S.bookById.get("top3-msk"); if (!b || !S.sample) return [];
+  {
     const chs = b.chapitres.map((c) => c.n).sort(() => Math.random() - 0.5).slice(0, 3);
     const figs = (await Promise.all(chs.map((ch) => figsChapitre(b, ch)))).flat().filter((g) => g.il || g.iv).sort(() => Math.random() - 0.5).slice(0, 5);
     const r = await avecDelai(S.sample.json(`Tu écris des QCM d'imagerie à partir de cas d'un livre de diagnostic différentiel (Top 3 Differentials in Musculoskeletal Imaging).
@@ -82,11 +80,8 @@ Pour chaque cas ci-dessous, écris un QCM en français : un court énoncé clini
 Réponds uniquement par {"qcm":[{"fid":"identifiant","question":"…","options":["…","…","…","…"],"reponse":0,"explication":"…"}]}
 
 ${figs.map((g) => `${g.id} : ${g.capo || g.cap}`).join("\n")}`, { modelTier: "default", cache: false }), 120000);
-    const q = (r?.qcm || []).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2);
-    if (!q.length) throw { message: "Claude n'a pas renvoyé de QCM exploitable." };
-    S.cas = { mode: "revision", etat: "qcm", items: q, pos: 0, choix: null, score: 0 };
-  } catch (e) { S.cas = { mode: "revision", etat: "erreur", err: messageErreur(e) }; }
-  render();
+    return JSON.parse(JSON.stringify((r && r.qcm) || [])).filter((x) => x && Array.isArray(x.options) && x.options.length >= 2 && Number.isInteger(x.reponse));
+  }
 }
 
 window.OUTILS_IMG = (id) => figImage(id, null, true).catch(() => null);

@@ -91,16 +91,16 @@ rep('''  if (user) { try { S.owner = !!(await user.isOwner()); } catch {} try { 
     '''  if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }''')
 rep('''  loadCorpusMeta();
 })();''', '''  loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
-  chargerProgression(); chargerCasHist().then(render);
+  chargerProgression(); chargerCasHist().then(chargerReserve).then(() => { render(); setTimeout(remplirReserve, 1500); });
 })();''')
 
 # 13. nouveaux éléments et événements, styles
 css = (ICI / "styles.css").read_text(encoding="utf-8")
 rep("</style>\n\n<header", css + "\n</style>\n\n<header")
-vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8") + "\n" + (ICI / "modules_gen.js").read_text(encoding="utf-8") + "\n" + (ICI / "biblio.js").read_text(encoding="utf-8")
+vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8") + "\n" + (ICI / "modules_gen.js").read_text(encoding="utf-8") + "\n" + (ICI / "biblio.js").read_text(encoding="utf-8") + "\n" + (ICI / "revision.js").read_text(encoding="utf-8")
 evts = '''
 document.addEventListener("click", (e) => {
-  const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");
+  const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-col],[data-rrep],[data-rsuiv],[data-revnouv]");
   if (tc && !tc.disabled && clicCas(tc)) return;
   const tb = e.target.closest("[data-bvue],[data-bcat],[data-livre]");
   if (tb && clicBiblio(tb)) return;

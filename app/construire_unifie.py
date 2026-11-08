@@ -53,6 +53,7 @@ js = rep(js, 'history.replaceState(null, "", d.tab === "biblio" ? "#bibliotheque
 js += '''
 window.OUTILS = { onglet(t) { S.tab = t; HOTE.classList.toggle("hors-notes", t !== "notes"); S.detail = false; $("desk").classList.toggle("cas", t === "cas");
   if (t === "biblio" && S.entState === "idle") chargerEntites();
+  if (t === "cas" && S.cas.mode === "alea" && S.cas.etat === "vide" && S.manifest) tirerCas();
   $("q").value = t === "biblio" ? S.bq : t === "notes" ? S.query : ""; $("q").closest(".searchwrap").hidden = t === "cas"; render(); } };
 '''
 outils_js = ("(function(){\n\"use strict\";\nconst HOTE = document.getElementById(\"outils\");\nconst ROOT = HOTE.attachShadow({ mode: \"open\" });\n"
@@ -136,7 +137,9 @@ L = rep(L, "</div></article>`;}).join(\"\");", "</div></article>`;});")
 
 pont = '''
 /* ---------- pont vers les outils (Notes, Cas, Bibliothèque) ---------- */
-window.LR = { etat: () => S, sauver: save, aller: go, startReview, startRapid, rqTodo, rqAll, dueMissed, dueCards, modById, BOOKS, ALL };
+window.LR = { etat: () => S, sauver: save, aller: go, startReview, startRapid, rqTodo, rqAll, dueMissed, dueCards, modById, BOOKS, ALL,
+  repondre(mid, i, oi) { const m = modById[mid], q = m.quiz[i], qid = quizId(m, i); S.ans[qid] = 1; if (oi === q.answer) delete S.missed[qid]; else { S.missed[qid] = today() + DAY; S.wrong[qid] = { at: now() }; } S.log[today()] = (S.log[today()] || 0) + 1; save(); return oi === q.answer; },
+  image(k) { if (!k) return Promise.resolve(null); if (IMG[k]) return Promise.resolve(IMG[k]); return Promise.resolve(loadBundle(String(k).includes(":") ? k : k.split("/")[0])).then(() => IMG[k] || null); } };
 function libDomaineLR(d) { return ({ msk: "Musculosquelettique", neuro: "Neuroradiologie", "tete-cou": "Tête et cou", thorax: "Thorax", "cardio-vasc": "Cardiovasculaire", "abdo-digestif": "Abdomen et digestif", "uro-genital": "Urogénital", sein: "Sein", pediatrie: "Pédiatrie", interventionnel: "Radiologie interventionnelle" })[d] || d; }
 function parDomaine(books, carte) {
   const g = {}; for (const b of books) (g[b.domaine || "msk"] = g[b.domaine || "msk"] || []).push(b);
