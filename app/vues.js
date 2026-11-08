@@ -96,6 +96,12 @@ async function importerProgression() {
 let biblioSig = "";
 function renderBiblio() {
   const sig = JSON.stringify([S.tab, S.dom, S.bq, S.entSel, S.entState, S.ent.size, !!S.manifest, S.owner]);
+  if (S.tab === "cas") {
+    const g = casGauche(); if ($("left").dataset.h !== g) { $("left").dataset.h = g; $("left").innerHTML = g; } biblioSig = "";
+    const h = casDroite(); if ($("right").dataset.h !== h) { const keep = $("right").querySelector("#casRep")?.value; $("right").dataset.h = h; $("right").innerHTML = h; const ta = $("right").querySelector("#casRep"); if (ta && keep != null && !ta.value) ta.value = keep; chargerImagesVisibles(); }
+    return;
+  }
+  $("left").dataset.h = "";
   if (sig !== biblioSig) { biblioSig = sig; $("left").innerHTML = biblioGauche(); }
   const html = biblioDroite();
   if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); }
@@ -103,7 +109,7 @@ function renderBiblio() {
 async function chargerImagesVisibles() {
   for (const img of $("right").querySelectorAll("img[data-img]")) {
     if (img.src) continue;
-    figImage(img.dataset.img, img.dataset.slug || null).then((src) => { if (src) img.src = src; }).catch(() => {});
+    figImage(img.dataset.img, img.dataset.slug || null, !!img.dataset.full).then((src) => { if (src) img.src = src; }).catch(() => {});
   }
 }
 

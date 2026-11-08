@@ -91,15 +91,17 @@ rep('''  if (user) { try { S.owner = !!(await user.isOwner()); } catch {} try { 
     '''  if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }''')
 rep('''  loadCorpusMeta();
 })();''', '''  loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
-  chargerProgression();
+  chargerProgression(); chargerCasHist().then(render);
 })();''')
 
 # 13. nouveaux éléments et événements, styles
 css = (ICI / "styles.css").read_text(encoding="utf-8")
 rep("</style>\n\n<header", css + "\n</style>\n\n<header")
-vues = (ICI / "vues.js").read_text(encoding="utf-8")
+vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8")
 evts = '''
 document.addEventListener("click", (e) => {
+  const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");
+  if (tc && !tc.disabled && clicCas(tc)) return;
   const t = e.target.closest("[data-tab],[data-ent],[data-progimp],[data-genent],[data-retry-ent],[data-retry-meta],[data-fiche]");
   if (!t) return;
   const d = t.dataset;

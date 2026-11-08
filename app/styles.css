@@ -30,3 +30,17 @@
 .note-ok{display:grid;gap:2px;padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--good);border-radius:8px;background:var(--surface);margin-bottom:14px;font-size:13.5px}
 .imp-prog{margin-bottom:14px;font-size:13.5px}.imp-prog textarea{width:100%;font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);padding:8px;margin:6px 0}
 @media (max-width:720px){.tabs button{padding:5px 10px}.domwrap select{max-width:130px}}
+
+.casmodes{display:grid;gap:6px}.casmodes .item{width:100%;text-align:left;display:grid;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);cursor:pointer}
+.casmodes .item.on{border-color:var(--accent);background:var(--accent-soft)}.casmodes .item span{font-size:12px;color:var(--muted)}
+.revgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));margin-top:14px}
+.revcard{display:grid;gap:6px;align-content:start;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.casfig{margin:12px 0;background:var(--film);border-radius:10px;display:grid;place-items:center;min-height:200px;overflow:hidden}
+.casfig img{max-width:100%;max-height:60vh;object-fit:contain}
+.casctx{margin:4px 0;max-width:72ch;font-size:15px;line-height:1.55}
+#casRep{width:100%;font:15px/1.5 var(--body);border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);padding:10px;margin:6px 0 10px}
+.corr{display:flex;gap:14px;align-items:center;margin:14px 0}.corr .note{font-family:var(--display);font-size:38px;font-weight:650;color:var(--accent);font-variant-numeric:tabular-nums}.corr .note small{font-size:15px;color:var(--muted)}
+.expl{max-width:72ch;line-height:1.6;font-size:15px}
+.qopts{display:grid;gap:8px;margin:12px 0;max-width:72ch}.qopt{text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);font:15px var(--body);cursor:pointer}
+.qopt.ok{border-color:var(--good);background:var(--good-soft)}.qopt.ko{border-color:var(--bad);background:var(--bad-soft)}
+.desk.cas .pane-left{max-width:none}
