@@ -103,10 +103,10 @@ L = rep(L, "</div></article>`;}).join(\"\");", "</div></article>`;});")
 pont = '''
 /* ---------- pont vers les outils (Notes, Cas, Bibliothèque) ---------- */
 window.LR = { etat: () => S, sauver: save, aller: go, startReview, startRapid, rqTodo, rqAll, dueMissed, dueCards, modById, BOOKS, ALL };
-const DOMAINES = { msk: "Musculosquelettique", neuro: "Neuroradiologie", "tete-cou": "Tête et cou", thorax: "Thorax", "cardio-vasc": "Cardiovasculaire", "abdo-digestif": "Abdomen et digestif", "uro-genital": "Urogénital", sein: "Sein", pediatrie: "Pédiatrie", interventionnel: "Radiologie interventionnelle" };
+function libDomaineLR(d) { return ({ msk: "Musculosquelettique", neuro: "Neuroradiologie", "tete-cou": "Tête et cou", thorax: "Thorax", "cardio-vasc": "Cardiovasculaire", "abdo-digestif": "Abdomen et digestif", "uro-genital": "Urogénital", sein: "Sein", pediatrie: "Pédiatrie", interventionnel: "Radiologie interventionnelle" })[d] || d; }
 function parDomaine(books, carte) {
   const g = {}; for (const b of books) (g[b.domaine || "msk"] = g[b.domaine || "msk"] || []).push(b);
-  return Object.entries(g).map(([d, bs]) => `<h2 class="domh">${esc(DOMAINES[d] || d)}</h2>` + bs.map(carte).join("")).join("");
+  return Object.entries(g).map(([d, bs]) => `<h2 class="domh">${esc(libDomaineLR(d))}</h2>` + bs.map(carte).join("")).join("");
 }
 function renderStub(app, m) {
   const bk = BOOK[m.book];
