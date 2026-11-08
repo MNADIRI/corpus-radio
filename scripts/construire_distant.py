@@ -116,6 +116,7 @@ def main():
         "domaines": tax["domaines"], "regions": tax["regions"], "modalites": tax["modalites"], "categories": tax["categories_entite"],
     }, compact=True)
     construire_citations()
+    construire_blocs_chapitres()
     fichiers = [f for f in SORTIE.rglob("*.json")]
     print(f"index/artefact : {len(fichiers)} fichiers, {sum(f.stat().st_size for f in fichiers) / 1e6:.1f} Mo, "
           f"plus gros {max(f.stat().st_size for f in fichiers) / 1e3:.0f} Ko · seaux ix {n_ix}, lx {n_lx}")
@@ -123,6 +124,19 @@ def main():
 
 if __name__ == "__main__" and "--citations" not in __import__("sys").argv:
     main()
+
+
+def construire_blocs_chapitres():
+    """index/artefact/chb/<livre>.json : chapitre → [premier bloc, dernier bloc] (numéros seulement)."""
+    for fl in sorted((RACINE / "livres").glob("*/livre.json")):
+        lid = fl.parent.name
+        chb = {}
+        for f in sorted((fl.parent / "passages").glob("*.jsonl")):
+            for p in lire_jsonl(f):
+                b = (int(p["id"].rsplit(":p", 1)[1]) - 1) // BLOC
+                lo, hi = chb.get(p["chapitre"], [b, b])
+                chb[p["chapitre"]] = [min(lo, b), max(hi, b)]
+        ecrire_json(SORTIE / "chb" / f"{lid}.json", chb, compact=True)
 
 
 def construire_citations():
@@ -140,3 +154,4 @@ def construire_citations():
 
 if __name__ == "__main__" and "--citations" in __import__("sys").argv:
     construire_citations()
+    construire_blocs_chapitres()
