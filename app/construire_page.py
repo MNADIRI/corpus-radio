@@ -97,11 +97,13 @@ rep('''  loadCorpusMeta();
 # 13. nouveaux éléments et événements, styles
 css = (ICI / "styles.css").read_text(encoding="utf-8")
 rep("</style>\n\n<header", css + "\n</style>\n\n<header")
-vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8") + "\n" + (ICI / "modules_gen.js").read_text(encoding="utf-8")
+vues = (ICI / "vues.js").read_text(encoding="utf-8") + "\n" + (ICI / "cas.js").read_text(encoding="utf-8") + "\n" + (ICI / "modules_gen.js").read_text(encoding="utf-8") + "\n" + (ICI / "biblio.js").read_text(encoding="utf-8")
 evts = '''
 document.addEventListener("click", (e) => {
   const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");
   if (tc && !tc.disabled && clicCas(tc)) return;
+  const tb = e.target.closest("[data-bvue],[data-bcat],[data-livre]");
+  if (tb && clicBiblio(tb)) return;
   const t = e.target.closest("[data-tab],[data-ent],[data-progimp],[data-genent],[data-retry-ent],[data-retry-meta],[data-fiche]");
   if (!t) return;
   const d = t.dataset;
@@ -118,6 +120,8 @@ document.addEventListener("click", (e) => {
     runNote(id);
   } else if (d.fiche) { S.tab = "notes"; }
 });
+$("right").addEventListener("change", () => {});
+$("left").addEventListener("change", (e) => { if (e.target.id === "bReg") { S.bib.reg = e.target.value; render(); } });
 $("domSel").onchange = () => { S.dom = $("domSel").value; try { localStorage.setItem("rad-dom", S.dom); } catch {} S.entView = null; S.entSel = null; chargerEntites(); render(); };
 if (location.hash === "#bibliotheque") S.tab = "biblio";
 '''

@@ -24,36 +24,67 @@ async function contexteLivre(f) {
   const ps = (await Promise.all(ids.slice(0, 2).map((id) => lirePassage(id).catch(() => null)))).filter(Boolean);
   return ps.map((p) => ({ id: p.id, src: srcLabel(p), t: p.t.length > 1600 ? p.t.slice(0, 1600) + " …" : p.t }));
 }
+function groupesFigures(figs) {
+  const g = new Map();
+  for (const f of figs) { const k = f.fig; if (!g.has(k)) g.set(k, []); g.get(k).push(f); }
+  const out = [];
+  for (const panels of g.values()) {
+    panels.sort((x, y) => String(x.pa || "").localeCompare(String(y.pa || "")));
+    const f0 = panels[0], cap = f0.capo || f0.cap || "";
+    if (cap.length < 60 || f0.role === "schema" || (f0.m || []).includes("schema")) continue;
+    if (!panels.every((p) => p.il || p.iv)) continue;
+    const attendus = (f0.pn || []).length;
+    if (attendus && panels.length < attendus) continue;               // un panneau cité sans image : cas incomplet
+    if (panels.length > 8) continue;
+    out.push(panels);
+  }
+  return out;
+}
+async function panneauxDe(f) {
+  const b = S.bookById.get(f.b), tous = await figsChapitre(b, f.ch);
+  const g = groupesFigures(tous.filter((x) => x.fig === f.fig));
+  return g[0] || null;
+}
 async function tirerCas(source) {
-  if (!S.manifest) { toast("Le corpus n'est pas accessible : vérifie le connecteur GitHub."); return; }
+  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
   if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
   S.cas = { mode: S.cas.mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
   const etape = (t) => { S.cas.etape = t; render(); };
   try {
-    let f = null;
-    if (source && source.fid) f = (await figsParId([source.fid]))[0] || null;
-    for (let essai = 0; !f && essai < 8; essai++) {
+    let panels = null;
+    if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
+    for (let essai = 0; !panels && essai < 10; essai++) {
       const b = livrePondere(); if (!b) break;
       const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
       const ch = chs[Math.floor(Math.random() * chs.length)];
       etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
-      const figs = (await figsChapitre(b, ch)).filter((g) => (g.il || g.iv) && (g.capo || g.cap).length > 60 && g.role !== "schema" && !(g.m || []).includes("schema"));
-      if (figs.length) f = figs[Math.floor(Math.random() * figs.length)];
+      const gs = groupesFigures(await figsChapitre(b, ch));
+      if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
     }
-    if (!f) throw { message: "Aucune figure exploitable dans ce domaine." };
+    if (!panels) throw { message: "Aucune figure complète et exploitable trouvée dans ce domaine." };
+    const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
     etape("Lecture des passages qui citent la figure");
     const extraits = await contexteLivre(f).catch(() => []);
-    etape("Claude rédige le contexte clinique");
-    const ctx = await avecDelai(S.sample.json(`Tu prépares un cas d'entraînement en radiologie pour un interne, comme à la vacation.
-À partir de la légende d'une figure et des extraits du livre qui la citent, rédige en français :
-- "contexte" : la présentation clinique (âge, sexe, symptômes, antécédents utiles) en 1 à 3 phrases, en reprenant les éléments cliniques des extraits quand ils existent ;
-- "examen" : la modalité, la région et l'incidence ou la séquence montrées.
-Ne révèle NI le diagnostic, NI la sémiologie décrite dans la légende. Développe chaque acronyme entre parenthèses à sa première occurrence.
-Réponds uniquement par {"contexte":"…","examen":"…"}.
+    etape("Claude construit le cas");
+    const r = await avecDelai(S.sample.json(`Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
 
-Légende (${bookShort(f.b)}) : ${f.capo || f.cap}
-${extraits.map((x) => `Extrait (${x.src}) : ${x.t}`).join("\n")}`, { modelTier: "quick", cache: false }), 60000);
-    S.cas = { mode: S.cas.mode, etat: "question", f, extraits, ctx: ctx || {}, source: source && source.origine };
+DONNÉES DU LIVRE (${bookShort(f.b)})
+Légende de la figure : ${f.capo || f.cap}
+${lettres.length ? `Images affichées à l'interne : ${lettres.map((l) => "(" + l + ")").join(", ")} — et AUCUNE autre.` : "Une seule image est affichée à l'interne."}
+${extraits.map((x) => `Extrait qui cite la figure (${x.src}) : ${x.t}`).join("\n")}
+
+CONSIGNES
+- "contexte" : la présentation clinique en 2 à 4 phrases (âge, sexe, motif, durée, antécédents ou biologie utiles). Reprends les éléments cliniques des extraits et de la légende quand ils existent ; sinon, propose une présentation typique et cohérente avec le diagnostic, sans le nommer.
+- "images" : une entrée par image affichée, avec la lettre ("" s'il n'y en a qu'une) et sa description technique seulement : modalité, région, plan ou incidence, séquence IRM (T1, T2, STIR, T1 après injection de gadolinium…), fenêtre TDM, avec ou sans injection. Ne décris aucune anomalie.
+- Ne mentionne aucune image, séquence ou incidence qui ne fait pas partie des images affichées.
+- Ne révèle ni le diagnostic, ni la sémiologie, ni un indice qui les donne (pas de nom d'entité, pas de « lésion de… »).
+- "question" : la consigne posée à l'interne, adaptée au cas.
+- Français, chaque acronyme développé entre parenthèses à sa première occurrence.
+
+Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`, { modelTier: "default", cache: false }), 90000);
+    const desc = new Map(((r && r.images) || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
+    const images = panels.map((p, i) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
+    S.cas = { mode: S.cas.mode, etat: "question", f, panels, images, extraits, ctx: r || {}, source: source && source.origine };
   } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: messageErreur(e) }; }
   render();
 }
@@ -67,21 +98,37 @@ function messageErreur(e) {
 }
 async function corrigerCas() {
   const c = S.cas, rep = (casRoot().querySelector("#casRep")?.value || "").trim();
-  if (!rep) { toast("Décris d'abord la sémiologie et ton diagnostic."); return; }
+  if (rep.length < 10) { toast("Décris la sémiologie et donne ton diagnostic avant de soumettre."); return; }
   c.rep = rep; c.etat = "correction"; render();
   try {
-    const r = await S.sample.json(`Tu corriges un interne en radiologie sur un cas tiré d'un livre de référence.
-Cas : ${c.ctx.contexte || ""} Examen : ${c.ctx.examen || ""}
-Légende d'origine de la figure (référence, ${bookShort(c.f.b)}) : ${c.f.capo || c.f.cap}
-${(c.extraits || []).map((x) => `Extrait du livre (${x.src}) : ${x.t}`).join("\n")}
-Réponse de l'interne : ${rep}
+    const r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
 
-Évalue la sémiologie et le diagnostic. Appuie-toi uniquement sur la légende et les extraits ; n'invente rien. Rédige en français et développe chaque acronyme entre parenthèses à sa première occurrence.
-Réponds uniquement par {"note":0-10,"diagnostic":"diagnostic du livre","semiologie":["signes attendus"],"justes":["ce que l'interne a bien vu"],"manques":["ce qui manque ou est faux"],"explication":"4 à 6 phrases : pourquoi ce diagnostic, quels signes le portent, quel diagnostic différentiel écarter"}`, { modelTier: "default", cache: false });
-    c.corr = r || {}; c.etat = "corrige";
-    S.casHist.hist.push({ fid: c.f.id, note: Number(r?.note) || 0, at: Date.now(), dx: r?.diagnostic || "" });
+CAS
+Contexte : ${c.ctx.contexte || ""}
+Images : ${c.images.map((x) => `${x.lettre ? "(" + x.lettre + ") " : ""}${x.description}`).join(" ; ")}
+
+RÉFÉRENCE (seule source autorisée)
+Légende du livre (${bookShort(c.f.b)}) : ${c.f.capo || c.f.cap}
+${(c.extraits || []).map((x) => `Extrait du livre (${x.src}) : ${x.t}`).join("\n")}
+
+RÉPONSE DE L'INTERNE
+${rep}
+
+CONSIGNES
+- Note sur 10 = sémiologie /4 + diagnostic /4 + diagnostic différentiel /2. Ne donne pas de points pour un élément vague ou non argumenté.
+- Compare la réponse à la référence élément par élément. Classe chaque élément de l'interne en "justes" ou "erreurs" (affirmation fausse ou non soutenue par la référence) ; liste dans "manques" ce que la référence décrit et que l'interne n'a pas dit.
+- "semiologie_par_image" : pour chaque image affichée, les signes attendus d'après la légende ; si la légende ne précise rien pour une image, écris « non précisé par la légende ».
+- "differentiels" : 2 à 4 diagnostics à discuter, chacun avec l'élément de la référence qui l'écarte ; si la référence ne permet pas d'écarter, dis-le.
+- N'invente aucune donnée absente de la référence. Français, chaque acronyme développé entre parenthèses à sa première occurrence, phrases courtes.
+
+Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
+    const B = (r && r.bareme) || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
+    r.bareme = { semiologie: borne(B.semiologie, 4), diagnostic: borne(B.diagnostic, 4), differentiel: borne(B.differentiel, 2) };
+    r.note = Math.round((r.bareme.semiologie + r.bareme.diagnostic + r.bareme.differentiel) * 10) / 10;
+    c.corr = r; c.etat = "corrige";
+    S.casHist.hist.push({ fid: c.f.id, note: r.note, at: Date.now(), dx: r.diagnostic || "" });
     sauverCasHist();
-  } catch (e) { c.etat = "question"; toast(sampleCopy(e), 6000); }
+  } catch (e) { c.etat = "question"; toast(messageErreur(e), 6000); }
   render();
 }
 
@@ -177,22 +224,30 @@ function casDroite() {
       ${c.choix != null ? `<p class="expl">${esc(q.explication || "")}</p><button class="btn primary" data-qnext="1">${c.pos + 1 < c.items.length ? "Question suivante" : "Terminer"}</button>` : ""}`;
   }
   const f = c.f;
-  const fig = `<figure class="casfig"><img data-img="${esc(f.id)}" data-full="1" alt="Image du cas"></figure>`;
-  const head = `<span class="label">${c.source === "notes" ? "Cas sur mes notes" : c.source === "ratés" ? "Cas à refaire" : "Cas aléatoire"} · ${esc(bookShort(f.b))}</span>
-    <p class="casctx"><b>Contexte.</b> ${esc(c.ctx.contexte || "")}</p><p class="casctx"><b>Examen.</b> ${esc(c.ctx.examen || "")}</p>`;
-  if (c.etat === "question" || c.etat === "correction") return head + fig + `
-    <label class="label" for="casRep">Ta réponse : sémiologie, puis diagnostic</label>
-    <textarea id="casRep" rows="5" placeholder="Décris ce que tu vois, puis donne ton diagnostic et ton différentiel.">${esc(c.rep || "")}</textarea>
-    <div class="row"><button class="btn primary" data-corriger="1" ${c.etat === "correction" ? "disabled" : ""}>${c.etat === "correction" ? "Correction en cours…" : "Soumettre à Claude"}</button><button class="btn small" data-tirer="1">Autre cas</button></div>`;
-  const r = c.corr || {};
-  return head + fig + `
-    <div class="corr"><div class="note">${esc(String(r.note ?? "?"))}<small>/10</small></div><div><span class="label">Diagnostic du livre</span><h2 class="btitle" style="font-size:20px">${esc(r.diagnostic || "")}</h2></div></div>
-    <p class="hint"><b>Ta réponse :</b> ${esc(c.rep)}</p>
-    ${(r.justes || []).length ? `<h3 class="bsech">Bien vu</h3><ul class="lines">${r.justes.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    ${(r.manques || []).length ? `<h3 class="bsech">À revoir</h3><ul class="lines">${r.manques.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    ${(r.semiologie || []).length ? `<h3 class="bsech">Sémiologie attendue</h3><ul class="lines">${r.semiologie.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    <h3 class="bsech">Explication</h3><p class="expl">${esc(r.explication || "")}</p>
-    <h3 class="bsech">Légende du livre</h3><p class="expl">${esc(f.capo || f.cap)}</p><p class="hint">${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${esc(f.pa || "")}${f.pg ? `, p. ${esc(f.pg)}` : ""}</p>
+  S.lb = { list: c.images.map((x) => ({ id: x.id, cap: x.description || "", src: `${bookShort(f.b)}${x.lettre ? ` · image ${x.lettre}` : ""}`, dd: "", slug: null, ent: "Cas" })), i: 0 };
+  const galerie = `<div class="casgal n${Math.min(c.images.length, 4)}">${c.images.map((x, i) => `<figure><button class="casimg" data-lb="${i}" aria-label="Agrandir l'image ${esc(x.lettre)}"><img data-img="${esc(x.id)}" data-full="1" alt="Image ${esc(x.lettre)} du cas"></button><figcaption>${x.lettre ? `<b>${esc(x.lettre)}</b> ` : ""}${esc(x.description || "")}</figcaption></figure>`).join("")}</div>`;
+  const tete = `<div class="cashead"><span class="label">${c.source === "notes" ? "Cas sur mes notes" : c.source === "ratés" ? "Cas à refaire" : "Cas aléatoire"} · ${esc(bookShort(f.b))}${c.ctx.difficulte ? ` · ${esc(c.ctx.difficulte)}` : ""}</span><h2 class="btitle">${esc(c.ctx.titre || "Cas clinique")}</h2></div>
+    <div class="casctx"><p><b>Clinique.</b> ${esc(c.ctx.contexte || "")}</p></div>${galerie}`;
+  if (c.etat === "question" || c.etat === "correction") return tete + `
+    <div class="casform"><label class="label" for="casRep">${esc(c.ctx.question || "Décris la sémiologie, puis donne ton diagnostic et ton diagnostic différentiel.")}</label>
+    <textarea id="casRep" rows="6" placeholder="Sémiologie : …&#10;Diagnostic : …&#10;Différentiel : …">${esc(c.rep || "")}</textarea>
+    <div class="row"><button class="btn primary" data-corriger="1" ${c.etat === "correction" ? "disabled" : ""}>${c.etat === "correction" ? "Correction en cours…" : "Soumettre"}</button><button class="btn small" data-tirer="1">Passer ce cas</button></div></div>`;
+  const r = c.corr || {}, B = r.bareme || {};
+  const barre = (lib, v, m) => `<div class="bar-l"><span>${lib}</span><span class="bar"><i style="width:${Math.round(100 * (v || 0) / m)}%"></i></span><b>${v ?? 0} / ${m}</b></div>`;
+  const liste = (t, xs, cls) => (xs || []).length ? `<div class="fb ${cls}"><h3>${t}</h3><ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+  return tete + `
+    <section class="feedback">
+      <div class="fb-score"><div class="note ${r.note >= 7 ? "ok" : r.note >= 5 ? "moy" : "ko"}">${esc(String(r.note ?? "?"))}<small>/10</small></div>
+        <div class="fb-bars">${barre("Sémiologie", B.semiologie, 4)}${barre("Diagnostic", B.diagnostic, 4)}${barre("Différentiel", B.differentiel, 2)}</div></div>
+      <p class="verdict">${esc(r.verdict || "")}</p>
+      <div class="fb-dx"><span class="label">Diagnostic</span><h3>${esc(r.diagnostic || "")}</h3>${(r.arguments || []).length ? `<ul>${r.arguments.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
+      <div class="fb-cols">${liste("Bien vu", r.justes, "ok")}${liste("Erreurs", r.erreurs, "ko")}${liste("Manques", r.manques, "moy")}</div>
+      ${(r.semiologie_par_image || []).length ? `<div class="fb"><h3>Sémiologie attendue</h3><dl class="semio">${r.semiologie_par_image.map((x) => `<dt>${x.panneau ? "Image " + esc(x.panneau) : "Image"}</dt><dd>${esc((x.signes || []).join(" · "))}</dd>`).join("")}</dl></div>` : ""}
+      ${(r.differentiels || []).length ? `<div class="fb"><h3>Diagnostic différentiel</h3><table class="ddx"><tbody>${r.differentiels.map((x) => `<tr><th>${esc(x.diagnostic || "")}</th><td>${esc(x.contre || "")}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      ${r.piege ? `<div class="fb moy"><h3>Piège</h3><p>${esc(r.piege)}</p></div>` : ""}
+      ${r.a_retenir ? `<div class="fb cle"><h3>À retenir</h3><p>${esc(r.a_retenir)}</p></div>` : ""}
+      <details class="fb src"><summary>Ta réponse et la source du livre</summary><p><b>Ta réponse :</b> ${esc(c.rep)}</p><p><b>Légende (${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${f.pg ? `, p. ${esc(f.pg)}` : ""}) :</b> ${esc(f.capo || f.cap)}</p>${(c.extraits || []).map((x) => `<p class="hint">${esc(x.src)}</p>`).join("")}</details>
+    </section>
     <div class="row"><button class="btn primary" data-tirer="1">Cas suivant</button>${c.mode === "revision" ? `<button class="btn small" data-casmode="revision">Retour à la révision</button>` : ""}</div>`;
 }
 function clicCas(t) {

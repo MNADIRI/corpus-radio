@@ -277,6 +277,50 @@ ol.steps li.fail::before{border-color:var(--bad);background:var(--bad)}
 .qopts{display:grid;gap:8px;margin:12px 0;max-width:72ch}.qopt{text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);font:15px var(--body);cursor:pointer}
 .qopt.ok{border-color:var(--good);background:var(--good-soft)}.qopt.ko{border-color:var(--bad);background:var(--bad-soft)}
 .desk.cas .pane-left{max-width:none}
+/* ---- Bibliothèque ---- */
+.seg{display:inline-flex;gap:2px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:3px;margin:2px 0 10px}
+.seg button{border:0;background:none;color:var(--muted);font:500 13px var(--body);padding:5px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.bstats{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--muted);margin-bottom:10px;font-variant-numeric:tabular-nums}.bstats b{color:var(--fg)}
+.grp{font:600 11px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 2px 6px}
+.entlist .item .mono{font-family:var(--mono);font-size:11px;font-variant-numeric:tabular-nums}
+.filtres{display:grid;gap:8px;margin-bottom:8px}.filtres select{font:13px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--line);background:var(--surface);color:var(--fg);font:12.5px var(--body);padding:4px 10px;border-radius:999px;cursor:pointer}
+.chip.on,.chip:hover{border-color:var(--accent);background:var(--accent-soft)}
+.chaps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:4px;max-width:820px}
+.chaps button{width:100%;display:grid;grid-template-columns:2.4em 1fr auto;gap:2px 10px;align-items:baseline;text-align:left;padding:9px 12px;border:1px solid var(--line-soft);border-radius:8px;background:var(--surface);color:var(--fg);cursor:pointer;font:14px var(--body)}
+.chaps button:hover{border-color:var(--accent)}.chaps .n{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}.chaps .p{font-size:11px;color:var(--muted)}.chaps .d{grid-column:2/-1;font-size:11.5px;color:var(--accent)}
+/* ---- Cas ---- */
+.cashead{display:grid;gap:2px;margin-bottom:6px}
+.casctx{max-width:78ch;font-size:15px;line-height:1.6;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:6px 0 12px}
+.casctx p{margin:0}
+.casgal{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin-bottom:14px}
+.casgal.n1{grid-template-columns:minmax(0,760px)}
+.casgal figure{margin:0;display:grid;gap:6px;align-content:start}
+.casimg{display:grid;place-items:center;width:100%;min-height:200px;padding:0;border:0;border-radius:10px;background:var(--film);cursor:zoom-in;overflow:hidden}
+.casimg img{max-width:100%;max-height:62vh;object-fit:contain}
+.casgal figcaption{font-size:12.5px;color:var(--muted);line-height:1.4}.casgal figcaption b{display:inline-grid;place-items:center;width:1.5em;height:1.5em;border-radius:50%;background:var(--fg);color:var(--bg);font-size:11px;margin-right:4px}
+.casform{display:grid;gap:6px;max-width:78ch}
+.feedback{display:grid;gap:12px;max-width:900px;margin:6px 0 14px}
+.fb-score{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.fb-score .note{font-family:var(--display);font-size:44px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1}.fb-score .note small{font-size:16px;color:var(--muted)}
+.fb-score .note.ok{color:var(--good)}.fb-score .note.moy{color:var(--warn)}.fb-score .note.ko{color:var(--bad)}
+.fb-bars{display:grid;gap:5px;min-width:min(100%,320px)}
+.bar-l{display:grid;grid-template-columns:7.5em 1fr 3.4em;gap:8px;align-items:center;font-size:12.5px;font-variant-numeric:tabular-nums}
+.bar-l .bar{height:6px;border-radius:3px;background:var(--sunk);overflow:hidden}.bar-l .bar i{display:block;height:100%;background:var(--accent)}
+.verdict{font-family:var(--display);font-size:17px;line-height:1.45;margin:0;max-width:72ch}
+.fb-dx{padding:12px 14px;border:1px solid var(--accent);border-radius:10px;background:var(--accent-soft)}.fb-dx h3{font-family:var(--display);font-size:20px;margin:2px 0 6px}.fb-dx ul{margin:0;padding-left:18px}
+.fb-cols{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.fb{padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.fb h3{font:600 12px var(--body);letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px;color:var(--muted)}
+.fb ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14px;line-height:1.5}.fb p{margin:0;font-size:14.5px;line-height:1.55}
+.fb.ok{border-left:3px solid var(--good)}.fb.ko{border-left:3px solid var(--bad)}.fb.moy{border-left:3px solid var(--warn)}.fb.cle{border-left:3px solid var(--accent)}
+.semio{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:14px}.semio dt{font-weight:600}.semio dd{margin:0}
+.ddx{border-collapse:collapse;width:100%;font-size:14px}.ddx th{text-align:left;font-weight:600;padding:5px 10px 5px 0;vertical-align:top;white-space:nowrap}.ddx td{padding:5px 0;border-top:1px solid var(--line-soft)}.ddx tr:first-child td{border-top:0}
+.fb.src summary{cursor:pointer;font-size:13px;color:var(--muted)}.fb.src p{margin-top:8px;font-size:13.5px}
+.revcard b{font-size:14.5px}.revcard .pill{margin-left:4px}
+/* en-tête des outils : la barre d'espaces porte déjà le nom de l'application */
+.brand b{display:none}
+@media (max-width:720px){.fb-score .note{font-size:36px}.bar-l{grid-template-columns:6.5em 1fr 3em}}
 
 </style>
 
@@ -1277,60 +1321,6 @@ function majOnglets() {
   $("q").placeholder = S.tab === "biblio" ? "Chercher une entité, un synonyme, un sigle…" : "Chercher dans les fiches et les notes…";
 }
 
-/* Bibliothèque : colonne de gauche */
-function entitesFiltrees() {
-  const q = norm(S.bq).trim();
-  let l = entitesVisibles();
-  if (q) l = l.filter((e) => norm(e.n).includes(q) || e.s.some((s) => norm(s).includes(q)) || e.a.some((a) => norm(a) === q));
-  return l.sort((a, b) => (q && norm(a.n).startsWith(q) ? 0 : 1) - (q && norm(b.n).startsWith(q) ? 0 : 1) || a.n.localeCompare(b.n, "fr"));
-}
-function biblioGauche() {
-  if (!S.owner) return `<div class="alert"><b>Corpus réservé</b><span>La bibliothèque des livres est réservée au propriétaire. Les fiches et les modules restent consultables dans l'onglet Notes.</span></div>`;
-  if (S.manifest === undefined) return `<p class="hint">Connexion à la base…</p>`;
-  if (!S.manifest) return `<div class="alert"><b>Livres indisponibles</b><span>${esc(messageCorpus())} <button class="btn small" data-retry-meta="1">Réessayer</button></span></div>`;
-  const livres = S.books.filter((b) => S.dom === "tous" || b.domaines.includes(S.dom));
-  const l = entitesFiltrees(), vis = l.slice(0, 300);
-  return `<div class="libhead"><span class="label">${esc(libDomaine(S.dom))}</span><span class="hint">${plural(livres.length, "livre")} · ${plural(l.length, "entité")}</span></div>
-  <div class="booklist">${livres.map((b) => `<div class="bookrow"><b>${esc(b.court)}</b><span>${esc(b.titre)}</span><span class="mono">${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures · ${b.langue.toUpperCase()}</span></div>`).join("")}</div>
-  ${S.entState === "loading" ? `<p class="hint">Chargement du catalogue…</p>` : S.entState === "error" ? `<div class="alert"><b>Catalogue indisponible</b><span>La base n'a pas répondu. <button class="btn small" data-retry-ent="1">Réessayer</button></span></div>` : ""}
-  <ul class="entlist">${vis.map((e) => `<li><button class="item${S.entSel === e.i ? " on" : ""}" data-ent="${esc(e.i)}"><b>${esc(e.n)}</b><span>${esc(CAT[e.c] || e.c)}${e.r.length ? " · " + esc(e.r.slice(0, 2).map(libRegion).join(", ")) : ""} · ${e.np} p · ${e.nf} fig.</span></button></li>`).join("")}</ul>
-  ${l.length > vis.length ? `<p class="hint">${l.length - vis.length} autres : affine la recherche.</p>` : ""}`;
-}
-
-/* Bibliothèque : fiche d'entité à droite */
-async function ouvrirEntite(id) {
-  S.entSel = id; S.entView = { id, state: "loading" }; S.detail = true; render();
-  try {
-    const d = await detailEntite(id);
-    const pids = (d?.p || []).slice(0, 14), fids = (d?.f || []).slice(0, 24);
-    const [ps, figs] = await Promise.all([Promise.all(pids.map((p) => lirePassage(p).catch(() => null))), figsParId(fids)]);
-    if (S.entSel !== id) return;
-    S.entView = { id, state: "ok", d, ps: ps.filter(Boolean), figs, totP: (d?.p || []).length, totF: (d?.f || []).length };
-  } catch { S.entView = { id, state: "err" }; }
-  render();
-}
-function ficheDeEntite(e) {
-  const slugs = new Set([slugify(e.n), ...e.s.map(slugify)]);
-  return [...S.fiches.values()].find((f) => slugs.has(f.slug) || (f.alias || []).some((a) => slugs.has(a)));
-}
-function biblioDroite() {
-  const v = S.entView, e = v && S.ent.get(v.id);
-  if (!e) return `<div class="bempty"><h2>Bibliothèque</h2><p>Choisis une entité à gauche pour voir ses passages, ses figures et sa fiche. La recherche accepte les synonymes français et anglais et les sigles.</p>${S.owner && S.manifest ? `<p class="hint">Corpus version ${esc(S.manifest.version)} · lu depuis l'ouverture : ${S.lus.docs} morceaux, ${(S.lus.octets / 1024).toFixed(0)} Ko.</p>` : ""}</div>`;
-  const f = ficheDeEntite(e);
-  const head = `<button class="btn small bback" data-back="1">‹ Liste</button><span class="label">${esc(CAT[e.c] || e.c)}${e.d.length ? " · " + esc(e.d.map(libDomaine).join(", ")) : ""}</span><h1 class="btitle">${esc(e.n)}</h1>
-    ${e.s.length || e.a.length ? `<p class="hint">Aussi : ${esc([...e.a, ...e.s].slice(0, 12).join(" · "))}</p>` : ""}
-    ${e.r.length ? `<p class="hint">Régions : ${esc(e.r.map(libRegion).join(", "))}</p>` : ""}
-    <div class="row">${f ? `<button class="btn primary small" data-fiche="${esc(f.slug)}">Ouvrir la fiche</button>` : S.sample ? `<button class="btn primary small" data-genent="${esc(e.i)}">Générer la fiche</button>` : ""}</div>`;
-  if (v.state === "loading") return head + `<p class="hint">Lecture des passages et des figures…</p>`;
-  if (v.state === "err") return head + `<div class="alert"><b>Lecture impossible</b><span>La base n'a pas répondu à temps. <button class="btn small" data-ent="${esc(e.i)}">Réessayer</button></span></div>`;
-  S.lb = { list: v.figs.map((g) => ({ id: g.id, cap: g.cap, src: `${bookShort(g.b)}, fig. ${g.fig}${g.pa ? g.pa : ""}${g.pg ? `, p. ${g.pg}` : ""}`, dd: "" , slug: null, ent: e.n })), i: 0 };
-  return head + `
-    <h2 class="bsech">Figures <span class="hint">${v.totF > v.figs.length ? `${v.figs.length} sur ${v.totF}` : v.figs.length}</span></h2>
-    ${v.figs.length ? `<div class="bthumbs">${v.figs.map((g, i) => `<button class="bthumb" data-lb="${i}" title="${esc(g.cap.slice(0, 140))}"><img data-img="${esc(g.id)}" alt="${esc(g.cap.slice(0, 120))}"><span>${esc(bookShort(g.b))} · fig. ${esc(g.fig)}${esc(g.pa || "")}</span></button>`).join("")}</div>` : `<p class="hint">Aucune figure rattachée.</p>`}
-    <h2 class="bsech">Passages <span class="hint">${v.totP > v.ps.length ? `${v.ps.length} sur ${v.totP}` : v.ps.length}</span></h2>
-    ${v.ps.map((p) => `<article class="psg"><span class="mono">${esc(srcLabel(p))}</span><p>${esc(p.t.length > 900 ? p.t.slice(0, 900) + " …" : p.t)}</p><button class="btn small" data-ref="${esc(p.id)}">Lire en entier</button></article>`).join("") || `<p class="hint">Aucun passage rattaché.</p>`}`;
-}
-
 /* Progression de Learning Radiology */
 async function chargerProgression() {
   if (!S.uid) { S.prog = null; return; }
@@ -1356,7 +1346,7 @@ async function importerProgression() {
 /* rendu des onglets */
 let biblioSig = "";
 function renderBiblio() {
-  const sig = JSON.stringify([S.tab, S.dom, S.bq, S.entSel, S.entState, S.ent.size, !!S.manifest, S.owner]);
+  const sig = JSON.stringify([S.tab, S.dom, S.bq, S.entSel, S.entState, S.ent.size, !!S.manifest, S.owner, S.bib]);
   if (S.tab === "cas") {
     const g = casGauche(); if ($("left").dataset.h !== g) { $("left").dataset.h = g; $("left").innerHTML = g; } biblioSig = "";
     const h = casDroite(); if ($("right").dataset.h !== h) { const keep = $("right").querySelector("#casRep")?.value; $("right").dataset.h = h; $("right").innerHTML = h; const ta = $("right").querySelector("#casRep"); if (ta && keep != null && !ta.value) ta.value = keep; chargerImagesVisibles(); }
@@ -1428,36 +1418,67 @@ async function contexteLivre(f) {
   const ps = (await Promise.all(ids.slice(0, 2).map((id) => lirePassage(id).catch(() => null)))).filter(Boolean);
   return ps.map((p) => ({ id: p.id, src: srcLabel(p), t: p.t.length > 1600 ? p.t.slice(0, 1600) + " …" : p.t }));
 }
+function groupesFigures(figs) {
+  const g = new Map();
+  for (const f of figs) { const k = f.fig; if (!g.has(k)) g.set(k, []); g.get(k).push(f); }
+  const out = [];
+  for (const panels of g.values()) {
+    panels.sort((x, y) => String(x.pa || "").localeCompare(String(y.pa || "")));
+    const f0 = panels[0], cap = f0.capo || f0.cap || "";
+    if (cap.length < 60 || f0.role === "schema" || (f0.m || []).includes("schema")) continue;
+    if (!panels.every((p) => p.il || p.iv)) continue;
+    const attendus = (f0.pn || []).length;
+    if (attendus && panels.length < attendus) continue;               // un panneau cité sans image : cas incomplet
+    if (panels.length > 8) continue;
+    out.push(panels);
+  }
+  return out;
+}
+async function panneauxDe(f) {
+  const b = S.bookById.get(f.b), tous = await figsChapitre(b, f.ch);
+  const g = groupesFigures(tous.filter((x) => x.fig === f.fig));
+  return g[0] || null;
+}
 async function tirerCas(source) {
-  if (!S.manifest) { toast("Le corpus n'est pas accessible : vérifie le connecteur GitHub."); return; }
+  if (!S.manifest) { toast("L'index n'est pas accessible : vérifie le connecteur GitHub."); return; }
   if (!S.sample) { toast("Claude n'est pas disponible dans cette vue."); return; }
   S.cas = { mode: S.cas.mode, etat: "tirage", etape: "Choix d'une figure dans les livres" }; render();
   const etape = (t) => { S.cas.etape = t; render(); };
   try {
-    let f = null;
-    if (source && source.fid) f = (await figsParId([source.fid]))[0] || null;
-    for (let essai = 0; !f && essai < 8; essai++) {
+    let panels = null;
+    if (source && source.fid) { const f = (await figsParId([source.fid]))[0]; if (f) panels = await panneauxDe(f); }
+    for (let essai = 0; !panels && essai < 10; essai++) {
       const b = livrePondere(); if (!b) break;
       const chs = b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => c.n);
       const ch = chs[Math.floor(Math.random() * chs.length)];
       etape(`Lecture des figures : ${b.court}, chapitre ${ch}`);
-      const figs = (await figsChapitre(b, ch)).filter((g) => (g.il || g.iv) && (g.capo || g.cap).length > 60 && g.role !== "schema" && !(g.m || []).includes("schema"));
-      if (figs.length) f = figs[Math.floor(Math.random() * figs.length)];
+      const gs = groupesFigures(await figsChapitre(b, ch));
+      if (gs.length) panels = gs[Math.floor(Math.random() * gs.length)];
     }
-    if (!f) throw { message: "Aucune figure exploitable dans ce domaine." };
+    if (!panels) throw { message: "Aucune figure complète et exploitable trouvée dans ce domaine." };
+    const f = panels[0], lettres = panels.map((p) => p.pa).filter(Boolean);
     etape("Lecture des passages qui citent la figure");
     const extraits = await contexteLivre(f).catch(() => []);
-    etape("Claude rédige le contexte clinique");
-    const ctx = await avecDelai(S.sample.json(`Tu prépares un cas d'entraînement en radiologie pour un interne, comme à la vacation.
-À partir de la légende d'une figure et des extraits du livre qui la citent, rédige en français :
-- "contexte" : la présentation clinique (âge, sexe, symptômes, antécédents utiles) en 1 à 3 phrases, en reprenant les éléments cliniques des extraits quand ils existent ;
-- "examen" : la modalité, la région et l'incidence ou la séquence montrées.
-Ne révèle NI le diagnostic, NI la sémiologie décrite dans la légende. Développe chaque acronyme entre parenthèses à sa première occurrence.
-Réponds uniquement par {"contexte":"…","examen":"…"}.
+    etape("Claude construit le cas");
+    const r = await avecDelai(S.sample.json(`Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
 
-Légende (${bookShort(f.b)}) : ${f.capo || f.cap}
-${extraits.map((x) => `Extrait (${x.src}) : ${x.t}`).join("\n")}`, { modelTier: "quick", cache: false }), 60000);
-    S.cas = { mode: S.cas.mode, etat: "question", f, extraits, ctx: ctx || {}, source: source && source.origine };
+DONNÉES DU LIVRE (${bookShort(f.b)})
+Légende de la figure : ${f.capo || f.cap}
+${lettres.length ? `Images affichées à l'interne : ${lettres.map((l) => "(" + l + ")").join(", ")} — et AUCUNE autre.` : "Une seule image est affichée à l'interne."}
+${extraits.map((x) => `Extrait qui cite la figure (${x.src}) : ${x.t}`).join("\n")}
+
+CONSIGNES
+- "contexte" : la présentation clinique en 2 à 4 phrases (âge, sexe, motif, durée, antécédents ou biologie utiles). Reprends les éléments cliniques des extraits et de la légende quand ils existent ; sinon, propose une présentation typique et cohérente avec le diagnostic, sans le nommer.
+- "images" : une entrée par image affichée, avec la lettre ("" s'il n'y en a qu'une) et sa description technique seulement : modalité, région, plan ou incidence, séquence IRM (T1, T2, STIR, T1 après injection de gadolinium…), fenêtre TDM, avec ou sans injection. Ne décris aucune anomalie.
+- Ne mentionne aucune image, séquence ou incidence qui ne fait pas partie des images affichées.
+- Ne révèle ni le diagnostic, ni la sémiologie, ni un indice qui les donne (pas de nom d'entité, pas de « lésion de… »).
+- "question" : la consigne posée à l'interne, adaptée au cas.
+- Français, chaque acronyme développé entre parenthèses à sa première occurrence.
+
+Réponds uniquement par {"titre":"motif neutre en 3 à 6 mots","contexte":"…","images":[{"panneau":"a","description":"…"}],"question":"…","difficulte":"facile|moyen|difficile"}`, { modelTier: "default", cache: false }), 90000);
+    const desc = new Map(((r && r.images) || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
+    const images = panels.map((p, i) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
+    S.cas = { mode: S.cas.mode, etat: "question", f, panels, images, extraits, ctx: r || {}, source: source && source.origine };
   } catch (e) { S.cas = { mode: S.cas.mode, etat: "erreur", err: messageErreur(e) }; }
   render();
 }
@@ -1471,21 +1492,37 @@ function messageErreur(e) {
 }
 async function corrigerCas() {
   const c = S.cas, rep = (casRoot().querySelector("#casRep")?.value || "").trim();
-  if (!rep) { toast("Décris d'abord la sémiologie et ton diagnostic."); return; }
+  if (rep.length < 10) { toast("Décris la sémiologie et donne ton diagnostic avant de soumettre."); return; }
   c.rep = rep; c.etat = "correction"; render();
   try {
-    const r = await S.sample.json(`Tu corriges un interne en radiologie sur un cas tiré d'un livre de référence.
-Cas : ${c.ctx.contexte || ""} Examen : ${c.ctx.examen || ""}
-Légende d'origine de la figure (référence, ${bookShort(c.f.b)}) : ${c.f.capo || c.f.cap}
-${(c.extraits || []).map((x) => `Extrait du livre (${x.src}) : ${x.t}`).join("\n")}
-Réponse de l'interne : ${rep}
+    const r = await avecDelai(S.sample.json(`Tu es un radiologue senior qui corrige un interne de 4e année après une vacation de lecture. Sois exigeant, précis et bienveillant.
 
-Évalue la sémiologie et le diagnostic. Appuie-toi uniquement sur la légende et les extraits ; n'invente rien. Rédige en français et développe chaque acronyme entre parenthèses à sa première occurrence.
-Réponds uniquement par {"note":0-10,"diagnostic":"diagnostic du livre","semiologie":["signes attendus"],"justes":["ce que l'interne a bien vu"],"manques":["ce qui manque ou est faux"],"explication":"4 à 6 phrases : pourquoi ce diagnostic, quels signes le portent, quel diagnostic différentiel écarter"}`, { modelTier: "default", cache: false });
-    c.corr = r || {}; c.etat = "corrige";
-    S.casHist.hist.push({ fid: c.f.id, note: Number(r?.note) || 0, at: Date.now(), dx: r?.diagnostic || "" });
+CAS
+Contexte : ${c.ctx.contexte || ""}
+Images : ${c.images.map((x) => `${x.lettre ? "(" + x.lettre + ") " : ""}${x.description}`).join(" ; ")}
+
+RÉFÉRENCE (seule source autorisée)
+Légende du livre (${bookShort(c.f.b)}) : ${c.f.capo || c.f.cap}
+${(c.extraits || []).map((x) => `Extrait du livre (${x.src}) : ${x.t}`).join("\n")}
+
+RÉPONSE DE L'INTERNE
+${rep}
+
+CONSIGNES
+- Note sur 10 = sémiologie /4 + diagnostic /4 + diagnostic différentiel /2. Ne donne pas de points pour un élément vague ou non argumenté.
+- Compare la réponse à la référence élément par élément. Classe chaque élément de l'interne en "justes" ou "erreurs" (affirmation fausse ou non soutenue par la référence) ; liste dans "manques" ce que la référence décrit et que l'interne n'a pas dit.
+- "semiologie_par_image" : pour chaque image affichée, les signes attendus d'après la légende ; si la légende ne précise rien pour une image, écris « non précisé par la légende ».
+- "differentiels" : 2 à 4 diagnostics à discuter, chacun avec l'élément de la référence qui l'écarte ; si la référence ne permet pas d'écarter, dis-le.
+- N'invente aucune donnée absente de la référence. Français, chaque acronyme développé entre parenthèses à sa première occurrence, phrases courtes.
+
+Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
+    const B = (r && r.bareme) || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
+    r.bareme = { semiologie: borne(B.semiologie, 4), diagnostic: borne(B.diagnostic, 4), differentiel: borne(B.differentiel, 2) };
+    r.note = Math.round((r.bareme.semiologie + r.bareme.diagnostic + r.bareme.differentiel) * 10) / 10;
+    c.corr = r; c.etat = "corrige";
+    S.casHist.hist.push({ fid: c.f.id, note: r.note, at: Date.now(), dx: r.diagnostic || "" });
     sauverCasHist();
-  } catch (e) { c.etat = "question"; toast(sampleCopy(e), 6000); }
+  } catch (e) { c.etat = "question"; toast(messageErreur(e), 6000); }
   render();
 }
 
@@ -1581,22 +1618,30 @@ function casDroite() {
       ${c.choix != null ? `<p class="expl">${esc(q.explication || "")}</p><button class="btn primary" data-qnext="1">${c.pos + 1 < c.items.length ? "Question suivante" : "Terminer"}</button>` : ""}`;
   }
   const f = c.f;
-  const fig = `<figure class="casfig"><img data-img="${esc(f.id)}" data-full="1" alt="Image du cas"></figure>`;
-  const head = `<span class="label">${c.source === "notes" ? "Cas sur mes notes" : c.source === "ratés" ? "Cas à refaire" : "Cas aléatoire"} · ${esc(bookShort(f.b))}</span>
-    <p class="casctx"><b>Contexte.</b> ${esc(c.ctx.contexte || "")}</p><p class="casctx"><b>Examen.</b> ${esc(c.ctx.examen || "")}</p>`;
-  if (c.etat === "question" || c.etat === "correction") return head + fig + `
-    <label class="label" for="casRep">Ta réponse : sémiologie, puis diagnostic</label>
-    <textarea id="casRep" rows="5" placeholder="Décris ce que tu vois, puis donne ton diagnostic et ton différentiel.">${esc(c.rep || "")}</textarea>
-    <div class="row"><button class="btn primary" data-corriger="1" ${c.etat === "correction" ? "disabled" : ""}>${c.etat === "correction" ? "Correction en cours…" : "Soumettre à Claude"}</button><button class="btn small" data-tirer="1">Autre cas</button></div>`;
-  const r = c.corr || {};
-  return head + fig + `
-    <div class="corr"><div class="note">${esc(String(r.note ?? "?"))}<small>/10</small></div><div><span class="label">Diagnostic du livre</span><h2 class="btitle" style="font-size:20px">${esc(r.diagnostic || "")}</h2></div></div>
-    <p class="hint"><b>Ta réponse :</b> ${esc(c.rep)}</p>
-    ${(r.justes || []).length ? `<h3 class="bsech">Bien vu</h3><ul class="lines">${r.justes.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    ${(r.manques || []).length ? `<h3 class="bsech">À revoir</h3><ul class="lines">${r.manques.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    ${(r.semiologie || []).length ? `<h3 class="bsech">Sémiologie attendue</h3><ul class="lines">${r.semiologie.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
-    <h3 class="bsech">Explication</h3><p class="expl">${esc(r.explication || "")}</p>
-    <h3 class="bsech">Légende du livre</h3><p class="expl">${esc(f.capo || f.cap)}</p><p class="hint">${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${esc(f.pa || "")}${f.pg ? `, p. ${esc(f.pg)}` : ""}</p>
+  S.lb = { list: c.images.map((x) => ({ id: x.id, cap: x.description || "", src: `${bookShort(f.b)}${x.lettre ? ` · image ${x.lettre}` : ""}`, dd: "", slug: null, ent: "Cas" })), i: 0 };
+  const galerie = `<div class="casgal n${Math.min(c.images.length, 4)}">${c.images.map((x, i) => `<figure><button class="casimg" data-lb="${i}" aria-label="Agrandir l'image ${esc(x.lettre)}"><img data-img="${esc(x.id)}" data-full="1" alt="Image ${esc(x.lettre)} du cas"></button><figcaption>${x.lettre ? `<b>${esc(x.lettre)}</b> ` : ""}${esc(x.description || "")}</figcaption></figure>`).join("")}</div>`;
+  const tete = `<div class="cashead"><span class="label">${c.source === "notes" ? "Cas sur mes notes" : c.source === "ratés" ? "Cas à refaire" : "Cas aléatoire"} · ${esc(bookShort(f.b))}${c.ctx.difficulte ? ` · ${esc(c.ctx.difficulte)}` : ""}</span><h2 class="btitle">${esc(c.ctx.titre || "Cas clinique")}</h2></div>
+    <div class="casctx"><p><b>Clinique.</b> ${esc(c.ctx.contexte || "")}</p></div>${galerie}`;
+  if (c.etat === "question" || c.etat === "correction") return tete + `
+    <div class="casform"><label class="label" for="casRep">${esc(c.ctx.question || "Décris la sémiologie, puis donne ton diagnostic et ton diagnostic différentiel.")}</label>
+    <textarea id="casRep" rows="6" placeholder="Sémiologie : …&#10;Diagnostic : …&#10;Différentiel : …">${esc(c.rep || "")}</textarea>
+    <div class="row"><button class="btn primary" data-corriger="1" ${c.etat === "correction" ? "disabled" : ""}>${c.etat === "correction" ? "Correction en cours…" : "Soumettre"}</button><button class="btn small" data-tirer="1">Passer ce cas</button></div></div>`;
+  const r = c.corr || {}, B = r.bareme || {};
+  const barre = (lib, v, m) => `<div class="bar-l"><span>${lib}</span><span class="bar"><i style="width:${Math.round(100 * (v || 0) / m)}%"></i></span><b>${v ?? 0} / ${m}</b></div>`;
+  const liste = (t, xs, cls) => (xs || []).length ? `<div class="fb ${cls}"><h3>${t}</h3><ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : "";
+  return tete + `
+    <section class="feedback">
+      <div class="fb-score"><div class="note ${r.note >= 7 ? "ok" : r.note >= 5 ? "moy" : "ko"}">${esc(String(r.note ?? "?"))}<small>/10</small></div>
+        <div class="fb-bars">${barre("Sémiologie", B.semiologie, 4)}${barre("Diagnostic", B.diagnostic, 4)}${barre("Différentiel", B.differentiel, 2)}</div></div>
+      <p class="verdict">${esc(r.verdict || "")}</p>
+      <div class="fb-dx"><span class="label">Diagnostic</span><h3>${esc(r.diagnostic || "")}</h3>${(r.arguments || []).length ? `<ul>${r.arguments.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
+      <div class="fb-cols">${liste("Bien vu", r.justes, "ok")}${liste("Erreurs", r.erreurs, "ko")}${liste("Manques", r.manques, "moy")}</div>
+      ${(r.semiologie_par_image || []).length ? `<div class="fb"><h3>Sémiologie attendue</h3><dl class="semio">${r.semiologie_par_image.map((x) => `<dt>${x.panneau ? "Image " + esc(x.panneau) : "Image"}</dt><dd>${esc((x.signes || []).join(" · "))}</dd>`).join("")}</dl></div>` : ""}
+      ${(r.differentiels || []).length ? `<div class="fb"><h3>Diagnostic différentiel</h3><table class="ddx"><tbody>${r.differentiels.map((x) => `<tr><th>${esc(x.diagnostic || "")}</th><td>${esc(x.contre || "")}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      ${r.piege ? `<div class="fb moy"><h3>Piège</h3><p>${esc(r.piege)}</p></div>` : ""}
+      ${r.a_retenir ? `<div class="fb cle"><h3>À retenir</h3><p>${esc(r.a_retenir)}</p></div>` : ""}
+      <details class="fb src"><summary>Ta réponse et la source du livre</summary><p><b>Ta réponse :</b> ${esc(c.rep)}</p><p><b>Légende (${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${f.pg ? `, p. ${esc(f.pg)}` : ""}) :</b> ${esc(f.capo || f.cap)}</p>${(c.extraits || []).map((x) => `<p class="hint">${esc(x.src)}</p>`).join("")}</details>
+    </section>
     <div class="row"><button class="btn primary" data-tirer="1">Cas suivant</button>${c.mode === "revision" ? `<button class="btn small" data-casmode="revision">Retour à la révision</button>` : ""}</div>`;
 }
 function clicCas(t) {
@@ -1712,9 +1757,116 @@ ${figs.map((g) => `${g.id} : ${g.capo || g.cap}`).join("\n")}`, { modelTier: "de
 window.OUTILS_IMG = (id) => figImage(id, null, true).catch(() => null);
 window.OUTILS_GEN = { genererModule, chargerModulesGeneres, pret: () => !!(S.db) };
 
+/* Bibliothèque : ce à quoi l'application a accès dans l'index (ouvrages, chapitres, entités) */
+S.bib = { vue: "ouvrages", cat: "", reg: "", livre: null, ch: null };
+function entitesFiltrees() {
+  const q = norm(S.bq).trim();
+  let l = entitesVisibles();
+  if (S.bib.cat) l = l.filter((e) => e.c === S.bib.cat);
+  if (S.bib.reg) l = l.filter((e) => e.r.includes(S.bib.reg));
+  if (q) l = l.filter((e) => norm(e.n).includes(q) || e.s.some((s) => norm(s).includes(q)) || e.a.some((a) => norm(a) === q));
+  return l.sort((a, b) => (q && norm(a.n).startsWith(q) ? 0 : 1) - (q && norm(b.n).startsWith(q) ? 0 : 1) || (b.np + b.nf) - (a.np + a.nf) || a.n.localeCompare(b.n, "fr"));
+}
+function livresVisibles() { return S.books.filter((b) => S.dom === "tous" || b.domaines.includes(S.dom)); }
+function biblioGauche() {
+  if (!S.owner) return `<div class="alert"><b>Index réservé</b><span>La bibliothèque lit l'index dans le dépôt GitHub corpus-radio. Ajoute le connecteur GitHub dans claude.ai pour y accéder.</span></div>`;
+  if (S.manifest === undefined) return `<p class="hint">Lecture du sommaire de l'index…</p>`;
+  if (!S.manifest) return `<div class="alert"><b>Index indisponible</b><span>${esc(messageCorpus())} <button class="btn small" data-retry-meta="1">Réessayer</button></span></div>`;
+  const lv = livresVisibles(), tot = lv.reduce((a, b) => [a[0] + b.passages, a[1] + b.figures], [0, 0]);
+  const seg = `<div class="seg" role="tablist"><button role="tab" aria-selected="${S.bib.vue === "ouvrages"}" data-bvue="ouvrages">Ouvrages</button><button role="tab" aria-selected="${S.bib.vue === "entites"}" data-bvue="entites">Entités</button></div>`;
+  const stats = `<div class="bstats"><span><b>${lv.length}</b> ouvrages</span><span><b>${tot[0].toLocaleString("fr-BE")}</b> passages</span><span><b>${tot[1].toLocaleString("fr-BE")}</b> figures</span><span><b>${entitesVisibles().length.toLocaleString("fr-BE")}</b> entités</span></div>`;
+  if (S.bib.vue === "ouvrages") {
+    const g = {}; for (const b of lv) (g[b.domaine] = g[b.domaine] || []).push(b);
+    return seg + stats + Object.entries(g).map(([d, bs]) => `<h3 class="grp">${esc(libDomaine(d))}</h3><ul class="entlist">${bs.map((b) => `<li><button class="item${S.bib.livre === b.id ? " on" : ""}" data-livre="${esc(b.id)}"><b>${esc(b.court)}</b><span>${esc(b.titre)}</span><span class="mono">${b.chapitres.length} chapitres · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures${b.id === "top3-msk" ? " · banque de cas" : ""}</span></button></li>`).join("")}</ul>`).join("");
+  }
+  const cats = Object.keys(CAT), regs = [...new Set(entitesVisibles().flatMap((e) => e.r))].sort((a, b) => libRegion(a).localeCompare(libRegion(b), "fr"));
+  const l = entitesFiltrees(), vis = l.slice(0, 250);
+  return seg + stats + `<div class="filtres">
+    <div class="chips">${["", ...cats].map((c) => `<button class="chip${S.bib.cat === c ? " on" : ""}" data-bcat="${c}">${c ? esc(CAT[c]) : "Toutes"}</button>`).join("")}</div>
+    <label class="sr" for="bReg">Région</label><select id="bReg"><option value="">Toutes les régions</option>${regs.map((r) => `<option value="${esc(r)}" ${S.bib.reg === r ? "selected" : ""}>${esc(libRegion(r))}</option>`).join("")}</select></div>
+  ${S.entState === "loading" ? `<p class="hint">Chargement du catalogue…</p>` : S.entState === "error" ? `<div class="alert"><b>Catalogue indisponible</b><span><button class="btn small" data-retry-ent="1">Réessayer</button></span></div>` : ""}
+  <p class="hint">${plural(l.length, "entité")}${S.bq ? ` pour « ${esc(S.bq)} »` : ""}</p>
+  <ul class="entlist">${vis.map((e) => `<li><button class="item${S.entSel === e.i ? " on" : ""}" data-ent="${esc(e.i)}"><b>${esc(e.n)}</b><span>${esc(CAT[e.c] || e.c)}${e.r.length ? " · " + esc(e.r.slice(0, 2).map(libRegion).join(", ")) : ""}</span><span class="mono">${e.np} passages · ${e.nf} figures</span></button></li>`).join("")}</ul>
+  ${l.length > vis.length ? `<p class="hint">${l.length - vis.length} autres : affine la recherche.</p>` : ""}`;
+}
+async function ouvrirLivre(id, ch) {
+  S.bib.livre = id; S.bib.ch = ch ?? null; S.entSel = null; S.detail = true;
+  S.entView = ch == null ? { type: "livre", id } : { type: "chap", id, ch, state: "loading" }; render();
+  if (ch == null) return;
+  const b = S.bookById.get(id);
+  try {
+    const [figs, ps] = await Promise.all([figsChapitre(b, ch), passagesChapitre(id, ch)]);
+    if (S.bib.ch !== ch || S.bib.livre !== id) return;
+    S.entView = { type: "chap", id, ch, state: "ok", figs, ps };
+  } catch (e) { S.entView = { type: "chap", id, ch, state: "err", err: messageErreur(e) }; }
+  render();
+}
+async function ouvrirEntite(id) {
+  S.entSel = id; S.bib.livre = null; S.entView = { type: "ent", id, state: "loading" }; S.detail = true; render();
+  try {
+    const d = await detailEntite(id);
+    const pids = (d?.p || []).slice(0, 12), fids = (d?.f || []).slice(0, 30);
+    const [ps, figs] = await Promise.all([Promise.all(pids.map((p) => lirePassage(p).catch(() => null))), figsParId(fids)]);
+    if (S.entSel !== id) return;
+    S.entView = { type: "ent", id, state: "ok", d, ps: ps.filter(Boolean), figs, totP: (d?.p || []).length, totF: (d?.f || []).length };
+  } catch (e) { S.entView = { type: "ent", id, state: "err", err: messageErreur(e) }; }
+  render();
+}
+function ficheDeEntite(e) {
+  const slugs = new Set([slugify(e.n), ...e.s.map(slugify)]);
+  return [...S.fiches.values()].find((f) => slugs.has(f.slug) || (f.alias || []).some((a) => slugs.has(a)));
+}
+function grilleFigures(figs, ent) {
+  S.lb = { list: figs.map((g) => ({ id: g.id, cap: g.cap, src: `${bookShort(g.b)}, fig. ${g.fig}${g.pa || ""}${g.pg ? `, p. ${g.pg}` : ""}`, dd: "", slug: null, ent })), i: 0 };
+  return figs.length ? `<div class="bthumbs">${figs.map((g, i) => `<button class="bthumb" data-lb="${i}" title="${esc(g.cap.slice(0, 160))}"><img data-img="${esc(g.id)}" alt="${esc(g.cap.slice(0, 120))}"><span>${esc(bookShort(g.b))} · fig. ${esc(g.fig)}${esc(g.pa || "")}</span></button>`).join("")}</div>` : `<p class="hint">Aucune figure.</p>`;
+}
+function listePassages(ps) {
+  return ps.map((p) => `<article class="psg"><span class="mono">${esc(srcLabel(p))}</span><p>${esc(p.t.length > 700 ? p.t.slice(0, 700) + " …" : p.t)}</p><button class="btn small" data-ref="${esc(p.id)}">Lire en entier</button></article>`).join("") || `<p class="hint">Aucun passage.</p>`;
+}
+function biblioDroite() {
+  const v = S.entView;
+  if (!v) return `<div class="bempty"><h2>Bibliothèque</h2><p>Tout ce que l'application peut lire dans l'index : les ouvrages et leurs chapitres, les figures avec leur légende, et le catalogue des entités pathologiques. Choisis un ouvrage ou une entité à gauche.</p>${S.manifest ? `<p class="hint">Index version ${esc(S.manifest.version)} · lu depuis l'ouverture : ${S.lus.docs} fichiers, ${(S.lus.octets / 1024).toFixed(0)} Ko.</p>` : ""}</div>`;
+  const back = `<button class="btn small bback" data-back="1">‹ Liste</button>`;
+  if (v.type === "livre") {
+    const b = S.bookById.get(v.id); if (!b) return "";
+    return back + `<span class="label">${esc(libDomaine(b.domaine))}${b.id === "top3-msk" ? " · banque de cas" : ""}</span><h1 class="btitle">${esc(b.titre)}</h1>
+      <p class="hint">${esc(b.auteurs.join(", "))}${b.annee ? ` · ${b.annee}` : ""} · ${b.langue === "fr" ? "français" : "anglais"} · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures</p>
+      <ol class="chaps">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button data-livre="${esc(b.id)}" data-chap="${c.n}"><span class="n">${c.n}</span><span class="t">${esc(c.t)}</span><span class="p mono">${c.p && c.p[0] ? `p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span>${c.d.length > 1 ? `<span class="d">${esc(c.d.filter((x) => x !== b.domaine).map(libDomaine).join(", "))}</span>` : ""}</button></li>`).join("")}</ol>`;
+  }
+  if (v.type === "chap") {
+    const b = S.bookById.get(v.id), c = chapitre(b, v.ch);
+    const head = back + `<button class="btn small" data-livre="${esc(b.id)}">‹ ${esc(b.court)}</button><span class="label">${esc(b.court)} · chapitre ${v.ch}</span><h1 class="btitle">${esc(c ? c.t : "")}</h1>`;
+    if (v.state === "loading") return head + `<p class="hint">Lecture du chapitre dans l'index…</p>`;
+    if (v.state === "err") return head + `<div class="alert"><b>Lecture impossible</b><span>${esc(v.err)} <button class="btn small" data-livre="${esc(b.id)}" data-chap="${v.ch}">Réessayer</button></span></div>`;
+    return head + `<h2 class="bsech">Figures <span class="hint">${v.figs.length}</span></h2>${grilleFigures(v.figs, c ? c.t : "")}
+      <h2 class="bsech">Passages <span class="hint">${v.ps.length}</span></h2>${listePassages(v.ps.slice(0, 40))}${v.ps.length > 40 ? `<p class="hint">${v.ps.length - 40} autres passages dans ce chapitre.</p>` : ""}`;
+  }
+  const e = S.ent.get(v.id); if (!e) return "";
+  const f = ficheDeEntite(e);
+  const head = back + `<span class="label">${esc(CAT[e.c] || e.c)} · ${esc(e.d.map(libDomaine).join(", "))}</span><h1 class="btitle">${esc(e.n)}</h1>
+    ${e.s.length || e.a.length ? `<p class="hint">Aussi : ${esc([...e.a, ...e.s].slice(0, 12).join(" · "))}</p>` : ""}
+    ${e.r.length ? `<p class="hint">Régions : ${esc(e.r.map(libRegion).join(", "))}</p>` : ""}
+    <div class="row">${f ? `<button class="btn primary small" data-fiche="${esc(f.slug)}">Ouvrir la fiche</button>` : S.sample ? `<button class="btn primary small" data-genent="${esc(e.i)}">Créer la fiche</button>` : ""}</div>`;
+  if (v.state === "loading") return head + `<p class="hint">Lecture des passages et des figures…</p>`;
+  if (v.state === "err") return head + `<div class="alert"><b>Lecture impossible</b><span>${esc(v.err)} <button class="btn small" data-ent="${esc(e.i)}">Réessayer</button></span></div>`;
+  const liees = (v.d?.l || []).map((x) => S.ent.get(x)).filter(Boolean);
+  return head + `${liees.length ? `<h2 class="bsech">Entités liées</h2><div class="chips">${liees.map((x) => `<button class="chip" data-ent="${esc(x.i)}">${esc(x.n)}</button>`).join("")}</div>` : ""}
+    <h2 class="bsech">Figures <span class="hint">${v.totF > v.figs.length ? `${v.figs.length} sur ${v.totF}` : v.figs.length}</span></h2>${grilleFigures(v.figs, e.n)}
+    <h2 class="bsech">Passages <span class="hint">${v.totP > v.ps.length ? `${v.ps.length} sur ${v.totP}` : v.ps.length}</span></h2>${listePassages(v.ps)}`;
+}
+function clicBiblio(t) {
+  const d = t.dataset;
+  if (d.bvue) { S.bib.vue = d.bvue; if (d.bvue === "entites" && S.entState === "idle") chargerEntites(); render(); return true; }
+  if (d.bcat !== undefined && t.matches("[data-bcat]")) { S.bib.cat = d.bcat; render(); return true; }
+  if (d.livre) { ouvrirLivre(d.livre, d.chap != null ? +d.chap : null); return true; }
+  return false;
+}
+
 document.addEventListener("click", (e) => {
   const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-rev]");
   if (tc && !tc.disabled && clicCas(tc)) return;
+  const tb = e.target.closest("[data-bvue],[data-bcat],[data-livre]");
+  if (tb && clicBiblio(tb)) return;
   const t = e.target.closest("[data-tab],[data-ent],[data-progimp],[data-genent],[data-retry-ent],[data-retry-meta],[data-fiche]");
   if (!t) return;
   const d = t.dataset;
@@ -1731,6 +1883,8 @@ document.addEventListener("click", (e) => {
     runNote(id);
   } else if (d.fiche) { S.tab = "notes"; }
 });
+$("right").addEventListener("change", () => {});
+$("left").addEventListener("change", (e) => { if (e.target.id === "bReg") { S.bib.reg = e.target.value; render(); } });
 $("domSel").onchange = () => { S.dom = $("domSel").value; try { localStorage.setItem("rad-dom", S.dom); } catch {} S.entView = null; S.entSel = null; chargerEntites(); render(); };
 if (location.hash === "#bibliotheque") S.tab = "biblio";
 

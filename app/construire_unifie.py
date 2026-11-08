@@ -52,7 +52,7 @@ L = L[L.index("<title>"):]
 L = re.sub(r"</body></html>\s*$", "", L)
 L = rep(L, "<title>Learning Radiology</title>", '<title>Radiologie</title>\n<meta name="claude:viewport-fit-sides" content="cover">' if 'claude:viewport-fit-sides' not in L else "<title>Radiologie</title>")
 L = rep(L, '<header class="top">', '''<nav class="espaces" id="espaces" aria-label="Espaces">
-  <button data-esp="apprentissage" aria-current="page">Apprentissage</button><button data-esp="notes">Notes</button><button data-esp="cas">Cas</button><button data-esp="biblio">Bibliothèque</button>
+  <span class="esp-brand">Radiologie</span><button data-esp="apprentissage" aria-current="page">Apprentissage</button><button data-esp="notes">Notes</button><button data-esp="cas">Cas</button><button data-esp="biblio">Bibliothèque</button>
 </nav>
 <header class="top">''')
 L = rep(L, '<main class="wrap" id="app"></main>', '<main class="wrap" id="app"></main>\n<div id="outils" hidden></div>')
@@ -69,6 +69,9 @@ L = re.sub(r'<button class="btn primary" id="revBtn">[^<]*</button>', '<button c
 
 css_esp = '''
 .espaces{position:sticky;top:env(safe-area-inset-top,0px);z-index:12;display:flex;gap:2px;justify-content:center;flex-wrap:wrap;padding:6px max(16px,env(safe-area-inset-right,0px)) 6px max(16px,env(safe-area-inset-left,0px));background:var(--surface);border-bottom:1px solid var(--line)}
+.esp-brand{font-family:var(--display,Georgia,serif);font-weight:650;font-size:16px;margin-right:auto;align-self:center;color:var(--fg)}
+.espaces{justify-content:flex-start!important;align-items:center}
+@media (max-width:560px){.esp-brand{display:none}.espaces{justify-content:center!important}}
 .espaces button{border:0;background:none;color:var(--muted);font:500 14px var(--body,system-ui);padding:7px 14px;border-radius:999px;cursor:pointer}
 .espaces button[aria-current="page"]{background:var(--accent-soft,rgba(35,80,168,.12));color:var(--accent);font-weight:600}
 .espaces button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
