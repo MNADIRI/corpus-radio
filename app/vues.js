@@ -129,7 +129,8 @@ async function reparerImagesFiches() {
 }
 
 function messageCorpus() {
-  return { files: "Les fichiers du projet ne sont pas accessibles dans cette vue.", absent: "Aucun sommaire radiologie-sommaire-v….json dans la Library du projet.",
-    refus: "Tu as refusé l'accès aux fichiers du projet : rouvre la page pour l'autoriser.", acces: "Ce compte n'a pas accès au projet.",
-    lecture: "La lecture des fichiers du projet a échoué ou a dépassé 10 s." }[S.metaErr] || "Le corpus n'a pas pu être lu.";
+  return { mcp: "Les connecteurs ne sont pas disponibles dans cette vue.", server_not_connected: "Le connecteur GitHub n'est pas connecté sur ce compte claude.ai.",
+    server_not_found: "Aucun connecteur nommé « GitHub » sur ce compte claude.ai.", not_granted: "L'accès au connecteur GitHub a été refusé pour cette page.",
+    needs_reauth: "Le connecteur GitHub demande une nouvelle connexion dans claude.ai.", tool_error: "GitHub n'a pas trouvé le dépôt corpus-radio : vérifie l'accès du connecteur aux dépôts privés.",
+    timeout: "GitHub n'a pas répondu en 15 s." }[S.metaErr] || "Le corpus n'a pas pu être lu dans le dépôt GitHub.";
 }

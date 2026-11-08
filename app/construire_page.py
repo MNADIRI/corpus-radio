@@ -90,8 +90,7 @@ rep('''$("q").oninput = () => { S.query = $("q").value;''', '''$("q").oninput = 
 rep('''  if (user) { try { S.owner = !!(await user.isOwner()); } catch {} try { S.uid = await user.id(); } catch {} }''',
     '''  if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }''')
 rep('''  loadCorpusMeta();
-})();''', '''  S.files = await window.claude.use("files").catch(() => null);
-  loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
+})();''', '''  loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
   chargerProgression();
 })();''')
 

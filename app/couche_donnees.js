@@ -15,56 +15,53 @@ function lireDb(path) {
   }
   return docCache.get(path);
 }
-/* Corpus : fichiers déposés dans la Library du Project Claude Code, lus par morceaux (offset, longueur).
-   Le sommaire (petit) donne la position de chaque morceau ; rien n'est lu en entier. */
-S.files = null; S.chemins = new Map();
-async function lireOctets(nom, [offset, length]) {
-  const path = S.chemins.get(nom); if (!path) throw { code: "not_found", message: nom };
+/* Corpus : lu à distance dans le dépôt privé GitHub corpus-radio via le connecteur « GitHub »,
+   comme PubMed. Un appel = un petit fichier de index/artefact/ (≤ 180 Ko) ; rien n'est stocké dans l'artefact. */
+const DEPOT = { owner: "MNADIRI", repo: "corpus-radio", base: "index/artefact/" };
+S.gh = null;
+function blocRessource(res) {
+  for (const b of (res && res.content) || []) if (b && b.resource) return b.resource;
+  return null;
+}
+async function lireGitHub(path) {
   for (let k = 0; ; k++) {
-    try { const r = await avecDelai(S.files.read(path, { offset, length })); S.lus.docs++; S.lus.octets += r.bytes.length; return r.bytes; }
-    catch (e) { if (k < 2 && e && (e.code === "rate_limited" || e.code === "changed")) { await new Promise((r) => setTimeout(r, e.retryAfterMs || 800)); continue; } throw e; }
+    try {
+      const res = await avecDelai(S.mcp.callTool("GitHub", "get_file_contents", { owner: DEPOT.owner, repo: DEPOT.repo, path }), 15000);
+      const r = blocRessource(res); if (!r) throw { code: "vide", message: path };
+      S.lus.docs++; S.lus.octets += (r.text || r.blob || "").length;
+      return r;
+    } catch (e) { if (k < 2 && e && (e.code === "rate_limited" || e.code === "upstream_error" || e.code === "timeout")) { await new Promise((r) => setTimeout(r, 900 * (k + 1))); continue; } throw e; }
   }
 }
-const dec = new TextDecoder();
-function position(path) {
-  const i = path.indexOf("/"), pre = path.slice(0, i), rest = path.slice(i + 1), m = S.manifest;
-  if (["ix", "lx", "ent", "ed"].includes(pre)) { const t = m.index[pre]; return [m.index.fichier, Array.isArray(t) ? t[+rest] : t[rest]]; }
-  const lid = pre === "fx" ? rest : rest.slice(0, rest.lastIndexOf("-")), k = rest.slice(rest.lastIndexOf("-") + 1);
-  const b = S.bookById.get(lid); if (!b) return [null, null];
-  return [b.pack.fichier, pre === "fx" ? b.pack.fx : b.pack[pre][k]];
+function cheminDistant(path) {
+  if (path === "sommaire") return DEPOT.base + "sommaire.json";
+  const i = path.indexOf("/"), pre = path.slice(0, i), rest = path.slice(i + 1);
+  if (pre === "pb" || pre === "fm") { const j = rest.lastIndexOf("-"); return `${DEPOT.base}${pre}/${rest.slice(0, j)}/${rest.slice(j + 1)}.json`; }
+  return `${DEPOT.base}${pre}/${rest}.json`;
 }
 function lireDoc(path) {
   if (/^(corpus|im)\//.test(path)) return lireDb(path);
   if (!docCache.has(path)) {
-    const p = (async () => { const [nom, pos] = position(path); if (!nom || !pos) return null; return JSON.parse(dec.decode(await lireOctets(nom, pos))); })();
+    const p = lireGitHub(cheminDistant(path)).then((r) => JSON.parse(r.text));
     p.catch(() => docCache.delete(path)); docCache.set(path, p);
   }
   return docCache.get(path);
-}
-async function trouverSommaire() {
-  const tous = []; let cursor;
-  do { const r = await avecDelai(S.files.list({ recursive: true, cursor })); tous.push(...r.entries); cursor = r.cursor; } while (cursor);
-  for (const e of tous) if (!e.isDirectory) S.chemins.set(e.path.split("/").pop(), e.path);
-  const v = (e) => +(e.path.match(/radiologie-sommaire-v(\d+)\.json$/) || [0, -1])[1];
-  return tous.filter((e) => !e.isDirectory && v(e) >= 0).sort((a, b) => v(b) - v(a))[0] || null;
 }
 S.dom = "tous";
 try { const d = localStorage.getItem("rad-dom"); if (d) S.dom = d; } catch {}
 S.codeBook = new Map(); S.bookById = new Map();
 async function loadCorpusMeta() {
-  if (!S.owner || !S.files) { S.manifest = null; S.metaErr = S.owner ? "files" : null; render(); return; }
+  if (!S.owner || !S.mcp) { S.manifest = null; S.metaErr = S.owner ? "mcp" : null; render(); return; }
   try {
-    const som = await trouverSommaire();
-    if (!som) { S.manifest = null; S.metaErr = "absent"; render(); return; }
-    const r = await avecDelai(S.files.read(som.path)); S.lus.docs++; S.lus.octets += r.bytes.length;
-    const m = JSON.parse(dec.decode(r.bytes));
+    docCache.delete("sommaire");
+    const m = await lireDoc("sommaire");
     S.manifest = m;
     S.books = m.livres.map((b) => ({ ...b }));
     S.codeBook = new Map(m.livres.map((b) => [b.code, b]));
     S.bookById = new Map(m.livres.map((b) => [b.id, b]));
     S.STOPW = new Set(m.mots_vides || []);
     S.textsState = "ready";
-  } catch (e) { S.manifest = null; S.metaErr = e && e.code === "not_granted" ? "refus" : e && e.code === "not_found" ? "acces" : "lecture"; }
+  } catch (e) { S.manifest = null; S.metaErr = e && e.code ? e.code : "lecture"; }
   render();
   if (S.manifest) chargerEntites().catch(() => {});
 }
@@ -130,7 +127,7 @@ function windowFor(d, phrases, qs, size = 3200) {
 function figAncien(b, ch, g) {
   const c = chapitre(b, ch);
   return { b: b.id, ch, ct: c ? c.t : "", id: g.id, fig: g.n, pa: g.pa || "", pn: g.pn || [], pg: g.pg, pp: g.pp,
-    cap: g.capfr || g.cap || "", capo: g.cap || "", m: g.m || [], r: g.r, d: g.d || [], e: g.e || [], role: g.role, pos: g.pos };
+    cap: g.capfr || g.cap || "", capo: g.cap || "", m: g.m || [], r: g.r, d: g.d || [], e: g.e || [], role: g.role, iv: g.iv, il: g.il };
 }
 async function figsChapitre(b, ch) {
   const d = await lireDoc(`fm/${b.id}-${ch}`).catch(() => null);
@@ -191,10 +188,12 @@ async function figImage(id, slug, full) {
   }
   if (!S.owner || !S.manifest) return null;
   const f = S.figById.get(id) || (await figsParId([id]))[0]; if (!f) return null;
-  const pos = f.pos && (full ? (f.pos.l || f.pos.v) : (f.pos.v || f.pos.l)); if (!pos) return null;
-  const cle = f.id + (full ? "#l" : "#v");
-  if (!blobUrls.has(cle)) { const p = lireOctets(S.bookById.get(f.b).pack.fichier, pos).then((b) => URL.createObjectURL(new Blob([b], { type: "image/webp" }))); p.catch(() => blobUrls.delete(cle)); blobUrls.set(cle, p); }
-  const src = await blobUrls.get(cle);
+  const chemin = full ? (f.il || f.iv) : (f.iv || f.il); if (!chemin) return null;
+  if (!blobUrls.has(chemin)) {
+    const p = lireGitHub(chemin).then((r) => { const bin = atob(r.blob), u8 = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i); return URL.createObjectURL(new Blob([u8], { type: r.mimeType || "image/webp" })); });
+    p.catch(() => blobUrls.delete(chemin)); blobUrls.set(chemin, p);
+  }
+  const src = await blobUrls.get(chemin);
   if (src) imgSrc.set(id, src);
   return src;
 }
