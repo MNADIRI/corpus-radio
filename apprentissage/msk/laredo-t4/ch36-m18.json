@@ -1,0 +1,348 @@
+{
+  "id": "laredo-t4:m18",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 36,
+  "chapitre_libelle": "Chapitre 5 · Lésions de la surface des os",
+  "titre": "Image minéralisée de la surface des os",
+  "pages": "2992–3041",
+  "objectifs": [
+    "Classer une lésion de surface : sous-périostée, périostée ou paraostéale",
+    "Reconnaître les lésions « réactionnelles » des doigts (périostose floride, Nora, exostoses sous-unguéale et en tourelle)",
+    "Séparer ostéochondrome, ostéome paraostéal et les trois ostéosarcomes de surface"
+  ],
+  "essentiels": [
+    "Topographie : sous-périostée (accolée à la corticale, réaction périostée), périostée (couches profondes, allongée selon l'axe de l'os), paraostéale (couches superficielles, séparée de l'os par un liseré clair = plan périosté profond respecté). Chez l'enfant le périoste est épais et actif (couche cambiale), chez l'adulte quiescent mais réactivable.",
+    "Lésions réactionnelles des doigts : croissance autolimitée (au-delà de 2 mois de croissance, remettre en question le diagnostic), récidives, filiation probable périostose floride → lésion de Nora → exostose en tourelle / sous-unguéale. Pas de continuité cortico-médullaire avec l'os porteur (≠ ostéochondrome).",
+    "Périostose réactionnelle floride : 20–30 ans, phalanges de la main, tuméfaction DOULOUREUSE avec parfois rougeur ; réaction périostée exubérante, ossification plus marquée en périphérie (comme une MOC), corticale intacte ; IRM inquiétante mais non spécifique.",
+    "Lésion de Nora (BPOP, bizarre parosteal osteochondromatous proliferation) : 3e–4e décennies, phalanges proximales (50 %), main ≫ pied, os longs ~1/4 ; masse ossifiée 0,4–3 cm « posée » sur la corticale, indolore, sans continuité ; coiffe cartilagineuse hypercellulaire atypique ; t(1;17) ; récidive 29–55 %. MDM2/CDK4 négatifs (≠ ostéosarcome paraostéal).",
+    "Exostose sous-unguéale : gros orteil 77 %, face dorsale de la phalange distale, soulève l'ongle, coiffe fibrocartilagineuse, récidive ~11 %. Exostose en tourelle : face dorsale de P1 d'un doigt, index > 50 %, post-traumatique.",
+    "Ostéochondrome : continuité corticale ET médullaire avec l'os porteur, fuit l'articulation ; coiffe > 1–1,5 cm chez l'adulte suspecte. Chondrosarcome périphérique : bassin 43 %, 4e décennie ; signes : calcifications hors de la masse ossifiée, coiffe épaisse (> 2 cm), ostéolyse ; dégénérescence souvent polaire.",
+    "Ostéome paraostéal : masse dense, nette, mûre, hyposignal T1/T2 sans rehaussement, MDM2 absent ; Gardner si multiple. Ostéosarcome paraostéal : 4 % des ostéosarcomes, 65 % des ostéosarcomes de surface, adulte jeune, face postérieure du fémur distal (~70 %) ; base large, centre dense, périphérie pâle, s'enroule autour de la corticale avec liseré clair ; MDM2/CDK4 amplifiés > 85 % ; survie 80–90 % ; dédifférenciation ~20 % (zones claires profondes, masse rehaussée).",
+    "Ostéosarcome périosté : haut grade mais pronostic proche du paraostéal, diaphyse fémur/tibia (80 %), surtout chondroblastique ; encoche corticale (92 %), épaississement (82 %), spicules perpendiculaires (95 %). Ostéosarcome de surface de haut grade : 9 % des surface, 2e décennie, diaphyse fémorale, pas de liseré clair, pronostic du central. Lipome paraostéal : graisse septée + excroissance sans continuité."
+  ],
+  "introduction": "Devant une masse minéralisée collée à la surface d'un os, deux questions guident tout : **de quelle couche est-elle partie** (sous le périoste, dans le périoste, au-dessus) et **est-elle en continuité avec la corticale et la moelle de l'os porteur** ? La réponse sépare les exostoses, les lésions réactionnelles des doigts, les ostéomes et les ostéosarcomes de surface.",
+  "sections": [
+    {
+      "titre": "Trois étages : sous-périosté, périosté, paraostéal",
+      "texte": "Le **périoste** a deux couches : une couche superficielle fibreuse, qui sert d'ancrage aux tendons, et une couche profonde **cambiale**, riche en ostéoblastes. Chez l'enfant, elle est épaisse et très active ; chez l'adulte, quiescente mais réactivable.\n\nUne lésion **sous-périostée** naît entre l'os et le périoste : accolée à la corticale, elle s'accompagne souvent d'une réaction périostée. Une lésion **périostée** naît dans la couche profonde et s'allonge selon l'axe de l'os. Une lésion **paraostéale** naît de la couche superficielle : elle reste séparée de l'os par un **liseré clair**, qui correspond à la couche profonde respectée.",
+      "figures": [
+        "laredo-t4:fig37.1d",
+        "laredo-t4:fig38.2"
+      ],
+      "legendes": [
+        "**Topographie des lésions de surface** sur une coupe axiale : sous-périostée (entre la corticale et le périoste), périostée (dans la couche profonde), paraostéale (dans la couche superficielle, comme l'ostéosarcome paraostéal).",
+        "**Les principales lésions de surface** : hématome sous-périosté (a), périostose floride (b), lésion de Nora (c), exostose sous-unguéale (d), kyste anévrysmal (e), myosite ossifiante (f), mélorhéostose (g), ostéosarcomes paraostéal (h) et périosté (i), exostose (j), chondrosarcome sur exostose (k), chondrome périosté (l), hémangiome (m), lipome paraostéal (n)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi une lésion paraostéale reste-t-elle séparée de la corticale par un liseré clair ?",
+        "a": "Elle naît de la couche superficielle du périoste ; la couche profonde respectée forme le liseré."
+      }
+    },
+    {
+      "titre": "Les lésions réactionnelles des doigts : une seule maladie en trois temps ?",
+      "texte": "La **périostose réactionnelle floride**, la **lésion de Nora** (prolifération ostéochondromateuse paraostéale bizarre) et les **exostoses en tourelle et sous-unguéale** partagent beaucoup : siège électif sur les os tubulaires des doigts, départ au périoste, mélange d'os, de cartilage et de tissu fibreux, croissance **autolimitée** (si elle continue au-delà de 2 mois, le diagnostic est à revoir), tendance à la récidive, traumatisme inconstant.\n\nLes observations successives suggèrent une **filiation** : d'abord une périostose floride (fibreuse, contenue sous le périoste, douloureuse), puis une lésion de Nora (os nouveau et cartilage métaplasique, le périoste est franchi), enfin une exostose en tourelle (os mûr coiffé de cartilage).",
+      "figures": [
+        "laredo-t4:fig38.18",
+        "laredo-t4:fig37.2"
+      ],
+      "legendes": [
+        "**Filiation proposée** : périostose réactionnelle exubérante, lésion de Nora puis exostose en tourelle seraient trois stades d'une même maladie, de plus en plus ossifiés et organisés.",
+        "**Histologie schématique** : périostose (a, cellules fusiformes et travées ondulées dans du tissu fibreux), lésion de Nora (b, cartilage hypercellulaire mêlé aux travées), exostose sous-unguéale ou en tourelle (c, os mûr au centre, coiffe cartilagineuse en périphérie)."
+      ],
+      "cle": "Aucune de ces lésions n'est en continuité cortico-médullaire avec l'os porteur : c'est ce qui les sépare de l'ostéochondrome.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion réactionnelle d'un doigt qui grossit encore après 3 mois : que conclure ?",
+        "a": "Le diagnostic est à revoir : ces lésions ont une croissance autolimitée."
+      }
+    },
+    {
+      "titre": "Périostose floride, lésion de Nora, exostoses",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig37.1c",
+        "laredo-t4:fig37.4a"
+      ],
+      "legendes": [
+        "**Périostose réactionnelle exubérante** du 5e doigt : réaction périostée de P1 et minéralisation juxta-corticale (radiographie), infiltration œdémateuse de l'éminence hypothénar en STIR.",
+        "**Exostose sous-unguéale du gros orteil** : excroissance d'os trabéculaire (a), os mûr de signal graisseux implanté sur la face dorso-latérale de la phalange distale, avec une fine coiffe cartilagineuse qui soulève la tablette unguéale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse ossifiée de 1,5 cm posée sur la corticale de P1, indolore, sans continuité médullaire : diagnostic ?",
+        "a": "Lésion de Nora (prolifération ostéochondromateuse paraostéale bizarre)."
+      }
+    },
+    {
+      "titre": "Pseudo-tumeurs de surface",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig38.x545c"
+      ],
+      "legendes": [
+        "**Mélorhéostose** : hyperostose compacte « en coulée de bougie » parallèle au grand axe, en hyposignal T1 et T2, avec une masse osseuse des tissus mous associée (flèches pointillées)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse calcifiée laiteuse en regard du V deltoïdien avec érosion douloureuse : diagnostic ?",
+        "a": "Enthésopathie calcifiante (apatite) en phase de résorption."
+      }
+    },
+    {
+      "titre": "Ostéochondrome et chondrosarcome périphérique",
+      "texte": "L'**ostéochondrome** est la cause la plus fréquente d'ossification de surface : sa corticale et son spongieux **prolongent ceux de l'os porteur**, il fuit l'articulation, et sa coiffe s'amincit à la fin de la croissance (plus de 1 à 1,5 cm chez l'adulte est suspect).\n\nLe **chondrosarcome périphérique** naît toujours sur un ostéochondrome, surtout à l'os iliaque (43 %). Trois signes : des **calcifications cartilagineuses en dehors de la masse ossifiée**, une **coiffe non minéralisée épaisse** (plus de 2 cm), une **ostéolyse**. La dégénérescence est souvent polaire.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Exostose iliaque avec calcifications dispersées dans les tissus mous hors de la masse ossifiée : conclusion ?",
+        "a": "Chondrosarcome périphérique sur exostose."
+      }
+    },
+    {
+      "titre": "Ostéome paraostéal et ostéosarcomes de surface",
+      "texte": "L'**ostéome paraostéal** est une masse **très dense**, à limites nettes et lobulées, mûre, en **hyposignal T1 et T2 sans rehaussement**. Un hypersignal T2 ou une prise de contraste doivent faire évoquer l'ostéosarcome paraostéal.\n\nL'**ostéosarcome paraostéal** (65 % des ostéosarcomes de surface) siège à la **face postérieure du fémur distal** (~70 %). Base large, **centre dense et périphérie plus pâle**, il **s'enroule autour de la corticale** dont le sépare un liseré clair ; MDM2/CDK4 amplifiés ; envahissement médullaire dans 22 %. Survie 80-90 % à 5-10 ans, mais dédifférenciation dans ~20 % (zones claires **profondes**, masse mal limitée rehaussée).\n\nL'**ostéosarcome périosté** (diaphyse, chondroblastique) associe encoche corticale, épaississement et spicules perpendiculaires. L'**ostéosarcome de surface de haut grade** n'a pas de liseré clair et se comporte comme un ostéosarcome central.",
+      "figures": [
+        "laredo-t4:fig38.38c",
+        "laredo-t4:fig38.x570c"
+      ],
+      "legendes": [
+        "**Ostéosarcome paraostéal** de la face postérieure du fémur distal : en dehors de la zone d'implantation, la tumeur est séparée de la corticale par un liseré clair (flèche).",
+        "**Ostéosarcome paraostéal du tibia avec envahissement médullaire** (flèche) : radiographie, IRM T1 et pièce de résection."
+      ],
+      "cle": null,
+      "piege": "Une biopsie de la périphérie d'un ostéosarcome paraostéal peut ne montrer que de l'os d'aspect normal. MDM2 et CDK4 aident à trancher face à l'ostéome et à la lésion de Nora.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse de surface très dense en hyposignal T2 sans rehaussement : ostéome ou ostéosarcome paraostéal ?",
+        "a": "Ostéome paraostéal ; un hypersignal T2 ou un rehaussement orienterait vers l'ostéosarcome."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Excroissance ossifiée posée sur la face latérale d'une phalange, sans continuité médullaire, ayant mûri en quelques mois. Diagnostic ?",
+      "figure": "laredo-t4:fig38.23a",
+      "options": [
+        "Lésion de Nora (BPOP)",
+        "Ostéochondrome",
+        "Ostéosarcome paraostéal",
+        "Enchondrome"
+      ],
+      "reponse": 0,
+      "explication": "Ossification progressive raccordée au périoste, sans continuité cortico-médullaire ni érosion : lésion de Nora.",
+      "page": "p. 3017",
+      "image_origine": "m18/p552_1"
+    },
+    {
+      "question": "Excroissance osseuse de la face dorsale de la phalange distale du gros orteil soulevant l'ongle. Diagnostic ?",
+      "figure": "laredo-t4:fig38.27",
+      "options": [
+        "Exostose sous-unguéale",
+        "Ostéochondrome solitaire",
+        "Tumeur glomique",
+        "Kyste épidermoïde"
+      ],
+      "reponse": 0,
+      "explication": "Siège typique (gros orteil 77 %), soulèvement de la matrice unguéale, pas de continuité cortico-spongieuse.",
+      "page": "p. 3019–3021",
+      "image_origine": "m18/p556_0_0_0_55_70"
+    },
+    {
+      "question": "Masse ossifiée à large base sur la face postérieure du fémur distal, dense au centre, s'enroulant autour de la corticale. Diagnostic ?",
+      "figure": "laredo-t4:fig38.38a",
+      "options": [
+        "Ostéosarcome paraostéal",
+        "Myosite ossifiante circonscrite",
+        "Ostéochondrome sessile",
+        "Ostéosarcome périosté"
+      ],
+      "reponse": 0,
+      "explication": "Siège électif (~70 %), base large, centre dense et périphérie plus pâle, liseré clair en dehors de l'implantation.",
+      "page": "p. 3032–3033",
+      "image_origine": "m18/p568_0_0_0_47_100"
+    },
+    {
+      "question": "Masse de surface très dense, lobulée, à limites nettes, sur la diaphyse tibiale, en hyposignal T1 et T2 sans rehaussement. Diagnostic ?",
+      "figure": "laredo-t4:fig38.37",
+      "options": [
+        "Ostéome paraostéal",
+        "Ostéosarcome paraostéal",
+        "Lésion de Nora",
+        "Chondrosarcome périphérique"
+      ],
+      "reponse": 0,
+      "explication": "Ossification mûre, compacte, à limites nettes, sans signal T2 ni rehaussement : ostéome paraostéal.",
+      "page": "p. 3031–3032",
+      "image_origine": "m18/p566_0"
+    },
+    {
+      "question": "Scanner : exostose pédiculée de l'aile iliaque avec, en avant, une masse des tissus mous contenant des grains et anneaux calcifiés. Diagnostic ?",
+      "figure": "laredo-t4:fig38.32",
+      "options": [
+        "Chondrosarcome périphérique sur exostose",
+        "Myosite ossifiante",
+        "Ostéosarcome paraostéal",
+        "Calcinose tumorale"
+      ],
+      "reponse": 0,
+      "explication": "Dégénérescence polaire : une partie exostosique mature et une partie chondrosarcomateuse avec calcifications de type cartilagineux hors de la masse ossifiée.",
+      "page": "p. 3027",
+      "image_origine": "m18/p562_0"
+    },
+    {
+      "question": "Encoche corticale diaphysaire du fémur avec masse de surface et réaction périostée perpendiculaire chez un adolescent. Hypothèse la plus probable ?",
+      "figure": "laredo-t4:fig38.42a",
+      "options": [
+        "Ostéosarcome périosté",
+        "Ostéosarcome paraostéal",
+        "Chondrome périosté",
+        "Desmoïde corticale"
+      ],
+      "reponse": 0,
+      "explication": "Siège diaphysaire, encoche + épaississement cortical + spicules perpendiculaires : ostéosarcome périosté (chondroblastique).",
+      "page": "p. 3035–3036",
+      "image_origine": "m18/p571_0"
+    },
+    {
+      "question": "Masse de densité graisseuse accolée à la diaphyse, contenant une excroissance osseuse sans continuité avec l'os porteur. Diagnostic ?",
+      "figure": "laredo-t4:fig38.x575",
+      "options": [
+        "Lipome paraostéal",
+        "Liposarcome",
+        "Ostéochondrome",
+        "Lipome intra-osseux"
+      ],
+      "reponse": 0,
+      "explication": "Graisse septée entourant une excroissance osseuse sans continuité cortico-médullaire : lipome paraostéal.",
+      "page": "p. 3039",
+      "image_origine": "m18/p574_0"
+    },
+    {
+      "question": "Masse juxta-osseuse diaphyso-métaphysaire médiale du fémur ; 6 mois plus tard, minéralisation périphérique et réaction périostée unilamellaire. Diagnostic ?",
+      "figure": "laredo-t4:fig38.3b",
+      "options": [
+        "Myosite ossifiante circonscrite",
+        "Ostéosarcome paraostéal",
+        "Chondrosarcome périphérique",
+        "Ostéochondrome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : myosite ossifiante circonscrite ; minéralisation périphérique (centripète) en scanner et réaction périostée unilamellaire au contact de la masse ossifiée.",
+      "page": "p. 2999",
+      "image_origine": "m18/p535_0"
+    },
+    {
+      "question": "Pied : masse minéralisée fusiforme centrée sur la diaphyse du 2e métatarsien (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig38.8",
+      "options": [
+        "Cal exubérant d'une fracture de fatigue diaphysaire",
+        "Ostéosarcome périosté",
+        "Ostéome ostéoïde",
+        "Lésion de Nora"
+      ],
+      "reponse": 0,
+      "explication": "Légende : cal exubérant d'une fracture diaphysaire du 2e métatarsien — une ossification post-traumatique peut simuler une masse osseuse de surface.",
+      "page": "p. 3005",
+      "image_origine": "m18/p541_0"
+    },
+    {
+      "question": "Diaphyse humérale : lésion de surface à fine coque périostée en radiographie et scanner, niveaux liquide-liquide en IRM. Diagnostic ?",
+      "figure": "laredo-t4:fig38.x559",
+      "options": [
+        "Kyste osseux anévrysmal sous-périosté",
+        "Ostéosarcome télangiectasique",
+        "Chondrome périosté",
+        "Hématome sous-périosté"
+      ],
+      "reponse": 0,
+      "explication": "Légende : kyste osseux anévrysmal sous-périosté de la diaphyse humérale ; fine coque périostée et niveaux liquide-liquide.",
+      "page": "p. 3022",
+      "image_origine": "m18/p558_0"
+    },
+    {
+      "question": "Fémur distal : excroissance osseuse à large base, en continuité avec la corticale, coiffe cartilagineuse fine en IRM, irrégularités corticales sous-jacentes. Diagnostic ?",
+      "figure": "laredo-t4:fig38.x561b",
+      "options": [
+        "Exostose sessile",
+        "Ostéosarcome paraostéal",
+        "Chondrosarcome périphérique",
+        "Myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Légende : exostose sessile fémorale distale ; irrégularités corticales sous la coiffe cartilagineuse, qui est fine.",
+      "page": "p. 3025",
+      "image_origine": "m18/p560_0"
+    },
+    {
+      "question": "Fémur : épaississement cortical compact contenant une petite clarté (flèche), important œdème des tissus mous voisins. Diagnostic ?",
+      "figure": "laredo-t4:fig38.x566",
+      "options": [
+        "Ostéome ostéoïde sous-périosté",
+        "Fracture de fatigue",
+        "Ostéomyélite chronique",
+        "Ostéosarcome périosté"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéome ostéoïde sous-périosté ; le nidus s'est « enterré » dans une réaction périostée compacte et épaisse intégrée à la corticale ; œdème inflammatoire des tissus mous.",
+      "page": "p. 3029",
+      "image_origine": "m18/p565_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Trois étages : sous-périosté, périosté, paraostéal",
+        "Les lésions réactionnelles des doigts : une seule maladie en trois temps ?",
+        "Périostose floride, lésion de Nora, exostoses"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "hs": [
+        "Pseudo-tumeurs de surface",
+        "Ostéochondrome et chondrosarcome périphérique",
+        "Ostéome paraostéal et ostéosarcomes de surface"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        11
+      ]
+    }
+  ],
+  "ancien_id": "m18",
+  "images_non_rattachees": []
+}

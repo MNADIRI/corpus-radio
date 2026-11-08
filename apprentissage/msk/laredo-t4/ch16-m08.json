@@ -1,0 +1,293 @@
+{
+  "id": "laredo-t4:m08",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 16,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Chondrosarcomes",
+  "pages": "2711–2733",
+  "objectifs": [
+    "Séparer chondrome, chondrosarcome de grade 1 et de haut grade",
+    "Reconnaître les formes périphérique, périostée et dédifférenciée",
+    "Connaître cellules claires et mésenchymateux"
+  ],
+  "essentiels": [
+    "Chondrosarcome = 20 % des tumeurs malignes primitives, 2e sarcome osseux, 1er sarcome axial de l'adulte. Central 55–60 % (dont 15 % secondaires à un chondrome, Ollier, Maffucci), périphérique sur exostose 15–20 %, dédifférencié, périosté, cellules claires, mésenchymateux.",
+    "Grade 1 = « tumeur cartilagineuse atypique » (OMS 2013). Frontière chondrome / grade 1 peu reproductible, décidée sur l'architecture (perméation, destruction). Le grade augmente avec les récidives ; les métastases (poumon) concernent surtout le grade 3 et le dédifférencié.",
+    "Central : adulte 50–90 ans, os iliaque (acétabulum), fémur proximal, humérus proximal, côtes (jonction chondro-costale). Lyse lobulée, souvent longue dans la diaphyse, encoches endostées, hyperostose, élargissement médullaire, calcifications cartilagineuses (90 % en scanner).",
+    "IRM : signal myxoïde lobulaire, aspect « en échiquier », graisse entre les lobules en périphérie (chondrome préexistant). Grade 1 : limites nettes, calcifications abondantes, rehaussement septal. Grades 2–3 : limites floues, peu de calcifications, destruction corticale, masse, œdème constant, rehaussement diffus et précoce.",
+    "Traitement : grade 1 = curetage soigneux ; grades 2–3, pelvis et squelette axial = exérèse en bloc sans ouvrir la tumeur (cellules résistantes à l'anoxie, essaimage). Survie à 5 ans : 83 % (grade 1), 53 % (grades 2–3), 59 % au bassin.",
+    "Dédifférencié : contingent anaplasique (ostéosarcome 70 %) abruptement juxtaposé à un chondrosarcome de bas grade ; « bimorphisme » en imagerie : zone lobulaire calcifiée + zone lytique agressive à rehaussement diffus, à biopsier. Survie à 5 ans 24 %.",
+    "Périphérique : masse volumineuse sur exostose (iliaque postérieur, fémur proximal, scapula, arc vertébral), calcifications périphériques, coiffe > 1,5–2 cm « noire au centre, blanche en périphérie ». Pas de biopsie, exérèse en bloc. Périosté : > 4 cm, face postérieure du fémur distal, peu calcifié.",
+    "Cellules claires : 25–50 ans, homme, épiphyse (tête fémorale 40 %, tête humérale), aspect de chondroblastome trop âgé, PAL marqueur, pas d'œdème. Mésenchymateux : 10–30 ans, petites cellules rondes (HEY1-NCOA2), signal T2 intermédiaire, rehaussement diffus, flow voids, traité comme un Ewing."
+  ],
+  "introduction": "Le chondrosarcome est le sarcome osseux de l'adulte et du squelette axial. Le radiologue a ici un rôle décisif, car le **grade** se lit en partie sur l'imagerie et oriente la chirurgie : curetage pour un grade 1 d'os long, exérèse en bloc pour le reste. Le fil conducteur : **plus la tumeur est de haut grade, moins elle ressemble à du cartilage** (moins de calcifications, moins de lobules, plus d'œdème et de destruction).",
+  "sections": [
+    {
+      "titre": "Une famille de tumeurs",
+      "texte": "Le chondrosarcome représente 20 % des tumeurs malignes primitives de l'os et il est le **deuxième sarcome osseux**, le **premier du squelette axial de l'adulte**. Ses variétés n'ont ni le même âge, ni le même siège, ni le même pronostic :",
+      "figures": [],
+      "legendes": [],
+      "cle": "Depuis 2013, le grade 1 s'appelle « tumeur cartilagineuse atypique », par analogie avec la tumeur lipomateuse atypique.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune épiphysaire de type chondroblastome chez un homme de 40 ans : quelle variété de chondrosarcome ?",
+        "a": "Le chondrosarcome à cellules claires."
+      }
+    },
+    {
+      "titre": "Chondrosarcome central : lire l'activité",
+      "texte": "Le chondrosarcome central est une lyse **lobulée**, souvent **longue dans la cavité médullaire**, avec des **encoches endostées**, une hyperostose et un élargissement médullaire : signes d'une tumeur qui grossit lentement mais continûment. Les calcifications cartilagineuses sont vues dans 60 à 78 % des cas en radiographie, 90 % au scanner.\n\nLe **grade 1** reste 1B, lobulé, très calcifié. Le **grade 3** devient 1C ou mité, perméatif, rompt la corticale, peu calcifié, et peut donner des spicules.",
+      "figures": [
+        "laredo-t4:fig16.40a",
+        "laredo-t4:fig16.35a"
+      ],
+      "legendes": [
+        "**Chondrosarcome central de grade 2 de la fibula** : ostéolyse soufflante 1B à coque continue, encoches endostées et calcifications en piqueté ; lobules en hypersignal T2 franc en IRM.",
+        "**Chondrosarcome central de grade 2 de T8-T9** : lésion lobulée à calcifications centrales, étendue au canal et à la vertèbre adjacente à travers le disque."
+      ],
+      "cle": null,
+      "piege": "Chez un adulte, une lésion cartilagineuse d'un os plat axial ou d'une épiphyse est un chondrosarcome jusqu'à preuve du contraire ; aux mains et aux pieds, c'est presque toujours un chondrome.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels signes radiographiques traduisent une croissance lente mais continue d'une lésion cartilagineuse centrale ?",
+        "a": "Encoches endostées profondes, hyperostose, élargissement de la cavité médullaire."
+      }
+    },
+    {
+      "titre": "L'IRM : architecture, œdème, rehaussement",
+      "texte": "Le cartilage tumoral garde un **signal myxoïde lobulaire** (hypersignal T2 franc) avec des calcifications en hyposignal : c'est l'aspect **« en échiquier »**. Un peu de graisse entre les lobules à la périphérie témoigne d'un chondrome préexistant.\n\nTrois signes séparent les grades :",
+      "figures": [
+        "laredo-t4:fig16.42a",
+        "laredo-t4:fig16.45"
+      ],
+      "legendes": [
+        "**Chondrosarcome central du col fémoral** : architecture lobulaire en hypersignal T2 franc pseudo-liquidien et prise de contraste septale, avec extension aux tissus mous (flèche).",
+        "**Chondrosarcome de grade 2 de la diaphyse fémorale** : la tumeur remplit toute la cavité médullaire sur une grande hauteur et se rehausse en anneaux."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion cartilagineuse lobulée avec œdème quasi constant et rehaussement diffus précoce : quel grade ?",
+        "a": "Haut grade (2-3) ; le chondrome n'a jamais d'œdème."
+      }
+    },
+    {
+      "titre": "Dédifférenciation : deux tumeurs en une",
+      "texte": "Le chondrosarcome **dédifférencié** juxtapose brutalement un chondrosarcome de bas grade et un contingent **anaplasique de haut grade** (ostéosarcome dans 70 %, sarcome fibroblastique dans 25 %). Âge moyen 59 ans.\n\nEn imagerie, c'est le **bimorphisme** : une zone cartilagineuse lobulaire calcifiée à rehaussement septal, et une zone **lytique agressive non minéralisée**, de signal T2 plus bas, à **rehaussement diffus**. C'est cette seconde zone qu'il faut biopsier, sinon on ne trouvera que le bas grade.\n\nPronostic sombre : survie à 5 ans de 24 %, métastases fréquentes et rapides.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Chondrosarcome connu + apparition d'une zone lytique non calcifiée qui se rehausse diffusément = dédifférenciation, biopsie ciblée.",
+      "piege": null,
+      "pourquoi": "La partie dédifférenciée n'est plus du cartilage : elle perd la matrice myxoïde (T2 moins élevé) et les calcifications, et se vascularise comme un sarcome de haut grade.",
+      "verification": {
+        "q": "Chondrosarcome connu où apparaît une zone lytique non calcifiée à rehaussement diffus : où biopsier ?",
+        "a": "Dans cette zone : elle correspond au contingent dédifférencié de haut grade."
+      }
+    },
+    {
+      "titre": "Périphérique et périosté",
+      "texte": "Le **chondrosarcome périphérique** naît sur une exostose : os iliaque (43 %, crête postérieure, cadre ischio-pubien), fémur proximal, scapula, arc vertébral. Il forme une volumineuse masse de surface aux calcifications périphériques, et une coiffe de **plus de 1,5 à 2 cm** : **« noire au centre, blanche en périphérie »** en T2. La dégénérescence peut être polaire : il faut explorer toute l'exostose. On ne le biopsie pas : exérèse en bloc.\n\nLe **chondrosarcome périosté**, équivalent malin du chondrome périosté, siège surtout à la face postérieure du fémur distal. Il mesure plus de 4 cm (contre 2,2 cm pour le chondrome), érode ou épaissit la corticale, porte des ossifications radiaires, sans œdème.",
+      "figures": [
+        "laredo-t4:fig16.47b",
+        "laredo-t4:fig16.48c"
+      ],
+      "legendes": [
+        "**Chondrosarcome périphérique de l'arc postérieur** : masse calcifiée née d'une exostose, coiffe épaisse lobulée en hypersignal STIR qui envahit le canal.",
+        "**Chondrosarcome périosté de grade 2** de la métaphyse humérale : aspect très proche d'un chondrome périosté, d'où l'importance de la taille."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi ne biopsie-t-on pas un chondrosarcome périphérique sur exostose ?",
+        "a": "On l'enlève en bloc ; les chondrocytes tumoraux essaiment facilement le long d'un trajet ouvert."
+      }
+    },
+    {
+      "titre": "Cellules claires et mésenchymateux",
+      "texte": "Le **chondrosarcome à cellules claires** touche l'homme de 25 à 50 ans, dans une **épiphyse** (extrémité supérieure du fémur 40 %, humérus 15-20 %). Il ressemble à un **chondroblastome trop âgé** : lacune épiphysaire de plus de 3 à 5 cm, calcifications dans 25-30 %, T2 hétérogène multikystique, **pas d'œdème** dans 80 %. Les phosphatases alcalines servent au suivi.\n\nLe **chondrosarcome mésenchymateux** (10-30 ans) est un sarcome à petites cellules rondes (transcrit HEY1-NCOA2, pas de mutation IDH) avec quelques îlots cartilagineux : T2 intermédiaire, rehaussement diffus intense, flow voids. Il est traité selon un schéma de type Ewing.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Chondroblastome-like chez un adulte de plus de 20 ans = penser cellules claires.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse à petites cellules rondes avec îlots cartilagineux chez un adulte de 20 ans : comment la traite-t-on ?",
+        "a": "Chondrosarcome mésenchymateux : selon un schéma de type Ewing."
+      }
+    },
+    {
+      "titre": "Traitement et pronostic",
+      "texte": "Les chondrocytes tumoraux **survivent en anoxie** et essaiment facilement : une tumeur ouverte récidive. D'où la règle : **grade 1 des os longs** → curetage soigneux (± phénol, ciment, cryothérapie) ; **grades 2-3, bassin et squelette axial** → **exérèse en bloc sans ouvrir la tumeur**.\n\nSurvie à 5 ans : 83 % pour le grade 1, 53 % pour les grades 2-3 ; 92 % à la paroi thoracique, 59 % au bassin. Le grade augmente souvent avec les récidives, et les métastases (pulmonaires) concernent surtout le grade 3 et le dédifférencié.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi un chondrosarcome ouvert récidive-t-il facilement ?",
+        "a": "Ses chondrocytes survivent en anoxie et se greffent dans les tissus contaminés."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Trois chondrosarcomes centraux du fémur. Quels signes d'activité retrouvez-vous ?",
+      "figure": "laredo-t4:fig16.x252",
+      "options": [
+        "Encoche > 2/3, élargissement médullaire avec hyperostose, rupture corticale",
+        "Liseré 1A1 et verre dépoli",
+        "Réaction unilamellaire bénigne",
+        "Aucun signe d'activité"
+      ],
+      "reponse": 0,
+      "explication": "Tumeur cartilagineuse soufflante et polylobée avec encoche > 2/3, élargissement médullaire et épaississement cortical, rupture corticale (tête de flèche).",
+      "page": "2714",
+      "image_origine": "m08/p251_0"
+    },
+    {
+      "question": "Fémur : lyse centrale très longue, encoches endostées, spicules et rupture corticale, signal STIR intense. Grade probable ?",
+      "figure": "laredo-t4:fig16.35b",
+      "options": [
+        "Chondrosarcome de grade 2 ou plus",
+        "Enchondrome",
+        "Chondrosarcome de grade 1",
+        "Infarctus"
+      ],
+      "reponse": 0,
+      "explication": "Réaction spiculée, rupture corticale et extension aux tissus mous : signes d'agressivité d'un grade 2.",
+      "page": "2715",
+      "image_origine": "m08/p252_1"
+    },
+    {
+      "question": "Patient de 21 ans : ostéolyse métaphysaire à limites nettes, architecture lobulaire, calcifications cartilagineuses et œdème périlésionnel important. Diagnostic ?",
+      "figure": "laredo-t4:fig16.x255",
+      "options": [
+        "Chondrosarcome conventionnel de grade 2",
+        "Chondroblastome",
+        "Enchondrome",
+        "Abcès de Brodie"
+      ],
+      "reponse": 0,
+      "explication": "Légende : chondrosarcome de grade 2 chez un patient de 21 ans ; l'œdème et l'âge ont fait évoquer à tort un chondroblastome malgré la localisation métaphysaire inhabituelle.",
+      "page": "2717",
+      "image_origine": "m08/p254_0"
+    },
+    {
+      "question": "Lésion sternale : alternance d'hyposignaux calcifiés et de cartilage en hypersignal T2, masse antérieure. Aspect ?",
+      "figure": "laredo-t4:fig16.43a",
+      "options": [
+        "En échiquier d'un chondrosarcome",
+        "Vertèbre ivoire",
+        "Nid d'abeilles d'un hémangiome",
+        "Poivre et sel"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications en hyposignal et cartilage myxoïde : aspect en échiquier des chondrosarcomes de grades 1 et 2.",
+      "page": "2720",
+      "image_origine": "m08/p257_0"
+    },
+    {
+      "question": "Volumineuse masse calcifiée de la crête iliaque avec calcifications en arcs et anneaux. Diagnostic ?",
+      "figure": "laredo-t4:fig16.x263a",
+      "options": [
+        "Chondrosarcome périphérique sur exostose",
+        "Ostéosarcome parostéal",
+        "Myosite ossifiante",
+        "Chondromatose synoviale"
+      ],
+      "reponse": 0,
+      "explication": "Masse de surface iliaque à coiffe volumineuse calcifiée : chondrosarcome périphérique. Pas de biopsie, exérèse en bloc.",
+      "page": "2725",
+      "image_origine": "m08/p262_0"
+    },
+    {
+      "question": "Homme de 54 ans : lacune métaphyso-épiphysaire du col fémoral avec calcifications cartilagineuses. Diagnostic ?",
+      "figure": "laredo-t4:fig16.49",
+      "options": [
+        "Chondrosarcome à cellules claires",
+        "Chondroblastome",
+        "Tumeur à cellules géantes",
+        "Géode arthrosique"
+      ],
+      "reponse": 0,
+      "explication": "Une lésion d'allure chondroblastome après 20 ans, à l'extrémité supérieure du fémur, doit faire évoquer un chondrosarcome à cellules claires.",
+      "page": "2732",
+      "image_origine": "m08/p269_0"
+    },
+    {
+      "question": "Lésion de surface de la métaphyse humérale, d'aspect très proche d'un chondrome périosté. Diagnostic histologique ?",
+      "figure": "laredo-t4:fig16.48f",
+      "options": [
+        "Chondrosarcome périosté de grade 2",
+        "Chondrome périosté",
+        "Ostéosarcome périosté",
+        "Exostose sessile"
+      ],
+      "reponse": 0,
+      "explication": "Légende : chondrosarcome périosté de grade 2 de la métaphyse humérale, d'aspect très proche de celui d'un chondrome périosté (le texte retient la taille > 4–5 cm comme argument).",
+      "page": "p. 2729",
+      "image_origine": "m08/p266_1"
+    },
+    {
+      "question": "Lacune du cotyle à topographie médiale, sans coxopathie associée. Diagnostic ?",
+      "figure": "laredo-t4:fig16.37a",
+      "options": [
+        "Chondrosarcome central de grade 1 du cotyle",
+        "Géode arthrosique",
+        "Géode à clapet",
+        "Kyste osseux essentiel"
+      ],
+      "reponse": 0,
+      "explication": "Légende : la lacune mime une géode, mais la topographie médiale et l'absence de coxopathie ne sont pas en faveur ; le cotyle est une localisation fréquente des chondrosarcomes.",
+      "page": "p. 2717",
+      "image_origine": "m08/p253_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Une famille de tumeurs",
+        "Chondrosarcome central : lire l'activité",
+        "L'IRM : architecture, œdème, rehaussement",
+        "Dédifférenciation : deux tumeurs en une"
+      ],
+      "secs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "hs": [
+        "Périphérique et périosté",
+        "Cellules claires et mésenchymateux",
+        "Traitement et pronostic"
+      ],
+      "secs": [
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "ancien_id": "m08",
+  "images_non_rattachees": []
+}

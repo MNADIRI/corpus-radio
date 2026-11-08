@@ -1,0 +1,288 @@
+{
+  "id": "laredo-t4:m19",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 38,
+  "chapitre_libelle": "Chapitre 5 · Lésions de la surface des os",
+  "titre": "Érosion de la surface des os",
+  "pages": "3042–3060",
+  "objectifs": [
+    "Lister les causes d'encoche de surface venant des tissus mous et de l'os",
+    "Différencier chondrome périosté, chondrosarcome périosté et kyste anévrysmal sous-périosté",
+    "Reconnaître les pièges de l'enfant (cortical defect, desmoïde corticale) et le sarcome d'Ewing périosté"
+  ],
+  "essentiels": [
+    "Une lésion de surface peut éroder la corticale et soulever le périoste sans être agressive (cortical defect, kyste anévrysmal, chondrome périosté). Toute masse des tissus mous au contact de l'os peut l'éroder : tumeurs fibroblastiques, synovialosarcome (20–40 ans, para-articulaire), bursites, kystes mucoïdes, tophus, dépôts apatitiques ou de pyrophosphate de calcium.",
+    "Encoche + coque périostée — fréquentes : kyste anévrysmal, chondrome sous-périosté, cortical defect ; rares : hématome sous-périosté, fibrome chondromyxoïde, lésion à cellules géantes des petits os, ostéoblastome, chondrosarcome périosté.",
+    "Kyste mucoïde périosté : quasi uniquement face médiale du tibia proximal sous la patte d'oie, homme 40–70 ans, érosion polylobée nette, signal mucoïde. Hématomes sous-périostés : neurofibromatose, scorbut, hémophilie, drépanocytose. Métastases de surface : > 50 % cancer bronchique, fémur, encoche « à l'emporte-pièce ».",
+    "Kyste anévrysmal sous-périosté : 19–27 % des KA, 10–30 ans, H 2/3, diaphyse/métaphyse humérus-fémur-tibia ; 3 phases : masse des tissus mous → coque périostée fine discontinue puis continue → ossification ; niveaux liquide-liquide.",
+    "Cortical defect : enfant prépubère, métaphyso-diaphysaire (corticale médiale du tibia distal), lacune ouverte vers la surface, coque visible parfois seulement aux pôles. Defect sus-condylien : corticale postéro-médiale du fémur distal, presque toujours bilatéral. Desmoïde corticale : encoche avec spicules irréguliers, à ne pas biopsier.",
+    "Chondrome périosté : 5–25 ans, humérus proximal 32 %, fémur 19 %, phalanges 16 % ; encoche nette polylobée encorbellée par une coiffe d'os compact, 2,2–2,6 cm, calcifications 30–50 %, signal myxoïde, rehaussement périphérique et septal, pas d'œdème.",
+    "Chondrosarcome périosté : 0,5 % des chondrosarcomes, 10–30 ans, H 5/1 ; face postérieure du fémur distal 42 %, humérus proximal 18 % ; > 4–5 cm, calcifications cartilagineuses 87,5 % mais peu calcifié globalement, coque 46 %, érosion corticale 54 %, ossifications radiaires 37,5 %, médullaire envahie 12–16 %.",
+    "Ostéosarcome intracortical : le plus rare, fémur/tibia, lyse géographique < 4 cm, métastases 29 %. Ewing périosté : enfant < 10 ans (80 %), garçon (5,7/1), diaphyse fémur/humérus, masse sous-périostée sans matrice, réaction unilamellaire continue ± Codman, scalloping externe, médullaire RESPECTÉE (critère), rémission 90 %."
+  ],
+  "introduction": "Une **encoche de la surface** d'un os n'a pas la même valeur qu'une lyse centrale. Une lésion qui naît à la surface creuse la corticale de l'extérieur et soulève le périoste, même lorsqu'elle est bénigne : l'érosion n'est pas ici un signe d'agressivité. La démarche consiste à se demander **d'où vient la lésion** (tissus mous, périoste, os) puis à regarder sa **taille**, son **contenu** et sa **réaction périostée**.",
+  "sections": [
+    {
+      "titre": "Ce qui vient des tissus mous",
+      "texte": "Toute masse au contact d'un os peut l'éroder : **tumeurs des tissus mous** (synovialosarcome de l'adulte jeune près d'une articulation, desmoïde, sarcomes fibroblastiques), **bursites et kystes synoviaux**, **kystes mucoïdes**, et **dépôts cristallins** (calcinose tumorale apatitique, tophus goutteux, pyrophosphate de calcium).\n\nLe **kyste mucoïde périosté** a un siège quasi exclusif : la **face médiale du tibia proximal, sous la patte d'oie**, chez l'homme de 40 à 70 ans. Érosion polylobée nette, signal mucoïde (hypo T1 modéré, hyper T2 franc).",
+      "figures": [
+        "laredo-t4:fig39.2b",
+        "laredo-t4:fig39.x582"
+      ],
+      "legendes": [
+        "**Calcinose de pyrophosphate de calcium** : masse calcique qui a érodé la corticale métacarpienne et pénétré le canal médullaire.",
+        "**Kyste mucoïde périosté** : masse juxta-osseuse de la face antérieure de la diaphyse tibiale, de signal liquidien en IRM."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Érosion polylobée de la face médiale du tibia proximal, signal mucoïde, homme de 55 ans : diagnostic ?",
+        "a": "Kyste mucoïde périosté (sous la patte d'oie)."
+      }
+    },
+    {
+      "titre": "Pseudo-tumeurs et métastases de surface",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig39.5a",
+        "laredo-t4:fig39.5c"
+      ],
+      "legendes": [
+        "**Abcès sous-périosté à staphylocoque** de l'ulna chez un jeune toxicomane : collection juxta-osseuse, œdème musculaire et ostéolyse corticale en regard (flèches).",
+        "**Hématome juxta-cortical** chez un patient drépanocytaire en crise vaso-occlusive : collection en hypersignal T1, cernée d'un fin liseré, avec œdème musculaire."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Encoche corticale à l'emporte-pièce de la diaphyse fémorale chez un fumeur : primitif à chercher ?",
+        "a": "Cancer bronchique (plus de la moitié des métastases de surface)."
+      }
+    },
+    {
+      "titre": "Encoche + coque périostée : la liste courte",
+      "texte": "Quand une encoche de surface est bordée d'une **coque périostée**, trois diagnostics sont fréquents : **kyste anévrysmal sous-périosté**, **chondrome périosté**, **cortical defect**. Plus rarement : hématome sous-périosté, fibrome chondromyxoïde, lésion à cellules géantes des petits os, ostéoblastome, chondrosarcome périosté.\n\nLe **kyste anévrysmal sous-périosté** (19 à 27 % des kystes anévrysmaux, 10-30 ans, diaphyse ou métaphyse des os longs) passe par trois phases : masse des tissus mous accolée à l'os, puis fine coque périostée discontinue puis continue, puis ossification. Le **cortical defect**, chez l'enfant prépubère, est une lacune ouverte vers la surface dont la coque n'est parfois visible qu'aux deux pôles ; le **defect sus-condylien** postéro-médial du fémur distal est presque toujours bilatéral.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Encoche de surface + coque = pas forcément agressif. Kyste anévrysmal, chondrome périosté, cortical defect d'abord.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Citez les trois causes fréquentes d'encoche de surface bordée d'une coque périostée.",
+        "a": "Kyste anévrysmal sous-périosté, chondrome périosté, cortical defect."
+      }
+    },
+    {
+      "titre": "Chondrome périosté ou chondrosarcome périosté ?",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig39.12a",
+        "laredo-t4:fig39.12b"
+      ],
+      "legendes": [
+        "**Chondrome périosté** de la métaphyse médiale du fémur : encoche corticale à limites nettes cernée d'os compact, calcifications, signal cartilagineux en IRM.",
+        "**Chondrosarcome périosté** de la face postérieure du fémur distal : masse de surface plus volumineuse, lobulée, encochant la corticale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion périostée cartilagineuse de 6 cm de la face postérieure du fémur distal : chondrome ou chondrosarcome ?",
+        "a": "Chondrosarcome périosté (le chondrome mesure environ 2,5 cm)."
+      }
+    },
+    {
+      "titre": "Les sarcomes qui érodent la surface",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig39.17a",
+        "laredo-t4:fig39.21"
+      ],
+      "legendes": [
+        "**Ostéosarcome périosté fémoral** : masse de la surface du condyle latéral avec réactions périostées perpendiculaires, et envahissement des espaces médullaires (flèche pointillée).",
+        "**Sarcome d'Ewing périosté** de la diaphyse fémorale : masse sous-périostée en hypersignal STIR, rehaussée, moelle normale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Enfant de 8 ans, masse sous-périostée diaphysaire sans matrice, moelle normale en IRM : diagnostic ?",
+        "a": "Sarcome d'Ewing périosté."
+      }
+    },
+    {
+      "titre": "Autres tumeurs de surface",
+      "texte": "L'**hémangiome périosté** (tibia 43 %, fibula 25 %, mi-diaphyse) donne une encoche nette sous une corticale épaissie, parfois des spicules. Le **lipome paraostéal** (40-60 ans) est une masse graisseuse septée de 5 à 10 cm, avec une excroissance osseuse (30 %) sans continuité cortico-médullaire et parfois un scalloping. L'adamantinome, le chondroblastome, le schwannome, le lymphome ou le chordome extra-axial peuvent exceptionnellement naître sous le périoste.",
+      "figures": [
+        "laredo-t4:fig39.x597"
+      ],
+      "legendes": [
+        "**Lipome paraostéal fémoral** : excroissance osseuse diaphysaire sans raccordement cortico-spongieux, entourée d'une masse graisseuse circonférentielle ; scalloping de la corticale (flèche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse graisseuse septée accolée à une diaphyse avec excroissance osseuse sans continuité : diagnostic ?",
+        "a": "Lipome paraostéal."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Masse calcique au contact du condyle fémoral médial, ayant érodé la corticale, chez un patient goutteux. Diagnostic ?",
+      "figure": "laredo-t4:fig39.2a",
+      "options": [
+        "Tophus goutteux",
+        "Chondrosarcome périosté",
+        "Ostéome ostéoïde sous-périosté",
+        "Myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Les dépôts cristallins juxta-osseux (tophus, apatite, pyrophosphate) peuvent éroder la surface osseuse.",
+      "page": "p. 3045",
+      "image_origine": "m19/p580_0"
+    },
+    {
+      "question": "Encoche de la surface d'un métacarpien limitée par une fine coque périostée, chez un adolescent. Hypothèse la plus fréquente ?",
+      "figure": "laredo-t4:fig39.x585b",
+      "options": [
+        "Kyste anévrysmal sous-périosté",
+        "Métastase de surface",
+        "Ostéosarcome intracortical",
+        "Sarcome d'Ewing périosté"
+      ],
+      "reponse": 0,
+      "explication": "Encoche + fine coque périostée : le kyste anévrysmal sous-périosté est la cause fréquente.",
+      "page": "p. 3047–3048",
+      "image_origine": "m19/p584_0"
+    },
+    {
+      "question": "Enfant asymptomatique : (b) encoche de la corticale postéro-médiale de la métaphyse fémorale distale (flèches noires). Diagnostic ?",
+      "figure": "laredo-t4:fig39.x597",
+      "options": [
+        "Defect cortical sus-condylien (lésion « ne pas toucher »)",
+        "Ostéosarcome de surface",
+        "Chondrome périosté",
+        "Métastase corticale"
+      ],
+      "reponse": 0,
+      "explication": "Légende : defect cortical sus-condylien encochant la corticale postéro-médiale de la métaphyse fémorale distale ; siège et aspect caractéristiques, pas de biopsie.",
+      "page": "p. 3050–3051",
+      "image_origine": "m19/p586_0"
+    },
+    {
+      "question": "Encoche nette de la métaphyse humérale proximale, encorbellée par de l'os compact, signal myxoïde, rehaussement périphérique, 2,5 cm. Diagnostic ?",
+      "figure": "laredo-t4:fig39.11",
+      "options": [
+        "Chondrome périosté",
+        "Chondrosarcome périosté",
+        "Ostéosarcome périosté",
+        "Kyste mucoïde périosté"
+      ],
+      "reponse": 0,
+      "explication": "Taille modérée, coiffe d'os compact aux bords, signal cartilagineux sans œdème : chondrome périosté.",
+      "page": "p. 3051–3052",
+      "image_origine": "m19/p587_0"
+    },
+    {
+      "question": "Masse de surface de 8 cm de la face postérieure du fémur distal, ossifications annulaires et arciformes, lobulée. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig39.15",
+      "options": [
+        "Chondrosarcome périosté",
+        "Chondrome périosté",
+        "Myosite ossifiante",
+        "Lésion de Nora"
+      ],
+      "reponse": 0,
+      "explication": "Siège électif (42 %), grande taille, calcifications de type cartilagineux : chondrosarcome périosté.",
+      "page": "p. 3053–3054",
+      "image_origine": "m19/p589_1"
+    },
+    {
+      "question": "Petite image arrondie faiblement calcifiée creusant une encoche de l'arc postérieur de T8, douleurs nocturnes chez un jeune. Diagnostic ?",
+      "figure": "laredo-t4:fig39.16b",
+      "options": [
+        "Ostéome ostéoïde sous-périosté",
+        "Métastase de surface",
+        "Kyste anévrysmal",
+        "Ostéoblastome agressif"
+      ],
+      "reponse": 0,
+      "explication": "Ostéome ostéoïde « posé » dans une encoche corticale, siège typique sur les massifs articulaires postérieurs.",
+      "page": "p. 3055–3056",
+      "image_origine": "m19/p590_0"
+    },
+    {
+      "question": "Enfant de 8 ans, masse sous-périostée diaphysaire fémorale sans matrice, réaction unilamellaire, médullaire normale en IRM. Diagnostic ?",
+      "figure": "laredo-t4:fig39.x595b",
+      "options": [
+        "Sarcome d'Ewing périosté",
+        "Ostéosarcome périosté",
+        "Hématome sous-périosté",
+        "Ostéomyélite"
+      ],
+      "reponse": 0,
+      "explication": "Garçon < 10 ans, diaphyse, masse non minéralisée, respect médullaire = Ewing périosté (meilleur pronostic).",
+      "page": "p. 3059",
+      "image_origine": "m19/p594_0"
+    },
+    {
+      "question": "Lyse géographique intracorticale bien limitée de 3 cm de la diaphyse fémorale. Diagnostic rare à évoquer parmi les ostéosarcomes ?",
+      "figure": "laredo-t4:fig39.x594a",
+      "options": [
+        "Ostéosarcome intracortical",
+        "Ostéosarcome paraostéal",
+        "Ostéosarcome de surface de haut grade",
+        "Ostéosarcome télangiectasique"
+      ],
+      "reponse": 0,
+      "explication": "Le plus rare des ostéosarcomes de surface : lyse intracorticale < 4 cm, métastases dans 29 %.",
+      "page": "p. 3058",
+      "image_origine": "m19/p593_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Ce qui vient des tissus mous",
+        "Pseudo-tumeurs et métastases de surface",
+        "Encoche + coque périostée : la liste courte"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "hs": [
+        "Chondrome périosté ou chondrosarcome périosté ?",
+        "Les sarcomes qui érodent la surface",
+        "Autres tumeurs de surface"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        3,
+        4,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m19",
+  "images_non_rattachees": []
+}

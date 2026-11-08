@@ -1,0 +1,343 @@
+{
+  "id": "laredo-t4:m14",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 24,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs vasculaires, musculaires et graisseuses",
+  "pages": "2866–2908",
+  "objectifs": [
+    "Séparer hémangiome quiescent et agressif",
+    "Penser à une tumeur vasculaire devant des lésions multifocales régionales",
+    "Reconnaître lipome, lipome paraostéal, hibernome et lésion kystique et graisseuse"
+  ],
+  "essentiels": [
+    "Hémangiome vertébral quiescent : très fréquent (> 10 % des autopsies), 1–2 cm, corps vertébral, travées verticales grillagées, « polka dot » en axial, graisse entre les travées (involué : hyper T1). Vasculaire pur : hypo T1, hyper T2, peut simuler une métastase.",
+    "Hémangiome agressif : T3–T10, atteinte du corps entier et de l'arc, zones lytiques, corticales soufflées et poreuses, masse épidurale bilobée « en embrasse de rideau » ; compression médullaire indolore, parfois en fin de grossesse. Traitement : alcoolisation puis vertébroplastie.",
+    "Hémangiome de la voûte : fronto-pariétal, diploïque, soufflant surtout la table externe, nid d'abeilles et spicules radiaires. Os longs : métaphyso-épiphysaire lobulé cloisonné avec graisse ; intracortical tibial muriforme (simule un ostéome ostéoïde). Os plats et côtes : multikystique soufflant.",
+    "Hémangiome épithélioïde (adulte, multifocal régional 18–25 %, lyse cernée et lobulée, bénin) ; hémangio-endothéliome épithélioïde (2e–3e décennies, WWTR1-CAMTA1, multifocal 40–64 % sur un membre, malignité faible, mortalité ~20 %) ; angiosarcome (haut grade, multifocal, survie 33 % à 5 ans). Le caractère multifocal est le seul signe évocateur.",
+    "Léiomyosarcome osseux : éliminer d'abord une métastase (utérus, intestin) ; 5e décennie ; os longs autour du genou ; lyse mitée ou perméative ; multiples 22 % ; beaucoup d'ex-« histiocytofibromes malins ».",
+    "Lipome intra-osseux : fémur proximal (col, intertrochantérien), aile iliaque postérieure, calcanéum ; lacune 1A1 de 3–5 cm, densité graisseuse et hyper T1, ossification centrale en cocarde (lipome ossifiant). Lipome paraostéal : masse graisseuse diaphysaire avec excroissance osseuse irrégulière à sa base, sans continuité cortico-médullaire.",
+    "Hibernome intra-osseux : après 40 ans, F, bassin et rachis ; nodule condensé, hyper T2, rehaussé, fixant en scintigraphie et TEP → piège de la métastase condensante. TBCN : ne se rehausse pas ; îlot condensant : hypo T2.",
+    "Lésion kystique et graisseuse : adulte, aile iliaque, col fémoral, calcanéum ; lacune 1A1 mêlant graisse, liquide et ossification, en patchwork ou en cocarde (liquide central, coque ossifiée, graisse périphérique). Ne fragilise pas l'os ; probable involution de kyste essentiel ou lipome nécrosé."
+  ],
+  "introduction": "Vaisseaux, muscle lisse, graisse : ce module traite des tumeurs faites de tissus « mous » mais nées dans l'os. Leur imagerie est souvent une affaire de **contenu** : de la graisse se voit en T1 et au scanner, des vaisseaux se voient par leur hypersignal T2 et leur rehaussement. La difficulté est ailleurs : **séparer le quiescent de l'agressif**, et ne pas confondre une tumeur rare avec une métastase.",
+  "sections": [
+    {
+      "titre": "Hémangiome : tout dépend de ce qui remplit les travées",
+      "texte": "Un hémangiome osseux est une malformation vasculaire qui, avec le temps, **involue en graisse**. Son signal IRM dit où il en est : **involué** (graisseux : hyper T1, hypo T2 en saturation), **actif** (vasculaire : hypo T1, hyper T2), **mixte**, ou **agressif** quand il s'étend aux tissus mous.\n\nÀ la **vertèbre**, il est très fréquent (plus de 10 % des autopsies). L'hémangiome **quiescent** mesure 1 à 2 cm, reste dans le corps et montre des **travées verticales épaissies** : grillage en sagittal, **« polka dot »** en axial, graisse entre les travées. Un hémangiome **purement vasculaire** (hypo T1, hyper T2) peut, lui, simuler une métastase en IRM : le scanner retrouve les travées.",
+      "figures": [
+        "laredo-t4:fig24.x407"
+      ],
+      "legendes": [
+        "**Deux hémangiomes, deux signaux** : C5 de contenu mixte (tête de flèche) et T4 purement vasculaire (flèche), en hyposignal T1 et hypersignal STIR, qui pourrait faire croire à une métastase."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Les travées restantes s'épaississent pour compenser la résorption des travées horizontales : d'où la striation verticale et les gros points en coupe axiale.",
+      "verification": {
+        "q": "Hémangiome vertébral en hypo T1 et hyper T2, sans graisse : comment ne pas le prendre pour une métastase ?",
+        "a": "Le scanner retrouve les travées verticales épaissies (polka dot)."
+      }
+    },
+    {
+      "titre": "L'hémangiome vertébral agressif",
+      "texte": "Il siège plutôt de **T3 à T10**, touche **tout le corps et l'arc**, comporte des zones lytiques et des corticales soufflées et poreuses, et pousse une **masse épidurale bilobée** séparée sur la ligne médiane par le ligament longitudinal postérieur (« **embrasse de rideau** »). Il peut comprimer la moelle, souvent sans douleur, notamment au **dernier trimestre de grossesse** ou en post-partum.\n\nTraitement : **alcoolisation** par ponction directe puis **vertébroplastie**, qui stabilise le plus souvent la masse.",
+      "figures": [
+        "laredo-t4:fig24.4"
+      ],
+      "legendes": [
+        "**Hémangiome agressif lombaire** : large plage d'ostéolyse, plateaux discontinus (flèches) et destruction corticale ; très difficile à séparer d'un plasmocytome ou d'une TCG."
+      ],
+      "cle": null,
+      "piege": "Paget ou hémangiome ? Le Paget élargit le corps contre les plateaux, forme un cadre et atteint l'épineuse ; l'hémangiome souffle à mi-hauteur et ne touche pas l'épineuse.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quand un hémangiome vertébral risque-t-il de comprimer la moelle ?",
+        "a": "Forme agressive (T3-T10), notamment en fin de grossesse ou en post-partum."
+      }
+    },
+    {
+      "titre": "Hémangiome hors du rachis",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig24.x413a",
+        "laredo-t4:fig24.14a"
+      ],
+      "legendes": [
+        "**Hémangiome intracortical de la diaphyse humérale** : image multikystique qui souffle les corticales.",
+        "**Hémangiome costal** de découverte fortuite : lésion soufflante, multicloisonnée."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacunes muriformes d'une corticale tibiale épaissie : quel diagnostic peut imiter un ostéome ostéoïde ?",
+        "a": "L'hémangiome intracortical."
+      }
+    },
+    {
+      "titre": "Tumeurs vasculaires de malignité croissante",
+      "texte": "Le seul signe d'imagerie vraiment évocateur d'une tumeur vasculaire est la **multifocalité régionale** : plusieurs lésions sur un même membre, souvent de part et d'autre d'une articulation.",
+      "figures": [
+        "laredo-t4:fig24.16",
+        "laredo-t4:fig24.20b"
+      ],
+      "legendes": [
+        "**Hémangiome épithélioïde multifocal** de la cheville et de l'arrière-pied : lacunes contiguës à liseré 1A1 sur le tibia, le talus et le calcanéum.",
+        "**Hémangio-endothéliome épithélioïde multifocal** : ostéolyses 1C multiples, bilatérales, prédominant autour des genoux."
+      ],
+      "cle": null,
+      "piege": "L'angiosarcome exprime des cytokératines : piège histologique du carcinome métastatique.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel signe d'imagerie fait évoquer une tumeur vasculaire osseuse ?",
+        "a": "La multifocalité régionale : plusieurs lésions sur un même membre."
+      }
+    },
+    {
+      "titre": "Léiomyosarcome osseux",
+      "texte": "Avant de retenir un léiomyosarcome primitif de l'os, il faut **éliminer une métastase** de léiomyosarcome utérin ou digestif. La tumeur touche plutôt l'adulte d'une cinquantaine d'années, autour du genou, sous forme d'une lyse mitée ou perméative, parfois d'aspect de TCG ; elle est multiple dans 22 %.",
+      "figures": [
+        "laredo-t4:fig25.x430b"
+      ],
+      "legendes": [
+        "**Léiomyosarcome fracturé** du fémur distal chez un homme de 74 ans : lyse 1C métaphyso-épiphysaire, masse rehaussée en IRM."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Avant de retenir un léiomyosarcome osseux primitif, que faut-il éliminer ?",
+        "a": "Une métastase de léiomyosarcome utérin ou digestif."
+      }
+    },
+    {
+      "titre": "Graisse dans l'os : lipome, lipome paraostéal, hibernome",
+      "texte": "Le **lipome intra-osseux** siège au fémur proximal (col, région intertrochantérienne), à l'aile iliaque postérieure et au **calcanéum**. C'est une lacune **1A1** de 3 à 5 cm, de **densité graisseuse** et en hyper T1 effacé par la saturation, souvent avec une **ossification centrale en cocarde** (lipome ossifiant). Il ne fixe pas.\n\nLe **lipome paraostéal** est une masse graisseuse de 4 à 10 cm accolée à une diaphyse, centrée par une **excroissance osseuse irrégulière** sans continuité cortico-médullaire (≠ exostose).\n\nL'**hibernome** intra-osseux (graisse brune) est un piège : nodule **condensé** du bassin ou du rachis chez une femme de plus de 40 ans, en hyper T2, rehaussé, qui **fixe en scintigraphie et en TEP**. Il imite une métastase condensante.",
+      "figures": [
+        "laredo-t4:fig26.3c",
+        "laredo-t4:fig26.x436c"
+      ],
+      "legendes": [
+        "**Lipome intra-osseux du calcanéum** : lacune bien limitée 1A de densité graisseuse au scanner, de signal graisseux en IRM.",
+        "**Lipome paraostéal de la scapula** : ossification de surface sans raccordement cortico-spongieux, entourée d'une masse graisseuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Nodule condensé du bassin hyperfixant au TEP chez une femme de 50 ans, hyper T2 : piège bénin possible ?",
+        "a": "Hibernome intra-osseux (graisse brune), qui imite une métastase condensante."
+      }
+    },
+    {
+      "titre": "Lésion kystique et graisseuse",
+      "texte": "Chez l'adulte de 30 à 70 ans, à l'aile iliaque, au col fémoral ou au calcanéum, une lacune 1A1 qui mêle **graisse, liquide et ossification** correspond à une **lésion kystique et graisseuse**, probablement l'involution d'un kyste essentiel ou d'un lipome nécrosé. Deux aspects : **en patchwork** (plages graisseuses et liquidiennes cloisonnées) ou **en cocarde** (centre liquide, coque ossifiée, couronne de graisse).\n\nElle n'évolue pas et ne fragilise pas l'os : **abstention**.",
+      "figures": [
+        "laredo-t4:fig27.4b",
+        "laredo-t4:fig27.5b"
+      ],
+      "legendes": [
+        "**Lésion kystique et graisseuse « en cocarde »** de la métaphyse tibiale : centre liquidien en hypersignal T2, entouré de graisse.",
+        "**Lésion kystique et graisseuse du calcanéum** : lacune bien limitée avec ossification centrale."
+      ],
+      "cle": "Graisse dans une lacune 1A1 = lésion bénigne (lipome, lésion kystique et graisseuse, hémangiome involué).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune 1A1 du calcanéum mêlant graisse, liquide et ossification : conduite ?",
+        "a": "Abstention : lésion kystique et graisseuse, qui n'évolue pas."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Vertèbre lombaire au scanner : travées verticales raréfiées et épaissies, aspect grillagé en sagittal, ponctué en axial, densité graisseuse entre les travées. Diagnostic ?",
+      "figure": "laredo-t4:fig24.1b",
+      "options": [
+        "Hémangiome vertébral involué et quiescent",
+        "Maladie de Paget vertébrale",
+        "Métastase condensante",
+        "Myélome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hémangiome vertébral involué et quiescent, aspect scanographique caractéristique (grillagé, ponctué, graisse) — aucune exploration supplémentaire.",
+      "page": "2868",
+      "image_origine": "m14/p405_0"
+    },
+    {
+      "question": "Vertèbre thoracique entièrement atteinte avec arc, masse épidurale bilobée et prévertébrale (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig24.3d",
+      "options": [
+        "Hémangiome vertébral agressif",
+        "Métastase",
+        "Lymphome",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Hémangiome agressif thoracique : masse sous-ligamentaire « en embrasse de rideau » et extension prévertébrale.",
+      "page": "2870",
+      "image_origine": "m14/p407_0"
+    },
+    {
+      "question": "Tibia proximal : lésion épiphyso-métaphysaire lobulée, cloisonnée en nid d'abeilles, avec graisse en T1. Diagnostic ?",
+      "figure": "laredo-t4:fig24.9",
+      "options": [
+        "Hémangiome",
+        "TCG",
+        "Chondroblastome",
+        "Kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Aspect plurilobulé cloisonné avec graisse intralésionnelle : hémangiome des os longs.",
+      "page": "2874",
+      "image_origine": "m14/p411_0"
+    },
+    {
+      "question": "Diaphyse tibiale : lésion intracorticale d'aspect « müriforme » en axial, strié en sagittal, avec signal graisseux. Diagnostic ?",
+      "figure": null,
+      "options": [
+        "Hémangiome intracortical",
+        "Ostéome ostéoïde",
+        "Adamantinome",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hémangiome intracortical de la diaphyse tibiale simulant un ostéome ostéoïde ; aspect müriforme, strié et graisse intralésionnelle.",
+      "page": "2874",
+      "image_origine": "m14/p411_1"
+    },
+    {
+      "question": "Manubrium : lésion multikystique soufflante avec graisse dans les logettes. Diagnostic ?",
+      "figure": "laredo-t4:fig24.12a",
+      "options": [
+        "Hémangiome",
+        "Chondrosarcome",
+        "Plasmocytome",
+        "Métastase rénale"
+      ],
+      "reponse": 0,
+      "explication": "L'aspect multikystique et la graisse (involution partielle) caractérisent l'hémangiome des os plats.",
+      "page": "2876",
+      "image_origine": "m14/p413_0"
+    },
+    {
+      "question": "Enfant de 6 ans : lyses soufflantes métaphyso-diaphysaires multiples des os longs et lacunes de la voûte. Diagnostic évoqué dans ce chapitre ?",
+      "figure": "laredo-t4:fig24.x421b",
+      "options": [
+        "Hémangio-endothéliome épithélioïde multifocal",
+        "Histiocytose langerhansienne",
+        "Leucémie",
+        "Neuroblastome"
+      ],
+      "reponse": 0,
+      "explication": "Tumeur vasculaire multifocale ; le caractère multifocal est le seul signe évocateur en imagerie.",
+      "page": "2883",
+      "image_origine": "m14/p420_0"
+    },
+    {
+      "question": "Col fémoral : lacune 1A1 à contenu graisseux au scanner avec ossification centrale. Diagnostic ?",
+      "figure": "laredo-t4:fig26.1b",
+      "options": [
+        "Lipome ossifiant",
+        "Abcès de Brodie avec séquestre",
+        "Dysplasie fibreuse",
+        "Ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "Densité graisseuse et ossification centrale en cocarde : lipome ossifiant (souvent assimilé à une lésion kystique et graisseuse).",
+      "page": "2896",
+      "image_origine": "m14/p433_1"
+    },
+    {
+      "question": "Diaphyse fémorale : excroissance osseuse irrégulière au sein d'une masse graisseuse. Diagnostic ?",
+      "figure": "laredo-t4:fig26.5a",
+      "options": [
+        "Lipome paraostéal",
+        "Exostose",
+        "Ostéosarcome paraostéal",
+        "Myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Graisse coiffant entièrement une excroissance diaphysaire sans continuité médullaire : lipome paraostéal.",
+      "page": "2899",
+      "image_origine": "m14/p436_0"
+    },
+    {
+      "question": "Condyle fémoral latéral : lacune 1A1 avec centre liquidien et couronne graisseuse en scanner et IRM. Diagnostic ?",
+      "figure": "laredo-t4:fig27.3a",
+      "options": [
+        "Lésion kystique et graisseuse en cocarde",
+        "Géode arthrosique",
+        "Chondroblastome",
+        "Kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Trois couches concentriques liquide, os, graisse : lésion kystique et graisseuse en cocarde, à laisser en place.",
+      "page": "2904",
+      "image_origine": "m14/p441_0"
+    },
+    {
+      "question": "Aile iliaque : lésion cloisonnée mêlant plages liquidiennes et graisseuses. Diagnostic ?",
+      "figure": "laredo-t4:fig26.x440a",
+      "options": [
+        "Lésion kystique et graisseuse en patchwork",
+        "Chondrosarcome",
+        "Hydatidose",
+        "Plasmocytome"
+      ],
+      "reponse": 0,
+      "explication": "Combinaison de plages graisseuses et liquidiennes séparées par des cloisons : type patchwork.",
+      "page": "2902",
+      "image_origine": "m14/p439_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Hémangiome : tout dépend de ce qui remplit les travées",
+        "L'hémangiome vertébral agressif",
+        "Hémangiome hors du rachis"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "hs": [
+        "Tumeurs vasculaires de malignité croissante",
+        "Léiomyosarcome osseux",
+        "Graisse dans l'os : lipome, lipome paraostéal, hibernome",
+        "Lésion kystique et graisseuse"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m14",
+  "images_non_rattachees": [
+    "m14/p411_1"
+  ]
+}

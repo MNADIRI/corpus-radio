@@ -1,0 +1,307 @@
+{
+  "id": "laredo-t4:m15",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 28,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Dysplasie ostéofibreuse, adamantinome et kystes osseux",
+  "pages": "2909–2941",
+  "objectifs": [
+    "Séparer dysplasie ostéofibreuse, adamantinome différencié et adamantinome",
+    "Reconnaître le kyste essentiel et ses signes",
+    "Diagnostiquer et traiter le kyste anévrysmal sans manquer un télangiectasique"
+  ],
+  "essentiels": [
+    "Dysplasie ostéofibreuse (DOF) : garçon < 10 ans (souvent < 5 ans), corticale ANTÉRIEURE du tiers moyen-supérieur du tibia (92 %), fibula ; lacunes intracorticales multiples à liseré net, verre dépoli 40 %, corticale épaissie, cavité médullaire respectée, crosse antérieure. Cytokératine en cellules isolées, pas de GNAS. Se stabilise vers 15 ans.",
+    "Adamantinome : 0,4 % des tumeurs, 10–30 ans, homme, tibia 85 % (fibula associée 10 %) ; biphasique épithélial + ostéofibreux. Lésion longue (13 cm en moyenne), mitée, multilacunaire, envahit la cavité médullaire, parfois les tissus mous. Résection large ; métastases tardives 10–20 %.",
+    "3 signes en faveur de l'adamantinome conventionnel : grande hauteur, aspect mité, atteinte de toute la cavité médullaire en axial. L'adamantinome différencié (14 ans) reste cortical ; biopsier le centre de la lésion. Une DOF qui évolue après la puberté doit faire craindre un adamantinome.",
+    "Kyste essentiel : enfant (11 ans), G x2, métaphyse proximale de l'humérus (45 %) puis fémur ; collé à la physe puis « migre » vers la diaphyse. Lacune 1B parfaitement centrale, soufflure discrète symétrique, « fond de coquetier » ; liquidien pur. Fracture = mode de révélation ; « fallen fragment » signe le contenu liquide.",
+    "Kyste essentiel fracturé : cloisons (89 %), bande d'os cicatriciel, niveaux (61 %), rehaussement pariétal et nodulaire ; une plage liquidienne persiste toujours. Récidive 10–39 % après traitement (curetage-greffe, corticoïdes, substituts) ; plus active avant 10 ans.",
+    "Kyste anévrysmal : 10 % des tumeurs bénignes, 5–20 ans, réarrangement USP6 (70 % des primitifs) ; 30 % sont « secondaires » (TCG, chondroblastome, ostéoblastome, DF, FNO, ostéosarcome). Os longs 53 % (fémur proximal, radius distal, humérus), rachis 20 % (arc postérieur, hémivertèbre, atteinte transdiscale).",
+    "KA en imagerie : lacune métaphysaire excentrée, soufflante, lobulée, cloisonnée en bulles de savon, coque fine, « finger in the balloon » ; niveaux liquide-liquide d'autant plus évocateurs qu'ils occupent la majorité du volume ; seules les parois se rehaussent. Évolution en 4 phases : lytique agressive → soufflante → stabilisation → réparation.",
+    "Toute composante tissulaire doit être biopsiée (KA solide, KA secondaire, ostéosarcome télangiectasique). Traitement : abstention surveillée, curetage (récidive 20–70 %) ou exérèse, embolisation, bisphosphonates, dénosumab ; jamais de radiothérapie."
+  ],
+  "introduction": "Deux paires de diagnostics à séparer. Au **tibia**, la dysplasie ostéofibreuse et l'adamantinome se ressemblent, car ils appartiennent au même spectre : la question est de reconnaître le moment où la lésion cesse d'être bénigne. Dans la **métaphyse de l'enfant**, le kyste essentiel et le kyste anévrysmal sont tous deux des « trous » soufflants : leur forme, leur contenu et leur vitesse les distinguent.",
+  "sections": [
+    {
+      "titre": "Dysplasie ostéofibreuse : la corticale antérieure du tibia",
+      "texte": "La **dysplasie ostéofibreuse** (DOF) touche le **jeune garçon** (85 % avant 10 ans, 60 % avant 5 ans). Elle siège dans la **corticale antérieure** du tiers moyen ou supérieur de la diaphyse **tibiale** (92 %), parfois la fibula.\n\nElle réalise des **lacunes intracorticales multiples**, ovalaires, confluentes, à liseré net, dans une corticale épaissie et soufflée, avec du verre dépoli dans 40 % ; la **cavité médullaire est respectée**. Le tibia s'incurve **en crosse à convexité antérieure**.\n\nElle progresse lentement jusque vers 15 ans, puis se stabilise et régresse. Contrairement à la dysplasie fibreuse, elle est corticale, ses travées sont bordées d'ostéoblastes, elle contient des cellules isolées à cytokératine et n'a pas de mutation GNAS.",
+      "figures": [
+        "laredo-t4:fig28.1a"
+      ],
+      "legendes": [
+        "**DOF opérée dans l'enfance, revue à l'âge adulte** : déformation en crosse antérieure du tibia et image intracorticale allongée minéralisée."
+      ],
+      "cle": "Une DOF qui continue de grandir après la puberté doit faire craindre un adamantinome.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Garçon de 4 ans, lacunes intracorticales de la corticale antérieure du tibia, moelle respectée. Diagnostic ?",
+        "a": "Dysplasie ostéofibreuse."
+      }
+    },
+    {
+      "titre": "Adamantinome : quand la lésion envahit la moelle",
+      "texte": "L'**adamantinome** est une tumeur maligne rare (0,4 %), du sujet de 10 à 30 ans, surtout l'homme, au **tibia** dans 85 % des cas. Il est **biphasique** : nids **épithéliaux** (cytokératine) dans un tissu ostéofibreux de type DOF.\n\nTrois signes le font préférer à la DOF : **grande hauteur** (13 cm en moyenne), **aspect mité**, et **envahissement de toute la cavité médullaire** en coupe axiale. Il peut atteindre les tissus mous. L'**adamantinome différencié** (âge moyen 14 ans) reste cortical et n'envahit jamais toute la moelle.\n\nTraitement : résection large ; récidive si exérèse incomplète, métastases pulmonaires et ganglionnaires tardives dans 10 à 20 %.",
+      "figures": [
+        "laredo-t4:fig28.5a"
+      ],
+      "legendes": [
+        "**Adamantinome différencié intracortical** du tibia : lacune diaphysaire intracorticale allongée, soufflante, à limites nettes (1A1), sans envahissement médullaire."
+      ],
+      "cle": null,
+      "piege": "Les nids épithéliaux sont souvent au centre de la lésion : une biopsie périphérique ne ramène que de la DOF. Biopsier le centre.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion tibiale de 13 cm, mitée, qui envahit toute la cavité médullaire chez un homme de 25 ans : diagnostic et lieu de biopsie ?",
+        "a": "Adamantinome ; biopsier le centre de la lésion."
+      }
+    },
+    {
+      "titre": "Kyste essentiel : un kyste liquide au milieu de l'os",
+      "texte": "Le **kyste essentiel** touche l'enfant prépubère (vers 11 ans), deux garçons pour une fille, dans la **métaphyse proximale de l'humérus** (45 %) puis du fémur ; chez l'adulte jeune, l'aile iliaque, le fémur proximal et le calcanéum.\n\nC'est une lacune **1B parfaitement centrale**, avec une soufflure discrète et **symétrique**, et une encoche endostée nette côté diaphyse en **« fond de coquetier »**. Son contenu est **liquide pur**.\n\nIl est d'abord collé à la physe (phase active), puis s'en éloigne : il ne migre pas, c'est la physe qui continue à fabriquer de l'os normal entre elle et le kyste devenu **inactif**.",
+      "figures": [
+        "laredo-t4:fig29.1a"
+      ],
+      "legendes": [
+        "**Kyste essentiel huméral et son évolution** : lacune métaphysaire centrée contre la physe, puis séparée d'elle par de l'os normal au fil de la croissance."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Un kyste liquide pousse de la même façon dans toutes les directions : il souffle l'os de façon symétrique, au centre. Une tumeur solide ou un kyste anévrysmal, eux, poussent de façon excentrée.",
+      "verification": {
+        "q": "Kyste essentiel séparé de la physe par 3 cm d'os normal : le kyste a-t-il migré ?",
+        "a": "Non : la physe a continué de fabriquer de l'os ; le kyste est devenu inactif."
+      }
+    },
+    {
+      "titre": "Kyste essentiel fracturé",
+      "texte": "La **fracture** est le mode de révélation habituel. Le **fragment cortical déclive** (« fallen fragment »), tombé au fond de la cavité, prouve que le contenu est liquide.\n\nAprès fracture, l'IRM se complique : cloisons (89 %), bande d'os cicatriciel, **niveaux** et sang (61 %), rehaussement pariétal et nodulaire. Mais **une plage liquidienne persiste toujours**, ce qui oriente.\n\nTraitements : curetage-greffe, injections de corticoïdes, de substituts osseux ou de moelle ; récidive 10 à 39 %, plus fréquente avant 10 ans.",
+      "figures": [
+        "laredo-t4:fig29.5",
+        "laredo-t4:fig29.7"
+      ],
+      "legendes": [
+        "**Kyste essentiel huméral fracturé** : fragment cortical tombé dans la cavité (flèche), puis évolution après consolidation.",
+        "**Kyste essentiel fracturé** métaphyso-diaphysaire : signal hétérogène, cloisons et rehaussement pariétal après fracture, avec persistance d'une plage liquidienne."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Fragment cortical tombé au fond d'une lacune humérale fracturée : qu'en déduire ?",
+        "a": "Le contenu est liquide : kyste essentiel."
+      }
+    },
+    {
+      "titre": "Kyste anévrysmal : des cavités de sang",
+      "texte": "Le **kyste anévrysmal** (10 % des tumeurs bénignes, 5-20 ans) est une tumeur faite de **cavités sanguines** sans revêtement endothélial. Les formes primitives portent un **réarrangement USP6** (70 %). Environ 30 % sont **secondaires** à une autre lésion : TCG, chondroblastome, ostéoblastome, dysplasie fibreuse, FNO, voire ostéosarcome.\n\nIl siège dans les **os longs** (53 % : fémur proximal, radius distal, humérus) et le **rachis** (20 % : arc postérieur, hémivertèbre, extension à la vertèbre voisine).\n\nImage : lacune **métaphysaire excentrée**, **soufflante**, lobulée, cloisonnée en **bulles de savon**, à coque fine ; la coque déborde la corticale comme un doigt dans un ballon (« **finger in the balloon** »). En IRM, des **niveaux liquide-liquide**, d'autant plus évocateurs qu'ils occupent la plus grande partie du volume ; seules les parois se rehaussent.",
+      "figures": [
+        "laredo-t4:fig30.1a",
+        "laredo-t4:fig30.5b"
+      ],
+      "legendes": [
+        "**Trois kystes anévrysmaux** : lacunes soufflantes métaphyso-diaphysaires, ovalaires, habituellement excentrées, à coque fine.",
+        "**Kyste anévrysmal de deux vertèbres contiguës** (hémivertèbre L1 et hémi-arc de T12) : multiples niveaux en T2, rehaussement limité aux cloisons."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune excentrée soufflante avec multiples niveaux occupant tout le volume chez un adolescent : diagnostic ?",
+        "a": "Kyste anévrysmal."
+      }
+    },
+    {
+      "titre": "Quatre phases, et toujours chercher le solide",
+      "texte": "Le kyste anévrysmal évolue en quatre phases : **lytique agressive** (lyse 1C rapide, rupture corticale : pseudo-maligne), **soufflante** (coque fine discontinue, niveaux), **stabilisation** (coque continue, bulles de savon), **réparation** (coque épaisse, ossification).\n\nToute **composante tissulaire** qui se rehausse doit être biopsiée : kyste anévrysmal solide, kyste secondaire à une autre tumeur, ou **ostéosarcome télangiectasique**.\n\nTraitement : surveillance, curetage (récidive 20 à 70 %) ou exérèse, embolisation, bisphosphonates, dénosumab. **Jamais de radiothérapie**.",
+      "figures": [
+        "laredo-t4:fig30.12b",
+        "laredo-t4:fig30.16b"
+      ],
+      "legendes": [
+        "**Kystes anévrysmaux secondaires** : sur chondroblastome (en haut) et sur dysplasie fibreuse humérale (en bas, un seul niveau liquide).",
+        "**Phase de réparation** d'un kyste anévrysmal de l'aile iliaque : épaississement progressif de la coque et ossification après biopsie."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Kyste anévrysmal avec composante tissulaire qui se rehausse : conduite ?",
+        "a": "Biopsier cette composante (kyste secondaire, ostéosarcome télangiectasique)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Enfant de 8 ans : multiples lacunes intracorticales du tiers supérieur du tibia, corticale épaissie, cavité médullaire respectée. Diagnostic ?",
+      "figure": "laredo-t4:fig28.1b",
+      "options": [
+        "Dysplasie ostéofibreuse",
+        "Adamantinome conventionnel",
+        "Dysplasie fibreuse",
+        "Ostéomyélite chronique"
+      ],
+      "reponse": 0,
+      "explication": "Lacunes intracorticales antérieures cernées d'un liseré, chez un jeune enfant, médullaire respectée : DOF.",
+      "page": "2911",
+      "image_origine": "m15/p448_1"
+    },
+    {
+      "question": "Tibia : DOF connue qui s'étend sur 6 ans. Que craindre ?",
+      "figure": "laredo-t4:fig28.4c",
+      "options": [
+        "Un adamantinome",
+        "Une pseudarthrose congénitale",
+        "Un ostéosarcome",
+        "Une fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Une DOF qui continue d'évoluer, surtout après la puberté, doit faire évoquer un adamantinome.",
+      "page": "2914",
+      "image_origine": "m15/p451_0"
+    },
+    {
+      "question": "Adulte jeune : lacune longue de la diaphyse tibiale antérieure atteignant la médullaire, avec niveau liquide et partie charnue rehaussée. Diagnostic ?",
+      "figure": "laredo-t4:fig28.6",
+      "options": [
+        "Adamantinome",
+        "Kyste anévrysmal primitif",
+        "Dysplasie ostéofibreuse",
+        "Fibrome non ossifiant"
+      ],
+      "reponse": 0,
+      "explication": "Lésion tibiale antérieure étendue à la cavité médullaire avec kyste anévrysmal secondaire : adamantinome. La biopsie vise la partie charnue.",
+      "page": "2917",
+      "image_origine": "m15/p454_0"
+    },
+    {
+      "question": "Enfant : lacune centrale de la métaphyse humérale proximale, encoche endostée nette côté diaphyse (flèche). Nom du signe et diagnostic ?",
+      "figure": "laredo-t4:fig29.3",
+      "options": [
+        "Fond de coquetier : kyste essentiel",
+        "Finger in the balloon : kyste anévrysmal",
+        "Bulles de savon : TCG",
+        "Verre dépoli : DF"
+      ],
+      "reponse": 0,
+      "explication": "Le kyste essentiel encoche l'endoste en fond de coquetier sur son versant diaphysaire.",
+      "page": "2921",
+      "image_origine": "m15/p458_0"
+    },
+    {
+      "question": "Kyste huméral supérieur fracturé : fragment osseux dans la partie déclive (flèche fine). Nom et signification de ce signe ?",
+      "figure": "laredo-t4:fig29.4",
+      "options": [
+        "Fragment osseux déclive : contenu liquidien d'un kyste osseux essentiel",
+        "Séquestre : ostéomyélite",
+        "Calcification : chondrome",
+        "Fragment flottant : lipome intra-osseux"
+      ],
+      "reponse": 0,
+      "explication": "Légende : kyste osseux essentiel huméral fracturé ; signe du « fragment osseux déclive » qui signe son contenu liquidien, et aspect en fond de coquetier.",
+      "page": "2921",
+      "image_origine": "m15/p458_1"
+    },
+    {
+      "question": "Lésion lytique du genou centrée sur la physe, simulant une TCG, mais liquidienne pure en T2 et non rehaussée. Diagnostic ?",
+      "figure": "laredo-t4:fig29.6",
+      "options": [
+        "Kyste essentiel atypique épiphysaire",
+        "TCG",
+        "Chondroblastome",
+        "Kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Hypersignal liquidien homogène, seule une fine membrane et une cloison se rehaussent : kyste essentiel, ici atypique par son extension épiphysaire.",
+      "page": "2923",
+      "image_origine": "m15/p460_0"
+    },
+    {
+      "question": "Radius distal : lacune métaphysaire soufflante cloisonnée ; la coque passe au-dessus de la corticale (flèches jaunes). Signe et diagnostic ?",
+      "figure": "laredo-t4:fig30.1b",
+      "options": [
+        "Finger in the balloon : kyste anévrysmal",
+        "Fond de coquetier : kyste essentiel",
+        "Codman : ostéosarcome",
+        "Verre dépoli : dysplasie fibreuse"
+      ],
+      "reponse": 0,
+      "explication": "L'aspect en brochette, non centré sur la physe, épiphyse épargnée : kyste anévrysmal (diagnostic différentiel avec une TCG).",
+      "page": "2929",
+      "image_origine": "m15/p466_1"
+    },
+    {
+      "question": "Vertèbre : lésion de l'hémivertèbre et de l'arc avec niveaux liquide-liquide. Diagnostic chez un adolescent ?",
+      "figure": "laredo-t4:fig30.3c",
+      "options": [
+        "Kyste anévrysmal",
+        "Hémangiome",
+        "Métastase",
+        "Chordome"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte hémivertébrale centrée sur l'arc, presque entièrement faite de cavités à niveaux : kyste anévrysmal.",
+      "page": "2930",
+      "image_origine": "m15/p467_1"
+    },
+    {
+      "question": "Kyste osseux anévrysmal du bassin : scanners avant (a–c) puis après traitement percutané (d–f). Que montre l'évolution ?",
+      "figure": "laredo-t4:fig30.14a",
+      "options": [
+        "Reminéralisation progressive après alcoolisation",
+        "Récidive avec rupture corticale",
+        "Transformation sarcomateuse",
+        "Fracture pathologique"
+      ],
+      "reponse": 0,
+      "explication": "Légende : avant traitement, ostéolyse, rupture corticale, masse puis coque périostée discontinue ; après alcoolisation, reminéralisation progressive de la lésion.",
+      "page": "2936",
+      "image_origine": "m15/p473_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Dysplasie ostéofibreuse : la corticale antérieure du tibia",
+        "Adamantinome : quand la lésion envahit la moelle",
+        "Kyste essentiel : un kyste liquide au milieu de l'os"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "hs": [
+        "Kyste essentiel fracturé",
+        "Kyste anévrysmal : des cavités de sang",
+        "Quatre phases, et toujours chercher le solide"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        4,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "ancien_id": "m15",
+  "images_non_rattachees": [
+    "m15/p450_0"
+  ]
+}

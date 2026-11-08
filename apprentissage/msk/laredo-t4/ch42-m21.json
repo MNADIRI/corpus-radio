@@ -1,0 +1,324 @@
+{
+  "id": "laredo-t4:m21",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 42,
+  "chapitre_libelle": "Chapitre 6 · Localisations particulières",
+  "titre": "Lésion vertébrale unique (1) : pseudo-tumeurs, métastases, hémopathies",
+  "pages": "3097–3124",
+  "objectifs": [
+    "Ne pas biopsier les images vertébrales pseudo-tumorales asymptomatiques",
+    "Reconnaître une vertèbre ivoire pagétique, un SAPHO, une condensation discogénique",
+    "Distinguer métastase, myélome, lymphome et tassement ostéoporotique pseudo-malin"
+  ],
+  "essentiels": [
+    "Lacunes asymptomatiques : hémangiome (« polka dot »), dysplasie fibreuse (image « en cadre » à liseré net, verre dépoli, côte du même étage, deux vertèbres adjacentes), géode arthrosique (C5-C7 en regard d'une uncarthrose), nodule de Schmorl géant kystique (L3–L4, 17–24 ans, F 5/1, ouvert sur un disque dégénéré, signal liquidien).",
+    "Condensations nodulaires asymptomatiques : îlot condensant bénin (dense, spiculé, accolé à une corticale, hyposignal T1/T2 sans rehaussement, fixation normale), anisocorie (condensation isthmique L5 par hypoplasie de l'hémi-arc controlatéral), TBCN (tumeur bénigne à cellules notochordales, condensation pâle médiane), condensation en dôme discogénique (coin ANTÉRIEUR toujours atteint, coin postérieur respecté, pincement, ostéophytes de Mac Nab).",
+    "Vertèbre ivoire : arthrosique cervicale C5–C7 ; Paget (toute la vertèbre jusqu'à l'épineuse, hypertrophie, aspect « en cadre », dédifférenciation cortico-spongieuse, graisse) ; SAPHO (enthésite/érosions des coins antérieurs, allongement antéro-postérieur, autres sites : paroi thoracique antérieure, sacro-iliaques, peau). Symptomatique : TB (tuberculose) du migrant africain, lymphome de Hodgkin, métastase de prostate, Ewing.",
+    "Spondylite tuberculeuse du migrant : atteinte vertébrale sans atteinte discale initiale ; abcès sous-ligamentaire antérieur avec scalloping, abcès volumineux à paroi FINE et régulière, hypersignal T1 relatif. Kyste hydatique : origine endémique, ostéolyse pseudo-maligne multikystique, disques respectés.",
+    "Granulome éosinophile rachidien : enfant < 10 ans (3 G/1 F), rachis 10–15 % des localisations ; vertebra plana (1/3) en bande dense de 2–3 mm avec coin postérieur respecté, ou ostéolyse pseudo-tumorale ; peu de masse des tissus mous (≠ Ewing, lymphome) ; œdème important ; réparation spontanée.",
+    "Tassement ostéoporotique pseudo-malin : ostéolyse antéro-supérieure, os « pilé », signe majeur = fente intrasomatique GAZEUSE ou liquidienne (vide dynamique en extension). Surinfection : fièvre, douleur inflammatoire, tuméfaction circonférentielle des tissus mous.",
+    "Métastases lytiques : multiples, latéralisées (vertèbre borgne) ; extension intracanalaire « en embrasse de rideaux » (double mamelon séparé par le ligament longitudinal postérieur) : tumeurs, hémangiome agressif, ~20 % des abcès tuberculeux, absent des infections à pyogènes. Condensantes : prostate (jamais unique), sein, ovaire, voies urinaires, neuro-endocrines.",
+    "Myélome : corticales des pédicules préservées dans 95 % (vs détruites dans 85 % des métastases) ; vertèbre/pédicule « évidé » ; IRM normale 14–30 %, hyposignal diffus avec inversion du gradient disco-vertébral, « poivre et sel », nodules de taille égale. Hodgkin : vertèbre ivoire + scalloping antérieur par adénopathie prévertébrale."
+  ],
+  "introduction": "Devant une image vertébrale unique, l'erreur la plus coûteuse est de biopsier (ou de traiter comme une métastase) une lésion qui n'est rien. Ce premier module sur le rachis suit l'ordre du livre : d'abord les **images pseudo-tumorales asymptomatiques**, à reconnaître sans biopsie ; puis les **symptomatiques** (infections, tassements) ; enfin les **métastases** et les **hémopathies**, qu'on sépare souvent sur un détail : l'arc postérieur, les pédicules, le disque.",
+  "sections": [
+    {
+      "titre": "Lacunes asymptomatiques à ne pas biopsier",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig42.x633a",
+        "laredo-t4:fig42.2a"
+      ],
+      "legendes": [
+        "**Dysplasie fibreuse vertébrale thoracique** : image soufflante à minéralisation en verre dépoli au scanner, hyposignal T2 et rehaussement modéré en IRM.",
+        "**Dysplasie fibreuse du corps vertébral et de la côte correspondante** : image soufflante à coque continue du corps, du pédicule et de la transverse, avec atteinte de la côte du même côté."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune quadrilatère à liseré net d'un corps vertébral et lésion de la côte du même étage : diagnostic ?",
+        "a": "Dysplasie fibreuse (aspect en cadre, distribution métamérique)."
+      }
+    },
+    {
+      "titre": "Condensations nodulaires asymptomatiques",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig42.11d",
+        "laredo-t4:fig42.x639c"
+      ],
+      "legendes": [
+        "**Condensation en dôme discogénique de L2** : condensation convexe à limites nettes de la moitié inférieure de la vertèbre, avec pincement discal et condensation en miroir du plateau voisin.",
+        "**Paget multifocal** : condensation nodulaire de T5 et partielle de T7 ; au scanner, os hypertrophié, dense, avec dédifférenciation cortico-spongieuse et perte de la concavité du mur antérieur."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Condensation convexe du coin antérieur de L4 avec pincement discal : biopsie ?",
+        "a": "Non : condensation en dôme discogénique."
+      }
+    },
+    {
+      "titre": "La vertèbre ivoire",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig42.15",
+        "laredo-t4:fig42.x656e"
+      ],
+      "legendes": [
+        "**SAPHO** : condensation de deux vertèbres contiguës, plateaux irréguliers et érodés ; en IRM, œdème et surtout rehaussement linéaire « en cadre » des coins antérieurs et des plateaux.",
+        "**Hodgkin vertébral** : ostéolyse agressive avec rupture corticale centrée sur T6, étendue aux vertèbres voisines, aux tissus mous et au canal."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Vertèbre ivoire avec encoche du bord antérieur et adénopathies prévertébrales : diagnostic ?",
+        "a": "Lymphome de Hodgkin."
+      }
+    },
+    {
+      "titre": "Images symptomatiques pseudo-tumorales",
+      "texte": "La **spondylite tuberculeuse du migrant africain** peut se présenter comme une lésion vertébrale isolée, sans atteinte discale ni image en miroir : vertèbre ivoire, géode centro-somatique cernée de condensation, tassement ostéolytique ou lyse de l'arc. En IRM : extension sous-ligamentaire antérieure avec scalloping, **abcès volumineux à paroi fine et régulière** pour une lésion osseuse limitée, hypersignal T1 relatif dans l'ostéolyse. Le **kyste hydatique** donne une ostéolyse multikystique pseudo-maligne, disques respectés.\n\nLe **granulome éosinophile** de l'enfant (avant 10 ans, rachis 10 à 15 % des localisations) donne une **vertebra plana** (un tiers des cas : corps réduit à une bande dense de 2-3 mm, coin postérieur souvent respecté) ou une ostéolyse pseudo-tumorale, avec peu de masse et un œdème important. Il se répare spontanément.\n\nUn **tassement ostéoporotique** peut se lyser (os « pilé ») : le signe rassurant majeur est la **fente intrasomatique** gazeuse ou liquidienne, qui apparaît en extension. Une surinfection se signale par la fièvre et une tuméfaction circonférentielle des tissus mous.",
+      "figures": [
+        "laredo-t4:fig42.x644b",
+        "laredo-t4:fig42.20"
+      ],
+      "legendes": [
+        "**Spondylite tuberculeuse** : lacune d'une seule vertèbre avec condensation périphérique dégressive au scanner initial ; cinq mois plus tard, spondylodiscite avec érosions et séquestres.",
+        "**Granulome éosinophile de L4** chez un homme de 25 ans : lacune avec séquestres et condensation dégressive « inflammatoire », hypersignal T2, rehaussement et œdème péri-lésionnel."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Vertebra plana chez un enfant de 5 ans, sans masse : diagnostic ?",
+        "a": "Granulome éosinophile."
+      }
+    },
+    {
+      "titre": "Métastases vertébrales",
+      "texte": "Les métastases **ostéolytiques** sont multiples, de taille inégale, et souvent **latéralisées** (vertèbre « borgne », tassement latéralisé) ; l'IRM en montre bien plus que la radiographie. Leur extension intracanalaire prend la forme d'un **double mamelon « en embrasse de rideaux »** séparé sur la ligne médiane par le ligament longitudinal postérieur ; ce signe se voit aussi dans les hémangiomes agressifs et environ 20 % des abcès tuberculeux, jamais dans les infections à pyogènes.\n\nLes métastases **condensantes** viennent de la prostate (presque jamais unique), du sein, de l'ovaire, des voies urinaires et des tumeurs neuro-endocrines.",
+      "figures": [
+        "laredo-t4:fig42.24a",
+        "laredo-t4:fig42.26"
+      ],
+      "legendes": [
+        "**Métastases ostéolytiques** : lyse sans liseré étendue aux tissus mous (a), calcifications d'un adénocarcinome colique (b), métastase soufflante d'un cancer du rein (c).",
+        "**Métastases condensantes** d'origine pulmonaire (a), mammaire (b) et vésicale (c)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Extension épidurale en double mamelon : quelle cause est exclue ?",
+        "a": "Une infection à pyogènes (le signe est absent dans ces infections)."
+      }
+    },
+    {
+      "titre": "Myélome : les pédicules et l'évidement",
+      "texte": "Les **corticales des pédicules sont préservées dans 95 %** des atteintes myélomateuses, alors qu'elles sont détruites dans 85 % des métastases (signe de Jacobson). Un corps ou un pédicule **évidé** (spongieux détruit, corticales conservées) est très évocateur du myélome ou du plasmocytome.\n\nEn IRM, le myélome peut être **normal** (14 à 30 %), diffus (hyposignal T1 homogène avec inversion du contraste entre vertèbres et disques), **« poivre et sel »** micronodulaire, nodulaire (nodules de taille égale, contrairement aux métastases) ou en masses soufflantes.",
+      "figures": [
+        "laredo-t4:fig42.x659f"
+      ],
+      "legendes": [
+        "**Différents aspects IRM du myélome** : infiltration diffuse avec inversion du gradient disco-vertébral (a, b), forme micronodulaire (c, d), forme condensante (e), masse de l'arc postérieur avec compression médullaire (f, g)."
+      ],
+      "cle": "Pédicule détruit → métastase. Pédicule évidé avec corticale conservée → myélome ou plasmocytome.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pédicule détruit ou pédicule évidé à corticale conservée : lequel oriente vers le myélome ?",
+        "a": "Le pédicule évidé à corticale conservée (95 % des myélomes) ; le pédicule détruit oriente vers la métastase."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Lombalgique de 20 ans : lacune ovalaire nette de L5, ouverte sur un plateau, signal liquidien. Diagnostic ?",
+      "figure": "laredo-t4:fig42.6c",
+      "options": [
+        "Nodule de Schmorl géant kystique",
+        "Kyste anévrysmal",
+        "Métastase",
+        "Granulome éosinophile"
+      ],
+      "reponse": 0,
+      "explication": "Lacune 1A1 liquide communiquant avec un disque dégénéré chez un jeune lombalgique : hernie intraspongieuse géante kystique.",
+      "page": "p. 3097–3098",
+      "image_origine": "m21/p635_1"
+    },
+    {
+      "question": "Condensation convexe de la partie antérieure d'un corps vertébral lombaire avec pincement discal et ostéophytes. Diagnostic ?",
+      "figure": "laredo-t4:fig42.11b",
+      "options": [
+        "Condensation en dôme discogénique",
+        "Métastase condensante",
+        "Paget localisé",
+        "Lymphome"
+      ],
+      "reponse": 0,
+      "explication": "Coin antérieur atteint, coin postérieur épargné, pincement et ostéophytose décalée : condensation discogénique.",
+      "page": "p. 3105",
+      "image_origine": "m21/p639_0"
+    },
+    {
+      "question": "Vertèbre condensée, augmentée de taille, avec atteinte de l'épineuse et graisse intralésionnelle. Diagnostic ?",
+      "figure": "laredo-t4:fig42.x642e",
+      "options": [
+        "Maladie de Paget",
+        "Métastase de prostate",
+        "Lymphome de Hodgkin",
+        "SAPHO"
+      ],
+      "reponse": 0,
+      "explication": "Hypertrophie, dédifférenciation cortico-spongieuse, « signe de l'épineuse » et graisse : Paget.",
+      "page": "p. 3107",
+      "image_origine": "m21/p641_0"
+    },
+    {
+      "question": "Enfant de 6 ans : corps vertébral thoracique réduit à une mince bande dense, sans masse des tissus mous. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig42.x648a",
+      "options": [
+        "Granulome éosinophile (vertebra plana)",
+        "Sarcome d'Ewing",
+        "Fracture ostéoporotique",
+        "Leucémie"
+      ],
+      "reponse": 0,
+      "explication": "Vertebra plana avec coin postérieur respecté, sans masse : histiocytose langerhansienne.",
+      "page": "p. 3113",
+      "image_origine": "m21/p647_0"
+    },
+    {
+      "question": "Métastase vertébrale d'un carcinome nasopharyngé (IRM axiale) : extension intracanalaire bilobée, séparée sur la ligne médiane (flèches). Comment nomme-t-on ce signe ?",
+      "figure": "laredo-t4:fig42.24b",
+      "options": [
+        "Aspect en « embrasse de rideaux »",
+        "Vertèbre borgne",
+        "Vertèbre ivoire",
+        "Vertèbre en cadre"
+      ],
+      "reponse": 0,
+      "explication": "Légende : métastase vertébrale d'un UCNT (carcinome nasopharyngé indifférencié) avec extension intracanalaire en « embrasse de rideaux ». Le texte précise que ce signe manque dans les infections à germe banal.",
+      "page": "p. 3119–3120",
+      "image_origine": "m21/p653_1"
+    },
+    {
+      "question": "Vertèbre ivoire avec encoche du bord antérieur du corps, adénopathies prévertébrales. Diagnostic à évoquer ?",
+      "figure": "laredo-t4:fig42.28",
+      "options": [
+        "Lymphome de Hodgkin",
+        "Maladie de Paget",
+        "Métastase de prostate",
+        "Hémangiome"
+      ],
+      "reponse": 0,
+      "explication": "Vertèbre ivoire + scalloping antérieur par contiguïté ganglionnaire : Hodgkin.",
+      "page": "p. 3122",
+      "image_origine": "m21/p656_0"
+    },
+    {
+      "question": "IRM rachidienne : collection prévertébrale hypo-T1, scalloping des corps vertébraux adjacents et lacune de l'apophyse transverse gauche. Diagnostic ?",
+      "figure": "laredo-t4:fig42.17c",
+      "options": [
+        "Hydatidose vertébrale",
+        "Spondylodiscite tuberculeuse",
+        "Lymphome",
+        "Chordome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hydatidose vertébrale ; collection prévertébrale (signal T2 intermédiaire inhabituel), scalloping des corps adjacents, lacune de la transverse.",
+      "page": "p. 3111",
+      "image_origine": "m21/p645_0"
+    },
+    {
+      "question": "T11 : lacune avec ostéocondensation périlésionnelle « inflammatoire » (1A2) et œdème en IRM, qui diminue et se minéralise sous bisphosphonates. Diagnostic ?",
+      "figure": "laredo-t4:fig42.21c",
+      "options": [
+        "Granulome éosinophile",
+        "Ostéome ostéoïde",
+        "Métastase",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Légende : granulome éosinophile de T11, aspects évolutifs ; diminution de taille et minéralisation sous bisphosphonates (9 mois).",
+      "page": "p. 3115",
+      "image_origine": "m21/p649_0"
+    },
+    {
+      "question": "L1 : aspect évidé de la partie antérieure du corps, corticales fragmentées, boue calcique migrée ; en IRM, zone évidée liquidienne non rehaussée, sans tissu. Diagnostic ?",
+      "figure": "laredo-t4:fig42.22f",
+      "options": [
+        "Fracture ostéoporotique « pseudo-maligne »",
+        "Métastase ostéolytique",
+        "Myélome",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Légende : fracture ostéoporotique pseudo-maligne de L1 ; la zone évidée est de signal liquidien sans composante tissulaire (hypo-T1, hyper-T2, pas de prise de contraste).",
+      "page": "p. 3115",
+      "image_origine": "m21/p651_0"
+    },
+    {
+      "question": "L2 : fracture du plateau supérieur avec fente intrasomatique, épaississement marqué des tissus mous périvertébraux et intracanalaires, syndrome inflammatoire. Diagnostic ?",
+      "figure": "laredo-t4:fig42.23d",
+      "options": [
+        "Fracture ostéoporotique surinfectée",
+        "Fracture ostéoporotique simple",
+        "Métastase",
+        "Myélome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : fracture ostéoporotique surinfectée de L2, confirmée par biopsie ; les vides somatique et discal précédaient peut-être la surinfection.",
+      "page": "p. 3116",
+      "image_origine": "m21/p652_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Lacunes asymptomatiques à ne pas biopsier",
+        "Condensations nodulaires asymptomatiques",
+        "La vertèbre ivoire"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "Images symptomatiques pseudo-tumorales",
+        "Métastases vertébrales",
+        "Myélome : les pédicules et l'évidement"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        3,
+        4,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m21",
+  "images_non_rattachees": []
+}

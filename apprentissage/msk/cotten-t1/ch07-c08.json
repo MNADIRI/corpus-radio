@@ -1,0 +1,195 @@
+{
+  "id": "cotten-t1:c08",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 7,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Hémophilie",
+  "pages": "257–265",
+  "objectifs": [
+    "Comprendre comment les hémarthroses répétées et le fer conduisent à l'arthropathie hémophilique",
+    "Reconnaître ses signes radiographiques et articulation par articulation, et la sémiologie IRM (hémosidérine) et échographique",
+    "Identifier les pseudo-tumeurs hémophiliques et les autres complications"
+  ],
+  "essentiels": [
+    "Hémophilie A (F VIII) ou B (F IX), liée à l'X ; sévère si activité < 1 % ; hémarthroses dans 70–80 % des formes sévères, dès l'apprentissage de la marche.",
+    "Articulations cibles : **chevilles, genoux, coudes**, puis hanches et épaules.",
+    "Mécanisme : **hémosidérine** synoviale → synovite hypervascularisée (cercle vicieux hémorragique) + toxicité directe du fer sur les chondrocytes.",
+    "Radiographie : tuméfaction synoviale **dense**, ostéopénie, **hypertrophie épiphysaire** avec diaphyses grêles, érosions et **géodes** larges, pincement **diffus**, stries d'arrêt de croissance.",
+    "Genou : élargissement de l'**échancrure intercondylaire**, patella carrée, surfaces aplaties ; cheville : talocrurale inclinée ; coude : tête radiale élargie.",
+    "IRM (examen de choix) : synovite + **dépôts d'hémosidérine en hyposignal T1/T2**, **blooming** en écho de gradient, géodes de signal mixte ; scores Denver, européen, IPSG.",
+    "**Pseudo-tumeur hémophilique** (1–2 %) : hématome chronique encapsulé, intraosseux (fémur, bassin), sous-périosté (scalloping, travées radiaires) ou des tissus mous ; **ne pas ponctionner ni biopsier**.",
+    "Diagnostic différentiel : **synovite villonodulaire** (monoarticulaire), AJI (pas d'hémosidérine), hémangiome synovial ; prophylaxie précoce par facteurs = prévention de l'arthropathie."
+  ],
+  "introduction": "Chez l'hémophile sévère, chaque hémarthrose laisse du fer dans la synoviale. Au fil des épisodes, une **articulation cible** se détruit, d'autant plus vite que le squelette est immature. L'imagerie montre à la fois l'inflammation (synovite, hémosidérine) et les conséquences sur la croissance.",
+  "sections": [
+    {
+      "titre": "Terrain et physiopathologie",
+      "texte": "Affection liée à l'X (1/10 000 garçons) par déficit en **facteur VIII** (A) ou **IX** (B). Sévère si activité < 1 %, modérée 1–5 %, mineure 6–30 %. Les hémarthroses (70–80 %) débutent vers 1 an, à l'apprentissage de la marche.\n\nLes dépôts d'**hémosidérine** déclenchent une synovite villeuse, inflammatoire et néovascularisée, qui saigne plus facilement : **cercle vicieux** d'hémarthroses. Le fer génère aussi des radicaux libres toxiques pour les chondrocytes. La synoviale devient ensuite fibreuse. Cliniquement : hémarthrose aiguë, puis synovite chronique, puis arthropathie raide et amyotrophiante.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "L'hyperhémie synoviale chronique sur une épiphyse en croissance explique l'hypertrophie épiphysaire et les troubles de croissance, comme dans l'AJI.",
+      "verification": {
+        "q": "Quelles sont les articulations cibles les plus fréquentes de l'hémophilie ?",
+        "a": "Chevilles, genoux et coudes, puis hanches et épaules."
+      }
+    },
+    {
+      "titre": "Radiographie de l'arthropathie hémophilique",
+      "texte": "Particularités : **genou** (patella carrée, épiphyses aplaties, **échancrure intercondylaire élargie**, subluxation latérale du tibia) ; **cheville** (talocrurale inclinée en bas et en dedans, sinus du tarse élargi, ostéophytes antérieurs) ; **coude** (tête radiale et incisures élargies, fossettes olécrânienne et coronoïdienne élargies) ; **hanche** (coxa valga, protrusion, ostéonécrose pseudo-Legg-Perthes-Calvé). Scores : Arnold-Hilgartner (progressif), Pettersson (additif).",
+      "figures": [
+        "cotten-t1:fig8.3a",
+        "cotten-t1:fig8.3b",
+        "cotten-t1:fig8.4a"
+      ],
+      "legendes": [
+        "Genou : importante **tuméfaction synoviale** et hypertrophie épiphysaire.",
+        "Genou : pincement fémorotibial et **élargissement de l'échancrure intercondylaire** (flèches).",
+        "Cheville et subtalaire : destruction articulaire et remaniements majeurs."
+      ],
+      "cle": "Garçon jeune + épiphyses hypertrophiées + échancrure élargie + tuméfaction dense = hémophilie (ou AJI sans densité).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Citez trois signes radiographiques du genou hémophilique.",
+        "a": "Élargissement de l'échancrure intercondylaire, patella carrée, épiphyses hypertrophiées à surfaces aplaties (aussi géodes, pincement diffus)."
+      }
+    },
+    {
+      "titre": "IRM et échographie",
+      "texte": "L'**IRM** est l'examen de choix, anormale alors que les radiographies sont normales. Elle montre l'**hémarthrose** (signal variable selon l'âge : aiguë hétérogène, subaiguë hyperintense T1 et T2 par méthémoglobine, niveaux), l'**hypertrophie synoviale** (signal intermédiaire), les **dépôts d'hémosidérine** en **hyposignal T1 et T2**, accentués en **écho de gradient** (à éviter quand ils sont massifs car ils masquent tout), les lésions cartilagineuses, les **géodes** de signal liquidien, fibreux ou hémorragique. Le gadolinium n'est pas recommandé.\n\nL'**échographie** (sans sédation) confirme l'hémarthrose, distingue épanchement, synovite et hyperhémie, montre cartilage, érosions et ostéophytes, et guide la ponction.",
+      "figures": [
+        "cotten-t1:fig8.9b",
+        "cotten-t1:fig8.8"
+      ],
+      "legendes": [
+        "Genou : T1 (a) et écho de gradient T2 (b) — synovite avec **hémosidérine** très hypointense, géodes.",
+        "Coude : épanchement hétérogène et synovite (*) en échographie, érosions (flèches)."
+      ],
+      "cle": null,
+      "piege": "La synovite villonodulaire a la même sémiologie (hémosidérine, blooming) mais est monoarticulaire et sans trouble de coagulation.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle séquence IRM sensibilise la détection de l'hémosidérine et quand l'éviter ?",
+        "a": "L'écho de gradient (susceptibilité magnétique) ; à éviter si les dépôts sont abondants car l'artefact masque l'articulation."
+      }
+    },
+    {
+      "titre": "Pseudo-tumeurs et autres complications",
+      "texte": "La **pseudo-tumeur hémophilique** (1–2 %, formes sévères non traitées) est un **hématome chronique encapsulé** à croissance lente :",
+      "figures": [
+        "cotten-t1:fig8.12e"
+      ],
+      "legendes": [
+        "**Pseudo-tumeur sous-périostée** : long scalloping et travées radiaires (a, b), signal hétérogène en IRM (c–e)."
+      ],
+      "cle": "Autres complications : hématomes musculaires (compression nerveuse), ostéoporose, fractures supracondyliennes, ostéonécroses (tête fémorale, talus). Prévention : prophylaxie par facteurs avant 2 ans.",
+      "piege": "Ne jamais ponctionner ni biopsier une pseudo-tumeur hémophilique : risque de fistule, d'infection et d'hémorragie.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel signe radiographique est très évocateur d'une pseudo-tumeur hémophilique sous-périostée ?",
+        "a": "Des travées osseuses épaisses radiaires à partir de l'os, avec scalloping et décollement périosté."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Garçon hémophile : genou avec pincement diffus, érosions marginales (têtes de flèches) et géodes (flèches). Stade ?",
+      "figure": "cotten-t1:fig8.4b",
+      "options": [
+        "Arthropathie hémophilique évoluée",
+        "Hémarthrose aiguë isolée",
+        "AJI débutante",
+        "Ostéochondrite disséquante"
+      ],
+      "reponse": 0,
+      "explication": "Pincement, érosions et géodes larges : arthropathie constituée.",
+      "page": "p. 258–259",
+      "image_origine": "c08/f8.4"
+    },
+    {
+      "question": "Coude d'un hémophile : pincement des deux compartiments et fossette olécrânienne élargie (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig8.6",
+      "options": [
+        "Arthropathie hémophilique",
+        "Arthrose du coude",
+        "Ostéochondromatose",
+        "Fracture ancienne"
+      ],
+      "reponse": 0,
+      "explication": "L'élargissement des fossettes et incisures est typique du coude hémophilique.",
+      "page": "p. 259",
+      "image_origine": "c08/f8.6"
+    },
+    {
+      "question": "Coupe TDM frontale des hanches d'un patient hémophile. Quelles lésions ?",
+      "figure": "cotten-t1:fig8.7",
+      "options": [
+        "Arthropathie coxofémorale droite sévère et résorption considérable de la tête fémorale et de l'acétabulum gauches",
+        "Ostéonécrose bilatérale des têtes fémorales",
+        "Coxarthrose primitive bilatérale",
+        "Arthrite septique droite"
+      ],
+      "reponse": 0,
+      "explication": "Légende : arthropathie hémophilique des deux hanches, coxopathie droite sévère et résorption osseuse considérable de la tête fémorale et de l'acétabulum gauches.",
+      "page": "p. 260",
+      "image_origine": "c08/f8.7"
+    },
+    {
+      "question": "Arthropathie hémophilique du genou, coupes frontales T1 (a), T2 FSE (b) et écho de gradient (c). Que dit le livre de la séquence en écho de gradient ici ?",
+      "figure": "cotten-t1:fig8.10a",
+      "options": [
+        "Elle n'est pas utile : l'abondance d'hémosidérine gêne l'analyse articulaire",
+        "Elle est indispensable pour voir les érosions tibiales",
+        "Elle révèle une chondrocalcinose",
+        "Elle quantifie la synovite active"
+      ],
+      "reponse": 0,
+      "explication": "Légende : signal différent des deux érosions tibiales, élargissement de la fosse intercondylaire et absence d'utilité de la séquence en écho de gradient, l'abondance des dépôts d'hémosidérine gênant l'analyse.",
+      "page": "p. 261",
+      "image_origine": "c08/f8.10"
+    },
+    {
+      "question": "Échographie longitudinale chez un hémophile : hématome intramusculaire hétérogène (H). Quelle structure est refoulée (flèches) ?",
+      "figure": "cotten-t1:fig8.11",
+      "options": [
+        "Le nerf sciatique",
+        "L'artère fémorale",
+        "La veine poplitée",
+        "Le tendon du biceps fémoral"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hématome intramusculaire hétérogène (H), essentiellement hyperéchogène, refoulant le nerf sciatique (flèches).",
+      "page": "p. 263",
+      "image_origine": "c08/f8.11"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Terrain et physiopathologie",
+        "Radiographie de l'arthropathie hémophilique",
+        "IRM et échographie",
+        "Pseudo-tumeurs et autres complications"
+      ],
+      "secs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "ancien_id": "c08",
+  "images_non_rattachees": []
+}

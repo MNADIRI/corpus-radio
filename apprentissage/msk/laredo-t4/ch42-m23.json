@@ -1,0 +1,335 @@
+{
+  "id": "laredo-t4:m23",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 42,
+  "chapitre_libelle": "Chapitre 6 · Localisations particulières",
+  "titre": "Côtes et lacune épiphysaire",
+  "pages": "3162–3196",
+  "objectifs": [
+    "Orienter une lésion costale selon l'âge, la forme et la matrice",
+    "Suivre les 3 étapes d'analyse d'une lacune épiphysaire",
+    "Distinguer TCG, chondroblastome et chondrosarcome à cellules claires"
+  ],
+  "essentiels": [
+    "Côtes : ~85 % des lésions bénignes. Enfant : ostéomyélite, granulome éosinophile, Ewing (masse plus volumineuse que l'atteinte osseuse). Adulte : dysplasie fibreuse (lésion de grande taille la plus fréquente : soufflante, ALLONGÉE, > 6 cm, liseré net, verre dépoli/volutes de fumée, atteinte du même métamère vertébral), enchondrome ; après 60 ans : métastases (lytiques 3/4) et myélome.",
+    "Côte ivoire (hyperostose costale) : > 40 ans, travailleur manuel, arc postérieur droit 4e–10e côte sur 5–10 cm, hyperostose costo-vertébrale, Forestier dans 50 %, sans dédifférenciation cortico-spongieuse (≠ Paget). Tumeur brune : insuffisant rénal/dialysé, lacune soufflante sans sclérose. Plasmocytome costal : soufflant, souvent > 10 cm, coque fine discontinue, cloisons.",
+    "Chondrosarcome central : sarcome le plus fréquent du squelette axial et des côtes chez l'adulte, paroi thoracique ANTÉRIEURE (sternum, jonction chondro-costale), souvent > 6 cm. Enchondrome costal : 1 % des enchondromes, < 5 cm, calcifications en pop-corn ~90 % au scanner. Îlot condensant : densité corticale, spiculé, pas de STIR ni rehaussement ; métastase condensante moins dense que la corticale.",
+    "Lacune épiphysaire, 3 étapes : (1) le centre géométrique est-il dans l'épiphyse ? (écarter l'extension d'une lésion métaphysaire) ; (2) signes d'arthropathie (pincement, incidences adaptées) ; (3) géode (centre dans l'os) ou encoche extrinsèque (centre hors de l'os = érosion synoviale). Fréquence : arthropathie > tumeur synoviale > pseudo-tumeur > tumeur osseuse épiphysaire.",
+    "Arthropathies : géode arthrosique (zones d'hyperpression, peut précéder les autres signes à la hanche) ; CCA (chondrocalcinose articulaire) : géodes volumineuses disproportionnées par rapport au pincement, genou/coude, rotule crénelée ; tophus : géodes soufflantes à éperon périosté. Érosions marginales = zones nues intra-articulaires sans cartilage : floues (infection, PR active), nettes (psoriasis), cernées de sclérose (SVN, chondromatose).",
+    "SVN (synovite villonodulaire) : 20–30 ans, genou > hanche > cheville, géodes multiples cernées de sclérose de part et d'autre, pas d'ostéophytes, pincement tardif (genou) ; hémosidérine en hyposignal majoré en T2* (blooming). Amylose des hémodialysés (7–10 ans) : lacunes marginales/sous-chondrales, T2 bas ou intermédiaire.",
+    "Kyste mucoïde intra-osseux (clapet ostéochondral) : malléole médiale, carpe, genou, toit de l'acétabulum, glène ; lacune 1–2 cm (jusqu'à 12) excentrée, au ras d'un interligne NORMAL (≠ géode arthrosique), liseré IA1, multiloculé, liquide, pertuis visible en coupes fines, extension possible aux tissus mous. Abcès de Brodie : 1re cause de lacune épiphysaire avant 10 ans (halo T1 « penumbra »). Ostéome ostéoïde épiphysaire : 13 %, symptômes articulaires.",
+    "TCG : 20–40 ans, métaphyso-épiphysaire (centre sur la ligne du cartilage de croissance), excentrée, jusqu'à l'os sous-chondral, IB/IC, fausses cloisons 70 %, T2 BAS (63–96 %). Chondroblastome : 5–25 ans (jamais < 5 ans), épiphyse (41 %) ou épiphyso-métaphysaire, IA1 72 %, calcifications 15 % radio / > 50 % scanner, œdème péri-lésionnel 80 %. Chondrosarcome à cellules claires : 19–69 ans, tête fémorale (2/3), > 5 cm, peu ou pas d'œdème, T2 élevé."
+  ],
+  "introduction": "Deux localisations où la fréquence change tout. Sur une **côte**, 85 % des lésions sont bénignes, et la forme de la lésion (allongée ou non, soufflante ou non) oriente déjà. Dans une **épiphyse**, la cause est bien plus souvent articulaire que tumorale : avant de penser tumeur, il faut vérifier que la lacune est vraiment dans l'épiphyse et qu'il n'y a pas d'arthropathie.",
+  "sections": [
+    {
+      "titre": "Côtes : l'âge d'abord",
+      "texte": "Chez l'**enfant**, trois causes dominent : **ostéomyélite** (contexte infectieux, abcès), **granulome éosinophile** (petite lésion, état général conservé, biologie normale) et **sarcome d'Ewing** (volumineuse masse des tissus mous qui se rehausse).\n\nChez l'**adulte**, 85 % des lésions costales sont bénignes : la **dysplasie fibreuse** est la plus fréquente des grandes lésions, l'**enchondrome** donne une lacune de quelques centimètres. Après 60 ans, **métastases** et **myélome** deviennent les premières causes, en règle multiples. Chez l'insuffisant rénal dialysé, penser à la **tumeur brune**.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion costale chez un enfant fébrile avec abcès : diagnostic le plus probable ?",
+        "a": "Ostéomyélite."
+      }
+    },
+    {
+      "titre": "Lire une lésion costale",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig43.1c",
+        "laredo-t4:fig43.2c"
+      ],
+      "legendes": [
+        "**Dysplasie fibreuse costale** au scanner : lacune bien limitée, allongée, de grande taille, soufflante, à contenu discrètement dense en volutes de fumée.",
+        "**Dysplasie fibreuse polyostotique** : côtes soufflantes allongées et atteinte vertébrale dans le même métamère, très évocatrice."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Côte soufflée et allongée avec atteinte de la vertèbre du même métamère : diagnostic ?",
+        "a": "Dysplasie fibreuse."
+      }
+    },
+    {
+      "titre": "Côte ivoire, chondrosarcome, Ewing",
+      "texte": "La **côte ivoire** (hyperostose costale) se voit après 40 ans, surtout chez le travailleur manuel : condensation et élargissement de l'**arc postérieur** d'une côte droite, entre la 4e et la 10e, sur 5 à 10 cm, avec hyperostose de l'articulation costo-vertébrale ; un Forestier est associé une fois sur deux. Les corticales sont épaisses mais il n'y a pas de dédifférenciation cortico-spongieuse (≠ Paget).\n\nLe **chondrosarcome** est le sarcome le plus fréquent des côtes chez l'adulte. Il siège surtout à la **paroi thoracique antérieure** (sternum, jonction chondro-costale) et dépasse souvent 6 cm. L'**enchondrome** costal est plus petit (< 5 cm), soufflant, à calcifications en pop-corn.\n\nL'**Ewing** costal (5-30 ans) se reconnaît à une **masse des tissus mous beaucoup plus volumineuse que l'atteinte osseuse**.",
+      "figures": [
+        "laredo-t4:fig43.5d",
+        "laredo-t4:fig43.13d",
+        "laredo-t4:fig43.15a"
+      ],
+      "legendes": [
+        "**Côte ivoire** au scanner : hyperostose de l'arc postérieur de la côte (flèches) et pont osseux de l'articulation costo-vertébrale.",
+        "**Chondrosarcome costal de bas grade** : lésion soufflante très hypodense, corticales amincies et discontinues ; en IRM, signal cartilagineux lobulé en hypersignal T2 franc, prise de contraste en damier.",
+        "**Ewing costal** chez un enfant de 15 ans : disparition de l'arc postérieur de la 5e côte et masse des tissus mous plus volumineuse que l'atteinte osseuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse de la jonction chondro-costale de 8 cm à calcifications en anneaux chez un adulte : diagnostic ?",
+        "a": "Chondrosarcome."
+      }
+    },
+    {
+      "titre": "Lacune épiphysaire : trois vérifications",
+      "texte": "Avant tout diagnostic, trois étapes :",
+      "figures": [],
+      "legendes": [],
+      "cle": "Ordre de fréquence : arthropathie > tumeur synoviale > pseudo-tumeur épiphysaire > tumeur osseuse épiphysaire.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune touchant l'épiphyse et la métaphyse : quel est le premier réflexe ?",
+        "a": "Localiser son centre géométrique pour savoir si elle est vraiment épiphysaire."
+      }
+    },
+    {
+      "titre": "Quand la cause est articulaire",
+      "texte": "La **géode arthrosique** siège dans l'os sous-chondral des zones d'hyperpression ; à la hanche, elle peut précéder de plusieurs années les autres signes. La **chondrocalcinose** donne des géodes volumineuses, **disproportionnées** par rapport au pincement (genou, coude). La **goutte** donne des géodes soufflantes à éperon périosté et des tophus.\n\nToute prolifération synoviale érode l'os **là où il est intra-articulaire sans cartilage** (zones de réflexion de la synoviale). Ces **érosions marginales** sont floues (infection, polyarthrite active), nettes (psoriasis, polyarthrite traitée) ou cernées de sclérose (**synovite villonodulaire**, chondromatose). La SVN touche le sujet de 20-30 ans, sans ostéophytes, avec un pincement tardif au genou ; l'hémosidérine donne des hyposignaux majorés en T2*. L'**amylose** des hémodialysés (après 7 à 10 ans) donne des lacunes en T2 bas.",
+      "figures": [
+        "laredo-t4:fig44.x712b",
+        "laredo-t4:fig44.x715b"
+      ],
+      "legendes": [
+        "**Géode arthrosique post-traumatique** de la tête fémorale : lacune sous-chondrale en zone portante, cernée de sclérose, que l'arthroscanner relie à une abrasion cartilagineuse.",
+        "**Arthropathie amyloïde** chez un hémodialysé depuis 12 ans : érosions de la jonction tête-col et lacunes de la tête fémorale, synoviale hypertrophique de signal hétérogène."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacunes multiples cernées de sclérose de part et d'autre de la hanche chez une femme de 30 ans, sans ostéophyte : diagnostic ?",
+        "a": "Synovite villonodulaire."
+      }
+    },
+    {
+      "titre": "Géodes par clapet : le kyste mucoïde",
+      "texte": "Un fin **pertuis ostéochondral** peut fonctionner comme un **clapet** : à chaque appui, le liquide articulaire est poussé dans l'os sous-chondral et ne peut plus refluer, ce qui creuse progressivement une géode. Le pertuis peut être constitutionnel, traumatique, ou dû à une ostéonécrose ou une ostéochondrite.\n\nLe **kyste mucoïde intra-osseux** en est l'exemple : malléole médiale, carpe, genou, toit de l'acétabulum, glène. Lacune de 1 à 2 cm (jusqu'à 12), **excentrée**, au ras d'un **interligne normal** (≠ géode arthrosique), liseré IA1, multiloculée, liquidienne, avec un pertuis visible en coupes fines ; elle peut s'étendre aux tissus mous.\n\nChez l'enfant de moins de 10 ans, la première cause de lacune épiphysaire est l'**abcès de Brodie**.",
+      "figures": [
+        "laredo-t4:fig44.x717b",
+        "laredo-t4:fig44.8c"
+      ],
+      "legendes": [
+        "**Mécanisme du clapet** : pertuis ostéochondral (flèche noire) qui fait communiquer l'articulation et une géode du toit de l'acétabulum ; le piston de la tête fémorale (flèche jaune) pousse le liquide dans l'os à chaque pas.",
+        "**Kyste mucoïde intra-osseux de la glène** : image polykystique à liseré condensé, interligne normal, pertuis visible sur une seule coupe, contenu en hypersignal T2 franc."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi un kyste mucoïde intra-osseux grossit-il ?",
+        "a": "Un pertuis ostéochondral fonctionne comme un clapet : le liquide entre à chaque appui et ne ressort pas."
+      }
+    },
+    {
+      "titre": "Les tumeurs épiphysaires",
+      "texte": "L'**ostéome ostéoïde** épiphysaire (13 % des ostéomes ostéoïdes des os longs) se présente par une douleur nocturne ou une synovite ; nidus calcifié à rehaussement artériel. Le **lymphome** peut donner des lésions de part et d'autre de l'interligne du genou.",
+      "figures": [
+        "laredo-t4:fig44.15"
+      ],
+      "legendes": [
+        "**Ostéome ostéoïde du radius proximal** chez un adolescent : lacune contenant une calcification au scanner, image en cocarde et important œdème des tissus mous en IRM."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune épiphysaire d'un adolescent avec calcifications et œdème intense : diagnostic ?",
+        "a": "Chondroblastome."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Adulte : lésion costale soufflante, allongée sur 8 cm, contenu en volutes de fumée, liseré net. Diagnostic ?",
+      "figure": "laredo-t4:fig43.1a",
+      "options": [
+        "Dysplasie fibreuse",
+        "Chondrosarcome",
+        "Plasmocytome",
+        "Métastase de rein"
+      ],
+      "reponse": 0,
+      "explication": "Lésion costale de grande taille la plus fréquente : allongée, soufflante, matrice discrètement dense.",
+      "page": "p. 3164",
+      "image_origine": "m23/p698_0"
+    },
+    {
+      "question": "Homme de 50 ans, agriculteur : arc postérieur de la 5e côte droite condensé et élargi, hyperostose costo-vertébrale. Diagnostic ?",
+      "figure": "laredo-t4:fig43.5a",
+      "options": [
+        "Hyperostose costale (côte ivoire)",
+        "Paget costal",
+        "Métastase condensante",
+        "Ostéosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Côte ivoire bénigne par contraintes mécaniques, souvent associée à un Forestier.",
+      "page": "p. 3167–3168",
+      "image_origine": "m23/p702_0"
+    },
+    {
+      "question": "Femme de 58 ans, TDM axiale : lacune costale soufflante avec coque périostée discontinue. Diagnostic ?",
+      "figure": "laredo-t4:fig43.8c",
+      "options": [
+        "Plasmocytome costal",
+        "Enchondrome costal",
+        "Granulome éosinophile",
+        "Dysplasie fibreuse"
+      ],
+      "reponse": 0,
+      "explication": "Légende : plasmocytome costal chez une femme de 58 ans ; lacune soufflante avec coque périostée discontinue.",
+      "page": "p. 3169–3170",
+      "image_origine": "m23/p704_1"
+    },
+    {
+      "question": "Masse du médiastin antérieur née de la jonction chondro-costale, calcifications en arcs et anneaux, homme de 65 ans. Diagnostic ?",
+      "figure": "laredo-t4:fig43.11b",
+      "options": [
+        "Chondrosarcome",
+        "Thymome calcifié",
+        "Ostéosarcome",
+        "Myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Siège chondro-costal antérieur et matrice cartilagineuse : chondrosarcome (de bas grade ici).",
+      "page": "p. 3172",
+      "image_origine": "m23/p706_1"
+    },
+    {
+      "question": "Femme de 69 ans : volumineuse géode sous-chondrale du plateau tibial médial, méniscocalcinose latérale, pincement modéré. Diagnostic ?",
+      "figure": "laredo-t4:fig44.2b",
+      "options": [
+        "Géode de chondrocalcinose articulaire",
+        "Tumeur à cellules géantes",
+        "Métastase",
+        "Chondrosarcome à cellules claires"
+      ],
+      "reponse": 0,
+      "explication": "Géode pseudo-tumorale disproportionnée par rapport au pincement avec liseré calcique : arthropathie de la CCA.",
+      "page": "p. 3178",
+      "image_origine": "m23/p712_0"
+    },
+    {
+      "question": "Femme de 32 ans : multiples lacunes cernées de sclérose de la tête humérale, interligne normal, synoviale en hyposignal T2*. Diagnostic ?",
+      "figure": "laredo-t4:fig44.5b",
+      "options": [
+        "Synovite villonodulaire",
+        "Arthrose",
+        "Polyarthrite rhumatoïde",
+        "Amylose"
+      ],
+      "reponse": 0,
+      "explication": "Sujet jeune, érosions à bords scléreux sans ostéophytes, hémosidérine : SVN.",
+      "page": "p. 3181",
+      "image_origine": "m23/p715_0"
+    },
+    {
+      "question": "Homme de 50 ans : lacune polylobée de la malléole médiale avec pertuis ostéochondral et extension sous-cutanée liquidienne. Diagnostic ?",
+      "figure": "laredo-t4:fig44.7e",
+      "options": [
+        "Kyste mucoïde intra-osseux",
+        "Chondroblastome",
+        "Abcès de Brodie",
+        "Géode arthrosique"
+      ],
+      "reponse": 0,
+      "explication": "Lacune au ras d'un interligne normal, pertuis, contenu liquide, extension aux tissus mous : kyste mucoïde.",
+      "page": "p. 3183",
+      "image_origine": "m23/p717_0"
+    },
+    {
+      "question": "Adulte de 30 ans : vaste lacune métaphyso-épiphysaire du tibia excentrée, fausses cloisons, signal T2 relativement bas. Diagnostic ?",
+      "figure": "laredo-t4:fig44.16a",
+      "options": [
+        "Tumeur à cellules géantes",
+        "Chondroblastome",
+        "Kyste anévrysmal",
+        "Chondrosarcome à cellules claires"
+      ],
+      "reponse": 0,
+      "explication": "Lésion métaphyso-épiphysaire atteignant l'os sous-chondral, pseudo-cloisons, T2 bas : TCG.",
+      "page": "p. 3189–3191",
+      "image_origine": "m23/p724_0"
+    },
+    {
+      "question": "Jeune fille de 18 ans : lacune épiphyso-métaphysaire du tibia avec calcifications et important œdème péri-lésionnel. Diagnostic ?",
+      "figure": "laredo-t4:fig44.16a",
+      "options": [
+        "Chondroblastome",
+        "Tumeur à cellules géantes",
+        "Chondrosarcome à cellules claires",
+        "Kyste mucoïde"
+      ],
+      "reponse": 0,
+      "explication": "Âge, siège à centre épiphysaire, calcifications et œdème péri-lésionnel marqué : chondroblastome.",
+      "page": "p. 3191–3192",
+      "image_origine": "m23/p725_0_0_0_62_100"
+    },
+    {
+      "question": "Adulte, lésion de l'extrémité supérieure du fémur connue depuis des années, mixte avec calcifications cartilagineuses, hypersignal T2, peu d'œdème. Diagnostic ?",
+      "figure": "laredo-t4:fig44.18a",
+      "options": [
+        "Chondrosarcome à cellules claires",
+        "Chondroblastome",
+        "Tumeur à cellules géantes",
+        "Ostéonécrose"
+      ],
+      "reponse": 0,
+      "explication": "Adulte, tête fémorale, évolution lente, matrice cartilagineuse sans œdème : chondrosarcome à cellules claires.",
+      "page": "p. 3192–3193",
+      "image_origine": "m23/p727_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Côtes : l'âge d'abord",
+        "Lire une lésion costale",
+        "Côte ivoire, chondrosarcome, Ewing"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Lacune épiphysaire : trois vérifications",
+        "Quand la cause est articulaire",
+        "Géodes par clapet : le kyste mucoïde",
+        "Les tumeurs épiphysaires"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m23",
+  "images_non_rattachees": []
+}

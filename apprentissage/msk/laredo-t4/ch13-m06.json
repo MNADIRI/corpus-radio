@@ -1,0 +1,282 @@
+{
+  "id": "laredo-t4:m06",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 13,
+  "chapitre_libelle": "Chapitre 3 · Métastases",
+  "titre": "Métastases osseuses",
+  "pages": "2647–2666",
+  "objectifs": [
+    "Connaître la distribution et les aspects des métastases",
+    "Choisir et interpréter scintigraphie, scanner, IRM",
+    "Reconnaître les formes atypiques et les pièges"
+  ],
+  "essentiels": [
+    "Tumeurs osseuses les plus fréquentes ; os = 3e site métastatique après foie et poumon. Sein, prostate, poumon surtout (thyroïde et rein aussi). Ostéolyse par activation ostéoclastique via le système OPG/RANKL/RANK (PTHrP dans le sein) : cercle vicieux.",
+    "Siège : moelle rouge (rachis lombaire et thoracique bas, bassin, crâne, sternum, côtes, fémurs proximaux) ; corps vertébral plus que l'arc ; os longs métaphyso-diaphysaires, épiphyse isolée rare. Pédicule borgne = extension d'une lésion du corps.",
+    "Radiographie : il faut perdre 50 % de l'os pour voir une lyse ; l'atteinte corticale (ligne innominée, U cotyloïdien) se voit mieux. Lyse géographique floue (1B/1C) ou perméative ; condensante : plage floue sans épaississement cortical ni trabéculation fibrillaire. Périoste rare.",
+    "IRM = la plus sensible : hyposignal T1 nodulaire à limites nettes (moelle graisseuse comme référence), hyper T2, rehaussement hétérogène ou en halo ; condensantes en hypo T1 franc. Pièges : îlots de moelle rouge, discopathie Modic, hernie intraspongieuse, fracture par insuffisance, infection.",
+    "Scintigraphie : foyers multiples aléatoires du squelette axial ; peut être fausse-négative en lyse pure ou sous bisphosphonates. « Super scan » : hyperfixation axiale diffuse, reins et vessie peu visibles. « Flare » : majoration des foyers 15 jours à 3 mois après le début du traitement = réparation.",
+    "Formes atypiques : distales (au-delà du coude ou du genou, poumon → main, digestif et urogénital → pied), corticales (poumon > 1 fois sur 2, fémur, en navette), soufflantes (thyroïde, rein), pseudo-sarcomateuses (prostate : spicules), musculaires (psoas, aspect d'abcès).",
+    "Enfant : métaphyses, périostite plus fréquente, neuroblastome en tête (MIBG). Fracture d'un os long à risque si plus de 50 % de la corticale est détruite.",
+    "Métastase vs îlot condensant bénin : suspecter une métastase si l'un des critères de l'îlot manque (densité corticale homogène, contours spiculés, adossement cortical, STIR très bas sans œdème, pas de prise de contraste)."
+  ],
+  "introduction": "Les métastases sont les **tumeurs osseuses les plus fréquentes**. Leur imagerie devient logique quand on se souvient de deux choses : elles poussent **dans la moelle rouge**, et elles détruisent l'os **par l'intermédiaire des ostéoclastes du patient**. Le reste découle de la question : quel examen voit la moelle, lequel voit l'os, lequel voit la réaction de l'os ?",
+  "sections": [
+    {
+      "titre": "Un cercle vicieux dans la moelle rouge",
+      "texte": "L'os est le troisième site métastatique après le foie et le poumon. Les cancers du **sein** et de la **prostate** donnent des métastases osseuses dans 65 à 75 % des cas, la **thyroïde** dans 60 %, le **poumon** dans 30 à 40 %.\n\nLa cellule tumorale ne détruit pas l'os elle-même : elle sécrète des facteurs (PTHrP dans le sein) qui perturbent le système **OPG/RANKL/RANK** et activent les **ostéoclastes**. L'os résorbé libère à son tour des facteurs de croissance (TGF-β) qui stimulent la tumeur : c'est le **cercle vicieux** « graine et terreau ».\n\nLes cellules s'arrêtent là où la circulation est lente et les capillaires fenêtrés : la **moelle rouge**. D'où le siège axial chez l'adulte : rachis lombaire et thoracique bas, bassin, crâne, sternum, côtes, extrémités proximales des fémurs et humérus. Le corps vertébral est touché avant l'arc ; une **vertèbre borgne** traduit le plus souvent l'extension au pédicule d'une lésion du corps.",
+      "figures": [
+        "laredo-t4:fig13.1b"
+      ],
+      "legendes": [
+        "**Tomoscintigraphie couplée au scanner** : foyer d'hyperfixation d'un fémur proximal, superposé à l'image scanographique de l'os. La fusion localise précisément la lésion que la scintigraphie planaire signalait."
+      ],
+      "cle": "Sein → crâne plus souvent ; prostate → bassin plus souvent.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi les métastases de l'adulte sont-elles surtout axiales ?",
+        "a": "Les cellules tumorales s'arrêtent dans la moelle rouge (circulation lente, capillaires fenêtrés), située dans le squelette axial et les ceintures chez l'adulte."
+      }
+    },
+    {
+      "titre": "Ce que montre (ou cache) chaque examen",
+      "texte": "La **radiographie** ne montre une lyse spongieuse qu'après une perte d'environ **50 % de l'os**. L'atteinte corticale se voit plus tôt : ligne innominée, U cotyloïdien, trou obturateur, pédicules. La lyse est géographique floue (1B, 1C) ou perméative ; le périoste réagit rarement.\n\nUne métastase **condensante** est une plage floue, confluente, **sans épaississement cortical ni trabéculation fibrillaire** (ce qui la sépare du Paget). Au scanner, sa densité reste inférieure à celle de la corticale (ce qui la sépare de l'îlot condensant).\n\nL'**IRM** est la plus sensible car elle voit la moelle : hyposignal T1 **nodulaire à limites nettes** sur fond de moelle graisseuse, hypersignal T2, rehaussement hétérogène ou en halo. Les métastases condensantes sont en hyposignal T1 et T2 francs ; les mixtes donnent un aspect **tigré** en T2. On garde le T1 sans saturation de graisse : la graisse sert de référence.",
+      "figures": [
+        "laredo-t4:fig13.2c",
+        "laredo-t4:fig13.6b"
+      ],
+      "legendes": [
+        "**Métastase ostéolytique** d'un cancer du sein (60 ans) : lyse agressive du corps de L4 étendue au pédicule gauche, avec atteinte de la corticale (flèches).",
+        "**Métastases condensantes** d'un cancer de la prostate : signal T1 très bas, hétérogène, prise de contraste hétérogène de plusieurs corps vertébraux."
+      ],
+      "cle": null,
+      "piege": "Hyposignal T1 diffus de la moelle sans tumeur : obésité, tabac, anémie, insuffisance cardiaque ou respiratoire, anorexie. Le T2 et le gadolinium aident à trancher.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi faut-il garder une séquence T1 sans saturation de graisse pour chercher des métastases ?",
+        "a": "La moelle graisseuse sert de référence : la métastase y apparaît en hyposignal nodulaire à limites nettes."
+      }
+    },
+    {
+      "titre": "Scintigraphie : réaction de l'os, pas tumeur",
+      "texte": "La scintigraphie montre l'**activité ostéoblastique** de réparation. Elle trouve des foyers multiples répartis au hasard sur le squelette axial, mais peut être **faussement normale** en cas de lyse pure sans réaction, d'atteinte limitée à la moelle, de récidive en territoire irradié ou sous bisphosphonates.\n\nDeux pièges à connaître : le **« super scan »**, hyperfixation diffuse du squelette axial avec reins et vessie à peine visibles (métastases condensantes diffuses, mais aussi hyperparathyroïdie, ostéomalacie, mastocytose) ; et le **« flare »**, majoration des foyers 15 jours à 3 mois après le début d'un traitement efficace, qui traduit la réparation et non la progression.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Côte isolée chez un cancéreux : maligne dans moins de 10 %. Sternum isolé dans un cancer du sein : métastatique dans 76 %.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Scintigraphie dont les foyers augmentent 6 semaines après le début d'une chimiothérapie efficace : progression ?",
+        "a": "Pas forcément : c'est le phénomène de flare, qui traduit la réparation."
+      }
+    },
+    {
+      "titre": "Formes atypiques",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig13.10",
+        "laredo-t4:fig13.8b",
+        "laredo-t4:fig13.14b"
+      ],
+      "legendes": [
+        "**Les quatre aspects des métastases corticales** : focale de petite taille (1), étendue longitudinalement (2), sous-périostée en soucoupe (3), étendue à la cavité médullaire et aux tissus mous (4).",
+        "**Métastase épiphysaire** unique d'un cancer du sein (59 ans) : foyer nodulaire de la tête humérale en hyposignal T1, à peine visible en radiographie.",
+        "**Métastase pseudo-sarcomateuse** d'un adénocarcinome mammaire : réaction périostée spiculée exubérante autour d'une côte."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lyse corticale en navette de la diaphyse fémorale chez un fumeur : primitif le plus probable ?",
+        "a": "Cancer bronchique, qui donne plus de la moitié des métastases corticales."
+      }
+    },
+    {
+      "titre": "Enfant, fracture et îlot condensant",
+      "texte": "Chez l'**enfant**, tout le squelette contient de la moelle rouge : les métastases touchent aussi les **métaphyses**, et la périostite est plus fréquente. Le **neuroblastome** est en tête (scintigraphie à la MIBG).\n\nSur un os long, le **risque de fracture** devient important au-delà de **50 % de destruction de la corticale**.\n\nDevant un nodule condensant chez un cancéreux, l'**îlot condensant bénin** exige tous ses critères : densité corticale homogène, contours spiculés, adossement à une corticale, STIR très bas sans œdème, aucune prise de contraste. Il suffit qu'un seul manque pour suspecter une métastase.",
+      "figures": [
+        "laredo-t4:fig13.7b"
+      ],
+      "legendes": [
+        "**Métastases distales** du pied : lyses géographiques floues du tarse et des métatarsiens (flèches), un siège qui doit faire chercher un cancer du poumon, digestif ou urogénital."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Nodule condensant chez un cancéreux, en hypersignal STIR : îlot condensant possible ?",
+        "a": "Non : un seul critère manquant (ici le STIR) suffit à suspecter une métastase."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Femme de 60 ans, cancer du sein. Que montre ce scanner de L4 ?",
+      "figure": "laredo-t4:fig13.2a",
+      "options": [
+        "Ostéolyse agressive du corps étendue au pédicule, avec masse",
+        "Hémangiome vertébral",
+        "Spondylodiscite",
+        "Hernie intraspongieuse"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyse du spongieux et de la corticale, extension au pédicule, masse intracanalaire et paravertébrale : métastase lytique.",
+      "page": "2650",
+      "image_origine": "m06/p187_0"
+    },
+    {
+      "question": "Homme de 73 ans. Comment qualifier ces lésions du cotyle et de la branche ischio-pubienne ?",
+      "figure": "laredo-t4:fig13.3b",
+      "options": [
+        "Métastases condensantes avec effacement cortical",
+        "Maladie de Paget",
+        "Îlots condensants bénins",
+        "Ostéopoécilie"
+      ],
+      "reponse": 0,
+      "explication": "Condensation hétérogène avec effacement de la corticale et épaississement tissulaire : métastases ostéoblastiques de cancer prostatique.",
+      "page": "2651",
+      "image_origine": "m06/p188_0"
+    },
+    {
+      "question": "Adulte, sans traumatisme : arrachement du petit trochanter gauche (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig13.4",
+      "options": [
+        "Fracture-arrachement pathologique (ostéolyse corticale)",
+        "Arrachement apophysaire banal de l'iliopsoas",
+        "Tendinopathie calcifiante de l'iliopsoas",
+        "Myosite ossifiante circonscrite"
+      ],
+      "reponse": 0,
+      "explication": "Légende : fracture-arrachement pathologique du petit trochanter gauche ; l'ostéolyse corticale est évidente sur la radiographie. Chez l'adulte, penser métastase.",
+      "page": "2652",
+      "image_origine": "m06/p189_0"
+    },
+    {
+      "question": "Cheville et pied : plusieurs lyses géographiques floues du calcanéum et du tarse (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig13.7a",
+      "options": [
+        "Métastases distales",
+        "Goutte",
+        "Ostéite",
+        "Algodystrophie"
+      ],
+      "reponse": 0,
+      "explication": "Lyses 1C multiples du tarse : métastases distales, rares, souvent d'origine digestive ou urogénitale au pied.",
+      "page": "2657",
+      "image_origine": "m06/p194_0"
+    },
+    {
+      "question": "Scintigraphie à foyers multiples (a) et radiographie du fémur (b) : ostéolyse intracorticale en forme de navette (flèche). Diagnostic ?",
+      "figure": "laredo-t4:fig13.9a",
+      "options": [
+        "Métastase intracorticale d'un carcinome bronchique",
+        "Ostéome ostéoïde cortical",
+        "Fracture de fatigue",
+        "Hémangiome intracortical"
+      ],
+      "reponse": 0,
+      "explication": "Légende : métastase intracorticale d'un carcinome bronchique ; l'ostéolyse intracorticale en navette est l'image caractéristique de métastase intracorticale (poumon dans plus d'un cas sur deux selon le texte).",
+      "page": "2659",
+      "image_origine": "m06/p196_0"
+    },
+    {
+      "question": "Femme de 83 ans : ostéolyse soufflante centrée sur le petit trochanter droit (flèches), IRM (b). Diagnostic histologique ?",
+      "figure": "laredo-t4:fig13.12",
+      "options": [
+        "Métastase d'un carcinome peu différencié",
+        "Chondrosarcome central",
+        "Plasmocytome solitaire",
+        "Tumeur brune"
+      ],
+      "reponse": 0,
+      "explication": "Légende : image soufflante du petit trochanter ; l'histologie a montré une métastase d'un carcinome peu différencié. Le texte rappelle que les métastases soufflantes viennent surtout de la thyroïde et du rein.",
+      "page": "2661",
+      "image_origine": "m06/p198_0"
+    },
+    {
+      "question": "Homme de 80 ans : hyperfixation unique de l'humérus, condensation diaphysaire avec spicules perpendiculaires (flèche). Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig13.13",
+      "options": [
+        "Métastase pseudo-sarcomateuse prostatique",
+        "Ostéosarcome",
+        "Paget",
+        "Ostéomyélite chronique"
+      ],
+      "reponse": 0,
+      "explication": "Condensation avec réaction spiculée chez un homme âgé : métastase pseudo-sarcomateuse de cancer de la prostate.",
+      "page": "2662",
+      "image_origine": "m06/p199_0"
+    },
+    {
+      "question": "Masse arrondie du psoas avec couronne périphérique rehaussée (flèche) chez un patient avec un cancer du poumon. Diagnostic ?",
+      "figure": "laredo-t4:fig13.11a",
+      "options": [
+        "Métastase musculaire",
+        "Abcès du psoas certain",
+        "Hématome",
+        "Schwannome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect pseudo-abcédé, l'une des deux formes les plus fréquentes de métastase musculaire (poumon, urogénital, digestif, mélanome).",
+      "page": "2660",
+      "image_origine": "m06/p197_0"
+    },
+    {
+      "question": "Femme de 22 ans, fracture de L1 révélant un cancer du sein. IRM du rachis : que montre-t-elle ?",
+      "figure": "laredo-t4:fig13.10",
+      "options": [
+        "Infiltration métastatique multifocale hétérogène",
+        "Moelle rouge normale de l'adulte jeune",
+        "Discopathie Modic 1",
+        "Hémangiomes multiples"
+      ],
+      "reponse": 0,
+      "explication": "Signal très hétérogène avec nodules rehaussés : infiltration médullaire métastatique. Le contraste est moins bon chez le jeune à moelle hématopoïétique.",
+      "page": "2654",
+      "image_origine": "m06/p191_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Un cercle vicieux dans la moelle rouge",
+        "Ce que montre (ou cache) chaque examen"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": [
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "hs": [
+        "Scintigraphie : réaction de l'os, pas tumeur",
+        "Formes atypiques",
+        "Enfant, fracture et îlot condensant"
+      ],
+      "secs": [
+        2,
+        3,
+        4
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m06",
+  "images_non_rattachees": []
+}

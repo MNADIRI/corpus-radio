@@ -1,0 +1,303 @@
+{
+  "id": "laredo-t4:m17",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 35,
+  "chapitre_libelle": "Chapitre 5 · Lésions de la surface des os",
+  "titre": "Myosite ossifiante circonscrite et neurogène",
+  "pages": "2967–2989",
+  "objectifs": [
+    "Reconnaître une myosite ossifiante circonscrite (MOC) à chaque stade, et savoir « voir venir »",
+    "Distinguer la MOC d'un abcès, d'un sarcome des tissus mous ou d'un ostéosarcome juxta-cortical",
+    "Décrire une para-ostéo-arthropathie neurogène pour le chirurgien"
+  ],
+  "essentiels": [
+    "MOC = métaplasie ossifiante localisée, adulte < 30 ans, gros muscles des membres (brachial antérieur, quadriceps) ; traumatisme retrouvé 1 fois sur 2. Tuméfaction douloureuse rapide, parfois fébricule et VS élevée ; les douleurs disparaissent en 6–8 semaines, la masse se stabilise.",
+    "Phénomène de zones : centre de pré-ostéoblastes fusiformes → ostéoblastes et ostéoïde → os lamellaire mature en PÉRIPHÉRIE. Une biopsie trop précoce ou centrale peut faire conclure à tort à un sarcome. Fibres musculaires piégées = argument pour la MOC.",
+    "Phase aiguë : radiographie normale ou voussure ; échographie hypoéchogène respectant l'architecture musculaire ; IRM : hypersignal T2, rehaussement franc, œdème péri-lésionnel étendu soulignant les fascias (fait surestimer la taille), « effet de trou noir » (convergence des fibres vers la lésion), scintigraphie très hyperfixante.",
+    "Après 2–6 semaines : calcifications floues autour d'un centre hypodense puis coque osseuse périphérique (maturation centripète). L'échographie voit la minéralisation avant la radiographie (bandes arciformes hyperéchogènes, cône d'ombre). L'IRM est la moins fiable pour la minéralisation.",
+    "Os voisin : souvent liseré clair de séparation ; parfois apposition périostée, encoche, incorporation tardive « à plein canal ». Un pont osseux étroit vers la corticale doit faire évoquer d'abord un ostéosarcome para-ostéal. Les sarcomes calcifiés ont des calcifications CENTRALES (inverse de la MOC).",
+    "Diagnostic MOC retenu si : coque périphérique à centre clair + taille stabilisée + régression spontanée des symptômes en 1–2 mois. Un seul critère manquant → envisager une lésion agressive. Chirurgie seulement à maturité si gêne (risque de récidive et de confusion histologique).",
+    "Para-ostéo-arthropathie (myosite ossifiante) neurogène (MON) : 8–25 % des traumatisés crâniens, 15–20 % des blessés médullaires, 1 % des AVC (accidents vasculaires cérébraux) ; début 1–10 mois après (pic 2–3 mois), sous le niveau lésionnel. Hanche 60 %, coude 20 %, genou 14 %, épaule 3–4 %. Crâne → membre supérieur ; médullaire → membre inférieur. Facteurs de risque : homme, Glasgow < 7, coma prolongé.",
+    "MON : radiographies normales pendant 2–4 semaines ; échographie-doppler = examen de dépistage (et élimine une thrombose) ; IRM : centre non rehaussé très caractéristique ; scanner injecté = bilan préopératoire (implantation, fragmentation, pseudarthrose, maturation, gouttière < 180° / tunnel 360° vasculo-nerveux, capsule, interligne, minéralisation M1–M4). Traitement : AINS (anti-inflammatoires non stéroïdiens) + kiné précoces ; chirurgie entre 6 et 18 mois (< 2 ans)."
+  ],
+  "introduction": "La myosite ossifiante est l'exemple type d'une lésion **bénigne qui a l'air maligne au début** et **typique à la fin**. Toute sa sémiologie découle d'un seul phénomène histologique, le **phénomène de zones**, et d'une seule règle de conduite : **« voir venir »**, c'est-à-dire répéter l'imagerie à quelques semaines plutôt que biopsier trop tôt. Sa cousine neurogène pose d'autres questions : la détecter tôt chez un patient lourdement atteint, puis la décrire pour le chirurgien.",
+  "sections": [
+    {
+      "titre": "Le phénomène de zones : tout part de là",
+      "texte": "La myosite ossifiante circonscrite (MOC) est une **métaplasie ossifiante** localisée, surtout dans les gros muscles des membres (brachial antérieur, quadriceps), chez l'adulte de moins de 30 ans. Un traumatisme n'est retrouvé qu'une fois sur deux.\n\nLa lésion s'organise en **trois zones concentriques** : au centre, une prolifération de pré-ostéoblastes fusiformes ; autour, des ostéoblastes qui déposent de l'ostéoïde ; en **périphérie**, de l'**os lamellaire mature**. La maturation est donc **centripète** : la lésion s'ossifie d'abord à la périphérie. Des fibres musculaires piégées dans la lésion sont un bon argument histologique.",
+      "figures": [
+        "laredo-t4:fig35.1"
+      ],
+      "legendes": [
+        "**Schéma du phénomène de zones** : centre fibroblastique, couche d'ostéoblastes et d'ostéoïde, couronne d'os lamellaire différencié. En rouge, des îlots de muscle sain piégés."
+      ],
+      "cle": null,
+      "piege": "Une biopsie trop précoce ou limitée au centre ne ramène qu'un tissu fibroblastique très proliférant, qu'on peut prendre pour un sarcome. Si biopsie, toute l'épaisseur de la masse.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi une biopsie centrale précoce de MOC est-elle dangereuse ?",
+        "a": "Le centre est une prolifération fibroblastique très active, qu'on peut prendre pour un sarcome."
+      }
+    },
+    {
+      "titre": "Phase aiguë : une masse inquiétante",
+      "texte": "La MOC débute par une **tuméfaction douloureuse, rapidement croissante**, parfois avec fébricule, VS élevée et rougeur : on pense à un abcès. Après 6 à 8 semaines, la douleur disparaît et la masse se stabilise.\n\nÀ ce stade, la **radiographie** est normale ou montre une voussure des tissus mous. L'**échographie** montre une plage hypoéchogène qui respecte l'architecture du muscle. L'**IRM** montre un hypersignal T2, une prise de contraste franche et surtout un **œdème péri-lésionnel** beaucoup plus étendu que la lésion, qui souligne les fascias et fait surestimer la taille.\n\nUn signe utile : l'**« effet de trou noir »** : les fibres musculaires convergent vers la lésion, comme si elle les absorbait, au lieu d'être refoulées comme par une tumeur.",
+      "figures": [
+        "laredo-t4:fig35.15a"
+      ],
+      "legendes": [
+        "**IRM T2 au début d'une MOC** : le noyau lésionnel (têtes de flèche) est bien plus petit que l'œdème (flèches), qui dessine les fascias intermusculaires."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse intramusculaire apparue en 10 jours, IRM avec œdème étendu : que faire ?",
+        "a": "Contrôles rapprochés (échographie, scanner) pour voir apparaître la couronne calcifiée, sans biopsie hâtive."
+      }
+    },
+    {
+      "titre": "À partir de 2 à 6 semaines : la couronne apparaît",
+      "texte": "Des **calcifications floues** apparaissent autour d'un **centre hypodense**, puis mûrissent en une **coque osseuse périphérique** bien différenciée. L'**échographie** voit cette minéralisation **avant la radiographie** (bandes arciformes hyperéchogènes avec cône d'ombre) ; l'IRM est la moins fiable pour la minéralisation.\n\nPar rapport à l'os voisin, la MOC est souvent séparée par un **liseré clair** ; elle peut provoquer une apposition périostée, une encoche, et s'incorporer tardivement à la corticale « à plein canal ».",
+      "figures": [
+        "laredo-t4:fig35.x508c"
+      ],
+      "legendes": [
+        "**Rapports entre la MOC et l'os voisin** au scanner : franche séparation par un liseré clair (a), ossification périostée asymétrique en regard (c)."
+      ],
+      "cle": "Diagnostic acquis si : coque périphérique à centre clair + taille stabilisée + symptômes disparus en 1 à 2 mois. Un seul critère manque : penser lésion agressive.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel examen voit la minéralisation de la MOC en premier ?",
+        "a": "L'échographie (bandes arciformes hyperéchogènes avec cône d'ombre)."
+      }
+    },
+    {
+      "titre": "Les diagnostics à écarter",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig35.x509",
+        "laredo-t4:fig35.14"
+      ],
+      "legendes": [
+        "**Fasciite nodulaire** : nodule des tissus mous à rehaussement en cible (IRM T1 FS injectée), qui ne se minéralisera pas.",
+        "**Ostéosarcome très différencié des tissus mous** de l'angle ilio-lombaire : sa différenciation cortico-spongieuse imite une MOC mûre. C'est la persistance des symptômes au-delà du troisième mois qui a révélé sa nature."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse calcifiée intramusculaire dont les calcifications sont centrales : MOC ?",
+        "a": "Non : la MOC s'ossifie en périphérie ; des calcifications centrales évoquent un sarcome."
+      }
+    },
+    {
+      "titre": "Myosite ossifiante neurogène : terrain et siège",
+      "texte": "Les para-ostéo-arthropathies (myosites ossifiantes) neurogènes (MON) surviennent chez des patients avec **lésion neurologique centrale sévère** : 8 à 25 % des traumatisés crâniens, 15 à 20 % des blessés médullaires, 1 % des AVC. Elles apparaissent 1 à 10 mois après (pic au 2e-3e mois), **sous le niveau lésionnel** chez le blessé médullaire. On incrimine les microtraumatismes du nursing sur un membre immobile.\n\nSiège : **hanche** (60 %), coude (20 %), genou (14 %), épaule (3-4 %). Membre supérieur chez le traumatisé crânien, membre inférieur chez le blessé médullaire. Facteurs de risque : homme, Glasgow initial inférieur à 7, coma prolongé.",
+      "figures": [
+        "laredo-t4:fig35.tableau1"
+      ],
+      "legendes": [
+        "**Les différentes myosites ossifiantes** : circonscrite (MOC), traumatique post-chirurgicale (MOT), neurogène (MON) et fibrodysplasie ossifiante progressive (MOP), avec leur origine, leur présentation, leur fréquence et leur traitement."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Traumatisé crânien grave, raideur douloureuse du coude au 2e mois : diagnostic à évoquer ?",
+        "a": "Myosite ossifiante neurogène."
+      }
+    },
+    {
+      "titre": "MON : détecter tôt, puis décrire pour le chirurgien",
+      "texte": "Les signes inflammatoires précèdent de **2 à 4 semaines** les ossifications radiographiques. L'**échographie-doppler** est l'examen de dépistage (elle élimine aussi une thrombose veineuse). En IRM, un **centre lésionnel non rehaussé** est très caractéristique ; attention, les muscles dénervés sont déjà en hypersignal T2.\n\nAu stade constitué, le **scanner injecté** avec reconstructions est la référence avant chirurgie. Il précise : bases d'implantation, fragmentation, pseudarthrose, **maturation** (des zones hypodenses non rehaussées font différer l'intervention), rapports vasculo-nerveux (**gouttière** si l'engainement est inférieur à 180°, **tunnel** à 360°), capsule, interligne, et minéralisation de l'épiphyse cotée de M1 à M4 (M3-M4 : risque de fracture peropératoire).\n\nTraitement : AINS et kinésithérapie au stade précoce ; **chirurgie entre 6 et 18 mois**, sans dépasser 2 ans.",
+      "figures": [
+        "laredo-t4:fig36.13"
+      ],
+      "legendes": [
+        "**MON ankylosante du coude** en reconstruction coronale : tunnel osseux autour du nerf ulnaire (flèche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "MON de hanche avec zones hypodenses non rehaussées dans l'ossification : opérer maintenant ?",
+        "a": "Non : maturation incomplète, risque d'exérèse incomplète et de récidive."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Masse ossifiée des tissus mous 6 semaines après une tuméfaction douloureuse de la cuisse : coque périphérique dense, centre clair. Diagnostic ?",
+      "figure": "laredo-t4:fig35.2",
+      "options": [
+        "Myosite ossifiante circonscrite mûre",
+        "Ostéosarcome des tissus mous",
+        "Ostéosarcome para-ostéal",
+        "Synovialosarcome calcifié"
+      ],
+      "reponse": 0,
+      "explication": "Coque osseuse périphérique bien différenciée avec centre clair = maturation centripète typique de la MOC.",
+      "page": "p. 2970",
+      "image_origine": "m17/p505_0"
+    },
+    {
+      "question": "Sur cette échographie de MOC mûre, que traduisent les bandes arciformes avec cône d'ombre ?",
+      "figure": "laredo-t4:fig35.7b",
+      "options": [
+        "Une ossification périphérique épaisse",
+        "Une nécrose centrale",
+        "Un hématome organisé",
+        "Une calcification dystrophique tumorale"
+      ],
+      "reponse": 0,
+      "explication": "Bandes hyperéchogènes avec cône d'ombre = composante calcique / ossification périphérique, visible avant la coque radiographique.",
+      "page": "p. 2970–2971",
+      "image_origine": "m17/p506_0"
+    },
+    {
+      "question": "Masse ossifiée postérieure du fémur reliée à la corticale par un pont osseux étroit. Diagnostic à évoquer en premier ?",
+      "figure": "laredo-t4:fig35.11",
+      "options": [
+        "Ostéosarcome para-ostéal",
+        "Myosite ossifiante circonscrite",
+        "Ostéochondrome sessile",
+        "Mélorhéostose"
+      ],
+      "reponse": 0,
+      "explication": "Un pont osseux visible d'emblée vers la corticale oriente vers l'ostéosarcome juxta-cortical ; la MOC s'incorpore tardivement à plein canal.",
+      "page": "p. 2972",
+      "image_origine": "m17/p509_0"
+    },
+    {
+      "question": "Paraplégique depuis 6 semaines, raideur de hanche et fièvre. Radiographie initiale normale puis ossifications floues à 3 semaines. Diagnostic ?",
+      "figure": "laredo-t4:fig36.1",
+      "options": [
+        "Para-ostéo-arthropathie neurogène",
+        "Arthrite septique de hanche",
+        "Chondrocalcinose",
+        "Ostéonécrose de la tête fémorale"
+      ],
+      "reponse": 0,
+      "explication": "MON débutante : signes inflammatoires précédant de 2–4 semaines les ossifications péri-articulaires floues.",
+      "page": "p. 2978–2979",
+      "image_origine": "m17/p516_0_0_0_100_56"
+    },
+    {
+      "question": "Paraplégique de 22 ans, fièvre, limitation de hanche : IRM glutéale avec hyposignal central en T2* dans le moyen glutéal, centre non rehaussé. Diagnostic ?",
+      "figure": "laredo-t4:fig36.5",
+      "options": [
+        "Para-ostéo-arthropathie neurogène (MON) précoce",
+        "Abcès glutéal",
+        "Sarcome nécrosé",
+        "Hématome surinfecté"
+      ],
+      "reponse": 0,
+      "explication": "Légende : l'hyposignal central en T2* correspond à la zone centrale de la MON (myosite ossifiante neurogène) ; l'absence de rehaussement central est très caractéristique.",
+      "page": "p. 2980–2981",
+      "image_origine": "m17/p518_0"
+    },
+    {
+      "question": "Coude : voussure des tissus mous (flèches) sans calcification, quelques jours après un traumatisme. Stade évoqué ?",
+      "figure": "laredo-t4:fig35.6b",
+      "options": [
+        "Début d'une myosite ossifiante circonscrite (MOC)",
+        "Bursite olécrânienne",
+        "Sarcome des tissus mous",
+        "Hématome chronique calcifié"
+      ],
+      "reponse": 0,
+      "explication": "Légende : voussure des tissus mous du coude au début d'une MOC ; à ce stade, pas encore de minéralisation et l'échographie est peu spécifique.",
+      "page": "p. 2967",
+      "image_origine": "m17/p503_0"
+    },
+    {
+      "question": "Écho-doppler chez un patient neurologique : masse hétérogène avec zones hyperéchogènes (flèches) et hyperhémie centrale. Diagnostic ?",
+      "figure": "laredo-t4:fig36.3",
+      "options": [
+        "MON (myosite ossifiante neurogène) en cours d'ossification",
+        "Thrombose veineuse profonde",
+        "Abcès des tissus mous",
+        "Hématome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : MON en cours d'ossification ; zones hyperéchogènes = début de l'ossification, hyperhémie centrale, discret effet de masse sur les vaisseaux.",
+      "page": "p. 2981",
+      "image_origine": "m17/p517_0"
+    },
+    {
+      "question": "Scanner, reconstruction sagittale de hanche chez un blessé médullaire : volumineuse ossification à base d'implantation antérieure, articulation respectée. Diagnostic ?",
+      "figure": "laredo-t4:fig36.8",
+      "options": [
+        "Para-ostéo-arthropathie neurogène (MON) de hanche",
+        "Ostéosarcome paraostéal",
+        "Exostose géante",
+        "Chondrosarcome périphérique"
+      ],
+      "reponse": 0,
+      "explication": "Légende : volumineuse MON à base d'implantation antérieure, articulation respectée, déminéralisation modérée de la tête fémorale (M2). Le scanner analyse la maturation et la morphologie avant chirurgie.",
+      "page": "p. 2983",
+      "image_origine": "m17/p519_0"
+    },
+    {
+      "question": "Scanner des hanches avec reconstructions 2D/3D : ossifications périarticulaires bilatérales, disparition complète des interlignes, déminéralisation marquée des têtes fémorales. Diagnostic ?",
+      "figure": "laredo-t4:fig36.15c",
+      "options": [
+        "MON de hanche ankylosante bilatérale",
+        "Spondylarthrite ankylosante avec coxite",
+        "Fluorose",
+        "Hyperostose vertébrale ankylosante"
+      ],
+      "reponse": 0,
+      "explication": "Légende : MON de hanche ankylosante et bilatérale ; disparition de l'interligne et os évanescent (M4).",
+      "page": "p. 2986",
+      "image_origine": "m17/p522_1"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Le phénomène de zones : tout part de là",
+        "Phase aiguë : une masse inquiétante",
+        "À partir de 2 à 6 semaines : la couronne apparaît"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "hs": [
+        "Les diagnostics à écarter",
+        "Myosite ossifiante neurogène : terrain et siège",
+        "MON : détecter tôt, puis décrire pour le chirurgien"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "ancien_id": "m17",
+  "images_non_rattachees": [
+    "m17/p520_1_0_0_70_100"
+  ]
+}

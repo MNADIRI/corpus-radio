@@ -1,0 +1,288 @@
+{
+  "id": "laredo-t4:m05",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 9,
+  "chapitre_libelle": "Chapitre 2 · Pseudo-tumeurs",
+  "titre": "Ostéolyses post-fracturaires, Gorham et angiomatoses",
+  "pages": "2615–2643",
+  "objectifs": [
+    "Ne pas prendre une ostéolyse de fracture pour une métastase",
+    "Reconnaître la maladie de Gorham",
+    "Évoquer une angiomatose devant des lacunes multiples"
+  ],
+  "essentiels": [
+    "Ostéolyse post-traumatique de la clavicule distale : quelques semaines à années après un traumatisme ou des gestes répétés (haltérophilie). Lyse du versant claviculaire de l'acromio-claviculaire, qui s'effile ; réparation incomplète en 4–6 mois.",
+    "Fractures par insuffisance qui se lysent : pubis et cadre obturateur de la femme âgée (poudre osseuse dans les adducteurs, fracture du sacrum associée), tassements thoraco-lombaires (os « pilé », fente liquidienne), cols fémoraux. Facteurs : âge, instabilité, cisaillement.",
+    "Piège : ces ostéolyses simulent une fracture pathologique métastatique ou un chondrosarcome (cal cartilagineux). Indices : contexte de fracture récente, fragmentation, vide intra-somatique, sacrum en H à la scintigraphie.",
+    "Gorham (os évanescent) : prolifération de vaisseaux lymphatiques, avant 40 ans, squelette axial et ceintures (côtes, épaule, bassin, mandibule, rachis). Fonte osseuse progressive qui TRAVERSE les articulations, sans vraie masse (« sucre mouillé »).",
+    "Gorham : chylothorax (lyse costale homolatérale), complications rachidiennes neurologiques. IRM : hypo T1 / hyper T2 au début, puis graisse séquellaire avec front actif périphérique. Traitement : bisphosphonates, interféron, radiothérapie, stabilisation chirurgicale.",
+    "Angiomatose kystique (hémangiomatose) : lacunes multiples de moins de 3 cm, 1A1, allongées, en nid d'abeilles, squelette axial et gros os longs, sujet jeune, biologie normale. Signal liquidien T2, pas de graisse en T1, peu ou pas d'hyperfixation. Atteinte viscérale dans 70 % (rate).",
+    "Lymphangiomatose : même aspect osseux, surtout chez l'enfant, mais masse des tissus mous contiguë dans 56 %, chylothorax, opacification à la lymphographie ; pas de fonte massive (≠ Gorham). Diagnostic différentiel principal : histiocytose langerhansienne.",
+    "Varice intra-osseuse tibiale : veine médullaire élargie (> 2 mm, sur 10–15 cm) reliant des varices prétibiales (pertuis cortical antéro-médial distal) aux veines du mollet (pertuis postérieur proximal). Douleurs en position déclive."
+  ],
+  "introduction": "Ce module rassemble des **ostéolyses qui ne sont pas des tumeurs** mais qui en ont l'air : des fractures qui « fondent », un os qui disparaît sous l'effet de vaisseaux lymphatiques, des lacunes multiples d'origine vasculaire, une veine qui creuse le tibia. Le raisonnement commun : **le contexte et la forme de la destruction** comptent plus que la lyse elle-même.",
+  "sections": [
+    {
+      "titre": "Quand une fracture se transforme en ostéolyse",
+      "texte": "À la **clavicule distale**, quelques semaines à quelques années après un traumatisme, parfois minime, ou des gestes répétés (haltérophilie, parfois bilatérale), le versant claviculaire de l'acromio-claviculaire se résorbe sur 0,5 à 3 cm et **s'effile**. L'IRM montre un œdème osseux et périosté. La réparation en 4 à 6 mois reste incomplète : clavicule raccourcie, interligne élargi, épaule indolore.\n\nLes **fractures par insuffisance** de l'os ostéoporotique peuvent aussi se lyser, surtout là où le foyer est **instable et soumis au cisaillement** : charnière thoraco-lombaire, **pubis**, **col fémoral**. L'os mal vascularisé et sans cesse mobilisé se résorbe au lieu de consolider.",
+      "figures": [
+        "laredo-t4:fig9.2b",
+        "laredo-t4:fig9.3b"
+      ],
+      "legendes": [
+        "**Ostéolyse compliquant une fracture par insuffisance du pubis** : cinq mois après la fracture initiale, le cadre obturateur est largement détruit (flèches).",
+        "**Fracture du pubis lysée associée à une fracture en H du sacrum** (flèches) chez une femme de 74 ans : l'association oriente vers une pathologie d'insuffisance plutôt que métastatique."
+      ],
+      "cle": null,
+      "piege": "L'ostéolyse pubienne post-fracturaire imite une métastase ou un chondrosarcome, d'autant qu'un cal cartilagineux calcifié peut être vu en imagerie et même en histologie.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi les fractures par insuffisance du pubis ou du col se lysent-elles ?",
+        "a": "Le foyer est instable et soumis au cisaillement ; l'os mal vascularisé et sans cesse mobilisé se résorbe au lieu de consolider."
+      }
+    },
+    {
+      "titre": "Les signes qui rassurent",
+      "texte": "En l'absence de ces signes, la biopsie reste indispensable.",
+      "figures": [
+        "laredo-t4:fig9.5d",
+        "laredo-t4:fig9.7aa"
+      ],
+      "legendes": [
+        "**Ostéolyse sur fracture vertébrale ostéoporotique** confirmée par biopsie : destruction du corps avec fragments osseux dispersés au scanner, signal hétérogène en IRM.",
+        "**Ostéolyse bilatérale des cols fémoraux** dans les suites de fractures ostéoporotiques chez une patiente paraplégique."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Tassement vertébral lysé chez une patiente ostéoporotique : quel signe rassure ?",
+        "a": "Une fente liquidienne ou gazeuse intrasomatique, qui s'ouvre en extension, et un os « pilé » au scanner."
+      }
+    },
+    {
+      "titre": "Maladie de Gorham : l'os qui s'évanouit",
+      "texte": "La maladie de Gorham (« os évanescent ») est une **prolifération de vaisseaux lymphatiques à paroi fine** qui remplace progressivement l'os. Elle survient surtout avant 40 ans, n'est pas héréditaire, et un traumatisme est souvent retrouvé. Elle touche le **squelette axial et les ceintures** : côtes, épaule, bassin, mandibule, rachis, et plusieurs os contigus.\n\nSa signature est un **contraste** : une ostéolyse massive qui **traverse les articulations** et fait disparaître des segments entiers d'os, **sans vraie masse tumorale**. Au scanner, il ne reste qu'un tissu fantôme « en sucre mouillé ».\n\nEn IRM, la lésion est d'abord en hypo T1 et hyper T2 ; plus tard, l'os disparu est remplacé par de la **graisse séquellaire**, avec un **front lytique actif** périphérique qui se rehausse. Les complications graves sont le **chylothorax** (lyse costale homolatérale) et les déformations rachidiennes avec atteinte neurologique.",
+      "figures": [
+        "laredo-t4:fig10.2c",
+        "laredo-t4:fig10.3a"
+      ],
+      "legendes": [
+        "**Gorham de l'hémi-bassin droit** chez un adolescent : disparition progressive de l'os iliaque et du cotyle, sans masse, avec infiltration des tissus mous en IRM.",
+        "**Gorham du rachis thoracique** : ostéolyse progressive des corps et des arcs de T5 à T9, remplacés par un tissu de signal hétérogène, avec déformation."
+      ],
+      "cle": "Ostéolyse massive qui franchit les articulations sans masse = Gorham.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéolyse massive de l'hémi-bassin franchissant la sacro-iliaque, sans masse : diagnostic ?",
+        "a": "Maladie de Gorham (os évanescent)."
+      }
+    },
+    {
+      "titre": "Angiomatoses kystiques : des lacunes multiples chez un sujet en bonne santé",
+      "texte": "L'**hémangiomatose kystique** donne des **lacunes multiples de moins de 3 cm**, nettes (souvent 1A1), allongées selon l'axe de l'os, en **nid d'abeilles**, sur le squelette axial et les gros os longs. Elles ont un signal liquidien en T2, un signal intermédiaire en T1 **sans graisse**, ne fixent pas ou peu en scintigraphie, et n'ont ni périoste ni masse. Une atteinte viscérale (surtout la **rate**) est associée dans 70 % des cas et fait le pronostic.\n\nLa **lymphangiomatose** a le même aspect osseux, mais touche surtout l'enfant et s'accompagne d'une **masse des tissus mous contiguë** (56 %), d'un **chylothorax** et d'une atteinte médiastino-pleurale. Contrairement au Gorham, ses lacunes grandissent et se multiplient sans faire disparaître de segments osseux.\n\nProfil évocateur : sujet de moins de 30 ans, en bon état général, biologie normale, sans contexte de myélome ou de cancer.",
+      "figures": [
+        "laredo-t4:fig11.3ac",
+        "laredo-t4:fig11.5e"
+      ],
+      "legendes": [
+        "**Hémangiomatose kystique** chez un homme de 41 ans asymptomatique : multiples lacunes 1A et 1B du sacrum et des os iliaques, sans masse.",
+        "**Lymphangiomatose kystique** : sternum en nid d'abeilles et lacunes vertébrales de taille variable, avec infiltration des parties molles en IRM."
+      ],
+      "cle": null,
+      "piege": "Le premier diagnostic différentiel de lacunes multiples chez l'enfant est l'histiocytose langerhansienne.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacunes multiples en nid d'abeilles chez un sujet de 25 ans en bonne santé, sans graisse : quel organe explorer ?",
+        "a": "La rate : hémangiomatose kystique, atteinte viscérale dans 70 % des cas."
+      }
+    },
+    {
+      "titre": "La varice intra-osseuse tibiale",
+      "texte": "Chez un patient porteur de **varices**, une grosse veine médullaire tibiale peut s'élargir. Elle reçoit les varices prétibiales par un **pertuis cortical antéro-médial** à l'union des tiers moyen et inférieur, et se draine par un **pertuis cortical postérieur** du tiers supérieur vers les veines du mollet. Le patient a mal en position déclive.\n\nEn radiographie, on voit une clarté linéaire de 10 à 15 cm de long et de 2 à 4,5 mm de large (au-delà de 2,4 mm, c'est pathologique). Le traitement conseillé est la ligature plutôt que la sclérose, car la communication est directe et sans valves.",
+      "figures": [
+        "laredo-t4:fig12.2"
+      ],
+      "legendes": [
+        "**Varice intra-osseuse tibiale** au scanner : canal serpigineux élargi dans la cavité médullaire, avec son orifice proximal cortical postérieur."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Clarté linéaire de 12 cm dans la diaphyse tibiale d'un patient variqueux, douloureuse en position déclive. Diagnostic ?",
+        "a": "Varice intra-osseuse tibiale ; traitement par ligature plutôt que sclérose."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Haltérophile, douleur acromio-claviculaire depuis des mois. Diagnostic ?",
+      "figure": "laredo-t4:fig9.1",
+      "options": [
+        "Ostéolyse post-traumatique de la clavicule distale",
+        "Métastase claviculaire",
+        "Arthrite septique acromio-claviculaire",
+        "Maladie de Gorham"
+      ],
+      "reponse": 0,
+      "explication": "Lyse limitée au versant claviculaire, extrémité effilée, après microtraumatismes répétés : ostéolyse post-traumatique de la clavicule.",
+      "page": "2615",
+      "image_origine": "m05/p152_0"
+    },
+    {
+      "question": "Clichés successifs de T12 sur 11 mois (dates) chez un patient ostéoporotique. Que montrent-ils ?",
+      "figure": "laredo-t4:fig9.4c",
+      "options": [
+        "Ostéolyse progressive compliquant un tassement ostéoporotique",
+        "Spondylodiscite tuberculeuse",
+        "Métastase lytique certaine",
+        "Hémangiome agressif"
+      ],
+      "reponse": 0,
+      "explication": "Destruction progressive du corps vertébral après tassement ostéoporotique. Le scanner montre un os pilé ; la biopsie reste indispensable sans signe rassurant.",
+      "page": "2618",
+      "image_origine": "m05/p155_0"
+    },
+    {
+      "question": "Jeune patient : disparition progressive de l'hémi-bassin droit étendue au fémur, sans masse. Diagnostic ?",
+      "figure": "laredo-t4:fig10.1",
+      "options": [
+        "Maladie de Gorham",
+        "Chondrosarcome",
+        "Métastase",
+        "Ostéolyse post-radique"
+      ],
+      "reponse": 0,
+      "explication": "Fonte osseuse massive qui franchit l'articulation sans véritable masse tumorale : ostéolyse massive de Gorham.",
+      "page": "2623",
+      "image_origine": "m05/p160_0"
+    },
+    {
+      "question": "Femme de 40 ans asymptomatique : lésion costale découverte fortuitement, côtes et vertèbres en nid d'abeilles, lésion splénique. Diagnostic ?",
+      "figure": "laredo-t4:fig11.1aa",
+      "options": [
+        "Hémangiomatose kystique",
+        "Myélome",
+        "Métastases",
+        "Dysplasie fibreuse polyostotique"
+      ],
+      "reponse": 0,
+      "explication": "Lacunes multiples en nid d'abeilles chez une patiente en bon état général, avec angiome splénique : angiomatose kystique.",
+      "page": "2629",
+      "image_origine": "m05/p166_0"
+    },
+    {
+      "question": "Bassin d'un adulte : lacunes multiples cerclées de condensation en nid d'abeilles (flèches). Diagnostic évoqué en premier ?",
+      "figure": "laredo-t4:fig11.2a",
+      "options": [
+        "Hémangiomatose",
+        "Ostéopoécilie",
+        "Paget",
+        "Métastases condensantes"
+      ],
+      "reponse": 0,
+      "explication": "Aspect multikystique en nid d'abeilles à liseré condensé : hémangiomatose. Pas de masse ni de réaction périostée.",
+      "page": "2631",
+      "image_origine": "m05/p168_0"
+    },
+    {
+      "question": "Enfant de 5 ans : lacunes multiples à limites nettes du bassin, des fémurs, des tibias et du crâne ; opacification des lésions sur un examen de contraste (d). Diagnostic ?",
+      "figure": "laredo-t4:fig11.4aa",
+      "options": [
+        "Lymphangiomatose kystique",
+        "Histiocytose langerhansienne",
+        "Dysplasie fibreuse polyostotique",
+        "Maladie d'Ollier"
+      ],
+      "reponse": 0,
+      "explication": "Légende : lymphangiomatose kystique chez une enfant de 5 ans ; la lymphographie (d) montre l'opacification des lésions ostéolytiques par le produit de contraste.",
+      "page": "2635",
+      "image_origine": "m05/p172_0"
+    },
+    {
+      "question": "Tibia d'un patient porteur de varices, douleurs en position déclive : clarté linéaire intra-médullaire (flèches bleues) et petit orifice cortical antérieur distal (flèche blanche). Diagnostic ?",
+      "figure": "laredo-t4:fig11.1c",
+      "options": [
+        "Varice intra-osseuse tibiale",
+        "Fracture de fatigue",
+        "Ostéome ostéoïde",
+        "Adamantinome"
+      ],
+      "reponse": 0,
+      "explication": "Canal vasculaire élargi et long communiquant par un pertuis cortical antérieur avec des varices prétibiales : varice intra-osseuse.",
+      "page": "2640",
+      "image_origine": "m05/p177_0"
+    },
+    {
+      "question": "Fracture par insuffisance osseuse du pubis (a), puis contrôle 5 mois plus tard (b). Quelle complication ?",
+      "figure": "laredo-t4:fig9.2b",
+      "options": [
+        "Ostéolyse post-fracturaire des branches ilio- et ischiopubiennes",
+        "Métastase ostéolytique",
+        "Pseudarthrose hypertrophique",
+        "Ostéomyélite du pubis"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéolyse compliquant une fracture par insuffisance osseuse du pubis ; à 5 mois, ostéolyse des deux branches ilio- et ischiopubiennes. Piège pseudo-tumoral.",
+      "page": "p. 2616",
+      "image_origine": "m05/p153_1"
+    },
+    {
+      "question": "Patiente de 74 ans, lombo-pygalgies puis douleur inguinale : fracture du pubis droit avec ostéolyse et fragmentation, fractures des deux ailerons sacrés. Diagnostic ?",
+      "figure": "laredo-t4:fig9.3d",
+      "options": [
+        "Fracture ostéoporotique du pubis avec ostéolyse pseudomaligne et fracture en H du sacrum",
+        "Métastases pelviennes ostéolytiques",
+        "Chondrosarcome du pubis",
+        "Ostéite pubienne infectieuse"
+      ],
+      "reponse": 0,
+      "explication": "Légende : fracture ostéoporotique du pubis compliquée d'ostéolyse et d'ostéonécrose pseudomaligne, associée à une fracture en H du sacrum ; diagnostic confirmé par biopsie et évolution.",
+      "page": "p. 2617",
+      "image_origine": "m05/p154_1"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Quand une fracture se transforme en ostéolyse",
+        "Les signes qui rassurent"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": [
+        0,
+        1,
+        7,
+        8
+      ]
+    },
+    {
+      "hs": [
+        "Maladie de Gorham : l'os qui s'évanouit",
+        "Angiomatoses kystiques : des lacunes multiples chez un sujet en bonne santé",
+        "La varice intra-osseuse tibiale"
+      ],
+      "secs": [
+        2,
+        3,
+        4
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "ancien_id": "m05",
+  "images_non_rattachees": []
+}

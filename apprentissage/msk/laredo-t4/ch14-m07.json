@@ -1,0 +1,356 @@
+{
+  "id": "laredo-t4:m07",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 14,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs cartilagineuses bénignes et principes de prise en charge",
+  "pages": "2669–2710",
+  "objectifs": [
+    "Connaître les règles de biopsie et de traitement des sarcomes",
+    "Reconnaître exostose, enchondrome, chondrome périosté",
+    "Identifier fibrome chondromyxoïde et chondroblastome"
+  ],
+  "essentiels": [
+    "Sarcomes osseux : rares (< 0,2 % des cancers). Ostéosarcome > chondrosarcome > Ewing ; ostéosarcome = plus de 10 % des cancers solides à 15–19 ans ; chondrosarcome = sarcome osseux le plus fréquent de l'adulte. Prise en charge en centre de référence après bilan d'imagerie complet AVANT la biopsie.",
+    "Biopsie : par le chirurgien ou un radiologue de l'équipe, trajet choisi avec le chirurgien car il sera réséqué en bloc et doit être repéré. Pas de biopsie d'une exostose suspecte (diagnostic architectural sur pièce, exérèse large d'emblée). Les lésions cartilagineuses centrales de bas grade sont curetées plutôt que biopsiées.",
+    "Haut grade (ostéosarcome, Ewing, sarcome pléomorphe) : chimiothérapie néo-adjuvante → exérèse large (≥ 1 cm d'os sain, idéalement 2–5) → chimiothérapie adjuvante ; bonne réponse = nécrose > 90 %. Bas grade, chondrosarcome, chordome : chirurgie seule. Fracture pathologique : plâtre, pas d'ostéosynthèse.",
+    "Ostéochondrome : cartilage de croissance aberrant (EXT1/EXT2), métaphyse des os longs (genou, humérus), corticale et spongieux en continuité avec l'os porteur, fuit l'articulation. Coiffe fine, ≤ 1 cm chez l'enfant, qui s'atrophie à la fin de la croissance. Exostose = 1re tumeur radio-induite.",
+    "Dégénérescence d'exostose (< 1 % solitaire, 5–10 % maladie exostosante) : douleur chez l'adulte, siège axial, coiffe > 1,5–2 cm (mesurée perpendiculairement à la « tidemark »), coiffe lobulée et myxoïde, lyse, calcifications dans les tissus mous.",
+    "Enchondrome : 1re tumeur des doigts (P1), métaphyses de l'humérus proximal et du fémur distal, lacune 1B lobulée, calcifications en anneaux et arcs, hypersignal T2 lobulaire, rehaussement septal, pas d'œdème. Mutation IDH1/2. Signes d'activité : douleur, > 5–8 cm, encoche > 2/3 de la corticale diaphysaire, œdème, fixation intense.",
+    "Fibrome chondromyxoïde : 10–30 ans, métaphyse du genou (tibia proximal), lacune excentrée allongée 1A1 polylobée encochant l'endoste, calcifications rares. Chondrome périosté : encoche corticale lobulée de 2–2,5 cm avec éperons périostés, sans pénétration médullaire.",
+    "Chondroblastome : 5–25 ans, épiphyses et apophyses (genou, têtes fémorale et humérale, grand trochanter, talus, calcanéum). Lacune lobulée cerclée (1A1/1A2), calcifications, signal T2 intermédiaire (pas myxoïde) avec microkystes, œdème péri-lésionnel intense, synovite, parfois kyste anévrysmal secondaire."
+  ],
+  "introduction": "Ce module ouvre le chapitre des tumeurs primitives par deux choses : les **règles de prise en charge** d'un sarcome (qui déterminent ce que le radiologue doit faire, et surtout ne pas faire) et les **tumeurs cartilagineuses bénignes**. Le fil conducteur : le cartilage tumoral garde la mémoire du **cartilage de croissance** dont il dérive, et c'est ce qui dicte son siège, sa forme lobulée et ses calcifications.",
+  "sections": [
+    {
+      "titre": "Avant de biopsier un sarcome",
+      "texte": "Les sarcomes osseux sont rares (moins de 0,2 % des cancers). L'**ostéosarcome** est le plus fréquent et représente plus de 10 % des cancers solides de 15 à 19 ans ; le **chondrosarcome** est le sarcome osseux le plus fréquent de l'adulte ; l'Ewing vient ensuite.\n\nLa prise en charge se fait en **centre de référence**, et le **bilan d'imagerie complet précède la biopsie** (la biopsie modifie le signal et crée un hématome). La biopsie est faite par le chirurgien qui opérera ou un radiologue de son équipe ; le trajet, choisi avec lui, sera **réséqué en bloc** et doit donc être repéré.\n\nLes tumeurs de **haut grade** (ostéosarcome, Ewing, sarcome pléomorphe) suivent la séquence chimiothérapie néo-adjuvante → exérèse large (au moins 1 cm d'os sain, idéalement 2 à 5) → chimiothérapie adjuvante ; une bonne réponse correspond à plus de 90 % de nécrose. Les tumeurs de bas grade, le chondrosarcome et le chordome relèvent de la chirurgie seule.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Un trajet de biopsie mal placé contamine des compartiments sains et peut transformer une chirurgie conservatrice en amputation.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi faire toute l'imagerie avant la biopsie d'une suspicion de sarcome ?",
+        "a": "La biopsie modifie le signal (œdème, hématome) et son trajet doit être choisi avec le chirurgien pour être réséqué en bloc."
+      }
+    },
+    {
+      "titre": "L'ostéochondrome : un cartilage de croissance égaré",
+      "texte": "L'ostéochondrome (exostose) est une excroissance dont la **corticale et la moelle sont en continuité** avec celles de l'os porteur, coiffée d'un **cartilage de croissance aberrant** qui fabrique de l'os. Il naît de chondrocytes de la physe qui ont perdu les deux copies fonctionnelles d'EXT1 ou EXT2, se mettent à proliférer latéralement et sortent de l'os à travers un défaut du périchondre.\n\nIl siège à la **métaphyse** des os longs (genou, humérus proximal), **fuit l'articulation**, et grandit avec l'enfant. Sa coiffe, au maximum 1 cm chez l'enfant, **s'atrophie à la fin de la croissance**. En IRM, la coiffe est en hypersignal T2 intense, cernée d'un liseré périchondral en hyposignal, et ne se rehausse pas.\n\nC'est aussi la **première tumeur radio-induite**, environ 4,6 ans après une irradiation dans l'enfance.",
+      "figures": [
+        "laredo-t4:fig16.2",
+        "laredo-t4:fig16.3a"
+      ],
+      "legendes": [
+        "**Évolution de la coiffe** : épaisse pendant la croissance (a, en bleu), elle s'amincit et s'atrophie à la fin de la croissance (b). Une coiffe épaisse chez l'adulte est donc anormale.",
+        "**Ostéochondrome sessile** du fémur distal : continuité cortico-médullaire avec l'os porteur, coiffe fine en hypersignal T2 non rehaussée, cernée d'un liseré périchondral."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "L'exostose fuit l'articulation parce qu'elle part de la physe et que l'os porteur continue de s'allonger : elle est « emportée » vers la diaphyse.",
+      "verification": {
+        "q": "Exostose découverte chez un adulte de 40 ans après une irradiation dans l'enfance : coïncidence ?",
+        "a": "Pas forcément : l'ostéochondrome est la première tumeur radio-induite."
+      }
+    },
+    {
+      "titre": "Quand l'exostose devient chondrosarcome",
+      "texte": "La dégénérescence touche moins de 1 % des exostoses solitaires et 5 à 10 % des exostoses de maladie exostosante ; le risque est multiplié par 10 au **squelette axial** (bassin, ceintures, rachis).\n\nLe critère clé est l'**épaisseur de la coiffe** : **plus de 1,5 à 2 cm** chez l'adulte (2 cm : sensibilité 100 %, spécificité 98 % en IRM). Elle se mesure perpendiculairement à la ligne qui relie les saillies de la jonction os-cartilage (« tidemark »), à son maximum. S'y ajoutent : douleur sans bursite, taille de plus de 8 à 10 cm, coiffe lobulée de signal myxoïde, lyse, limites floues, calcifications dispersées dans les tissus mous, fixation intense, rehaussement artériel.",
+      "figures": [
+        "laredo-t4:fig16.5",
+        "laredo-t4:fig16.7a"
+      ],
+      "legendes": [
+        "**Ostéochondrome (à gauche) et chondrosarcome périphérique (à droite)** : la tumeur développée sur l'exostose ajoute une masse des tissus mous parsemée de calcifications cartilagineuses.",
+        "**Mesurer la coiffe** : exostose tibiale à coiffe épaisse chez un homme de 25 ans atteint d'Ollier, non dégénérée à l'histologie. Les tracés colorés délimitent la coiffe : son épaisseur seule ne suffit pas, il faut la confronter à l'âge et aux autres signes."
+      ],
+      "cle": "Adulte + exostose qui fait mal ou grossit + coiffe > 2 cm → pas de biopsie, IRM et avis chirurgical pour exérèse large.",
+      "piege": "Une douleur sur exostose a souvent une cause mécanique : bursite, fracture de l'apex, conflit, compression vasculo-nerveuse ou pseudo-anévrisme poplité.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Exostose douloureuse chez un adulte, coiffe de 8 mm : chondrosarcome probable ?",
+        "a": "Non : coiffe fine. Chercher une cause mécanique (bursite, fracture, conflit, pseudo-anévrisme)."
+      }
+    },
+    {
+      "titre": "L'enchondrome : du cartilage resté dans la métaphyse",
+      "texte": "L'enchondrome est la **première tumeur des doigts** (P1 dans 50 % des cas, métacarpe 30 %) ; ailleurs il siège dans les métaphyses de l'humérus proximal et du fémur distal. Il porte une mutation **IDH1/IDH2** dans au moins la moitié des cas, comme les chondrosarcomes centraux.\n\nEn radiographie : lacune centrale de moins de 5 cm, **1B**, à contours **festonnés**, contenant des calcifications en piqueté, grains, **arcs et anneaux** (« pop-corn »). Aux petits os, elle est volontiers excentrée et soufflante.\n\nEn IRM : **lobules** en hypo T1 et hypersignal T2 franc, séparés par des septa qui se rehaussent, **sans œdème**. Si tous les lobules sont entourés de moelle graisseuse, le chondrome est affirmé sans biopsie.",
+      "figures": [
+        "laredo-t4:fig16.14",
+        "laredo-t4:fig16.16a"
+      ],
+      "legendes": [
+        "**Enchondrome phalangien suivi sur cinq ans** : lacune 1B lobulée, soufflante, à évolution très lente (2005, 2007, 2010).",
+        "**Enchondrome fémoral** : lésion allongée polylobée, calcifications arciformes, encoches endostées peu profondes, hypersignal T2 franc et prise de contraste septale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion lobulée calcifiée de P1 : quand peut-on affirmer un chondrome sans biopsie ?",
+        "a": "Quand tous les lobules sont entourés de moelle graisseuse et sans œdème ; aux mains, il est presque toujours bénin."
+      }
+    },
+    {
+      "titre": "Chondrome actif ou chondrosarcome de bas grade ?",
+      "texte": "C'est la question difficile, car l'histologie elle-même hésite. On cherche des **signes d'activité** :\n\nLe **siège** pèse lourd : une lésion cartilagineuse des **os plats axiaux** (bassin, sternum, côtes, scapula, rachis) ou d'une **épiphyse** est plus suspecte ; aux mains et aux pieds, elle est presque toujours bénigne.",
+      "figures": [
+        "laredo-t4:fig16.18a"
+      ],
+      "legendes": [
+        "**Enchondrome typique** : calcifications annulaires, encoche endostée limitée (flèche), hypersignal T2 franc entre les calcifications, prise de contraste septale."
+      ],
+      "cle": null,
+      "piege": "L'infarctus osseux ressemble au chondrome. Il a un liseré serpigineux périphérique en hyposignal sur toutes les séquences, et ses travées restent visibles.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion cartilagineuse de l'humérus proximal avec encoches endostées dépassant les 2/3 de la corticale et œdème : conclusion ?",
+        "a": "Signes d'activité : chondrosarcome de bas grade à évoquer, avis spécialisé."
+      }
+    },
+    {
+      "titre": "Chondrome périosté et fibrome chondromyxoïde",
+      "texte": "Le **chondrome périosté** (5-25 ans, humérus proximal surtout) creuse une **encoche corticale nette et lobulée** de 2 à 2,5 cm, encorbellée par des **éperons d'os périosté** à ses deux extrémités. Il ne pénètre pas la cavité médullaire et ne donne pas d'œdème.\n\nLe **fibrome chondromyxoïde** (10-30 ans) siège dans la métaphyse du genou, surtout le tibia proximal. Il donne une lacune **excentrée, allongée**, de moins de 5 cm, purement lytique, **1A1**, polylobée, qui encoche l'endoste et souffle la corticale. Les calcifications sont rares. On le traite par résection complète (25 % de récidive après curetage), jamais par radiothérapie.",
+      "figures": [
+        "laredo-t4:fig16.22",
+        "laredo-t4:fig16.23b"
+      ],
+      "legendes": [
+        "**Chondrome périosté** de la métaphyse humérale proximale : encoche de la surface corticale, signal cartilagineux en IRM, cavité médullaire respectée.",
+        "**Fibrome chondromyxoïde du sacrum** : ostéolyse soufflante bien limitée à liseré de type IA, sans matrice, prise de contraste diffuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune excentrée 1A1 du tibia proximal sans calcification chez un jeune de 18 ans : quelle tumeur cartilagineuse ?",
+        "a": "Fibrome chondromyxoïde."
+      }
+    },
+    {
+      "titre": "Chondroblastome : l'épiphyse de l'adolescent",
+      "texte": "Le chondroblastome survient entre **5 et 25 ans** (garçons deux fois plus), dans les **épiphyses et apophyses** : genou, têtes fémorale et humérale, grand trochanter, talus, calcanéum.\n\nIl donne une lacune **lobulée** à limites nettes cerclées (1A1 ou 1A2), avec des calcifications (30 à 40 % au scanner). En IRM, son signal T2 est **intermédiaire** et non myxoïde, avec des microkystes, et surtout un **œdème péri-lésionnel intense**, souvent une synovite et un épanchement. Un kyste anévrysmal secondaire peut s'y greffer.",
+      "figures": [
+        "laredo-t4:fig16.27",
+        "laredo-t4:fig16.31"
+      ],
+      "legendes": [
+        "**Chondroblastome de la tête fémorale** : lacune épiphysaire à limites nettes avec condensation dégressive (1A2), calcifications, œdème péri-lésionnel et épanchement en IRM.",
+        "**Chondroblastome de la glène** : ostéolyse lobulée à limites nettes, signal T2 hétérogène et prise de contraste."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le chondroblastome est plus cellulaire et moins riche en matrice myxoïde que le chondrome : d'où un T2 intermédiaire. Il sécrète des médiateurs inflammatoires : d'où l'œdème et la synovite.",
+      "verification": {
+        "q": "Lacune lobulée de la tête fémorale à liseré net, calcifications, chez un garçon de 14 ans : diagnostic ?",
+        "a": "Chondroblastome."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Excroissance de la métaphyse fémorale distale. Quel signe affirme l'ostéochondrome ?",
+      "figure": "laredo-t4:fig16.3b",
+      "options": [
+        "Continuité corticale et médullaire avec l'os porteur",
+        "Réaction périostée spiculée",
+        "Matrice nuageuse",
+        "Ligne claire séparant la lésion de la corticale"
+      ],
+      "reponse": 0,
+      "explication": "L'exostose pédiculée fuit l'articulation et sa corticale et son spongieux sont en continuité avec ceux de l'os porteur. Une ligne claire évoquerait un ostéosarcome paraostéal.",
+      "page": "2680",
+      "image_origine": "m07/p217_1"
+    },
+    {
+      "question": "Exostose iliaque : masse des tissus mous avec calcifications en arcs et anneaux au pôle inférieur (flèches). Conclusion ?",
+      "figure": "laredo-t4:fig16.6a",
+      "options": [
+        "Chondrosarcome périphérique sur exostose",
+        "Bursite sur exostose",
+        "Exostose non dégénérée",
+        "Myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications cartilagineuses dans les tissus mous en regard de l'exostose : coiffe proliférante sarcomateuse. Exérèse large sans biopsie.",
+      "page": "2682",
+      "image_origine": "m07/p219_0"
+    },
+    {
+      "question": "Lacune excentrée et soufflante de P1. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig16.13",
+      "options": [
+        "Enchondrome",
+        "Ostéome ostéoïde",
+        "Métastase",
+        "Tumeur glomique"
+      ],
+      "reponse": 0,
+      "explication": "L'enchondrome est la tumeur la plus fréquente des doigts ; aux phalanges il est souvent excentré et soufflant.",
+      "page": "2690",
+      "image_origine": "m07/p227_0"
+    },
+    {
+      "question": "Fémur distal : lacune métaphysaire 1B avec calcifications en arcs et anneaux, lobules T2, rehaussement septal. Diagnostic ?",
+      "figure": "laredo-t4:fig16.17",
+      "options": [
+        "Enchondrome",
+        "Infarctus osseux",
+        "Chondroblastome",
+        "Ostéosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Siège et aspect caractéristiques ; noter aussi en T1 des îlots de moelle graisseuse dans la lésion.",
+      "page": "2692",
+      "image_origine": "m07/p229_0"
+    },
+    {
+      "question": "Lésion de l'humérus proximal en IRM. Quel aspect permet de se passer de biopsie ?",
+      "figure": "laredo-t4:fig16.19a",
+      "options": [
+        "Lobules cartilagineux disséminés dans la moelle graisseuse",
+        "Œdème péri-lésionnel",
+        "Rehaussement diffus intense",
+        "Rupture corticale"
+      ],
+      "reponse": 0,
+      "explication": "Des lobules cartilagineux tous entourés de graisse médullaire signent un chondrome (Vanel).",
+      "page": "2693",
+      "image_origine": "m07/p230_0"
+    },
+    {
+      "question": "Tumeur cartilagineuse fémorale au scanner : que montrent les flèches et le X ?",
+      "figure": "laredo-t4:fig16.20a",
+      "options": [
+        "Signes d'activité : encoche > 2/3, hyperostose, élargissement médullaire",
+        "Signes de bénignité certaine",
+        "Une fracture de fatigue",
+        "Un infarctus calcifié"
+      ],
+      "reponse": 0,
+      "explication": "Encoche de plus de 2/3 de la corticale, hyperostose (X), élargissement de la cavité et soufflure : signes d'activité d'un chondrome actif ou d'un chondrosarcome de grade 1.",
+      "page": "2695",
+      "image_origine": "m07/p232_0_0_0_74_100"
+    },
+    {
+      "question": "Encoche lobulée de la surface corticale fémorale encorbellée d'éperons périostés. Diagnostic ?",
+      "figure": "laredo-t4:fig16.21b",
+      "options": [
+        "Chondrome périosté",
+        "Chondrosarcome périphérique",
+        "Ostéosarcome parostéal",
+        "Exostose sessile"
+      ],
+      "reponse": 0,
+      "explication": "Encoche superficielle nette de 2–3 cm avec coiffe d'os périosté sur les bords : chondrome périosté.",
+      "page": "2697",
+      "image_origine": "m07/p234_0"
+    },
+    {
+      "question": "Lacune métaphysaire tibiale excentrée, cerclée d'un fin liseré (1A1). Diagnostic évoqué ?",
+      "figure": "laredo-t4:fig16.24a",
+      "options": [
+        "Fibrome chondromyxoïde",
+        "Chondroblastome",
+        "Kyste essentiel",
+        "Ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "Lacune métaphysaire du genou, excentrée, 1A1, sans matrice : fibrome chondromyxoïde (ici sous-périosté).",
+      "page": "2701",
+      "image_origine": "m07/p238_0"
+    },
+    {
+      "question": "Adolescent, douleur et épanchement du genou : lacune épiphysaire tibiale avec œdème médullaire étendu. Diagnostic ?",
+      "figure": "laredo-t4:fig16.26",
+      "options": [
+        "Chondroblastome",
+        "Tumeur à cellules géantes",
+        "Ostéomyélite",
+        "Kyste sous-chondral"
+      ],
+      "reponse": 0,
+      "explication": "Lacune épiphysaire lobulée avec calcifications, signal T2 intermédiaire à microkystes, œdème et épanchement : chondroblastome.",
+      "page": "2704",
+      "image_origine": "m07/p241_0"
+    },
+    {
+      "question": "Calcanéum d'un adolescent : lacune bien limitée avec fines calcifications, œdème péri-lésionnel. Diagnostic ?",
+      "figure": "laredo-t4:fig16.29b",
+      "options": [
+        "Chondroblastome",
+        "Kyste essentiel du calcanéum",
+        "Lipome intra-osseux",
+        "Ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "Le tarse postérieur (calcanéum, talus) est la 2e localisation du chondroblastome, équivalent d'épiphyse.",
+      "page": "2706",
+      "image_origine": "m07/p243_0"
+    },
+    {
+      "question": "Lésion épiphysaire tibiale avec niveau liquide-liquide, bourgeon rehaussé et œdème. Interprétation ?",
+      "figure": "laredo-t4:fig16.32",
+      "options": [
+        "Chondroblastome avec kyste anévrysmal secondaire",
+        "Kyste anévrysmal primitif",
+        "Ostéosarcome télangiectasique",
+        "Tumeur à cellules géantes"
+      ],
+      "reponse": 0,
+      "explication": "Siège épiphysaire, composante tissulaire rehaussée et œdème : kyste anévrysmal secondaire d'un chondroblastome.",
+      "page": "2708",
+      "image_origine": "m07/p245_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Avant de biopsier un sarcome",
+        "L'ostéochondrome : un cartilage de croissance égaré",
+        "Quand l'exostose devient chondrosarcome"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1
+      ]
+    },
+    {
+      "hs": [
+        "L'enchondrome : du cartilage resté dans la métaphyse",
+        "Chondrome actif ou chondrosarcome de bas grade ?",
+        "Chondrome périosté et fibrome chondromyxoïde",
+        "Chondroblastome : l'épiphyse de l'adolescent"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "ancien_id": "m07",
+  "images_non_rattachees": [
+    "m07/s215_fig1"
+  ]
+}

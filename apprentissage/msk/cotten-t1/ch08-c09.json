@@ -1,0 +1,330 @@
+{
+  "id": "cotten-t1:c09",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 8,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Diabète et ostéoarthropathies nerveuses",
+  "pages": "267–282",
+  "objectifs": [
+    "Comprendre les mécanismes du pied diabétique (neuropathie, artériopathie, inflammation, infection)",
+    "Distinguer en radiographie et IRM l'ostéoarthropathie nerveuse (OAN) de l'ostéite, et reconnaître l'œdème réactionnel",
+    "Connaître les autres complications du diabète (infarctus musculaire) et les OAN non diabétiques selon leur topographie"
+  ],
+  "essentiels": [
+    "Pied diabétique = **neuropathie** (analgésie, troubles proprioceptifs, amyotrophie, dénervation sympathique → hyperhémie) + **artériopathie** (médiacalcose) + **ulcère** surinfecté.",
+    "OAN aiguë : pied **rouge, chaud, œdémateux**, souvent pris pour une cellulite, une TVP ou une goutte ; la **décharge** précoce peut stopper l'évolution.",
+    "Radiographie précoce : tuméfaction, **subluxation débutante** (Lisfranc, talonaviculaire), déminéralisation sous-chondrale ; tardive : dislocation, fragmentation, condensation, ostéophytes, **pied en piolet**.",
+    "IRM de l'OAN aiguë : œdème **sous-chondral de part et d'autre des interlignes**, **médiopied** (Chopart, Lisfranc), **polyarticulaire d'emblée**, **sans ulcère** en regard.",
+    "Ostéite : **contiguë à un ulcère** (avant-pied, talon), **hyposignal T1 franc** (spécifique), hypersignal T2 et rehaussement ; extension progressive.",
+    "**Œdème réactionnel** : hypersignal T2 et rehaussement mais **T1 normal ou subnormal**.",
+    "OAN surinfectée : ulcère sous le cuboïde, œdème en hyposignal T1 marqué, **ghost sign**, disparition des kystes.",
+    "Infarctus musculaire diabétique : diabète de type 1 ancien, **cuisse** (80 %), œdème musculaire avec zone **non rehaussée** ; OAN non diabétiques : épaule = **syringomyélie** ; genou/rachis = tabès ; pied = lèpre."
+  ],
+  "introduction": "Le pied diabétique est la première cause d'amputation non traumatique. Le radiologue doit répondre à une question difficile : ce pied rouge et déformé est-il le siège d'une **ostéoarthropathie nerveuse**, d'une **ostéite**, ou des deux ? La topographie, la relation avec l'ulcère et le signal T1 sont les clés.",
+  "sections": [
+    {
+      "titre": "Physiopathologie du pied diabétique",
+      "texte": "Déformations favorisant les ulcères : pied creux (talon, têtes métatarsiennes), pied plat d'OAN, **pied en piolet** (le cuboïde devient portant), orteils en marteau.",
+      "figures": [
+        "cotten-t1:fig9.3"
+      ],
+      "legendes": [
+        "**Pied en piolet** (rocker-bottom) : convexité plantaire, le cuboïde devient une surface d'appui."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Un pied insensible continue de marcher sur une fracture : c'est l'inflammation entretenue par l'appui qui fabrique l'OAN.",
+      "verification": {
+        "q": "Pourquoi le pied en piolet expose-t-il à l'ulcère et à l'ostéite du cuboïde ?",
+        "a": "Le cuboïde devient une surface portante convexe : hyperpression, callosité puis ulcère en regard, porte d'entrée de l'infection."
+      }
+    },
+    {
+      "titre": "Radiographies : OAN et infection",
+      "texte": "Trois incidences (face, profil, trois-quarts). **OAN précoce** : tuméfaction synoviale, **subluxation débutante** (talonaviculaire, cunéométatarsienne ; Lisfranc 1–2 sur la face, 3–5 sur le trois-quarts), déminéralisation sous-chondrale du médiotarse, médiacalcose. **OAN d'état** : grandes tuméfactions avec fragments, **dislocations**, impactions et **fragmentation** sous-chondrale, érosions sous-chondrales bilatérales bien limitées, reconstruction (sclérose, ostéophytes). Aux MTP, forme ostéolytique en **sucre d'orge**.\n\n**Infection** : délai radiographique ≥ 10 jours. Rechercher, **en regard de l'ulcère**, du gaz, une **érosion corticale** ou une ostéolyse excentrée, une érosion épiphysaire marginale avec interligne longtemps préservé.",
+      "figures": [
+        "cotten-t1:fig9.2b",
+        "cotten-t1:fig9.4",
+        "cotten-t1:fig9.7"
+      ],
+      "legendes": [
+        "OAN : **subluxation cunéométatarsienne** débutante visible de face (a) et de profil (b).",
+        "OAN évoluée : fragmentation osseuse (flèche) et subluxation du Lisfranc.",
+        "Pied infecté : **érosion corticale** (flèche) en regard d'une ulcération (tête de flèche)."
+      ],
+      "cle": "Lésion osseuse sous un ulcère = ostéite ; atteinte articulaire du médiopied sans ulcère = OAN.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Sur quelle incidence voit-on le mieux les subluxations tarsométatarsiennes des 3e à 5e rayons ?",
+        "a": "Sur le cliché de trois-quarts oblique (1er et 2e rayons sur la face)."
+      }
+    },
+    {
+      "titre": "IRM : OAN aiguë, œdème réactionnel ou ostéite ?",
+      "texte": "Protocole : petit champ (12–16 cm) centré, coupes ≤ 3 mm, **un seul pied**, T1 et STIR/T2 FS dans deux plans, **gadolinium** si infection suspectée (abcès, fistules, zones dévitalisées).",
+      "figures": [
+        "cotten-t1:fig9.9b",
+        "cotten-t1:fig9.11",
+        "cotten-t1:fig9.12"
+      ],
+      "legendes": [
+        "OAN centrée sur le **Lisfranc** : œdème osseux de part et d'autre des interlignes et des tissus mous.",
+        "**Œdème réactionnel** après résection phalangienne : hypersignal T2 avec T1 conservé.",
+        "**Ostéite du calcanéus** : hyposignal T1 franc (a), rehaussement (b), en regard de l'ulcère."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "En T1, seule une vraie infiltration de la moelle par le pus fait disparaître la graisse ; l'œdème hyperhémique laisse la graisse en place.",
+      "verification": {
+        "q": "Quelle séquence est la plus spécifique de l'ostéite du pied diabétique et pourquoi ?",
+        "a": "Le T1 : un hyposignal franc traduit une infiltration vraie de la moelle, alors que l'œdème réactionnel garde un T1 normal ou subnormal."
+      }
+    },
+    {
+      "titre": "IRM des tissus mous du pied diabétique",
+      "texte": "",
+      "figures": [
+        "cotten-t1:fig9.14c",
+        "cotten-t1:fig9.17"
+      ],
+      "legendes": [
+        "**Sinus de drainage** et abcès fistulisé à la peau, paroi rehaussée.",
+        "**Zone non rehaussée** après gadolinium (flèches) : tissu dévitalisé."
+      ],
+      "cle": null,
+      "piege": "Dans une zone dévitalisée, l'absence de rehaussement masque abcès et ostéite : ne concluez pas à l'absence d'infection.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi signaler l'atteinte de la loge plantaire moyenne ?",
+        "a": "Elle communique avec les loges musculaires du mollet : l'infection peut diffuser à distance."
+      }
+    },
+    {
+      "titre": "Infarctus musculaire et autres complications du diabète",
+      "texte": "L'**infarctus musculaire diabétique** complique un diabète ancien (≈ 15 ans), souvent de type 1 mal équilibré, avec néphropathie. Il touche la **cuisse** (80 % : quadriceps, adducteurs), bilatéral dans 1/3 des cas ; douleur et induration aiguës. IRM : muscle tuméfié, **œdème** marqué T2, rehaussement, avec une **plage non rehaussée** (infarctus) cerclée ; parfois hémorragie. Diagnostics différentiels : abcès (centre liquidien, coque), fasciite nécrosante, lymphome. Éviter la biopsie ; traitement : repos, AINS, antiagrégants. Récidive chez la moitié des patients.\n\nAutres : ostéoporose (type 1), **maladie de Dupuytren**, cheiroarthropathie, doigt à ressaut, canal carpien, **capsulite rétractile** (×4–5). Diabète lipoatrophique : disparition de la graisse, accélération de la maturation osseuse.",
+      "figures": [
+        "cotten-t1:fig9.19a",
+        "cotten-t1:fig9.20a"
+      ],
+      "legendes": [
+        "**Infarctus musculaire** des deux cuisses, mieux vu en T2 et après gadolinium qu'en T1.",
+        "Infarctus musculaire : plage centrale **non rehaussée** entourée de rehaussement."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Où siège le plus souvent l'infarctus musculaire diabétique ?",
+        "a": "À la cuisse (80 %), quadriceps et adducteurs ; bilatéral dans un tiers des cas."
+      }
+    },
+    {
+      "titre": "Ostéoarthropathies nerveuses non diabétiques",
+      "texte": "Clinique : **indolence** relative contrastant avec la destruction, déformations rapides, **hyperlaxité**, articulation en « sac de noix ». Radiographie : **fragmentation** épiphysaire, amputation en coin, débris, et **construction** simultanée (condensation floue, ostéophytes exubérants). Forme **hypertrophique** (genou, pied) ou **atrophique** (épaule, coude, hanche, main). L'IRM sert surtout au bilan étiologique (syringomyélie).",
+      "figures": [
+        "cotten-t1:fig9.23",
+        "cotten-t1:fig9.24",
+        "cotten-t1:fig9.25"
+      ],
+      "legendes": [
+        "OAN de l'épaule dans une **syringomyélie** : forme atrophique avec fragmentation majeure.",
+        "**OAN du rachis** (tabès) : condensation, ostéophytose exubérante et désorganisation.",
+        "OAN de la **lèpre** : acro-ostéolyse importante."
+      ],
+      "cle": "Épaule détruite et fragmentée, peu douloureuse = cherchez une syringomyélie (IRM médullaire cervicale).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle est l'étiologie d'une OAN de l'épaule dans 75 % des cas ?",
+        "a": "La syringomyélie."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Diabétique : résorption osseuse marquée des 1er, 3e et 5e métatarsiens. Forme ?",
+      "figure": "cotten-t1:fig9.5",
+      "options": [
+        "OAN ostéolytique (sucre d'orge)",
+        "Ostéomyélite aiguë",
+        "Goutte",
+        "Fractures de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "La forme ostéolytique de l'OAN effile les métatarsiens en sucre d'orge.",
+      "page": "p. 270",
+      "image_origine": "c09/f9.5"
+    },
+    {
+      "question": "Luxation tarsométatarsienne et érosion du cuboïde (flèche) sous une ulcération. Diagnostic ?",
+      "figure": "cotten-t1:fig9.6a",
+      "options": [
+        "OAN surinfectée",
+        "OAN aseptique pure",
+        "Fracture de Lisfranc récente",
+        "Goutte"
+      ],
+      "reponse": 0,
+      "explication": "L'ulcère sous le cuboïde d'un pied déformé permet la surinfection de l'OAN.",
+      "page": "p. 271",
+      "image_origine": "c09/f9.6"
+    },
+    {
+      "question": "Scanner : fracture du talus avec fragmentation chez un diabétique au pied chaud indolore. Diagnostic ?",
+      "figure": "cotten-t1:fig9.8",
+      "options": [
+        "OAN diabétique",
+        "Ostéonécrose idiopathique",
+        "Fracture traumatique simple",
+        "Tumeur"
+      ],
+      "reponse": 0,
+      "explication": "La fragmentation peu douloureuse est caractéristique de l'OAN ; le scanner précise les lésions.",
+      "page": "p. 271",
+      "image_origine": "c09/f9.8"
+    },
+    {
+      "question": "IRM : subluxation médiale du naviculaire (N), surfaces crénelées et impactées, œdème polyarticulaire du médiopied sans ulcère. Diagnostic ?",
+      "figure": "cotten-t1:fig9.10b",
+      "options": [
+        "OAN diabétique",
+        "Ostéite",
+        "Arthrite septique de Chopart",
+        "Algodystrophie"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte articulaire du médiopied, sous-chondrale, sans ulcère : OAN.",
+      "page": "p. 272",
+      "image_origine": "c09/f9.10"
+    },
+    {
+      "question": "Petit trajet plantaire (flèche) à paroi rehaussée allant vers l'os. Lésion ?",
+      "figure": "cotten-t1:fig9.13",
+      "options": [
+        "Sinus de drainage",
+        "Tendon fléchisseur",
+        "Corps étranger",
+        "Vaisseau plantaire"
+      ],
+      "reponse": 0,
+      "explication": "Le sinus de drainage traduit l'extension profonde de l'ulcère.",
+      "page": "p. 273–274",
+      "image_origine": "c09/f9.13"
+    },
+    {
+      "question": "Ulcération en regard de la 3e MTP, épanchement et synovite rehaussée, échographie Doppler hyperhémiée. Diagnostic ?",
+      "figure": "cotten-t1:fig9.15a",
+      "options": [
+        "Arthrite septique MTP",
+        "OAN aseptique",
+        "Névrome de Morton",
+        "Bursite intermétatarsienne"
+      ],
+      "reponse": 0,
+      "explication": "Les arthrites septiques compliquent l'ulcère des MTP par contiguïté.",
+      "page": "p. 274–275",
+      "image_origine": "c09/f9.15"
+    },
+    {
+      "question": "OAN avec ulcération latérale : œdème médullaire extensif en hyposignal T1 marqué. Interprétation ?",
+      "figure": "cotten-t1:fig9.16b",
+      "options": [
+        "OAN surinfectée",
+        "OAN aseptique simple",
+        "Œdème réactionnel",
+        "Infarctus osseux"
+      ],
+      "reponse": 0,
+      "explication": "Ulcère + œdème extensif en hyposignal T1 marqué : surinfection.",
+      "page": "p. 275",
+      "image_origine": "c09/f9.16"
+    },
+    {
+      "question": "IRM de pied : hypersignal T2 marqué et diffus des muscles chez un diabétique sans ulcère. Interprétation ?",
+      "figure": "cotten-t1:fig9.18",
+      "options": [
+        "Dénervation musculaire",
+        "Myosite infectieuse",
+        "Infarctus musculaire",
+        "Syndrome des loges"
+      ],
+      "reponse": 0,
+      "explication": "L'hypersignal T2 de dénervation ne doit pas inquiéter.",
+      "page": "p. 275",
+      "image_origine": "c09/f9.18"
+    },
+    {
+      "question": "Épaule et genou d'un même patient alcoolique : fragmentation osseuse considérable. Diagnostic ?",
+      "figure": "cotten-t1:fig9.22b",
+      "options": [
+        "Ostéoarthropathies nerveuses",
+        "Arthrites septiques",
+        "Chondrosarcome",
+        "Arthropathie à CPP"
+      ],
+      "reponse": 0,
+      "explication": "OAN multiples d'origine probablement alcoolique avec fragmentation majeure.",
+      "page": "p. 280",
+      "image_origine": "c09/f9.22"
+    },
+    {
+      "question": "Avant-pied : résorption des phalanges et têtes métatarsiennes avec ulcérations. Acropathie ?",
+      "figure": "cotten-t1:fig9.26",
+      "options": [
+        "Acropathie ulcéromutilante (Thévenard)",
+        "Psoriasis mutilant",
+        "Sclérodermie",
+        "Hyperparathyroïdie"
+      ],
+      "reponse": 0,
+      "explication": "Acropathie ulcéromutilante héréditaire de Thévenard (neuropathie sensitive type I).",
+      "page": "p. 282",
+      "image_origine": "c09/f9.26"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Physiopathologie du pied diabétique",
+        "Radiographies : OAN et infection",
+        "IRM : OAN aiguë, œdème réactionnel ou ostéite ?"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "hs": [
+        "IRM des tissus mous du pied diabétique",
+        "Infarctus musculaire et autres complications du diabète",
+        "Ostéoarthropathies nerveuses non diabétiques"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    }
+  ],
+  "ancien_id": "c09",
+  "images_non_rattachees": []
+}

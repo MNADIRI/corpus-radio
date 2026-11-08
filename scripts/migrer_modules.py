@@ -16,13 +16,33 @@ import json
 import re
 from collections import defaultdict
 
+import cv2
 import imagehash
+import numpy as np
 from PIL import Image
 
 from commun import RACINE, ecrire_json, lire_jsonl
 
 LIVRES = {"cotten": "cotten-t1", "laredo": "laredo-t4"}
 SEUIL = 14
+SEUIL_CORRELATION = 0.65
+
+
+def correlation(a, b):
+    """Meilleure corrélation normalisée entre deux images, l'une cherchée dans l'autre à plusieurs échelles."""
+    A = np.array(a.convert("L"))
+    B = np.array(b.convert("L"))
+    best = -1.0
+    for petit, grand in ((A, B), (B, A)):
+        G = cv2.resize(grand, (400, max(20, int(400 * grand.shape[0] / grand.shape[1]))), interpolation=cv2.INTER_AREA)
+        for f in np.geomspace(0.3, 1.0, 12):
+            w = int(G.shape[1] * f)
+            h = int(petit.shape[0] * w / petit.shape[1])
+            if w < 20 or h < 20 or h > G.shape[0]:
+                continue
+            t = cv2.resize(petit, (w, h), interpolation=cv2.INTER_AREA)
+            best = max(best, float(cv2.minMaxLoc(cv2.matchTemplate(G, t, cv2.TM_CCOEFF_NORMED))[1]))
+    return best
 
 
 def hashes(im):
@@ -98,6 +118,14 @@ def main():
                         d, fid = min(scores)
                         if d <= SEUIL:
                             choix = fid
+                    mp = re.search(r"/[ps](\d{3})", cle)
+                    if not choix and mp and uri:
+                        n = int(mp.group(1))
+                        im = Image.open(io.BytesIO(base64.b64decode(uri.split(",", 1)[1])))
+                        proches = [g for g in figures if g.get("image") and n - 1 <= g["page_pdf"] <= n + 1]
+                        sc = [(correlation(im, Image.open(RACINE / g["image"]["vignette"])), g["id"]) for g in proches]
+                        if sc and max(sc)[0] >= SEUIL_CORRELATION:
+                            choix = max(sc)[1]
                 correspondances[cle] = choix
                 if choix:
                     rapport["rattachees"] += 1

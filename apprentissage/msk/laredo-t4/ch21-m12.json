@@ -1,0 +1,284 @@
+{
+  "id": "laredo-t4:m12",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 21,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Plasmocytome solitaire et lymphome osseux primitif",
+  "pages": "2819–2837",
+  "objectifs": [
+    "Poser et bilanter un plasmocytome solitaire",
+    "Reconnaître l'« os évidé » et le « mini-brain »",
+    "Penser au lymphome devant une lésion agressive atypique"
+  ],
+  "essentiels": [
+    "Plasmocytome osseux solitaire : lésion plasmocytaire unique, moelle normale ailleurs (< 5 % de plasmocytes), pas d'atteinte d'organe cible (anémie, hypercalcémie, insuffisance rénale), Ig monoclonale absente ou faible. Bilan par IRM corps entier et TEP-FDG. Âge moyen 50 ans (10 ans de moins que le myélome), H x2.",
+    "Siège : rachis 50 %, os plats 30 %, os longs 15 %. Lyse soufflante et cloisonnée à coque fine discontinue, souvent volumineuse ; évidement du spongieux avec respect relatif des corticales ; signal homogène (hypo T1, hyper T2, rehaussement modéré homogène). Formes condensantes (POEMS, amylose).",
+    "Rachis : corps vertébral évidé, souvent tassé, extension à l'arc (pédicule évidé), cloisons verticales « en amande », aspect axial en circonvolutions « mini-brain ». Extension discale et à la vertèbre voisine possible. Hyperfixation, contrairement au myélome.",
+    "Traitement : radiothérapie 40 Gy (50 Gy si > 5 cm) ; transformation en myélome 72 % à 10 ans (médiane 21 mois). Mauvais pronostic : > 60 ans, ≥ 2 foyers en TEP, chaînes légères anormales, Ig persistante > 1 an.",
+    "Lymphome osseux primitif : 7 % des tumeurs osseuses malignes, 5e–7e décennies, B diffus à grandes cellules (83–93 %). Diagnostic seulement si bilan d'extension négatif (scanner TAP, TEP-FDG), adénopathies régionales tolérées.",
+    "Clinique évocatrice : lésion agressive contrastant avec un état général conservé ; LDH rarement élevées. Siège : fémur 25 %, bassin, humérus, tibia, rachis ; diaphyse ou métaphyse avec extension ; épiphyse possible ; multifocal 15–20 % (de part et d'autre d'une articulation).",
+    "Imagerie : lyse agressive (70 %) perméative, mitée ou 1C, séquestre (11 %), fracture (25 %) ; mixte sur os plats ; condensant pur rare (cadre obturateur, vertèbres, extrémités). Tumeur médullaire et masse des tissus mous de part et d'autre d'une corticale conservée ; hypo T2 par fibrose ; zones avasculaires.",
+    "Lymphome : très sensible à la radio-chimiothérapie, bon pronostic si traité tôt. Différentiels chez l'adulte : infection atypique, métastase, myélome, chondrosarcome ; chez l'enfant : ostéomyélite, histiocytose, Ewing, neuroblastome, leucémie."
+  ],
+  "introduction": "Les deux tumeurs hématopoïétiques primitives de l'os ont un point commun : ce sont des **proliférations de cellules de la moelle**. Elles remplissent la cavité médullaire en respectant longtemps l'os qui l'entoure. Le plasmocytome **évide** l'os (le spongieux disparaît, les corticales tiennent) ; le lymphome **traverse** la corticale sans la détruire. Ces deux comportements donnent leurs images les plus évocatrices.",
+  "sections": [
+    {
+      "titre": "Plasmocytome solitaire : un myélome qui n'est pas (encore) diffus",
+      "texte": "Le plasmocytome osseux solitaire est une **lésion plasmocytaire unique**, sans myélome : moelle normale ailleurs (moins de 5 % de plasmocytes), pas d'atteinte d'organe cible (anémie, hypercalcémie, insuffisance rénale), immunoglobuline monoclonale absente ou de taux faible. Il touche l'adulte vers 50 ans (dix ans plus tôt que le myélome), deux hommes pour une femme.\n\nSon caractère **solitaire** doit être prouvé par l'imagerie la plus sensible : **IRM corps entier** et **TEP-FDG** (sensibilité 93 %).",
+      "figures": [],
+      "legendes": [],
+      "cle": "Plasmocytome = une lésion + moelle normale ailleurs + pas d'atteinte d'organe. L'imagerie corps entier fait partie de la définition.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi l'IRM corps entier fait-elle partie de la définition du plasmocytome solitaire ?",
+        "a": "Il faut prouver que la lésion est unique et que la moelle est normale ailleurs."
+      }
+    },
+    {
+      "titre": "Un os évidé, un signal homogène",
+      "texte": "Le plasmocytome siège au **rachis** (50 %), sur les **os plats** (30 %) et les os longs (15 %). C'est souvent une **lyse volumineuse, soufflante et cloisonnée**, à coque périostée fine et discontinue.\n\nDeux signes le rendent évocateur : l'**évidement du spongieux** avec **respect relatif des corticales**, et un **signal homogène** malgré la taille (hypo T1, hyper T2, rehaussement modéré et homogène). Contrairement aux lésions du myélome, il **hyperfixe** en scintigraphie.\n\nIl existe des formes **condensantes**, notamment dans le **POEMS** (polyneuropathie, organomégalie, endocrinopathie, composant monoclonal, anomalies cutanées) ou avec des dépôts amyloïdes.",
+      "figures": [
+        "laredo-t4:fig21.5e"
+      ],
+      "legendes": [
+        "**Plasmocytome solitaire huméral** : ostéolyse diaphysaire étendue et soufflante, avec respect relatif de la corticale (flèche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Les plasmocytes envahissent les espaces médullaires et activent les ostéoclastes sur les travées, mais la corticale épaisse résiste plus longtemps : l'os se vide de l'intérieur.",
+      "verification": {
+        "q": "Lésion vertébrale condensante chez un patient avec polyneuropathie et pic monoclonal : quel syndrome ?",
+        "a": "POEMS (plasmocytome condensant)."
+      }
+    },
+    {
+      "titre": "Au rachis : amande et mini-brain",
+      "texte": "La vertèbre plasmocytaire est **évidée**, souvent **tassée**, avec extension à l'arc (pédicule évidé). Les cloisons osseuses résiduelles dessinent, en sagittal, des **logettes verticales « en amande »**, et en axial des **circonvolutions « mini-brain »**. Les plateaux sont respectés ou condensés. L'extension au disque et à la vertèbre voisine est possible.\n\nLa vertèbre évidée ou le mini-brain ne sont pas spécifiques : myélome, lymphome, métastases « anévrysmales » (rein, thyroïde, neuro-endocrine), TCG, hémangiome agressif, dysplasie fibreuse.",
+      "figures": [
+        "laredo-t4:fig21.6a",
+        "laredo-t4:fig21.6b"
+      ],
+      "legendes": [
+        "**Plasmocytome de C7** : lésion soufflante du corps et de l'arc postérieur, coque périostée discontinue, extension aux tissus mous et circonvolutions en IRM axiale.",
+        "**Plasmocytome de T2** étendu au canal, au disque et à la vertèbre sus-jacente : aspect évidé au scanner, signal homogène sur toutes les séquences."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Logettes verticales en amande en sagittal, circonvolutions en axial : quel aspect et est-il spécifique ?",
+        "a": "« Mini-brain » du plasmocytome, évocateur mais non spécifique (myélome, lymphome, métastases anévrysmales, TCG…)."
+      }
+    },
+    {
+      "titre": "Traitement et devenir",
+      "texte": "Le traitement est la **radiothérapie** (40 Gy, 50 Gy si la lésion dépasse 5 cm). Le risque majeur est la **transformation en myélome** : 72 % à 10 ans (médiane 21 mois). Facteurs de mauvais pronostic : plus de 60 ans, au moins deux foyers en TEP, chaînes légères libres anormales, immunoglobuline monoclonale persistante plus d'un an après traitement.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le risque majeur après traitement d'un plasmocytome ?",
+        "a": "La transformation en myélome (72 % à 10 ans)."
+      }
+    },
+    {
+      "titre": "Lymphome osseux primitif : une lésion agressive chez un patient en forme",
+      "texte": "Le lymphome osseux primitif représente 7 % des tumeurs osseuses malignes ; il touche l'adulte de 50 à 70 ans et c'est presque toujours un **lymphome B diffus à grandes cellules**. On ne retient le caractère primitif que si le **bilan d'extension est négatif** (scanner thoraco-abdomino-pelvien, TEP-FDG) ; des adénopathies régionales sont tolérées.\n\nL'indice clinique : une lésion osseuse **franchement agressive** chez un patient en **bon état général**, avec des LDH rarement élevées. Il siège au fémur (25 %), au bassin, à l'humérus, au tibia, au rachis, plutôt en diaphyse ou métaphyse, parfois dans une épiphyse ; il est **multifocal** dans 15 à 20 %, volontiers **de part et d'autre d'une articulation**.",
+      "figures": [
+        "laredo-t4:fig21.x367"
+      ],
+      "legendes": [
+        "**Trois aspects du lymphome osseux primitif** : lytique (a), mixte (b) et condensant (c)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion fémorale très agressive chez un patient de 60 ans en parfait état général, bilan d'extension négatif : hypothèse ?",
+        "a": "Lymphome osseux primitif."
+      }
+    },
+    {
+      "titre": "Lymphome : ce qui doit y faire penser",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig21.13",
+        "laredo-t4:fig21.15b",
+        "laredo-t4:fig21.20"
+      ],
+      "legendes": [
+        "**Lymphome du calcanéum** : aspect mixte, condensant et lytique, avec remplacement médullaire et masse en IRM.",
+        "**Lymphome osseux multifocal** du rachis en hyposignal T1 et T2 (flèches).",
+        "**Atteintes distales multiples** des deux tibias dans un lymphome osseux primitif : remplacement médullaire étendu en IRM."
+      ],
+      "cle": "Le lymphome est très sensible à la radio-chimiothérapie : le reconnaître tôt change le pronostic.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Remplacement médullaire étendu en IRM contrastant avec un scanner presque normal : à quoi penser ?",
+        "a": "Au lymphome (ou autre tumeur à petites cellules rondes)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Lésions soufflantes et cloisonnées d'un fémur et d'une vertèbre chez un adulte de 50 ans. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig21.1c",
+      "options": [
+        "Plasmocytome solitaire",
+        "Kyste anévrysmal",
+        "Dysplasie fibreuse",
+        "Hémangiome"
+      ],
+      "reponse": 0,
+      "explication": "Lyse soufflante cloisonnée à coque fine chez l'adulte : plasmocytome solitaire.",
+      "page": "2820",
+      "image_origine": "m12/p357_0"
+    },
+    {
+      "question": "Cotyle : lyse 1C avec masse, mais corticale relativement respectée et signal homogène. Quel aspect oriente vers un plasmocytome ?",
+      "figure": "laredo-t4:fig21.2",
+      "options": [
+        "Os « évidé » avec respect relatif des corticales",
+        "Calcifications en anneaux",
+        "Liseré 1A1",
+        "Niveaux liquide-liquide"
+      ],
+      "reponse": 0,
+      "explication": "La tumeur remplace le spongieux en respectant relativement les corticales, avec un signal homogène malgré sa taille.",
+      "page": "2821",
+      "image_origine": "m12/p358_0_0_0_100_96"
+    },
+    {
+      "question": "Vertèbre tassée et évidée, pédicule évidé, cloisons verticales, aspect axial en circonvolutions. Signe et diagnostic ?",
+      "figure": "laredo-t4:fig21.5c",
+      "options": [
+        "Mini-brain d'un plasmocytome",
+        "Polka dot d'un hémangiome",
+        "Vertèbre ivoire de Paget",
+        "Vertebra plana d'histiocytose"
+      ],
+      "reponse": 0,
+      "explication": "Cloisons « en amande » en sagittal et « mini-brain » en axial : plasmocytome vertébral.",
+      "page": "2823",
+      "image_origine": "m12/p360_0"
+    },
+    {
+      "question": "Fémurs : lyses mitées et perméatives avec corticale feuilletée chez un adulte en bon état général. Diagnostic à évoquer ?",
+      "figure": "laredo-t4:fig21.10a",
+      "options": [
+        "Lymphome osseux primitif",
+        "Ostéoporose",
+        "Paget",
+        "Ostéomalacie"
+      ],
+      "reponse": 0,
+      "explication": "Lyse agressive perméative chez l'adulte avec état général conservé : lymphome osseux.",
+      "page": "2830",
+      "image_origine": "m12/p367_0"
+    },
+    {
+      "question": "Os iliaque et talus : lésions mixtes contenant un fragment osseux (flèche). Quelle tumeur peut contenir un séquestre ?",
+      "figure": "laredo-t4:fig21.10b",
+      "options": [
+        "Lymphome osseux",
+        "Chondrosarcome",
+        "Kyste essentiel",
+        "Lipome"
+      ],
+      "reponse": 0,
+      "explication": "Un séquestre se voit dans 11 % des lymphomes osseux (aussi dans l'ostéite, l'histiocytose, certaines métastases).",
+      "page": "2830",
+      "image_origine": "m12/p367_1"
+    },
+    {
+      "question": "Tibia : remplacement médullaire étendu et grosse masse des tissus mous, corticale relativement respectée, chez un adulte. Diagnostic ?",
+      "figure": "laredo-t4:fig21.12a",
+      "options": [
+        "Lymphome osseux primitif",
+        "Ostéosarcome",
+        "Ostéomyélite",
+        "Myxofibrosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Tumeur des deux côtés d'une corticale conservée chez l'adulte : lymphome (Ewing chez l'enfant).",
+      "page": "2831",
+      "image_origine": "m12/p368_0"
+    },
+    {
+      "question": "Condensation étendue isolée d'un os iliaque sans hypertrophie ni trame fibrillaire, masse en IRM. Diagnostic ?",
+      "figure": "laredo-t4:fig21.12b",
+      "options": [
+        "Lymphome condensant",
+        "Paget",
+        "Ostéose iliaque condensante",
+        "Métastase de prostate"
+      ],
+      "reponse": 0,
+      "explication": "Condensation unique étendue sans critère de Paget, avec remplacement médullaire et masse : lymphome osseux primitif condensant.",
+      "page": "2832",
+      "image_origine": "m12/p369_0"
+    },
+    {
+      "question": "Genou : lésions des deux côtés de l'articulation, fémur et tibia, chez un adulte. Diagnostic évocateur ?",
+      "figure": "laredo-t4:fig21.18b",
+      "options": [
+        "Lymphome osseux multifocal",
+        "Tumeur à cellules géantes",
+        "Chondroblastome",
+        "Arthrite septique"
+      ],
+      "reponse": 0,
+      "explication": "Des foyers multiples de part et d'autre d'une articulation sont évocateurs d'un lymphome osseux primitif.",
+      "page": "2834",
+      "image_origine": "m12/p372_1"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Plasmocytome solitaire : un myélome qui n'est pas (encore) diffus",
+        "Un os évidé, un signal homogène",
+        "Au rachis : amande et mini-brain"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "hs": [
+        "Traitement et devenir",
+        "Lymphome osseux primitif : une lésion agressive chez un patient en forme",
+        "Lymphome : ce qui doit y faire penser"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m12",
+  "images_non_rattachees": [
+    "m12/p359_0"
+  ]
+}

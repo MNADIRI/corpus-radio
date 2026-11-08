@@ -1,0 +1,352 @@
+{
+  "id": "laredo-t4:m02",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 2,
+  "chapitre_libelle": "Chapitre 2 · Pseudo-tumeurs",
+  "titre": "Dysplasies condensantes, enchondromatoses et exostoses",
+  "pages": "2501–2539",
+  "objectifs": [
+    "Reconnaître mélorhéostose, ostéopoécilie et ostéopathie striée",
+    "Distinguer Ollier, Maffucci et métachondromatose",
+    "Connaître le risque de dégénérescence des chondromes et exostoses multiples"
+  ],
+  "essentiels": [
+    "Mélorhéostose : hyperostose corticale « en coulée de bougie », sur un versant du membre, franchissant les articulations, selon un sclérotome (L5, S1 surtout). Sporadique. Hypo T1 et T2, hyperfixation. Peut s'associer à une masse ostéocartilagineuse dans le myotome correspondant.",
+    "Ostéopoécilie : multiples petits îlots condensants ronds ou ovalaires, de même taille, symétriques, péri-articulaires (bassin, mains, pieds, épiphyses). Autosomique dominante (LEMD3). Scintigraphie normale. Association : dermatofibrose lenticulaire (Buschke-Ollendorf).",
+    "Ostéopathie striée (Voorhoeve) : stries condensées verticales métaphysaires, en éventail sur les ailes iliaques, scintigraphie normale. La dystrophie sclérosante mixte associe 2 ou 3 de ces dysplasies.",
+    "Gardner (polypose adénomateuse familiale, gène APC, 5q21) : ostéomes multiples (sinus, mandibule, voûte), dents surnuméraires et incluses, desmoïdes. Les ostéomes précèdent souvent les polypes : toujours rechercher la polypose.",
+    "Ollier : enchondromes multiples asymétriques, non héréditaires (mosaïque somatique), métaphyso-diaphysaires, mains et pieds, épiphyses épargnées, en colonnes. Déformations et raccourcissements. Dégénérescence en chondrosarcome (environ 20 %), rare aux petits os des mains et pieds.",
+    "Maffucci : enchondromatose + hémangiomes des tissus mous (phlébolithes). Risque de dégénérescence plus élevé (30–50 %) et tumeurs associées plus variées.",
+    "Métachondromatose : enchondromes + pseudo-exostoses des mains et pieds dirigées VERS l'articulation, qui régressent ; pas de dysplasie ; autosomique dominante (PTPN11).",
+    "Maladie exostosante : autosomique dominante (EXT1 > EXT2), exostoses multiples + dysplasie (ulna courte, main en baïonnette, cols fémoraux larges). Une douleur ou une croissance après la fin de croissance → chondrosarcome ; coiffe > 2 cm suspecte. Trevor (dysplasie épiphysaire hémimélique) : ostéochondrome épiphysaire, versant médial d'un membre inférieur (talus, condyle médial)."
+  ],
+  "introduction": "Ce module regroupe des **dysplasies osseuses constitutionnelles** que l'on découvre souvent par hasard et qu'il faut savoir nommer pour ne pas les biopsier. Deux familles : les **dysplasies condensantes** (trop d'os compact au mauvais endroit) et les **dysplasies cartilagineuses** (du cartilage de croissance qui « s'égare » dans la métaphyse ou à la surface de l'os). La clé de lecture est presque toujours la **distribution** des lésions.",
+  "sections": [
+    {
+      "titre": "Mélorhéostose : une coulée qui suit un nerf",
+      "texte": "La mélorhéostose (du grec mélos, membre, et rhéo, couler) est une **hyperostose corticale compacte « en coulée de bougie »** qui s'écoule le long de la surface d'une diaphyse, **sur un seul versant du membre**, et qui franchit les articulations pour continuer sur l'os suivant.\n\nElle ne respecte pas les limites d'un os mais celles d'un **sclérotome**, c'est-à-dire le territoire osseux innervé par une racine rachidienne (le plus souvent **L5 ou S1**). C'est ce qui explique qu'elle atteigne plusieurs os alignés du même membre, ou une côte et la vertèbre du même métamère.\n\nElle peut s'accompagner d'une **masse ostéocartilagineuse intramusculaire** dans le myotome correspondant (grand fessier, creux poplité), qui ne dégénère pas. En IRM, la coulée est en hyposignal T1 et T2 ; la scintigraphie fixe.",
+      "figures": [
+        "laredo-t4:fig2.1i",
+        "laredo-t4:fig2.2a",
+        "laredo-t4:fig2.6a"
+      ],
+      "legendes": [
+        "**Carte des sclérotomes** (d'après Murray et McCredie). Chaque teinte correspond au territoire osseux d'une racine : la mélorhéostose « colorie » un de ces territoires, jamais un os au hasard.",
+        "**Mélorhéostose du sclérotome S1.** Épaississement cortical en coulée de la diaphyse fémorale (a) et condensation de la diaphyse tibiale (b) du même côté, avec masse calcifiée sous l'ischion (flèche).",
+        "**Masses ostéocartilagineuses du creux poplité** associées à une mélorhéostose S1 : ossification intra-osseuse du condyle latéral et de la fibula, masses des tissus mous de signal mixte, graisseux et osseux, à prise de contraste périphérique."
+      ],
+      "cle": "Une condensation qui suit un versant de membre et passe d'un os à l'autre = mélorhéostose (sclérotome).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi la mélorhéostose touche-t-elle plusieurs os alignés d'un même membre ?",
+        "a": "Elle suit un sclérotome, territoire osseux d'une racine (souvent L5 ou S1), et non les limites d'un os."
+      }
+    },
+    {
+      "titre": "Ostéopoécilie et ostéopathie striée : des îlots et des stries",
+      "texte": "L'**ostéopoécilie** (os « tacheté ») réalise de **multiples petits îlots condensants**, ronds ou ovalaires, **tous de la même taille**, **symétriques** et **péri-articulaires** (bassin, épiphyses, mains, pieds). C'est une affection autosomique dominante (gène LEMD3). Chaque îlot ressemble à un îlot condensant bénin : hyposignal sur toutes les séquences et **scintigraphie normale**. Associée à une dermatofibrose lenticulaire disséminée, elle forme le syndrome de **Buschke-Ollendorf**.\n\nL'**ostéopathie striée** (Voorhoeve) dessine des **stries condensées verticales**, parallèles au grand axe des os longs, surtout métaphysaires, et **en éventail sur les ailes iliaques**. Scintigraphie normale également.\n\nQuand deux ou trois de ces dysplasies coexistent chez un même patient, on parle de **dystrophie osseuse sclérosante mixte**.",
+      "figures": [
+        "laredo-t4:fig2.2d",
+        "laredo-t4:fig2.1e"
+      ],
+      "legendes": [
+        "**Ostéopoécilie du poignet** : îlots condensés multiples, arrondis, de même taille, répartis autour des articulations du carpe et des bases métacarpiennes.",
+        "**Dystrophie sclérosante mixte** : îlots d'ostéopoécilie du plateau tibial et stries d'ostéopathie striée de l'extrémité supérieure du tibia chez le même patient."
+      ],
+      "cle": null,
+      "piege": "Des condensations multiples chez un patient cancéreux font penser à des métastases. Ici : taille identique, symétrie, siège péri-articulaire et scintigraphie normale signent la dysplasie.",
+      "pourquoi": "La scintigraphie est normale parce que ces îlots sont de l'os compact mature, sans remodelage actif ; une métastase condensante, elle, stimule les ostéoblastes et fixe.",
+      "verification": {
+        "q": "Îlots condensants multiples chez une patiente traitée pour un cancer du sein : quels arguments pour une ostéopoécilie ?",
+        "a": "Îlots de même taille, symétriques, péri-articulaires, et scintigraphie normale (os mûr sans remodelage)."
+      }
+    },
+    {
+      "titre": "Syndrome de Gardner : l'ostéome qui annonce le cancer colique",
+      "texte": "Le syndrome de Gardner est une forme de **polypose adénomateuse familiale** (gène **APC**, 5q21, autosomique dominante). Il associe une polypose colique, des **ostéomes multiples** (sinus, mandibule, voûte), des **anomalies dentaires** (dents surnuméraires et incluses) et des tumeurs des tissus mous, notamment des **desmoïdes**.\n\nL'intérêt radiologique est majeur : les ostéomes **précèdent souvent les polypes**, alors que le risque de cancer colorectal atteint 50 % à 30 ans et presque 100 % ensuite. Sur les os longs, l'ostéome prend plutôt la forme d'une excroissance localisée d'une corticale épaissie et sinueuse.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Ostéomes multiples de la face ou dents incluses surnuméraires → demander une exploration colique.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéomes mandibulaires et dents incluses chez un adulte jeune : que demander ?",
+        "a": "Une exploration colique : syndrome de Gardner (APC), les ostéomes précèdent souvent les polypes."
+      }
+    },
+    {
+      "titre": "Enchondromatoses : Ollier et Maffucci",
+      "texte": "La **maladie d'Ollier** est une enchondromatose **non héréditaire** (mutation somatique en mosaïque, souvent IDH1/2) : des **enchondromes multiples, asymétriques**, prédominant sur un hémicorps ou un membre. Ils siègent dans les **métaphyses et diaphyses** des os longs, des mains et des pieds, et **épargnent les épiphyses**.\n\nLes chondromes s'agglutinent dans des métaphyses élargies ou s'alignent **en colonnes verticales** de la métaphyse vers la diaphyse, comme des restes de cartilage de croissance abandonnés au fil de la croissance. Ils entraînent déformations et raccourcissements. En IRM : architecture lobulaire, hypersignal T2 franc entre les calcifications (aspect en échiquier), rehaussement périphérique des lobules.\n\nLe **syndrome de Maffucci** ajoute des **hémangiomes des tissus mous**, reconnaissables à leurs **phlébolithes**. Le risque de dégénérescence en chondrosarcome est d'environ **20 % dans l'Ollier** (rare aux petits os des mains et pieds) et de **30 à 50 % dans le Maffucci**, avec des tumeurs associées plus variées.",
+      "figures": [
+        "laredo-t4:fig4.2a"
+      ],
+      "legendes": [
+        "**Enchondromatose de la main** : chondromes qui soufflent et déforment les phalanges et les métacarpiens distaux. À la main, malgré l'aspect spectaculaire, la dégénérescence est rare."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le chondrome est un îlot de cartilage de croissance qui n'a pas été remplacé par de l'os. Comme la physe s'éloigne pendant la croissance, ces îlots restent alignés derrière elle : d'où les colonnes.",
+      "verification": {
+        "q": "Quel est le risque de chondrosarcome dans l'Ollier et dans le Maffucci ?",
+        "a": "Environ 20 % dans l'Ollier (rare aux mains et pieds), 30 à 50 % dans le Maffucci."
+      }
+    },
+    {
+      "titre": "Métachondromatose et autres enchondromatoses",
+      "texte": "La **métachondromatose** (autosomique dominante, PTPN11) associe des enchondromes et des **pseudo-exostoses** des mains et des pieds. Quatre critères les distinguent des vraies exostoses : pas de dysplasie osseuse, croissance **dirigée vers l'articulation**, **régression** après la première ou deuxième décennie, association à des enchondromes.\n\nD'autres enchondromatoses touchent le **rachis** (platyspondylie) : spondylo-enchondrodysplasie, cheiro-spondylo-enchondromatose, dys-spondylo-enchondromatose. L'Ollier et le Maffucci n'en ont pas ou très peu.",
+      "figures": [
+        "laredo-t4:fig4.9a"
+      ],
+      "legendes": [
+        "**Métachondromatose** : pseudo-exostoses des doigts orientées vers l'articulation (flèches) et lésions métaphysaires du genou chez différents patients."
+      ],
+      "cle": null,
+      "piege": "Une exostose fuit l'articulation ; une pseudo-exostose de métachondromatose pointe vers elle.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Excroissance d'un doigt qui pointe vers l'articulation et régresse après 20 ans : exostose ou pseudo-exostose ?",
+        "a": "Pseudo-exostose de métachondromatose : une vraie exostose fuit l'articulation."
+      }
+    },
+    {
+      "titre": "Maladie exostosante : des exostoses et une dysplasie",
+      "texte": "La **maladie exostosante multiple** est autosomique dominante (mutation **EXT1** dans 65 % des cas, **EXT2** dans 35 %), avec une histoire familiale dans 80 % des cas. Le défaut de sulfate d'héparane perturbe la signalisation dans la physe : du cartilage s'échappe latéralement et produit des **exostoses**, perpendiculaires à la métaphyse puis orientées vers la diaphyse.\n\nCe n'est pas qu'une collection d'exostoses : c'est aussi une **dysplasie** des métaphyses. On voit une **ulna courte** avec main « en baïonnette » (type Madelung), une tête radiale luxée, des **cols fémoraux courts et larges** en coxa valga, un genu valgum, des branches ilio-pubiennes massives. Les exostoses peuvent aussi créer des conflits : bursite, conflit ischio-fémoral, compression nerveuse ou vasculaire.",
+      "figures": [
+        "laredo-t4:fig4.1k",
+        "laredo-t4:fig5.5f"
+      ],
+      "legendes": [
+        "**Déformations de la maladie exostosante.** Brièveté de l'ulna avec déformation du poignet (a), luxation de la tête radiale, élargissement des métaphyses et des cols fémoraux (c), exostoses fémorales et tibiales, bassin massif (g).",
+        "**Conflit ischio-fémoral** sur exostoses fémorales et ischiatiques : œdème et prise de contraste du muscle carré fémoral pris en étau."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "En plus des exostoses, quelles déformations rappellent qu'il s'agit d'une dysplasie ?",
+        "a": "Ulna courte avec poignet de type Madelung, luxation de la tête radiale, cols fémoraux courts et larges en coxa valga, genu valgum."
+      }
+    },
+    {
+      "titre": "Quand une exostose dégénère",
+      "texte": "Le risque de chondrosarcome est d'environ **1 % pour une exostose solitaire** et de **0,5 à 5 %** dans la maladie exostosante, avec un pic vers 25-30 ans. La dégénérescence part de la **coiffe cartilagineuse**.\n\nDeux alarmes cliniques : une **douleur** ou une **augmentation de volume après la fin de la croissance**, période où une exostose normale cesse de grandir. En imagerie, une **coiffe non minéralisée de plus de 2 cm** chez l'adulte est suspecte, comme des calcifications cartilagineuses dispersées dans les tissus mous en dehors de la masse ossifiée.",
+      "figures": [
+        "laredo-t4:fig5.8"
+      ],
+      "legendes": [
+        "**Chondrosarcome dédifférencié sur maladie exostosante** : volumineuse masse périnéale contenant des calcifications cartilagineuses, détruisant la branche ischio-pubienne."
+      ],
+      "cle": "Exostose qui grossit ou fait mal après la fin de la croissance, ou coiffe > 2 cm → chondrosarcome jusqu'à preuve du contraire.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Adulte de 35 ans, exostose qui grossit depuis un an. Quel examen et quelle mesure ?",
+        "a": "IRM et mesure de la coiffe cartilagineuse : plus de 2 cm chez l'adulte fait suspecter un chondrosarcome."
+      }
+    },
+    {
+      "titre": "Maladie de Trevor : l'exostose de l'épiphyse",
+      "texte": "La **dysplasie épiphysaire hémimélique** (maladie de Trevor) est une croissance anarchique de type ostéochondrome qui naît d'une **épiphyse** ou d'un os du tarse. Elle touche **un seul membre** (inférieur surtout), sur son **versant médial** : talus, premier cunéiforme, malléoles, condyle fémoral médial. Elle concerne surtout les garçons dans la petite enfance.\n\nL'épiphyse paraît hypertrophiée, asymétrique et fragmentée en noyaux irréguliers. Le scanner montre la continuité corticale et spongieuse avec l'épiphyse, comme pour une exostose ; l'IRM montre une masse cartilagineuse en hypersignal T2.",
+      "figures": [
+        "laredo-t4:fig6.4f"
+      ],
+      "legendes": [
+        "**Dysplasie épiphysaire hémimélique** du versant latéral de la trochlée fémorale chez une adolescente : hypertrophie de l'épiphyse (flèches), continuité cortico-spongieuse au scanner, cartilage en IRM."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Garçon de 3 ans, masse osseuse du versant médial de la cheville en continuité avec l'épiphyse. Diagnostic ?",
+        "a": "Dysplasie épiphysaire hémimélique (maladie de Trevor)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Main d'un adulte : condensations sur un seul rayon (flèches). Distribution évocatrice de quelle dysplasie ?",
+      "figure": "laredo-t4:fig2.8",
+      "options": [
+        "Mélorhéostose (sclérotome C6)",
+        "Ostéopoécilie",
+        "Ostéopathie striée",
+        "Maladie d'Ollier"
+      ],
+      "reponse": 0,
+      "explication": "Condensations limitées à un territoire, ici le sclérotome C6 : mélorhéostose. L'ostéopoécilie serait diffuse, symétrique et péri-articulaire.",
+      "page": "2505",
+      "image_origine": "m02/p042_1"
+    },
+    {
+      "question": "Bassin : multiples condensations nodulaires de même taille, symétriques, péri-articulaires. Diagnostic ?",
+      "figure": "laredo-t4:fig2.1a",
+      "options": [
+        "Ostéopoécilie",
+        "Métastases condensantes",
+        "Mélorhéostose",
+        "Maladie de Paget"
+      ],
+      "reponse": 0,
+      "explication": "Petits îlots condensants calibrés, symétriques, autour des articulations : ostéopoécilie. Scintigraphie normale, contrairement aux métastases.",
+      "page": "2506",
+      "image_origine": "m02/p043_0"
+    },
+    {
+      "question": "Genou : stries condensées verticales métaphysaires. Diagnostic ?",
+      "figure": "laredo-t4:fig2.1e",
+      "options": [
+        "Ostéopathie striée",
+        "Lignes de Park (arrêt de croissance)",
+        "Mélorhéostose",
+        "Infarctus osseux"
+      ],
+      "reponse": 0,
+      "explication": "Stries linéaires verticales parallèles à l'axe des os : ostéopathie striée (Voorhoeve). Les lignes d'arrêt de croissance sont transversales.",
+      "page": "2508",
+      "image_origine": "m02/p045_0"
+    },
+    {
+      "question": "Crâne, sinus et mandibule : ostéomes multiples et dents incluses surnuméraires (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig3.1a",
+      "options": [
+        "Syndrome de Gardner",
+        "Ostéopoécilie",
+        "Dysplasie fibreuse polyostotique",
+        "Maladie de Paget"
+      ],
+      "reponse": 0,
+      "explication": "Légende : syndrome de Gardner, ostéomes multiples de la voûte, des sinus et de la mandibule, dents incluses surnuméraires. Le texte rappelle que les ostéomes précèdent souvent la polypose colique (→ coloscopie).",
+      "page": "2511",
+      "image_origine": "m02/p048_0"
+    },
+    {
+      "question": "Bassin et fémurs : métaphyses élargies contenant des calcifications cartilagineuses, prédominant d'un côté. Diagnostic ?",
+      "figure": "laredo-t4:fig4.3b",
+      "options": [
+        "Maladie d'Ollier",
+        "Maladie exostosante",
+        "Dysplasie fibreuse polyostotique",
+        "Maladie de Paget"
+      ],
+      "reponse": 0,
+      "explication": "Enchondromes multiples asymétriques dans des métaphyses élargies, avec matrice cartilagineuse : enchondromatose d'Ollier.",
+      "page": "2516",
+      "image_origine": "m02/p053_0"
+    },
+    {
+      "question": "Mains : enchondromes multiples et petites calcifications rondes des parties molles (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig4.8",
+      "options": [
+        "Syndrome de Maffucci",
+        "Maladie d'Ollier",
+        "Métachondromatose",
+        "Chondromatose synoviale"
+      ],
+      "reponse": 0,
+      "explication": "Enchondromes + phlébolithes d'hémangiomes des tissus mous = Maffucci, avec un risque de dégénérescence plus élevé que l'Ollier.",
+      "page": "2520",
+      "image_origine": "m02/p057_0_0_46_100_100"
+    },
+    {
+      "question": "Thorax et ceinture scapulaire : côtes d'aspect rubané et ondulant, excroissances scapulaires, humérales et costales (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig5.3",
+      "options": [
+        "Maladie exostosante (exostoses multiples)",
+        "Maladie d'Ollier",
+        "Syndrome de Maffucci",
+        "Dysplasie fibreuse polyostotique"
+      ],
+      "reponse": 0,
+      "explication": "Légende : maladie exostosante, aspect rubané et ondulant des côtes, exostoses scapulaires, humérales et costales. Transmission autosomique dominante (EXT1/EXT2) d'après le texte.",
+      "page": "2530",
+      "image_origine": "m02/p067_0"
+    },
+    {
+      "question": "Patient porteur d'une maladie exostosante, volumineuse masse ossifiée de la hanche. Diagnostic à craindre ?",
+      "figure": "laredo-t4:fig5.6a",
+      "options": [
+        "Chondrosarcome périphérique",
+        "Myosite ossifiante",
+        "Ostéosarcome parostéal",
+        "Simple exostose sessile"
+      ],
+      "reponse": 0,
+      "explication": "Masse volumineuse sur exostose chez l'adulte : chondrosarcome périphérique (ici grade 1). Critère : coiffe cartilagineuse > 2 cm.",
+      "page": "2532",
+      "image_origine": "m02/p069_0"
+    },
+    {
+      "question": "Enfant, genu valgum : épiphyses du condyle fémoral et du plateau tibial médiaux hypertrophiées et fragmentées, ossifications en grains. Diagnostic ?",
+      "figure": "laredo-t4:fig4.8",
+      "options": [
+        "Dysplasie épiphysaire hémimélique (Trevor)",
+        "Chondromatose synoviale",
+        "Ostéochondrite disséquante",
+        "Chondroblastome"
+      ],
+      "reponse": 0,
+      "explication": "Croissance anarchique type ostéochondrome d'une épiphyse, versant médial d'un membre inférieur : maladie de Trevor.",
+      "page": "2535",
+      "image_origine": "m02/p072_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Mélorhéostose : une coulée qui suit un nerf",
+        "Ostéopoécilie et ostéopathie striée : des îlots et des stries",
+        "Syndrome de Gardner : l'ostéome qui annonce le cancer colique"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Enchondromatoses : Ollier et Maffucci",
+        "Métachondromatose et autres enchondromatoses",
+        "Maladie exostosante : des exostoses et une dysplasie"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "Quand une exostose dégénère",
+        "Maladie de Trevor : l'exostose de l'épiphyse"
+      ],
+      "secs": [
+        6,
+        7
+      ],
+      "qs": [
+        7,
+        8
+      ]
+    }
+  ],
+  "ancien_id": "m02",
+  "images_non_rattachees": [
+    "m02/p049_0_0_39_100_100",
+    "m02/p053_1_0_0_100_62"
+  ]
+}

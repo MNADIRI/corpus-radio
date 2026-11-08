@@ -1,0 +1,387 @@
+{
+  "id": "cotten-t1:c01",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 1,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Arthrose",
+  "pages": "1–22",
+  "objectifs": [
+    "Comprendre l'arthrose comme une maladie de toute l'articulation (cartilage, synoviale, os sous-chondral)",
+    "Lire une radiographie d'arthrose articulation par articulation et la coter (Kellgren-Lawrence)",
+    "Savoir ce qu'apportent IRM, scintigraphie, arthroscanner et échographie"
+  ],
+  "essentiels": [
+    "Maladie de toute l'articulation : érosion du cartilage, sclérose de l'os sous-chondral, ostéophytes, synovite, atrophie musculaire. Stades : moléculaire silencieux → préradiologique (IRM) → radiologique.",
+    "Cercle vicieux cartilage–synoviale–os : chondrocytes pro-cataboliques (IL-1, MMP-3/13, NO, PGE2), synovite secondaire aux débris, os sous-chondral remodelé (sclérose, lésions médullaires IRM) communiquant avec le cartilage par microfractures et vaisseaux.",
+    "Clinique : douleur mécanique non corrélée aux lésions, dérouillage matinal < 15 min. Biologie normale ; liquide synovial clair, 200–2 000 leucocytes/mm³.",
+    "Radiographie (Kellgren-Lawrence 0–IV) : pincement localisé en zone de charge, ostéophytes, sclérose et géodes sous-chondrales. Le pincement n'apparaît qu'après une perte cartilagineuse ≥ 10–13 %.",
+    "Rachis : discopathie → rétrolisthésis ; arthrose zygapophysaire → antélisthésis ; maladie de Baastrup. Foramens cervicaux sur les 3/4 ; canal lombaire non évaluable en radiographie.",
+    "Hanche : faux profil de Lequesne, interligne normal ~4 mm, ≤ 2 mm = meilleur signe de coxarthrose ; pincement supérolatéral le plus souvent ; formes hypertrophique/atrophique ; épaississement cortical médial du col (spécifique) ; coxarthrose destructrice rapide (≥ 2 mm/an, chondrolyse < 2 ans).",
+    "Genou : face en schuss (flexion, charge), profil, axiale ; main : IPD (Heberden) > IPP (Bouchard), arthrose érosive (aile de mouette, ankylose 21 %), rhizarthrose ; pied : hallux rigidus, tarse « bossu ».",
+    "IRM : dGEMRIC, T2 mapping, T1rho (composition), WORMS/KOSS/BLOKS (semi-quantitatif), qMRI (volume). Scintigraphie positive en phase active ; arthroscanner = référence pour l'épaisseur du cartilage ; échographie : épanchement, synovite, ostéophytes marginaux, mais pas l'os sous-chondral."
+  ],
+  "introduction": "L'arthrose n'est pas une simple « usure du cartilage ». C'est une maladie de **toute l'articulation** où le cartilage, la membrane synoviale et l'os sous-chondral s'entretiennent mutuellement. En imagerie, la radiographie reste l'examen de base : il faut savoir quelles incidences demander, où chercher le pincement selon l'articulation, et ce que les autres techniques ajoutent.",
+  "sections": [
+    {
+      "titre": "Une maladie de toute l'articulation",
+      "texte": "Les anomalies structurales de l'arthrose sont l'**érosion progressive du cartilage**, la **sclérose de l'os sous-chondral**, les **ostéophytes**, l'**inflammation de la synoviale** et des tendons, et l'**atrophie des muscles** périarticulaires. La perte de force et de contrôle neuromusculaire protège moins l'articulation et augmente les contraintes sur le cartilage.\n\nLa maladie évolue en trois temps : un stade **moléculaire silencieux** (marqueurs biologiques en validation, épitopes du collagène de type 2), un stade **préradiologique** visible seulement en IRM, puis le stade **radiologique**. Sa prévalence est faible jusqu'à 45 ans puis augmente de façon exponentielle : à 70 ans et plus, la prévalence radiologique atteint 90 % chez la femme.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Quand la radiographie montre l'arthrose, la maladie évolue déjà depuis longtemps : l'IRM voit le stade préradiologique.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Le cercle vicieux cartilage – synoviale – os",
+      "texte": "Les **chondrocytes** changent de phénotype : hypertrophique (minéralisation de la matrice), fibroblastique (collagènes I et III anormaux dans la couche superficielle) ou **pro-catabolique** (IL-1, IL-6, PGE2, NO, métalloprotéinases MMP-3 et MMP-13) qui dégrade la matrice.\n\nLa **synovite** est secondaire : les fragments ostéocartilagineux, les microcristaux et les débris de matrice libérés dans le liquide l'entretiennent, et la synoviale produit à son tour des médiateurs qui dégradent le cartilage.\n\nL'**os sous-chondral** se remodèle : la lame s'épaissit (sclérose), des **lésions de la moelle osseuse** apparaissent en IRM en regard du cartilage abîmé, surtout au plateau tibial médial. Microfractures et vaisseaux traversent la plaque ostéochondrale et laissent passer des médiateurs (IL-6) des ostéoblastes vers le cartilage.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La sclérose sous-chondrale est une adaptation de l'os à des contraintes anormales. Elle n'est pas passive : ces ostéoblastes anormaux sécrètent des médiateurs qui accélèrent la destruction du cartilage.",
+      "verification": null
+    },
+    {
+      "titre": "Clinique, biologie et facteurs de risque",
+      "texte": "La **douleur mécanique** est le symptôme principal : elle apparaît à l'effort et cède au repos, et elle n'est **pas corrélée à la sévérité radiologique**. Le **dérouillage matinal** ne dépasse pas 15 minutes. Une douleur nocturne ou inflammatoire fait chercher une poussée, une bursite ou une autre cause.\n\nLa biologie est **normale** (VS, CRP) ; elle sert à éliminer un rhumatisme inflammatoire ou métabolique (goutte, hémochromatose). Le liquide synovial est clair, jaune paille, avec **200 à 2 000 leucocytes/mm³**, parfois des cristaux de pyrophosphate de calcium.\n\nLes facteurs de risque modulables comptent car ils se corrigent : **obésité**, troubles métaboliques, troubles axiaux, déséquilibres musculaires, traumatismes professionnels et sportifs.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Douleur mécanique, dérouillage bref, biologie normale, liquide mécanique : profil de l'arthrose.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "La radiographie et la cotation de Kellgren-Lawrence",
+      "texte": "La radiographie reste l'examen de première ligne. Elle estime indirectement l'épaisseur du cartilage par l'**espace articulaire minimal**, mais le pincement n'apparaît qu'après une perte de **10 à 13 %** du cartilage, et la mesure est peu reproductible.\n\nOn recherche systématiquement : un **pincement asymétrique** centré sur la zone de charge, des **ostéophytes** marginaux ou centraux, une **sclérose** et des **géodes** sous-chondrales, un empâtement synovial et des nodules ostéochondromateux. La radiographie sert aussi à trouver une cause (chondrocalcinose, dysplasie, ostéonécrose) ou un diagnostic différentiel (ostéochondromatose primitive, hémochromatose).",
+      "figures": [
+        "cotten-t1:fig1.4"
+      ],
+      "legendes": [
+        "**Kellgren-Lawrence au genou**, du grade 0 (vide articulaire témoignant d'un cartilage conservé) au grade IV (pincement sévère, sclérose et géode du plateau tibial interne)."
+      ],
+      "cle": null,
+      "piege": "Un interligne normal en radiographie n'exclut pas une arthrose débutante : il faut perdre au moins 10 % du cartilage pour voir un pincement.",
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Rachis : disque, zygapophyses, uncus",
+      "texte": "Le bilan comporte face, profil et trois quarts, en charge ; au cervical s'ajoute le **cliché transbuccal** pour C0-C1-C2. On regarde d'abord les jonctions discovertébrales et les **articulations zygapophysaires** ; au cervical, les **uncovertébrales** et les foramens sur les trois quarts.\n\nUne articulation zygapophysaire normale a des surfaces concaves et une lame nette « dessinée à l'encre de Chine ». Arthrosique, ses berges deviennent parallèles, floues et denses, avec parfois de gros ostéophytes. L'épaisseur de l'interligne zygapophysaire n'est pas fiable : couché, deux facettes usées peuvent s'écarter et créer un **faux interligne**.\n\nLes troubles de l'alignement orientent : un **pincement discal** entraîne un **rétrolisthésis**, une **arthrose zygapophysaire** un **antélisthésis**. Un disque très pincé peut mettre en contact les épineuses : **maladie de Baastrup**. Les foramens thoraciques et lombaires et le canal lombaire ne s'évaluent pas en radiographie (ligne spinolamaire invisible).",
+      "figures": [
+        "cotten-t1:fig1.6",
+        "cotten-t1:fig1.10a"
+      ],
+      "legendes": [
+        "**Discopathie C3-C4 et C5-C6** (étoiles) sur le profil ; en C4-C5, un ostéophyte « moule » le débord discal radiotransparent.",
+        "**Discopathie L4-L5** de profil et de trois quarts : pincement, vide gazeux intradiscal et ostéophytes."
+      ],
+      "cle": "Disque pincé → rétrolisthésis. Zygapophyses usées → antélisthésis.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Hanche : faux profil et pincement supérolatéral",
+      "texte": "L'interligne coxofémoral se voit sur le bassin de face ; le **faux profil de Lequesne** est indispensable quand le pincement est douteux. L'interligne normal mesure **environ 4 mm** ; un interligne **≤ 2 mm** de face est le signe le mieux corrélé à la douleur et le plus discriminant pour la coxarthrose.\n\nLe pincement siège dans les zones de contrainte maximale : **supérolatéral** de face, **antérosupérieur** sur le faux profil ; les formes postéro-inférieures sont plus rares. Deux phénotypes : **hypertrophique** (ostéophytes) et **atrophique** (sans ostéophytes, femme, tête peu couverte, évolution plus rapide). Un **épaississement de la corticale médiale du col** est peu sensible mais très spécifique.\n\nLa **coxarthrose destructrice rapide** perd au moins **2 mm d'interligne par an** et aboutit à une chondrolyse complète en moins de 2 ans, avec destruction et migration supérolatérale de la tête.",
+      "figures": [
+        "cotten-t1:fig1.12a",
+        "cotten-t1:fig1.14b"
+      ],
+      "legendes": [
+        "**Coxarthrose supérolatérale** de face (ostéophyte péricapital, sclérose) et sur le faux profil (pincement antérosupérieur).",
+        "**Coxarthrose destructrice rapide** : interligne initialement conservé (a), chondrolyse complète deux ans plus tard (b)."
+      ],
+      "cle": null,
+      "piege": "Un petit ostéophyte péricéphalique ou périfovéal stable n'est pas une coxarthrose : on le voit chez 11 % des sujets âgés asymptomatiques et chez des sportifs.",
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Genou, pied et main",
+      "texte": "**Genou** : trois incidences. De face, la technique **en schuss** (postéro-antérieure, en charge, flexion 7–35°) rend le rayon tangent au tiers postérieur des condyles, siège de la chondropathie. Le profil montre la tuméfaction synoviale, les nodules ostéochondromateux et la morphologie patellaire ; l'axiale vers 45° de flexion montre la fémoropatellaire. On cherche pincement, déviation en varus ou valgus, subluxation, ostéophytes, sclérose, géodes.\n\n**Pied** : arthrose cunéométatarsienne du premier rayon (ostéophytes dorsaux : tarse « bossu »), **hallux rigidus** (première métatarsophalangienne), arthrose secondaire à une maladie de Freiberg.\n\n**Main** : l'arthrose **interphalangienne distale** est la plus fréquente (bilatérale, ostéophytes dorsaux = **nodosités d'Heberden**) ; l'IPP (**Bouchard**) l'accompagne rarement seule. L'**arthrose érosive** associe érosions centrales et ostéophytes marginaux (**aile de mouette**), évolue vers l'**ankylose dans 21 %** ; la **rhizarthrose** (trapézométacarpienne) prédomine du côté dominant, avec subluxation latérale de la base du M1 aux stades évolués.",
+      "figures": [
+        "cotten-t1:fig1.16b",
+        "cotten-t1:fig1.21b",
+        "cotten-t1:fig1.18"
+      ],
+      "legendes": [
+        "**Gonarthrose en schuss et de profil** : abrasion osseuse du compartiment interne, ostéophytes, géodes et chondrocalcinose.",
+        "**Arthrose interphalangienne érosive** : érosions centrales des IPD et IPP, aspect en aile de mouette.",
+        "**Hallux rigidus** : pincement, ostéophyte marginal, sclérose et géodes de la première métatarsophalangienne."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le schuss fléchit le genou pour que le faisceau tangente la zone postérieure des condyles, où s'exercent les contraintes et où le cartilage s'use : en extension, on rate le pincement.",
+      "verification": null
+    },
+    {
+      "titre": "IRM : voir le cartilage et l'os sous-chondral",
+      "texte": "L'IRM détecte l'arthrose avant la radiographie et analyse directement cartilage et moelle. Elle montre aussi des causes de pincement sans chondrolyse, comme la **subluxation méniscale**.\n\n**Composition du cartilage** : la **dGEMRIC** (gadolinium ionique qui s'accumule là où manquent les glycosaminoglycanes chargés négativement, acquisition 90 minutes après injection) ; la **cartographie T2** (eau libre, augmente avec l'âge et l'arthrose) ; le **T1rho** (perte de protéoglycanes, corrélé à la sévérité).\n\n**Semi-quantitatif** : le score **WORMS** (14 éléments : cartilage, moelle, kystes, ostéophytes, ménisques, ligaments, épanchement, synovite, corps libres...), puis KOSS et BLOKS. **Quantitatif** (qMRI) : épaisseur et volume du cartilage par segmentation 3D ; il distingue progresseurs lents (−2 % en 2 ans) et rapides (> 15 %).",
+      "figures": [
+        "cotten-t1:fig1.23",
+        "cotten-t1:fig1.26c"
+      ],
+      "legendes": [
+        "**dGEMRIC** : cartographie du temps T1 du cartilage ; un T1 abaissé signale l'appauvrissement en glycosaminoglycanes.",
+        "**IRM semi-quantitative** : découpage du genou en sous-régions (antérieure, centrale, postérieure ; médiale, latérale) pour coter chaque lésion."
+      ],
+      "cle": "dGEMRIC et T1rho = protéoglycanes ; T2 = eau libre ; WORMS = cotation globale ; qMRI = volume.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Scintigraphie, arthroscanner, échographie",
+      "texte": "La **scintigraphie** aux diphosphonates technétiés est **positive en phase active** (ostéophytes, remodelage sous-chondral, géodes) ; une hyperfixation prédirait la progression à 5 ans, mais elle est peu spécifique (inflammation, tumeur). La **SPECT-CT** localise et rend l'image plus spécifique.\n\nL'**arthroscanner** est la technique la plus précise pour l'**épaisseur du cartilage** (cartilage peu dense entre contraste et lame osseuse) et détecte mieux les petites fissures que l'IRM ; il sous-estime l'épaisseur d'environ 0,3 mm.\n\nL'**échographie** voit l'épanchement, la synovite (Doppler), les kystes, les ostéophytes marginaux, les tendons et les ménisques, mais **pas l'os sous-chondral ni les géodes**, ni les ostéophytes centraux.",
+      "figures": [
+        "cotten-t1:fig1.30a"
+      ],
+      "legendes": [
+        "**Arthroscanner et IRM DP fat sat** du même genou : les fissures cartilagineuses focales sont mieux vues en arthroscanner."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    },
+    {
+      "titre": "Traitement : symptomatique et personnalisé",
+      "texte": "Il n'existe pas de traitement curatif : on vise la douleur, la fonction et la qualité de vie, pour retarder la prothèse. La prise en charge associe toujours information, **exercice** (aérobie global et renforcement local) et correction des facteurs mécaniques (**perte de poids**, semelles).\n\nMédicaments à action rapide : **paracétamol** en première ligne (4 g/j max), AINS topiques ou capsaïcine, AINS oraux à dose minimale et durée courte, opioïdes faibles. Médicaments à action lente (**ASAL** : chondroïtine, glucosamine, insaponifiables d'avocat-soja, diacéréine) : effet retardé de 4 à 6 semaines, rémanent, bien tolérés.\n\nEn intra-articulaire : **corticoïdes** (effet rapide mais bref, 1–4 semaines, si poussée inflammatoire) et **acide hyaluronique** (viscosupplémentation : effet retardé de 5 à 13 semaines, prolongé plus de 3 mois).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": null
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Genou en schuss de face (a) et profil (b). Outre l'arthrose fémorotibiale interne avec abrasion osseuse, que montre le profil ?",
+      "figure": "cotten-t1:fig1.16b",
+      "options": [
+        "Arthrose fémoropatellaire sévère, tuméfaction synoviale et nodules ostéochondromateux",
+        "Fracture de la patella",
+        "Chondrocalcinose méniscale isolée",
+        "Ostéonécrose du condyle fémoral"
+      ],
+      "reponse": 0,
+      "explication": "Légende : abrasion osseuse du compartiment interne, ostéophytes marginaux et centraux ; au profil, arthrose fémoropatellaire sévère, tuméfaction synoviale (astérisque blanc), nodules ostéochondromateux (pointes de flèches) et arthrose fémorofabellaire.",
+      "page": "p. 5, 11",
+      "image_origine": "c01/f1.16"
+    },
+    {
+      "question": "Cliché de profil du rachis lombaire : glissement antérieur de L4 associé à une arthrose zygapophysaire L4-L5. Quel mécanisme ?",
+      "figure": "cotten-t1:fig1.8b",
+      "options": [
+        "Antélisthésis par arthrose zygapophysaire",
+        "Rétrolisthésis par discopathie",
+        "Spondylolyse isthmique obligatoire",
+        "Maladie de Baastrup"
+      ],
+      "reponse": 0,
+      "explication": "L'arthrose zygapophysaire entraîne un antélisthésis ; la discopathie entraîne un rétrolisthésis.",
+      "page": "p. 7–8",
+      "image_origine": "c01/f1.8"
+    },
+    {
+      "question": "Cliché de trois quarts cervical : rétrécissement d'un foramen C5-C6. Quelle structure arthrosique est en cause ?",
+      "figure": "cotten-t1:fig1.7",
+      "options": [
+        "L'uncarthrose",
+        "L'arthrose zygapophysaire lombaire",
+        "Un pincement discal isolé sans ostéophyte",
+        "Une maladie de Baastrup"
+      ],
+      "reponse": 0,
+      "explication": "Au cervical, les ostéophytes uncovertébraux rétrécissent les foramens, visibles sur les trois quarts.",
+      "page": "p. 6–7",
+      "image_origine": "c01/f1.7"
+    },
+    {
+      "question": "Hanche de face. Diagnostic et signe désigné par la flèche ?",
+      "figure": "cotten-t1:fig1.13",
+      "options": [
+        "Coxarthrose : épaississement de la corticale médiale du col fémoral",
+        "Coxite inflammatoire : érosion du col",
+        "Ostéonécrose de la tête : liseré de dissection",
+        "Fracture de fatigue du col : cal périosté"
+      ],
+      "reponse": 0,
+      "explication": "Légende : coxarthrose avec pincement supérolatéral, ostéophytose péricapitale et épaississement de la corticale médiale du col fémoral (flèche).",
+      "page": "p. 9–10",
+      "image_origine": "c01/f1.13"
+    },
+    {
+      "question": "Femme de 70 ans : hanche normale il y a 2 ans, aujourd'hui chondrolyse complète avec destruction de la tête. Diagnostic ?",
+      "figure": "cotten-t1:fig1.14b",
+      "options": [
+        "Coxarthrose destructrice rapide",
+        "Coxarthrose hypertrophique classique",
+        "Ostéochondromatose synoviale",
+        "Dysplasie de hanche"
+      ],
+      "reponse": 0,
+      "explication": "Perte ≥ 2 mm/an et chondrolyse complète en moins de 2 ans définissent la coxarthrose destructrice rapide (éliminer aussi une arthrite septique ou microcristalline).",
+      "page": "p. 9",
+      "image_origine": "c01/f1.14"
+    },
+    {
+      "question": "Main de face : érosions centrales des IPD avec ostéophytes marginaux en aile de mouette. Diagnostic ?",
+      "figure": "cotten-t1:fig1.21b",
+      "options": [
+        "Arthrose interphalangienne érosive",
+        "Polyarthrite rhumatoïde",
+        "Rhumatisme psoriasique",
+        "Goutte"
+      ],
+      "reponse": 0,
+      "explication": "Érosions centrales + ostéophytes marginaux aux IPD (index, majeur, auriculaire) : arthrose érosive, avec risque d'ankylose.",
+      "page": "p. 13",
+      "image_origine": "c01/f1.21"
+    },
+    {
+      "question": "Pied de profil : ostéophytes dorsaux cunéométatarsiens. Comment appelle-t-on cet aspect ?",
+      "figure": "cotten-t1:fig1.17",
+      "options": [
+        "Tarse « bossu »",
+        "Hallux rigidus",
+        "Maladie de Freiberg",
+        "Pied de Charcot"
+      ],
+      "reponse": 0,
+      "explication": "Les ostéophytes dorsaux de l'arthrose cunéométatarsienne du premier rayon donnent un tarse bossu, parfois avec bursite ou irritation nerveuse.",
+      "page": "p. 11–12",
+      "image_origine": "c01/f1.17"
+    },
+    {
+      "question": "Avant-pied : déformation de la tête du 3e métatarsien avec arthrose métatarsophalangienne. Cause sous-jacente ?",
+      "figure": "cotten-t1:fig1.19",
+      "options": [
+        "Maladie de Freiberg",
+        "Hallux valgus",
+        "Goutte",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "L'ostéonécrose de la tête métatarsienne (Freiberg) déforme l'épiphyse et conduit à une arthrose secondaire.",
+      "page": "p. 12",
+      "image_origine": "c01/f1.19"
+    },
+    {
+      "question": "Cartographie IRM T2 du cartilage patellaire. Que signifient les territoires rouges et jaunes ?",
+      "figure": "cotten-t1:fig1.24",
+      "options": [
+        "Temps de relaxation T2 augmenté (> 50 ms) : contenu en eau augmenté, cartilage pathologique",
+        "Temps T2 diminué : cartilage normal",
+        "Rehaussement tardif au gadolinium (dGEMRIC)",
+        "Calcifications intracartilagineuses"
+      ],
+      "reponse": 0,
+      "explication": "Légende : les territoires rouges et jaunes ont un temps de relaxation T2 augmenté (> 50 ms) et sont pathologiques (contenu en eau augmenté).",
+      "page": "p. 15",
+      "image_origine": "c01/f1.24"
+    },
+    {
+      "question": "Scintigraphie planaire et radiographies des genoux : hyperfixation bilatérale du compartiment interne, plus intense à gauche. Interprétation proposée par le livre ?",
+      "figure": "cotten-t1:fig1.28",
+      "options": [
+        "Arthrose stable à droite, en évolution à gauche",
+        "Arthrose en évolution à droite, stable à gauche",
+        "Arthrite septique du genou gauche",
+        "Ostéonécrose bilatérale des condyles internes"
+      ],
+      "reponse": 0,
+      "explication": "Légende : arthrose plus évoluée à droite avec ostéophyte bien structuré ; à gauche, hyperfixation plus importante et ostéophyte moins évolué → arthrose stable à droite et en évolution à gauche.",
+      "page": "p. 17",
+      "image_origine": "c01/f1.28"
+    },
+    {
+      "question": "Échographie (a) et arthroscanner (b) du genou gauche. Quelle lésion n'est visible qu'à l'arthroscanner ?",
+      "figure": "cotten-t1:fig1.31b",
+      "options": [
+        "Chondrolyse du compartiment interne (et fissure du LCI, ligament collatéral interne)",
+        "Subluxation du ménisque interne",
+        "Épanchement articulaire",
+        "Ostéophyte marginal"
+      ],
+      "reponse": 0,
+      "explication": "Légende : l'échographie montre la subluxation du ménisque interne, l'épanchement et un ostéophyte ; la chondrolyse interne (flèches noires) et la fissure du LCI ne sont vues qu'à l'arthroscanner.",
+      "page": "p. 5, 14, 19",
+      "image_origine": "c01/f1.31"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Une maladie de toute l'articulation",
+        "Le cercle vicieux cartilage – synoviale – os"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": []
+    },
+    {
+      "hs": [
+        "Clinique, biologie et facteurs de risque",
+        "La radiographie et la cotation de Kellgren-Lawrence"
+      ],
+      "secs": [
+        2,
+        3
+      ],
+      "qs": []
+    },
+    {
+      "hs": [
+        "Rachis : disque, zygapophyses, uncus",
+        "Hanche : faux profil et pincement supérolatéral",
+        "Genou, pied et main"
+      ],
+      "secs": [
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "hs": [
+        "IRM : voir le cartilage et l'os sous-chondral",
+        "Scintigraphie, arthroscanner, échographie",
+        "Traitement : symptomatique et personnalisé"
+      ],
+      "secs": [
+        7,
+        8,
+        9
+      ],
+      "qs": [
+        8,
+        10
+      ]
+    }
+  ],
+  "ancien_id": "c01",
+  "images_non_rattachees": [
+    "c01/s1.1",
+    "c01/s1.2",
+    "c01/s1.3"
+  ]
+}

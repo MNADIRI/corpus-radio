@@ -1,0 +1,824 @@
+{
+  "id": "cotten-t1:c02",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 2,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Affections microcristallines",
+  "pages": "23–85",
+  "objectifs": [
+    "Reconnaître la goutte tophacée chronique en radiographie, échographie, scanner double énergie et IRM",
+    "Distinguer les dépôts de pyrophosphate de calcium (CPP) de l'apatite (PCB) et identifier l'arthropathie à CPP et l'hémochromatose",
+    "Connaître les pièges des calcifications d'apatite en résorption et les arthropathies métaboliques rares (ochronose, oxalose, Wilson)"
+  ],
+  "essentiels": [
+    "Trois grands cristaux, trois topographies : **urate monosodique** et **CPP** → articulaire ; **PCB/apatite** → périarticulaire (tendons, bourses) ; **oxalate de calcium** → osseux.",
+    "Goutte : homme > 40 ans, 1re MTP (site initial ≥ 50 %), accès aigu spontanément résolutif en 5–10 j ; radiographies normales à l'accès aigu.",
+    "Goutte tophacée : tophus denses excentrés asymétriques, **érosions para-articulaires à l'emporte-pièce** à bord surplombant (spicule), en hallebarde, **interligne longtemps préservé**, **pas de déminéralisation**.",
+    "Échographie de la goutte : tophus hyperéchogène à micro-ponctuations avec halo, **signe du double contour** (spécificité ~97 %), tempête de neige ; TDM double énergie : urate codé en vert/rouge.",
+    "CPP : chondrocalcinose linéaire **parallèle à l'os sous-chondral** (hyalin) ou triangulaire (ménisque, symphyse, LTFC) ; genou, poignet, symphyse → 95 % des diagnostics.",
+    "Arthropathie à CPP = « arthrose » des sites atypiques : radiocarpienne, **scaphotrapézienne isolée**, fémoropatellaire isolée, MCP 2–3 ; condensation à la plume, géodes multiples, peu d'ostéophytes, SLAC-wrist.",
+    "Hémochromatose : MCP 2–5 avec **ostéophytes en crochet** du bord radial des têtes, géodes multiples, sujet jeune (25–35 ans) ; dent couronnée et pseudo-pannus = CPP au rachis cervical.",
+    "Apatite : calcification amorphe dense (types A/B/C), résorption = phase douloureuse avec migration bursale, intra-osseuse (érosion pseudo-tumorale) ; épaule de Milwaukee = destruction + rupture de coiffe chez la femme âgée."
+  ],
+  "introduction": "Les microcristaux sont une cause majeure d'arthrite et d'arthropathie, et l'imagerie y est souvent décisive. Chaque cristal a sa **topographie**, sa **morphologie radiographique** et ses **pièges**. Ce chapitre suit le Cotten : la goutte (urate), la maladie à cristaux de pyrophosphate de calcium (CPP), l'hémochromatose, les dépôts d'apatite (PCB), puis les arthropathies métaboliques rares.",
+  "sections": [
+    {
+      "titre": "Panorama : quel cristal, quelle topographie ?",
+      "texte": "Selon la topographie prédominante des dépôts, les microcristaux donnent une symptomatologie **articulaire** (urate monosodique, pyrophosphate de calcium), **périarticulaire** (phosphate de calcium basique, dominé par l'apatite) ou **osseuse** (oxalate de calcium).\n\nLe liquide synovial reste la référence diagnostique : les cristaux d'urate sont des aiguilles **fortement biréfringentes** (biréfringence négative en lumière compensée) ; les cristaux de CPP sont de petits bâtonnets **faiblement ou non biréfringents** ; l'apatite est trop petite pour la microscopie optique.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Urate et CPP = articulaire ; apatite = périarticulaire ; oxalate = osseux.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel cristal n'est pas visible en microscopie optique dans le liquide synovial ?",
+        "a": "Le phosphate de calcium basique (apatite) : agrégats trop petits, non biréfringents ; il faut la microscopie électronique."
+      }
+    },
+    {
+      "titre": "Goutte : terrain, physiopathologie et clinique",
+      "texte": "La goutte touche au moins **1 % de la population**, l'homme 4 à 10 fois plus que la femme ; c'est la première cause d'arthrite inflammatoire chez l'homme de plus de 40 ans. Chez la femme, elle survient après la ménopause (effet uricosurique des œstrogènes).\n\nL'**hyperuricémie** résulte d'une production excessive (alimentation riche en purines, bière, alcools forts, **sodas au fructose**, lyse cellulaire) ou surtout d'une **excrétion urinaire insuffisante** (mutations des transporteurs URAT1, SLC2A9, ABCG2 ; insuffisance rénale ; diurétiques, aspirine à faible dose, ciclosporine ; saturnisme). Des facteurs locaux (température plus basse, arthrose, microtraumatismes) expliquent l'atteinte élective de la **1re MTP**.\n\nL'accès aigu naît de la phagocytose des cristaux qui active l'**inflammasome NLRP3** et la production d'**IL-1β**. Le **tophus** comporte un noyau cristallin acellulaire, une couronne de macrophages et d'ostéoclastes (IL-1, RANKL) et une zone fibrovasculaire : c'est cette couronne qui creuse l'os. Le TGF-β explique la néoformation osseuse associée (spicules, appositions).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Un accès aigu fébrile avec syndrome inflammatoire mime une arthrite septique : seule la ponction tranche, et les deux peuvent coexister.",
+      "pourquoi": "Le tophus est une lésion active : sa couronne inflammatoire résorbe l'os et sa composante TGF-β le reconstruit, d'où la coexistence d'érosions et de proliférations.",
+      "verification": {
+        "q": "Pourquoi l'uricémie peut-elle être normale pendant un accès goutteux ?",
+        "a": "Elle tend à baisser pendant l'accès ; le diagnostic repose sur les cristaux d'urate dans le liquide articulaire."
+      }
+    },
+    {
+      "titre": "Goutte tophacée chronique : la sémiologie radiographique",
+      "texte": "À l'accès aigu, les radiographies sont **normales** ou montrent un épanchement non spécifique. Les signes osseux sont **tardifs** et relèvent de la goutte tophacée.\n\nLes **érosions** sont bien limitées, parfois cerclées d'un liseré de condensation, de **grande taille**, de grand axe parallèle à la diaphyse, et volontiers **para-articulaires** (au-delà de l'insertion synoviale). Les **spicules** osseux qui prolongent l'érosion (bord surplombant) sont très évocateurs. Deux érosions se faisant face réalisent l'**image en hallebarde**.",
+      "figures": [
+        "cotten-t1:fig2.4",
+        "cotten-t1:fig2.5",
+        "cotten-t1:fig2.9b",
+        "cotten-t1:fig2.11a"
+      ],
+      "legendes": [
+        "**Image en hallebarde** (têtes de flèches) : érosions se faisant face de part et d'autre de l'os, et tophus intraosseux calcifiés (flèches).",
+        "Volumineuses **érosions marginales** dont la taille contraste avec le **respect de l'interligne**.",
+        "**Pied hérissé** de profil : enthésophytes et ostéophytes exubérants de la face dorsale du tarse.",
+        "**Tophus intraosseux** non calcifié, excentré et expansif d'une phalange proximale."
+      ],
+      "cle": "Grosse érosion + interligne conservé + densité osseuse normale = goutte jusqu'à preuve du contraire.",
+      "piege": "Le tophus intraosseux isolé, surtout épiphysaire ou sésamoïdien, peut mimer une tumeur : cherchez le contour net, la densité et l'hyposignal T2.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel élément négatif distingue les érosions goutteuses de celles de la polyarthrite rhumatoïde ?",
+        "a": "L'absence de raréfaction osseuse juxta-articulaire, avec un interligne respecté malgré des érosions de grande taille."
+      }
+    },
+    {
+      "titre": "Goutte : formes topographiques",
+      "texte": "**Pied** : la 1re MTP est la cible typique ; les premières érosions, simple irrégularité corticale, siègent sur les faces **médiale et dorsale** de la 1re tête métatarsienne (cliché de trois quarts). L'atteinte d'un **sésamoïde**, des tarsométatarsiennes avec larges érosions et les volumineux enthésophytes calcanéens sont évocateurs. Un tophus volumineux peut détruire plusieurs os du tarse.\n\n**Genou** : volumineuses encoches fémorales et tibiales, grosses lacunes intraosseuses sans pincement, tophus prépatellaires avec érosions antérieures de la patella. **Coude** : bursite rétro-olécrânienne. **Main et poignet** : formes évoluées ou sous diurétiques, asymétriques, avec ankylose possible du carpe. Le **rachis** est plus souvent atteint qu'on ne le pensait (arc postérieur, zygapophyses, odontoïde).",
+      "figures": [
+        "cotten-t1:fig2.12"
+      ],
+      "legendes": [
+        "Tophus intraosseux expansifs de la 1re MTP s'ouvrant dans l'interligne."
+      ],
+      "cle": "Commencez toujours par le 1er rayon du pied : faces médiale et dorsale de la tête de M1.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Sur quelle incidence et quelles faces rechercher les premières érosions de la 1re MTP ?",
+        "a": "Cliché de trois quarts, faces médiale et dorsale de la 1re tête métatarsienne."
+      }
+    },
+    {
+      "titre": "Goutte : échographie, scanner double énergie et IRM",
+      "texte": "L'**échographie** est plus sensible que la clinique et les radiographies. Elle montre : des **tophus** hyperéchogènes à micro-ponctuations, souvent hétérogènes, entourés dans la moitié des cas d'un **halo hypoéchogène** ; le **signe du double contour** (bande hyperéchogène irrégulière à la surface du cartilage, sensibilité 36,8 %, spécificité 97,3 %) à la face plantaire de la 1re MTP et à la trochlée ; des micro-ponctuations dans une synoviale épaissie ou dans le liquide (« **tempête de neige** », non spécifique de la goutte) ; des érosions < 2 mm. Elle peut suivre la fonte des dépôts sous traitement.\n\nLe **scanner** précise le volume des tophus et leurs érosions, utile au rachis et aux sacro-iliaques. Le **scanner double énergie** (80 et 140 kV) distingue l'urate (persiste sur l'image « sans calcium ») du calcium, avec un codage couleur.\n\nEn **IRM**, les tophus sont en hyposignal T1, le plus souvent **hypointenses en T2** sans saturation (signal intermédiaire avec saturation), et se rehaussent de façon homogène ou périphérique. L'œdème osseux est rare au contact des érosions : la goutte est une cause de synoviale hypointense en T2.",
+      "figures": [
+        "cotten-t1:fig2.24a",
+        "cotten-t1:fig2.25c",
+        "cotten-t1:fig2.31c",
+        "cotten-t1:fig2.32c"
+      ],
+      "legendes": [
+        "**Signe du double contour** (flèches) : bande hyperéchogène recouvrant le cartilage hypoéchogène de la tête métatarsienne.",
+        "Micro-ponctuations hyperéchogènes dans une **synoviale épaissie** (a) et **hyperhémiée** en Doppler (b).",
+        "Tophus hyperdense en scanner et **codage couleur double énergie** de l'urate (e).",
+        "Tophus intraosseux et périarticulaires en **hyposignal T1** et T2 en IRM."
+      ],
+      "cle": null,
+      "piege": "La « tempête de neige » signe une origine microcristalline mais pas spécifiquement la goutte ; et le double contour disparaît sous traitement efficace.",
+      "pourquoi": "La fine couche de cristaux déposée à la surface du cartilage réfléchit les ultrasons : d'où un second contour hyperéchogène parallèle à l'os sous-chondral.",
+      "verification": {
+        "q": "Sur l'image native, une lésion hyperdense persiste sur l'image « sans calcium » et disparaît sur l'image « sans acide urique ». De quoi s'agit-il ?",
+        "a": "D'un dépôt d'urate monosodique (tophus)."
+      }
+    },
+    {
+      "titre": "Goutte : diagnostic, traitement et diagnostics différentiels",
+      "texte": "Le diagnostic de certitude repose sur les **cristaux d'urate** du liquide articulaire ou d'un tophus. L'hyperuricémie (> 60 mg/L, 360 μmol/L) est nécessaire mais insuffisante : seuls 10 % des hyperuricémiques font une goutte.\n\nTraitement de l'accès : **colchicine**, AINS ou corticoïdes, au mieux dans les 12 premières heures. Au long cours, objectif d'uricémie < **360 μmol/L** (voire 300 en cas de tophus) par **allopurinol ou fébuxostat** (inhibiteurs de la xanthine-oxydase), avec prophylaxie des crises par colchicine pendant **6 mois**. Uricases (pégloticase) et anti-IL-1 en cas de goutte réfractaire.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Hypo-uricémiant si ≥ 2 crises/an, tophus, lithiase ou insuffisance rénale ; cible < 360 μmol/L.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle est la durée recommandée de la prophylaxie par colchicine à l'introduction d'un hypo-uricémiant ?",
+        "a": "6 mois."
+      }
+    },
+    {
+      "titre": "Maladie à cristaux de pyrophosphate de calcium : terminologie et terrain",
+      "texte": "L'**EULAR** (European League Against Rheumatism) a simplifié le vocabulaire : cristaux de **CPP**, dépôts de CPP (**CPPD**), et **chondrocalcinose** = calcification des cartilages visible en imagerie ou histologie (le plus souvent du CPP, parfois de l'apatite).\n\nLes cristaux se forment dans la matrice cartilagineuse par excès local de pyrophosphate inorganique extracellulaire (**ePPi**), régulé par PC-1 et le transporteur **ANK** (qui l'augmentent) et la **phosphatase alcaline** (qui le diminue).\n\nPrésentations cliniques : forme **asymptomatique** (la plus fréquente : ne pas lui imputer trop vite les symptômes), **arthrite aiguë** (ex-« pseudo-goutte » : genou, poignet, épaule après 65 ans), **arthrose avec CPP**, arthrite chronique pseudo-rhumatoïde, pseudo-polyarthrite rhizomélique, arthropathie rapidement destructrice, compressions nerveuses.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Chondrocalcinose avant 60 ans ou polyarticulaire = bilan métabolique (calcémie, PTH, ferritine, magnésémie, phosphatases alcalines).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Citez trois causes métaboliques de chondrocalcinose à rechercher chez le sujet jeune.",
+        "a": "Hyperparathyroïdie, hémochromatose, hypomagnésémie (aussi hypophosphatasie, hypercalcémie hypocalciurique familiale)."
+      }
+    },
+    {
+      "titre": "Dépôts de CPP : lire les calcifications",
+      "texte": "Les calcifications, habituellement **symétriques**, se reconnaissent à leur siège et leur forme :",
+      "figures": [
+        "cotten-t1:fig2.38b",
+        "cotten-t1:fig2.39a",
+        "cotten-t1:fig2.43a"
+      ],
+      "legendes": [
+        "Calcifications **linéaires** (a) et **granuleuses** (b) du cartilage hyalin.",
+        "Calcifications fibrocartilagineuses : **ménisque** (a) et **symphyse pubienne** (b).",
+        "Calcifications des ligaments **scapholunaire et lunotriquétral** et du disque articulaire du carpe."
+      ],
+      "cle": "En cas de doute : genoux de face, poignets de face et bassin retrouvent la chondrocalcinose dans 95 % des cas.",
+      "piege": "La sensibilité de la radiographie pour la chondrocalcinose n'est que de 30 à 40 %, et un pincement articulaire peut effacer la calcification cartilagineuse.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Comment différencier en radiographie une calcification tendineuse de CPP d'une calcification d'apatite ?",
+        "a": "CPP : linéaire, stratifiée, dans l'axe du tendon et à distance de l'insertion ; apatite : amorphe, dense, arrondie, près de l'insertion."
+      }
+    },
+    {
+      "titre": "L'arthropathie à CPP : une « arthrose » au mauvais endroit",
+      "texte": "Elle ressemble à l'arthrose (pincement, condensation, géodes) mais s'en distingue par sa **topographie** et son **agressivité** :",
+      "figures": [
+        "cotten-t1:fig2.45",
+        "cotten-t1:fig2.47",
+        "cotten-t1:fig2.51"
+      ],
+      "legendes": [
+        "Arthropathie **scaphotrapézienne** à CPP : ostéocondensation sous-chondrale nette, trapézométacarpienne respectée.",
+        "Arthropathie **fémoropatellaire** isolée : engrènement des berges.",
+        "Poignet : chondrocalcinose et **SLAC-wrist** (diastasis scapholunaire, ascension du capitatum, arthrose radioscaphoïdienne)."
+      ],
+      "cle": "Arthrose radiocarpienne ou scaphotrapézienne isolée sans traumatisme = pensez CPP.",
+      "piege": null,
+      "pourquoi": "La rupture du ligament scapholunaire calcifié désaxe le carpe ; le scaphoïde finit par s'encastrer dans le radius : c'est le SLAC-wrist (Scapho-Lunate Advanced Collapse) sans traumatisme.",
+      "verification": {
+        "q": "Quelle atteinte du carpe est très évocatrice d'arthropathie à CPP ?",
+        "a": "L'atteinte scaphotrapézienne isolée, sans atteinte trapézométacarpienne, avec condensation en bande nette et peu d'ostéophytes."
+      }
+    },
+    {
+      "titre": "CPP au rachis et imagerie complémentaire",
+      "texte": "Au **rachis**, les calcifications discales sont fines, linéaires, **périphériques** dans l'anneau fibreux (alors que l'apatite est centrale). Les discopathies sévères, érosives, **pluriétagées** (> 3 étages) avec vide discal peuvent faire craindre une spondylodiscite. Les calcifications du **ligament transverse** et péri-odontoïdiennes réalisent la **dent couronnée** ; en IRM, elles forment un **pseudo-pannus** hypointense en T1 et T2 pouvant comprimer la moelle, avec érosions de l'odontoïde.\n\nL'**échographie** montre des dépôts hyperéchogènes punctiformes ou linéaires **dans le tiers moyen du cartilage** hyalin (trochlée), parallèles à la surface (spécificité 97,6 %), dans les ménisques, le liquide synovial et le long des fibres du tendon calcanéen. L'**IRM** est peu utile : les calcifications méniscales peuvent mimer des fissures.",
+      "figures": [
+        "cotten-t1:fig2.60",
+        "cotten-t1:fig2.61c",
+        "cotten-t1:fig2.66c"
+      ],
+      "legendes": [
+        "**Dent couronnée** : calcifications du ligament transverse (flèches) en scanner.",
+        "**Pseudo-pannus** péri-odontoïdien comprimant la moelle, avec érosion du processus odontoïde.",
+        "Dépôts hyperéchogènes dans le **tiers moyen** du cartilage de la trochlée (flèches)."
+      ],
+      "cle": null,
+      "piege": "Accès aigu zygapophysaire ou discal à CPP : l'IRM oriente à tort vers une infection ; un scanner montrant chondrocalcinose et érosions cerclées de sclérose redresse le diagnostic.",
+      "pourquoi": "Le double contour de la goutte recouvre la **surface** du cartilage ; le CPP se dépose **dans l'épaisseur** du cartilage : c'est la clé de lecture échographique.",
+      "verification": {
+        "q": "En échographie, où se situent les dépôts de CPP par rapport au cartilage hyalin, comparé à l'urate ?",
+        "a": "CPP : dans le tiers moyen du cartilage ; urate : à sa surface (double contour)."
+      }
+    },
+    {
+      "titre": "Hémochromatose héréditaire",
+      "texte": "Maladie génétique la plus fréquente en France (1/300), due dans 85 % des cas à une mutation **HFE C282Y** homozygote (autosomique récessive) : perte de l'hepcidine, hyperabsorption du fer, élévation de la saturation de la transferrine puis de la ferritine. L'arthropathie peut être **révélatrice** chez l'homme de 25–35 ans, donc plus jeune que la chondrocalcinose sporadique ; elle **ne régresse pas** sous saignées.\n\nRadiographiquement : raréfaction osseuse, chondrocalcinose (symphyse et cartilage hyalin), et une arthropathie proche de celle à CPP avec des **signes distinctifs** :",
+      "figures": [
+        "cotten-t1:fig2.71"
+      ],
+      "legendes": [
+        "Hémochromatose : atteinte de toutes les MCP prédominant aux 2e et 3e, **ostéophytes en crochet**."
+      ],
+      "cle": "Arthropathie des MCP avec ostéophytes en crochet chez un homme jeune = doser ferritine et coefficient de saturation de la transferrine.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels arguments radiographiques orientent vers l'hémochromatose plutôt que vers une arthropathie à CPP ?",
+        "a": "Atteinte des MCP 4 et 5, ostéophytes en crochet du bord radial des têtes, géodes multiples, évolution lente."
+      }
+    },
+    {
+      "titre": "Apatite (PCB) : calcifications périarticulaires et leur cycle",
+      "texte": "Les dépôts de phosphate de calcium basique touchent l'**épaule dans 60 %** des cas, surtout la femme de 30 à 50 ans, sur un **tendon sain** (zone d'hypoxie à ~1 cm de l'insertion du supra-épineux). Le cycle d'Uhthoff comprend une phase **formative** (métaplasie fibrocartilagineuse, calcification « craie »), une phase **quiescente**, puis une phase de **résorption** (néovaisseaux, macrophages, calcification « dentifrice ») — c'est la phase douloureuse — et une phase de cicatrisation.\n\nEn radiographie, la calcification est **amorphe, dense, arrondie**, de quelques millimètres à 2 cm. La Société française d'arthroscopie distingue trois types :",
+      "figures": [
+        "cotten-t1:fig2.72a",
+        "cotten-t1:fig2.73a",
+        "cotten-t1:fig2.79"
+      ],
+      "legendes": [
+        "Calcifications du supra-épineux de **type A** (a), **B** (b) et **C** (c).",
+        "**Migration** de la calcification dans la bourse subacromiodeltoïdienne (flèche).",
+        "**Migration intraosseuse** d'une calcification du supra-épineux avec érosion du tubercule majeur (échographie)."
+      ],
+      "cle": "Une calcification qui s'estompe sur des clichés successifs chez un patient hyperalgique est en résorption (type C).",
+      "piege": "En IRM, l'œdème osseux, musculaire et l'érosion d'une calcification en résorption non vue peuvent faire évoquer une tumeur, une infection ou un syndrome de Parsonage-Turner.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel type de calcification (classification SFA) traduit une résorption en cours ?",
+        "a": "Le type C : inhomogène, à contours flous."
+      }
+    },
+    {
+      "titre": "Apatite : échographie, topographies pièges et traitement percutané",
+      "texte": "L'**échographie** détecte mieux les calcifications que la radiographie (notamment du subscapulaire) et les classe en **« dure »** (anneau hyperéchogène avec cône d'ombre complet), **« molle »** (hyperéchogène sans ombre) ou **« liquidienne »** (fin anneau, centre hypoéchogène). En résorption : fragmentation, halo hypoéchogène, hyperhémie Doppler, douleur au passage de la sonde ; vidange dans la bourse (« boue calcique »). Elle recherche aussi un **conflit** antérosupérieur ou antéromédial.\n\nTopographies pièges : biceps (chef long), **grand pectoral et grand rond** (érosions inquiétantes), épicondyliens, **fléchisseur ulnaire du carpe** (devant le pisiforme), MCP, moyen fessier et **droit fémoral**, grand adducteur, ligament collatéral médial du genou, 1re MTP de la femme jeune (pseudo-goutte).\n\n**Traitement** : antalgiques, AINS, glace, infiltration péritendineuse (3 maximum). En cas d'échec (~10 %), **ponction-lavage-aspiration** échoguidée d'une calcification « molle » (aiguilles 19–21 G, sérum, puis corticoïde dans la bourse), succès 65–70 % ; lithotritie pour les calcifications « dures » ; chirurgie en dernier recours.",
+      "figures": [
+        "cotten-t1:fig2.76b",
+        "cotten-t1:fig2.80b"
+      ],
+      "legendes": [
+        "Calcification **« dure »** avec fort cône d'ombre (a), **« molle »** (b) et calcification en résorption hypervascularisée (c).",
+        "Calcification du **subscapulaire** en radiographie et **ponction-lavage échoguidée** (c, d)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Une calcification molle se laisse aspirer et dissoudre ; une calcification dure arrête les ultrasons et l'aiguille : on préfère alors la lithotritie.",
+      "verification": {
+        "q": "Après une ponction-lavage d'une calcification de l'épaule, à quoi faut-il prévenir le patient ?",
+        "a": "À une crise douloureuse aiguë dans les 24–48 h (bursite de résorption), atténuée par glace, antalgiques et écharpe."
+      }
+    },
+    {
+      "titre": "Apatite au rachis : disques et muscle long du cou",
+      "texte": "Les calcifications **discales** d'apatite sont **centrales**, denses et amorphes, épousant le noyau pulpeux (rachis thoracique moyen et inférieur). Elles peuvent migrer dans une **hernie discale calcifiée** (signe de la trace nucléaire) ou dans le plateau ; leur résorption aiguë mime une **spondylodiscite**. Chez l'**enfant** (âge moyen 8 ans), elles siègent au rachis cervical inférieur avec torticolis et disparaissent en quelques semaines : traitement conservateur.\n\nLa **tendinite calcifiante du muscle long du cou** donne une cervicalgie aiguë avec dysphagie : calcification amorphe **sous l'arc antérieur de C1** et épaississement prévertébral ; l'IRM peut faire croire à un abcès rétropharyngé. La résorption est complète en 1 à 2 semaines.",
+      "figures": [
+        "cotten-t1:fig2.107b"
+      ],
+      "legendes": [
+        "Résorption aiguë d'une calcification du **muscle long du cou** : œdème prévertébral (IRM sagittale)."
+      ],
+      "cle": null,
+      "piege": "Cervicalgie fébrile avec épaississement prévertébral : avant de conclure à un abcès, cherchez au scanner la calcification sous l'arc antérieur de C1.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Où siège typiquement la calcification de la tendinite calcifiante du long du cou ?",
+        "a": "Sous l'arc antérieur de C1, dans les fibres obliques supérieures, avec épaississement des tissus mous prévertébraux."
+      }
+    },
+    {
+      "titre": "Épaule de Milwaukee et arthropathies destructrices",
+      "texte": "Les cristaux de PCB intra-articulaires donnent des arthrites aiguës (liquide puriforme stérile) et une arthropathie destructrice : l'**épaule de Milwaukee** (« épaule sénile hémorragique ») associe **large rupture de coiffe**, calcification périarticulaire et **liquide hémorragique** riche en PCB, chez la **femme âgée**, bilatérale dans 65 % des cas, avec aggravation en moins d'un an.\n\nImagerie : pincement glénohuméral, **ascension de la tête humérale**, condensation modérée, **ostéophytose absente ou discrète**, puis engrènement, fragmentation et néo-articulation acromiohumérale.",
+      "figures": [
+        "cotten-t1:fig2.110"
+      ],
+      "legendes": [
+        "**Épaule de Milwaukee** : ascension de la tête humérale et fragmentation osseuse."
+      ],
+      "cle": "Femme âgée + épaule détruite + coiffe rompue + épanchement hémorragique = Milwaukee.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels sont les quatre éléments de l'épaule de Milwaukee ?",
+        "a": "Arthropathie destructrice, large rupture de coiffe, calcification périarticulaire, liquide hémorragique riche en PCB."
+      }
+    },
+    {
+      "titre": "Arthropathies métaboliques rares : ochronose, oxalose, Wilson",
+      "texte": "**Ochronose** (alcaptonurie) : déficit en homogentisate-oxydase, urines qui brunissent à l'air, pigmentation noire du conjonctif. Au rachis : **calcifications discales multiétagées denses** (lombaires) puis discopathies sévères avec **vide discal pluriétagé**, ankylose pouvant mimer une spondylarthrite. Arthropathies bilatérales des genoux, épaules, hanches avec pincement global et peu d'ostéophytes.\n\n**Oxalose** (hyperoxalurie primitive de type 1, déficit en AGT) : néphrocalcinose, **bandes métaphysaires denses**, aspect d'**os dans l'os**, vertèbres « en maillot de rugby », signes d'hyperparathyroïdie. Seul traitement curatif : transplantation foie-rein.\n\n**Maladie de Wilson** : accumulation de cuivre (anneau de Kayser-Fleischer) ; raréfaction osseuse, arthropathies dégénératives précoces (genoux, hanches, poignets) avec irrégularités et fragmentations sous-chondrales, enthésopathies.\n\nAutres cristaux : **corticostéroïdes** (arthrite post-infiltration dans les 24 h, résolutive en 1–2 jours), cholestérol (PR), lipides liquides (croix de Malte), Charcot-Leyden (éosinophiles).",
+      "figures": [
+        "cotten-t1:fig2.111a",
+        "cotten-t1:fig2.113a"
+      ],
+      "legendes": [
+        "**Ochronose** : calcifications discales et discopathies sévères pluriétagées avec vide discal.",
+        "**Hyperoxalurie primitive** : ostéocondensation axiale (oxalose et ostéodystrophie rénale), néphrocalcinose."
+      ],
+      "cle": null,
+      "piege": "Les calcifications discales diffuses du CPP peuvent simuler l'ochronose, mais elles sont moins denses et le vide discal pluriétagé manque.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle association radiographique rachidienne évoque l'ochronose ?",
+        "a": "Calcifications discales denses multiétagées puis discopathies sévères pluriétagées avec vide discal, raréfaction des corps vertébraux."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Homme de 55 ans. Érosions de grande taille à l'emporte-pièce, interligne respecté, aucune déminéralisation. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig2.6",
+      "options": [
+        "Goutte tophacée chronique",
+        "Polyarthrite rhumatoïde",
+        "Arthropathie à CPP",
+        "Rhumatisme psoriasique"
+      ],
+      "reponse": 0,
+      "explication": "Grosses érosions marginales contrastant avec un interligne respecté et une densité osseuse normale : goutte tophacée.",
+      "page": "p. 29",
+      "image_origine": "c02/f2.6"
+    },
+    {
+      "question": "Masse des tissus mous en regard de la 1re MTP avec érosion de la face médiale de la tête. Que représente la masse ?",
+      "figure": "cotten-t1:fig2.7b",
+      "options": [
+        "Un tophus",
+        "Un nodule rhumatoïde",
+        "Une calcification d'apatite",
+        "Un kyste synovial"
+      ],
+      "reponse": 0,
+      "explication": "Érosions de la face médiale de la 1re MTP associées à un tophus des tissus mous.",
+      "page": "p. 29",
+      "image_origine": "c02/f2.8"
+    },
+    {
+      "question": "Ostéolyse de plusieurs os du tarse avec tuméfaction dense des parties molles chez un goutteux connu. Mécanisme ?",
+      "figure": "cotten-t1:fig2.13",
+      "options": [
+        "Volumineux tophus intraosseux",
+        "Ostéoarthropathie nerveuse",
+        "Ostéomyélite chronique",
+        "Métastase lytique"
+      ],
+      "reponse": 0,
+      "explication": "Un tophus volumineux peut détruire plusieurs os du tarse.",
+      "page": "p. 31",
+      "image_origine": "c02/f2.13"
+    },
+    {
+      "question": "Arrière-pied de profil : densité sous-calcanéenne (petites têtes de flèches) et enthésophyte. Que traduit la densité des parties molles ?",
+      "figure": "cotten-t1:fig2.17",
+      "options": [
+        "Un tophus dense",
+        "Une calcification d'apatite de l'aponévrose",
+        "Une bursite septique",
+        "Un lipome"
+      ],
+      "reponse": 0,
+      "explication": "Tophus dense sous-calcanéen associé à des enthésophytes : goutte tophacée chronique.",
+      "page": "p. 32",
+      "image_origine": "c02/f2.17"
+    },
+    {
+      "question": "Patella de profil : érosions et prolifération de la face antérieure. Quelle est la cause la plus probable ?",
+      "figure": "cotten-t1:fig2.19",
+      "options": [
+        "Tophus prépatellaire (goutte)",
+        "Arthropathie fémoropatellaire à CPP",
+        "Ostéochondrite disséquante",
+        "Patella bipartite"
+      ],
+      "reponse": 0,
+      "explication": "Les érosions et proliférations antérieures de la patella sont réactionnelles à un tophus prépatellaire.",
+      "page": "p. 33",
+      "image_origine": "c02/f2.19"
+    },
+    {
+      "question": "Échographie articulaire : microponctuations hyperéchogènes au sein du liquide synovial. Diagnostic ?",
+      "figure": "cotten-t1:fig2.27a",
+      "options": [
+        "Accès aigu de goutte (goutte tophacée chronique)",
+        "Arthrite septique à pyogène",
+        "Hémarthrose",
+        "Synovite villonodulaire"
+      ],
+      "reponse": 0,
+      "explication": "Légende : goutte tophacée chronique, microponctuations hyperéchogènes au sein du liquide synovial (accès aigu de goutte).",
+      "page": "p. 35–36",
+      "image_origine": "c02/f2.27"
+    },
+    {
+      "question": "Scanner du rachis : érosions de grande taille de l'arc postérieur avec matériel hyperdense. Diagnostic ?",
+      "figure": "cotten-t1:fig2.30a",
+      "options": [
+        "Goutte rachidienne (tophus)",
+        "Spondylodiscite tuberculeuse",
+        "Métastases lytiques",
+        "Kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Érosions de grande taille et tophus hyperdenses : le scanner est utile pour la goutte axiale.",
+      "page": "p. 37",
+      "image_origine": "c02/f2.30"
+    },
+    {
+      "question": "Genou de profil : calcifications nuageuses du récessus sous-quadricipital (flèche) et calcifications tendineuses. Quel cristal ?",
+      "figure": "cotten-t1:fig2.40b",
+      "options": [
+        "Pyrophosphate de calcium",
+        "Urate monosodique",
+        "Hydroxyapatite isolée",
+        "Oxalate de calcium"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications synoviales nuageuses associées à des calcifications tendineuses : dépôts de CPP.",
+      "page": "p. 47",
+      "image_origine": "c02/f2.40"
+    },
+    {
+      "question": "Calcifications fines et régulières autour des 2e et 3e MCP (flèches). Quelle structure est calcifiée ?",
+      "figure": "cotten-t1:fig2.43b",
+      "options": [
+        "La capsule (dépôts de CPP)",
+        "Le cartilage hyalin",
+        "Les tendons fléchisseurs",
+        "Des tophus"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications capsuloligamentaires des 2e et 3e MCP, typiques des dépôts de CPP.",
+      "page": "p. 48",
+      "image_origine": "c02/f2.41"
+    },
+    {
+      "question": "Calcifications linéaires stratifiées dans l'axe du tendon calcanéen (a). Quel cristal ?",
+      "figure": "cotten-t1:fig2.42b",
+      "options": [
+        "CPP",
+        "Apatite",
+        "Urate",
+        "Cholestérol"
+      ],
+      "reponse": 0,
+      "explication": "Les calcifications tendineuses de CPP sont linéaires, stratifiées, orientées dans l'axe du tendon, à la différence de l'apatite amorphe.",
+      "page": "p. 47–48",
+      "image_origine": "c02/f2.42"
+    },
+    {
+      "question": "Genou de face : gonarthrose avec chondrocalcinose. Comment qualifier cette entité ?",
+      "figure": "cotten-t1:fig2.44",
+      "options": [
+        "Arthrose avec CPP",
+        "Arthropathie hémochromatosique",
+        "Épaule de Milwaukee du genou",
+        "Arthropathie ochronotique"
+      ],
+      "reponse": 0,
+      "explication": "Aspect d'une gonarthrose classique associée à une chondrocalcinose : arthrose avec CPP.",
+      "page": "p. 48–49",
+      "image_origine": "c02/f2.44"
+    },
+    {
+      "question": "Compartiment fémorotibial latéral : berges crénelées et engrenées, condensation nette. Diagnostic ?",
+      "figure": "cotten-t1:fig2.46",
+      "options": [
+        "Arthropathie à CPP",
+        "Gonarthrose banale",
+        "Arthrite septique",
+        "Ostéonécrose du condyle"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte latérale isolée avec berges crénelées est évocatrice de l'arthropathie à CPP.",
+      "page": "p. 49",
+      "image_origine": "c02/f2.46"
+    },
+    {
+      "question": "Hanche : multiples géodes sous-chondrales et fin liseré calcique. Diagnostic ?",
+      "figure": "cotten-t1:fig2.48",
+      "options": [
+        "Arthropathie coxofémorale à CPP",
+        "Coxarthrose primitive",
+        "Ostéonécrose de la tête fémorale",
+        "Synovite villonodulaire"
+      ],
+      "reponse": 0,
+      "explication": "Multiples géodes et chondrocalcinose : arthropathie coxofémorale à CPP.",
+      "page": "p. 50",
+      "image_origine": "c02/f2.48"
+    },
+    {
+      "question": "Coude : ostéocondensation sous-chondrale en bande à limite nette (têtes de flèches). Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig2.54",
+      "options": [
+        "Arthropathie à CPP",
+        "Arthrose primitive du coude",
+        "Hémophilie",
+        "Polyarthrite rhumatoïde"
+      ],
+      "reponse": 0,
+      "explication": "Le coude n'est pas un site habituel d'arthrose ; la condensation nette en bande évoque le CPP.",
+      "page": "p. 51",
+      "image_origine": "c02/f2.54"
+    },
+    {
+      "question": "Rachis lombaire : calcifications peu denses périphériques du disque L2-L3. Quel cristal ?",
+      "figure": "cotten-t1:fig2.57b",
+      "options": [
+        "CPP",
+        "Apatite",
+        "Ochronose",
+        "Urate"
+      ],
+      "reponse": 0,
+      "explication": "Les calcifications discales de CPP sont discrètes, linéaires, périphériques dans l'anneau fibreux.",
+      "page": "p. 52",
+      "image_origine": "c02/f2.58"
+    },
+    {
+      "question": "Scanner sagittal cervical : discopathies sévères, érosives, pluriétagées avec ostéocondensation. Quel diagnostic évoquer avant l'infection ?",
+      "figure": null,
+      "options": [
+        "Discopathies à CPP",
+        "Spondylarthrite ankylosante",
+        "Hyperostose vertébrale",
+        "Maladie de Paget"
+      ],
+      "reponse": 0,
+      "explication": "Discopathies sévères, érosives, pluriétagées avec condensation : évocateur des dépôts de CPP.",
+      "page": "p. 53–54",
+      "image_origine": "c02/f2.62"
+    },
+    {
+      "question": "Échographie sagittale du tendon calcanéen : dépôt hyperéchogène linéaire le long des fibres. Quel cristal ?",
+      "figure": "cotten-t1:fig2.69",
+      "options": [
+        "CPP",
+        "Urate",
+        "Apatite en résorption",
+        "Cholestérol"
+      ],
+      "reponse": 0,
+      "explication": "Les dépôts linéaires le long des fibres du tendon calcanéen sont très spécifiques de la maladie à CPP.",
+      "page": "p. 56–57",
+      "image_origine": "c02/f2.69"
+    },
+    {
+      "question": "Radiographie de la main d'un homme : chondrocalcinose, géodes multiples du carpe, atteinte de toutes les MCP (métacarpophalangiennes). Diagnostic ?",
+      "figure": "cotten-t1:fig2.70",
+      "options": [
+        "Hémochromatose",
+        "Polyarthrite rhumatoïde",
+        "Goutte",
+        "Arthrose digitale érosive"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hémochromatose — chondrocalcinose, multiples géodes au carpe et atteinte de toutes les MCP avec aspect microgéodique sous-chondral.",
+      "page": "p. 60",
+      "image_origine": "c02/f2.70"
+    },
+    {
+      "question": "Érosions du tubercule majeur (têtes de flèches) en regard d'une calcification. Que s'est-il passé ?",
+      "figure": "cotten-t1:fig2.74b",
+      "options": [
+        "Migration intraosseuse d'une calcification d'apatite",
+        "Métastase corticale",
+        "Encoche de Hill-Sachs",
+        "Géode arthrosique"
+      ],
+      "reponse": 0,
+      "explication": "La résorption d'une calcification peut migrer dans l'os et créer une érosion corticale.",
+      "page": "p. 63–64",
+      "image_origine": "c02/f2.74"
+    },
+    {
+      "question": "Échographie longitudinale du supra-épineux : calcification fragmentée avec hyperhémie Doppler. Phase ?",
+      "figure": "cotten-t1:fig2.77",
+      "options": [
+        "Résorption aiguë",
+        "Formation",
+        "Quiescence",
+        "Post-formation"
+      ],
+      "reponse": 0,
+      "explication": "Fragmentation, halo et hyperhémie Doppler traduisent la phase de résorption aiguë.",
+      "page": "p. 64",
+      "image_origine": "c02/f2.77"
+    },
+    {
+      "question": "Poignet de profil : opacité amorphe devant le pisiforme chez un patient hyperalgique. Diagnostic ?",
+      "figure": "cotten-t1:fig2.88b",
+      "options": [
+        "Calcification d'apatite du fléchisseur ulnaire du carpe",
+        "Chondrocalcinose",
+        "Fracture du pisiforme",
+        "Tophus"
+      ],
+      "reponse": 0,
+      "explication": "Localisation la plus fréquente au poignet : tendon du fléchisseur ulnaire du carpe, en avant du pisiforme.",
+      "page": "p. 66",
+      "image_origine": "c02/f2.89"
+    },
+    {
+      "question": "Hanche douloureuse : opacités floconneuses en regard du grand trochanter (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig2.92a",
+      "options": [
+        "Résorption aiguë d'une calcification du moyen glutéal",
+        "Ostéochondromatose synoviale",
+        "Myosite ossifiante",
+        "Chondrocalcinose"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications floues à l'insertion du moyen glutéal en phase de résorption aiguë.",
+      "page": "p. 68",
+      "image_origine": "c02/f2.93"
+    },
+    {
+      "question": "Rachis thoracique de profil : calcification dense centrale de deux disques contigus avec indentation antérieure. Cristal ?",
+      "figure": "cotten-t1:fig2.100",
+      "options": [
+        "Apatite (PCB)",
+        "CPP",
+        "Urate",
+        "Oxalate"
+      ],
+      "reponse": 0,
+      "explication": "Les calcifications discales d'apatite sont centrales, denses, amorphes, épousant le noyau pulpeux.",
+      "page": "p. 70",
+      "image_origine": "c02/f2.100"
+    },
+    {
+      "question": "Scanner du rachis thoracique : calcification discale saillant dans le canal, avec un trajet calcifié (flèche). Diagnostic ?",
+      "figure": "cotten-t1:fig2.101a",
+      "options": [
+        "Hernie discale thoracique calcifiée (dépôts de PCB, pyrophosphate de calcium)",
+        "Ossification du ligament longitudinal postérieur",
+        "Méningiome calcifié",
+        "Ostéophyte postérieur"
+      ],
+      "reponse": 0,
+      "explication": "Légende : dépôts de PCB, hernie discale thoracique calcifiée ; la calcification emprunte une fissure radiaire (flèche).",
+      "page": "p. 71",
+      "image_origine": "c02/f2.101"
+    },
+    {
+      "question": "IRM : réaction inflammatoire du disque et des plateaux adjacents ; le scanner montre une calcification discale. Diagnostic ?",
+      "figure": "cotten-t1:fig2.103b",
+      "options": [
+        "Résorption aiguë d'une calcification discale",
+        "Spondylodiscite infectieuse",
+        "Modic 1 dégénératif",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "La résorption aiguë d'une calcification discale peut mimer une spondylodiscite ; le scanner montre la calcification.",
+      "page": "p. 71",
+      "image_origine": "c02/f2.103"
+    },
+    {
+      "question": "Arthropathie glénohumérale et coxofémorale sévères, pincement global ; pièce opératoire noirâtre (c). Diagnostic ?",
+      "figure": "cotten-t1:fig2.112c",
+      "options": [
+        "Arthropathie ochronotique",
+        "Hémochromatose",
+        "Arthropathie à CPP",
+        "Hémophilie"
+      ],
+      "reponse": 0,
+      "explication": "La pigmentation noire du cartilage signe l'ochronose (alcaptonurie).",
+      "page": "p. 80–81",
+      "image_origine": "c02/f2.112"
+    },
+    {
+      "question": "Carpe ankylosé avec remaniements diffus chez un goutteux ancien. Quelle complication ?",
+      "figure": "cotten-t1:fig2.14",
+      "options": [
+        "Ankylose du carpe (goutte très évoluée)",
+        "Maladie de Kienböck",
+        "SLAC-wrist",
+        "Arthrite septique"
+      ],
+      "reponse": 0,
+      "explication": "L'ankylose du carpe s'observe dans les formes très évoluées de goutte.",
+      "page": "p. 31–32",
+      "image_origine": "c02/f2.14"
+    },
+    {
+      "question": "Douleur aiguë de l'épaule. Radiographie : opacité dense (flèche) en projection de la bourse. Calcification ?",
+      "figure": "cotten-t1:fig2.85",
+      "options": [
+        "Calcification d'apatite (tendon du biceps ou bourse)",
+        "Chondrocalcinose glénohumérale",
+        "Corps étranger",
+        "Ostéochondrome"
+      ],
+      "reponse": 0,
+      "explication": "Calcification amorphe dense d'apatite (ici du chef long du biceps à son insertion).",
+      "page": "p. 65",
+      "image_origine": "c02/f2.85"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Panorama : quel cristal, quelle topographie ?",
+        "Goutte : terrain, physiopathologie et clinique",
+        "Goutte tophacée chronique : la sémiologie radiographique"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "hs": [
+        "Goutte : formes topographiques",
+        "Goutte : échographie, scanner double énergie et IRM",
+        "Goutte : diagnostic, traitement et diagnostics différentiels"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        1,
+        2,
+        4,
+        26
+      ]
+    },
+    {
+      "hs": [
+        "Maladie à cristaux de pyrophosphate de calcium : terminologie et terrain",
+        "Dépôts de CPP : lire les calcifications",
+        "L'arthropathie à CPP : une « arthrose » au mauvais endroit"
+      ],
+      "secs": [
+        6,
+        7,
+        8
+      ],
+      "qs": [
+        8,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "hs": [
+        "CPP au rachis et imagerie complémentaire",
+        "Hémochromatose héréditaire"
+      ],
+      "secs": [
+        9,
+        10
+      ],
+      "qs": [
+        12,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "hs": [
+        "Apatite (PCB) : calcifications périarticulaires et leur cycle",
+        "Apatite : échographie, topographies pièges et traitement percutané",
+        "Apatite au rachis : disques et muscle long du cou"
+      ],
+      "secs": [
+        11,
+        12,
+        13
+      ],
+      "qs": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        27
+      ]
+    },
+    {
+      "hs": [
+        "Épaule de Milwaukee et arthropathies destructrices",
+        "Arthropathies métaboliques rares : ochronose, oxalose, Wilson"
+      ],
+      "secs": [
+        14,
+        15
+      ],
+      "qs": [
+        15,
+        25
+      ]
+    }
+  ],
+  "ancien_id": "c02",
+  "images_non_rattachees": [
+    "c02/f2.62"
+  ]
+}

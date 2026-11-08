@@ -1,0 +1,793 @@
+{
+  "id": "cotten-t1:c12",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 11,
+  "chapitre_libelle": "Infections",
+  "titre": "Infections ostéoarticulaires extra-rachidiennes",
+  "pages": "334–376",
+  "objectifs": [
+    "Comprendre comment l'âge (vascularisation métaphysaire, cartilage de croissance, périoste) conditionne la topographie et l'imagerie des ostéomyélites aiguës, subaiguës (Brodie) et chroniques",
+    "Différencier en imagerie l'arthrite à pyogènes de l'arthrite tuberculeuse, et reconnaître l'infection sur prothèse ou matériel avec la bonne stratégie (radio, ponction, scintigraphies)",
+    "Classer les infections des tissus mous (érysipèle, DHBN, fasciite nécrosante, pyomyosite, bursite, ténosynovite) et reconnaître les infections particulières (tuberculose, mycétome, parasitoses, lèpre, griffes du chat)"
+  ],
+  "essentiels": [
+    "Germes : *S. aureus* à tout âge ; ***Kingella kingae*** majoritaire avant 3 ans (fièvre modérée, CRP peu élevée, PCR nécessaire) ; nouveau-né : *S. aureus*, strepto B, entérobactéries.",
+    "Enfant : boucles vasculaires **métaphysaires** à flux lent → ostéomyélite métaphysaire ; périoste peu adhérent → **abcès sous-périosté** ; nourrisson (< 18 mois) : vaisseaux transphysaires → arthrites associées fréquentes.",
+    "OM (ostéomyélite) aiguë : radiographie d'abord des **parties molles** (J2–3), os seulement après **1–2 semaines** (perte de 30–50 % de densité) ; échographie = décollement sous-périosté dès 24 h ; IRM = examen de choix (signes dès 3–5 j, anomalies **transphysaires** évocatrices).",
+    "**Abcès de Brodie** : lacune métaphysaire allongée cerclée de sclérose ; IRM en cible avec le **signe de la pénombre** (liseré hyperintense T1 de tissu de granulation) ; trajet sinueux transphysaire très évocateur.",
+    "OM chronique : **séquestres** (mieux vus en scanner), abcès, sinus de décharge ; la moelle en **hypersignal T1 (graisse) = inactivité** ; risque de **carcinome épidermoïde** sur fistule (0,5 %, après 20–30 ans).",
+    "Arthrite à pyogènes : pincement **rapide**, synovite modérée, abcès à paroi **épaisse et irrégulière**, œdème osseux sous-chondral ; tuberculose : **triade de Phemister** (déminéralisation, érosions marginales, pincement tardif), synovite très marquée, **grains de riz**, abcès froids à paroi **fine**.",
+    "Infection sur prothèse : radiographie souvent normale (sensibilité 14 %) ; ostéolyse multifocale mal limitée, périostite active, gaz ; **scintigraphie osseuse normale ≈ élimine** ; leucocytes marqués (± médullaire) pour trancher ; ponction après 3 semaines sans antibiotique.",
+    "Tissus mous : érysipèle (DHB) sans nécrose ni atteinte du fascia profond → médical ; **fasciite nécrosante** = urgence chirurgicale, fascia profond épaissi ≥ 3 mm en T2, gaz, ≥ 3 loges ; l'imagerie **ne doit jamais retarder** la chirurgie."
+  ],
+  "introduction": "Ce chapitre couvre toutes les infections ostéoarticulaires **en dehors du rachis** : l'os (ostéomyélite, ostéite), l'articulation (arthrite septique), le matériel prothétique et les tissus mous. Le fil rouge est la **pathogénie** : l'âge du patient détermine la vascularisation de l'os et donc où se loge l'infection et comment elle s'étend. Le radiologue doit savoir ce que montre chaque technique selon le délai (radiographie en retard, échographie précoce pour les collections, IRM pour le bilan), reconnaître les formes subaiguës et chroniques qui imitent des tumeurs, distinguer pyogène et tuberculose, et ne jamais retarder la chirurgie d'une fasciite nécrosante.",
+  "sections": [
+    {
+      "titre": "Définitions, germes et voies de contamination",
+      "texte": "L'**ostéomyélite** est une infection de l'os spongieux, surtout **hématogène**, parfois par implantation directe (chirurgie, fracture ouverte, plaie). L'**ostéite** est une infection initialement limitée à la **corticale** (contiguïté, par exemple ulcère diabétique, ou embole septique périosté). En pratique les deux termes sont souvent confondus.\n\nMaladie surtout **pédiatrique**, à prédominance masculine (sauf nourrisson), généralement **monobactérienne**. *S. aureus* est présent à tout âge ; les souches communautaires résistantes à la méticilline sécrétant la **leucocidine de Panton-Valentine** donnent des formes graves (choc, atteinte plurifocale, fasciite, thrombophlébite).\n\nTerrains et germes : chirurgie ou geste endovasculaire → staphylocoques ; affections urinaires/digestives → BGN (bacilles à Gram négatif) ; morsure → *Pasteurella multocida* ; toxicomanie IV (intraveineuse) → *Pseudomonas*, *Klebsiella*, *Serratia*, *Candida* ; **drépanocytose → salmonelles**. Le germe reste inconnu dans un tiers des cas.\n\nVoies : **hématogène** (théorie de Trueta), **contiguïté** (main, pied, mâchoires, voûte crânienne ; diabétique et patient alité), **implantation directe**.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Une fièvre absente et une CRP peu élevée chez un enfant de 2 ans n'éliminent pas une infection ostéoarticulaire : c'est le profil typique de *K. kingae*.",
+      "pourquoi": "*K. kingae* est un commensal de l'oropharynx qui passe dans le sang à l'occasion d'une infection ORL : il donne des infections peu bruyantes (fièvre faible, CRP modérée) et pousse mal en culture, d'où la culture en flacon d'hémoculture et la PCR.",
+      "verification": {
+        "q": "Quel germe évoquer en premier chez un enfant de 18 mois avec ostéoarthrite peu fébrile ?",
+        "a": "*Kingella kingae*, majoritaire avant 3 ans ; diagnostic par culture en flacon d'hémoculture et PCR."
+      }
+    },
+    {
+      "titre": "Pathogénie selon l'âge : pourquoi la métaphyse ?",
+      "texte": "**Enfant** : le cartilage de croissance empêche l'anastomose des réseaux diaphysaire et épiphysaire. Les rameaux métaphysaires forment des **boucles vasculaires** à flux lent et turbulent où les germes se fixent → localisation **métaphysaire** (ou près d'un cartilage apophysaire, par exemple le grand trochanter).\n\n**Nourrisson** (jusqu'à ~18 mois) : des vaisseaux diaphysaires **traversent** le cartilage de croissance → l'infection gagne l'épiphyse et l'articulation : les **arthrites secondaires** sont fréquentes ; atteinte volontiers **multifocale** (sauf strepto B : un seul os, typiquement l'humérus).\n\n**Adulte** : plusieurs artères nourricières vascularisent tout l'os ; l'ostéomyélite peut être **sous-chondrale** et se compliquer d'arthrite. En dehors du rachis (localisation la plus fréquente), bassin et os courts.\n\nL'inflammation augmente la pression intramédullaire → stase, thromboses ; la corticale devient perméable, les germes gagnent l'espace **sous-périosté**. Chez l'enfant le périoste est **peu adhérent** : il se soulève (abcès sous-périosté) et la corticale privée de sa vascularisation peut se nécroser (**séquestre**). Chez l'adulte, le périoste adhère : l'infection s'étend plutôt dans la diaphyse.\n\nSi la métaphyse est **intra-articulaire** (hanche, épaule), l'ostéomyélite peut donner une arthrite septique sans atteinte épiphysaire initiale.",
+      "figures": [
+        "cotten-t1:fig12.5"
+      ],
+      "legendes": [
+        "Ostéomyélite aiguë de l'humérus, T1 gadolinium frontal : micro-abcès **traversant le cartilage de croissance** (flèche)."
+      ],
+      "cle": "Âge → vascularisation → topographie : enfant = métaphyse + abcès sous-périosté ; nourrisson = passage transphysaire et arthrite ; adulte = diaphyse / sous-chondral, peu de décollement périosté.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi l'abcès sous-périosté est-il typique de l'enfant et rare chez l'adulte ?",
+        "a": "Le périoste de l'enfant est peu adhérent à la corticale et se laisse décoller ; chez l'adulte l'adhérence corticopériostée empêche ce décollement."
+      }
+    },
+    {
+      "titre": "Ostéomyélite aiguë : quelle imagerie, à quel moment",
+      "texte": "Diagnostic avant tout **clinique** (début brutal, douleur, signes locaux, sepsis), parfois insidieux chez le nourrisson ou après antibiotique « à l'aveugle ». **CRP** = meilleur marqueur (> 90 %) ; leucocytose normale dans 2/3 des cas.\n\n**Radiographie** (en urgence, systématique même si normale) : d'abord des signes **extra-osseux** (épaississement œdémateux des parties molles dès J2–3, effacement des plans graisseux). Les signes osseux n'apparaissent qu'après **1–2 semaines** (perte de 30–50 % de densité) : raréfaction, ostéolyse mal limitée (peut mimer une tumeur), atteinte corticale, **appositions périostées lamellaires** (absentes aux orteils).\n\n**Échographie** (surtout chez l'enfant) : œdème des tissus mous, épaississement hypervascularisé du périoste, **décollement sous-périosté** visible dès 24 h de fièvre (peut indiquer la chirurgie), rupture corticale, épanchement articulaire.\n\n**IRM** = examen de choix mais rarement nécessaire : rachis, bassin, suspicion d'atteinte du cartilage de croissance, absence de réponse à 48 h d'antibiotique (abcès ?). Hyposignal T1, hypersignal T2, rehaussement, homogène puis hétérogène (abcès). Des anomalies **traversant focalement le cartilage de croissance** sont très évocatrices d'infection (≠ tumeur maligne). Sensibilité 82–100 %, signes dès 3–5 j.\n\n**Scintigraphie osseuse** : hyperfixation aux 3 phases dès J3, sensibilité proche de l'IRM, utile sans point d'appel et pour les foyers multiples ; possible **hypofixation** précoce (thrombose). Le **scanner** est peu utile (gaz, niveau graisse-liquide).",
+      "figures": [
+        "cotten-t1:fig12.1d",
+        "cotten-t1:fig12.2b",
+        "cotten-t1:fig12.4b"
+      ],
+      "legendes": [
+        "OM aiguë du radius (*S. aureus*) : ostéolyse mitée du tiers moyen (a) et volumineux **abcès sous-périosté** en T1 sans et avec gadolinium (b, c).",
+        "Nouveau-né, métaphyse tibiale distale : **abcès sous-périosté** en mode B (a) et Doppler énergie (b).",
+        "OM aiguë de la métaphyse tibiale proximale : extension des anomalies **à travers le cartilage de croissance** (flèche) et inflammation des tissus mous."
+      ],
+      "cle": null,
+      "piege": "Chez l'enfant, la moelle hématopoïétique normale peut être confondue avec l'infection : l'ostéomyélite est en général plus intense en T2/STIR ; comparer avec la métaphyse saine controlatérale ou adjacente.",
+      "pourquoi": "La radiographie ne montre l'os qu'après une perte de 30 à 50 % de minéral : un cliché normal à J3 est la règle et ne retarde pas le traitement.",
+      "verification": {
+        "q": "À partir de quand voit-on des signes osseux sur la radiographie d'une ostéomyélite aiguë ?",
+        "a": "Après 1 à 2 semaines (perte de 30–50 % de densité) ; avant, seulement épaississement des parties molles et effacement des plans graisseux."
+      }
+    },
+    {
+      "titre": "Traitement, complications et diagnostics différentiels",
+      "texte": "**Urgence** : hémocultures (positives 1 fois sur 2) ± biopsie, puis antibiothérapie IV probabiliste (par exemple céfotaxime + gentamicine) adaptée ensuite ; relais oral après 4–7 j si infection contrôlée, durée totale 2–4 semaines. Un **décollement périosté** peut imposer un drainage chirurgical.\n\nComplications aiguës : fracture pathologique, arthrite septique, sepsis, emboles septiques (abcès, endocardite, thrombophlébite). Tardives : **épiphysiodèse** (atteinte du cartilage de croissance), nécrose épiphysaire, lésions cartilagineuses.\n\nDiagnostics différentiels chez l'enfant (encadré 12.1) : **pyodermite**, **fracture**, **tumeur** (sarcome d'Ewing, métastase), **leucémie aiguë**.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Devant une ostéolyse agressive métaphysaire de l'enfant, penser toujours au couple infection / Ewing-leucémie : le passage transphysaire focal oriente vers l'infection.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Citez les 4 diagnostics différentiels cliniques d'une ostéomyélite aiguë de l'enfant.",
+        "a": "Pyodermite, fracture, tumeur osseuse (Ewing, métastase), leucémie aiguë."
+      }
+    },
+    {
+      "titre": "Ostéomyélite subaiguë : l'abcès de Brodie",
+      "texte": "Forme **circonscrite** (1–4 cm) par équilibre germe/hôte (germe peu virulent, antibiotique « à l'aveugle ») : signes généraux et biologiques discrets → **retard diagnostique**. Garçon, staphylocoque. Siège : **métaphyses tibiales** proximale et distale chez l'enfant ; épiphyses, carpe/tarse chez le nourrisson ; souvent **épiphysaire** chez l'adolescent/adulte.\n\n**Radiographie/scanner** : ostéolyse métaphysaire arrondie ou surtout **ovalaire, allongée dans l'axe de l'os**, bien limitée, **cerclée d'ostéocondensation** ; appositions périostées subaiguës ou chroniques ; extension possible **transphysaire** ; gaz (*E. coli*, *Serratia*, anaérobies).\n\n**IRM** : aspect **en cible** à 4 couches : centre liquidien (hypo T1, hyper T2) ; **tissu de granulation** en discret **hypersignal T1** (= **signe de la pénombre**), hyper T2, rehaussé ; couronne de **sclérose** en hyposignal ; **œdème** médullaire périphérique flou. Un **trajet sinueux** vers la diaphyse ou l'épiphyse est très évocateur d'infection.\n\nTraitement : biopsie avant antibiotiques (6–8 semaines) + immobilisation ; curetage ± comblement (> 3 cm).",
+      "figures": [
+        "cotten-t1:fig12.8b"
+      ],
+      "legendes": [
+        "Abcès de Brodie du tibia proximal : radiographie, scanner, IRM T1, T2 et T1 gadolinium. Liseré spontanément hyperintense en T1 = **signe de la pénombre**."
+      ],
+      "cle": null,
+      "piege": "Le signe de la pénombre est évocateur mais **non pathognomonique** ; il se voit aussi dans d'autres lésions (et dans les abcès des tissus mous). Le Brodie peut aussi être rehaussé en totalité s'il est rempli de granulation.",
+      "pourquoi": "Le signe de la pénombre correspond à un tissu de granulation richement vascularisé, riche en protéines/radicaux libres, d'où son discret hypersignal T1 spontané.",
+      "verification": {
+        "q": "Décrivez les 4 couches de l'abcès de Brodie en IRM.",
+        "a": "Centre liquidien ; liseré de granulation hyper T1 discret (pénombre), hyper T2, rehaussé ; sclérose en hyposignal ; œdème médullaire périphérique."
+      }
+    },
+    {
+      "titre": "Ostéomyélite chronique : séquestres, activité et complications",
+      "texte": "On parle de chronicité après **2 semaines** d'évolution. Devenue rare hors contexte **postopératoire ou post-traumatique**. Forme particulière : **ostéomyélite sclérosante de Garré** (mandibule, os très dense, sans séquestre).\n\n**Radiographie** : os élargi et remodelé, **ostéocondensation**, appositions périostées épaisses et irrégulières, plages claires ; après fracture ouverte, aspect de **pseudarthrose**. Signes d'**activité** : changements par rapport au cliché antérieur, périostite active fine non incorporée, ostéolyse mal définie ou Brodie, **séquestres**.\n\n**Scanner** = meilleur pour les **séquestres** : fragments très denses, isolés de l'os vivant par du tissu vascularisé, réservoirs de germes à l'abri des défenses et des antibiotiques ; bilan de la destruction, fistules (± fistulographie).\n\n**IRM** : abcès intraosseux (rehaussement annulaire), séquestres hypo T1/T2 non rehaussés, **sinus de décharge** et abcès des tissus mous (berges rehaussées). Un hypersignal T2 rehaussé n'est **pas** synonyme d'activité (granulation postopératoire) ; séquestres et abcès signent l'infection résiduelle ; une moelle redevenue **graisseuse (hyper T1)** signe l'**inactivité**.\n\n**TEP-FDG** = meilleure technique pour l'activité (sensibilité ~100 %, spécificité ~85 %, meilleure au squelette axial) ; le Brodie peut être faussement négatif en leucocytes marqués précoces (fixation seulement à 24 h).\n\nTraitement : pas une urgence ; bilan (séquestres, abcès, vasculaire), **prélèvements osseux profonds chirurgicaux** après fenêtre de 3–4 semaines sans antibiotique ; traitement 3–6 mois.\n\nComplications : **carcinome épidermoïde** (0,5 %, osseux ou sur trajet fistuleux, 20–30 ans après) à suspecter devant une reprise inflammatoire ou une ostéolyse avec masse ; autres sarcomes ou lymphomes rares ; **amylose** secondaire.",
+      "figures": [
+        "cotten-t1:fig12.9d",
+        "cotten-t1:fig12.10",
+        "cotten-t1:fig12.12a",
+        "cotten-t1:fig12.14c"
+      ],
+      "legendes": [
+        "OM chronique **active** du fémur (*Pseudomonas*) : radiographie, scanner et IRM avec abcès intraosseux et des tissus mous.",
+        "OM chronique : **séquestres** intraosseux et infiltration des parties molles en radiographie (a) et scanner (b).",
+        "OM chronique **inactive** du tibia : sclérose homogène sans périostite active, moelle en **hypersignal T1** (graisse).",
+        "OM chronique du fémur : **sinus de décharge** en échographie (a), séquestres en scanner (b) et IRM (c)."
+      ],
+      "cle": "Activité de l'OM chronique : séquestre, abcès, fistule, périostite active = actif ; moelle graisseuse hyper T1 = éteint ; le seul hypersignal T2 n'est pas un critère.",
+      "piege": null,
+      "pourquoi": "Le séquestre est dévascularisé : ni les leucocytes ni les antibiotiques ne l'atteignent, d'où la nécessité de l'exciser chirurgicalement.",
+      "verification": {
+        "q": "Quel signe IRM témoigne de l'absence d'activité d'une ostéomyélite chronique ?",
+        "a": "Le retour d'un hypersignal T1 graisseux de la moelle osseuse (remplacement par de la graisse)."
+      }
+    },
+    {
+      "titre": "Ostéite corticale",
+      "texte": "Infection initialement **limitée à la corticale**, par contiguïté (tissus mous) ou embole septique périosté.\n\nRadiographie : ostéolyse **focale, oblongue, à grand axe vertical**, d'aspect **feuilleté**, à limites floues au début puis nettes quand une apposition périostée régulière se constitue.\n\nÉchographie : collection sous-périostée ou des tissus mous au début ; scanner : **séquestre cortical** (formes subaiguës/chroniques) ; IRM : réaction médullaire adjacente, abcès ; scintigraphie : foyer **unique**, excentré, allongé dans l'axe de l'os.\n\nDiagnostics différentiels d'une ostéolyse corticale (encadré 12.2) : **métastase corticale**, résorption d'**apatite**, enthésopathie chronique, **fracture de contrainte**.",
+      "figures": [
+        "cotten-t1:fig12.18a",
+        "cotten-t1:fig12.19a"
+      ],
+      "legendes": [
+        "Ostéite corticale aiguë du fémur : ostéolyse focale **mal limitée** de la corticale (flèche).",
+        "Ostéite corticale subaiguë du fémur (scanner, IRM) : **séquestre cortical** au sein de l'ostéolyse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels diagnostics évoquer devant une ostéolyse corticale focale oblongue ?",
+        "a": "Ostéite corticale, métastase corticale, résorption d'apatite, enthésopathie chronique, fracture de contrainte."
+      }
+    },
+    {
+      "titre": "Ostéomyélite tuberculeuse",
+      "texte": "19 % des tuberculoses musculosquelettiques ; radiographie de thorax **normale dans 1 cas sur 2** ; traumatisme récent rapporté dans > 20 % ; formes **uniques** prédominantes aujourd'hui. Contexte : antécédent de tuberculose, immunodépression, hémodialyse, origine africaine ou asiatique.\n\nImagerie : ostéolyse **excentrée** rompant la corticale avec **fragments osseux dans les parties molles** (très évocateur) ; plus rarement lésion centrale variable (± séquestres, périostite) mimant une OM chronique ; fracture pathologique ; rarement ostéite corticale.\n\nIRM : **granulome** (hypo T1, hypo ou intermédiaire T2) ou centre **caséeux** non rehaussé avec périphérie rehaussée ; œdème médullaire inconstant ; **abcès juxtacorticaux**, fistules, myosite.\n\nFormes particulières : **tuberculose kystique** (enfant : lacunes métaphysaires ovalaires bien limitées sans sclérose, parfois symétriques ; adulte : crâne, épaules, bassin, rachis avec sclérose) ; **dactylite** (enfant < 5 ans ; P1 des 2e–3e rayons, métacarpiens 3–4) avec l'aspect de **spina ventosa** (os court soufflé par le caséum) ; diaphysite multiple des os longs (exceptionnelle).\n\nTraitement : quadrithérapie ≥ 3 mois ou trithérapie 6 mois ; chirurgie surtout diagnostique.",
+      "figures": [
+        "cotten-t1:fig12.20"
+      ],
+      "legendes": [
+        "OM tuberculeuse : ostéolyse **excentrée** et fragment osseux dans les parties molles (flèche), très évocateur de tuberculose."
+      ],
+      "cle": null,
+      "piege": "La tuberculose osseuse mime à peu près tout (tumeur, OM chronique, kyste) : y penser dès que le contexte est évocateur, même avec un thorax normal.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce que le spina ventosa ?",
+        "a": "Une dactylite tuberculeuse avec ostéolyse centrale expansive soufflant la corticale d'un os court (accumulation de caséum), surtout chez l'enfant de moins de 5 ans."
+      }
+    },
+    {
+      "titre": "Micro-organismes particuliers de l'os",
+      "texte": "**Syphilis acquise** (en recrudescence) : phase secondaire = **périostite** douloureuse nocturne (tibia, crâne, clavicules) ; phase tertiaire = **hyperostose corticale** de tout l'os, **ostéite gommeuse** (lacunes soufflées du crâne), **tibia en lame de sabre** ; OAN (ostéoarthropathie nerveuse) tabétique 20–30 ans après.\n\n**Syphilis congénitale** : pseudo-paralysie de **Parrot** ; « ostéochondrite » des 3 premiers mois (bandes claires métaphysaires bilatérales, érosion du bord médial du tibia proximal = **signe de Wimberger**), ostéomyélite diaphysaire, périostite. Pian (spina ventosa pianique, goundou) et Bejel : aspect de syphilis tertiaire.\n\n**Hydatidose osseuse** (*Echinococcus granulosus*) : rachis 44 % ; pas de membrane périkystique → le kyste **épouse et détruit les travées** puis franchit la corticale ; lacunes sans sclérose ni périostite, calcifications rares ; **ponction contre-indiquée** (essaimage, anaphylaxie) ; exérèse large comme une tumeur maligne + albendazole.\n\n**Mycétomes** (pied de **Madura**) : tuméfaction chronique polyfistulisée avec **grains** (noirs = toujours fongiques ; rouges = actinomycosiques) ; os atteint par contiguïté (~50 %), « **dentelle osseuse** » ; échographie : logettes avec échos hyperéchogènes (grains) ; IRM : nodules hyper T2 avec point central hypo T2 = signe **dot-in-circle** (quasi pathognomonique).\n\nAutres : actinomycose (mandibule), coccidioïdomycose (lacunes métaphysaires, apophyses ; *desert rheumatism*), rubéole/CMV congénitaux (bandes métaphysaires, aspect strié « en céleri »), variole (coudes, symétrique).",
+      "figures": [
+        "cotten-t1:fig12.23c"
+      ],
+      "legendes": [
+        "Pied de Madura : tuméfaction plantaire (a), masse hétérogène à **échos hyperéchogènes** (grains) en échographie (b), IRM avec nodules (c–e)."
+      ],
+      "cle": "Mycétome : grains + dot-in-circle ; hydatidose : ne jamais ponctionner sans précautions ; syphilis congénitale : signe de Wimberger.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce que le signe dot-in-circle ?",
+        "a": "En IRM, nodules granulomateux en hypersignal T2 contenant un point central en hyposignal (amas mycélien) : quasi pathognomonique de mycétome."
+      }
+    },
+    {
+      "titre": "Arthrite septique à pyogènes",
+      "texte": "Pic chez l'enfant et l'adulte jeune, garçons × 2, **monoarticulaire** (80 %). Terrains : rhumatismes inflammatoires, lupus, lymphœdème ; toxicomanes → rachis, sacro-iliaques, **sternoclaviculaires** ; diabétiques → pieds ; enfant → genou et hanche. Gonocoque en recrudescence.\n\nPathogénie : implantation hématogène **synoviale** (ou épiphysaire) → synovite, liquide riche en enzymes + hyperpression → **destruction cartilagineuse rapide** puis sous-chondrale. Extension d'une ostéomyélite (surtout si métaphyse intra-articulaire : hanche, épaule) ou d'une infection de voisinage.\n\nClinique brutale ; CRP (sensibilité 85 %). **Radiographie** (diagnostic et traitement devraient précéder les signes) : tuméfaction, raréfaction périarticulaire, **pincement rapide** (complet en 1–3 semaines), érosions marginales puis centrales, destruction, (sub)luxation, ankylose osseuse. Gaz possible (*E. coli*, anaérobies) ; calcifications dystrophiques séquellaires.\n\n**Échographie** : épanchement (ne pas trop appuyer ; l'échogénicité n'est pas spécifique), épaississement synovial, hyperhémie Doppler (peut manquer tôt), érosions, abcès ; **guide la ponction** qui décomprime l'articulation.\n\n**IRM** : synovite, épanchement abondant, **œdème osseux pré-érosif sous-chondral** et aux zones de réflexion (absent dans une synovite transitoire), chondrolyse, érosions floues, inflammation marquée des tissus mous, abcès à **paroi épaisse et irrégulière**. **Diffusion** : ADC (coefficient apparent de diffusion) **abaissé** dans le pus (augmenté dans l'arthrite inflammatoire).",
+      "figures": [
+        "cotten-t1:fig12.24b",
+        "cotten-t1:fig12.26",
+        "cotten-t1:fig12.27c"
+      ],
+      "legendes": [
+        "Arthrite de la 2e MTP (métatarsophalangienne), *S. aureus* : discrète raréfaction en radiographie (a), épanchement et **hyperhémie Doppler** en échographie (b, c).",
+        "Coxite à *S. aureus* : synovite rehaussée et **érosion marginale** de l'acétabulum (flèche) en T1 gadolinium.",
+        "Arthrite MTP du 2e rayon et abcès chez une diabétique : la **diffusion** (c) et l'ADC bas (d) confirment le contenu purulent."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le pus contient des enzymes protéolytiques (polynucléaires) qui détruisent vite le cartilage : c'est pourquoi le pincement est rapide dans l'arthrite à pyogènes et lent dans la tuberculose.",
+      "verification": {
+        "q": "Quel signe IRM aide à distinguer une arthrite septique d'un épanchement réactionnel (synovite transitoire) ?",
+        "a": "L'œdème osseux pré-érosif sous-chondral et aux zones de réflexion synoviale (± inflammation marquée des tissus mous)."
+      }
+    },
+    {
+      "titre": "Arthrite tuberculeuse et formes particulières",
+      "texte": "Mono-arthrite des **grosses articulations portantes** (hanche = coxalgie, 2e localisation après le rachis ; genou), clinique **frustre**, fistules dans 30 %. Les mycobactéries atypiques donnent le même tableau.\n\nRadiographie : **triade de Phemister** = déminéralisation périarticulaire (parfois sévère, mime une algodystrophie), **érosions marginales** parfois énormes avec **interligne longtemps préservé**, puis **pincement lent**. Ankylose plutôt **fibreuse**. Épaule : érosions supérolatérales de la tête (« **carie sèche** »).\n\nIRM : **synovite très marquée** avec amas pseudo-tumoraux, épanchement inconstant à composante **hypo T2** (débris, hémosidérine), **grains de riz** (2–10 mm), œdème pré-érosif moins fréquent, abcès à **paroi fine et régulière** (abcès froids), sinus de décharge.\n\n**Brucellose** (lait cru, éleveurs) : rachis, sacro-iliaques, monoarthrite du genou/hanche/cheville de l'enfant ; érosions cerclées de sclérose. **Lyme** (*Borrelia*, tique) : oligoarthrite des genoux 2–6 mois après l'érythème migrant, chronique chez 10 % des non traités. Arthrites virales (rubéole, varicelle, parvovirus…).",
+      "figures": [
+        "cotten-t1:fig12.28a",
+        "cotten-t1:fig12.31a",
+        "cotten-t1:fig12.29c"
+      ],
+      "legendes": [
+        "Arthrite tuberculeuse MCP (métacarpophalangienne) de l'index : **érosion marginale profonde** avec interligne préservé et raréfaction osseuse.",
+        "Coxalgie gauche : épanchement contenant des zones en **hyposignal T2**, évocateur de coxite tuberculeuse.",
+        "Coxalgie traitée tardivement : destruction ostéocartilagineuse marquée et grandes érosions des branches pubiennes (flèches)."
+      ],
+      "cle": null,
+      "piege": "Les grains de riz ne sont pas spécifiques de la tuberculose : ils se voient aussi dans la PR (polyarthrite rhumatoïde), les spondyloarthrites et les autres mycobactéries.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle est la triade de Phemister ?",
+        "a": "Raréfaction osseuse périarticulaire, érosions osseuses marginales, pincement progressif (tardif) de l'interligne : arthrite tuberculeuse."
+      }
+    },
+    {
+      "titre": "Hanche de l'enfant, complications et traitement des arthrites",
+      "texte": "**Nourrisson** : signes radiographiques discrets (épaississement des parties molles, refoulement du plan graisseux obturateur, **subluxation latérale**) ; échographie : épanchement du récessus antérieur **≥ 2 mm**, excentration du noyau, hyperhémie ; **ponction** à la fois diagnostique et décompressive (risque de nécrose). Séquelles : **coxa magna**. Enfant plus âgé : meilleur pronostic ; séquelles coxa vara/valga, inégalité, ankylose, ostéonécrose.\n\nDiagnostic différentiel principal : **synovite transitoire** (pas de lésion osseuse ; l'échographie ne les distingue pas mais élimine l'arthrite si pas d'épanchement). En IRM, épanchement **controlatéral** asymptomatique et absence d'œdème osseux → synovite transitoire ; œdème osseux, inflammation des tissus mous et **défaut de rehaussement de la tête fémorale** → arthrite septique. Chez le grand enfant : AJI (arthrite juvénile idiopathique), Legg-Perthes-Calvé.\n\nComplications : ostéonécrose épiphysaire (emboles, hyperpression), abcès, ostéomyélite, décollement épiphysaire néonatal, luxation, **ankylose osseuse** (pyogènes, retard), hypertrophie épiphysaire, arthrose, inégalité de longueur.\n\nTraitement : urgence fonctionnelle et vitale (mortalité 5–15 %) : ponction/drainage (guidée par l'imagerie à la hanche), lavage, prélèvements + hémocultures, antibiothérapie IV immédiate.",
+      "figures": [
+        "cotten-t1:fig12.33c"
+      ],
+      "legendes": [
+        "Arthrite septique de hanche gauche : **défaut de rehaussement de la tête fémorale** et important œdème des tissus mous."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le pus sous pression dans une capsule fermée comprime les vaisseaux épiphysaires de la tête fémorale : d'où le défaut de perfusion et le risque de nécrose, et l'intérêt d'une ponction évacuatrice.",
+      "verification": {
+        "q": "Quels éléments IRM orientent vers une synovite transitoire plutôt qu'une arthrite septique de hanche ?",
+        "a": "Épanchement aussi présent du côté controlatéral asymptomatique et absence d'œdème intra-osseux (avec tête fémorale normalement rehaussée)."
+      }
+    },
+    {
+      "titre": "Infection sur prothèse et matériel d'ostéosynthèse",
+      "texte": "Risque 1–2 % après PTH (prothèse totale de hanche), ~3 % après PTG (prothèse totale de genou). Délai : **précoce** (< 1 mois), **retardée** (2–6 mois), **tardive** (> 6 mois), **hématogène** (porte d'entrée ORL, pulmonaire, urinaire, cutanée). Précoces et hématogènes = tableau **aigu** (guérison possible sans ablation) ; retardées et tardives = **chroniques**.\n\nPathogénie : < 1 000 CFU suffisent ; adhésion puis **biofilm** (slime) où les antibiotiques diffusent mal, bactéries en croissance lente (*small colony variants*) ; le biofilm couvre le matériel en quelques jours, d'où l'efficacité moindre d'un lavage au-delà de 2–3 semaines. Germes : *S. aureus* et staphylocoques à coagulase négative (≥ 50 %), *P. acnes* (chronique), streptocoques et BGN (hématogène).\n\nClinique : fièvre postopératoire qui doit se normaliser vers **J5** ; chronique = **prothèse douloureuse sans intervalle libre**, fistule, retard de consolidation, pseudarthrose.\n\n**Radiographie** (sensibilité 14 %, spécificité 70 %) : liseré clair étendu et irrégulier, **ostéolyse multifocale mal limitée**, **périostite circonférentielle active**, gaz, séquestre, **évolution rapide**. Scanner injecté et échographie : épanchement, collections (attention aux bourses du psoas et trochantériennes non infectées) ; absence d'épanchement au scanner = forte VPN (valeur prédictive négative). IRM : œdème rehaussé, abcès, fistule, séquestre.\n\n**Scintigraphies** : osseuse = débrouillage très sensible (90–100 %) mais peu spécifique (hyperfixation physiologique la 1re année, descellement mécanique, ALVAL, fracture) ; **normale → infection quasi exclue**. **Leucocytes marqués** (≥ 6 mois après la pose) ± scintigraphie **médullaire** aux nanocolloïdes : leucocytes sans fixation médullaire = sepsis. Gallium : spécifique mais irradiant. TEP-FDG : pas en 1re intention.\n\nPonction en asepsie chirurgicale, **après 3 semaines sans antibiotique** ; prélèvements peropératoires **≥ 5**. Certitude : fistule, pus, même germe cutané dans ≥ 3 prélèvements, ou germe non commensal.\n\nTraitement : nettoyage avec maintien (< 15 j, sans descellement ; > 75 % de succès) ; changement en 1 temps ou en 2 temps (**espaceur** systématique à la hanche) ; antibiotiques 6–12 semaines (rifampicine + fluoroquinolone pour les staphylocoques).",
+      "figures": [
+        "cotten-t1:fig12.35",
+        "cotten-t1:fig12.37c"
+      ],
+      "legendes": [
+        "Infection de PTH droite : **plages ostéolytiques multifocales** au contact de la tige et **apposition périostée circonférentielle**.",
+        "Infection de PTG : hyperfixation osseuse non spécifique (a) ; fixation des **leucocytes marqués** (b, c) plus marquée que la fixation médullaire (d) = infection."
+      ],
+      "cle": "Stratégie dans l'infection tardive : radiographie → scanner/IRM/échographie (collection à ponctionner) → scintigraphie osseuse (normale = exclut) → leucocytes marqués ± médullaire pour trancher septique vs aseptique.",
+      "piege": "Une hyperfixation osseuse autour d'une prothèse de moins d'un an est souvent physiologique (remodelage), et persiste chez 10 % après un an (prothèses non cimentées, genou).",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi associer une scintigraphie médullaire aux leucocytes marqués ?",
+        "a": "Les leucocytes se fixent aussi sur la moelle réactivée ; une fixation leucocytaire sans fixation médullaire correspondante est très évocatrice d'infection."
+      }
+    },
+    {
+      "titre": "Infections des tissus mous : anatomie, érysipèle et fasciite nécrosante",
+      "texte": "Anatomie : épiderme, derme, **hypoderme** (graisse) traversé par un **fascia superficialis** lâche (pas une barrière), puis le **fascia profond**, enveloppe fibreuse très résistante, **siège de la nécrose des fasciites**, d'où partent les **septums intermusculaires**. Le terme « cellulite » est à abandonner.\n\nClassification (consensus) : **DHB** (dermohypodermite bactérienne) **= érysipèle** : ni nécrose ni atteinte du fascia profond → traitement **médical** ; **DHBN** (dermohypodermite bactérienne nécrosante) : nécrose sans atteinte du fascia profond → chirurgie locale ; **FN** (fasciite nécrosante) : nécrose au-delà du fascia profond → **urgence chirurgicale**. La « cellulite » du pied diabétique est une DHB.\n\n**Érysipèle** : membres inférieurs 85 %, streptocoques β-hémolytiques (A, G), toxi-infection ; diagnostic **clinique**. Échographie (pour éliminer un abcès) : peau épaissie, **lobules graisseux hyperéchogènes cerclés de liquide** (aspect pavimenteux), hyperhémie Doppler. TDM/IRM : infiltration dermohypodermique rehaussée **sans franchir le fascia profond**.\n\n**DHBN-FN** : mortelle dans ~30 % ; diabète, immunodépression, AINS (anti-inflammatoires non stéroïdiens) ; gangrène de **Fournier** au périnée ; souvent polymicrobienne ; **discordance** entre signes locaux discrets et signes généraux graves ; ni pus ni abcès. Imagerie **seulement si doute**, jamais au prix d'un retard : gaz en extension, **fascia profond épaissi ≥ 3 mm en T2**, gaz, atteinte des septums à distance et de **≥ 3 loges**, rehaussement partiel des fascias ; l'IRM **surestime** l'étendue. Traitement : excision large précoce ± oxygénothérapie hyperbare.",
+      "figures": [
+        "cotten-t1:fig12.42a",
+        "cotten-t1:fig12.44a"
+      ],
+      "legendes": [
+        "Érysipèle de jambe (*S. pyogenes*), IRM T1, T2, T1 gadolinium : infiltration dermohypodermique qui **ne franchit pas le fascia profond**.",
+        "Fasciite nécrosante de cuisse (T1, STIR, T1 FS gado) : **épaississement > 3 mm** des fascias profonds et des septums."
+      ],
+      "cle": null,
+      "piege": "Un peu d'œdème des fascias se voit aussi dans un érysipèle (œdème réactionnel) : c'est l'épaisseur (≥ 3 mm), le gaz et l'extension multi-loges qui orientent vers la fasciite.",
+      "pourquoi": "La classification repose sur la profondeur de la nécrose parce que c'est elle qui décide du traitement : antibiotiques seuls, excision locale ou chirurgie en urgence.",
+      "verification": {
+        "q": "Où siège électivement la nécrose dans une fasciite nécrosante ?",
+        "a": "Dans le fascia profond (et les septums intermusculaires qui en partent)."
+      }
+    },
+    {
+      "titre": "Pyomyosite, abcès, bursite et ténosynovite septiques",
+      "texte": "**Pyomyosite** : infection musculaire, d'abord **phlegmon** (infiltration non collectée) puis **abcès** ; immunodépression, toxicomanie ; un seul groupe musculaire ; toujours vérifier l'os et l'articulation adjacents (abcès primitif ?).\n\nÉchographie : muscle gonflé, fibres hyperéchogènes au stade de phlegmon ; abcès = centre hypoéchogène à débris mobiles (sédimentation, mobilisation à la compression), **aucune vascularisation interne** (≠ tumeur), paroi hypervascularisée ; air = échos brillants en queue de comète. TDM : contenu > 20 UH, paroi épaisse rehaussée. **IRM** : centre liquidien, **coque rehaussée**, œdème périphérique important, **signe de la pénombre** (liseré hyper T1), **restriction de diffusion** (utile sans injection). **Gangrène gazeuse** à *Clostridium* : bulles multiples, urgence absolue.\n\nDiagnostics différentiels : tumeur nécrotique, hématome, rupture, myosite focale, **nécrose musculaire diabétique**.\n\n**Bursite septique** : olécrâne et prépatellaire surtout, *S. aureus*, fièvre seulement 40 % ; contenu échogène pouvant mimer une masse (la palpation échographique met en évidence un mouvement brownien) ; non distinguable des autres bursites en imagerie. Tuberculeuse : hanche (péritrochantérienne) 60 %, grains de riz, abcès multiples.\n\n**Ténosynovite septique** : inoculation directe, *S. aureus*, **phlegmon des gaines digitales** des fléchisseurs (doigt en flexion, douleur à l'extension passive) → chirurgie urgente. Cinq gaines palmaires classiques : latérale (1er rayon), trois digitales (2e–4e), médiale (carpe + 5e rayon). Échographie : aspect **en cible** (gaine-épanchement-tendon), hyperhémie, corps étranger. Mycobactéries : stades hygromateux, sérofibrineux (grains de riz), fongoïde ; *M. marinum* chez les **aquariophiles**.",
+      "figures": [
+        "cotten-t1:fig12.48b",
+        "cotten-t1:fig12.51a"
+      ],
+      "legendes": [
+        "Abcès musculaire : **centre liquidien**, coque périphérique rehaussée, **œdème** périphérique bien visible en T2.",
+        "Ténosynovite des fléchisseurs du 3e rayon sur **corps étranger** (flèche), *S. aureus* : coupe transversale (a) et Doppler énergie (b)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Les gaines du pouce et du 5e doigt communiquent avec les gaines carpiennes : une infection de ces doigts peut gagner le canal carpien (phlegmon « en fer à cheval »), d'où l'intérêt de connaître le schéma.",
+      "verification": {
+        "q": "Quel argument échographique distingue un abcès d'une tumeur nécrotique ?",
+        "a": "L'absence totale de vascularisation à l'intérieur de la lésion en Doppler (seule la paroi est hypervascularisée), avec des débris mobiles à la compression."
+      }
+    },
+    {
+      "titre": "Parasitoses et infections particulières des tissus mous",
+      "texte": "**Cysticercose** (*Taenia solium*, porc, Réunion) : à la mort de la larve, **calcifications allongées ≤ 2 cm dans l'axe des fibres musculaires** (« grains de riz » calcifiés) ; IRM : kyste sans paroi visible (vivant), rehaussement périphérique (mort).\n\n**Dracunculose** (filaire de Médine) : calcifications **linéaires ou enroulées**, fragmentées « en chapelet », membres inférieurs. **Loase** : fines calcifications spiralées sous-cutanées. **Trichinellose** : petites calcifications arrondies.\n\n**Hydatidose musculaire** (0,5–5 %) : paravertébraux, fessiers, membres inférieurs ; kyste **multivésiculaire** (vésicules filles), **signe du nénuphar** (membrane décollée) ; IRM : paroi interne hypo T2 (ectocyste), externe rehaussée (péricyste).\n\n**Lèpre** : lépromateuse (os de la face et des extrémités) ; tuberculoïde = **nerfs** (ulnaire, fibulaire commun) **épaissis**, hyperhémiques puis fibreux, calcifications nerveuses, OAN.\n\n**Maladie des griffes du chat** (*Bartonella henselae*) : adénopathie **sus-épitrochléenne** (supra-épicondylienne médiale) très évocatrice, richement vascularisée, à centre parfois nécrotique et œdème périphérique ; parfois ostéomyélite (rachis, bassin, côtes).",
+      "figures": [
+        "cotten-t1:fig12.54",
+        "cotten-t1:fig12.56a"
+      ],
+      "legendes": [
+        "Cysticercose : **calcifications allongées dans l'axe des fibres musculaires**.",
+        "Hydatidose de la cuisse : **vésicules filles** en échographie (a) et en IRM T2 (b)."
+      ],
+      "cle": "Calcification musculaire en grain de riz dans l'axe des fibres = cysticercose ; calcification serpigineuse/enroulée = dracunculose ; masse sus-épitrochléenne = griffes du chat.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle localisation d'adénopathie est très évocatrice de la maladie des griffes du chat ?",
+        "a": "La région supra-épicondylienne médiale (sus-épitrochléenne), drainant une griffure de la main."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Métaphyse tibiale distale, IRM sagittale T1 et T2 chez un enfant fébrile : infiltration discrètement hétérogène. Diagnostic ?",
+      "figure": "cotten-t1:fig12.3a",
+      "options": [
+        "Ostéomyélite aiguë métaphysaire",
+        "Moelle hématopoïétique normale",
+        "Ostéosarcome",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Infiltration inflammatoire métaphysaire hétérogène dans un contexte fébrile : ostéomyélite aiguë. La moelle rouge est moins intense en T2 et symétrique.",
+      "page": "p. 337",
+      "image_origine": "c12/f12.3"
+    },
+    {
+      "question": "Fibula d'enfant, coupes T2 et T1 gadolinium : collection le long de la corticale. Qu'objective-t-on ?",
+      "figure": "cotten-t1:fig12.6b",
+      "options": [
+        "Un abcès sous-périosté d'ostéomyélite aiguë",
+        "Un hématome sous-périosté traumatique",
+        "Une périostite d'insuffisance veineuse",
+        "Une myosite ossifiante"
+      ],
+      "reponse": 0,
+      "explication": "Chez l'enfant, le périoste peu adhérent est soulevé par le pus : abcès sous-périosté, pouvant justifier un drainage.",
+      "page": "p. 338",
+      "image_origine": "c12/f12.6"
+    },
+    {
+      "question": "Deux enfants : lacune métaphysaire ovalaire cerclée de sclérose, l'une traversant le cartilage de croissance. Diagnostic ?",
+      "figure": "cotten-t1:fig12.7b",
+      "options": [
+        "Abcès de Brodie",
+        "Kyste osseux essentiel",
+        "Chondroblastome",
+        "Ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "Lacune métaphysaire allongée cerclée de sclérose, avec extension transphysaire très évocatrice : abcès de Brodie.",
+      "page": "p. 338",
+      "image_origine": "c12/f12.7"
+    },
+    {
+      "question": "Coupe axiale T1 gadolinium FS d'une ostéomyélite chronique : fragment en hyposignal non rehaussé (flèche). Qu'est-ce ?",
+      "figure": "cotten-t1:fig12.11b",
+      "options": [
+        "Un séquestre osseux",
+        "Un abcès intraosseux",
+        "Un îlot condensant",
+        "Une calcification vasculaire"
+      ],
+      "reponse": 0,
+      "explication": "Fragment dévascularisé, hypointense, non rehaussé, entouré de tissu inflammatoire : séquestre, réservoir de germes.",
+      "page": "p. 341",
+      "image_origine": "c12/f12.11"
+    },
+    {
+      "question": "Humérus : fragments osseux dans les tissus mous, puis en échographie fragment hyperéchogène dans un abcès et trajet hypoéchogène. Diagnostic ?",
+      "figure": "cotten-t1:fig12.13c",
+      "options": [
+        "Ostéomyélite chronique avec séquestre et sinus de décharge",
+        "Myosite ossifiante",
+        "Ostéosarcome parostéal",
+        "Chondrome des parties molles"
+      ],
+      "reponse": 0,
+      "explication": "Séquestres extra-osseux, abcès et sinus de décharge : ostéomyélite chronique active.",
+      "page": "p. 343",
+      "image_origine": "c12/f12.13"
+    },
+    {
+      "question": "Fracture tibiale non consolidée : hyperfixation en scintigraphie osseuse et aux leucocytes marqués couplée au scanner. Diagnostic ?",
+      "figure": "cotten-t1:fig12.15b",
+      "options": [
+        "Pseudarthrose septique",
+        "Pseudarthrose aseptique hypertrophique",
+        "Algodystrophie",
+        "Cal vicieux"
+      ],
+      "reponse": 0,
+      "explication": "La fixation des leucocytes marqués au foyer signe l'infection : pseudarthrose septique.",
+      "page": "p. 344",
+      "image_origine": "c12/f12.15"
+    },
+    {
+      "question": "Patient avec ostéomyélite chronique tibiale ancienne et reprise inflammatoire : IRM sagittale avec masse infiltrant la peau et le tibia antérieur. À évoquer ?",
+      "figure": "cotten-t1:fig12.16a",
+      "options": [
+        "Carcinome épidermoïde sur ostéomyélite chronique",
+        "Simple poussée d'ostéomyélite",
+        "Lymphome osseux primitif",
+        "Myosite proliférative"
+      ],
+      "reponse": 0,
+      "explication": "Une masse avec envahissement cutané sur OM chronique fistulisée doit faire évoquer un carcinome épidermoïde (0,5 %, 20–30 ans après).",
+      "page": "p. 343",
+      "image_origine": "c12/f12.16"
+    },
+    {
+      "question": "Fémur : ostéolyse corticale oblongue avec appositions périostées irrégulières. Diagnostic infectieux le plus probable ?",
+      "figure": "cotten-t1:fig12.18b",
+      "options": [
+        "Ostéite corticale aiguë",
+        "Abcès de Brodie",
+        "Ostéomyélite de Garré",
+        "Spina ventosa"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyse limitée à la corticale, oblongue, à grand axe vertical : ostéite corticale (différentiel : métastase corticale, apatite, fracture de contrainte).",
+      "page": "p. 344",
+      "image_origine": "c12/f12.18"
+    },
+    {
+      "question": "Lésion osseuse IRM : centre hypo T1, iso T2, non rehaussé ; périphérie hyperintense rehaussée. Diagnostic ?",
+      "figure": "cotten-t1:fig12.21a",
+      "options": [
+        "Granulome tuberculeux osseux (caséum central)",
+        "Enchondrome",
+        "Métastase hypervascularisée",
+        "Infarctus osseux"
+      ],
+      "reponse": 0,
+      "explication": "Centre caséeux non rehaussé iso/hypo et couronne rehaussée : granulome tuberculeux.",
+      "page": "p. 346",
+      "image_origine": "c12/f12.21"
+    },
+    {
+      "question": "Nourrisson, radiographie des membres inférieurs : appositions périostées et encoche du bord médial de la métaphyse tibiale supérieure (flèche). Diagnostic ?",
+      "figure": "cotten-t1:fig12.22",
+      "options": [
+        "Syphilis congénitale (signe de Wimberger)",
+        "Scorbut",
+        "Rachitisme",
+        "Maltraitance (fracture métaphysaire)"
+      ],
+      "reponse": 0,
+      "explication": "L'érosion médiale de la métaphyse tibiale proximale est le signe de Wimberger de la syphilis congénitale.",
+      "page": "p. 349",
+      "image_origine": "c12/f12.22"
+    },
+    {
+      "question": "Épaule : érosion marginale profonde et destruction des berges avec fragments dans le récessus inférieur. Germe : *S. aureus*. Diagnostic ?",
+      "figure": "cotten-t1:fig12.25b",
+      "options": [
+        "Arthrite septique à pyogènes",
+        "Arthropathie de Milwaukee",
+        "Ostéoarthropathie nerveuse",
+        "Arthrose excentrée"
+      ],
+      "reponse": 0,
+      "explication": "Destruction rapide avec érosions et fragments dans un contexte de *S. aureus* : arthrite septique de l'épaule.",
+      "page": "p. 352",
+      "image_origine": "c12/f12.25"
+    },
+    {
+      "question": "Poignet : volumineuses érosions marginales et centrales avec interligne radiocarpien relativement préservé. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig12.29b",
+      "options": [
+        "Arthrite tuberculeuse",
+        "Arthrite septique à pyogènes",
+        "Arthrose STT",
+        "Goutte"
+      ],
+      "reponse": 0,
+      "explication": "Grandes érosions alors que l'interligne reste préservé : signe typique de la tuberculose (pincement lent, pas d'enzymes protéolytiques).",
+      "page": "p. 355",
+      "image_origine": "c12/f12.29"
+    },
+    {
+      "question": "Abcès épiphysométaphysaire huméral étendu à la bourse sous-acromiodeltoïdienne et à l'articulation, à paroi fine. Germe le plus probable ?",
+      "figure": "cotten-t1:fig12.32c",
+      "options": [
+        "Mycobacterium tuberculosis",
+        "Staphylococcus aureus",
+        "Kingella kingae",
+        "Neisseria gonorrhoeae"
+      ],
+      "reponse": 0,
+      "explication": "Abcès froid à paroi fine et régulière avec extension aux bourses : tuberculose.",
+      "page": "p. 356",
+      "image_origine": "c12/f12.32"
+    },
+    {
+      "question": "Hanche gauche : plages hypo T1 franc et hyper T2 du toit acétabulaire et du col en plus d'une arthrite. Qu'ajoutent-elles ?",
+      "figure": "cotten-t1:fig12.34b",
+      "options": [
+        "Une ostéomyélite associée (ostéoarthrite)",
+        "Une ostéonécrose aseptique",
+        "Un œdème réactionnel sans valeur",
+        "Une algodystrophie"
+      ],
+      "reponse": 0,
+      "explication": "Des anomalies médullaires franches en T1 de part et d'autre de l'articulation traduisent une ostéomyélite associée.",
+      "page": "p. 358",
+      "image_origine": "c12/f12.34"
+    },
+    {
+      "question": "PTH gauche douloureuse : hyperfixation de la néoarticulation en scintigraphie aux leucocytes marqués couplée au scanner. Conclusion ?",
+      "figure": "cotten-t1:fig12.36b",
+      "options": [
+        "Infection de prothèse",
+        "Descellement mécanique simple",
+        "Remodelage physiologique",
+        "Stress shielding"
+      ],
+      "reponse": 0,
+      "explication": "La fixation des leucocytes marqués (plus spécifique que la scintigraphie osseuse) autour de la néoarticulation signe l'infection.",
+      "page": "p. 362",
+      "image_origine": "c12/f12.36"
+    },
+    {
+      "question": "Jambe, échographie : lobules graisseux hyperéchogènes « disséqués » par du liquide et hyperhémie Doppler. Diagnostic ?",
+      "figure": "cotten-t1:fig12.41b",
+      "options": [
+        "Érysipèle (dermohypodermite bactérienne)",
+        "Lymphœdème chronique",
+        "Abcès sous-cutané",
+        "Lipome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect pavimenteux des lobules cerclés de liquide avec hyperhémie : dermohypodermite infectieuse (l'hyperhémie oriente contre une simple stase).",
+      "page": "p. 366",
+      "image_origine": "c12/f12.41"
+    },
+    {
+      "question": "Scanner et IRM injectés : fascias hypodenses épaissis et plages musculaires non rehaussées, patient en sepsis grave. Diagnostic ?",
+      "figure": "cotten-t1:fig12.43a",
+      "options": [
+        "Fasciite nécrosante",
+        "Érysipèle",
+        "Myosite inflammatoire",
+        "Syndrome des loges post-traumatique"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte des fascias avec nécrose musculaire : fasciite nécrosante, urgence chirurgicale.",
+      "page": "p. 367",
+      "image_origine": "c12/f12.43"
+    },
+    {
+      "question": "Échographie des parties molles : collection hypoéchogène avec sédimentation dans sa partie déclive. Diagnostic ?",
+      "figure": "cotten-t1:fig12.45",
+      "options": [
+        "Abcès des parties molles",
+        "Lipome",
+        "Schwannome",
+        "Tumeur desmoïde"
+      ],
+      "reponse": 0,
+      "explication": "Contenu liquidien avec débris qui sédimentent : abcès.",
+      "page": "p. 368",
+      "image_origine": "c12/f12.45"
+    },
+    {
+      "question": "Loge des fibulaires : collection à paroi hypervascularisée sans flux interne. Diagnostic ?",
+      "figure": "cotten-t1:fig12.46d",
+      "options": [
+        "Abcès musculaire",
+        "Sarcome des tissus mous",
+        "Hématome organisé",
+        "Angiome intramusculaire"
+      ],
+      "reponse": 0,
+      "explication": "Absence de vascularisation interne et paroi hypervascularisée : abcès (une tumeur montre des flux internes).",
+      "page": "p. 369",
+      "image_origine": "c12/f12.46"
+    },
+    {
+      "question": "Mollet, IRM : muscle profond infiltré, rehaussé, avec plages avasculaires en cours de constitution. Stade ?",
+      "figure": "cotten-t1:fig12.47a",
+      "options": [
+        "Pyomyosite en voie d'abcédation (phlegmon)",
+        "Myosite ossifiante",
+        "Rhabdomyolyse d'effort",
+        "Nécrose musculaire diabétique"
+      ],
+      "reponse": 0,
+      "explication": "Phlegmon de la loge profonde évoluant vers l'abcès (plages non rehaussées).",
+      "page": "p. 369",
+      "image_origine": "c12/f12.47"
+    },
+    {
+      "question": "Coupe frontale T2 : collection en regard du grand trochanter, *S. aureus*. Diagnostic ?",
+      "figure": "cotten-t1:fig12.49",
+      "options": [
+        "Bursite péritrochantérienne septique",
+        "Tendinopathie du moyen fessier",
+        "Hernie musculaire",
+        "Lipome"
+      ],
+      "reponse": 0,
+      "explication": "Distension liquidienne de la bourse péritrochantérienne avec germe isolé : bursite septique.",
+      "page": "p. 370",
+      "image_origine": "c12/f12.49"
+    },
+    {
+      "question": "Main, IRM : épanchement et synovite des gaines des fléchisseurs chez un aquariophile. Germe ?",
+      "figure": "cotten-t1:fig12.52c",
+      "options": [
+        "Mycobacterium marinum",
+        "Pasteurella multocida",
+        "Streptococcus pyogenes",
+        "Neisseria gonorrhoeae"
+      ],
+      "reponse": 0,
+      "explication": "Ténosynovite des fléchisseurs chez un aquariophile : *M. marinum*.",
+      "page": "p. 372",
+      "image_origine": "c12/f12.52"
+    },
+    {
+      "question": "Radiographie (a) et IRM (b : sagittale T1 gadolinium ; c : axiale T2) du 5e rayon de la main : gaine des fléchisseurs multiloculée. Diagnostic ?",
+      "figure": "cotten-t1:fig12.53c",
+      "options": [
+        "Ténosynovite à Mycobacterium marinum des fléchisseurs",
+        "Tumeur à cellules géantes de la gaine",
+        "Ténosynovite goutteuse",
+        "Ténosynovite rhumatoïde"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ténosynovite à Mycobacterium marinum des tendons fléchisseurs du 5e rayon ; aspect multiloculé de la ténosynovite (grains de riz du stade sérofibrineux d'après le texte).",
+      "page": "p. 372",
+      "image_origine": "c12/f12.53"
+    },
+    {
+      "question": "Cuisse : calcifications linéaires et enroulées, fragmentées, des tissus mous préfémoraux. Diagnostic ?",
+      "figure": "cotten-t1:fig12.56b",
+      "options": [
+        "Dracunculose (filaire de Médine)",
+        "Cysticercose",
+        "Calcinose de la dermatomyosite",
+        "Phlébolithes d'angiome"
+      ],
+      "reponse": 0,
+      "explication": "Calcifications serpigineuses/enroulées, fragmentées en chapelet : ver de Guinée calcifié.",
+      "page": "p. 373",
+      "image_origine": "c12/f12.55"
+    },
+    {
+      "question": "Échographie et IRM : élargissement considérable du nerf ulnaire chez un patient d'Afrique avec lésions cutanées hypoesthésiques. Diagnostic ?",
+      "figure": "cotten-t1:fig12.57c",
+      "options": [
+        "Lèpre tuberculoïde",
+        "Schwannome",
+        "Neuropathie d'enclavement au coude",
+        "Neurofibromatose de type 1"
+      ],
+      "reponse": 0,
+      "explication": "Épaississement nerveux ulnaire avec atteinte cutanée en zone d'endémie : lèpre tuberculoïde.",
+      "page": "p. 375",
+      "image_origine": "c12/f12.57"
+    },
+    {
+      "question": "Masse supra-épicondylienne médiale richement vascularisée, à centre nécrotique, entourée d'œdème, chez un enfant. Diagnostic ?",
+      "figure": "cotten-t1:fig12.58c",
+      "options": [
+        "Maladie des griffes du chat",
+        "Sarcome synovial",
+        "Lymphome",
+        "Schwannome du nerf ulnaire"
+      ],
+      "reponse": 0,
+      "explication": "Adénopathie épitrochléenne inflammatoire nécrotique : *Bartonella henselae* après griffure de la main.",
+      "page": "p. 375",
+      "image_origine": "c12/f12.58"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Définitions, germes et voies de contamination",
+        "Pathogénie selon l'âge : pourquoi la métaphyse ?",
+        "Ostéomyélite aiguë : quelle imagerie, à quel moment"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1
+      ]
+    },
+    {
+      "hs": [
+        "Traitement, complications et diagnostics différentiels",
+        "Ostéomyélite subaiguë : l'abcès de Brodie",
+        "Ostéomyélite chronique : séquestres, activité et complications"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "Ostéite corticale",
+        "Ostéomyélite tuberculeuse",
+        "Micro-organismes particuliers de l'os"
+      ],
+      "secs": [
+        6,
+        7,
+        8
+      ],
+      "qs": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "hs": [
+        "Arthrite septique à pyogènes",
+        "Arthrite tuberculeuse et formes particulières",
+        "Hanche de l'enfant, complications et traitement des arthrites",
+        "Infection sur prothèse et matériel d'ostéosynthèse"
+      ],
+      "secs": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "qs": [
+        5,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "hs": [
+        "Infections des tissus mous : anatomie, érysipèle et fasciite nécrosante",
+        "Pyomyosite, abcès, bursite et ténosynovite septiques",
+        "Parasitoses et infections particulières des tissus mous"
+      ],
+      "secs": [
+        13,
+        14,
+        15
+      ],
+      "qs": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  ],
+  "ancien_id": "c12",
+  "images_non_rattachees": [
+    "c12/s12.38",
+    "c12/s12.39",
+    "c12/s12.40",
+    "c12/s12.50"
+  ]
+}

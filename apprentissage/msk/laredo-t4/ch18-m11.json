@@ -1,0 +1,333 @@
+{
+  "id": "laredo-t4:m11",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 18,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs fibreuses, sarcome pléomorphe et sarcome d'Ewing",
+  "pages": "2775–2818",
+  "objectifs": [
+    "Ne pas inquiéter à tort sur une desmoïde corticale ou un FNO",
+    "Connaître les tumeurs fibroblastiques rares de l'os",
+    "Reconnaître et prendre en charge un sarcome d'Ewing"
+  ],
+  "essentiels": [
+    "Desmoïde corticale (enfant) : face postéro-médiale de la métaphyse fémorale distale ; spicules courts (insertion du grand adducteur) ou encoche corticale (chef médial du gastrocnémien). Lésion de traction : ne pas biopsier (confusion avec un ostéosarcome).",
+    "FNO (fibrome non ossifiant) et cortical defect : tumeur bénigne la plus fréquente, 2e décennie, métaphyses du genou (tibia, fémur distal), faces postérieure et médiale. Lacune excentrée, allongée, lobulée, cloisonnée, 1A1, séparée du cartilage de croissance par de l'os sain. Le cortical defect (< 3 cm) a une corticale déhiscente mais un périoste continu.",
+    "FNO en IRM : hypo T1 et T2 (80 %), rehaussement ; guérit en s'ossifiant de façon centripète (« FNO en positif » avec voussure corticale) et migre vers la diaphyse. Fracture si > 33 mm et > 50 % du diamètre. FNO multiples → NF1, Jaffe-Campanacci.",
+    "Fibrome desmoplastique : équivalent osseux de la desmoïde, adolescent, mandibule, fémur, bassin. Lyse cloisonnée (crêtes), soufflante, hypo T1 et T2 sans calcification. Récidive 55–72 % après curetage.",
+    "Hypo T1 + hypo T2 sans calcification : tophus, lymphome, fibrome desmoplastique, TCG (tumeur à cellules géantes), granulome de réparation, fibrosarcome, léiomyosarcome. Flow voids : métastases (rein, thyroïde), tumeur fibreuse solitaire, angiosarcome, Ewing…",
+    "Tumeur fibreuse solitaire osseuse (souvent métastase d'un ex-« hémangiopéricytome » méningé) : STAT6+, CD34+, lyse 1C détruisant la corticale, flow voids, survie 28 % à 5 ans. Fibrosarcome et SIP (sarcome indifférencié pléomorphe) = diagnostics d'exclusion ; 28 % des SIP sur lésion préexistante.",
+    "Ewing : 3e sarcome osseux, 2e de l'enfant, 95 % entre 4 et 25 ans (pic 10–20), rare chez les sujets noirs. Fièvre, VS et LDH élevées. EWSR1-FLI1 t(11;22) dans 85 %, confirmation moléculaire obligatoire en France. Os longs 60 % (métaphyso-diaphysaire), squelette axial 40 % (bassin, côtes, sacrum).",
+    "Ewing en imagerie : lyse mitée ou perméative (76–82 %), corticale continue mais finement perméative avec tumeur des deux côtés, masse des tissus mous circonférentielle (96 %), bulbe d'oignon, feu d'herbe, rayons de soleil, Codman ; formes condensantes (32–40 %) des os plats et des extrémités. Iso T1, T2 souvent peu élevé. Chimiothérapie, chirurgie, radiothérapie ; 2/3 de guérison si localisé."
+  ],
+  "introduction": "Ce module réunit trois mondes : des **lésions fibreuses bénignes** extrêmement fréquentes chez l'enfant, qu'il faut reconnaître pour ne pas les biopsier (desmoïde corticale, fibrome non ossifiant) ; des **tumeurs fibreuses** rares, dont l'IRM est souvent sombre en T2 ; et le **sarcome d'Ewing**, tumeur à petites cellules rondes qui traverse la corticale sans la détruire.",
+  "sections": [
+    {
+      "titre": "La desmoïde corticale : une lésion de traction",
+      "texte": "Chez l'enfant, la face **postéro-médiale de la métaphyse fémorale distale** est tirée en permanence par deux muscles. Là où s'insère le **grand adducteur**, on voit une fine réaction périostée spiculée de 3 à 5 cm sur la crête supra-condylienne ; là où s'insère le **chef médial du gastrocnémien**, plus en arrière, une **encoche corticale lobulée**.\n\nC'est une lésion de traction répétée, sans gravité. Mais son tissu fibro-osseux réactionnel peut être pris à la biopsie pour un ostéosarcome : des amputations ont été rapportées. On ne biopsie pas.",
+      "figures": [
+        "laredo-t4:fig18.2b"
+      ],
+      "legendes": [
+        "**Desmoïde corticale** : encoche de la corticale fémorale postéro-médiale en regard de l'insertion du gastrocnémien médial, en radiographie de profil et en IRM sagittale et axiale."
+      ],
+      "cle": "Enfant + irrégularité postéro-médiale de la métaphyse fémorale distale = desmoïde corticale = on ne touche pas.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Enfant de 12 ans, irrégularité corticale postéro-médiale du fémur distal découverte sur une IRM du genou. Conduite ?",
+        "a": "Aucune biopsie : desmoïde corticale (lésion de traction)."
+      }
+    },
+    {
+      "titre": "Fibrome non ossifiant et cortical defect",
+      "texte": "Le **fibrome non ossifiant** (FNO) est la **tumeur osseuse bénigne la plus fréquente** : jusqu'à 50 % des garçons et 20 % des filles, surtout dans la deuxième décennie. Il siège dans les **métaphyses du genou** (tibia, fémur distal), sur leurs faces postérieure et médiale.\n\nIl dessine une **lacune excentrée, verticale, accolée à la corticale, lobulée et cloisonnée**, cerclée d'un liseré net (1A1), avec une soufflure continue, et séparée du cartilage de croissance par de l'os normal. Le **cortical defect** a la même histologie mais mesure moins de 3 cm et reste dans la corticale, qui paraît déhiscente sous un périoste continu.\n\nEn IRM, il est en **hyposignal T1 et T2 dans 80 %** (tissu fibreux, hémosidérine), en hypersignal T2 dans 20 % (macrophages spumeux), se rehausse, et garde un liseré périphérique en hyposignal.",
+      "figures": [
+        "laredo-t4:fig18.20c"
+      ],
+      "legendes": [
+        "**Fibrome non ossifiant tibial** au scanner et en IRM : ostéolyse excentrée lobulée cerclée d'un liseré condensé, en hyposignal T1 et T2, prise de contraste hétérogène."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune excentrée, lobulée, cerclée, adossée à la corticale métaphysaire tibiale chez un adolescent. Diagnostic et signal T2 attendu ?",
+        "a": "Fibrome non ossifiant ; hyposignal T2 dans 80 % (tissu fibreux, hémosidérine)."
+      }
+    },
+    {
+      "titre": "Le FNO guérit en s'ossifiant",
+      "texte": "Le FNO grandit pendant la croissance puis **s'ossifie de façon centripète**, en commençant plutôt du côté diaphysaire, tout en **migrant vers la diaphyse** à mesure que l'os s'allonge. Au stade séquellaire, il devient une **condensation oblongue excentrée** adossée à la corticale avec une petite voussure : le « FNO en positif », qui peut ensuite se spongialiser.\n\nLe risque de fracture augmente au-delà de **33 mm de long et 50 % du diamètre transverse** ; ces fractures consolident normalement. Des FNO multiples, bilatéraux et symétriques doivent faire chercher une **NF1** et un syndrome de Jaffe-Campanacci.",
+      "figures": [
+        "laredo-t4:fig18.12b",
+        "laredo-t4:fig18.24b"
+      ],
+      "legendes": [
+        "**FNO de la diaphyse radiale** : aspect initial (1991) et cinq ans plus tard (1996). La lésion s'est éloignée de la physe et commence à s'ossifier.",
+        "**Ossification progressive** d'un FNO tibial suivi pendant des années : la lacune se comble de la périphérie vers le centre."
+      ],
+      "cle": null,
+      "piege": "Le FNO ossifié est une condensation excentrée adossée à la corticale chez un adulte jeune : ne pas la prendre pour une tumeur ostéogène.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Condensation oblongue excentrée adossée à la corticale tibiale chez un adulte jeune : faut-il craindre une tumeur ostéogène ?",
+        "a": "Non : c'est un FNO ossifié (séquellaire)."
+      }
+    },
+    {
+      "titre": "Tumeurs fibreuses rares : penser au signal T2",
+      "texte": "Le **fibrome desmoplastique** est l'équivalent osseux de la tumeur desmoïde (adolescent ; mandibule, fémur, bassin) : lyse cloisonnée par des crêtes osseuses, soufflante, souvent étendue aux tissus mous, **hypo T1 et hypo T2** à cause du collagène. Il récidive dans 55 à 72 % des cas après curetage.\n\nUne tumeur non calcifiée en **hypo T1 et hypo T2** évoque une courte liste : tophus, lymphome, fibrome desmoplastique, TCG, granulome de réparation, fibrosarcome, léiomyosarcome.\n\nLa **tumeur fibreuse solitaire** osseuse (STAT6, CD34) est le plus souvent la **métastase** d'une tumeur extra-osseuse (ex-hémangiopéricytome méningé) : lyse 1C qui détruit la corticale, avec **flow voids**. Le **fibrosarcome** et le **sarcome indifférencié pléomorphe** sont des diagnostics d'exclusion, après 40 ans ; 28 % des sarcomes pléomorphes naissent sur un os déjà malade (Paget, dysplasie fibreuse, infarctus, os irradié).",
+      "figures": [
+        "laredo-t4:fig18.24e"
+      ],
+      "legendes": [
+        "**Tumeur fibreuse solitaire** de l'humérus proximal avec fracture pathologique : ostéolyse à limites floues détruisant la corticale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Tumeur non calcifiée en hypo T1 et hypo T2 : citez quatre hypothèses.",
+        "a": "Tophus, lymphome, fibrome desmoplastique, TCG (aussi granulome de réparation, fibrosarcome, léiomyosarcome)."
+      }
+    },
+    {
+      "titre": "Sarcome d'Ewing : le terrain",
+      "texte": "L'Ewing est le **troisième sarcome osseux** et le **deuxième de l'enfant** : 95 % des patients ont entre 4 et 25 ans (pic 10-20 ans), il est exceptionnel avant 5 ans et rare chez les sujets noirs. Il est défini par une translocation impliquant **EWSR1**, le plus souvent **EWSR1-FLI1** t(11;22) (85 %) ; la confirmation moléculaire est recommandée.\n\nIl se présente souvent comme une infection : douleur, tuméfaction, **fièvre**, VS, CRP et **LDH élevées**. Il touche les **os longs** (60 %, métaphyso-diaphysaire ou diaphysaire) et le **squelette axial** (40 % : bassin, côtes, scapula, sacrum), dont il est le sarcome le plus fréquent chez l'enfant.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Fièvre et syndrome inflammatoire chez un enfant avec une lésion osseuse : l'ostéomyélite est le piège classique. En IRM, l'Ewing a des limites plus nettes, plus de destruction corticale et des zones de nécrose.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Enfant fébrile, CRP élevée, lésion diaphysaire mitée : quel piège diagnostique ?",
+        "a": "L'ostéomyélite. En IRM, l'Ewing a des limites plus nettes, plus de destruction corticale et de la nécrose."
+      }
+    },
+    {
+      "titre": "Sarcome d'Ewing : l'image",
+      "texte": "La lyse est **mitée ou perméative** (76 à 82 %). Le signe le plus évocateur est une **tumeur médullaire et une volumineuse masse des tissus mous séparées par une corticale encore continue**, seulement finement perméative : la tumeur passe par les canaux de Havers sans détruire l'os (« tumeur in, tumeur out »). Ce signe vaut pour toutes les tumeurs à petites cellules rondes : Ewing de 5 à 25 ans, lymphome chez l'adulte, leucémies.\n\nLa masse est presque constante (96 %), souvent circonférentielle. Le périoste réagit en **bulbe d'oignon**, en feu d'herbe, en rayons de soleil, avec un triangle de Codman. Des formes **condensantes** (32 à 40 %) se voient aux os plats et aux extrémités.\n\nEn IRM, la tumeur est iso T1 et souvent **peu intense en T2** (prolifération dense de petites cellules), sauf nécrose ou hémorragie.",
+      "figures": [
+        "laredo-t4:fig20.x349b",
+        "laredo-t4:fig20.x351a",
+        "laredo-t4:fig20.x351b"
+      ],
+      "legendes": [
+        "**Sarcome d'Ewing du tibia** : lyse perméative de la diaphyse, corticale encore visible, masse des tissus mous.",
+        "**Ewing condensant** du premier métatarsien avec skip métastases dans les os voisins (flèches).",
+        "**Ewing mixte** : ostéolyse perméative de la corticale (flèches) et masse des tissus mous circonférentielle en IRM."
+      ],
+      "cle": "Moelle tumorale + grosse masse + corticale presque intacte entre les deux = tumeur à petites cellules rondes (Ewing chez le jeune, lymphome chez l'adulte).",
+      "piege": null,
+      "pourquoi": "Les petites cellules rondes sont serrées, avec peu de matrice et peu d'eau libre : d'où un signal T2 moins élevé que la plupart des sarcomes.",
+      "verification": {
+        "q": "Moelle tumorale, grosse masse et corticale presque intacte entre les deux : que signifie ce signe ?",
+        "a": "Tumeur à petites cellules rondes qui passe par les canaux de Havers : Ewing chez le jeune, lymphome chez l'adulte."
+      }
+    },
+    {
+      "titre": "Formes atypiques et pronostic",
+      "texte": "Formes atypiques : **sous-périostée** (3 %, simule un ostéosarcome périosté), **vertebra plana** avec masse, aspect anévrysmal en nid d'abeilles aux phalanges, lacune 1B, calcifications de la masse.\n\nLe traitement associe chimiothérapie, chirurgie et radiothérapie. Deux tiers des formes localisées guérissent ; 15 à 30 % des patients sont métastatiques d'emblée, avec 20 à 30 % de survie à 10 ans (30 % si l'atteinte est uniquement pulmonaire, pronostic sombre si elle est ostéo-médullaire).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel site métastatique d'un Ewing a le pronostic le plus sombre ?",
+        "a": "L'atteinte ostéo-médullaire (l'atteinte pulmonaire isolée fait un peu mieux)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Enfant : (a) fine réaction périostée spiculée et (b) encoche de la corticale postéro-médiale de la métaphyse fémorale distale. Diagnostic ?",
+      "figure": "laredo-t4:fig18.1b",
+      "options": [
+        "Desmoïde corticale (ne pas biopsier)",
+        "Ostéosarcome de surface",
+        "Ostéomyélite subaiguë",
+        "Fibrome non ossifiant"
+      ],
+      "reponse": 0,
+      "explication": "Légende : desmoïde corticale, ses deux aspects radiographiques (réaction périostée spiculée ou encoche postéro-médiale). Le texte rappelle qu'une biopsie peut faire porter à tort le diagnostic d'ostéosarcome.",
+      "page": "2776",
+      "image_origine": "m11/p313_0"
+    },
+    {
+      "question": "Lacune tibiale distale excentrée, multiloculaire et cloisonnée, cerclée de sclérose, chez un adolescent. Diagnostic ?",
+      "figure": "laredo-t4:fig18.13a",
+      "options": [
+        "Fibrome non ossifiant",
+        "Kyste anévrysmal",
+        "Fibrome chondromyxoïde",
+        "Adamantinome"
+      ],
+      "reponse": 0,
+      "explication": "Lacune métaphysaire excentrée, lobulée, cloisonnée, 1A1 : FNO (ici avec une rare extension épiphysaire).",
+      "page": "2793",
+      "image_origine": "m11/p330_0"
+    },
+    {
+      "question": "Petite lacune corticale à bords nets, corticale déhiscente au scanner. Diagnostic ?",
+      "figure": "laredo-t4:fig18.x332",
+      "options": [
+        "Cortical defect",
+        "Ostéome ostéoïde",
+        "Métastase corticale",
+        "Abcès de Brodie"
+      ],
+      "reponse": 0,
+      "explication": "Lésion sous-périostée dont la corticale est déhiscente alors que le périoste reste continu : cortical defect, bénin.",
+      "page": "2794",
+      "image_origine": "m11/p331_0"
+    },
+    {
+      "question": "Jeune adulte : condensation oblongue excentrée de la métaphyse tibiale distale, adossée à la corticale qui bombe en regard. Diagnostic ?",
+      "figure": "laredo-t4:fig18.25a",
+      "options": [
+        "FNO ossifié (FNO en positif)",
+        "Îlot condensant bénin",
+        "Ostéosarcome paraostéal",
+        "Infarctus"
+      ],
+      "reponse": 0,
+      "explication": "Le FNO guérit en s'ossifiant ; la forme, le siège et la voussure corticale signent l'ancien FNO.",
+      "page": "2801",
+      "image_origine": "m11/p338_0"
+    },
+    {
+      "question": "Sacrum et aile iliaque : ostéolyse soufflante cloisonnée à liseré épais, hypo T1 et T2 sans calcification. Diagnostic évoqué ?",
+      "figure": "laredo-t4:fig18.x315",
+      "options": [
+        "Fibrome desmoplastique",
+        "Chordome",
+        "Kyste anévrysmal",
+        "Chondrosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Tumeur riche en collagène : hyposignal T1 et T2 malgré l'absence de calcification ; cloisons par crêtes osseuses.",
+      "page": "2777",
+      "image_origine": "m11/p314_0_0_0_100_96"
+    },
+    {
+      "question": "Enfant : diaphyse tibiale avec lyse perméative, corticale encore continue et grosse masse des tissus mous. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig20.x349a",
+      "options": [
+        "Sarcome d'Ewing",
+        "Ostéomyélite",
+        "Histiocytose",
+        "Lymphome"
+      ],
+      "reponse": 0,
+      "explication": "Tumeur médullaire et masse des tissus mous de part et d'autre d'une corticale peu détruite chez l'enfant : Ewing.",
+      "page": "2811",
+      "image_origine": "m11/p348_0"
+    },
+    {
+      "question": "Condensation diaphysaire étendue avec spicules floraux et masse des tissus mous, corticale continue (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig20.x350b",
+      "options": [
+        "Ewing de forme condensante",
+        "Ostéosarcome",
+        "Ostéomyélite chronique",
+        "Paget"
+      ],
+      "reponse": 0,
+      "explication": "Les formes condensantes de l'Ewing (32–40 %) résultent d'une condensation réactionnelle ; la corticale reste continue entre tumeur médullaire et masse.",
+      "page": "2812",
+      "image_origine": "m11/p349_0"
+    },
+    {
+      "question": "Quatre radiographies d'Ewing : quel type de réaction périostée correspond à des couches concentriques ?",
+      "figure": "laredo-t4:fig20.6b",
+      "options": [
+        "Bulbe d'oignon (plurilamellaire)",
+        "Feu d'herbe",
+        "Rayons de soleil",
+        "Triangle de Codman"
+      ],
+      "reponse": 0,
+      "explication": "La réaction plurilamellaire continue en couches concentriques est dite en bulbe d'oignon ; les spicules parallèles donnent le feu d'herbe, divergents les rayons de soleil.",
+      "page": "2814",
+      "image_origine": "m11/p351_0"
+    },
+    {
+      "question": "Masse accolée à la corticale fémorale, moelle de signal normal, chez un adolescent. Forme rare de quel sarcome ?",
+      "figure": "laredo-t4:fig20.x353a",
+      "options": [
+        "Ewing sous-périosté",
+        "Ostéosarcome paraostéal",
+        "Chondrome périosté",
+        "Desmoïde corticale"
+      ],
+      "reponse": 0,
+      "explication": "Ewing à départ sous-périosté (3 %) : cavité médullaire non envahie, aspect proche d'un ostéosarcome périosté.",
+      "page": "2815",
+      "image_origine": "m11/p352_0"
+    },
+    {
+      "question": "Adulte de 55 ans : ostéolyse tibiale métaphyso-diaphysaire à limites floues, destruction corticale et masse des tissus mous (flèche), sans matrice. Diagnostic ?",
+      "figure": "laredo-t4:fig20.x353a",
+      "options": [
+        "Sarcome indifférencié pléomorphe de haut grade",
+        "Ostéosarcome paraostéal",
+        "Chondrosarcome de grade 1",
+        "Fibrome non ossifiant"
+      ],
+      "reponse": 0,
+      "explication": "Légende : sarcome indifférencié pléomorphe de haut grade du tibia ; image ostéolytique à limites floues, destruction corticale et masse des tissus mous.",
+      "page": "2807",
+      "image_origine": "m11/p344_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "La desmoïde corticale : une lésion de traction",
+        "Fibrome non ossifiant et cortical defect",
+        "Le FNO guérit en s'ossifiant"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Tumeurs fibreuses rares : penser au signal T2",
+        "Sarcome d'Ewing : le terrain",
+        "Sarcome d'Ewing : l'image",
+        "Formes atypiques et pronostic"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m11",
+  "images_non_rattachees": [
+    "m11/p326_0"
+  ]
+}

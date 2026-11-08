@@ -1,0 +1,267 @@
+{
+  "id": "cotten-t1:c05",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 4,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Arthrites juvéniles idiopathiques",
+  "pages": "187–198",
+  "objectifs": [
+    "Connaître la définition et les 7 catégories des AJI (arthrites juvéniles idiopathiques) avec leur terrain",
+    "Reconnaître les signes radiographiques propres à l'enfant : troubles de croissance, ankylose, ostéopénie, appositions périostées",
+    "Savoir ce qu'apportent l'IRM et l'échographie (synovite > 3 mm, ATM, sacro-iliaques, guidage) et les diagnostics différentiels"
+  ],
+  "essentiels": [
+    "AJI = arthrite débutant **avant 16 ans**, durant **≥ 6 semaines**, sans autre cause ; prévalence ~1/1 000 enfants.",
+    "AJI **systémique** (10–15 %) = maladie **auto-inflammatoire** (IL-1, IL-6, IL-18), pic à 2 ans, fièvre oscillante, rash ; complication grave : **syndrome d'activation macrophagique**.",
+    "**Oligoarthrite** (50–60 %) : fille de 2–4 ans, genou, ≤ 4 articulations ; **anticorps antinucléaires = risque d'uvéite** asymptomatique (dépistage tous les 3 mois).",
+    "Polyarthrite FR+ (< 5 %) = PR de l'adulte (ACPA) ; arthrite liée aux **enthésites** = garçon > 6 ans, HLA-B27 50–80 %, sacro-iliite secondaire.",
+    "Radiographie : ostéopénie, chondrolyse et érosions **tardives**, **ankylose** (carpe, zygapophyses cervicales), **appositions périostées**, bandes claires métaphysaires.",
+    "Troubles de croissance par hyperhémie : **hypertrophie épiphysaire**, maturation accélérée (carpe crénelé), allongement ou **raccourcissement** (soudure précoce), **vertèbres cervicales hypoplasiques**.",
+    "IRM : synovite = épaississement **> 3 mm** (sensibilité 100 %), érosions, œdème, grains de riz ; indispensable pour les **ATM** (souvent asymptomatiques), rachis et sacro-iliaques.",
+    "Échographie : synovites et enthésites **infracliniques**, guidage des infiltrations ; diagnostic différentiel majeur : **leucémie** (bandes claires, peu d'épanchement)."
+  ],
+  "introduction": "Les AJI regroupent des maladies différentes : une forme **auto-inflammatoire** (systémique) et des formes **auto-immunes** (oligo- et polyarthrites). Chez l'enfant, l'inflammation articulaire agit aussi sur un squelette en **croissance** : c'est ce qui donne à l'imagerie ses signes propres.",
+  "sections": [
+    {
+      "titre": "Définition et classification",
+      "texte": "Une AJI est une **arthrite débutant avant 16 ans**, persistant **au moins 6 semaines**, sans cause identifiable (non septique, sans lupus, rhumatisme articulaire aigu, déficit immunitaire…). La classification distingue 7 catégories :",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La forme systémique dépend de l'immunité innée (IL-1, IL-6) : pas de HLA, pas d'autoanticorps, et une réponse spectaculaire au tocilizumab ou à l'anakinra.",
+      "verification": {
+        "q": "Quels sont les trois critères obligatoires d'une AJI ?",
+        "a": "Début avant 16 ans, durée ≥ 6 semaines, exclusion des autres causes d'arthrite."
+      }
+    },
+    {
+      "titre": "Complications générales",
+      "texte": "Le pronostic de la forme systémique est péjoratif en cas de signes systémiques > 6 mois, thrombocytose, et d'atteinte des hanches, du rachis cervical et des doigts.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi l'examen ophtalmologique est-il répété tous les 3 mois dans l'oligoarthrite avec anticorps antinucléaires ?",
+        "a": "Le risque d'uvéite antérieure est majeur et celle-ci est le plus souvent asymptomatique."
+      }
+    },
+    {
+      "titre": "Radiographie : un squelette inflammatoire qui grandit",
+      "texte": "La radiographie reste l'imagerie de référence du suivi. On recherche :",
+      "figures": [
+        "cotten-t1:fig5.2a",
+        "cotten-t1:fig5.4",
+        "cotten-t1:fig5.6"
+      ],
+      "legendes": [
+        "Poignet : hypertransparence, pincement radiocarpien et **maturation accélérée** des os du carpe (tête de flèche).",
+        "Rachis cervical : **hypoplasie des corps vertébraux** C3–C5 avec ankylose zygapophysaire.",
+        "Genou : **hypertrophie des épiphyses** contrastant avec la gracilité des diaphyses, compliquée d'une fracture."
+      ],
+      "cle": "Vertèbres cervicales petites et ankylosées sur toute la hauteur = AJI (≠ résorption antérieure focale de la SA).",
+      "piege": null,
+      "pourquoi": "L'hyperhémie synoviale accélère l'ossification des épiphyses et des noyaux, puis peut souder prématurément le cartilage de croissance : le membre s'allonge d'abord, puis se raccourcit.",
+      "verification": {
+        "q": "Citez trois troubles de croissance radiographiques des AJI.",
+        "a": "Hypertrophie épiphysaire, maturation accélérée des noyaux (carpe crénelé), raccourcissement par soudure prématurée (ou allongement), hypoplasie vertébrale cervicale."
+      }
+    },
+    {
+      "titre": "IRM : synovite, œdème et articulations cachées",
+      "texte": "L'IRM montre l'épanchement, la **synovite** (épaississement **> 3 mm** : sensibilité 100 %, spécificité 77 %), au signal variable, hypointense en T1 et T2 dans les synovites sévères (fibrine, hémosidérine) ; le rehaussement **dynamique** est mieux corrélé à l'activité que le volume. Elle détecte mieux les **érosions** que la radiographie ou l'échographie (attention aux encoches et canaux vasculaires du carpe), l'**œdème médullaire**, les **enthésites**, les ténosynovites, les **grains de riz**, les kystes poplités, et une hypoplasie méniscale.\n\nElle est **indispensable** pour les articulations temporomandibulaires (atteinte fréquente, souvent latente, source de micrognathie et de troubles de l'articulé), le rachis et les sacro-iliaques.",
+      "figures": [
+        "cotten-t1:fig5.7",
+        "cotten-t1:fig5.9",
+        "cotten-t1:fig5.12b"
+      ],
+      "legendes": [
+        "Chevilles : importante **hypertrophie synoviale** talocrurale bilatérale.",
+        "Hanche droite : **œdème médullaire** de part et d'autre de l'interligne coxofémoral.",
+        "Rachis et sacro-iliaques : œdème sous-chondral (sacro-iliite) et coins vertébraux inflammatoires."
+      ],
+      "cle": null,
+      "piege": "Chez l'enfant, la moelle hématopoïétique et les canaux vasculaires du carpe peuvent simuler œdème et érosions : comparez au côté sain.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel seuil d'épaississement synovial en IRM est le plus caractéristique d'une synovite d'AJI ?",
+        "a": "Plus de 3 mm (sensibilité 100 %, spécificité 77 %)."
+      }
+    },
+    {
+      "titre": "Échographie et traitement",
+      "texte": "L'**échographie** différencie épanchement, synovite et ténosynovite (cheville : tibial postérieur, poignet : extenseur ulnaire du carpe), montre des enthésites et des érosions, et révèle des **synovites infracliniques** qui pourraient reclasser une oligoarthrite en polyarthrite. Elle **guide les infiltrations** intra-articulaires de triamcinolone hexacétonide (sous MEOPA ou anesthésie).\n\nTraitement : AINS et infiltrations pour les **oligoarthrites** ; **méthotrexate** puis anti-TNF-α (étanercept, adalimumab) pour les **polyarthrites** ; AINS, corticoïdes, **anakinra** ou **tocilizumab** pour la forme **systémique**. Bilan préthérapeutique infectieux avant biothérapie.",
+      "figures": [
+        "cotten-t1:fig5.14",
+        "cotten-t1:fig5.16"
+      ],
+      "legendes": [
+        "Cheville : **ténosynovite** hypervascularisée du tibial postérieur (TP) et du long fléchisseur des orteils.",
+        "Infiltration **échoguidée** : aiguille dans le cul-de-sac quadricipital (CSQ)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le traitement de fond de première intention des formes polyarticulaires d'AJI ?",
+        "a": "Le méthotrexate ; les anti-TNF-α en deuxième ligne."
+      }
+    },
+    {
+      "titre": "Diagnostics différentiels",
+      "texte": "Les « arthrites » **leucémiques** sont pauciarticulaires, asymétriques, sans raideur, avec peu d'épanchement ; en radiographie, une tuméfaction synoviale et une ostéopénie **sans bandes claires métaphysaires** plaident pour l'AJI.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Douleurs ostéoarticulaires nocturnes intenses avec bandes claires métaphysaires et peu de synovite : pensez leucémie avant AJI.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels arguments radiographiques plaident pour une AJI plutôt qu'une leucémie ?",
+        "a": "Tuméfaction synoviale et ostéopénie sans bandes claires métaphysaires."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Enfant de 8 ans : hypertransparence osseuse, pincement talocrural et hypertrophie épiphysaire de la cheville. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig5.1",
+      "options": [
+        "AJI",
+        "Arthrite septique aiguë",
+        "Ostéochondrite du talus",
+        "Leucémie"
+      ],
+      "reponse": 0,
+      "explication": "Ostéopénie, pincement et hypertrophie épiphysaire d'une arthrite chronique de l'enfant.",
+      "page": "p. 190",
+      "image_origine": "c05/f5.1"
+    },
+    {
+      "question": "Poignet d'un adolescent atteint d'AJI : fusion du versant ulnaire du carpe avec les métacarpiens. Lésion ?",
+      "figure": "cotten-t1:fig5.2b",
+      "options": [
+        "Ankylose carpométacarpienne",
+        "Coalition carpienne congénitale",
+        "Fracture consolidée",
+        "Maladie de Madelung"
+      ],
+      "reponse": 0,
+      "explication": "L'ankylose du carpe est fréquente dans l'AJI, surtout systémique.",
+      "page": "p. 190–191",
+      "image_origine": "c05/f5.3"
+    },
+    {
+      "question": "Pied d'enfant : hypertransparence diffuse, métatarsiens graciles, ankylose tarsienne (flèche). Diagnostic ?",
+      "figure": "cotten-t1:fig5.5",
+      "options": [
+        "AJI",
+        "Ostéogenèse imparfaite",
+        "Coalition tarsienne isolée",
+        "Pied bot"
+      ],
+      "reponse": 0,
+      "explication": "Ostéopénie, gracilité et ankylose : AJI ancienne.",
+      "page": "p. 191",
+      "image_origine": "c05/f5.5"
+    },
+    {
+      "question": "IRM de doigt après gadolinium : rehaussement de la moelle et synovite. Que montre-t-on ?",
+      "figure": "cotten-t1:fig5.8b",
+      "options": [
+        "Atteinte inflammatoire articulaire et médullaire d'AJI",
+        "Ostéome ostéoïde",
+        "Enchondrome",
+        "Panaris"
+      ],
+      "reponse": 0,
+      "explication": "Rehaussement médullaire et synovial au cours d'une AJI de l'index.",
+      "page": "p. 192",
+      "image_origine": "c05/f5.8"
+    },
+    {
+      "question": "IRM sagittale du genou : importante synovite, réaction des tissus mous et nœuds lymphatiques poplités (flèche). Interprétation des nœuds ?",
+      "figure": "cotten-t1:fig5.11",
+      "options": [
+        "Adénopathies réactionnelles bénignes",
+        "Métastases ganglionnaires",
+        "Kystes méniscaux",
+        "Corps étrangers"
+      ],
+      "reponse": 0,
+      "explication": "Des nœuds lymphatiques poplités réactionnels accompagnent souvent les synovites d'AJI.",
+      "page": "p. 192",
+      "image_origine": "c05/f5.11"
+    },
+    {
+      "question": "Échographie du poignet : gaine de l'extenseur ulnaire du carpe épaissie et vascularisée (euc). Lésion ?",
+      "figure": "cotten-t1:fig5.13",
+      "options": [
+        "Ténosynovite",
+        "Rupture tendineuse",
+        "Kyste synovial",
+        "Enthésite"
+      ],
+      "reponse": 0,
+      "explication": "Épaississement de la gaine avec Doppler : ténosynovite de l'ECU.",
+      "page": "p. 193",
+      "image_origine": "c05/f5.13"
+    },
+    {
+      "question": "Échographie du genou : épaississement de la partie proximale du tendon patellaire avec fragments hyperéchogènes (flèches) et zone hypoéchogène (*). Lésion ?",
+      "figure": "cotten-t1:fig5.15",
+      "options": [
+        "Enthésite du tendon patellaire",
+        "Maladie d'Osgood-Schlatter",
+        "Bursite septique",
+        "Tendinopathie calcifiante d'apatite"
+      ],
+      "reponse": 0,
+      "explication": "Enthésite patellaire proximale dans une arthrite liée aux enthésites.",
+      "page": "p. 193",
+      "image_origine": "c05/f5.15"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Définition et classification",
+        "Complications générales",
+        "Radiographie : un squelette inflammatoire qui grandit"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "IRM : synovite, œdème et articulations cachées",
+        "Échographie et traitement",
+        "Diagnostics différentiels"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "ancien_id": "c05",
+  "images_non_rattachees": []
+}

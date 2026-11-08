@@ -1,0 +1,377 @@
+{
+  "id": "cotten-t1:c06",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 5,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Syndrome SAPHO et OCRM",
+  "pages": "199–216",
+  "objectifs": [
+    "Comprendre le syndrome SAPHO (synovite, acné, pustulose, hyperostose, ostéite) et l'OCRM (ostéomyélite chronique récurrente multifocale) comme deux versants d'une même ostéite aseptique",
+    "Reconnaître les topographies et l'association ostéite + hyperostose : paroi thoracique antérieure de l'adulte, métaphyses et clavicule médiale de l'enfant",
+    "Utiliser scintigraphie et IRM corps entier, et éviter les pièges tumoraux et infectieux"
+  ],
+  "essentiels": [
+    "SAPHO (adulte) et OCRM (enfant) = **ostéite non spécifique aseptique**, diagnostic d'élimination ; histologie : polynucléaires → lymphocytes → fibrose et ostéoblastose.",
+    "Peau : **pustulose palmoplantaire** (50 %), **acné sévère** (10–18 %), psoriasis ; peut précéder l'os de plusieurs décennies : interroger.",
+    "Sémiologie dominée par **ostéite (ostéocondensation) + hyperostose** (hypertrophie, ossifications ligamentaires), l'hyperostose étant la plus évocatrice.",
+    "SAPHO : région **sternocostoclaviculaire** (60–90 %) : condensation, hypertrophie, ossification costoclaviculaire, érosions, **ankylose sternocostale** ; scintigraphie « **en cornes de taureau** ».",
+    "Rachis SAPHO (1/3) : spondylite des coins, **parasyndesmophytes**, atteinte spondylodiscale sans abcès ni épidurite ; bassin : **sacro-iliite unilatérale** avec ostéite iliaque étendue.",
+    "OCRM : **métaphyses** des membres inférieurs (≈ 75 %) jouxtant la physe, lésions **bilatérales et symétriques**, ostéolyse puis condensation et élargissement ; pas d'abcès ni de séquestre.",
+    "Clavicule de l'enfant : **tiers médial** (± moyen), ostéolyse et pelures d'oignon au début (piège : Ewing, granulome éosinophile), puis hyperostose ; pas d'atteinte articulaire.",
+    "**IRM corps entier** : révèle les lésions multiples asymptomatiques symétriques ; traitement par AINS, puis bisphosphonates (axial) ou anti-TNF-α."
+  ],
+  "introduction": "Le syndrome SAPHO de l'adulte et l'OCRM de l'enfant sont des ostéites chroniques **aseptiques**. Leur reconnaissance radiologique évite des biopsies, des antibiothérapies prolongées et des erreurs tumorales : il faut repérer l'association **ostéite + hyperostose** dans des **sites typiques**, souvent **multifocaux et symétriques**.",
+  "sections": [
+    {
+      "titre": "Une même maladie à deux âges",
+      "texte": "L'acronyme SAPHO (Kahn, 1987) réunit **S**ynovite, **A**cné, **P**ustulose palmoplantaire, **H**yperostose, **O**stéite. Toutes les composantes ne sont réunies que dans 70 % des cas. L'**OCRM** est sa forme pédiatrique ; elle peut évoluer vers un SAPHO de l'adulte. Légère prédominance féminine.\n\nPathogénie incertaine : infection à bas bruit (*Propionibacterium acnes* parfois isolé, peut-être contaminant ; antibiotiques peu efficaces), mécanisme auto-inflammatoire proche des spondyloarthrites (associations au psoriasis, au Crohn, à la RCH), génétique (syndrome de **Majeed** : OCRM sévère + anémie dysérythropoïétique, gène LPIN2).\n\nHistologie : ostéite non spécifique sans germe, d'abord à **polynucléaires** (nécrose, ostéoclastose), puis **lymphocytaire** (granulomes non caséeux), puis **fibrose et ostéoblastose** (corrélée à la condensation).",
+      "figures": [
+        "cotten-t1:fig6.1"
+      ],
+      "legendes": [
+        "**Pustulose palmoplantaire** : pustules jaunâtres stériles intradermiques."
+      ],
+      "cle": "Pustulose palmoplantaire ou acné sévère + ostéite condensante = SAPHO, même si la peau est guérie depuis des années.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Que signifie l'acronyme SAPHO ?",
+        "a": "Synovite, Acné, Pustulose palmoplantaire, Hyperostose, Ostéite."
+      }
+    },
+    {
+      "titre": "SAPHO : la paroi thoracique antérieure",
+      "texte": "C'est l'atteinte la plus fréquente (60–90 %) et la plus caractéristique. Les radiographies montrent la condensation et l'hypertrophie des clavicules et des premières côtes ; le **scanner** analyse finement :",
+      "figures": [
+        "cotten-t1:fig6.2b",
+        "cotten-t1:fig6.6",
+        "cotten-t1:fig6.7",
+        "cotten-t1:fig6.33"
+      ],
+      "legendes": [
+        "Ostéocondensation (ostéite) et irrégularités des contours osseux sternocostoclaviculaires (scanner).",
+        "**Ossification du ligament sternoclaviculaire** gauche (flèche).",
+        "**Ankylose sternocostale** bilatérale.",
+        "Scintigraphie : hyperfixation sternocostoclaviculaire **en cornes de taureau**."
+      ],
+      "cle": null,
+      "piege": "Une masse rétromanubriale comprimant une veine chez un patient à paroi thoracique condensée n'est pas une tumeur : c'est l'inflammation du SAPHO.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle image scintigraphique est extrêmement évocatrice du SAPHO chez l'adulte ?",
+        "a": "L'hyperfixation sternocostoclaviculaire en cornes de taureau."
+      }
+    },
+    {
+      "titre": "SAPHO : rachis, bassin, os longs, articulations",
+      "texte": "**Rachis** (1/3 des patients ; thoracique > lombaire > cervical) : **parasyndesmophytes** ou hyperostose antérieure floue, **spondylite** (condensation des coins antérieurs ou d'un corps entier), **atteinte spondylodiscale** uni- ou pluriétagée. En IRM : lésions actives des coins et plateaux antérieurs, disque partiellement préservé, tissus mous prévertébraux peu épaissis (< 1 cm), **ni abcès ni épidurite**, lésions graisseuses chroniques adjacentes. Une vertèbre isolée condensée et érodée fait discuter métastase ou lymphome (biopsie).\n\n**Bassin** : plages de condensation, enthésopathies, **sacro-iliite unilatérale** (20–30 %) avec peu d'érosions mais une **ostéocondensation iliaque étendue** très évocatrice. **Mandibule** (~10 %), unilatérale.\n\n**Os longs** (~30 %) : fémur distal, tibia proximal ; aspect d'**ostéomyélite chronique** (condensation, épaississement cortical, élargissement) **sans séquestre**, parfois ostéolyse initiale pseudo-tumorale. **Arthrites périphériques** (10 %) peu destructrices, souvent par contiguïté ; **enthésites** échographiques (patellaire distale, calcanéenne).",
+      "figures": [
+        "cotten-t1:fig6.9c",
+        "cotten-t1:fig6.10",
+        "cotten-t1:fig6.11"
+      ],
+      "legendes": [
+        "Rachis : **parasyndesmophytes** exubérants et atteinte spondylodiscale (radiographies et IRM).",
+        "Bassin : sacro-iliite avec **peu d'érosions** mais ostéocondensation iliaque marquée (scanner).",
+        "Os long : aspect d'**ostéomyélite chronique** condensante et élargie, sans séquestre."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels éléments IRM distinguent l'atteinte spondylodiscale du SAPHO d'une spondylodiscite infectieuse ?",
+        "a": "Absence d'abcès et d'épidurite, disque au moins partiellement normal, épaississement prévertébral < 1 cm, lésions graisseuses chroniques adjacentes."
+      }
+    },
+    {
+      "titre": "OCRM : les métaphyses de l'enfant",
+      "texte": "Les **membres inférieurs** sont trois fois plus touchés ; les **métaphyses** et équivalents métaphysaires représentent près de 75 % des localisations (fémur distal, tibia proximal et distal, fibula distale ; aussi radius et ulna distaux, calcanéus, talus).\n\nRadiographie : **ostéolyse métaphysaire jouxtant la physe**, rapidement entourée de **condensation**, pouvant s'étendre à la diaphyse ou à l'épiphyse, appositions périostées limitées ; puis condensation et élargissement osseux. La guérison condense la lésion qui migre vers la diaphyse avec la croissance.\n\nIRM (T2 FS) : œdème **métaphysaire** (86 %), **épiphysaire** (67 %), **jouxtant la physe** (89 %), **symétrique** (85 %), microkystes, réaction périostée fréquente (48 %), infiltration des tissus mous, **sans abcès ni séquestre**.",
+      "figures": [
+        "cotten-t1:fig6.16b",
+        "cotten-t1:fig6.21b",
+        "cotten-t1:fig6.35"
+      ],
+      "legendes": [
+        "**Ostéocondensation métaphysaire** fémorale, tibiale et fibulaire.",
+        "Plages métaphysaires en hyposignal T1 et hypersignal T2 du radius distal jouxtant la physe.",
+        "**Symétrie** bilatérale des anomalies médullaires des genoux (T2 et T1 gadolinium)."
+      ],
+      "cle": "Lésions métaphysaires bilatérales et symétriques, sans abcès ni séquestre, chez un enfant peu fébrile = OCRM.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels signes IRM d'une lésion métaphysaire de l'enfant orientent vers une OCRM plutôt qu'une ostéomyélite bactérienne ?",
+        "a": "Absence d'abcès et de séquestre, lésions multiples bilatérales et symétriques, contact physaire, évolution par poussées."
+      }
+    },
+    {
+      "titre": "OCRM : clavicule, rachis, bassin et croissance",
+      "texte": "**Clavicule** (plus fréquente chez la fille, en cas de pustulose ou d'acne fulminans) : **tiers médial**, uni- ou bilatéral, parfois tiers moyen, **respect du tiers latéral**. Au début, **ostéolyse** avec appositions **en pelures d'oignon** (piège : **sarcome d'Ewing**, **granulome éosinophile**) ; plus tard, ostéosclérose et **hyperostose** qui évitent la biopsie. Pas d'atteinte articulaire ni d'ossification ligamentaire, contrairement à l'adulte.\n\n**Rachis** (thoracique surtout) : ostéolyse du corps, condensation, **tassement** jusqu'à la vertebra plana (biopsie pour éliminer un granulome éosinophile), restitution moins complète ; peut mimer une spondylodiscite ou une épiphysite de croissance. **Bassin** : synchondrose ischiopubienne, sacro-iliite unilatérale, aile iliaque. **Mandibule** (~5 %).\n\nRetentissement sur la croissance : cyphose, inégalité de longueur, **épiphysiodèse prématurée** (métatarsiens, tibia, fémur), arthrose secondaire.",
+      "figures": [
+        "cotten-t1:fig6.23",
+        "cotten-t1:fig6.26",
+        "cotten-t1:fig6.27"
+      ],
+      "legendes": [
+        "Atteinte bilatérale du **tiers médial des clavicules** avec hypertrophie osseuse.",
+        "Hypertrophie de l'extrémité médiale de la clavicule gauche (reconstruction 3D).",
+        "Rachis thoracique simulant une épiphysite de croissance : **condensation marquée** d'un corps vertébral (*)."
+      ],
+      "cle": null,
+      "piege": "Ostéolyse claviculaire unilatérale avec pelures d'oignon chez l'enfant : pensez OCRM (tiers médial) avant Ewing ; le suivi montre l'hyperostose.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle partie de la clavicule l'OCRM respecte-t-elle habituellement ?",
+        "a": "Le tiers latéral (atteinte du tiers médial ± moyen)."
+      }
+    },
+    {
+      "titre": "Scintigraphie, IRM corps entier, diagnostic et traitement",
+      "texte": "La **scintigraphie** révèle des foyers asymptomatiques ; chez l'enfant, l'interprétation est gênée par les métaphyses et synchondroses physiologiquement fixantes, mais des foyers **multiples bilatéraux symétriques** sont évocateurs. L'**IRM corps entier** (non irradiante, plus sensible) est l'alternative de choix chez l'enfant devant une lésion isolée ; elle montre aussi épanchements, périostites et myosites.\n\nDiagnostic facile si : évolution par poussées, distribution **bilatérale et symétrique**, ostéocondensation + hyperostose dans des sites typiques, peau évocatrice. Sinon, biopsie ou surveillance. Différentiels : **enfant** → infection subaiguë/chronique, granulome éosinophile, Ewing, ostéosarcome, lymphome, leucémie ; **adulte** → métastases, Paget, arthrose sternoclaviculaire, autres spondyloarthrites.\n\nTraitement : **AINS** en 1re intention ; si échec, **bisphosphonates** IV (atteinte axiale, tassements de l'enfant) ou **anti-TNF-α** (atteinte périphérique).",
+      "figures": [
+        "cotten-t1:fig6.34"
+      ],
+      "legendes": [
+        "**IRM corps entier** (T2) révélant plusieurs localisations osseuses asymptomatiques."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel examen est préféré chez l'enfant pour rechercher d'autres foyers d'OCRM devant une lésion isolée ?",
+        "a": "L'IRM corps entier (non irradiante, plus sensible que la scintigraphie)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Scanner sternoclaviculaire : condensation diffuse et hyperostose (têtes de flèches). Patient avec pustulose palmoplantaire. Diagnostic ?",
+      "figure": "cotten-t1:fig6.4b",
+      "options": [
+        "Syndrome SAPHO",
+        "Arthrite septique sternoclaviculaire",
+        "Métastases condensantes",
+        "Arthrose sternoclaviculaire"
+      ],
+      "reponse": 0,
+      "explication": "Ostéite et hyperostose de la paroi thoracique antérieure chez un patient à pustulose.",
+      "page": "p. 201–202",
+      "image_origine": "c06/f6.4"
+    },
+    {
+      "question": "Scanner thoracique chez un patient atteint de syndrome SAPHO. Quelle complication est visible (têtes de flèches) ?",
+      "figure": "cotten-t1:fig6.8",
+      "options": [
+        "Compression du tronc veineux brachiocéphalique gauche par la masse tissulaire présternale",
+        "Lymphome médiastinal",
+        "Thymome",
+        "Abcès rétrosternal"
+      ],
+      "reponse": 0,
+      "explication": "Légende : syndrome SAPHO, compression du tronc veineux brachiocéphalique gauche par la masse tissulaire au contact du sternum, avec remaniements sternocostaux caractéristiques.",
+      "page": "p. 203",
+      "image_origine": "c06/f6.8"
+    },
+    {
+      "question": "Syndrome SAPHO : ostéolyse fémorale initiale (a), puis contrôle à 3 mois en radiographie, TDM et IRM (b–d). Quelle évolution ?",
+      "figure": "cotten-t1:fig6.12a",
+      "options": [
+        "Majoration de l'ostéolyse avec reconstruction osseuse réactionnelle adjacente",
+        "Régression complète de l'ostéolyse",
+        "Fracture pathologique déplacée",
+        "Séquestre et fistule cutanée"
+      ],
+      "reponse": 0,
+      "explication": "Légende : trois mois plus tard, majoration de l'ostéolyse associée à des phénomènes de reconstruction osseuse réactionnelle adjacente (aspect pouvant faire craindre une tumeur).",
+      "page": "p. 205–206",
+      "image_origine": "c06/f6.12"
+    },
+    {
+      "question": "Appositions périostées chroniques incorporées à la corticale du tibia et de la fibula. Contexte de pustulose. Diagnostic ?",
+      "figure": "cotten-t1:fig6.13",
+      "options": [
+        "SAPHO",
+        "Ostéoarthropathie hypertrophiante",
+        "Ostéosarcome périosté",
+        "Stase veineuse"
+      ],
+      "reponse": 0,
+      "explication": "Des appositions périostées isolées ont été rapportées dans le SAPHO, aspect plus inhabituel.",
+      "page": "p. 205",
+      "image_origine": "c06/f6.13"
+    },
+    {
+      "question": "Hanche : pincement coxofémoral concentrique avec atteinte osseuse du toit acétabulaire. Patient SAPHO. Mécanisme ?",
+      "figure": "cotten-t1:fig6.14",
+      "options": [
+        "Arthrite par contiguïté d'une ostéite",
+        "Coxarthrose",
+        "Ostéonécrose",
+        "Protrusion rhumatoïde"
+      ],
+      "reponse": 0,
+      "explication": "Les arthrites périphériques du SAPHO sont souvent associées à une ostéite de contiguïté.",
+      "page": "p. 205",
+      "image_origine": "c06/f6.14"
+    },
+    {
+      "question": "Enfant : ostéocondensation hétérogène du tiers distal de l'ulna avec élargissement osseux. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig6.17",
+      "options": [
+        "OCRM",
+        "Ostéosarcome",
+        "Ostéome ostéoïde",
+        "Dysplasie fibreuse"
+      ],
+      "reponse": 0,
+      "explication": "Condensation et hyperostose métaphysodiaphysaire : OCRM.",
+      "page": "p. 206",
+      "image_origine": "c06/f6.17"
+    },
+    {
+      "question": "Enfant : ostéolyse du versant médial de la malléole latérale (flèche) avec discrète condensation. Lésion bilatérale symétrique en IRM. Diagnostic ?",
+      "figure": "cotten-t1:fig6.18",
+      "options": [
+        "OCRM",
+        "Abcès de Brodie unique",
+        "Chondroblastome",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyse métaphysaire jouxtant la physe, entourée de condensation, avec symétrie : OCRM.",
+      "page": "p. 206",
+      "image_origine": "c06/f6.18"
+    },
+    {
+      "question": "IRM : plage épiphysométaphysaire de la fibula distale en hyposignal T1, hypersignal T2, rehaussée, sans abcès. Enfant avec autres lésions. Diagnostic ?",
+      "figure": "cotten-t1:fig6.22",
+      "options": [
+        "OCRM",
+        "Ostéomyélite aiguë abcédée",
+        "Ewing",
+        "Kyste osseux"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte épiphysométaphysaire inflammatoire sans abcès ni séquestre.",
+      "page": "p. 208",
+      "image_origine": "c06/f6.22"
+    },
+    {
+      "question": "IRM axiale T2 et T1 gadolinium : réaction œdémato-inflammatoire de la moelle du tiers médial de la clavicule et des tissus mous, sans collection. Enfant. Diagnostic ?",
+      "figure": "cotten-t1:fig6.24",
+      "options": [
+        "OCRM claviculaire",
+        "Ostéomyélite à staphylocoque",
+        "Sarcome d'Ewing",
+        "Fracture"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte du tiers médial sans collection : OCRM ; l'hyperostose ultérieure confirme.",
+      "page": "p. 209–210",
+      "image_origine": "c06/f6.24"
+    },
+    {
+      "question": "Enfant atteint d'OCRM (ostéomyélite chronique récurrente multifocale) : radiographie du bassin (a) et IRM (b). Quelles localisations ?",
+      "figure": "cotten-t1:fig6.28a",
+      "options": [
+        "Synchondrose ischiopubienne droite et grand trochanter gauche",
+        "Sacro-iliite bilatérale",
+        "Coxite droite isolée",
+        "Apophysite de l'épine iliaque antéro-inférieure"
+      ],
+      "reponse": 0,
+      "explication": "Légende : atteinte de la synchondrose ischiopubienne droite (radiographie) ; en IRM, important œdème de la moelle et des tissus mous à ce niveau, mais aussi atteinte du grand trochanter gauche (flèche).",
+      "page": "p. 211",
+      "image_origine": "c06/f6.28"
+    },
+    {
+      "question": "Enfant : hypertrophie de l'aile iliaque gauche avec sacro-iliite homolatérale. Diagnostic ?",
+      "figure": "cotten-t1:fig6.29",
+      "options": [
+        "OCRM",
+        "Sacro-iliite septique",
+        "Dysplasie fibreuse",
+        "SA juvénile"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte iliaque de l'OCRM s'associe souvent à une sacro-iliite du même côté.",
+      "page": "p. 211",
+      "image_origine": "c06/f6.29"
+    },
+    {
+      "question": "Scanner : hypertrophie et condensation de la mandibule. Enfant avec pustulose. Diagnostic ?",
+      "figure": "cotten-t1:fig6.30",
+      "options": [
+        "OCRM mandibulaire",
+        "Ostéomyélite dentaire",
+        "Dysplasie fibreuse",
+        "Ostéosarcome"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte mandibulaire se voit dans ~5 % des OCRM.",
+      "page": "p. 211",
+      "image_origine": "c06/f6.30"
+    },
+    {
+      "question": "IRM frontale T2 du genou : œdème débutant à la jonction physaire médiale du tibia (*) dans une OCRM. Complication à craindre ?",
+      "figure": "cotten-t1:fig6.32",
+      "options": [
+        "Épiphysiodèse prématurée",
+        "Ostéonécrose",
+        "Fracture-séparation",
+        "Chondrolyse"
+      ],
+      "reponse": 0,
+      "explication": "L'OCRM peut entraîner une épiphysiodèse prématurée, notamment tibiale.",
+      "page": "p. 211",
+      "image_origine": "c06/f6.32"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Une même maladie à deux âges",
+        "SAPHO : la paroi thoracique antérieure",
+        "SAPHO : rachis, bassin, os longs, articulations"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "hs": [
+        "OCRM : les métaphyses de l'enfant",
+        "OCRM : clavicule, rachis, bassin et croissance",
+        "Scintigraphie, IRM corps entier, diagnostic et traitement"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "ancien_id": "c06",
+  "images_non_rattachees": []
+}

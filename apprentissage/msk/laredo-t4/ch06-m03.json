@@ -1,0 +1,360 @@
+{
+  "id": "laredo-t4:m03",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 6,
+  "chapitre_libelle": "Chapitre 2 · Pseudo-tumeurs",
+  "titre": "Dysplasie fibreuse des os et Jaffe-Campanacci",
+  "pages": "2540–2569",
+  "objectifs": [
+    "Poser le diagnostic radiologique de dysplasie fibreuse",
+    "Connaître McCune-Albright et Mazabraud",
+    "Différencier la DF du méningiome, du Paget et du Jaffe-Campanacci"
+  ],
+  "essentiels": [
+    "Mécanisme : mutation somatique activatrice de GNAS (protéine Gsα) → excès d'AMPc → prolifération de pré-ostéoblastes immatures, os tissé « en caractères chinois », et hyper-résorption (IL-6, RANK-L). Non héréditaire, en mosaïque : pas de dépistage familial.",
+    "Monostotique 70–90 % : côtes (45 %, avec les îlots condensants, 1re cause de lésion costale), fémur proximal, tibia, maxillaire, voûte. Polyostotique : avant 10 ans, prédominance hémimélique ou métamérique (vertèbre + côte du même niveau).",
+    "Image typique : lésion centrale, allongée selon le grand axe, métaphyso-diaphysaire (épiphyse épargnée), en verre dépoli, cerclée d'un liseré net sur ses deux versants (1A1). Contours sinueux, plusieurs foyers séparés par de l'os sain.",
+    "Matrice variable : lyse pure, verre dépoli, volutes de fumée, grains, parfois arcs et anneaux (dysplasie fibro-cartilagineuse, fémur proximal). Expansion : de l'« os dans l'os » à la soufflure à coque fine.",
+    "IRM peu spécifique : hypo T1, T2 très variable, prise de contraste habituelle. Scintigraphie : hyperfixation dans plus de 85 % des lésions, utile pour la cartographie.",
+    "Complications : déformation en crosse de berger (coxa vara), fissures de la convexité, compression du nerf optique (base du crâne), dégénérescence rare (0,3–4 %, ostéosarcome surtout, favorisée par la radiothérapie), diabète phosphaté (FGF-23).",
+    "McCune-Albright : DF polyostotique + taches café-au-lait à bords déchiquetés (« côte du Maine ») + puberté précoce (et autres endocrinopathies). Mazabraud : DF + myxomes intramusculaires. Une DF de la base du crâne impose de chercher un adénome hypophysaire.",
+    "Jaffe-Campanacci : au moins 3 FNO (fibromes non ossifiants), souvent symétriques aux genoux, + taches café-au-lait à bords lisses (« côte de Californie »), lien avec la NF1. Révélation fréquente par fracture."
+  ],
+  "introduction": "La dysplasie fibreuse (DF) est la grande « imitatrice » bénigne du squelette : elle peut être lytique, en verre dépoli, condensante ou soufflante. Pour la reconnaître à coup sûr, il faut comprendre **d'où vient sa matrice** (une mutation qui empêche les ostéoblastes de mûrir) et **comment elle se distribue** (une mosaïque qui suit un membre ou un métamère).",
+  "sections": [
+    {
+      "titre": "Une mutation en mosaïque",
+      "texte": "La DF est due à une **mutation somatique activatrice de GNAS**, le gène de la sous-unité α de la protéine G. L'adénylcyclase reste activée en permanence : excès d'**AMPc**. Dans l'os, cela donne deux effets : les précurseurs ostéoblastiques **prolifèrent sans mûrir** et fabriquent un os tissé immature, et la production d'IL-6 et de RANK-L stimule la **résorption ostéoclastique**.\n\nLa mutation survient après la fécondation : seules certaines cellules la portent (**mosaïque**). La maladie n'est donc **pas héréditaire** et ne justifie aucun dépistage familial. Plus la mutation est précoce dans l'embryon, plus le territoire atteint est étendu, et plus d'autres tissus (peau, glandes endocrines) peuvent être touchés.",
+      "figures": [
+        "laredo-t4:fig6.2b"
+      ],
+      "legendes": [
+        "**Schéma physiopathologique.** Une seule mutation de GNAS explique l'os anormal (centre), l'ostéolyse (droite), le diabète phosphaté par FGF-23 (gauche) et, si d'autres tissus sont touchés, les taches café-au-lait et les endocrinopathies du McCune-Albright (haut)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le verre dépoli n'est ni de l'os normal ni une lyse : c'est un os tissé, trop peu minéralisé pour être dense, mais assez pour voiler la lacune.",
+      "verification": {
+        "q": "Plus la mutation GNAS survient tôt dans l'embryon, que se passe-t-il ?",
+        "a": "Le territoire atteint est plus étendu, et d'autres tissus (peau, glandes endocrines) peuvent être touchés."
+      }
+    },
+    {
+      "titre": "Où et quand ?",
+      "texte": "La forme **monostotique** (70 à 90 %) touche surtout les **côtes** (45 %, première cause de lésion costale focale avec les îlots condensants), le **fémur proximal** (15 %), le tibia, le maxillaire et la voûte.\n\nLa forme **polyostotique** se révèle avant 10 ans et suit une distribution évocatrice : **hémimélique** (prédominance sur un côté du corps) ou **métamérique** (vertèbre et côte du même niveau, os de part et d'autre d'une articulation, un rayon de la main).\n\nLes lésions apparaissent dans l'enfance, progressent avec la croissance et se **stabilisent après la puberté** : une nouvelle lésion chez l'adulte n'est pas une DF.",
+      "figures": [
+        "laredo-t4:fig6.10b",
+        "laredo-t4:fig6.12"
+      ],
+      "legendes": [
+        "**DF polyostotique à prédominance hémimélique droite** : foyers multiples, séparés les uns des autres, des os du membre inférieur droit.",
+        "**DF costale et vertébrale du même niveau** : deux foyers soufflants de la côte et atteinte de la vertèbre adjacente, une distribution métamérique qui signe le diagnostic."
+      ],
+      "cle": "Distribution hémimélique ou métamérique d'images bénignes = dysplasie fibreuse jusqu'à preuve du contraire.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésions osseuses bénignes de la vertèbre T6 et de la 6e côte du même côté : à quoi penser ?",
+        "a": "Distribution métamérique : dysplasie fibreuse jusqu'à preuve du contraire."
+      }
+    },
+    {
+      "titre": "L'image typique en quatre traits",
+      "texte": "Sur un os long, la DF est une lésion **centrale**, **allongée** selon le grand axe, **métaphyso-diaphysaire** (l'épiphyse est épargnée), en **verre dépoli**, limitée par un **liseré net sur ses deux versants** (type 1A1). Ses contours sont volontiers sinueux, et plusieurs foyers peuvent se succéder séparés par de l'os sain : ce sont les traits d'une dystrophie, pas d'une tumeur.\n\nLa **matrice** varie selon le degré d'ossification : lyse pure, verre dépoli, **volutes de fumée** (septums), grains grossiers périphériques, voire arcs et anneaux (dysplasie fibro-cartilagineuse, fémur proximal). La forme **condensante** pure prédomine à la base du crâne.",
+      "figures": [
+        "laredo-t4:fig6.14a",
+        "laredo-t4:fig6.20b"
+      ],
+      "legendes": [
+        "**Verre dépoli** de l'extrémité distale du fémur : condensation centromédullaire pâle et homogène (flèches), qui efface la trabéculation sans être aussi dense que l'os cortical.",
+        "**Deux matrices dans un même os** : foyer diaphysaire en verre dépoli (flèche noire), foyer métaphyso-épiphysaire en volutes de fumée (flèche blanche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Donnez les traits typiques de la DF sur un os long.",
+        "a": "Centrale, allongée, métaphyso-diaphysaire, épiphyse épargnée, verre dépoli, liseré net 1A1, contours sinueux."
+      }
+    },
+    {
+      "titre": "Trois degrés d'expansion",
+      "texte": "La DF peut rester discrète, comme un « **os dans l'os** » qui ne déforme pas les contours, ou souffler modérément l'os sous une coque épaisse, ou réaliser une **volumineuse soufflure à coque fine**, d'aspect pseudo-malin, notamment sur les côtes.\n\nSur la vertèbre, elle donne volontiers une **image « en cadre »** : une lacune quadrilatère cernée d'un liseré condensé, entourée d'os normal.",
+      "figures": [
+        "laredo-t4:fig6.9",
+        "laredo-t4:fig6.21c"
+      ],
+      "legendes": [
+        "**Les trois degrés d'expansion** (radiographie en haut, scanner en bas) : os dans l'os, soufflure modérée à coque épaisse, soufflure volumineuse à coque fine. Le bleu foncé représente le verre dépoli.",
+        "**Image « en cadre » vertébrale** en scanner sagittal (flèches) : lacune quadrilatère à liseré net, contenu partiellement minéralisé."
+      ],
+      "cle": null,
+      "piege": "Une côte très soufflée à coque fine paraît agressive. Sa forme allongée sur une grande longueur et le verre dépoli ramènent à la DF.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Côte très soufflée à coque fine : quels signes ramènent à la DF ?",
+        "a": "Forme allongée sur une grande longueur et matrice en verre dépoli."
+      }
+    },
+    {
+      "titre": "IRM et scintigraphie : utiles, mais pas pour le diagnostic",
+      "texte": "L'IRM est **peu spécifique** : hyposignal T1 homogène, T2 très variable (hyposignal si riche en collagène, hypersignal franc si cartilage ou kystes), prise de contraste habituelle. Un kyste anévrysmal secondaire peut s'y greffer. C'est pourquoi le diagnostic repose sur la radiographie et le scanner.\n\nLa scintigraphie **hyperfixe** dans plus de 85 % des lésions : elle sert à la **cartographie** et révèle la distribution hémimélique ou métamérique.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Lue seule, une IRM de DF (hypersignal T2, rehaussement) peut faire croire à une tumeur. Toujours confronter au scanner.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi ne pas faire le diagnostic de DF sur l'IRM seule ?",
+        "a": "Le signal est peu spécifique (T2 variable, rehaussement) et peut simuler une tumeur ; le scanner montre le verre dépoli."
+      }
+    },
+    {
+      "titre": "Complications à rechercher",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig6.24"
+      ],
+      "legendes": [
+        "**Fissure de la face inférieure du col fémoral** sur DF (flèche longue) : la corticale médiale, en compression dans un col en varus, cède en premier."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Patient avec DF polyostotique, phosphorémie normale mais fatigue musculaire : quel dosage ?",
+        "a": "Le TmPi/GFR, à la recherche d'un diabète phosphaté lié au FGF-23."
+      }
+    },
+    {
+      "titre": "Syndromes associés : McCune-Albright, Mazabraud, Jaffe-Campanacci",
+      "texte": "Le **McCune-Albright** associe DF polyostotique, **taches café-au-lait à bords déchiquetés** (« côte du Maine ») et **puberté précoce**, parfois d'autres endocrinopathies (hyperthyroïdie, acromégalie, hypercorticisme). Devant une DF de la base du crâne, il faut chercher un **adénome hypophysaire** (IRM de la selle, IGF-1, prolactine).\n\nLe **Mazabraud** associe DF et **myxomes intramusculaires**, souvent voisins des lésions osseuses : hypersignal T2 pseudo-liquidien mais avec prise de contraste.\n\nLe **Jaffe-Campanacci** n'est pas une DF : ce sont **au moins trois fibromes non ossifiants**, souvent symétriques aux genoux, avec des **taches café-au-lait à bords lisses** (« côte de Californie ») et un lien avec la NF1. La fracture pathologique est le mode de révélation le plus fréquent.",
+      "figures": [
+        "laredo-t4:fig6.29f"
+      ],
+      "legendes": [
+        "**Syndrome de Mazabraud** : DF de l'humérus et masse intramusculaire en hypersignal T2 franc qui se rehausse (myxome)."
+      ],
+      "cle": "Bords déchiquetés = côte du Maine = McCune-Albright. Bords lisses = côte de Californie = NF1 / Jaffe-Campanacci.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Taches café-au-lait à bords lisses et trois fibromes non ossifiants aux genoux : quel syndrome ?",
+        "a": "Jaffe-Campanacci (lien avec la NF1) ; les bords déchiquetés orientent vers McCune-Albright."
+      }
+    },
+    {
+      "titre": "Diagnostics différentiels au crâne",
+      "texte": "",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Voûte épaissie avec tables visibles et verre dépoli chez un homme de 25 ans : DF, méningiome ou Paget ?",
+        "a": "Dysplasie fibreuse : le méningiome efface les tables chez une femme de 40-50 ans, le Paget touche le sujet âgé."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Fémur proximal d'un adulte, ancienne lésion de l'enfance. Comment appelle-t-on cette déformation ?",
+      "figure": "laredo-t4:fig6.5c",
+      "options": [
+        "Crosse de bâton de berger (dysplasie fibreuse)",
+        "Fémur en lame de sabre (Paget)",
+        "Coxa valga de la maladie exostosante",
+        "Incurvation rachitique"
+      ],
+      "reponse": 0,
+      "explication": "Coxa vara avec incurvation proximale à concavité médiale : déformation en crosse de berger, typique d'une DF débutant pendant la croissance.",
+      "page": "2543",
+      "image_origine": "m03/p080_0"
+    },
+    {
+      "question": "Col fémoral gauche (flèches). Quel signe oriente vers une lésion fibreuse bénigne ?",
+      "figure": "laredo-t4:fig6.11a",
+      "options": [
+        "Liseré dense net sur ses deux versants",
+        "Réaction périostée spiculée",
+        "Destruction corticale",
+        "Matrice nuageuse floue"
+      ],
+      "reponse": 0,
+      "explication": "Lésion ostéolytique légèrement soufflante, limitée par un liseré net sur ses deux versants : dysplasie fibreuse du col.",
+      "page": "2547",
+      "image_origine": "m03/p084_1"
+    },
+    {
+      "question": "Radius distal : lacune à liseré dense contenant des septums en volutes (flèches). Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig6.15",
+      "options": [
+        "Dysplasie fibreuse",
+        "Tumeur à cellules géantes",
+        "Chondrosarcome",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Aspect en volutes de fumée dans une lacune à liseré net sur ses deux versants : dysplasie fibreuse.",
+      "page": "2549",
+      "image_origine": "m03/p086_0"
+    },
+    {
+      "question": "Femme de 38 ans : fémur proximal en crosse, lésion soufflante remplie de calcifications en arcs et anneaux, liseré net. Diagnostic ?",
+      "figure": "laredo-t4:fig6.17c",
+      "options": [
+        "Dysplasie fibro-cartilagineuse",
+        "Chondrosarcome central",
+        "Enchondromatose d'Ollier",
+        "Infarctus osseux"
+      ],
+      "reponse": 0,
+      "explication": "Forme de DF riche en cartilage, typique du fémur proximal avec déformation marquée. La quiescence de la composante fibreuse (liseré net) écarte le chondrosarcome.",
+      "page": "2550",
+      "image_origine": "m03/p087_0"
+    },
+    {
+      "question": "Lésions costales soufflantes très allongées et atteinte des vertèbres du même niveau. Quelle distribution ?",
+      "figure": "laredo-t4:fig6.22d",
+      "options": [
+        "Métamérique (dysplasie fibreuse)",
+        "Aléatoire (métastases)",
+        "Symétrique (ostéopoécilie)",
+        "Sclérotomale (mélorhéostose)"
+      ],
+      "reponse": 0,
+      "explication": "Côte + vertèbre du même métamère : distribution métamérique de la DF. La forme très allongée de l'atteinte costale est une clé du diagnostic.",
+      "page": "2554",
+      "image_origine": "m03/p091_0"
+    },
+    {
+      "question": "Fémur déformé chez un patient porteur de DF, petites lignes claires corticales (flèches). Que sont-elles ?",
+      "figure": "laredo-t4:fig6.23b",
+      "options": [
+        "Fissures de la convexité",
+        "Canaux nourriciers",
+        "Lignes de Looser d'ostéomalacie",
+        "Réaction périostée"
+      ],
+      "reponse": 0,
+      "explication": "Fissures chroniques de la convexité d'une crosse fémorale, complication classique de la DF.",
+      "page": "2555",
+      "image_origine": "m03/p092_0"
+    },
+    {
+      "question": "Scanner de la base du crâne : os soufflé en verre dépoli et rétrécissement d'un conduit (flèche). Quelle complication craindre ?",
+      "figure": "laredo-t4:fig6.26",
+      "options": [
+        "Compression nerveuse (ici conduit auditif interne)",
+        "Dégénérescence en chondrosarcome",
+        "Fracture de la base",
+        "Hypercalcémie"
+      ],
+      "reponse": 0,
+      "explication": "La DF crânienne comprime surtout les nerfs des foramens : nerf optique (plus fréquent), conduit auditif (surdité), olfactif.",
+      "page": "2556",
+      "image_origine": "m03/p093_0"
+    },
+    {
+      "question": "Dysplasie fibreuse du fémur et masses des tissus mous en hypersignal T2 intense qui prennent le contraste. Syndrome ?",
+      "figure": "laredo-t4:fig6.30b",
+      "options": [
+        "Mazabraud",
+        "McCune-Albright",
+        "Maffucci",
+        "Jaffe-Campanacci"
+      ],
+      "reponse": 0,
+      "explication": "DF + myxomes intramusculaires = syndrome de Mazabraud. Les myxomes ont un signal pseudo-liquidien mais prennent le contraste.",
+      "page": "2561",
+      "image_origine": "m03/p098_0"
+    },
+    {
+      "question": "Bosse frontale chez une femme de 47 ans : hyperostose effaçant les tables, surface spiculée, épaississement méningé rehaussé. Diagnostic ?",
+      "figure": "laredo-t4:fig6.31",
+      "options": [
+        "Méningiome en plaque",
+        "Dysplasie fibreuse",
+        "Maladie de Paget",
+        "Hyperostose frontale interne"
+      ],
+      "reponse": 0,
+      "explication": "Tables effacées, réaction spiculée et méninge épaissie qui prend le contraste : méningiome. La DF garde des tables visibles qui enveloppent le verre dépoli.",
+      "page": "2564",
+      "image_origine": "m03/p101_0"
+    },
+    {
+      "question": "Genoux d'un adolescent : lacunes excentrées métaphysaires multiples et symétriques (flèches). Taches café-au-lait à bords lisses. Diagnostic ?",
+      "figure": "laredo-t4:fig7.x107",
+      "options": [
+        "Syndrome de Jaffe-Campanacci",
+        "McCune-Albright",
+        "Ollier",
+        "Histiocytose langerhansienne"
+      ],
+      "reponse": 0,
+      "explication": "FNO multiples symétriques + taches à bords lisses (côte de Californie) : Jaffe-Campanacci, proche de la NF1.",
+      "page": "2569",
+      "image_origine": "m03/p106_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Une mutation en mosaïque",
+        "Où et quand ?"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": [
+        4
+      ]
+    },
+    {
+      "hs": [
+        "L'image typique en quatre traits",
+        "Trois degrés d'expansion",
+        "IRM et scintigraphie : utiles, mais pas pour le diagnostic"
+      ],
+      "secs": [
+        2,
+        3,
+        4
+      ],
+      "qs": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Complications à rechercher",
+        "Syndromes associés : McCune-Albright, Mazabraud, Jaffe-Campanacci",
+        "Diagnostics différentiels au crâne"
+      ],
+      "secs": [
+        5,
+        6,
+        7
+      ],
+      "qs": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m03",
+  "images_non_rattachees": [
+    "m03/p078_0"
+  ]
+}

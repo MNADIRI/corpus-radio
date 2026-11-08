@@ -1,0 +1,588 @@
+{
+  "id": "cotten-t1:c03",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 3,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Polyarthrite rhumatoïde",
+  "pages": "96–125",
+  "objectifs": [
+    "Poser les bases du diagnostic précoce de la PR (polyarthrite rhumatoïde) : clinique, biologie, critères ACR/EULAR 2010 et bilan radiographique",
+    "Maîtriser la sémiologie échographique et IRM (synovite, ténosynovite, œdème osseux, érosions) et son rôle pronostique et dans la rémission",
+    "Reconnaître la PR évoluée aux mains, pieds, grosses articulations et au rachis cervical, avec ses mesures (diastasis, impression basilaire)"
+  ],
+  "essentiels": [
+    "PR : synovite **bilatérale et symétrique** des poignets, MCP, IPP et avant-pieds + rachis cervical supérieur ; peu d'enthèses (≠ spondyloarthrites). Femme 4:1, pic 40–60 ans.",
+    "Biologie : **ACPA** (anti-CCP) spécificité > 95 %, présents tôt, pronostiques ; FR 70–85 % mais non spécifique ; tabac = 1er facteur environnemental.",
+    "Critères **ACR/EULAR 2010** : score ≥ 6/10 (articulations 0–5, sérologie 0–3, durée 0–1, inflammation 0–1) ; érosions typiques sur ≥ 3 articulations suffisent.",
+    "Bilan initial : **pieds face + trois-quarts** (même asymptomatiques), mains-poignets de face. Premières érosions : bord radial des têtes de M2–M3, **styloïde ulnaire**, bord latéral de la tête de **M5 du pied**.",
+    "Lésions élémentaires radiographiques : tuméfaction, ostéoporose **en bande**, **érosions marginales sans reconstruction**, pincement **diffus**.",
+    "Échographie : synovite hypoéchogène + Doppler (grade 0–3), ténosynovite (extenseur ulnaire du carpe, fléchisseurs), érosions sur deux plans ; IRM : seule à voir l'**œdème osseux**, prédicteur d'érosions.",
+    "Rachis cervical : **diastasis C1-C2 ≥ 3 mm** (adulte), impression basilaire (Ranawat, Redlund-Johnell, Clark), pannus péri-odontoïdien, cervical moyen « en marches d'escalier ».",
+    "Rémission = ACR-EULAR (SDAI ≤ 3,3) mais synovites Doppler/IRM persistantes prédisent rechute et progression structurale ; stratégie **Treat to Target** autour du méthotrexate."
+  ],
+  "introduction": "La PR est le plus fréquent des rhumatismes inflammatoires chroniques (0,3 % en France). Le radiologue y intervient à deux moments : **tôt**, pour détecter synovites et érosions quand le traitement est le plus efficace, et **plus tard**, pour suivre la progression structurale, explorer le rachis cervical et les complications.",
+  "sections": [
+    {
+      "titre": "Physiopathologie : du tabac aux érosions",
+      "texte": "La PR est une maladie **auto-immune** multifactorielle. Les antigènes **HLA-DR4 et/ou DR1** (épitope partagé) sont portés par 70–90 % des malades ; PTPN22 est le 2e gène de susceptibilité. Le **tabac**, premier facteur environnemental (×2–3 à 20 paquets-années, ×30–40 chez les porteurs de deux allèles), favorise la **citrullination** de peptides ; l'**immunisation** contre ces peptides produit les **ACPA** (Anti-Citrullinated Protein Antibodies), parfois des années avant les symptômes. *Porphyromonas gingivalis* (parodontite) peut aussi citrulliner des peptides.\n\nLe complexe cellules présentatrices / lymphocytes T (excès de Th1 et **Th17**) / synoviocytes entretient la synovite via **IL-1, IL-6 et TNF-α**. Ces cytokines et l'IL-17 induisent l'expression de **RANKL** qui active les ostéoclastes (érosions), tandis que **Dkk-1** bloque la voie Wnt et empêche la réparation osseuse : d'où des érosions **sans reconstruction**.",
+      "figures": [],
+      "legendes": [],
+      "cle": "PR = érosion pure ; spondyloarthrite = érosion + construction.",
+      "piege": null,
+      "pourquoi": "Le blocage de la voie Wnt par Dkk-1 explique pourquoi la PR érode sans construire, à l'inverse des spondyloarthrites.",
+      "verification": {
+        "q": "Quel est le principal facteur de risque environnemental de PR et sur quel mécanisme agit-il ?",
+        "a": "Le tabac, qui favorise la citrullination de peptides reconnus par les molécules HLA à épitope partagé, d'où la production d'ACPA."
+      }
+    },
+    {
+      "titre": "Phase précoce : clinique et biologie",
+      "texte": "Le début est le plus souvent une **oligo- ou polyarthrite distale** (70 %) : poignets, MCP (2e–3e), IPP, avant-pieds ; douleurs inflammatoires avec **dérouillage matinal > 30 min**, doigts « en fuseau », atteinte fixe et symétrique. Ailleurs : polyarthrite aiguë fébrile (20 %) ou formes plus rares (10 %).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "Un FR isolé n'est pas un diagnostic : il est présent chez 7–30 % des sujets sains après 65 ans.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle ténosynovite est très évocatrice d'une PR débutante ?",
+        "a": "La ténosynovite de l'extenseur ulnaire du carpe."
+      }
+    },
+    {
+      "titre": "Critères de classification ACR/EULAR 2010",
+      "texte": "Les critères ARA (American Rheumatism Association) de 1987 étaient peu sensibles au stade précoce. Les critères **ACR/EULAR 2010** permettent de classer une PR débutante dans les 3–6 premiers mois, chez un patient ayant au moins une synovite non expliquée par une autre maladie. **Score ≥ 6/10 = PR**. Des érosions typiques sur au moins **3 articulations** (MTP, MCP, IPP, poignet) suffisent à classer, même si le score est < 6.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Score ≥ 6 = PR ; l'examen clinique reste moins sensible que l'échographie et l'IRM pour détecter les arthrites.",
+      "piege": null,
+      "pourquoi": "Les érosions ont été retirées des items car ce sont déjà des complications : le but est de traiter avant elles.",
+      "verification": {
+        "q": "Une femme a 5 petites articulations gonflées, des ACPA fortement positifs, une CRP élevée depuis 8 semaines. Score ACR/EULAR ?",
+        "a": "3 + 3 + 1 + 1 = 8 : PR."
+      }
+    },
+    {
+      "titre": "Radiographies au stade précoce",
+      "texte": "Bilan initial impératif : **pieds de face et de trois-quarts**, même asymptomatiques (les MTP s'érodent souvent en premier ; le trois-quarts détecte 10 % de patients érosifs en plus), **mains et poignets de face**, et les articulations symptomatiques.\n\nÀ moins d'un an d'évolution, les érosions radiographiques sont **spécifiques (91,8 %)** mais peu **sensibles (17,7 %)** : d'où le recours à l'échographie et l'IRM.",
+      "figures": [
+        "cotten-t1:fig3.1",
+        "cotten-t1:fig3.3",
+        "cotten-t1:fig3.4"
+      ],
+      "legendes": [
+        "Ostéoporose périarticulaire **en bande** des MCP et IPP.",
+        "Poignet : raréfaction osseuse modérée et érosions de la **styloïde ulnaire** (têtes de flèches).",
+        "Érosion marginale profonde du bord **latéral de la tête du 5e métatarsien** (flèche)."
+      ],
+      "cle": "Trois cibles pour les premières érosions : bord radial des têtes de M2–M3, styloïde ulnaire, bord latéral de la tête de M5 au pied.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi demander des pieds de trois-quarts dans une PR débutante, même asymptomatique ?",
+        "a": "Les érosions apparaissent souvent d'abord aux MTP (bord latéral de M5) et le trois-quarts détecte davantage de patients érosifs."
+      }
+    },
+    {
+      "titre": "Échographie : synovites, ténosynovites, érosions",
+      "texte": "La **synovite** est un épaississement synovial hypoéchogène peu compressible ; le **Doppler énergie** grade sa vascularisation (0 à 3), mieux corrélée à l'activité que le mode B. Un épaississement sans Doppler chez une PR connue correspond à une synovite inactive. Les signaux Doppler sont plus marqués le matin et diminués par les AINS (Anti-Inflammatoires Non Stéroïdiens).\n\nLes **ténosynovites** (la moitié des patients) touchent les fléchisseurs des 2e–3e doigts et l'**extenseur ulnaire du carpe** ; les **bursites** inter- et sous-capitométatarsiennes sont fréquentes. Une **érosion** doit être visible sur **deux plans perpendiculaires**, idéalement ≥ 1,5 mm de large et 1 mm de profondeur ; elle peut être comblée de synovite active.\n\nProtocole bilatéral : face dorsale du poignet, MCP, IPP, MTP, canal carpien ; érosions au bord latéral de M5 (pied), bord radial de M2, bord ulnaire de M5 (main), styloïde ulnaire. Attention aux synovites **mécaniques** des MTP 1 (arthrose) et 2 (plaque plantaire).",
+      "figures": [
+        "cotten-t1:fig3.5",
+        "cotten-t1:fig3.8b",
+        "cotten-t1:fig3.7a"
+      ],
+      "legendes": [
+        "Synovite de la 2e MCP en **Doppler énergie** (P1 : phalange, M : métacarpien).",
+        "**Ténosynovite** des extenseurs des doigts hypervascularisée.",
+        "**Érosion** de la face radiale de la tête de M2 en mode B (a) comblée de synovite active en Doppler (b)."
+      ],
+      "cle": null,
+      "piege": "Ne confondez pas une érosion avec un méplat ou une concavité physiologique : exigez deux plans perpendiculaires.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle anomalie l'échographie ne peut-elle pas montrer, contrairement à l'IRM ?",
+        "a": "L'œdème de la moelle osseuse, dont la valeur pronostique péjorative est démontrée."
+      }
+    },
+    {
+      "titre": "IRM : l'œdème osseux qui annonce l'érosion",
+      "texte": "L'IRM montre : des **synovites** rehaussées après gadolinium ; des **ténosynovites** et bursites ; un **œdème osseux** (hypersignal T2 flou, en fait un infiltrat inflammatoire médullaire, présent chez 39–75 % des PR précoces) qui **prédit fortement les érosions** ultérieures au même endroit ; des **érosions** visibles sur deux plans avec défect cortical, contenant du tissu rehaussé ou du liquide.\n\nProtocole minimal : **STIR ou T2 fat sat frontal** étendu du poignet aux phalanges distales (pour ne pas méconnaître un rhumatisme psoriasique), **T1** pour les érosions, **T1 fat sat gadolinium** dans deux plans pour les synovites. L'étude **dynamique** du rehaussement quantifie la synovite.",
+      "figures": [
+        "cotten-t1:fig3.9b",
+        "cotten-t1:fig3.10"
+      ],
+      "legendes": [
+        "Synovite médiocarpienne et ténosynovites des fléchisseurs et extenseurs (IRM axiale après gadolinium).",
+        "**Œdème osseux** carpométacarpien et de la styloïde ulnaire (flèches)."
+      ],
+      "cle": "Œdème osseux précoce = érosion probable dans les 2 ans si le traitement n'est pas modifié.",
+      "piege": "Kystes mucoïdes, chenaux vasculaires et insertions ligamentaires créent des pseudo-érosions au carpe : une base d'implantation large sur la corticale plaide pour une vraie érosion.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle séquence IRM doit s'étendre jusqu'aux phalanges distales et pourquoi ?",
+        "a": "La séquence frontale STIR/T2 fat sat, pour ne pas méconnaître un rhumatisme psoriasique débutant (IPD)."
+      }
+    },
+    {
+      "titre": "Pronostic et diagnostics différentiels",
+      "texte": "L'évolution se fait par poussées ; la moitié des patients a un handicap important à 10 ans, 10 % ont une forme grave rapide, 20–30 % une forme bénigne. La grossesse induit une rémission dans plus de 75 % des cas, avec rechute après l'accouchement.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel syndrome du sujet âgé associe polyarthrite et œdème des dos des mains prenant le godet, sans érosion ?",
+        "a": "Le RS3PE (polyarthrite œdémateuse du sujet âgé), très corticosensible."
+      }
+    },
+    {
+      "titre": "Suivi, scores et rémission",
+      "texte": "Le suivi radiographique (mains, poignets, pieds) est indispensable car l'efficacité d'un traitement se juge sur l'effet **structural** : tous les 6 mois la première année, puis tous les ans pendant 3 ans, même si le patient va bien (dissociation radioclinique). Les scores de **Larsen** et surtout de **Sharp modifié par van der Heijde** (érosions et pincements cotés séparément) sont réservés aux études ; le **SENS** est une version simplifiée.\n\nEn IRM, le score **RAMRIS** (Rheumatoid Arthritis MRI Scoring System) cote synovites, érosions et œdème du poignet et des doigts. L'échographie suit la disparition de l'hyperhémie (scores OMERACT).\n\nLa rémission ACR-EULAR (SDAI ≤ 3,3, ou articulations douloureuses et gonflées ≤ 1, EVA ≤ 1, CRP ≤ 10 mg/L) cache souvent une activité résiduelle : synovite Doppler chez 28–63 %, synovite IRM chez 93–96 %, œdème chez 32–55 %. Une **synovite Doppler persistante prédit la rechute** et la progression : ne pas alléger le traitement dans ce cas.",
+      "figures": [],
+      "legendes": [],
+      "cle": "La rémission « vraie » devrait inclure la disparition des synovites en imagerie et l'absence de progression sur deux radiographies successives.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Que penser d'une décroissance thérapeutique chez un patient en rémission clinique avec synovite Doppler persistante ?",
+        "a": "Elle est déraisonnable : la synovite Doppler persistante prédit la rechute et la progression structurale."
+      }
+    },
+    {
+      "titre": "Phase d'état : mains, poignets et pieds",
+      "texte": "Les érosions se majorent, le pincement se complète et des **déformations** apparaissent. **Doigts** : boutonnière (flexion IPP, hyperextension IPD), plus fréquente que le col de cygne (hyperextension IPP, flexion IPD), et maillet. **MCP** : déviation ulnaire « en **coup de vent** » avec subluxation palmaire. **Pouce** en Z ou adductus. L'ankylose IPP/MCP et l'atteinte des IPD sont rares (≠ rhumatisme psoriasique).\n\n**Poignet** : formes érosives ou chondrolytiques, subluxation dorsale de l'ulna, diastasis radio-ulnaire distal, **translation ulnaire du carpe**, VISI (Volar Intercalated Segment Instability), destruction ou **ankylose** intercarpienne. **Pied** : coup de vent latéral des orteils, subluxation plantaire des métatarsiens, chondrolyse talonaviculaire et subtalaire, affaissement de l'arrière-pied par rupture du tibial postérieur, érosion calcanéenne postérosupérieure (bursite rétrocalcanéenne).",
+      "figures": [
+        "cotten-t1:fig3.12a",
+        "cotten-t1:fig3.15a",
+        "cotten-t1:fig3.16"
+      ],
+      "legendes": [
+        "Arthrite évoluée des MCP avec **déviation ulnaire en coup de vent**.",
+        "**Subluxation ulnaire du carpe**.",
+        "Érosions profondes des têtes de M4–M5 et **coup de vent** latéral des orteils."
+      ],
+      "cle": "Main rhumatoïde évoluée : coup de vent ulnaire des MCP, boutonnière, pouce en Z ; IPD respectées.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Décrivez la déformation en boutonnière.",
+        "a": "Hyperflexion de l'IPP avec hyperextension de l'IPD."
+      }
+    },
+    {
+      "titre": "Formes macrogéodiques et grosses articulations",
+      "texte": "La **forme macrogéodique** (« polyarthrite robuste ») comporte de grandes lacunes au carpe, MCP, IPP, MTP, avec peu de déminéralisation et un pincement tardif : forme peu inflammatoire, souvent chez l'homme actif. De volumineux kystes des grosses articulations peuvent se fracturer.\n\n**Épaule** : chondrolyse glénohumérale, ascension de la tête (rupture de coiffe), érosions profondes le long du col huméral (« **carie sèche** »). **Coude** : tuméfaction synoviale puis résorption osseuse considérable. **Hanche** : stades 1 (pincement débutant diffus ou supéromédial) à 4 (**protrusion acétabulaire**). **Genou** : chondrolyse globale des trois compartiments.",
+      "figures": [
+        "cotten-t1:fig3.19b",
+        "cotten-t1:fig3.21a",
+        "cotten-t1:fig3.24a"
+      ],
+      "legendes": [
+        "PR **robuste** : multiples macrogéodes du carpe (a) et des MCP (b).",
+        "Épaule : chondrolyse complète et érosions le long du col huméral (**carie sèche**).",
+        "Destruction du **coude** avec résorption osseuse considérable des berges."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le pincement concentrique (axial) de la hanche rhumatoïde pousse la tête vers le fond du cotyle : d'où la protrusion, à l'inverse du pincement supérolatéral de la coxarthrose.",
+      "verification": {
+        "q": "Quel est le stade ultime de la coxite rhumatoïde ?",
+        "a": "La protrusion acétabulaire (stade 4)."
+      }
+    },
+    {
+      "titre": "Rachis cervical : mesurer l'instabilité",
+      "texte": "C'est le site le plus touché après mains, poignets et avant-pieds, souvent dans les 2 premières années ; la clinique est mal corrélée à l'imagerie (instabilité sévère asymptomatique possible).\n\nSignes radiographiques à rechercher :",
+      "figures": [
+        "cotten-t1:fig3.27",
+        "cotten-t1:fig3.29a",
+        "cotten-t1:fig3.31b",
+        "cotten-t1:fig3.33b"
+      ],
+      "legendes": [
+        "**Diastasis C1-C2** (flèche blanche) et diminution de la distance odontoïdo-atloïdienne postérieure (flèche noire).",
+        "Arc antérieur de C1 en regard du tiers inférieur de l'odontoïde : **impression basilaire** (méthode de Clark).",
+        "**Pannus péri-odontoïdien** en hyposignal T1 (a) rehaussé (b).",
+        "Impression basilaire en IRM : odontoïde au-dessus du foramen magnum."
+      ],
+      "cle": null,
+      "piege": "L'érosion de l'odontoïde rend les lignes de Chamberlain et McGregor peu fiables en radiographie : préférez Ranawat, Redlund-Johnell, Clark, ou l'IRM (ligne de McRae).",
+      "pourquoi": "Le pannus synovial érode l'odontoïde et distend le ligament transverse : l'atlas glisse en avant en flexion et la moelle se coince entre l'odontoïde et l'arc postérieur.",
+      "verification": {
+        "q": "Quel seuil de diastasis atlanto-axoïdien antérieur est pathologique chez l'adulte ?",
+        "a": "≥ 3 mm entre le bord inférieur de l'arc antérieur de C1 et l'odontoïde."
+      }
+    },
+    {
+      "titre": "IRM cervicale, complications et nodules",
+      "texte": "L'**IRM cervicale** est indiquée pour des cervicalgies rebelles, des signes neurologiques ou une instabilité radiographique. Le **pannus** péri-odontoïdien est en hyposignal T1 ; il est hypervasculaire (hypersignal T2, fort rehaussement), hypovasculaire ou **fibreux** (hyposignal T2). Un canal < 14 mm au foramen magnum, < 13 mm en C1-C2, < 12 mm en dessous incite à opérer ; l'effacement des espaces sous-arachnoïdiens est le meilleur prédicteur neurologique. En IRM, l'impression basilaire = odontoïde > 5 mm au-dessus de la ligne de Chamberlain ou au-dessus de la ligne de McRae.\n\nComplications articulaires : **kystes synoviaux** au contenu hétérogène (grains de riz, fibrine), kyste poplité pouvant descendre à la cheville et se rompre (pseudo-phlébite), compressions nerveuses, ruptures tendineuses parfois masquées par de la fibrine.\n\n**Nodules rhumatoïdes** (10–30 %) : zones de pression (avant-bras, coude, doigts, talon). IRM : hyposignal T1, signal T2 variable, rehaussement ; échographie : nodule hypoéchogène peu vascularisé avec centre plus hypoéchogène (nécrose fibrinoïde). Ils érodent rarement l'os.",
+      "figures": [
+        "cotten-t1:fig3.38a",
+        "cotten-t1:fig3.39b"
+      ],
+      "legendes": [
+        "**Kyste poplité** au contenu très hétérogène en T2 (grains de riz, fibrine).",
+        "**Nodule rhumatoïde** solide en hyposignal T1 (a), relativement homogène en T2 (b)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le meilleur élément prédictif IRM du développement de signes neurologiques dans la PR cervicale ?",
+        "a": "L'effacement des espaces sous-arachnoïdiens (plus que la mesure du diamètre canalaire)."
+      }
+    },
+    {
+      "titre": "Traitement : Treat to Target",
+      "texte": "Objectifs : rémission (DAS28 < 2,6) ou faible activité (DAS28 < 3,2), absence de progression structurale, préservation de la fonction. Le **méthotrexate** (15–20 mg/semaine + acide folique) est le traitement de fond d'ancrage ; alternatives : léflunomide, sulfasalazine. Corticoïdes à faible dose en début de traitement, puis sevrage.\n\nEn cas d'objectif non atteint à 3–6 mois et de facteurs de mauvais pronostic : **biothérapie**, en général un **anti-TNF-α** associé au MTX (infliximab, adalimumab, étanercept, certolizumab, golimumab) ; ensuite abatacept, rituximab (anti-CD20) ou tocilizumab (anti-récepteur de l'IL-6). Risques : infections (tuberculose), immunogénicité. Localement : infiltrations, synoviorthèse isotopique.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Réévaluer tous les 1 à 3 mois et ajuster tant que la rémission n'est pas atteinte (tight control).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle molécule est le traitement de fond d'ancrage de la PR ?",
+        "a": "Le méthotrexate (15–20 mg/semaine, avec acide folique)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "PR débutante : tuméfaction des parties molles et raréfaction osseuse autour de la 2e MCP (têtes de flèches). Quel signe radiographique précoce ?",
+      "figure": "cotten-t1:fig3.2",
+      "options": [
+        "Tuméfaction synoviale et raréfaction périarticulaire",
+        "Érosion centrale",
+        "Ostéophytose marginale",
+        "Périostite"
+      ],
+      "reponse": 0,
+      "explication": "Signes précoces mais subjectifs, supprimés des scores radiographiques.",
+      "page": "p. 100",
+      "image_origine": "c03/f3.2"
+    },
+    {
+      "question": "Échographie longitudinale du bord ulnaire de l'ulna distale : défect cortical (flèche). Quel est le site et la signification ?",
+      "figure": "cotten-t1:fig3.8a",
+      "options": [
+        "Érosion de la styloïde ulnaire, site précoce de PR",
+        "Fracture de fatigue",
+        "Enthésophyte",
+        "Variante normale"
+      ],
+      "reponse": 0,
+      "explication": "La styloïde ulnaire est un site privilégié des érosions précoces (synovite radio-ulnaire distale, ténosynovite ECU).",
+      "page": "p. 101–102",
+      "image_origine": "c03/f3.8"
+    },
+    {
+      "question": "Multiples érosions et pincement diffus des interlignes radiocarpien, intercarpien et carpométacarpien. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig3.12b",
+      "options": [
+        "Polyarthrite rhumatoïde",
+        "Arthropathie à CPP",
+        "Arthrose post-traumatique (SLAC)",
+        "Goutte tophacée"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte érosive et chondrolytique globale du carpe, typique de la PR.",
+      "page": "p. 111",
+      "image_origine": "c03/f3.13"
+    },
+    {
+      "question": "Poignet ancien : continuité osseuse entre radius, carpe et métacarpiens. Que décrit-on ?",
+      "figure": "cotten-t1:fig3.15b",
+      "options": [
+        "Ankylose radiocarpienne, intercarpienne et carpométacarpienne",
+        "Maladie de Kienböck",
+        "Coalition carpienne congénitale",
+        "Arthrodèse chirurgicale"
+      ],
+      "reponse": 0,
+      "explication": "La PR évoluée peut aboutir à une ankylose du carpe.",
+      "page": "p. 111",
+      "image_origine": "c03/f3.15"
+    },
+    {
+      "question": "Cheville de profil chez une PR ancienne : disparition de l'interligne subtalaire. Diagnostic ?",
+      "figure": "cotten-t1:fig3.17",
+      "options": [
+        "Ankylose subtalaire rhumatoïde",
+        "Coalition talocalcanéenne",
+        "Fracture du talus",
+        "Arthrose post-traumatique"
+      ],
+      "reponse": 0,
+      "explication": "Les arthrites talonaviculaires et subtalaires évoluent vers la chondrolyse puis l'ankylose du tarse.",
+      "page": "p. 111",
+      "image_origine": "c03/f3.17"
+    },
+    {
+      "question": "Érosion calcanéenne postérosupérieure (flèche) en radiographie, hyperhémie en Doppler. Quelle lésion associée ?",
+      "figure": "cotten-t1:fig3.18b",
+      "options": [
+        "Bursite rétrocalcanéenne chronique",
+        "Enthésite achilléenne avec construction",
+        "Fracture de fatigue",
+        "Ostéomyélite"
+      ],
+      "reponse": 0,
+      "explication": "La petite érosion postérosupérieure du calcanéus est en regard d'une bursite rétrocalcanéenne.",
+      "page": "p. 111",
+      "image_origine": "c03/f3.18"
+    },
+    {
+      "question": "Lacune de la tête humérale visible en radiographie et IRM chez un homme actif atteint de PR. Quelle forme ?",
+      "figure": "cotten-t1:fig3.20c",
+      "options": [
+        "Forme macrogéodique (PR robuste)",
+        "Métastase lytique",
+        "Ostéonécrose",
+        "Chondroblastome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect macrogéodique : géodes d'hyperpression ou kystes mucoïdes de grande taille.",
+      "page": "p. 113",
+      "image_origine": "c03/f3.20"
+    },
+    {
+      "question": "Hanche : pincement diffus et global de l'interligne sans ostéophyte. Orientation ?",
+      "figure": "cotten-t1:fig3.24b",
+      "options": [
+        "Coxite inflammatoire (PR)",
+        "Coxarthrose supérolatérale",
+        "Ostéonécrose",
+        "Dysplasie"
+      ],
+      "reponse": 0,
+      "explication": "Le pincement diffus (stade 1) est inflammatoire, à la différence du pincement focal supérolatéral de l'arthrose.",
+      "page": "p. 114",
+      "image_origine": "c03/f3.24"
+    },
+    {
+      "question": "Hanche d'un patient atteint de polyarthrite rhumatoïde. Quelles lésions ?",
+      "figure": "cotten-t1:fig3.25",
+      "options": [
+        "Pincement de l'interligne coxofémoral avec érosions des berges",
+        "Ostéophytose péricapitale et condensation supérolatérale",
+        "Ostéonécrose de la tête fémorale",
+        "Calcifications du labrum"
+      ],
+      "reponse": 0,
+      "explication": "Légende : polyarthrite rhumatoïde, pincement de l'interligne coxofémoral avec érosions des berges.",
+      "page": "p. 114",
+      "image_origine": "c03/f3.25"
+    },
+    {
+      "question": "Genou de face : pincement des deux compartiments fémorotibiaux sans ostéophyte. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig3.26",
+      "options": [
+        "Chondrolyse inflammatoire (PR)",
+        "Gonarthrose fémorotibiale médiale",
+        "Arthropathie à CPP latérale",
+        "Ostéonécrose"
+      ],
+      "reponse": 0,
+      "explication": "La PR donne une chondrolyse globale des compartiments, sans ostéophyte.",
+      "page": "p. 114",
+      "image_origine": "c03/f3.26"
+    },
+    {
+      "question": "Cliché bouche ouverte : pincement complet bilatéral (flèches). Que décrit-on ?",
+      "figure": "cotten-t1:fig3.28",
+      "options": [
+        "Arthrite C1-C2 latérale bilatérale",
+        "Fracture de Jefferson",
+        "Os odontoideum",
+        "Subluxation rotatoire congénitale"
+      ],
+      "reponse": 0,
+      "explication": "L'arthrite des articulations C1-C2 latérales donne un pincement global, souvent avec condensation sous-chondrale.",
+      "page": "p. 115",
+      "image_origine": "c03/f3.28"
+    },
+    {
+      "question": "Rachis cervical de profil : pincements discaux sévères pluriétagés sans ostéophyte, olisthésis étagés. Aspect ?",
+      "figure": "cotten-t1:fig3.29b",
+      "options": [
+        "Atteinte rhumatoïde « en marches d'escalier »",
+        "Discarthrose banale",
+        "Spondylarthrite ankylosante",
+        "Hyperostose vertébrale"
+      ],
+      "reponse": 0,
+      "explication": "Arthrites zygapophysaires et discopathies sans ostéophytes donnent l'aspect en marches d'escalier.",
+      "page": "p. 116",
+      "image_origine": "c03/f3.30"
+    },
+    {
+      "question": "IRM axiale après gadolinium autour de l'odontoïde (flèche). Lésion ?",
+      "figure": "cotten-t1:fig3.32",
+      "options": [
+        "Pannus péri-odontoïdien rehaussé avec érosions",
+        "Méningiome",
+        "Abcès épidural",
+        "Calcification de dent couronnée"
+      ],
+      "reponse": 0,
+      "explication": "Pannus synovial rehaussé, associé à des érosions de l'odontoïde.",
+      "page": "p. 117",
+      "image_origine": "c03/f3.32"
+    },
+    {
+      "question": "IRM sagittale T2 : discopathies cervicales pluriétagées avec antélisthésis rétrécissant le canal. Contexte ?",
+      "figure": "cotten-t1:fig3.33a",
+      "options": [
+        "PR cervicale moyenne",
+        "Myélopathie cervicarthrosique banale",
+        "Spondylodiscite",
+        "Sclérose en plaques"
+      ],
+      "reponse": 0,
+      "explication": "La PR touche aussi le rachis cervical moyen avec subluxations étagées rétrécissant le canal.",
+      "page": "p. 118",
+      "image_origine": "c03/f3.33"
+    },
+    {
+      "question": "IRM axiale de cheville : synovite talocrurale (flèche) et gaines des fléchisseurs distendues. Diagnostic ?",
+      "figure": "cotten-t1:fig3.35a",
+      "options": [
+        "Synovite et ténosynovite rhumatoïdes",
+        "Fracture occulte du talus",
+        "Synovite villonodulaire",
+        "Kyste arthrosynovial"
+      ],
+      "reponse": 0,
+      "explication": "Synovite talocrurale et ténosynovite des fléchisseurs chez un patient rhumatoïde.",
+      "page": "p. 119",
+      "image_origine": "c03/f3.35"
+    },
+    {
+      "question": "Échographie de hanche en mode B (a) et Doppler énergie (b) chez un patient atteint de polyarthrite rhumatoïde. Que montre-t-elle ?",
+      "figure": "cotten-t1:fig3.37b",
+      "options": [
+        "Épanchement (étoile) et synovite coxofémorale",
+        "Bursite iliopsoas isolée",
+        "Tendinopathie du moyen fessier",
+        "Kyste paralabral"
+      ],
+      "reponse": 0,
+      "explication": "Légende : polyarthrite rhumatoïde, épanchement (étoile) et synovite coxofémorale en mode B et Doppler énergie.",
+      "page": "p. 117, 120",
+      "image_origine": "c03/f3.37"
+    },
+    {
+      "question": "Nodule du talon en hyposignal T1, signal hétérogène T2, rehaussé ; hypoéchogène en échographie. Diagnostic chez une PR séropositive ?",
+      "figure": "cotten-t1:fig3.40c",
+      "options": [
+        "Nodule rhumatoïde",
+        "Tophus goutteux",
+        "Fibromatose plantaire",
+        "Bursite septique"
+      ],
+      "reponse": 0,
+      "explication": "Les nodules rhumatoïdes se découvrent volontiers sous le calcanéus ; ils peuvent être hétérogènes.",
+      "page": "p. 119–121",
+      "image_origine": "c03/f3.40"
+    },
+    {
+      "question": "IRM sagittale de cheville après gadolinium : rehaussement synovial talocrural et subtalaire, sans ténosynovite. Quelle lésion ?",
+      "figure": "cotten-t1:fig3.36",
+      "options": [
+        "Synovite talocrurale et subtalaire",
+        "Ostéonécrose du talus",
+        "Rupture du tibial postérieur",
+        "Fracture de fatigue du calcanéus"
+      ],
+      "reponse": 0,
+      "explication": "Synovite talocrurale et subtalaire sans atteinte cartilagineuse ni ténosynovite.",
+      "page": "p. 119",
+      "image_origine": "c03/f3.36"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Physiopathologie : du tabac aux érosions",
+        "Phase précoce : clinique et biologie",
+        "Critères de classification ACR/EULAR 2010"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": []
+    },
+    {
+      "hs": [
+        "Radiographies au stade précoce",
+        "Échographie : synovites, ténosynovites, érosions",
+        "IRM : l'œdème osseux qui annonce l'érosion",
+        "Pronostic et diagnostics différentiels"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        0,
+        1,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "hs": [
+        "Suivi, scores et rémission",
+        "Phase d'état : mains, poignets et pieds",
+        "Formes macrogéodiques et grosses articulations"
+      ],
+      "secs": [
+        7,
+        8,
+        9
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "hs": [
+        "Rachis cervical : mesurer l'instabilité",
+        "IRM cervicale, complications et nodules",
+        "Traitement : Treat to Target"
+      ],
+      "secs": [
+        10,
+        11,
+        12
+      ],
+      "qs": [
+        10,
+        11,
+        12,
+        13,
+        16
+      ]
+    }
+  ],
+  "ancien_id": "c03",
+  "images_non_rattachees": [
+    "c03/s3.11",
+    "c03/s3.41a",
+    "c03/s3.41b"
+  ]
+}

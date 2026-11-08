@@ -1,0 +1,393 @@
+{
+  "id": "cotten-t1:c07",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 6,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Maladies systémiques et vascularites",
+  "pages": "217–251",
+  "objectifs": [
+    "Reconnaître l'atteinte musculosquelettique de la sclérodermie (calcinose, acro-ostéolyse) et du lupus (Jaccoud, ostéonécrose)",
+    "Connaître l'imagerie de la pseudo-polyarthrite rhizomélique, des myopathies inflammatoires et de la fasciite à éosinophiles",
+    "Identifier les atteintes osseuses et musculaires de la sarcoïdose et les manifestations des vascularites et autres maladies systémiques"
+  ],
+  "essentiels": [
+    "Sclérodermie : **calcifications amorphes** des tissus mous (pulpe, calcinose pseudo-tumorale), **atrophie pulpaire**, **acro-ostéolyse** de la houppe sans déminéralisation, contracture en flexion ; atteinte trapézométacarpienne sévère évocatrice.",
+    "Lupus : polyarthrite **non érosive** ; **arthropathie de Jaccoud** (déformations **réductibles** sans érosion) ; ostéonécroses multifocales (corticoïdes, antiphospholipides) ; infections ; « rhupus » = lupus + arthrites érosives.",
+    "Pseudo-polyarthrite rhizomélique : > 50 ans, épaules et hanches, CRP élevée ; échographie : **bursite sous-acromiodeltoïdienne bilatérale**, ténosynovite du biceps, épanchement ; rechercher un **Horton** (20–40 %).",
+    "Myopathies inflammatoires : IRM (STIR axial) = **œdème** (activité) vs **graisse/atrophie** (chronicité) ; guide la biopsie. Polymyosite : proximale symétrique ; dermatomyosite : + **fasciite**, peau, **calcinose universelle** de l'enfant ; myosite à inclusions : homme > 50 ans, **asymétrique**, distale, loge antérieure, quadriceps avec droit fémoral épargné.",
+    "Fasciite à éosinophiles (Shulman) : épaississement et rehaussement **des fascias profonds**, muscles peu atteints, pas de Raynaud, hyperéosinophilie, corticosensible.",
+    "Sarcoïdose : **ostéite de Perthes-Jungling** des phalanges (aspect **grillagé/en dentelle**, lacunes, acro-ostéolyse sans périostite) ; nodules musculaires avec **dark star** (axial) et **three stripes** (longitudinal) ; lésions médullaires pseudo-métastatiques.",
+    "Syndrome de **Löfgren** : adénopathies hilaires + érythème noueux + arthrite des **chevilles** (bon pronostic).",
+    "Vascularites : Horton (gros vaisseaux, TEP pour l'aortite), **périartérite noueuse** (microanévrysmes, **périostite** tibiale, myosite ischémique), cryoglobulinémie, Behçet, Sjögren (Jaccoud, lymphome)."
+  ],
+  "introduction": "Les maladies systémiques touchent le squelette, les articulations, les muscles et les fascias. L'imagerie n'y est rarement diagnostique à elle seule, mais certains signes sont très évocateurs : calcinose et acro-ostéolyse de la sclérodermie, déformations réductibles du lupus, bursites de la pseudo-polyarthrite rhizomélique, phalanges grillagées de la sarcoïdose.",
+  "sections": [
+    {
+      "titre": "Sclérodermie systémique : clinique",
+      "texte": "Maladie auto-immune associant **fibrose** cutanée et viscérale et **atteinte microvasculaire** (femme, 40–60 ans). Formes : **cutanée limitée** (60 %, distale aux coudes et genoux, variante **CREST** : calcinose, Raynaud, œsophage, sclérodactylie, télangiectasies ; anticorps **anticentromères**), **cutanée diffuse** (35 %, anticorps **anti-Scl-70**), sine scleroderma (5 %).\n\nLe **phénomène de Raynaud** (> 95 %) est souvent révélateur ; la capillaroscopie montre des mégacapillaires. L'atteinte musculosquelettique est fréquente : arthralgies, arthrites (poignets), **crissements tendineux** (forme diffuse, pronostic sévère), myopathie, myosite, contractures en flexion.",
+      "figures": [
+        "cotten-t1:fig7.2"
+      ],
+      "legendes": [
+        "**Sclérodactylie** : rétraction cutanée et doigts en flexion."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels anticorps distinguent les formes limitée et diffuse de sclérodermie ?",
+        "a": "Anticentromères (forme cutanée limitée/CREST) ; anti-topo-isomérase I/Scl-70 (forme diffuse)."
+      }
+    },
+    {
+      "titre": "Sclérodermie : la main radiographique",
+      "texte": "",
+      "figures": [
+        "cotten-t1:fig7.3",
+        "cotten-t1:fig7.8",
+        "cotten-t1:fig7.9"
+      ],
+      "legendes": [
+        "Multiples **calcifications amorphes** des tissus mous des doigts.",
+        "Aspect d'arthrose digitale, **acro-ostéolyse** (flèche), atrophie pulpaire et calcifications.",
+        "**Contracture en flexion** et ostéolyse en bande des phalanges distales (flèches)."
+      ],
+      "cle": "Calcinose pulpaire + acro-ostéolyse + atrophie des parties molles = sclérodermie.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Comment définit-on radiographiquement l'atrophie pulpaire de la sclérodermie ?",
+        "a": "Épaisseur des parties molles de la pulpe < 20 % du diamètre transversal de la base de la phalange distale."
+      }
+    },
+    {
+      "titre": "Sclérodermie : échographie et IRM",
+      "texte": "L'**échographie** montre l'épaississement hypoéchogène de la peau (graisse hyperéchogène et Doppler = activité), détecte mieux les calcifications que la radiographie, des synovites (45 % vs 15 % cliniquement) et des **ténosynovites « sténosantes »** (gaine épaissie hyperéchogène peu vascularisée) des extenseurs, substrat du crissement tendineux.\n\nL'**IRM** montre l'infiltration des septums hypodermiques, synovites, **myosite**, **fasciite**, ténosynovites engainantes ; l'**angio-IRM** des mains objective sténoses et occlusions des artères digitales et de l'arcade palmaire.",
+      "figures": [
+        "cotten-t1:fig7.11"
+      ],
+      "legendes": [
+        "IRM sagittale T1 : **acro-ostéolyse** et atrophie de la pulpe (flèche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel aspect ténosynovial échographique serait évocateur de sclérodermie ?",
+        "a": "Une ténosynovite « sténosante » : gaine épaissie hyperéchogène engainant le tendon, peu vascularisée."
+      }
+    },
+    {
+      "titre": "Lupus érythémateux systémique",
+      "texte": "Femme jeune (9:1), anticorps antinucléaires (98 %), anti-ADN natif et anti-Sm spécifiques. Les manifestations rhumatologiques (80 %) sont souvent inaugurales. Imagerie :",
+      "figures": [
+        "cotten-t1:fig7.13a"
+      ],
+      "legendes": [
+        "LES avec **érosions** des têtes métacarpiennes (a) et synovite IRM (b) : forme frontière."
+      ],
+      "cle": null,
+      "piege": "Les déformations de Jaccoud ressemblent à une main rhumatoïde, mais elles sont réductibles et sans érosion ; un cliché « main posée à plat » peut les corriger.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce qui distingue la main de Jaccoud lupique de la main rhumatoïde ?",
+        "a": "Déformations initialement réductibles, sans érosion ni pincement, par hyperlaxité capsuloligamentaire."
+      }
+    },
+    {
+      "titre": "Pseudo-polyarthrite rhizomélique",
+      "texte": "Critères EULAR/ACR 2012 : patient **≥ 50 ans**, douleurs inflammatoires **bilatérales des épaules** (± cou, hanches), raideur matinale > 45 min, < 3 mois, **CRP/VS élevées**. Femme 2:1, HLA-DR4. Rechercher systématiquement une **artérite à cellules géantes** (20–40 %). Corticosensibilité spectaculaire en 1–3 jours.\n\nLes radiographies sont normales (des érosions périphériques l'éliminent). L'**échographie** augmente la spécificité : **bursite sous-acromiodeltoïdienne** (70 %, très évocatrice si bilatérale), **ténosynovite du long biceps** (68 %), épanchement glénohuméral (66 %), bursite trochantérienne, épanchement coxofémoral, ténosynovite des fléchisseurs au carpe. En TEP : bursites interépineuses et fixations péri-articulaires.",
+      "figures": [
+        "cotten-t1:fig7.14"
+      ],
+      "legendes": [
+        "**Bursite sous-acromiodeltoïdienne** hyperhémiée en Doppler énergie (flèches)."
+      ],
+      "cle": "Bursites sous-acromiales bilatérales + CRP élevée après 50 ans = PPR : pensez Horton.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel signe échographique de l'épaule est le plus évocateur de pseudo-polyarthrite rhizomélique ?",
+        "a": "La bursite sous-acromiodeltoïdienne bilatérale (≈ 70 %), avec ténosynovite du long biceps et épanchement glénohuméral."
+      }
+    },
+    {
+      "titre": "Myopathies inflammatoires idiopathiques",
+      "texte": "L'**IRM** est la technique de référence : dépistage, topographie, **choix du site de biopsie**, suivi. Protocole : axial **T1** (atrophie, graisse) et **STIR** (œdème musculaire, fascias, peau) ; gadolinium surtout pour la fasciite. Hypersignal T2/rehaussement = **activité** ; atrophie/graisse = **chronicité** ou myopathie cortisonique.",
+      "figures": [
+        "cotten-t1:fig7.19",
+        "cotten-t1:fig7.21c",
+        "cotten-t1:fig7.22"
+      ],
+      "legendes": [
+        "Polymyosite : hypersignal STIR musculaire relativement **symétrique** des cuisses.",
+        "Myosite à inclusions : atteinte de la **loge antérieure** de jambe avec dégénérescence graisseuse.",
+        "Dermatomyosite de l'enfant : **calcinose universelle** des fascias et tissus mous."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "L'inflammation est focale : biopsier au hasard donne des faux négatifs ; l'IRM désigne un muscle actif, non encore remplacé par la graisse.",
+      "verification": {
+        "q": "Quelle distribution IRM évoque une myosite à inclusions ?",
+        "a": "Atteinte asymétrique, distale et proximale, des loges antérieures, du quadriceps avec respect relatif du droit fémoral, avec graisse et atrophie marquées."
+      }
+    },
+    {
+      "titre": "Fasciite à éosinophiles et vascularites",
+      "texte": "**Fasciite à éosinophiles (Shulman)** : induration sclérodermiforme des membres après un effort inhabituel, signe du « **canyon** » veineux, **sans Raynaud** ni atteinte des doigts, hyperéosinophilie (63–93 %). IRM : **fascias profonds épaissis**, hypersignal T2 non liquidien et rehaussement, bilatéraux, muscles et hypoderme peu atteints. Corticothérapie efficace (70–90 %).\n\n**Vascularites** (classées selon le calibre) : **artérite à cellules géantes** (Horton : > 50 ans, céphalées, claudication de la mâchoire, PPR associée, risque de cécité ; TEP/angioscanner pour l'**aortite**) ; **périartérite noueuse** (artères moyennes : sténoses, **microanévrysmes**, myalgies, neuropathie, **périostite** tibiofibulaire en regard des nodules, œdème musculaire ischémique ; biopsie neuromusculaire) ; cryoglobulinémie (purpura, géodes sous-chondrales des mains) ; Wegener, Churg-Strauss, Henoch-Schönlein (arthrites non érosives).",
+      "figures": [
+        "cotten-t1:fig7.23",
+        "cotten-t1:fig7.24"
+      ],
+      "legendes": [
+        "Fasciite à éosinophiles : **rehaussement des fascias profonds** des deux jambes.",
+        "Périartérite noueuse : **apposition périostée** fémorale active."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le signe IRM clé de la fasciite à éosinophiles ?",
+        "a": "Épaississement, hypersignal T2 et rehaussement des fascias profonds, bilatéral, avec muscles peu atteints."
+      }
+    },
+    {
+      "titre": "Sjögren, Behçet, Still, intestin et polychondrite",
+      "texte": "",
+      "figures": [
+        "cotten-t1:fig7.16"
+      ],
+      "legendes": [
+        "Syndrome des antisynthétases : **mains de mécanicien** (pulpe fissurée)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle complication redoutée du syndrome de Sjögren faut-il garder à l'esprit ?",
+        "a": "Le lymphome malin non hodgkinien (environ 5 %)."
+      }
+    },
+    {
+      "titre": "Sarcoïdose : muscles et tissus mous",
+      "texte": "Granulomatose épithélioïde sans nécrose caséeuse (adulte 20–40 ans). Le **syndrome de Löfgren** associe adénopathies hilaires, érythème noueux et **arthrite des chevilles** (arthrite symétrique des chevilles : sensibilité 95 %, spécificité 92 %), de bon pronostic. L'arthrite chronique est rare.\n\n**Myopathie** : chronique (proximale, femme 50–60 ans, IRM peu spécifique), aiguë (myosite), **nodulaire** : nodules intramusculaires avec **cicatrice centrale stellaire** hypointense (« **dark star** ») en axial et **trois bandes** (« **three stripes** ») en longitudinal, couronne granulomateuse rehaussée ; la cicatrice persiste après traitement. Nodules sous-cutanés non calcifiés (≠ tophus), ténosynovites, bursites.",
+      "figures": [
+        "cotten-t1:fig7.27",
+        "cotten-t1:fig7.28"
+      ],
+      "legendes": [
+        "Atteinte musculaire **nodulaire** : cicatrice centrale hypointense et couronne rehaussée.",
+        "Coupes longitudinales : **bande centrale hypointense** bordée de deux bandes hyperintenses (three stripes)."
+      ],
+      "cle": "Nodule musculaire à centre étoilé hypointense chez un patient sarcoïdosique = granulome ; pas besoin de biopsie si le contexte est typique.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Décrivez les signes « dark star » et « three stripes ».",
+        "a": "Nodule sarcoïdosique musculaire : cicatrice centrale stellaire hypointense en axial ; en longitudinal, bande centrale hypointense entre deux bandes hyperintenses."
+      }
+    },
+    {
+      "titre": "Sarcoïdose : os",
+      "texte": "L'atteinte osseuse (1–15 %, plus fréquente chez le sujet d'origine africaine) signe une forme chronique multiviscérale. La **dactylite sarcoïdosique** (90 % des atteintes osseuses) réalise l'**ostéite de Perthes-Jungling** des phalanges moyennes et distales, bilatérale, asymétrique, respectant les articulations :",
+      "figures": [
+        "cotten-t1:fig7.29",
+        "cotten-t1:fig7.30",
+        "cotten-t1:fig7.33"
+      ],
+      "legendes": [
+        "**Ostéite de Perthes-Jungling** : aspect grillagé de l'os trabéculaire des phalanges.",
+        "**Ostéolyse** d'une phalange proximale avec tuméfaction des tissus mous, sans périostite.",
+        "**Plages de remplacement médullaire** vertébrales hypointenses en T1, rehaussées : piège métastatique."
+      ],
+      "cle": null,
+      "piege": "Des lésions médullaires multiples chez un sarcoïdosique peuvent être des granulomes : une graisse centrale ou périphérique plaide contre des métastases, mais la biopsie reste souvent nécessaire.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est l'aspect radiographique typique de la dactylite sarcoïdosique ?",
+        "a": "Phalanges à trabéculation grillagée en nid d'abeilles, petites lacunes, ostéolyse corticale sans réaction périostée, articulations respectées."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Calcifications volumineuses périarticulaires de la hanche chez une patiente atteinte de sclérodermie. Terme ?",
+      "figure": "cotten-t1:fig7.4",
+      "options": [
+        "Calcinose pseudo-tumorale",
+        "Myosite ossifiante",
+        "Chondrosarcome",
+        "Calcinose tumorale familiale"
+      ],
+      "reponse": 0,
+      "explication": "Les calcifications d'apatite peuvent former des amas pseudo-tumoraux, notamment à la hanche.",
+      "page": "p. 221",
+      "image_origine": "c07/f7.4"
+    },
+    {
+      "question": "Sclérodermie systémique : radiographie de face (a), TDM axiale (b) et IRM T2 (c) cervicales. Diagnostic ?",
+      "figure": "cotten-t1:fig7.5",
+      "options": [
+        "Calcinose pseudo-tumorale périvertébrale",
+        "Chordome",
+        "Ossification du ligament longitudinal postérieur",
+        "Tophus goutteux"
+      ],
+      "reponse": 0,
+      "explication": "Légende : calcinose pseudo-tumorale cervicale essentiellement périvertébrale (flèches), rétrécissant peu le canal rachidien.",
+      "page": "p. 221–222",
+      "image_origine": "c07/f7.5"
+    },
+    {
+      "question": "Coude de profil chez une patiente atteinte de sclérodermie systémique. Anomalie ?",
+      "figure": "cotten-t1:fig7.6b",
+      "options": [
+        "Calcifications rétro-olécrâniennes (calcinose)",
+        "Enthésophyte tricipital",
+        "Bursite olécrânienne septique",
+        "Corps étrangers intra-articulaires"
+      ],
+      "reponse": 0,
+      "explication": "Légende : sclérodermie systémique, calcifications rétro-olécrâniennes.",
+      "page": "p. 221",
+      "image_origine": "c07/f7.6"
+    },
+    {
+      "question": "Échographie cutanée comparative : peau épaissie hypoéchogène (b). Pathologie ?",
+      "figure": "cotten-t1:fig7.10",
+      "options": [
+        "Sclérodermie",
+        "Lymphœdème",
+        "Cellulite",
+        "Lipodystrophie"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte cutanée sclérodermique se traduit par un épaississement hypoéchogène, disparition des lobules graisseux.",
+      "page": "p. 223",
+      "image_origine": "c07/f7.10"
+    },
+    {
+      "question": "IRM axiale T1 (a) et T2 (b) de jambe dans une dermatomyosite : collections multiples. Diagnostic ?",
+      "figure": "cotten-t1:fig7.20",
+      "options": [
+        "Calcinose universelle avec collections à niveau liquide-liquide",
+        "Hématomes intramusculaires",
+        "Abcès multiples",
+        "Kystes synoviaux"
+      ],
+      "reponse": 0,
+      "explication": "Légende : dermatomyosite, calcinose universelle ; collections avec niveau liquide-liquide en T1 et T2.",
+      "page": "p. 234–235",
+      "image_origine": "c07/f7.20"
+    },
+    {
+      "question": "IRM frontale : nodule sous-cutané aspécifique (flèche) chez un patient avec adénopathies hilaires. Diagnostic probable ?",
+      "figure": "cotten-t1:fig7.26",
+      "options": [
+        "Nodule sarcoïdosique",
+        "Tophus",
+        "Lipome",
+        "Nodule rhumatoïde"
+      ],
+      "reponse": 0,
+      "explication": "Les nodules sous-cutanés sarcoïdosiques ont un signal peu spécifique ; le contexte oriente.",
+      "page": "p. 243–244",
+      "image_origine": "c07/f7.26"
+    },
+    {
+      "question": "IRM sagittale : atteinte de la phalange distale étendue aux tissus mous chez un sarcoïdosique. Lésion ?",
+      "figure": "cotten-t1:fig7.31",
+      "options": [
+        "Dactylite sarcoïdosique",
+        "Panaris osseux",
+        "Enchondrome",
+        "Glomus"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte osseuse sarcoïdosique s'associe volontiers à une atteinte des tissus mous en regard.",
+      "page": "p. 246",
+      "image_origine": "c07/f7.31"
+    },
+    {
+      "question": "Rachis lombaire d'un patient atteint de sarcoïdose. Quelle lésion ?",
+      "figure": "cotten-t1:fig7.32",
+      "options": [
+        "Ostéocondensation de plusieurs corps vertébraux avec tassement, non spécifique",
+        "Spondylodiscite",
+        "Hémangiomes vertébraux multiples",
+        "Vertèbres en cadre pagétiques"
+      ],
+      "reponse": 0,
+      "explication": "Légende : sarcoïdose, ostéocondensation de plusieurs corps vertébraux avec tassement vertébral, d'aspect non spécifique (diagnostic différentiel : métastases condensantes, hémopathie).",
+      "page": "p. 246–247",
+      "image_origine": "c07/f7.32"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Sclérodermie systémique : clinique",
+        "Sclérodermie : la main radiographique",
+        "Sclérodermie : échographie et IRM"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Lupus érythémateux systémique",
+        "Pseudo-polyarthrite rhizomélique"
+      ],
+      "secs": [
+        3,
+        4
+      ],
+      "qs": []
+    },
+    {
+      "hs": [
+        "Myopathies inflammatoires idiopathiques",
+        "Fasciite à éosinophiles et vascularites"
+      ],
+      "secs": [
+        5,
+        6
+      ],
+      "qs": [
+        4
+      ]
+    },
+    {
+      "hs": [
+        "Sjögren, Behçet, Still, intestin et polychondrite",
+        "Sarcoïdose : muscles et tissus mous",
+        "Sarcoïdose : os"
+      ],
+      "secs": [
+        7,
+        8,
+        9
+      ],
+      "qs": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "c07",
+  "images_non_rattachees": [
+    "c07/s7.12"
+  ]
+}

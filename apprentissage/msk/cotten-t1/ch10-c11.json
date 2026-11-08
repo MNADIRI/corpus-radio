@@ -1,0 +1,419 @@
+{
+  "id": "cotten-t1:c11",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 10,
+  "chapitre_libelle": "Infections",
+  "titre": "Infections rachidiennes",
+  "pages": "305–330",
+  "objectifs": [
+    "Comprendre la pathogénie et la sémiologie radiographique et IRM de la spondylodiscite à pyogènes, de la phase précoce à l'état",
+    "Distinguer la tuberculose (mal de Pott), la brucellose et les autres germes des pyogènes, et les remaniements postopératoires de l'infection",
+    "Reconnaître l'arthrite zygapophysaire, l'abcès épidural et la sacro-iliite infectieuse, et les diagnostics différentiels (Modic 1, Andersson, microcristaux)"
+  ],
+  "essentiels": [
+    "Chez l'adulte, le disque est avasculaire : l'infection commence dans l'**os sous-chondral** (coin antérieur du plateau inférieur) puis gagne le disque ; chez l'enfant, discite primitive (canaux vasculaires jusqu'à 13 ans).",
+    "Topographie : lombaire 55 %, thoracique 35 %, cervical 10 % (abcès épidural dans 90 % des formes cervicales) ; *S. aureus* = 2/3 des pyogènes.",
+    "Radiographie en retard d'au moins **2 semaines** (érosion du coin, pincement, puis érosions des plateaux quand ≥ 50 % de l'os est détruit).",
+    "IRM (sensibilité 96 %, spécificité 94 %) : sagittal T1, T2 FS, T1 gado FS + axial gado + frontal ; signes précoces = inflammation focale d'un plateau + **tissus mous périvertébraux/épiduraux** ; puis disque hyperintense T2 et rehaussé, inflammation **au contact du disque** (≠ Modic 1).",
+    "Tuberculose : disque longtemps préservé, **grands abcès froids** à paroi fine soulevant les ligaments, **calcifications**, érosions en miroir, épidurite en embrasse de rideau, arc postérieur, plusieurs vertèbres par voie sous-ligamentaire.",
+    "Brucellose : homme > 40 ans, L4-L5, **coin antérosupérieur** (épiphysite), vide discal, condensation et **ostéophyte en bec de perroquet**, peu d'abcès.",
+    "L'IRM de contrôle n'est pas utile si l'évolution est favorable : le signal disparaît lentement ; le 1er signe d'efficacité = régression de l'inflammation des tissus mous ; guérison = **conversion graisseuse** (~15 semaines).",
+    "Postopératoire : hypersignal discal et rehaussement fin physiologiques ; évoquer l'infection devant **infiltration/abcès prévertébraux**, anomalies **antérieures** à la zone de curetage, érosions floues, collection épidurale."
+  ],
+  "introduction": "Les infections du rachis sont des urgences diagnostiques (neurologiques et septiques). Le radiologue doit : reconnaître tôt la spondylodiscite en IRM, orienter vers le germe (pyogène, tuberculose, brucellose), rechercher abcès et compression, guider la **biopsie discovertébrale**, et ne pas confondre avec les remaniements dégénératifs, rhumatismaux ou postopératoires.",
+  "sections": [
+    {
+      "titre": "Terrain et pathogénie",
+      "texte": "Incidence ~2,4/100 000/an, homme 2–3:1, pics à l'enfance et entre 40 et 60 ans. Facteurs de risque : immunodépression, diabète, alcool, drépanocytose, toxicomanie, chirurgie, gestes percutanés.\n\nVoie **artérielle** surtout (artères segmentaires → rameaux périostés et branches de l'artère radiculaire). Chez l'adulte, les disques sont **avasculaires** : l'infection débute dans l'**os sous-chondral**, à la partie antérieure du plateau (surtout inférieur), et n'atteint le disque que secondairement. Chez l'enfant (< 13 ans), des canaux vasculaires traversent les plateaux : **discite** primitive. Voies rares : veineuse (plexus de Batson), contiguïté, inoculation (0,1–3 % des gestes discaux).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "C'est parce que le disque adulte n'est pas vascularisé qu'une IRM très précoce peut montrer un plateau inflammatoire avec un disque encore normal.",
+      "verification": {
+        "q": "Pourquoi l'infection rachidienne de l'adulte commence-t-elle dans l'os sous-chondral ?",
+        "a": "Le disque adulte est quasi avasculaire ; les germes se greffent dans l'os sous-chondral bien vascularisé, à la partie antérieure du plateau."
+      }
+    },
+    {
+      "titre": "Spondylodiscite à pyogènes : clinique, radiographie, scanner",
+      "texte": "Germes : *S. aureus* (2/3), bacilles à Gram négatif (*E. coli*, salmonelle chez le drépanocytaire), streptocoques (endocardite ; *S. gallolyticus* → cherchez un cancer colique). Rachialgie inflammatoire brutale, raideur, fièvre inconstante, syndrome inflammatoire.\n\n**Radiographie** (retard ≥ 2 semaines) : érosion d'un coin vertébral, **pincement discal**, estompement puis érosions des plateaux, tuméfaction prévertébrale (cervical) ou fuseau paravertébral (thoracique), destruction parfois > 50 % du corps ; plus tard condensation et ponts osseux. Le gaz intradiscal est rare (sauf *E. coli*, *Clostridium*, *Brucella*, BK). **Scanner** : érosions **floues** des plateaux, disque hypodense, infiltration circonférentielle, abcès ; utile en cas de doute en IRM.",
+      "figures": [
+        "cotten-t1:fig11.1",
+        "cotten-t1:fig11.2"
+      ],
+      "legendes": [
+        "Spondylodiscite L3-L4 : **pincement discal** et érosions des plateaux ; biopsie discovertébrale.",
+        "Spondylodiscite T12-L1 évoluée avec **destruction** de plus de la moitié d'un corps vertébral."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel germe de spondylodiscite doit faire rechercher une néoplasie colique ?",
+        "a": "Streptococcus gallolyticus (ex-bovis)."
+      }
+    },
+    {
+      "titre": "Spondylodiscite à pyogènes : l'IRM",
+      "texte": "Protocole : sagittal **T1, T2 FS, T1 gadolinium FS**, axial T1 gado sur l'étage, **coronal** (abcès du psoas) ; grand champ (atteintes pluriétagées). Une IRM réalisée dans les 2–4 premiers jours peut être faussement négative : la **répéter**.\n\n**Phase précoce** : inflammation focale d'un ou des deux plateaux (rebord antérieur) **sans atteinte discale**, et surtout **inflammation des tissus mous périvertébraux ou épiduraux**, indispensable pour retenir le diagnostic (sinon : micro-avulsion de Sharpey, spondyloarthrite) ; puis hypersignal discal T2 focal, puis rehaussement.\n\n**Phase d'état** : inflammation des plateaux **au contact du disque**, disque **hyperintense en T2** (liquidien) avec perte de la fente intranucléaire et rehaussement variable, estompement/érosions des plateaux, pincement, inflammation périvertébrale circonférentielle floue, **épidurite** franchissant le ligament longitudinal postérieur, **abcès** à paroi épaisse.",
+      "figures": [
+        "cotten-t1:fig11.3a",
+        "cotten-t1:fig11.5d",
+        "cotten-t1:fig11.7b"
+      ],
+      "legendes": [
+        "Spondylodiscite **débutante** L5-S1 : inflammation des plateaux et des tissus mous, disque peu atteint.",
+        "Spondylodiscite L5-S1 à *S. aureus* : disque hyperintense, plateaux rehaussés, **épidurite**.",
+        "**Spondylite** de L1 à *E. coli* : atteinte d'un corps vertébral sans atteinte discale significative."
+      ],
+      "cle": "Pas d'inflammation des tissus mous périvertébraux ou épiduraux = méfiance avant de conclure à une spondylodiscite débutante.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Que faire devant une IRM normale réalisée au 2e jour d'une suspicion clinique forte de spondylodiscite ?",
+        "a": "La répéter quelques jours plus tard : l'IRM peut être faussement négative dans les 2–4 premiers jours."
+      }
+    },
+    {
+      "titre": "Preuve bactériologique, traitement et surveillance",
+      "texte": "Hémocultures positives dans 25–50 % des cas. Sinon, **biopsie discovertébrale** percutanée (70–80 % de rendement) : **7 prélèvements** (4 osseux sur les deux plateaux, 2 discaux, 1 lavage-aspiration), microbiologie, histologie, PCR ; hémocultures après le geste.\n\nAntibiothérapie 6–12 semaines (IV puis orale), repos, corset selon déformation. **Surveillance** : clinique, biologique et radiographique (condensation, ossifications, bloc). L'**IRM de contrôle n'est pas systématique** : le pincement et la destruction mécanique peuvent progresser, le rehaussement peut persister ou augmenter. Premier signe d'efficacité : **régression de l'inflammation des tissus mous** ; guérison : **conversion graisseuse** des plateaux (~15 semaines). IRM seulement si complication ou mauvaise réponse.",
+      "figures": [
+        "cotten-t1:fig11.8b"
+      ],
+      "legendes": [
+        "Spondylodiscite biétagée **sous traitement** : persistance des anomalies somatodiscales malgré l'amélioration."
+      ],
+      "cle": null,
+      "piege": "Un disque qui continue de s'affaisser sous antibiotiques n'est pas un échec : seules les données cliniques, biologiques et les abcès comptent.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le signe IRM le plus précoce d'efficacité thérapeutique ?",
+        "a": "La diminution de l'inflammation des tissus mous (la guérison est confirmée par la conversion graisseuse des plateaux)."
+      }
+    },
+    {
+      "titre": "Mal de Pott : la tuberculose rachidienne",
+      "texte": "40 % des spondylodiscites dans le monde. Évolution insidieuse, fièvre absente dans 65 %, syndrome inflammatoire inconstant ; déformations et complications neurologiques fréquentes. Thoracique bas et lombaire haut, souvent **pluriétagée contiguë**. *M. tuberculosis* n'a pas d'enzymes protéolytiques : le disque est **longtemps préservé**, l'infection reste dans les corps (spondylite) et diffuse **sous les ligaments**.",
+      "figures": [
+        "cotten-t1:fig11.9a",
+        "cotten-t1:fig11.14a",
+        "cotten-t1:fig11.15"
+      ],
+      "legendes": [
+        "Mal de Pott : larges **érosions en miroir** des plateaux bordées de condensation.",
+        "Volumineux **abcès froids paravertébraux** (coupes frontales).",
+        "Abcès paravertébraux tuberculeux **calcifiés** (scanner)."
+      ],
+      "cle": "Gros abcès propre et calcifié + disque relativement respecté + plusieurs vertèbres = tuberculose.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi le disque est-il longtemps préservé dans la tuberculose rachidienne ?",
+        "a": "M. tuberculosis ne produit pas d'enzymes protéolytiques ; l'infection reste somatique et diffuse sous les ligaments."
+      }
+    },
+    {
+      "titre": "Brucellose, autres germes et enfant",
+      "texte": "**Brucellose** (zoonose : éleveurs, lait cru) : homme > 40 ans, **L4-L5** ; atteinte du **coin antérosupérieur** (« épiphysite brucellienne »), **vide discal** (25–30 %), destruction modérée, **condensation** précoce, gros **ostéophyte en bec de perroquet** ; IRM : architecture conservée malgré des anomalies étendues, peu d'abcès ; syndrome inflammatoire souvent absent ; rifampicine + doxycycline 3–6 mois.\n\nAutres : **salmonelle** (drépanocytose, infarctus), **actinomycose** (contiguïté, arc postérieur et côtes), **hydatidose** (lyses multiloculaires respectant longtemps la corticale, extension à l'arc et aux côtes, ponction contre-indiquée), aspergillose et blastomycose (côtes), candidose.\n\n**Enfant/nourrisson** : discite (6 mois–4 ans, refus de s'asseoir ou de marcher, *Kingella kingae*) : disque affaissé, hyposignal T2 discal, inflammation des plateaux, fuseau non collecté ; bon pronostic, bloc possible.",
+      "figures": [
+        "cotten-t1:fig11.22c",
+        "cotten-t1:fig11.24b"
+      ],
+      "legendes": [
+        "**Hydatidose** vertébrale : lésions osseuses multiloculaires et extension aux parties molles.",
+        "Discite du nourrisson (*K. kingae*) : affaissement et **hyposignal T2** du disque."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels signes radiographiques orientent vers une spondylodiscite brucellienne ?",
+        "a": "Atteinte du coin antérosupérieur (L4-L5), vide discal, condensation précoce, gros ostéophyte antérieur en bec de perroquet, destruction modérée."
+      }
+    },
+    {
+      "titre": "Spondylodiscite postopératoire",
+      "texte": "Complique 0,2–5,6 % des cures de hernie et 6,6–8,8 % des arthrodèses (jusqu'à 2 ans) ; flore cutanée (*S. epidermidis*, *S. aureus*). La CRP doit se normaliser en 6 jours à 2 semaines.\n\n**Remaniements physiologiques** (jusqu'à 3–6 mois) : hypersignal T2 de la zone de discectomie, rehaussement **fin, linéaire** parallèle aux plateaux ou annulaire postérieur, tissu de granulation dans la poche herniaire, racines rehaussées, trajet opératoire œdémateux, collection résiduelle, synovite zygapophysaire.\n\n**En faveur de l'infection** : infiltration ou **abcès prévertébraux** (meilleur signe), anomalies du disque/plateaux **en avant de la zone de curetage**, microabcès, **érosions floues** (scanner), collection épidurale ; abcès en hypersignal de diffusion.",
+      "figures": [
+        "cotten-t1:fig11.26c",
+        "cotten-t1:fig11.27"
+      ],
+      "legendes": [
+        "Spondylodiscite **postopératoire** débutante (*S. epidermidis*) : anomalies antérieures et des tissus mous.",
+        "Spondylodiscite postopératoire **C6-C7** avec infiltration prévertébrale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est probablement le meilleur signe IRM d'infection après une cure de hernie discale ?",
+        "a": "L'infiltration ou les abcès des tissus mous prévertébraux, non expliqués par le geste."
+      }
+    },
+    {
+      "titre": "Zygapophyses, abcès épidural, sacro-iliite et diagnostics différentiels",
+      "texte": "",
+      "figures": [
+        "cotten-t1:fig11.28d",
+        "cotten-t1:fig11.29a",
+        "cotten-t1:fig11.32"
+      ],
+      "legendes": [
+        "**Arthrite zygapophysaire** L4-L5 droite avec infiltration des tissus mous et extension épidurale.",
+        "**Abcès épidural postérieur** étendu : coque rehaussée et compression.",
+        "**Sacro-iliite** infectieuse gauche avec **abcès** supérieur (T1 gado frontal)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels éléments orientent vers une poussée arthrosique plutôt qu'une arthrite zygapophysaire septique ?",
+        "a": "Atteinte bilatérale ou pluriétagée, signes chroniques (sclérose, géodes, ostéophytes), calcifications, absence d'abcès."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "IRM sagittale (T1, T2, gado) : inflammation des plateaux L3-L4 avec rehaussement et disque partiellement atteint. Germe : Bacteroides. Stade ?",
+      "figure": "cotten-t1:fig11.4b",
+      "options": [
+        "Spondylodiscite débutante",
+        "Modic 1",
+        "Spondylodiscite guérie",
+        "Hernie de Schmorl"
+      ],
+      "reponse": 0,
+      "explication": "Inflammation des plateaux avec atteinte discale débutante : spondylodiscite précoce.",
+      "page": "p. 308",
+      "image_origine": "c11/f11.4"
+    },
+    {
+      "question": "Scanner sagittal lombaire : érosions de contours flous des plateaux L3-L4. Diagnostic ?",
+      "figure": "cotten-t1:fig11.6",
+      "options": [
+        "Spondylodiscite L3-L4",
+        "Discopathie érosive dégénérative",
+        "Nodules de Schmorl",
+        "Métastase vertébrale"
+      ],
+      "reponse": 0,
+      "explication": "Légende : spondylodiscite L3-L4 avec érosions de contours flous des plateaux ; le scanner évalue aussi l'importance de la destruction discovertébrale.",
+      "page": "p. 310",
+      "image_origine": "c11/f11.6"
+    },
+    {
+      "question": "Scanner axial : vertèbre avec érosions de grande taille contenant des fragments osseux. Diagnostic évocateur ?",
+      "figure": "cotten-t1:fig11.9b",
+      "options": [
+        "Spondylodiscite tuberculeuse",
+        "Spondylodiscite à staphylocoque",
+        "Métastase lytique",
+        "Hernie calcifiée"
+      ],
+      "reponse": 0,
+      "explication": "Grandes érosions avec séquestres : tuberculose.",
+      "page": "p. 312–313",
+      "image_origine": "c11/f11.10"
+    },
+    {
+      "question": "IRM : spondylodiscite avec abcès centrodiscal et des plateaux bien circonscrit, coque fine. Germe probable ?",
+      "figure": "cotten-t1:fig11.11b",
+      "options": [
+        "Mycobacterium tuberculosis",
+        "Staphylococcus aureus",
+        "Brucella",
+        "Candida"
+      ],
+      "reponse": 0,
+      "explication": "Abcès bien circonscrits des plateaux et du disque au stade d'état : tuberculose.",
+      "page": "p. 313",
+      "image_origine": "c11/f11.11"
+    },
+    {
+      "question": "IRM cervicale sagittale T1, T2, T1 gadolinium et axiale T2 : tassement de C3 et volumineuse collection prévertébrale. Diagnostic ?",
+      "figure": "cotten-t1:fig11.13c",
+      "options": [
+        "Spondylite tuberculeuse de C2 à C4 avec abcès circonférentiel",
+        "Spondylodiscite pyogène C3-C4",
+        "Métastases vertébrales",
+        "Lymphome épidural"
+      ],
+      "reponse": 0,
+      "explication": "Légende : spondylite tuberculeuse de C2 à C4, tassement de C3 et abcès circonférentiel prédominant en avant (flèches) ; l'atteinte pluriétagée s'explique par l'extension sous-ligamentaire.",
+      "page": "p. 312–313",
+      "image_origine": "c11/f11.13"
+    },
+    {
+      "question": "Radiographies : érosion (a) et prolifération (b) de la face antérieure de corps vertébraux. Cause ?",
+      "figure": "cotten-t1:fig11.16b",
+      "options": [
+        "Abcès tuberculeux prévertébral",
+        "Ostéophytose",
+        "Anévrysme aortique",
+        "Spondylarthrite"
+      ],
+      "reponse": 0,
+      "explication": "L'abcès sous-ligamentaire peut éroder (scalloping) ou faire proliférer la face antérieure.",
+      "page": "p. 313",
+      "image_origine": "c11/f11.16"
+    },
+    {
+      "question": "IRM axiale gado : épidurite bilobée respectant la ligne médiane. Signe et diagnostic ?",
+      "figure": "cotten-t1:fig11.17",
+      "options": [
+        "Embrasse de rideau – tuberculose",
+        "Signe du bec – hernie",
+        "Dark star – sarcoïdose",
+        "Rail – sinus"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte épidurale bilobée par respect du ligament longitudinal postérieur est typique de la tuberculose.",
+      "page": "p. 313–314",
+      "image_origine": "c11/f11.17"
+    },
+    {
+      "question": "Atteinte de l'arc postérieur de T12 avec compression du cône terminal. Étiologie à évoquer en priorité ?",
+      "figure": "cotten-t1:fig11.18a",
+      "options": [
+        "Tuberculose",
+        "Staphylocoque",
+        "Brucellose",
+        "Discite"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte de l'arc postérieur doit faire évoquer une tuberculose.",
+      "page": "p. 314–315",
+      "image_origine": "c11/f11.18"
+    },
+    {
+      "question": "IRM : lésion sous-cutanée et paravertébrale postérieure s'étendant à l'arc par contiguïté. Germe anaérobie évoqué ?",
+      "figure": "cotten-t1:fig11.21a",
+      "options": [
+        "Actinomyces",
+        "Brucella",
+        "Kingella",
+        "Pseudomonas"
+      ],
+      "reponse": 0,
+      "explication": "L'actinomycose atteint l'os par contiguïté, notamment l'arc postérieur et les côtes.",
+      "page": "p. 320",
+      "image_origine": "c11/f11.21"
+    },
+    {
+      "question": "Nourrisson : inflammation des plateaux et du disque (coupes frontale et axiale), fuseau non collecté. Diagnostic ?",
+      "figure": "cotten-t1:fig11.25a",
+      "options": [
+        "Spondylodiscite du nourrisson à K. kingae",
+        "Neuroblastome",
+        "Histiocytose",
+        "Leucémie"
+      ],
+      "reponse": 0,
+      "explication": "Discite du nourrisson, atteinte parfois focale ou excentrée.",
+      "page": "p. 323–324",
+      "image_origine": "c11/f11.25"
+    },
+    {
+      "question": "Scanner : érosions des parties supérieure et inférieure de la sacro-iliaque droite. Patient fébrile toxicomane. Diagnostic ?",
+      "figure": "cotten-t1:fig11.30",
+      "options": [
+        "Sacro-iliite infectieuse",
+        "Sacro-iliite de SA",
+        "Ostéite condensante",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte unilatérale érosive chez un toxicomane fébrile : sacro-iliite infectieuse (S. aureus).",
+      "page": "p. 329–330",
+      "image_origine": "c11/f11.30"
+    },
+    {
+      "question": "IRM axiale T1 après gadolinium du bassin : rehaussement de la sacro-iliaque droite et des tissus mous en avant et en arrière (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig11.31",
+      "options": [
+        "Sacro-iliite infectieuse droite débutante (S. aureus)",
+        "Sacro-iliite bilatérale de spondylarthrite",
+        "Fracture de contrainte du sacrum",
+        "Ostéose iliaque condensante"
+      ],
+      "reponse": 0,
+      "explication": "Légende : sacro-iliite droite débutante à S. aureus ; inflammation des tissus mous en avant et en arrière de l'articulation (flèches).",
+      "page": "p. 330",
+      "image_origine": "c11/f11.31"
+    },
+    {
+      "question": "IRM sagittale lombaire T1 (a), T2 (b), T1 gadolinium (c). Diagnostic ?",
+      "figure": "cotten-t1:fig11.12a",
+      "options": [
+        "Spondylodiscite tuberculeuse",
+        "Discopathie Modic 1",
+        "Métastase vertébrale",
+        "Tassement ostéoporotique"
+      ],
+      "reponse": 0,
+      "explication": "Légende : spondylodiscite tuberculeuse ; noter la persistance de plages hyperintenses en T1 du plateau inférieur de L5 (flèche).",
+      "page": "p. 310",
+      "image_origine": "c11/f11.12"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Terrain et pathogénie",
+        "Spondylodiscite à pyogènes : clinique, radiographie, scanner",
+        "Spondylodiscite à pyogènes : l'IRM"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        12
+      ]
+    },
+    {
+      "hs": [
+        "Preuve bactériologique, traitement et surveillance",
+        "Mal de Pott : la tuberculose rachidienne",
+        "Brucellose, autres germes et enfant"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "hs": [
+        "Spondylodiscite postopératoire",
+        "Zygapophyses, abcès épidural, sacro-iliite et diagnostics différentiels"
+      ],
+      "secs": [
+        6,
+        7
+      ],
+      "qs": [
+        10,
+        11
+      ]
+    }
+  ],
+  "ancien_id": "c11",
+  "images_non_rattachees": []
+}

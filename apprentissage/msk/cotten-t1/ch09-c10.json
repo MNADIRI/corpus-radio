@@ -1,0 +1,324 @@
+{
+  "id": "cotten-t1:c10",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 9,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Endocrinopathies",
+  "pages": "285–301",
+  "objectifs": [
+    "Reconnaître l'acromégalie, l'acropachie thyroïdienne et les signes squelettiques des dysthyroïdies",
+    "Maîtriser la sémiologie de l'hyperparathyroïdie : résorptions osseuses, tumeurs brunes, ostéosclérose",
+    "Connaître les complications du Cushing/corticothérapie et les règles d'imagerie pendant la grossesse"
+  ],
+  "essentiels": [
+    "Acromégalie : hypertrophie des tissus mous, houppes **en ancre de marine**, sésamoïdes hypertrophiés, **élargissement des interlignes** (MCP2 > 2,5 mm, disques), ostéophytose avec interligne conservé, scalloping vertébral postérieur, nerfs périphériques épaissis.",
+    "Acropachie thyroïdienne (Basedow) : exophtalmie, myxœdème prétibial, hippocratisme et **appositions périostées spiculées** des diaphyses métacarpiennes et phalangiennes.",
+    "Hypothyroïdie de l'enfant : retard de maturation, **dysgénésie épiphysaire** (épiphyses fragmentées), vertèbres T12-L1 **en bec**.",
+    "Hyperparathyroïdie : **résorption sous-périostée** du **bord radial des phalanges moyennes** de l'index et du médius (signe le plus fiable, 94 %), acro-ostéolyse en bande, extrémité latérale de la clavicule.",
+    "Autres résorptions : intracorticale (stries), endostée, **sous-chondrale** (sacro-iliaques élargies côté iliaque, acromioclaviculaire), trabéculaire (**crâne poivre et sel**), aux enthèses.",
+    "**Tumeurs brunes** : lacunes bien limitées excentrées, parfois expansives ou à niveaux liquides, se condensent après parathyroïdectomie ; ostéosclérose (vertèbres en **maillot de rugby**).",
+    "Cushing/corticothérapie : ostéoporose avec fractures et **cals exubérants**, **ostéonécroses** multifocales, myopathie, **lipomatose épidurale**, ruptures tendineuses.",
+    "Grossesse : < 100 mGy = pas d'inquiétude médicale ; IRM sans gadolinium (éviter le 1er trimestre si possible) ; douleurs de hanche = algodystrophie, ostéonécrose, fracture par insuffisance."
+  ],
+  "introduction": "Les hormones modèlent le squelette : l'hormone de croissance l'élargit, les hormones thyroïdiennes accélèrent son remodelage, la parathormone le résorbe, le cortisol l'affaiblit. Chaque endocrinopathie laisse ainsi une signature radiographique qu'il faut savoir chercher, en particulier à la main.",
+  "sections": [
+    {
+      "titre": "Acromégalie et gigantisme",
+      "texte": "Excès de **GH** (Growth Hormone) et d'**IGF-1** (Insulin-like Growth Factor 1), le plus souvent par adénome hypophysaire : gigantisme avant la fusion des cartilages, acromégalie après. La GH stimule l'ossification enchondrale (croissance, cartilages costaux), membraneuse (élargissement des os et des corticales) et l'hypertrophie des cartilages et des tissus mous ; arthropathies chez 50–75 % des patients, canal carpien (30–50 %).",
+      "figures": [
+        "cotten-t1:fig10.2",
+        "cotten-t1:fig10.3",
+        "cotten-t1:fig10.1"
+      ],
+      "legendes": [
+        "Phalanges distales en **ancre de marine** et élargissement des houppes.",
+        "**Élargissement des interlignes** métacarpophalangiens et du poignet.",
+        "**Épaississement du coussinet plantaire** et enthésophytes calcanéens."
+      ],
+      "cle": "Interligne élargi + ostéophytes exubérants = cartilage hypertrophié de l'acromégalie.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi les interlignes articulaires sont-ils élargis dans l'acromégalie ?",
+        "a": "Hypertrophie du cartilage hyalin par prolifération des chondrocytes sous GH/IGF-1."
+      }
+    },
+    {
+      "titre": "Thyroïde et hypophyse",
+      "texte": "**Hyperthyroïdie** : remodelage accéléré → ostéopénie (DMO −12 à −20 %), corticales poreuses à **stries intracorticales**, fractures du col fémoral ; chez l'enfant, avance de maturation. L'**acropachie thyroïdienne** (0,1–1 % des Basedow) associe exophtalmie, myxœdème prétibial, hippocratisme et **appositions périostées irrégulières** du tiers moyen des métacarpiens, métatarsiens et phalanges.\n\n**Hypothyroïdie** : adulte → canal carpien (infiltration myxœdémateuse), ténosynovites, synovites, arthropathie des IPP, chondrocalcinose, myopathie ; enfant → retard d'ossification, **dysgénésie épiphysaire** (têtes fémorales fragmentées, pseudo-Perthes), vertèbres T12-L1 **en bec**, os wormiens, épiphysiolyse. **Hypopituitarisme** : retard de croissance harmonieux, os grêles.",
+      "figures": [
+        "cotten-t1:fig10.5"
+      ],
+      "legendes": [
+        "**Acropachie thyroïdienne** : apposition périostée chronique du bord d'une diaphyse (flèches)."
+      ],
+      "cle": null,
+      "piege": "Une épiphyse fémorale fragmentée chez un enfant petit, en retard d'âge osseux, peut être une dysgénésie hypothyroïdienne et non une maladie de Legg-Perthes-Calvé.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle triade clinique accompagne l'acropachie thyroïdienne ?",
+        "a": "Exophtalmie, myxœdème prétibial et hippocratisme digital (avec appositions périostées des petits os longs)."
+      }
+    },
+    {
+      "titre": "Hyperparathyroïdie : la résorption osseuse",
+      "texte": "HPT **primitive** (adénome 75–85 %, hyperplasie, carcinome < 1 %) : hypercalcémie, PTH élevée ; **secondaire** (carence en vitamine D, insuffisance rénale) : calcémie normale ; **tertiaire** : autonomisation. La PTH active les ostéoclastes via les ostéoblastes (RANKL, M-CSF). Formes : asymptomatique (la plupart), lithiasique (sujet jeune), osseuse (ostéite fibrokystique).",
+      "figures": [
+        "cotten-t1:fig10.2",
+        "cotten-t1:fig10.10a",
+        "cotten-t1:fig10.13"
+      ],
+      "legendes": [
+        "**Résorption sous-périostée** du bord radial des phalanges moyennes (flèches) et acro-ostéolyse (tête de flèche).",
+        "**Résorption sous-chondrale** des sacro-iliaques : pseudo-élargissement sans réaction osseuse.",
+        "Crâne **poivre et sel** (résorption trabéculaire)."
+      ],
+      "cle": "Le signe le plus sensible et spécifique : la résorption sous-périostée radiale des 2e et 3e phalanges moyennes.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Comment différencier la résorption sous-chondrale sacro-iliaque de l'hyperparathyroïdie d'une sacro-iliite ?",
+        "a": "Résorption osseuse très importante, prédominant sur la berge iliaque, sans condensation réactionnelle ; le scanner le confirme."
+      }
+    },
+    {
+      "titre": "Tumeurs brunes, ostéosclérose et articulations",
+      "texte": "Les **tumeurs brunes** (3 % des HPT primitives) sont des amas de tissu fibreux vascularisé à cellules géantes, brun par l'hémosidérine. Localisations : face (mandibule), côtes, bassin, fémur. Radiographie : **ostéolyses bien limitées, excentrées, parfois expansives**, uniques ou multiples ; IRM : hyposignal T1, hypersignal T2, rehaussement, parfois **niveaux liquides** (pseudo-kyste anévrysmal), rupture corticale possible. Après parathyroïdectomie, elles se **condensent**. L'histologie peut ressembler à une tumeur à cellules géantes : c'est le contexte (résorptions à distance, calcémie) qui tranche.\n\n**Ostéosclérose** multifocale (vertèbres en **maillot de rugby**, crâne), persistante après chirurgie. Arthropathies par résorption et atteinte capsuloligamentaire (acromioclaviculaire, sacro-iliaque), ruptures tendineuses (patellaire, triceps), chondrocalcinose (1–4 %).",
+      "figures": [
+        "cotten-t1:fig10.16a",
+        "cotten-t1:fig10.15b"
+      ],
+      "legendes": [
+        "**Tumeur brune** du tibia : ostéolyse expansive, cloisonnée, à niveaux liquides en IRM.",
+        "Évolution d'une tumeur brune : **condensation** après traitement de l'HPT."
+      ],
+      "cle": null,
+      "piege": "Lésion lytique expansive à cellules géantes chez un patient hypercalcémique : tumeur brune, pas tumeur à cellules géantes ; cherchez la résorption sous-périostée des phalanges.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Que devient une tumeur brune après parathyroïdectomie ?",
+        "a": "Elle se condense (ostéosclérose) et son signal/rehaussement IRM diminue."
+      }
+    },
+    {
+      "titre": "Hypoparathyroïdie, Cushing et corticothérapie",
+      "texte": "**Hypoparathyroïdie** (post-chirurgicale, auto-immune, Di George…) : hypocalcémie, hyperphosphatémie ; ostéocondensation (bandes métaphysaires, crêtes iliaques, voûte), **calcifications sous-cutanées et périarticulaires**, hyperostose rachidienne (sans érosion sacro-iliaque), calcifications des noyaux gris centraux, dents hypoplasiques.\n\n**Hypercortisolisme** (Cushing, corticothérapie) : ostéoporose avec fractures vertébrales (70 %) et **cals exubérants** (bandes denses sous les plateaux, cals costaux épais), fractures du bassin et du pied ; **ostéonécroses** multifocales (têtes fémorales et humérales, fémur distal), **myopathie** rhizomélique, **lipomatose épidurale** compressive, infections, ruptures tendineuses (calcanéen).",
+      "figures": [
+        "cotten-t1:fig10.19",
+        "cotten-t1:fig10.20",
+        "cotten-t1:fig10.22"
+      ],
+      "legendes": [
+        "Corticothérapie : tassements vertébraux avec **cals exubérants** (bandes denses sous les plateaux).",
+        "**Ostéonécroses** bilatérales des têtes fémorales sous corticoïdes.",
+        "**Lipomatose épidurale** lombaire."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel aspect des fractures vertébrales est évocateur d'un hypercortisolisme ?",
+        "a": "Des cals exubérants : bandes denses épaisses sous les plateaux fracturés."
+      }
+    },
+    {
+      "titre": "Grossesse et imagerie",
+      "texte": "Effets des rayonnements : **tout ou rien** avant l'implantation (J8) ; risque malformatif lors de l'organogenèse (J9–9e semaine) au-delà de **200 mGy** ; retard mental au-delà de 350–500 mGy avant la 16e semaine ; risque cancérigène sans seuil. La CIPR considère qu'une dose **< 100 mGy** n'est pas un motif d'inquiétude (ACOG : 50 mGy). Scanner lombaire : ~10 mGy à l'utérus. L'**IRM** est préférée (éviter si possible au 1er trimestre), **sans gadolinium** (passage transplacentaire ; après injection, interrompre l'allaitement 36–48 h).\n\nPathologies favorisées : lombalgies et douleurs pelviennes, **arthropathie de la symphyse**, **ostéose iliaque condensante** (multipares), **ostéoporose de la grossesse** (fractures vertébrales du 3e trimestre), douleurs de hanche (**algodystrophie, ostéonécrose, fracture par insuffisance**, au 3e trimestre ou post-partum), infections du post-partum, canal carpien et De Quervain.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle conduite pour une femme dont la grossesse est probable et chez qui un scanner pelvien est envisagé ?",
+        "a": "Reporter si possible ; sinon discuter le bénéfice/risque avec la patiente, technique la moins irradiante, dose notée dans le compte rendu (IRM sans gadolinium en alternative)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Hanche d'un patient aux traits grossiers : interligne coxofémoral élargi et ostéophytose. Diagnostic ?",
+      "figure": "cotten-t1:fig10.4",
+      "options": [
+        "Acromégalie",
+        "Coxarthrose primitive",
+        "Arthrite septique",
+        "Épiphysiolyse"
+      ],
+      "reponse": 0,
+      "explication": "L'élargissement des interlignes par hypertrophie cartilagineuse est typique de l'acromégalie.",
+      "page": "p. 287",
+      "image_origine": "c10/f10.4"
+    },
+    {
+      "question": "Enfant : résorption sous-périostée du bord médial du tibia proximal et élargissement de la zone métaphysaire (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig10.7b",
+      "options": [
+        "Hyperparathyroïdie",
+        "Rachitisme carentiel isolé",
+        "Leucémie",
+        "Ostéomyélite"
+      ],
+      "reponse": 0,
+      "explication": "La résorption sous-périostée du bord médial du tibia proximal est classique de l'HPT.",
+      "page": "p. 291",
+      "image_origine": "c10/f10.7"
+    },
+    {
+      "question": "Côtes : résorption sous-périostée des bords supérieur et inférieur. Mécanisme ?",
+      "figure": "cotten-t1:fig10.8",
+      "options": [
+        "Hyperparathyroïdie",
+        "Coarctation aortique",
+        "Neurofibromatose",
+        "Polyarthrite rhumatoïde"
+      ],
+      "reponse": 0,
+      "explication": "La résorption sous-périostée costale est un signe d'HPT.",
+      "page": "p. 291",
+      "image_origine": "c10/f10.8"
+    },
+    {
+      "question": "Radiographie de l'avant-bras : aspect feuilleté des corticales des deux os. Diagnostic ?",
+      "figure": "cotten-t1:fig10.9",
+      "options": [
+        "Hyperparathyroïdie primitive (résorption intracorticale)",
+        "Ostéogenèse imparfaite",
+        "Ostéomalacie (stries de Looser)",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hyperparathyroïdie primitive, résorption intracorticale des deux os de l'avant-bras se traduisant par un aspect feuilleté des corticales.",
+      "page": "p. 292",
+      "image_origine": "c10/f10.9"
+    },
+    {
+      "question": "Plateaux vertébraux irréguliers par résorption sous-chondrale (pseudo-hernies). Contexte hypercalcémique. Diagnostic ?",
+      "figure": "cotten-t1:fig10.10b",
+      "options": [
+        "Hyperparathyroïdie",
+        "Spondylodiscite",
+        "Scheuermann",
+        "Spondylarthrite"
+      ],
+      "reponse": 0,
+      "explication": "La résorption sous-chondrale des plateaux est un signe d'HPT.",
+      "page": "p. 292–293",
+      "image_origine": "c10/f10.11"
+    },
+    {
+      "question": "Hanche : résorption sous-chondrale avec affaissement de la tête fémorale chez un patient à PTH élevée. Mécanisme ?",
+      "figure": "cotten-t1:fig10.12",
+      "options": [
+        "Résorption sous-chondrale d'HPT",
+        "Ostéonécrose idiopathique",
+        "Coxite rhumatoïde",
+        "Arthrose rapidement destructrice"
+      ],
+      "reponse": 0,
+      "explication": "La résorption sous-chondrale appendiculaire peut conduire à un affaissement.",
+      "page": "p. 293",
+      "image_origine": "c10/f10.12"
+    },
+    {
+      "question": "Bassin : résorption osseuse des branches ischiopubiennes aux enthèses (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig10.14",
+      "options": [
+        "Hyperparathyroïdie",
+        "Enthésite de spondyloarthrite",
+        "Fractures de fatigue",
+        "Métastases"
+      ],
+      "reponse": 0,
+      "explication": "La résorption aux enthèses est un des types de résorption de l'HPT.",
+      "page": "p. 293",
+      "image_origine": "c10/f10.14"
+    },
+    {
+      "question": "Tibia : multiples ostéolyses bien limitées excentrées chez une patiente hypercalcémique. Diagnostic ?",
+      "figure": "cotten-t1:fig10.15a",
+      "options": [
+        "Tumeurs brunes",
+        "Métastases",
+        "Myélome",
+        "Adamantinome"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyses excentrées multiples dans une HPT : tumeurs brunes.",
+      "page": "p. 294",
+      "image_origine": "c10/f10.15"
+    },
+    {
+      "question": "Scanner et IRM : comblement de densité mixte d'une lésion de l'épaule après traitement d'une HPT, sans rehaussement. Interprétation ?",
+      "figure": "cotten-t1:fig10.18b",
+      "options": [
+        "Tumeur brune en voie de guérison",
+        "Chondrosarcome",
+        "Infection",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Après traitement, la tumeur brune se condense et cesse de se rehausser.",
+      "page": "p. 294–295",
+      "image_origine": "c10/f10.18"
+    },
+    {
+      "question": "IRM axiale du bassin et des cuisses : dégénérescence graisseuse des muscles rhizoméliques chez un patient sous corticoïdes. Diagnostic ?",
+      "figure": "cotten-t1:fig10.21a",
+      "options": [
+        "Myopathie cortisonique",
+        "Polymyosite active",
+        "Infarctus musculaire",
+        "Dénervation sciatique"
+      ],
+      "reponse": 0,
+      "explication": "Myopathie rhizomélique avec involution graisseuse, enzymes normales.",
+      "page": "p. 298",
+      "image_origine": "c10/f10.21"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Acromégalie et gigantisme",
+        "Thyroïde et hypophyse",
+        "Hyperparathyroïdie : la résorption osseuse"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "Tumeurs brunes, ostéosclérose et articulations",
+        "Hypoparathyroïdie, Cushing et corticothérapie",
+        "Grossesse et imagerie"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "c10",
+  "images_non_rattachees": []
+}

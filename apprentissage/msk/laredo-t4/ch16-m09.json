@@ -1,0 +1,303 @@
+{
+  "id": "laredo-t4:m09",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 16,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs ostéogéniques bénignes",
+  "pages": "2734–2750",
+  "objectifs": [
+    "Différencier ostéome, îlot condensant et métastase",
+    "Affirmer un ostéome ostéoïde au scanner et en IRM dynamique",
+    "Connaître les 4 visages de l'ostéoblastome"
+  ],
+  "essentiels": [
+    "Ostéome = os compact mûr de SURFACE (sinus frontal, voûte, mandibule, face postérieure du fémur distal) ; îlot condensant bénin = même tissu DANS le spongieux (hamartome). Ostéomes multiples → Gardner.",
+    "Ostéome paraostéal vs ostéosarcome paraostéal (même siège, même âge) : seul l'ostéosarcome a une coiffe non minéralisée en hypersignal T2 rehaussée et exprime MDM2/CDK4.",
+    "Îlot condensant bénin : dense, homogène, plein ; contours spiculés en « brosse » prolongés par les travées ; 1–3 cm ; accolé à une corticale ; satellites ; hyposignal T1 et STIR sans œdème ni rehaussement ; pas ou peu de fixation. Condensation creuse → plasmocytome.",
+    "Ostéome ostéoïde : 5–25 ans, H 3:1, nidus < 2 cm à rehaussement artériel. Fémur proximal (col), tibia, arc postérieur vertébral (scoliose douloureuse à concavité du côté du nidus), phalanges (pseudo-dactylite). Douleur nocturne calmée par aspirine et AINS.",
+    "Scanner : nidus rond (grand axe ≤ 2,5 × petit axe) de 5–15 mm, calcification centrale (85 %), liseré clair circonférentiel persistant, signe du vaisseau (80 %) ; hyperostose dans la corticale ; condensation dégressive dans le spongieux.",
+    "IRM : nidus intermédiaire T1, hyper T2, œdème osseux et des tissus mous ; synovite si intra-articulaire ; rehaussement au temps artériel (93 %) qui écarte Brodie, granulome éosinophile et fausses images. Traitement : thermo-ablation percutanée (laser, radiofréquence), récidive 3 %.",
+    "Ostéoblastome : nidus > 2 cm, 5–30 ans, rachis (arc postérieur ± corps) et os longs. 4 aspects : ostéome ostéoïde géant, lésion soufflante type kyste anévrysmal avec ossifications, lyse agressive, condensation pseudo-ostéosarcomateuse. Œdème « flare » et rehaussement artériel.",
+    "Histologiquement l'ostéoblastome se distingue mal de l'ostéosarcome (formes pseudo-ostéosarcomateuses et ostéosarcome pseudo-ostéoblastome). Formes toxiques (prostaglandines) ; l'ostéomalacie oncogénique relève plutôt d'une tumeur mésenchymateuse phosphaturiante."
+  ],
+  "introduction": "Les tumeurs ostéogéniques bénignes fabriquent de l'os. Deux grandes situations : un **os compact mûr** qui ne fait rien (ostéome, îlot condensant) et une **petite usine inflammatoire** qui fait mal la nuit (ostéome ostéoïde, ostéoblastome). Dans le second cas, presque tout ce que l'on voit autour (condensation, hyperostose, œdème) est **la réaction de l'os**, pas la tumeur elle-même.",
+  "sections": [
+    {
+      "titre": "Ostéome et îlot condensant : le même os, deux adresses",
+      "texte": "L'**ostéome** et l'**îlot condensant bénin** sont faits du même tissu : un os compact haversien mûr. Seule l'adresse change. L'ostéome pousse **à la surface** de l'os (voûte, mandibule, face postérieure du fémur distal) ou dans les **sinus** (frontal dans la moitié des cas, puis ethmoïde). L'îlot condensant est un hamartome **dans le spongieux**. Des ostéomes multiples doivent faire penser au **syndrome de Gardner**.\n\nFace à l'**ostéosarcome paraostéal** (même siège, même âge), l'ostéome a des limites plus nettes et aucun hypersignal T2 ; l'ostéosarcome possède une coiffe non minéralisée en hypersignal T2, rehaussée, et exprime MDM2/CDK4.",
+      "figures": [
+        "laredo-t4:fig16.x272",
+        "laredo-t4:fig17.5b"
+      ],
+      "legendes": [
+        "**Ostéomes ethmoïdaux** : opacités compactes, homogènes, de densité corticale, bien limitées dans les cellules ethmoïdales.",
+        "**Îlot condensant bénin vertébral** : nodule dense, homogène, aux contours spiculés, adossé à la corticale du corps, avec un îlot « fille » ; hyposignal T1 et STIR sans œdème."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéome et îlot condensant : quelle différence ?",
+        "a": "Même tissu (os compact mûr), adresse différente : surface de l'os ou sinus pour l'ostéome, spongieux pour l'îlot."
+      }
+    },
+    {
+      "titre": "Les huit caractères de l'îlot condensant",
+      "texte": "Si un seul caractère manque, on reconsidère : métastase condensante (limites floues), plasmocytome condensant (condensation **creuse**), ostéosarcome central de bas grade (zone lytique), SAPHO, fibrome non ossifiant ossifié, mélorhéostose.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Les spicules sont les travées spongieuses voisines qui s'épaississent et se fondent dans l'îlot : c'est la signature d'un os mûr qui s'intègre à l'architecture, pas d'une tumeur qui la repousse.",
+      "verification": {
+        "q": "Nodule condensant dense mais à centre clair : îlot condensant ?",
+        "a": "Non : l'îlot est plein. Une condensation creuse évoque un plasmocytome condensant."
+      }
+    },
+    {
+      "titre": "Ostéome ostéoïde : un nidus et beaucoup de réaction",
+      "texte": "L'ostéome ostéoïde (12 % des tumeurs bénignes) touche le sujet de **5 à 25 ans**, trois garçons pour une fille. La tumeur se résume à un **nidus de moins de 2 cm**, très vascularisé, qui produit des prostaglandines : d'où la **douleur nocturne calmée par l'aspirine et les AINS**, et la forte **réaction** de l'os et des tissus mous autour.\n\nIl siège au **fémur proximal** (bord inférieur du col, 30 %), au tibia (15 %), à l'arc postérieur vertébral (8 %), aux mains et aux pieds. Sur un os long, il est **intracortical** dans 80 % des cas, sous-périosté dans 15 %, spongieux dans 5 %. C'est aussi la **tumeur primitive la plus fréquente des épiphyses**, où il donne une synovite.\n\nSelon son siège, la réaction diffère : dans la **corticale**, une **hyperostose** épaisse qui « enterre » le nidus ; dans le **spongieux**, une **condensation dégressive** ; en position **intra-articulaire**, presque pas de condensation mais un épanchement et une synovite.",
+      "figures": [
+        "laredo-t4:fig17.6",
+        "laredo-t4:fig17.9"
+      ],
+      "legendes": [
+        "**Localisations axiales de l'ostéome ostéoïde** : sous-périosté (a), intracortical, le plus fréquent (b), endosté (c), dans le spongieux (d). n = nidus, c = corticale, m = cavité médullaire.",
+        "**Ostéome ostéoïde de la fibula** : nidus sous-périosté avec ossification centrale au scanner, hyperostose et condensation périphérique, œdème osseux et des tissus mous en IRM."
+      ],
+      "cle": null,
+      "piege": "Chez l'enfant, l'ostéome ostéoïde de hanche simule une coxite ou se révèle par une douleur du genou. Devant une gonalgie inflammatoire inexpliquée, regardez la hanche.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Adolescent, douleur nocturne de cuisse calmée par l'aspirine, hyperostose corticale fémorale. Que chercher et avec quel examen ?",
+        "a": "Le nidus d'un ostéome ostéoïde, au scanner en coupes fines."
+      }
+    },
+    {
+      "titre": "Prouver le nidus : scanner puis IRM dynamique",
+      "texte": "Au **scanner** (coupes fines), le nidus a trois caractères : il est **rond ou ovalaire** (grand axe au plus 2,5 fois le petit), contient une **calcification centrale** (85 %), et garde un **liseré clair circonférentiel** entre la calcification et la condensation. On voit souvent le **signe du vaisseau** (80 %) : un fin canal qui va de la surface au nidus.\n\nEn **IRM**, le nidus est intermédiaire en T1, en hypersignal T2, entouré d'un œdème parfois énorme qui peut faire croire à une lésion agressive. L'IRM **dynamique** est décisive : le nidus se rehausse **dès le temps artériel** (93 %), alors qu'un abcès de Brodie ou un granulome éosinophile se rehaussent de façon retardée et progressive.\n\nLe traitement de référence est la **thermo-ablation percutanée** sous scanner (laser ou radiofréquence), avec 3 % de récidive.",
+      "figures": [
+        "laredo-t4:fig17.10",
+        "laredo-t4:fig17.12"
+      ],
+      "legendes": [
+        "**Ostéome ostéoïde en IRM** : nidus en signal intermédiaire T1 et hypersignal T2 franc (flèches), entouré d'un œdème médullaire étendu.",
+        "**Photocoagulation au laser** sous contrôle scanographique d'un ostéome ostéoïde fémoral : l'aiguille est placée au centre du nidus."
+      ],
+      "cle": "Nidus rond + calcification centrale + liseré clair + rehaussement artériel = ostéome ostéoïde.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Nidus et abcès de Brodie se ressemblent. Quel examen les sépare ?",
+        "a": "L'IRM dynamique : le nidus se rehausse dès le temps artériel, l'abcès de façon retardée et progressive."
+      }
+    },
+    {
+      "titre": "Au rachis et aux doigts : deux pièges cliniques",
+      "texte": "Au rachis, l'ostéome ostéoïde siège sur l'**arc postérieur** (96 %), au carrefour isthme-lame-articulaire. Il donne une radiculalgie inflammatoire soulagée par les salicylés et, chez l'adolescent, une **scoliose douloureuse** : le nidus se trouve **dans la concavité, au sommet de la courbure**. Une scoliose idiopathique, elle, ne fait pas mal.\n\nAux **phalanges**, la réaction est souvent si diffuse que le nidus disparaît en radiographie : le doigt gonfle, la phalange se condense, et l'on évoque à tort une dactylite. Le scanner montre le nidus.",
+      "figures": [
+        "laredo-t4:fig17.x278a"
+      ],
+      "legendes": [
+        "**Ostéome ostéoïde des phalanges** : hyperostose et condensation d'une phalange sans nidus visible en radiographie (« pseudo-dactylite ») ; le scanner montre le nidus."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Adolescent avec scoliose lombaire douloureuse : où se trouve le nidus ?",
+        "a": "Dans la concavité, au sommet de la courbure, sur l'arc postérieur."
+      }
+    },
+    {
+      "titre": "Ostéoblastome : le grand frère",
+      "texte": "Au-delà de **2 cm**, le nidus définit un **ostéoblastome** (seuil arbitraire). Il touche le sujet de 5 à 30 ans, surtout le **rachis** (arc postérieur ± corps), le sacrum, la mandibule, le fémur, le tibia et le tarse.\n\nIl prend quatre visages :",
+      "figures": [
+        "laredo-t4:fig17.15a",
+        "laredo-t4:fig17.x287a"
+      ],
+      "legendes": [
+        "**Ostéoblastome du corps de C2** : gros nidus avec calcification en cocarde, hyperfixation intense en tomoscintigraphie.",
+        "**Ostéoblastome du sacrum** : ostéolyse soufflante avec minéralisation lésionnelle ; il existe des formes localement agressives à ce siège."
+      ],
+      "cle": null,
+      "piege": "Même pour le pathologiste, l'ostéoblastome se distingue mal de l'ostéosarcome. L'imagerie (œdème « flare », rehaussement artériel, bon état général) aide, mais la décision est multidisciplinaire. Récidive 6 à 20 %.",
+      "pourquoi": null,
+      "verification": {
+        "q": "À partir de quelle taille parle-t-on d'ostéoblastome ?",
+        "a": "Au-delà de 2 cm (seuil arbitraire)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Plusieurs lésions denses compactes de surface (tibia, voûte, scapula, fémur). Diagnostic et association à rechercher ?",
+      "figure": "laredo-t4:fig17.3",
+      "options": [
+        "Ostéomes paraostéaux, rechercher un Gardner",
+        "Ostéosarcomes paraostéaux multiples",
+        "Myosite ossifiante",
+        "Mélorhéostose"
+      ],
+      "reponse": 0,
+      "explication": "Os homogène et compact à la surface des os : ostéomes. Multiples, ils imposent de chercher une polypose (Gardner).",
+      "page": "2736",
+      "image_origine": "m09/p273_0"
+    },
+    {
+      "question": "Capitatum : condensation dense homogène, contours spiculés, accolée à la corticale, petit satellite (flèche). Diagnostic ?",
+      "figure": "laredo-t4:fig17.4",
+      "options": [
+        "Îlot condensant bénin",
+        "Ostéome ostéoïde",
+        "Métastase",
+        "Ostéonécrose"
+      ],
+      "reponse": 0,
+      "explication": "Tous les critères de l'îlot condensant bénin sont réunis ; aucun bilan supplémentaire n'est nécessaire.",
+      "page": "2738",
+      "image_origine": "m09/p275_0"
+    },
+    {
+      "question": "Fémur : petite lacune corticale avec calcification, hyperostose, et fin canal vers la surface (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig17.x279a",
+      "options": [
+        "Ostéome ostéoïde (signe du vaisseau)",
+        "Abcès de Brodie",
+        "Fracture de fatigue",
+        "Métastase corticale"
+      ],
+      "reponse": 0,
+      "explication": "Nidus rond calcifié avec réaction compacte et vaisseau allant de la surface au nidus : ostéome ostéoïde.",
+      "page": "2741",
+      "image_origine": "m09/p278_0"
+    },
+    {
+      "question": "Col fémoral : nidus intra-articulaire, œdème, synovite. Que montre la courbe de rehaussement ?",
+      "figure": "laredo-t4:fig17.11",
+      "options": [
+        "Rehaussement artériel du nidus, comme l'artère",
+        "Rehaussement tardif progressif",
+        "Absence de rehaussement",
+        "Plateau veineux"
+      ],
+      "reponse": 0,
+      "explication": "Le nidus se rehausse dès le temps artériel : argument décisif contre une ostéite ou une fausse image.",
+      "page": "2743",
+      "image_origine": "m09/p280_0"
+    },
+    {
+      "question": "Arc postérieur cervical : lésion lytique de plus de 2 cm avec condensation dégressive, œdème et rehaussement. Diagnostic ?",
+      "figure": "laredo-t4:fig17.x285",
+      "options": [
+        "Ostéoblastome",
+        "Ostéome ostéoïde",
+        "Métastase",
+        "Chordome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect de « gros ostéome ostéoïde » de plus de 2 cm de l'arc postérieur : ostéoblastome. Noter la réossification sous bisphosphonates.",
+      "page": "2747",
+      "image_origine": "m09/p284_0"
+    },
+    {
+      "question": "Premier métatarsien : ostéolyse soufflante nette sans liseré, T2 intermédiaire, rehaussement homogène, œdème. Quel diagnostic ne pas oublier ?",
+      "figure": "laredo-t4:fig17.15b",
+      "options": [
+        "Ostéoblastome soufflant",
+        "Enchondrome",
+        "Goutte",
+        "Ostéite tuberculeuse"
+      ],
+      "reponse": 0,
+      "explication": "Forme soufflante d'ostéoblastome, qui simule un kyste anévrysmal ; l'œdème et le rehaussement artériel orientent.",
+      "page": "2748",
+      "image_origine": "m09/p285_1"
+    },
+    {
+      "question": "Enfant de 11 ans : lacune allongée de la diaphyse tibiale à ossifications centrales, cartilages de conjugaison trop larges, fissure pseudarthrosée (flèche). Diagnostic ?",
+      "figure": "laredo-t4:fig17.x284a",
+      "options": [
+        "Ostéoblastome avec ostéomalacie hypophosphorémique oncogénique",
+        "Dysplasie ostéofibreuse",
+        "Rachitisme vitamino-résistant isolé",
+        "Ostéosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéoblastome avec ostéomalacie hypophosphorémique « oncogénique » ; l'élargissement des physes et la fissure pseudarthrosée sont des manifestations de l'ostéomalacie.",
+      "page": "p. 2747",
+      "image_origine": "m09/p283_0"
+    },
+    {
+      "question": "Sacrum : ostéolyse soufflante minéralisée, hyperfixation scintigraphique intense, œdème périlésionnel STIR et prise de gadolinium diffuse. Diagnostic ?",
+      "figure": "laredo-t4:fig17.x287b",
+      "options": [
+        "Ostéoblastome",
+        "Chordome",
+        "Tumeur à cellules géantes",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéoblastome du sacrum — ostéolyse soufflante avec minéralisation, hyperfixation intense, œdème périlésionnel et prise de contraste diffuse.",
+      "page": "p. 2749",
+      "image_origine": "m09/p286_1"
+    },
+    {
+      "question": "Masse osseuse dense développée à la surface de la voûte occipitale gauche. Diagnostic ?",
+      "figure": "laredo-t4:fig17.x273a",
+      "options": [
+        "Ostéome paraostéal",
+        "Méningiome en plaque",
+        "Ostéosarcome paraostéal",
+        "Exostose"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéome paraostéal de la voûte occipitale gauche.",
+      "page": "p. 2735",
+      "image_origine": "m09/p272_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Ostéome et îlot condensant : le même os, deux adresses",
+        "Les huit caractères de l'îlot condensant",
+        "Ostéome ostéoïde : un nidus et beaucoup de réaction"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "hs": [
+        "Prouver le nidus : scanner puis IRM dynamique",
+        "Au rachis et aux doigts : deux pièges cliniques",
+        "Ostéoblastome : le grand frère"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m09",
+  "images_non_rattachees": []
+}

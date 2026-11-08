@@ -1,0 +1,307 @@
+{
+  "id": "laredo-t4:m10",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 17,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Ostéosarcomes",
+  "pages": "2751–2774",
+  "objectifs": [
+    "Reconnaître l'ostéosarcome conventionnel et son bilan",
+    "Différencier les ostéosarcomes de surface",
+    "Connaître télangiectasique, bas grade, intracortical et secondaires"
+  ],
+  "essentiels": [
+    "Ostéosarcome = tumeur maligne primitive la plus fréquente ; un minimum d'ostéoïde tumoral suffit au diagnostic. Conventionnel de haut grade 80 %, télangiectasique 4 %, paraostéal 4 %, bas grade central 1–2 %, petites cellules 1,5 %, périosté < 2 %.",
+    "Conventionnel : pic 10–14 ans, 30 % après 40 ans, H > F. Métaphyse (90 %) du fémur distal, tibia proximal, humérus proximal. Lyse 1C, mitée ou perméative, condensation nuageuse floue, ou mixte (la plus fréquente) ; périoste en feu d'herbe, rayons de soleil, Codman ; masse.",
+    "IRM : extension médullaire (limites de résection), épiphyse, skip metastases. Sous-type chondroblastique : biopsie trompeuse (chondrosarcome), absence de mutation IDH.",
+    "Traitement : chimiothérapie néo-adjuvante (méthotrexate haute dose, cisplatine, adriamycine, ifosfamide) → chirurgie conservatrice (≈ 90 %) → adjuvante adaptée à la nécrose (bon répondeur > 90 %). Survie sans maladie à 10 ans ≈ 65 %.",
+    "Télangiectasique : cavités hématiques, lyse pure soufflante agressive, niveaux liquides (63 %) — piège du kyste anévrysmal (biopsie trompeuse 35 %) ; mais septas irréguliers épais et nodules rehaussés. Très chimiosensible.",
+    "Bas grade central : 3e décennie, lyse avec trabéculation épaisse, parfois quiescent en verre dépoli (simule une DF ; l'extension épiphysaire alerte). Paraostéal : adulte jeune, F, face postérieure du fémur distal (70 %), masse ossifiée dense au centre, enroulée autour de la corticale avec liseré clair, coiffe en hyper T2 ; MDM2/CDK4 amplifiés ; dédifférenciation 15–20 %.",
+    "Périosté : diaphyse (fémur distal, tibia proximal), chondroblastique, encoche corticale, épaississement et spicules perpendiculaires. Surface de haut grade : masse de surface sans liseré clair, traitement comme le conventionnel. Intracortical : diaphyse, < 4 cm, simule un ostéome ostéoïde.",
+    "Secondaires : Paget (1 %, moitié des ostéosarcomes après 60 ans, multifocal 20 %), irradiation (ostéosarcome = 1er sarcome radio-induit, pelvis, épaule), dysplasie fibreuse, infarctus, TCG irradiée. Ostéosarcomatose : multifocale avant 15 ans, fatale."
+  ],
+  "introduction": "L'ostéosarcome est défini par une seule chose : des cellules malignes qui **fabriquent de l'ostéoïde**, même en très petite quantité. Tout le reste varie : l'âge, le siège (centre de l'os ou surface), la proportion d'os, de cartilage ou de sang. Pour s'y retrouver, il faut d'abord reconnaître la forme **conventionnelle** de l'adolescent, puis chacune de ses variantes par ce qui la distingue.",
+  "sections": [
+    {
+      "titre": "La forme conventionnelle : l'adolescent et le genou",
+      "texte": "L'ostéosarcome est la **tumeur maligne primitive de l'os la plus fréquente**. La forme **conventionnelle de haut grade** représente 80 % des cas. Le pic se situe entre **10 et 14 ans**, mais près de 30 % des patients ont plus de 40 ans (mandibule, bassin, vertèbres chez les plus âgés).\n\nIl naît dans la **métaphyse** (90 %) des os longs à croissance rapide : **fémur distal, tibia proximal, humérus proximal** (deux tiers des cas). L'épiphyse isolée est exceptionnelle, mais l'extension épiphysaire à travers la physe est fréquente.",
+      "figures": [
+        "laredo-t4:fig17.22a"
+      ],
+      "legendes": [
+        "**Ostéosarcome conventionnel mixte** du fémur distal : condensation nuageuse métaphysaire avec extension épiphysaire, bien visible en IRM (STIR et T1)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La métaphyse du genou est la zone où l'os se renouvelle le plus vite à l'adolescence : plus de divisions cellulaires, plus de risque d'erreur oncogénique. D'où le pic à la puberté et le siège.",
+      "verification": {
+        "q": "Ostéosarcome chez un patient de 55 ans : quels sièges sont plus fréquents à cet âge ?",
+        "a": "Mandibule, bassin, vertèbres."
+      }
+    },
+    {
+      "titre": "Trois aspects radiologiques",
+      "texte": "La réaction périostée est agressive : **spicules perpendiculaires « en feu d'herbe »**, **divergents « en rayons de soleil »**, lamelles interrompues, **triangle de Codman**. Une masse des tissus mous est habituelle, souvent minéralisée.",
+      "figures": [
+        "laredo-t4:fig17.18a",
+        "laredo-t4:fig17.21a"
+      ],
+      "legendes": [
+        "**Forme ostéolytique prédominante** de la diaphyse fémorale avec fracture pathologique : matrice peu minéralisée en radiographie, extension médullaire et tissulaire en IRM.",
+        "**Forme condensante** : os tumoral dense remplissant la métaphyse, avec extension aux tissus mous circonférentielle en IRM."
+      ],
+      "cle": null,
+      "piege": "L'ostéosarcome de l'adulte âgé, au bassin par exemple, n'a pas l'aspect « école » : il faut y penser devant toute condensation floue agressive, et chercher un Paget ou une irradiation.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Lyse pure, soufflante et agressive de la métaphyse fémorale chez un adolescent : quelle forme évoquer ?",
+        "a": "La forme télangiectasique."
+      }
+    },
+    {
+      "titre": "L'IRM fixe les limites de la chirurgie",
+      "texte": "Le scanner et la radiographie montrent la matrice ; l'**IRM** montre l'**étendue médullaire** (qui fixe le niveau de coupe osseuse), l'**envahissement épiphysaire et articulaire**, les rapports vasculo-nerveux et les **skip metastases** : un nodule tumoral séparé dans la moelle du même os. Il faut donc toujours imager **l'os entier**.\n\nLe sous-type **chondroblastique** contient jusqu'à 90 % de cartilage : la biopsie conclut à tort à un chondrosarcome dans plus de la moitié des cas. L'âge, l'absence de mutation IDH et un cerne périphérique rehaussé remettent sur la voie.",
+      "figures": [
+        "laredo-t4:fig17.22c",
+        "laredo-t4:fig17.26e"
+      ],
+      "legendes": [
+        "**Ostéosarcome conventionnel en scanner et IRM** : condensation hétérogène à limites floues, corticale feuilletée, réaction périostée et masse des tissus mous ; l'IRM coronale mesure l'extension médullaire.",
+        "**Ostéosarcome chondroblastique** de l'acromion chez un homme de 54 ans : lésion soufflante à double composante, dont une cartilagineuse en hypersignal T2. Piège à la biopsie."
+      ],
+      "cle": "Avant toute biopsie : IRM de l'os entier, pour l'extension médullaire et les skip metastases.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi imager l'os entier avant la biopsie d'un ostéosarcome ?",
+        "a": "Pour l'extension médullaire, qui fixe le niveau de coupe, et pour les skip metastases."
+      }
+    },
+    {
+      "titre": "Traitement : la chimiothérapie juge la tumeur",
+      "texte": "Le schéma est : **chimiothérapie néo-adjuvante** (méthotrexate haute dose, cisplatine, adriamycine, ifosfamide) → **chirurgie**, conservatrice dans environ 90 % des cas → **chimiothérapie adjuvante** adaptée à la réponse. Une **nécrose de plus de 90 %** sur la pièce définit le bon répondeur.\n\nLa survie sans maladie à 10 ans est d'environ 65 %, contre 10 à 20 % avec la chirurgie seule.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Après chimiothérapie néo-adjuvante, que signifie une nécrose de 95 % sur la pièce ?",
+        "a": "Bon répondeur (seuil : plus de 90 %)."
+      }
+    },
+    {
+      "titre": "Les variantes centrales",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig17.29a"
+      ],
+      "legendes": [
+        "**Ostéosarcome central de bas grade** vertébral et costal : plage en verre dépoli (*) qui imite une dysplasie fibreuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion en verre dépoli qui s'étend à l'épiphyse chez un homme de 28 ans : quel piège ?",
+        "a": "Ostéosarcome central de bas grade qui imite une dysplasie fibreuse ; MDM2/CDK4 aident."
+      }
+    },
+    {
+      "titre": "Les ostéosarcomes de surface",
+      "texte": "Le **paraostéal** (65 % des ostéosarcomes de surface) touche l'adulte jeune, un peu plus souvent la femme, à la **face postérieure du fémur distal** (≈ 70 %). C'est une masse ossifiée largement implantée, **dense au centre et pâle en périphérie**, qui **s'enroule autour de la corticale** dont la sépare un liseré clair. Sa coiffe non calcifiée est en hypersignal T2. MDM2/CDK4 sont amplifiés. Une dédifférenciation (15-20 %) se signale par des zones claires profondes et une masse mal limitée qui se rehausse. Pas de voie d'abord poplitée postérieure.\n\nLe **périosté** est diaphysaire (fémur distal, tibia proximal), chondroblastique : encoche corticale, épaississement, spicules perpendiculaires. Le **surface de haut grade** forme une masse nuageuse sans liseré clair et se traite comme le conventionnel.",
+      "figures": [
+        "laredo-t4:fig17.31i",
+        "laredo-t4:fig17.x308"
+      ],
+      "legendes": [
+        "**Ostéosarcome paraostéal** de la face postérieure du fémur distal (homme de 18 ans) : masse ossifiée de surface, coiffe non minéralisée en hypersignal, liseré clair avec la corticale (flèche).",
+        "**Ostéosarcome de surface de haut grade** du fémur distal : masse partiellement ossifiée implantée sur la corticale, sans liseré clair, rehaussement hétérogène."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse ossifiée de la face postérieure du fémur distal, séparée de la corticale par un liseré clair : diagnostic ?",
+        "a": "Ostéosarcome paraostéal."
+      }
+    },
+    {
+      "titre": "Ostéosarcomes secondaires",
+      "texte": "Un ostéosarcome peut naître sur un os malade : **Paget** (environ 1 % des Paget, la moitié des ostéosarcomes après 60 ans, multifocal dans 20 %), **os irradié** (l'ostéosarcome est le premier sarcome radio-induit), tumeur à cellules géantes souvent irradiée, dysplasie fibreuse, infarctus, ostéomyélite chronique, matériel orthopédique.\n\nL'**ostéosarcomatose** est une forme multifocale d'emblée, avant 15 ans, de pronostic fatal.",
+      "figures": [
+        "laredo-t4:fig17.x311",
+        "laredo-t4:fig17.x310b"
+      ],
+      "legendes": [
+        "**Dégénérescence ostéosarcomateuse d'une vertèbre pagétique** : vertèbre hypertrophiée à dédifférenciation cortico-spongieuse, avec masse ossifiée nuageuse des tissus mous.",
+        "**Ostéosarcomatose** : foyers ostéosarcomateux condensants multiples et synchrones du rachis, du bassin et du fémur."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéosarcome chez un homme de 72 ans : quel terrain chercher ?",
+        "a": "Une maladie de Paget ou un antécédent d'irradiation."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Fémur distal d'un adolescent : lésion mixte métaphyso-épiphysaire, corticale perméative, spicules (tête de flèche). Diagnostic ?",
+      "figure": "laredo-t4:fig17.20",
+      "options": [
+        "Ostéosarcome conventionnel",
+        "Sarcome d'Ewing",
+        "Ostéomyélite",
+        "Chondroblastome"
+      ],
+      "reponse": 0,
+      "explication": "Condensation pâle à limites floues, perméation corticale, réaction spiculée et extension aux tissus mous : ostéosarcome conventionnel.",
+      "page": "2754",
+      "image_origine": "m10/p291_0"
+    },
+    {
+      "question": "Ostéosarcome fémoral métaphysaire : que désignent les flèches pleines en IRM ?",
+      "figure": "laredo-t4:fig17.25a",
+      "options": [
+        "Des skip metastases médullaires",
+        "Des îlots de moelle rouge",
+        "Des infarctus",
+        "Des enchondromes"
+      ],
+      "reponse": 0,
+      "explication": "Nodules tumoraux à distance dans la même cavité médullaire : à rechercher sur une IRM de tout l'os.",
+      "page": "2756",
+      "image_origine": "m10/p293_1"
+    },
+    {
+      "question": "Lésion épiphyso-métaphysaire fémorale faite surtout de cavités avec niveaux mais septas épais et zones solides rehaussées. Diagnostic à ne pas manquer ?",
+      "figure": "laredo-t4:fig17.x298b",
+      "options": [
+        "Ostéosarcome télangiectasique",
+        "Kyste anévrysmal primitif",
+        "TCG avec kyste anévrysmal",
+        "Chondroblastome"
+      ],
+      "reponse": 0,
+      "explication": "Cavités hématiques majoritaires mais composante solide nodulaire : ostéosarcome télangiectasique.",
+      "page": "2760",
+      "image_origine": "m10/p297_0"
+    },
+    {
+      "question": "Diaphyse d'un adolescent : lyse intracorticale nette sans extension médullaire, minéralisation en verre dépoli. Diagnostic rare à évoquer ?",
+      "figure": "laredo-t4:fig17.x300a",
+      "options": [
+        "Ostéosarcome intracortical",
+        "Ostéome ostéoïde",
+        "Cortical defect",
+        "Adamantinome"
+      ],
+      "reponse": 0,
+      "explication": "Lésion confinée à la corticale qui simule un ostéome ostéoïde : ostéosarcome intracortical, souvent diagnostiqué avec 2 ans de retard.",
+      "page": "2762",
+      "image_origine": "m10/p299_0"
+    },
+    {
+      "question": "Homme de 46 ans : lacune 1A1 festonnée en verre dépoli du fémur distal, étendue à l'épiphyse. Diagnostic à craindre ?",
+      "figure": "laredo-t4:fig17.29c",
+      "options": [
+        "Ostéosarcome central de bas grade",
+        "Dysplasie fibreuse",
+        "Fibrome non ossifiant",
+        "Enchondrome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect de DF, mais l'extension épiphysaire est discordante : ostéosarcome de bas grade (MDM2/CDK4).",
+      "page": "2764",
+      "image_origine": "m10/p301_1"
+    },
+    {
+      "question": "Face postérieure du fémur distal : masse ossifiée enroulée autour de la corticale, séparée d'elle par un liseré clair (flèche). Diagnostic ?",
+      "figure": "laredo-t4:fig17.32a",
+      "options": [
+        "Ostéosarcome paraostéal",
+        "Ostéochondrome",
+        "Myosite ossifiante",
+        "Ostéosarcome périosté"
+      ],
+      "reponse": 0,
+      "explication": "Masse de surface avec liseré clair (couches profondes du périoste) en dehors de la zone d'implantation : ostéosarcome paraostéal.",
+      "page": "2767",
+      "image_origine": "m10/p304_0"
+    },
+    {
+      "question": "Diaphyse tibiale : masse corticale avec réaction périostée perpendiculaire. Diagnostic ?",
+      "figure": "laredo-t4:fig17.x307a",
+      "options": [
+        "Ostéosarcome périosté",
+        "Ostéosarcome paraostéal",
+        "Chondrome périosté",
+        "Ewing"
+      ],
+      "reponse": 0,
+      "explication": "Siège diaphysaire, encoche et spicules perpendiculaires : ostéosarcome périosté, souvent chondroblastique.",
+      "page": "2769",
+      "image_origine": "m10/p306_0"
+    },
+    {
+      "question": "Patient âgé atteint de Paget : condensation intertrochantérienne avec ossifications nuageuses floues dans les tissus mous (flèches). Diagnostic ?",
+      "figure": "laredo-t4:fig17.38",
+      "options": [
+        "Ostéosarcome sur Paget",
+        "Paget actif simple",
+        "Myosite ossifiante",
+        "Métastase de prostate"
+      ],
+      "reponse": 0,
+      "explication": "Condensations nuageuses à limites floues dans les tissus mous sur os pagétique : ostéosarcome secondaire.",
+      "page": "2774",
+      "image_origine": "m10/p311_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "La forme conventionnelle : l'adolescent et le genou",
+        "Trois aspects radiologiques",
+        "L'IRM fixe les limites de la chirurgie",
+        "Traitement : la chimiothérapie juge la tumeur"
+      ],
+      "secs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qs": [
+        1
+      ]
+    },
+    {
+      "hs": [
+        "Les variantes centrales",
+        "Les ostéosarcomes de surface",
+        "Ostéosarcomes secondaires"
+      ],
+      "secs": [
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m10",
+  "images_non_rattachees": []
+}

@@ -1,0 +1,303 @@
+{
+  "id": "laredo-t4:m13",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 22,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs à cellules géantes et tumeurs notochordales",
+  "pages": "2838–2865",
+  "objectifs": [
+    "Reconnaître la TCG et ses pièges",
+    "Connaître le traitement (curetage, dénosumab) et les complications",
+    "Distinguer tumeur bénigne notochordale et chordome"
+  ],
+  "essentiels": [
+    "Lésion à cellules géantes des petits os (granulome de réparation) : 10–30 ans, phalanges des doigts, métacarpiens, métatarsiens ; lyse 1B soufflante cloisonnée de 2–2,5 cm, métaphysaire sans extension épiphysaire. Toujours doser la PTH (tumeur brune). Récidive 22–50 %.",
+    "TCG : 4–5 % des tumeurs primitives, 20–50 ans (80 %), squelette mature. Cellules stromales néoplasiques exprimant RANK-L (mutation H3F3A 92 %), cellules géantes ostéoclastiques activées. Histologie indiscernable d'une tumeur brune.",
+    "Siège : épiphyso-métaphysaire des os longs (85 %), genou 50–65 %, radius distal 10–12 %, humérus proximal ; sacrum (aileron), corps vertébral, apophyses, patella. Naît du versant métaphysaire de la physe : centre sur l'ancienne ligne de croissance, à < 1 cm de l'interligne, jusqu'à l'os sous-chondral.",
+    "Radio : lyse excentrée 1B (80 %) ou 1C, souvent > 5 cm, fausses cloisons, limite diaphysaire ogivale, corticale amincie, soufflée ou rompue ; pas de matrice. Scanner : densité musculaire. IRM : composante solide en signal T2 intermédiaire (cellularité, collagène), hémosidérine en hyposignal, composante anévrysmale (biopsier le solide).",
+    "Scintigraphie « donut ». Classification de Campanacci (1 latente, 2 active soufflée continue, 3 agressive) prédit la récidive (10, 28, 40 %). Récidive surtout dans les 3 premières années : lyse adjacente au comblement.",
+    "Traitement : résection en bloc si peu mutilante, sinon curetage soigneux avec stérilisation thermique et comblement (ciment) → récidive ~12 %. Dénosumab (anti-RANK-L) si inopérable ou mutilant, mais reprise à l'arrêt. Pas de radiothérapie (sarcome 29 % au-delà de 40 Gy).",
+    "Métastases pulmonaires bénignes (2 %, radius distal, récidive). TCG multifocales (< 1 %, < 25 ans, mains et pieds : éliminer l'hyperparathyroïdie). TCG sur Paget (crâne, face, rachis, sensibles aux corticoïdes). TCG maligne surtout secondaire à l'irradiation.",
+    "Tumeur bénigne à cellules notochordales : médiane du corps vertébral, < 2–3 cm, condensation pâle sans lyse, hyper T2 sans rehaussement, pas de fixation, pas de masse. Chordome : > 50 ans, sacro-coccyx 50 %, clivus 35–40 % ; lyse médiane avec grosse masse présacrée bien limitée, hyper T2 myxoïde, calcifications, rehaussement ; brachyurie +. Exérèse en bloc, protonthérapie."
+  ],
+  "introduction": "Deux familles très différentes, réunies par une même question pratique : **où naît la lésion ?** La tumeur à cellules géantes naît contre l'ancienne plaque de croissance et finit sous le cartilage articulaire ; les tumeurs notochordales naissent des restes de la corde dorsale, donc **sur la ligne médiane** du rachis et de la base du crâne. Une fois le siège compris, le diagnostic suit.",
+  "sections": [
+    {
+      "titre": "Des ostéoclastes recrutés par des cellules tumorales",
+      "texte": "Dans la **tumeur à cellules géantes** (TCG), les spectaculaires cellules géantes ne sont pas la tumeur. Les vraies cellules tumorales sont des **cellules stromales** mononucléées (mutation **H3F3A** dans 92 %) qui expriment **RANK-L** et recrutent des ostéoclastes : ce sont eux qui creusent l'os. C'est aussi pour cela que le **dénosumab** (anti-RANK-L) agit.\n\nLa TCG représente 4 à 5 % des tumeurs primitives ; 80 % des patients ont entre 20 et 50 ans, sur un squelette **mature**.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Histologiquement, une TCG ressemble à une tumeur brune : penser à l'hyperparathyroïdie devant des lésions multiples.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi le dénosumab est-il efficace dans la TCG ?",
+        "a": "Les cellules stromales tumorales expriment RANK-L et recrutent les ostéoclastes ; le dénosumab bloque RANK-L."
+      }
+    },
+    {
+      "titre": "Le siège : contre l'ancienne ligne de croissance",
+      "texte": "La TCG siège à l'**épiphyso-métaphyse** des os longs (85 %) : genou (50 à 65 %), radius distal, humérus proximal ; mais aussi le **sacrum** (aileron), les corps vertébraux, les apophyses et la patella. Presque toujours à **moins de 1 cm d'un interligne**.\n\nElle naît du **versant métaphysaire de la physe**. Chez l'enfant, la physe fait barrière et la tumeur reste métaphysaire ; chez l'adulte, son **centre se projette sur l'ancienne ligne de croissance** et elle s'étend jusqu'à l'os sous-chondral, dont elle respecte une lame fine.",
+      "figures": [
+        "laredo-t4:fig22.x382"
+      ],
+      "legendes": [
+        "**TCG de la tête de la fibula** : image soufflante épiphyso-métaphysaire, en hyposignal T1, signal T2 intermédiaire, prise de contraste diffuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi une TCG reste-t-elle métaphysaire chez l'enfant ?",
+        "a": "Elle naît du versant métaphysaire de la physe, qui fait barrière tant qu'elle est ouverte."
+      }
+    },
+    {
+      "titre": "L'image de la TCG",
+      "texte": "En radiographie : lyse **excentrée**, 1B (80 %) ou 1C, souvent **de plus de 5 cm**, avec des **fausses cloisons** (crêtes osseuses entre les lobules), une **limite diaphysaire en ogive**, une corticale amincie, soufflée ou rompue, et **aucune matrice**. Une fracture survient dans 11 à 37 %.\n\nAu scanner, la tumeur a une densité musculaire. En IRM, sa composante solide est en **signal T2 intermédiaire ou bas** (cellularité dense, collagène), parsemée d'hémosidérine en hyposignal ; elle se rehausse précocement. Une **composante anévrysmale** avec niveaux existe dans 14 % : on biopsie toujours la partie **solide**. En scintigraphie, le **« donut sign »** (périphérie qui fixe, centre froid) est fréquent.",
+      "figures": [
+        "laredo-t4:fig22.4a",
+        "laredo-t4:fig22.8"
+      ],
+      "legendes": [
+        "**TCG de L3 avec fracture** : lyse sans minéralisation, de densité musculaire au scanner, signal T2 intermédiaire en IRM.",
+        "**TCG fémorale mixte** : composante solide et composante kystique à niveaux. La biopsie doit viser la partie solide."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le T2 bas d'une TCG vient de la cellularité, du collagène et de l'hémosidérine des saignements répétés : c'est l'inverse d'un kyste ou d'un chondroblastome.",
+      "verification": {
+        "q": "Lyse épiphyso-métaphysaire sans matrice, T2 bas : TCG ou chondroblastome ?",
+        "a": "TCG : le chondroblastome a des calcifications, un T2 intermédiaire et un œdème intense, chez un sujet plus jeune."
+      }
+    },
+    {
+      "titre": "Classer, traiter, surveiller",
+      "texte": "La classification de **Campanacci** prédit la récidive après curetage : grade 1 latent (corticale intacte), 2 actif (corticale amincie, soufflée mais continue), 3 agressif (corticale rompue, tissus mous). Récidive : 10, 28 et 40 %.\n\nTraitement : résection en bloc si elle n'est pas mutilante ; sinon **curetage** soigneux avec stérilisation thermique et comblement (ciment), avec environ 12 % de récidive. Le **dénosumab** sert aux formes inopérables ou mutilantes, mais la tumeur reprend à l'arrêt. **Pas de radiothérapie** : au-delà de 40 Gy, transformation sarcomateuse dans 29 %.\n\nLa récidive survient surtout dans les **3 premières années** : une lyse au contact du ciment. Il existe des **métastases pulmonaires bénignes** (2 %, plus souvent après TCG du radius distal et récidive).",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "TCG multiples chez un patient jeune, surtout aux mains et aux pieds : éliminer une hyperparathyroïdie. TCG sur Paget : crâne, face, rachis, souvent sensibles aux corticoïdes.",
+      "pourquoi": null,
+      "verification": {
+        "q": "TCG à corticale rompue avec extension aux tissus mous : quel grade de Campanacci et quel risque ?",
+        "a": "Grade 3, récidive d'environ 40 % après curetage."
+      }
+    },
+    {
+      "titre": "Lésion à cellules géantes des petits os",
+      "texte": "Aux **phalanges, métacarpiens et métatarsiens** du sujet de 10 à 30 ans, une lyse 1B soufflante, cloisonnée, à coque continue, de 2 à 2,5 cm, métaphysaire sans extension épiphysaire, correspond à un **granulome de réparation à cellules géantes**. Son histologie est proche de la tumeur brune : **toujours doser la PTH**. Récidive 22 à 50 %.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lyse soufflante d'une phalange chez un sujet de 20 ans : quel dosage ?",
+        "a": "La PTH : le granulome de réparation ressemble à une tumeur brune."
+      }
+    },
+    {
+      "titre": "Tumeur bénigne à cellules notochordales",
+      "texte": "Des restes de la **corde dorsale** persistent sur la ligne médiane du rachis. La **tumeur bénigne à cellules notochordales** (TBCN) en est une prolifération sans agressivité : nodule **médian** du corps vertébral (lombaire, sacrum, coccyx, cervical), de 0,6 à 3 cm, réalisant une **condensation pâle sans lyse**, en **hypersignal T2** hétérogène, **sans rehaussement**, **sans fixation** et sans masse.",
+      "figures": [
+        "laredo-t4:fig23.x392b"
+      ],
+      "legendes": [
+        "**TBCN de C2** : nodule médian du corps vertébral, discrètement dense au scanner, en hypersignal T2 franc, non rehaussé."
+      ],
+      "cle": "TBCN vs chordome : petite (≈ 1,9 vs 5 cm), pas de lyse, pas de masse, pas de rehaussement, pas de fixation.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Nodule médian condensant de 1,5 cm du corps de L4, hypersignal T2, non rehaussé : diagnostic ?",
+        "a": "Tumeur bénigne à cellules notochordales."
+      }
+    },
+    {
+      "titre": "Chordome : la ligne médiane, en bas et en haut",
+      "texte": "Le **chordome** est la tumeur maligne notochordale : 20 à 30 % des tumeurs primitives du rachis et la moitié de celles du sacrum. 80 % des patients ont plus de 50 ans. Il siège aux deux extrémités de l'ancienne corde : **sacro-coccyx** (45 à 50 %) et **clivus** (35 à 40 %). Il exprime la **brachyurie**, marqueur très spécifique de la nature notochordale.\n\nAu sacrum : lyse **médiane ou paramédiane** des dernières pièces sacrées, centrée sur un trou sacré, avec une **volumineuse masse présacrée** arrondie, bien limitée, qui refoule le rectum. Calcifications dans 50 à 90 %, **hypersignal T2 hétérogène myxoïde**, pseudo-capsule, rehaussement. Au rachis lombaire, la lyse est médiane et prédomine dans le **tiers postérieur** du corps (canal chordal) ; au cervical, la tumeur peut prendre une forme en sablier comme un neurinome.\n\nTraitement : exérèse monobloc large sans ouvrir la tumeur, protonthérapie ou ions carbone. Survie 78 % à 5 ans, 54 % à 10 ans.",
+      "figures": [
+        "laredo-t4:fig23.3d",
+        "laredo-t4:fig23.x399d"
+      ],
+      "legendes": [
+        "**Chordome sacré** en IRM sagittale : lyse sacrée avec masse présacrée lobulée, hétérogène en T2, rehaussée de façon hétérogène.",
+        "**Chordome du clivus** : image mixte avec calcifications au scanner, masse lobulée en hypersignal T2."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lyse sacrée médiane avec grosse masse présacrée chez un homme de 65 ans : quel marqueur confirmera ?",
+        "a": "La brachyurie (chordome)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Phalange : ostéolyse soufflante avec coque périostée continue et cloisons intralésionnelles. Diagnostic ?",
+      "figure": "laredo-t4:fig22.1",
+      "options": [
+        "Granulome de réparation à cellules géantes",
+        "Enchondrome",
+        "Ostéomyélite",
+        "Métastase acrale"
+      ],
+      "reponse": 0,
+      "explication": "Légende : granulome de réparation à cellules géantes phalangien. Histologiquement proche de la tumeur brune : le texte conseille d'éliminer une hyperparathyroïdie (PTH, parathormone).",
+      "page": "2838",
+      "image_origine": "m13/p376_0"
+    },
+    {
+      "question": "Fémur distal, fémur proximal et humérus : trois lyses excentrées 1B ou 1C atteignant l'os sous-chondral. Diagnostic ?",
+      "figure": "laredo-t4:fig22.2a",
+      "options": [
+        "Tumeur à cellules géantes",
+        "Chondroblastome",
+        "Kyste essentiel",
+        "Métastases"
+      ],
+      "reponse": 0,
+      "explication": "Lyse géographique non condensée, centrée sur l'ancienne physe, jusqu'à l'os sous-chondral chez l'adulte : TCG.",
+      "page": "2842",
+      "image_origine": "m13/p379_0"
+    },
+    {
+      "question": "Radius distal : lésion soufflante avec interruption corticale, s'étendant jusqu'à l'os sous-chondral, signal T2 intermédiaire. Diagnostic ?",
+      "figure": "laredo-t4:fig22.6b",
+      "options": [
+        "Tumeur à cellules géantes (TCG)",
+        "Kyste osseux anévrysmal",
+        "Chondrosarcome",
+        "Ostéosarcome télangiectasique"
+      ],
+      "reponse": 0,
+      "explication": "Légende : TCG du radius ; ostéolyse jusqu'à l'os sous-chondral, fine lame corticale discontinue, signal intermédiaire en T2. Le radius distal expose aux métastases pulmonaires « bénignes » (texte).",
+      "page": "2845",
+      "image_origine": "m13/p382_0"
+    },
+    {
+      "question": "Fémur distal : lésion mixte solide et kystique avec cerne en hyposignal T1 et T2. Que représente ce cerne ?",
+      "figure": "laredo-t4:fig22.x384a",
+      "options": [
+        "Des dépôts d'hémosidérine",
+        "Une calcification cartilagineuse",
+        "Un liseré de sclérose 1A1",
+        "Du tissu graisseux"
+      ],
+      "reponse": 0,
+      "explication": "L'hémosidérine est fréquente dans la TCG et donne des zones en hyposignal T1 et T2.",
+      "page": "2846",
+      "image_origine": "m13/p383_0"
+    },
+    {
+      "question": "L5 : lyse pseudo-cloisonnée par des crêtes osseuses chez un adulte de 35 ans. Diagnostic à évoquer ?",
+      "figure": "laredo-t4:fig22.2e",
+      "options": [
+        "TCG vertébrale",
+        "Hémangiome",
+        "Paget",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Les fausses cloisons formées par des crêtes osseuses et l'absence de matrice orientent vers une TCG du corps vertébral.",
+      "page": "2842",
+      "image_origine": "m13/p379_1"
+    },
+    {
+      "question": "L4 : petite condensation médiane du corps vertébral, hyper T2, non rehaussée, sans masse. Diagnostic ?",
+      "figure": "laredo-t4:fig23.x391a",
+      "options": [
+        "Tumeur bénigne à cellules notochordales",
+        "Chordome",
+        "Îlot condensant bénin",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Nodule médian sans lyse, hyper T2 sans rehaussement : TBCN. L'îlot condensant serait en hyposignal T2.",
+      "page": "2853",
+      "image_origine": "m13/p390_0"
+    },
+    {
+      "question": "Sacrum : ostéolyse paramédiane centrée sur un trou sacré avec destruction corticale, chez un homme de 65 ans. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig23.3a",
+      "options": [
+        "Chordome",
+        "TCG",
+        "Kyste anévrysmal",
+        "Ostéoblastome"
+      ],
+      "reponse": 0,
+      "explication": "Lyse sacrée médiane ou paramédiane après 50 ans avec masse présacrée : chordome. La TCG du sacrum touche plutôt l'aileron chez l'adulte jeune.",
+      "page": "2859",
+      "image_origine": "m13/p396_0"
+    },
+    {
+      "question": "Lombaire : condensation périphérique et lyse centrale du tiers postérieur d'un corps vertébral, évoluant lentement. Diagnostic ?",
+      "figure": "laredo-t4:fig23.7a",
+      "options": [
+        "Chordome lombaire",
+        "Paget",
+        "Spondylodiscite",
+        "Hémangiome"
+      ],
+      "reponse": 0,
+      "explication": "Lyse médiane postérieure (canal chordal) avec condensation et évolution lente, pont ostéophytique : chordome lombaire.",
+      "page": "2862",
+      "image_origine": "m13/p399_0_0_0_74_100"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Des ostéoclastes recrutés par des cellules tumorales",
+        "Le siège : contre l'ancienne ligne de croissance",
+        "L'image de la TCG"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "hs": [
+        "Classer, traiter, surveiller",
+        "Lésion à cellules géantes des petits os"
+      ],
+      "secs": [
+        3,
+        4
+      ],
+      "qs": [
+        0
+      ]
+    },
+    {
+      "hs": [
+        "Tumeur bénigne à cellules notochordales",
+        "Chordome : la ligne médiane, en bas et en haut"
+      ],
+      "secs": [
+        5,
+        6
+      ],
+      "qs": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m13",
+  "images_non_rattachees": []
+}

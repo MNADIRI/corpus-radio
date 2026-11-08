@@ -1,0 +1,347 @@
+{
+  "id": "laredo-t4:m01",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 1,
+  "chapitre_libelle": "Chapitre 1",
+  "titre": "Méthode d'analyse d'une lésion osseuse unique",
+  "pages": "2477–2498",
+  "objectifs": [
+    "Décrire une lésion osseuse dans un ordre fixe",
+    "Lire l'agressivité dans les limites, la corticale et le périoste",
+    "Décider : surveillance ou biopsie"
+  ],
+  "essentiels": [
+    "Ordre d'analyse : morphologie (taille, forme, siège, centre géométrique) → limites → matrice/condensation → corticale et réaction périostée → masse des tissus mous. Radio + scanner d'abord, IRM pour l'extension, le signal et la vascularisation.",
+    "Argument de fréquence : pseudo-tumeurs > métastases > hémopathies > tumeurs primitives (rares, en dernier). Ne jamais partir du principe qu'une lacune est une tumeur primitive.",
+    "Le centre géométrique = point de départ. Il distingue une vraie lésion épiphysaire d'une lésion métaphysaire étendue à l'épiphyse ; centre sur la ligne de croissance = tumeur à cellules géantes.",
+    "Limites de Lodwick/Madewell : 1A1 (liseré net sur 2 versants : fibreux, kyste, lipome) → 1A2 (condensation dégressive : inflammatoire, Brodie, ostéome ostéoïde) → 1B (nette non condensée : kyste essentiel) → 1C (floue) → 2 (mitée) → 3 (perméative, corticale). De 1C à 3 = lésion active.",
+    "Matrice cartilagineuse : piqueté, grains, arcs et anneaux + contours polylobés (lobules de 3–7 mm). Matrice ostéogène : nuageuse à limites floues (ostéosarcome) ou compacte nette (ostéome, îlot condensant). Matrice fibreuse : verre dépoli.",
+    "Calcification DANS une lyse = lésionnelle ; condensation AUTOUR d'une lyse à limites dégressives = réactionnelle (inflammatoire, œdème en IRM).",
+    "Périoste : hyperostose compacte = chronique ; unilamellaire continue = actif mais bénin ; plurilamellaire/spiculée = sarcome ; coque continue épaisse = actif ; coque fine discontinue, Codman = agressif. Exception : lésions sous-périostées (cortical defect, chondrome périosté).",
+    "Conduite à tenir : tous les critères de quiescence réunis → surveillance (1–3 mois puis 6 mois puis annuelle). Un seul signe d'activité → diagnostic histologique, biopsie décidée avec le chirurgien."
+  ],
+  "introduction": "Devant une lésion osseuse isolée, on ne cherche pas d'emblée « le » diagnostic : on lit l'image dans un ordre fixe, puis on se demande si la lésion est **quiescente** (on surveille) ou **active** (on prouve). Chaque signe radiologique est la trace d'un phénomène biologique : apprendre à le relier à sa cause, c'est ce qui rend la méthode solide.",
+  "sections": [
+    {
+      "titre": "Penser d'abord fréquence",
+      "texte": "Une lacune osseuse unique est beaucoup plus souvent une **pseudo-tumeur** (kyste, fibrome non ossifiant, dysplasie fibreuse, infarctus, ostéite…) qu'une tumeur. Viennent ensuite les **métastases**, puis les **hémopathies** (myélome, lymphome). Les **tumeurs primitives**, bénignes ou malignes, sont rares et se discutent en dernier.\n\nLa lecture se fait toujours dans le même ordre : **morphologie** (taille, forme, siège, centre géométrique) → **limites** → **matrice** (y a-t-il une condensation, et de quel type ?) → **corticale et périoste** → **masse des tissus mous**. Radiographie et scanner d'abord : ils lisent l'os. L'IRM vient ensuite pour l'extension, le signal et la vascularisation.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Ordre de fréquence : pseudo-tumeurs > métastases > hémopathies > tumeurs primitives.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune unique asymptomatique : dans quel ordre ranger les hypothèses ?",
+        "a": "Pseudo-tumeur d'abord, puis métastase, puis hémopathie, et seulement ensuite tumeur primitive."
+      }
+    },
+    {
+      "titre": "Taille, forme et siège",
+      "texte": "La **taille** est un critère grossier : les tumeurs primitives bénignes mesurent plutôt moins de 5 cm, les malignes plus de 5 cm. Ce seuil ne vaut ni pour les métastases et le myélome (petites lacunes), ni pour les pseudo-tumeurs, parfois énormes.\n\nLa **forme** est plus parlante. Une lésion ronde ou ovale est banale. Une lésion très **allongée et sinueuse**, avec des intervalles d'os sain, évoque une **dystrophie** qui suit l'architecture de l'os plutôt qu'une tumeur qui pousse en boule : dysplasie fibreuse, infarctus osseux, ostéite chronique.",
+      "figures": [
+        "laredo-t4:fig1.1"
+      ],
+      "legendes": [
+        "**Formes de lacunes** (schéma de J.-D. Laredo). Arrondie ou ovalaire (à gauche, la plupart des tumeurs), allongée (au milieu), allongée et sinueuse avec intervalles d'os sain (à droite) : pensez dysplasie fibreuse, infarctus, ostéite chronique."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Une tumeur croît de façon centrifuge à partir d'un point : elle devient ronde. Une dystrophie touche un territoire (vasculaire, médullaire) : elle en épouse la forme.",
+      "verification": {
+        "q": "Lésion de 9 cm à la radiographie : est-ce un argument de malignité pour une métastase ou un myélome ?",
+        "a": "Non : le seuil de 5 cm ne vaut ni pour les métastases et le myélome (petites lacunes), ni pour les pseudo-tumeurs."
+      }
+    },
+    {
+      "titre": "Le centre géométrique et la position dans la coupe",
+      "texte": "Le **centre géométrique** de la lésion est son point de départ. Il permet de distinguer une vraie lésion **épiphysaire** (chondroblastome, chondrosarcome à cellules claires, géodes) d'une lésion **métaphysaire étendue** à l'épiphyse. Un centre **sur la ligne du cartilage de croissance** évoque la TCG.\n\nEn coupe axiale, la position par rapport à la corticale oriente encore : lacune **centrale** (kyste essentiel, enchondrome, métastase, myélome), **excentrée** (TCG, fibrome chondromyxoïde, kyste anévrysmal), **corticale** (ostéome ostéoïde, fibrome non ossifiant, dysplasie ostéofibreuse) ou **sous-périostée / juxta-corticale** (chondrome périosté, ostéosarcome paraostéal).",
+      "figures": [
+        "laredo-t4:fig1.3",
+        "laredo-t4:fig1.25"
+      ],
+      "legendes": [
+        "**Localisation axiale d'une lacune diaphysaire**, en radiographie (en haut) et en coupe axiale (en bas). De gauche à droite : endostée centrale, intracorticale, sous-périostée, para-ostéale (développée dans les couches superficielles du périoste).",
+        "**Siège préférentiel des tumeurs primitives sur un os long** (exemple du genou). À mémoriser comme une carte : TCG à cheval sur la ligne de croissance, chondroblastome dans l'épiphyse, fibrome non ossifiant cortical métaphysaire, ostéosarcome métaphysaire."
+      ],
+      "cle": null,
+      "piege": "Une lésion qui « touche » l'épiphyse n'est pas forcément épiphysaire : cherchez où est son centre.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Une lésion atteint l'épiphyse et la métaphyse. Quel critère dit d'où elle part ?",
+        "a": "Son centre géométrique : dans l'épiphyse (chondroblastome…), dans la métaphyse (lésion métaphysaire étendue) ou sur l'ancienne ligne de croissance (TCG)."
+      }
+    },
+    {
+      "titre": "Les limites : le meilleur reflet de l'activité",
+      "texte": "La **zone de transition** entre lésion et os sain traduit la vitesse de croissance. Une limite nette signifie que l'os a eu le temps de réagir ; une limite floue, que la lésion infiltre plus vite que l'os ne se défend.\n\nLa classification de **Lodwick-Madewell** ordonne ces limites selon une activité croissante :",
+      "figures": [
+        "laredo-t4:fig1.4",
+        "laredo-t4:fig1.6"
+      ],
+      "legendes": [
+        "**Les six types de limites**, du plus quiescent (1A1, à gauche) au plus agressif (3, à droite). Le dégradé de couleur résume l'idée : plus on va vers la droite, plus la lésion « déborde » dans l'os.",
+        "**Type 1A2** : ostéome ostéoïde du spongieux métaphysaire fémoral. Nidus clair calcifié, entouré d'une condensation qui s'estompe progressivement vers l'os normal."
+      ],
+      "cle": "Il existe un « type 4 » (tumeur in – tumeur out) : lymphome, Ewing ou ostéosarcome traversent la corticale sans la détruire. La radiographie est presque normale, l'IRM montre l'infiltration des deux côtés de la corticale.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune nette entourée d'une condensation qui s'estompe vers l'os sain : quel type de Lodwick et quelle famille de lésions ?",
+        "a": "Type 1A2 : réaction inflammatoire, par exemple ostéome ostéoïde, abcès de Brodie, ostéoblastome, chondroblastome."
+      }
+    },
+    {
+      "titre": "La matrice : ce que fabrique la lésion",
+      "texte": "Une calcification **dans** une lyse est presque toujours **lésionnelle** : ce sont les cellules tumorales qui fabriquent une matrice qui se minéralise. Une condensation **autour** d'une lyse, à limites dégressives, est **réactionnelle** : l'os normal répond à l'agression.\n\nLa matrice **cartilagineuse** se reconnaît à ses calcifications en **piqueté**, en **grains** et en **arcs et anneaux**, et aux contours **polylobés** : le cartilage pousse en lobules de 3 à 7 mm dont la périphérie s'ossifie. La matrice **ostéogène** est nuageuse à limites floues (ostéosarcome) ou compacte et nette (ostéome, îlot condensant). La matrice **fibreuse** de la dysplasie fibreuse donne le **verre dépoli**.",
+      "figures": [
+        "laredo-t4:fig1.17",
+        "laredo-t4:fig1.15",
+        "laredo-t4:fig1.14"
+      ],
+      "legendes": [
+        "**Minéralisation lésionnelle et réactionnelle.** À gauche, calcifications dans la lyse (lésionnelle). Au centre, condensation autour de la lyse (réactionnelle, inflammatoire). À droite, condensation pleine « en ivoire » qui peut être l'une ou l'autre.",
+        "**Condensations des tumeurs ostéogènes.** Nodule compact à limites nettes (îlot condensant, à gauche), nodule flou nuageux (ostéosarcome très différencié, au centre), segment osseux condensé « ivoire » (à droite).",
+        "**Exostose vs chondrosarcome de surface.** L'exostose (à gauche) prolonge la corticale et le spongieux de l'os porteur. Le chondrosarcome (à droite) ajoute des calcifications cartilagineuses dans une coiffe épaisse des tissus mous."
+      ],
+      "cle": null,
+      "piege": "Condensation pure à limites floues : soit réaction à une infiltration (métastase, lymphome, Ewing), soit os tumoral nuageux (ostéosarcome). Les deux sont actifs.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Calcifications en arcs et anneaux dans une lyse lobulée : lésionnelles ou réactionnelles ? Quelle matrice ?",
+        "a": "Lésionnelles (dans la lyse) ; matrice cartilagineuse, dont les lobules s'ossifient en périphérie."
+      }
+    },
+    {
+      "titre": "Corticale et périoste : la chronologie de l'agression",
+      "texte": "Le périoste répond à la vitesse de l'agression. S'il a le temps, il fabrique une **hyperostose compacte** (processus chronique) ou une **lamelle unique continue** (processus actif mais bénin). Si l'agression est rapide, il est soulevé par couches successives : réaction **plurilamellaire** ou **spiculée**, typique des sarcomes. S'il est rompu, il ne reste qu'un **triangle de Codman** à la jonction avec l'os sain.\n\nUne lésion qui souffle l'os peut être bordée d'une **coque continue et épaisse** (le périoste suit : processus actif mais contrôlé) ou d'une **coque fine et discontinue** (le périoste est éventré : processus rapide, agressif).",
+      "figures": [
+        "laredo-t4:fig1.18",
+        "laredo-t4:fig1.20",
+        "laredo-t4:fig1.22a"
+      ],
+      "legendes": [
+        "**Classification des réactions périostées** (diaphyse). 2 : hyperostose compacte. 4 : unilamellaire continue. 5 : plurilamellaire. 6 : spiculée. 7 : coque continue épaisse. 8 : coque fine. 9 à 11 : corticale détruite avec réaction interrompue (triangle de Codman).",
+        "**Réaction unilamellaire continue** en regard d'un ostéome ostéoïde fémoral : processus actif mais bénin.",
+        "**Coque périostée continue et épaisse** autour d'une lésion soufflante de la fibula : le périoste a eu le temps de suivre, la lésion est active mais non agressive."
+      ],
+      "cle": null,
+      "piege": "Une coque discontinue n'est pas agressive si la lésion naît sous le périoste : kyste anévrysmal sous-périosté, chondrome périosté, cortical defect.",
+      "pourquoi": "La réaction spiculée est « non physiologique » : plusieurs couches immatures du périoste sont recrutées et fabriquent de l'os sans maturation préalable.",
+      "verification": {
+        "q": "Lésion soufflante bordée d'une coque fine et discontinue, née sous le périoste chez un adolescent : forcément agressive ?",
+        "a": "Non : kyste anévrysmal sous-périosté, chondrome périosté ou cortical defect peuvent donner une coque discontinue sans agressivité."
+      }
+    },
+    {
+      "titre": "Conclure : surveiller ou prouver",
+      "texte": "Une lésion est **quiescente** seulement si **tous** les critères sont réunis : asymptomatique, pas de contexte de cancer ostéophile, biologie normale, lyse géographique nette ou condensation nette, corticale normale sans encoche endostée, périoste absent ou compact, pas de masse, pas d'hyperfixation (sauf dysplasie fibreuse, Paget, infarctus).\n\nDans ce cas on surveille : contrôle rapproché à 1 ou 3 mois, puis à 6 mois, puis annuel. **Un seul signe d'activité** suffit à imposer un diagnostic histologique. La biopsie se décide avec le chirurgien qui opérera, pour que le trajet soit compris dans la future résection.",
+      "figures": [
+        "laredo-t4:fig1.5",
+        "laredo-t4:fig1.8b"
+      ],
+      "legendes": [
+        "**Lésion quiescente type** : fibrome non ossifiant cortical de la diaphyse tibiale chez un garçon, lacune 1A1 à liseré net. Aucun signe d'activité : on ne biopsie pas.",
+        "**À l'opposé** : sarcome d'Ewing de la diaphyse fémorale. Ostéolyse mitée (type 2), destruction corticale, réaction périostée. Biopsie obligatoire."
+      ],
+      "cle": "L'IRM caractérise le contenu : liquide (kyste essentiel), niveaux liquide-liquide (kyste anévrysmal), hyposignal T2 (tumeurs fibreuses, TCG), hypersignal T2 franc lobulé (cartilage, chordome).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune 1A1 asymptomatique mais encoche endostée profonde : surveiller ou prouver ?",
+        "a": "Prouver : un seul signe d'activité suffit à imposer l'histologie, décidée avec le chirurgien qui opérera."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Lacune diaphysaire tibiale chez un garçon de 12 ans, douleur de genou. Quel type de limite et quel diagnostic ?",
+      "figure": "laredo-t4:fig1.5",
+      "options": [
+        "Type 1A1 – fibrome non ossifiant",
+        "Type 1C – sarcome d'Ewing",
+        "Type 1B – kyste essentiel",
+        "Type 2 – histiocytose langerhansienne"
+      ],
+      "reponse": 0,
+      "explication": "Lacune géographique cerclée d'un liseré de condensation net sur ses deux versants, excentrée et polylobée : type 1A1, lésion fibreuse quiescente, ici un fibrome non ossifiant.",
+      "page": "2482",
+      "image_origine": "m01/p019_0_0_0_74_55"
+    },
+    {
+      "question": "Lacune métaphysaire tibiale distale chez un enfant de 10 ans. Comment qualifier ses limites ?",
+      "figure": "laredo-t4:fig1.7",
+      "options": [
+        "1B : nettes, non condensées",
+        "1A2 : condensation dégressive",
+        "2 : aspect mité",
+        "3 : perméatif"
+      ],
+      "reponse": 0,
+      "explication": "Limites nettes sans liseré condensé et discrète soufflure corticale continue : type 1B. C'était un kyste anévrysmal.",
+      "page": "2482",
+      "image_origine": "m01/p019_0_0_56_100_100"
+    },
+    {
+      "question": "Diaphyse fémorale d'un enfant. Que décrivez-vous et quel diagnostic évoquer en premier ?",
+      "figure": "laredo-t4:fig1.8b",
+      "options": [
+        "Ostéolyse mitée, destruction corticale, périoste plurilamellaire : Ewing",
+        "Lacune 1A1 : fibrome non ossifiant",
+        "Condensation nodulaire nette : îlot condensant",
+        "Coque continue épaisse : kyste essentiel"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyse de type 2 (mitée), destruction corticale et réaction périostée plurilamellaire « en bulbe d'oignon » : sarcome d'Ewing.",
+      "page": "2482",
+      "image_origine": "m01/p019_2"
+    },
+    {
+      "question": "Sur ce scanner et cette IRM d'un ostéosarcome, quel phénomène est illustré ?",
+      "figure": "laredo-t4:fig1.9ad",
+      "options": [
+        "Infiltration médullaire et transcorticale sans destruction osseuse (« type 4 »)",
+        "Soufflure corticale continue",
+        "Lacune géographique 1A1",
+        "Condensation réactionnelle d'une métastase"
+      ],
+      "reponse": 0,
+      "explication": "La tumeur infiltre les espaces médullaires et traverse la corticale sans détruire l'os : piège des radios quasi normales. L'IRM est indispensable pour l'extension.",
+      "page": "2483",
+      "image_origine": "m01/p020_0"
+    },
+    {
+      "question": "Lésion de l'humérus proximal (flèche). Quel ensemble de signes oriente vers un chondrosarcome ?",
+      "figure": "laredo-t4:fig1.12",
+      "options": [
+        "Lyse 1C, calcifications en grains et piqueté, soufflure discontinue, masse",
+        "Verre dépoli et liseré 1A1",
+        "Nidus calcifié avec condensation dégressive",
+        "Lyse 1B sans matrice"
+      ],
+      "reponse": 0,
+      "explication": "Matrice cartilagineuse (grains, piqueté) dans une lyse à limites floues, corticale soufflée et rompue (flèche), masse des tissus mous : chondrosarcome.",
+      "page": "2485",
+      "image_origine": "m01/p022_1"
+    },
+    {
+      "question": "Femme de 45 ans, douleurs iliaques depuis quelques mois. Sur le scanner, quel détail des bords oriente vers une tumeur cartilagineuse ?",
+      "figure": null,
+      "options": [
+        "Bords polycycliques, flous par endroits",
+        "Liseré net sur deux versants",
+        "Triangle de Codman",
+        "Aspect en bouton de chemise"
+      ],
+      "reponse": 0,
+      "explication": "L'architecture lobulaire du cartilage donne des bords polycycliques. Les zones floues (tête de flèche) font craindre une lésion active : chondrosarcome de bas grade.",
+      "page": "2485",
+      "image_origine": "m01/p022_0"
+    },
+    {
+      "question": "Lésion du col fémoral chez un enfant. Matrice et diagnostic ?",
+      "figure": "laredo-t4:fig1.16",
+      "options": [
+        "Verre dépoli dans une lacune 1A1 : dysplasie fibreuse",
+        "Calcifications en anneaux : chondrome",
+        "Ossification nuageuse floue : ostéosarcome",
+        "Nidus : ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "Lacune bien limitée par un liseré net sur deux versants, contenant une ossification pâle en verre dépoli : dysplasie fibreuse monostotique.",
+      "page": "2487",
+      "image_origine": "m01/p024_0"
+    },
+    {
+      "question": "Corticale fémorale épaissie avec petite lacune claire enfouie. Diagnostic ?",
+      "figure": "laredo-t4:fig1.19",
+      "options": [
+        "Ostéome ostéoïde cortical : nidus dans une hyperostose",
+        "Ostéosarcome parostéal",
+        "Réaction spiculée d'un sarcome",
+        "Coque périostée d'un kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Hyperostose compacte à endoste normal = processus chronique peu évolutif, avec un nidus clair « enterré » : ostéome ostéoïde cortical.",
+      "page": "2490",
+      "image_origine": "m01/p027_0"
+    },
+    {
+      "question": "Lésion soufflante de la fibula. Que signifie l'aspect de la coque ?",
+      "figure": "laredo-t4:fig1.22a",
+      "options": [
+        "Coque continue épaisse : processus actif mais non agressif",
+        "Coque fine discontinue : processus agressif",
+        "Réaction spiculée : sarcome",
+        "Hyperostose : processus quiescent"
+      ],
+      "reponse": 0,
+      "explication": "Coque périostée continue et relativement épaisse = périoste respecté, activité prolongée. Il s'agissait d'une lésion kystique et graisseuse partiellement ossifiée.",
+      "page": "2493",
+      "image_origine": "m01/p030_0"
+    },
+    {
+      "question": "Lésion corticale médiale du tibia, allongée, polylobée, liseré net. Diagnostic ?",
+      "figure": "laredo-t4:fig1.24b",
+      "options": [
+        "Cortical defect",
+        "Ostéosarcome périosté",
+        "Adamantinome",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Lésion sous-périostée allongée, contours polylobés, liseré condensé net sur deux versants : cortical defect. Une coque discontinue n'y signe pas l'agressivité.",
+      "page": "2494",
+      "image_origine": "m01/p031_2"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Penser d'abord fréquence",
+        "Taille, forme et siège",
+        "Le centre géométrique et la position dans la coupe"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        3
+      ]
+    },
+    {
+      "hs": [
+        "Les limites : le meilleur reflet de l'activité",
+        "La matrice : ce que fabrique la lésion",
+        "Corticale et périoste : la chronologie de l'agression",
+        "Conclure : surveiller ou prouver"
+      ],
+      "secs": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "ancien_id": "m01",
+  "images_non_rattachees": [
+    "m01/p021_0_0_0_100_62",
+    "m01/p022_0",
+    "m01/s018_tab4"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "laredo-t4:m16",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 30,
+  "chapitre_libelle": "Chapitre 4 · Tumeurs primitives",
+  "titre": "Tumeurs rares et sarcomes sur lésions préexistantes",
+  "pages": "2942–2963",
+  "objectifs": [
+    "Reconnaître les tumeurs « des tissus mous » qui naissent parfois dans l'os (kyste épidermoïde, glomique, schwannome…)",
+    "Savoir quand suspecter un sarcome sur Paget, sur os irradié, sur infarctus ou sur tumeur bénigne",
+    "Associer les principaux syndromes génétiques à leur tumeur osseuse"
+  ],
+  "essentiels": [
+    "Kyste épidermoïde : crâne de l'enfant (congénital, près d'une suture, plutôt latéral ; dermoïde plus médian) ou phalange distale de l'homme 10–40 ans (post-traumatique, médius gauche). Lacune 1A à liseré fin, densité et signal liquidiens, HYPERSIGNAL EN DIFFUSION (≠ kyste arachnoïdien), pas de rehaussement central.",
+    "Tumeur glomique intra-osseuse : phalange distale, lacune nette en hypersignal T2 intense avec rehaussement marqué. Schwannome intra-osseux (0,1–0,2 % des tumeurs) : mandibule, sacrum ; lyse 1A soufflante, hypersignal T2, rehaussement intense ; énucléation.",
+    "Myoépithéliome / parachordome : brachyurie négatif (≠ chordome), fusion EWSR1-POU5F1 (45 %), os plats 44 %, lyse 1A. PEComa : HMB45/Melan-A + actine, lien avec TSC1/2, inhibiteurs de mTOR, 80 % bénins. Synovialosarcome intra-osseux : t(X;18) SYT-SSX (96 %), os longs 84 %, lyse 1C métaphysaire excentrée.",
+    "Sarcome sur Paget : 0,3 % des Paget, risque × 30, > 60 ans, H × 2 ; ostéosarcome 50–90 %, sarcome indifférencié à cellules pléomorphes 20–25 %. Bassin 26 %, fémur 25 %, humérus 19 % (3e site alors que 9e site du Paget), crâne 10 % ; vertèbres rarement.",
+    "Sarcome sur Paget en imagerie : lésion agressive lytique/mixte, destruction corticale, masse des tissus mous quasi constante à ossification nuageuse, fracture révélatrice 30 %, défaut de consolidation suspect ; scintigraphie classiquement PHOTOPÉNIQUE ; la graisse dans l'os pagétique sans masse écarte le sarcome. Diagnostic différentiel : TCG sur Paget.",
+    "Pronostic du sarcome sur Paget sombre : survie 50 % à 1 an, 25 % à 2 ans, < 10 % à 5 ans ; métastases pulmonaires fréquentes dès le diagnostic ; PAL non discriminantes.",
+    "Sarcome radio-induit : critères de Cahan modifiés par Arlen (irradiation, délai ≥ 3 ans, histologie différente, dans le champ). Incidence 0,03–0,2 %, F > H (sein, utérus), délai 3–55 ans (11–14 en moyenne), 45–60 Gy. Ostéosarcome et fibrosarcome. Une ostéolyse apparue > 2 ans après l'irradiation = récidive ou sarcome jusqu'à preuve du contraire.",
+    "Sarcome sur infarctus : < 1 % des sarcomes, homme ~53 ans, fémur 60 % et tibia 33 %, sarcome indifférencié à cellules pléomorphes 65 %. TCG irradiée > 40 Gy : transformation 29 % après 5–8 ans. Kyste anévrysmal : dégénérescence rare, surtout après irradiation."
+  ],
+  "introduction": "Ce module rassemble des raretés, mais avec une logique commune. D'abord des tumeurs **habituellement des tissus mous** qui naissent parfois dans l'os : leur signal reste celui de leur tissu d'origine. Ensuite les **sarcomes qui naissent sur un os déjà malade** (Paget, irradiation, infarctus, tumeur bénigne) : ici, le message est de savoir **quand une lésion connue change de comportement**.",
+  "sections": [
+    {
+      "titre": "Kyste épidermoïde : crâne de l'enfant, doigt de l'homme",
+      "texte": "Le kyste épidermoïde intra-osseux est un îlot de cellules épithéliales. Il a deux terrains : la **voûte du crâne de l'enfant** (origine congénitale, près d'une suture, plutôt latéral ; le kyste dermoïde est plus médian) et la **phalange distale de l'homme de 10 à 40 ans** (inclusion après une piqûre ou une chirurgie, médius gauche de préférence).\n\nC'est une lacune géographique cernée d'un fin liseré, de densité et de signal liquidiens, sans rehaussement central. Le signe qui le distingue du kyste arachnoïdien est l'**hypersignal en diffusion**, dû à la kératine. Le dermoïde, lui, contient de la graisse.",
+      "figures": [
+        "laredo-t4:fig31.1a"
+      ],
+      "legendes": [
+        "**Kyste épidermoïde de l'écaille temporale** au scanner : ostéolyse à limites nettes qui souffle la table interne (flèches)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle séquence IRM distingue un kyste épidermoïde de la voûte d'un kyste arachnoïdien ?",
+        "a": "La diffusion : hypersignal du kyste épidermoïde (kératine)."
+      }
+    },
+    {
+      "titre": "Tumeurs « des tissus mous » nées dans l'os",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig31.3a",
+        "laredo-t4:fig32.1c"
+      ],
+      "legendes": [
+        "**Schwannome intra-osseux de C4** : lésion lytique du corps vertébral, de l'articulaire et du pédicule, élargissant le foramen, en hypersignal T2 avec prise de contraste intense.",
+        "**Myoépithéliome de bas grade du genou** : volumineuse lésion lobulée hétérogène en T2 FS, qui peut simuler une tumeur plus banale."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Une tumeur garde le comportement de son tissu d'origine : un schwannome reste riche en eau et très vascularisé, qu'il soit dans un nerf ou dans l'os.",
+      "verification": {
+        "q": "Lésion vertébrale lytique d'allure de chordome mais brachyurie négative : quelle tumeur rare évoquer ?",
+        "a": "Myoépithéliome / parachordome (EWSR1-POU5F1 dans 45 %)."
+      }
+    },
+    {
+      "titre": "Sarcome sur maladie de Paget",
+      "texte": "Environ **0,3 %** des Paget dégénèrent, avec un risque multiplié par 30, chez des patients de **plus de 60 ans**, deux hommes pour une femme. Il s'agit surtout d'un **ostéosarcome** (50 à 90 %), plus rarement d'un sarcome indifférencié pléomorphe (20 à 25 %).\n\nSièges : bassin (26 %), fémur (25 %), **humérus** (19 %, alors qu'il n'est que le 9e site du Paget), crâne (10 %). Les vertèbres, très souvent pagétiques, dégénèrent rarement.\n\nL'image est celle d'une lésion **agressive** (lytique ou mixte) qui détruit la corticale, avec une **masse des tissus mous** presque constante, à ossification nuageuse. Une **fracture** révèle la tumeur dans 30 % des cas : une fracture pagétique qui ne consolide pas est suspecte. En scintigraphie, le sarcome est classiquement **photopénique** dans un os qui fixe. Pronostic sombre : 50 % de survie à 1 an, moins de 10 % à 5 ans.",
+      "figures": [
+        "laredo-t4:fig33.1b"
+      ],
+      "legendes": [
+        "**Ostéosarcome sur Paget du massif facial** : destruction de l'os malaire et de la paroi du sinus maxillaire par une masse nécrotique contenant des ossifications tumorales."
+      ],
+      "cle": "Os pagétique avec graisse conservée et sans masse : pas de sarcome. Lyse destructrice + masse : biopsie.",
+      "piege": "Une tumeur à cellules géantes peut aussi naître sur un Paget (surtout polyostotique et actif) et simuler un sarcome.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Paget connu, lyse destructrice de l'humérus avec masse des tissus mous chez un homme de 72 ans : conduite ?",
+        "a": "Biopsie : sarcome sur Paget (humérus surreprésenté)."
+      }
+    },
+    {
+      "titre": "Sarcome en territoire irradié",
+      "texte": "Pour parler de sarcome **radio-induit**, il faut les critères de Cahan modifiés par Arlen : antécédent d'irradiation, **intervalle libre de plusieurs années**, histologie **différente** de la tumeur initiale, siège **dans le champ** d'irradiation. Sinon, on parle de sarcome « en territoire irradié ».\n\nIncidence 0,03 à 0,2 % ; plus de femmes (cancers du sein et du col) ; délai de 3 à 55 ans (11 à 14 en moyenne) ; dose habituelle 45-60 Gy. Ostéosarcomes et fibrosarcomes prédominent.\n\nL'ostéite radique s'installe dans les **2 ans** suivant l'irradiation : **toute ostéolyse plus tardive** fait suspecter une récidive ou un sarcome, surtout s'il existe une masse des tissus mous.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéolyse apparaissant 8 ans après une radiothérapie : ostéite radique ?",
+        "a": "Peu probable : l'ostéite radique s'installe dans les 2 ans. Penser récidive ou sarcome radio-induit."
+      }
+    },
+    {
+      "titre": "Sarcome sur infarctus et sur tumeur bénigne",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig33.3"
+      ],
+      "legendes": [
+        "**Dégénérescence sarcomateuse d'un kyste anévrysmal irradié de L3** : coque ossifiée après irradiation (a), puis trois ans plus tard destruction corticale et volumineuse masse paravertébrale (b)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Sarcome au contact d'un infarctus fémoral : histologie la plus fréquente ?",
+        "a": "Sarcome indifférencié pléomorphe (65 %)."
+      }
+    },
+    {
+      "titre": "Syndromes génétiques à connaître",
+      "texte": "",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Ostéosarcome chez un enfant atteint de rétinoblastome : quel gène ?",
+        "a": "RB1."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Lacune de l'écaille temporale chez un enfant, hypersignal sur l'image du bas. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig31.1b",
+      "options": [
+        "Kyste épidermoïde",
+        "Kyste arachnoïdien",
+        "Histiocytose langerhansienne",
+        "Hémangiome intra-osseux"
+      ],
+      "reponse": 0,
+      "explication": "Lacune nette à contenu liquidien avec hypersignal en diffusion, qui le distingue du kyste arachnoïdien.",
+      "page": "p. 2942",
+      "image_origine": "m16/p480_1"
+    },
+    {
+      "question": "Lacune arrondie bien limitée de la phalange distale d'un homme jeune, après une piqûre. Hypothèse la plus probable ?",
+      "figure": "laredo-t4:fig31.2",
+      "options": [
+        "Kyste épidermoïde",
+        "Enchondrome",
+        "Ostéome ostéoïde",
+        "Métastase acrale"
+      ],
+      "reponse": 0,
+      "explication": "Kyste épidermoïde post-traumatique par inclusion ectodermique, dernière phalange (médius gauche préférentiellement).",
+      "page": "p. 2942–2943",
+      "image_origine": "m16/p481_0"
+    },
+    {
+      "question": "Humérus pagétique devenu ostéolytique avec destruction corticale chez un patient de 70 ans. Diagnostic à évoquer en premier ?",
+      "figure": "laredo-t4:fig33.1a",
+      "options": [
+        "Sarcome sur maladie de Paget",
+        "Phase lytique « en flamme » du Paget",
+        "Ostéoporose circonscrite",
+        "Fracture de fatigue pagétique"
+      ],
+      "reponse": 0,
+      "explication": "Ostéolyse destructrice avec rupture corticale sur os pagétique : lésion agressive = dégénérescence sarcomateuse (l'humérus est le 3e site).",
+      "page": "p. 2955",
+      "image_origine": "m16/p492_0_0_0_37_100"
+    },
+    {
+      "question": "Vertèbre L3 irradiée pour kyste anévrysmal : 3 ans plus tard (b), destruction corticale et masse paravertébrale. Diagnostic ?",
+      "figure": "laredo-t4:fig33.3",
+      "options": [
+        "Dégénérescence sarcomateuse post-radique",
+        "Récidive simple du kyste anévrysmal",
+        "Ostéite radique",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Une ostéolyse tardive (> 2 ans) avec masse des tissus mous après irradiation doit faire évoquer un sarcome radio-induit.",
+      "page": "p. 2959–2960",
+      "image_origine": "m16/p497_0"
+    },
+    {
+      "question": "Genou : masse fémorale et tibiale étendue aux tissus mous, hypersignal T2, rehaussement intense ; topographie évoquant une tumeur synoviale. Diagnostic histologique ?",
+      "figure": "laredo-t4:fig32.1c",
+      "options": [
+        "Myoépithéliome de bas grade",
+        "Synovite villonodulaire",
+        "Synovialosarcome",
+        "Chondromatose synoviale"
+      ],
+      "reponse": 0,
+      "explication": "Légende : myoépithéliome de bas grade du genou simulant une tumeur d'origine synoviale par sa topographie.",
+      "page": "p. 2951",
+      "image_origine": "m16/p487_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Kyste épidermoïde : crâne de l'enfant, doigt de l'homme",
+        "Tumeurs « des tissus mous » nées dans l'os",
+        "Sarcome sur maladie de Paget"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "hs": [
+        "Sarcome en territoire irradié",
+        "Sarcome sur infarctus et sur tumeur bénigne",
+        "Syndromes génétiques à connaître"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        3
+      ]
+    }
+  ],
+  "ancien_id": "m16",
+  "images_non_rattachees": [
+    "m16/p480_2"
+  ]
+}

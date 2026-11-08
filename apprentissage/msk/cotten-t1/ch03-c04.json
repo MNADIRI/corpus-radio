@@ -1,0 +1,793 @@
+{
+  "id": "cotten-t1:c04",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 3,
+  "chapitre_libelle": "Rhumatismes",
+  "titre": "Spondyloarthrites",
+  "pages": "136–186",
+  "objectifs": [
+    "Connaître les critères de classification (New York modifiés, ASAS axial et périphérique) et la place de l'IRM",
+    "Lire les sacro-iliaques et le rachis de la spondylarthrite ankylosante en radiographie et IRM, et différencier l'inflammation des lésions mécaniques",
+    "Reconnaître le rhumatisme psoriasique (érosions hyperostosantes, pencil-in-cup, parasyndesmophytes, enthésite-ostéite) et les autres spondyloarthrites"
+  ],
+  "essentiels": [
+    "Spondyloarthrites = SA (spondylarthrite ankylosante), rhumatisme psoriasique, arthrites réactionnelles, entérocolopathies, formes indifférenciées et juvéniles ; **HLA-B27** : 90–95 % dans la SA, 4–8 % dans la population.",
+    "Signature radiologique : **érosions hyperostosantes** et reconstruction osseuse, notamment aux **enthèses** (≠ PR qui érode sans construire).",
+    "Sacro-iliite radiographique : berges floues, érosions surtout **iliaques**, pseudo-élargissement, condensation **étendue et floue**, ankylose ; atteinte possible du **tiers inférieur et de la partie postérieure** (≠ surcharge mécanique : partie antérieure du tiers moyen, condensation compacte).",
+    "Sacro-iliite active ASAS en IRM : **œdème osseux sous-chondral** (STIR/T2 FS) ou ostéite obligatoire, sur ≥ 2 coupes si focal ; involution graisseuse, érosions, sclérose = lésions structurales.",
+    "Rachis SA : **Romanus** (mise au carré), **syndesmophytes** fins verticaux marginaux symétriques → colonne bambou, rail central, Andersson ; ascension depuis la charnière thoracolombaire.",
+    "Complication majeure : **fracture transversale** du rachis ankylosé (traumatisme mineur), très instable, à chercher au scanner/IRM devant une interruption des syndesmophytes.",
+    "Rhumatisme psoriasique : asymétrique, **IPD**, atteinte **en rayon**, érosions marginales **hyperostosantes** (base de P1), **pencil-in-cup**, ankylose IPP/IPD, OP3GO, pas de déminéralisation.",
+    "Axial psoriasique : sacro-iliite volontiers **unilatérale/asymétrique**, **parasyndesmophytes** épais non marginaux, distribution aléatoire, rachis cervical (C1-C2) ; IRM : enthésite avec **ostéite extensive** et dactylite."
+  ],
+  "introduction": "Les spondyloarthrites partagent une prédisposition génétique (HLA-B27), une clinique (rachialgie inflammatoire, arthrites, enthésites, uvéite) et une signature radiologique : l'**enthèse** est la cible, et l'os **construit** en même temps qu'il s'érode. L'IRM a transformé le diagnostic en montrant l'inflammation des années avant la radiographie.",
+  "sections": [
+    {
+      "titre": "Un groupe, des critères",
+      "texte": "Les spondyloarthrites (prévalence ~0,5 % en France) regroupent la SA, le rhumatisme psoriasique, les arthrites réactionnelles, les arthrites des entérocolopathies (Crohn, RCH : rectocolite hémorragique), les formes indifférenciées et juvéniles ; on en rapproche le SAPHO.\n\nLes **critères de New York modifiés** exigent une sacro-iliite radiographique (bilatérale grade 2 ou unilatérale grade 3–4) + un critère clinique. L'**ASAS** (Assessment of SpondyloArthritis international Society) classe désormais en **spondyloarthrite axiale** (rachialgie ≥ 3 mois, âge < 45 ans, avec sacro-iliite en imagerie + ≥ 1 signe, ou HLA-B27 + ≥ 2 signes) et **périphérique** (arthrite, enthésite ou dactylite + signes associés). La sacro-iliite d'imagerie peut être **radiographique ou IRM** : les formes « non radiographiques » sont un stade précoce de la même maladie (plus de la moitié développent une sacro-iliite radiographique en 6 à 8 ans).",
+      "figures": [],
+      "legendes": [],
+      "cle": "L'IRM des sacro-iliaques entre dans les critères ASAS : elle permet un diagnostic des années avant la radiographie.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle est la définition radiographique de la sacro-iliite selon New York modifiés ?",
+        "a": "Sacro-iliite bilatérale de grade ≥ 2 ou unilatérale de grade 3–4 (2 = condensation, 3 = érosions + condensation, 4 = ankylose)."
+      }
+    },
+    {
+      "titre": "Spondylarthrite ankylosante : terrain et physiopathologie",
+      "texte": "La SA débute chez l'adulte jeune (âge moyen 26 ans), 3 à 8 hommes pour une femme, avec un retard diagnostique de 5 à 10 ans. Moins de 5 % des sujets HLA-B27+ développent la maladie : elle est **polygénique** (IL23R, ERAP1…) ; le tabac aggrave l'activité et les lésions structurales.\n\nLa **destruction** osseuse dépend surtout du **TNF-α** (et IL-17, IL-23) ; la **prolifération** dépend de la voie **Wnt** (sclérostine abaissée), des **BMP** et des prostaglandines (PGE2). Les deux processus peuvent être **indépendants** : la plupart des syndesmophytes naissent sans inflammation préalable visible.\n\nClinique : **syndrome pelvirachidien** (80 %) avec lombalgies ou pygalgies à bascule inflammatoires de la 2e moitié de nuit, améliorées par l'effort et les AINS ; enthésites (talalgies), oligoarthrite des membres inférieurs (la **coxite** signe une forme sévère), dactylite, **uvéite antérieure** (25 %), ostéoporose et fractures vertébrales. Activité : **BASDAI** > 4 = maladie active ; **ASDAS** intègre CRP/VS.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Le TNF-α freine la voie Wnt pendant la phase inflammatoire ; quand il baisse, la reconstruction peut démarrer : d'où l'érosion suivie d'ossification aux enthèses.",
+      "verification": {
+        "q": "Quels signes cliniques aident à repérer une SA parmi les lombalgiques chroniques ?",
+        "a": "Âge ≤ 35 ans, amélioration à l'effort et aux AINS, douleurs de la 2e moitié de nuit, pygalgie à bascule."
+      }
+    },
+    {
+      "titre": "Sacro-iliaques en radiographie : inflammation ou surcharge ?",
+      "texte": "La sacro-iliite est la lésion la plus précoce et constante de la SA, typiquement **bilatérale et symétrique** (parfois asymétrique au début). Les lésions prédominent sur la **berge iliaque** (cartilage plus fin). Attention : chez le jeune, les berges sont physiologiquement floues ; l'**hyperparathyroïdie** donne aussi des berges floues et élargies, mais sans réaction osseuse.\n\nLes radiographies n'objectivent que l'atteinte structurale tardive ; seuls 10–12 % des spondyloarthrites axiales développent une sacro-iliite radiographique en 2 ans. Le scanner montre mieux les lésions structurales mais pas l'inflammation.",
+      "figures": [
+        "cotten-t1:fig4.2a",
+        "cotten-t1:fig4.4"
+      ],
+      "legendes": [
+        "Sacro-iliite bilatérale : berges irrégulières et **ostéocondensation floue étendue**.",
+        "**Ankylose** sacro-iliaque bilatérale : la condensation a disparu (plus d'inflammation)."
+      ],
+      "cle": null,
+      "piege": "Une condensation compacte bien limitée au tiers moyen antérieur, sans érosion du pied de l'articulation, est mécanique (fréquente chez la femme multipare).",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelles topographies de l'interligne sacro-iliaque sont évocatrices d'une sacro-iliite inflammatoire plutôt que mécanique ?",
+        "a": "Le tiers inférieur (pied) et la partie postérieure, non soumis aux contraintes mécaniques."
+      }
+    },
+    {
+      "titre": "Sacro-iliaques en IRM : la sacro-iliite active",
+      "texte": "Protocole : coupes **frontales obliques** dans l'axe S1–S3, **T1** et **STIR/T2 FS** ; gadolinium seulement en cas de doute (enthésites, synovites) ; coupes axiales complémentaires. L'articulation comporte une partie **ventrale cartilagineuse** et une partie **dorsale fibreuse** (enthèses).\n\n**Lésions inflammatoires** : œdème osseux (hypersignal STIR) ou ostéite (rehaussement) sous-chondral, prédominant souvent sur la berge iliaque ; synovite, « capsulite », **enthésite** de la partie fibreuse. **Lésions structurales** : sclérose (hyposignal T1/T2), **érosions** (confluentes = pseudo-élargissement), **involution graisseuse** sous-chondrale (hypersignal T1, séquelle d'inflammation), ankylose.\n\nDéfinition **ASAS** d'une sacro-iliite active : œdème/ostéite **obligatoire**, visible sur **au moins deux coupes contiguës** s'il est focal. En pratique, l'association à des lésions structurales augmente la performance, et une enthésite caractéristique est très évocatrice même isolée.",
+      "figures": [
+        "cotten-t1:fig4.10",
+        "cotten-t1:fig4.12",
+        "cotten-t1:fig4.14b"
+      ],
+      "legendes": [
+        "Sacro-iliite bilatérale en T1 (a) et T2 (b) avec **œdème osseux sous-chondral** prédominant sur les berges iliaques.",
+        "Coupe T1 : érosions bilatérales et **involution graisseuse** sous-chondrale (flèches).",
+        "**Surcharge mécanique** : œdème focal de la partie antérieure du tiers moyen avec sclérose (coupe la plus antérieure)."
+      ],
+      "cle": "Sacro-iliite active ASAS = œdème/ostéite sous-chondral ; graisse et érosions = mémoire de l'inflammation.",
+      "piege": "Un œdème d'une seule berge (sacrée) doit faire penser à une fracture par insuffisance du sacrum ou à une tumeur ; et les berges des coupes postérieures sont physiologiquement irrégulières (partie fibreuse).",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi l'injection de gadolinium n'est-elle pas systématique pour les sacro-iliaques ?",
+        "a": "Elle n'est pas plus performante que le STIR/T2 FS pour l'œdème osseux ; on la réserve au doute (enthésites, synovites)."
+      }
+    },
+    {
+      "titre": "Rachis de la SA en radiographie",
+      "texte": "Les lésions débutent à la **charnière thoracolombaire** ou lombosacrée (radiographies centrées) puis s'étendent de façon **ascendante** :",
+      "figures": [
+        "cotten-t1:fig4.15c",
+        "cotten-t1:fig4.17a",
+        "cotten-t1:fig4.19b",
+        "cotten-t1:fig4.22d"
+      ],
+      "legendes": [
+        "**Mise au carré** de plusieurs corps vertébraux thoracolombaires (perte de la concavité antérieure).",
+        "**Syndesmophytes** fins et verticaux reliant les coins vertébraux, symétriques.",
+        "Ossification interépineuse : image de **rail central** de face (flèches).",
+        "**Spondylodiscite d'Andersson** pluriétagée en radiographie et IRM."
+      ],
+      "cle": "Syndesmophyte = fin, vertical, marginal, symétrique (SA) ; parasyndesmophyte = épais, asymétrique, à distance du disque (psoriasis).",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce que la spondylite de Romanus en radiographie ?",
+        "a": "L'érosion du rebord antérieur des corps vertébraux (insertion des fibres de Sharpey) donnant une mise au carré, puis un coin condensé."
+      }
+    },
+    {
+      "titre": "Complications du rachis ankylosé",
+      "texte": "La **fracture rachidienne transversale** survient sur un rachis ankylosé, surtout cervical inférieur, souvent après un traumatisme **mineur** (chute de sa hauteur) et peut passer inaperçue (douleur attribuée à la SA). Elle traverse le disque (ou le corps) **et l'arc postérieur** : elle est très **instable** (bras de levier d'un os long). La rechercher devant une **interruption des syndesmophytes** à un étage, un bâillement ou une lésion d'Andersson sévère contrastant avec l'ankylose adjacente ; scanner et IRM la montrent (hématome épidural, contusion médullaire, artère vertébrale).\n\nAutres complications : **fractures ostéoporotiques** thoraciques multiples ; **ectasie diverticulaire du sac dural** tardive (syndrome de la queue de cheval) avec **scalloping** de l'arc postérieur.",
+      "figures": [
+        "cotten-t1:fig4.34b",
+        "cotten-t1:fig4.35c"
+      ],
+      "legendes": [
+        "Fracture transversale **C6-C7** avec compression médullaire (IRM, scanner).",
+        "**Ectasie diverticulaire du sac dural** avec scalloping de l'arc postérieur."
+      ],
+      "cle": null,
+      "piege": "Inflammation trans- ou juxtadiscale sur un rachis ankylosé : avant de conclure à une spondylodiscite ou à une Andersson, regardez l'arc postérieur du même étage.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi la fracture transversale du rachis ankylosé est-elle si dangereuse ?",
+        "a": "Elle intéresse les trois colonnes (disque/corps et arc postérieur), est très instable, souvent méconnue après un traumatisme mineur, avec risque neurologique."
+      }
+    },
+    {
+      "titre": "Rachis de la SA en IRM",
+      "texte": "Protocole : sagittal **STIR/T2 FS et T1** (± gadolinium pour enthésites et zygapophyses), coupes parasagittales systématiques et axiales si besoin. L'inflammation rachidienne peut exister **sans sacro-iliite** (23 % des SA actives) et prédit la réponse aux anti-TNF-α.",
+      "figures": [
+        "cotten-t1:fig4.26",
+        "cotten-t1:fig4.31",
+        "cotten-t1:fig4.32a"
+      ],
+      "legendes": [
+        "**Ostéite de quatre coins vertébraux** en hypersignal T2, à disposition verticale le long du mur antérieur.",
+        "Multiples **coins vertébraux graisseux** en T1.",
+        "Ostéite de plusieurs **processus épineux** de la charnière thoracolombaire."
+      ],
+      "cle": null,
+      "piege": "Un coin vertébral inflammatoire isolé existe chez jusqu'à 26 % des sujets asymptomatiques ; et les Modic 1 d'une discopathie siègent sur un disque pincé en hyposignal T2.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel est le principal diagnostic différentiel d'un coin vertébral inflammatoire et comment le reconnaître ?",
+        "a": "La micro-avulsion des fibres de Sharpey : 1–3 étages lombaires bas, hypersignal ou rehaussement horizontal, enthésophyte de traction horizontal."
+      }
+    },
+    {
+      "titre": "SA : articulations périphériques, enthèses et traitement",
+      "texte": "Les articulations périphériques sont surtout les **hanches** (50 %) : pincement **concentrique** avec **ostéophytose péricapitale** marquée, protrusion moins fréquente que dans la PR, ankylose possible. Ailleurs : pincement et érosions marginales asymétriques hyperostosantes. La symphyse pubienne et l'articulation manubriosternale ont la même sémiologie que les sacro-iliaques.\n\n**Enthésites** : calcanéus (faces postérieure et plantaire, érosions hyperostosantes bilatérales), tubérosité tibiale, patella, ischium, grand trochanter. L'IRM et l'échographie (épaississement hypoéchogène, **Doppler**, érosions) les voient avant la radiographie ; méfiance avec l'artefact de bord en Doppler et avec l'échographie réalisée juste après une marche.\n\n**Traitement** : AINS (effet possible sur la progression des syndesmophytes), kinésithérapie, **anti-TNF-α** dans les formes actives réfractaires (y compris non radiographiques avec sacro-iliite IRM) ; les traitements de fond classiques sont **inefficaces** sur l'atteinte axiale.",
+      "figures": [
+        "cotten-t1:fig4.36b",
+        "cotten-t1:fig4.40"
+      ],
+      "legendes": [
+        "**Coxite** : pincement concentrique et ostéophytose.",
+        "**Enthésite du tendon calcanéen** : épaississement hypoéchogène, érosion et hyperhémie Doppler."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Le méthotrexate est-il efficace sur l'atteinte axiale de la SA ?",
+        "a": "Non : aucun traitement de fond classique (MTX, léflunomide, sulfasalazine) n'est efficace sur l'atteinte axiale ; on utilise AINS puis anti-TNF-α."
+      }
+    },
+    {
+      "titre": "Rhumatisme psoriasique : clinique et critères",
+      "texte": "Un psoriasique sur 7 à 3 développe un rhumatisme, le plus souvent 5 à 12 ans après la peau, mais il peut le précéder (10–20 %) : rechercher un psoriasis familial ou **unguéal**. Pic 30–50 ans, sexe-ratio 1. Le concept de **complexe synovio-enthésal** (ongle, phalange distale, extenseur, IPD) explique l'onychodystrophie et l'atteinte des IPD ; les microtraumatismes des enthèses (phénomène de Koebner profond) déclenchent l'inflammation.\n\nFormes de Moll et Wright : **oligoarthrite asymétrique** (70 %), polyarthrite symétrique (15–25 %), atteinte prédominante des **IPD**, forme **mutilante** (< 5 %, doigts en lorgnette), pelvispondylite (5 %). Ajoutez enthésites, **dactylite** (très évocatrice), syndrome **OP3GO** (onychopachydermopériostite du gros orteil).",
+      "figures": [],
+      "legendes": [],
+      "cle": "CASPAR : sensibilité 91,4 %, spécificité 98,7 % ; la radiographie y compte par la néoformation juxta-articulaire.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce que le syndrome OP3GO ?",
+        "a": "Onychopachydermopériostite psoriasique du gros orteil : onychodystrophie, épaississement inflammatoire des parties molles et ostéopériostite de la phalange distale, IPD respectée."
+      }
+    },
+    {
+      "titre": "Rhumatisme psoriasique : mains et pieds en radiographie",
+      "texte": "C'est aux mains et aux pieds que la sémiologie est la plus caractéristique :",
+      "figures": [
+        "cotten-t1:fig4.42",
+        "cotten-t1:fig4.45a",
+        "cotten-t1:fig4.47",
+        "cotten-t1:fig4.56"
+      ],
+      "legendes": [
+        "**Syndrome OP3GO** : phalange distale de l'hallux dense et hérissée.",
+        "Atteinte **en rayon** des 2e et 3e doigts.",
+        "Hyperostose de la **base de P1** de la 2e MCP (têtes de flèches).",
+        "**Pencil-in-cup** des IPD et ankylose (pointe de flèche)."
+      ],
+      "cle": null,
+      "piege": "Une prolifération périostée exubérante d'une phalange ou du radius n'est pas une tumeur : pensez au rhumatisme psoriasique.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Où se situent les érosions hyperostosantes aux MCP dans le rhumatisme psoriasique, comparé à la PR ?",
+        "a": "Surtout sur la base de P1 (PR : bord radial des têtes métacarpiennes)."
+      }
+    },
+    {
+      "titre": "Rhumatisme psoriasique : bassin et rachis",
+      "texte": "La **sacro-iliite** est le plus souvent bilatérale mais **asymétrique**, et les formes **unilatérales** sont bien plus fréquentes que dans la SA ; la condensation est plus marquée, l'ankylose moins fréquente ; enthésites du bassin (ischiums, trochanters).\n\nAu rachis, distribution **aléatoire** (non ascendante), atteinte cervicale fréquente, rachis possible sans sacro-iliite. Thoracolombaire : **parasyndesmophytes** (épais, irréguliers, unilatéraux ou asymétriques, à distance du disque, implantation large au-dessus du coin), rareté du Romanus et de l'atteinte zygapophysaire. Cervical : **subluxation C1-C2** parfois inaugurale, arthrites zygapophysaires, syndesmophytes. En IRM, un parasyndesmophyte en formation donne une inflammation paravertébrale focale latéralisée trompeuse.",
+      "figures": [
+        "cotten-t1:fig4.60a",
+        "cotten-t1:fig4.62a"
+      ],
+      "legendes": [
+        "**Parasyndesmophytes** unilatéraux et épais (flèches).",
+        "Diastasis C1-C2 et impression basilaire avec compression médullaire."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Les zygapophyses restant mobiles dans le psoriasis, le segment discal bouge encore : l'ossification se fait à distance du disque, en pont épais (parasyndesmophyte).",
+      "verification": {
+        "q": "Une sacro-iliite unilatérale évoque quelle spondyloarthrite ?",
+        "a": "Le rhumatisme psoriasique (ou une arthrite réactionnelle) ; après avoir éliminé une sacro-iliite infectieuse."
+      }
+    },
+    {
+      "titre": "Rhumatisme psoriasique : IRM et échographie",
+      "texte": "**IRM** : l'**enthésite** est l'élément le plus évocateur : hypersignal T2 et rehaussement des structures capsuloligamentaires et des tissus mous, et surtout **ostéite** (l'enthèse est en grande partie intraosseuse) **très étendue**, bien au-delà des zones synoviales, parfois isolée au début ; œdème plurifocal excentré du tarse à ne pas prendre pour une algodystrophie. La synovite peut être secondaire à l'enthésite adjacente (IPD). La **dactylite** associe ténosynovite, synovite, ostéite et infiltration **circonférentielle** des tissus mous.\n\n**Échographie** : enthèse épaissie hypoéchogène avec **Doppler** et surtout **érosions hyperostosantes** ; périostite (apposition linéaire hyperéchogène vascularisée) ; synovites, ténosynovites ; dactylite avec infiltration de l'hypoderme ; **onychopathie** (perte de l'aspect trilaminaire, lit unguéal > 2,5 mm vascularisé). Elle ne voit pas l'ostéite.",
+      "figures": [
+        "cotten-t1:fig4.66a",
+        "cotten-t1:fig4.73c",
+        "cotten-t1:fig4.79b",
+        "cotten-t1:fig4.80"
+      ],
+      "legendes": [
+        "**Œdème osseux** de M1 et P1 du 4e rayon, très étendu par rapport aux zones d'insertion synoviale.",
+        "Enthésite du tendon calcanéen : érosion et **hyperhémie Doppler**.",
+        "**Dactylite** : infiltration hétérogène hyperhémiée des tissus mous comparée au côté sain.",
+        "**Onychopathie** : ongle épaissi, perte de l'organisation trilaminaire, lit hypervascularisé."
+      ],
+      "cle": "Ostéite extensive centrée sur une enthèse = rhumatisme psoriasique jusqu'à preuve du contraire.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel signe IRM d'une monoarthrite inexpliquée oriente vers une spondyloarthrite ?",
+        "a": "Des enthésites associées (avec ostéite en regard des insertions)."
+      }
+    },
+    {
+      "titre": "Arthrites réactionnelles et entérocolopathies",
+      "texte": "Les **arthrites réactionnelles** suivent de 1 à 2 semaines (jusqu'à 4) une infection **génitale** (*Chlamydia trachomatis* surtout), **digestive** (*Yersinia, Salmonella, Shigella, Campylobacter*) ou respiratoire. Oligoarthrite asymétrique brutale des membres inférieurs, enthésites, dactylite, conjonctivite, balanite circinée, kératodermie ; triade arthrite–urétrite–conjonctivite de **Fiessinger-Leroy-Reiter**. Imagerie : déminéralisation aiguë puis sémiologie proche du psoriasis (reconstructions, parasyndesmophytes, sacro-iliite unilatérale) avec prédominance aux **pieds** (73 %). Après BCG-thérapie intravésicale, éliminer d'abord une arthrite à *M. bovis*.\n\n**Crohn et RCH** : arthrite périphérique **type 1** (oligoarthrite aiguë des grosses articulations, liée aux poussées digestives, non érosive), **type 2** (polyarthrite des petites articulations, indépendante de l'activité intestinale), **spondyloarthrite axiale** (4–10 %, sémiologie de SA, indépendante de la colectomie) et **sacro-iliite isolée** asymptomatique.",
+      "figures": [
+        "cotten-t1:fig4.82",
+        "cotten-t1:fig4.83"
+      ],
+      "legendes": [
+        "SA associée à une maladie de **Crohn** : mise au carré et syndesmophytes.",
+        "**Sacro-iliite** bilatérale isolée chez une patiente atteinte de Crohn."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle arthrite des entérocolopathies est liée aux poussées digestives ?",
+        "a": "L'arthrite périphérique de type 1 (oligoarthrite aiguë des grosses articulations, non érosive)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Bassin de face : berges sacro-iliaques floues et irrégulières, notamment au pied de l'articulation (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig4.1",
+      "options": [
+        "Sacro-iliite inflammatoire bilatérale",
+        "Surcharge mécanique",
+        "Ostéite condensante iliaque",
+        "Aspect normal de l'adolescent"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte bilatérale du tiers inférieur, zone non soumise aux contraintes mécaniques.",
+      "page": "p. 141",
+      "image_origine": "c04/f4.1"
+    },
+    {
+      "question": "Scanner des sacro-iliaques (deux patients) : érosions bilatérales et ostéocondensation sous-chondrale de contour flou. Diagnostic ?",
+      "figure": null,
+      "options": [
+        "Sacro-iliite bilatérale de spondylarthrite ankylosante",
+        "Ostéose iliaque condensante",
+        "Arthrose sacro-iliaque",
+        "Sacro-iliite infectieuse"
+      ],
+      "reponse": 0,
+      "explication": "Légende : spondylarthrite ankylosante, sacro-iliite bilatérale avec érosions et ostéocondensation sous-chondrale réactionnelle de contour flou.",
+      "page": "p. 142",
+      "image_origine": "c04/f4.5"
+    },
+    {
+      "question": "Scanner : condensation compacte avec petites érosions focales bien limitées à la partie antérieure du tiers moyen. Diagnostic ?",
+      "figure": "cotten-t1:fig4.6a",
+      "options": [
+        "Phénomènes de surcharge mécanique",
+        "Sacro-iliite de SA",
+        "Sacro-iliite infectieuse",
+        "Hyperparathyroïdie"
+      ],
+      "reponse": 0,
+      "explication": "Condensation compacte limitée au tiers moyen antérieur : mécanique.",
+      "page": "p. 142–143",
+      "image_origine": "c04/f4.6"
+    },
+    {
+      "question": "Scanner des sacro-iliaques d'un patient atteint de spondylarthrite ankylosante. Que montre-t-il ?",
+      "figure": "cotten-t1:fig4.7",
+      "options": [
+        "Ankylose complète à droite, partielle à gauche",
+        "Érosions bilatérales sans ankylose",
+        "Ankylose bilatérale complète",
+        "Pseudo-élargissement bilatéral des interlignes"
+      ],
+      "reponse": 0,
+      "explication": "Légende : spondylarthrite ankylosante, ankylose droite complète, gauche partielle (= grade 4 à droite).",
+      "page": "p. 143",
+      "image_origine": "c04/f4.7"
+    },
+    {
+      "question": "IRM frontale T1 gadolinium (a) puis coupe plus postérieure (b) : rehaussement de la partie fibreuse. Quelle lésion ?",
+      "figure": "cotten-t1:fig4.9c",
+      "options": [
+        "Enthésite de la partie fibreuse",
+        "Synovite septique",
+        "Fracture de fatigue",
+        "Tumeur sacrée"
+      ],
+      "reponse": 0,
+      "explication": "L'enthésite s'observe essentiellement à la partie fibreuse (dorsale) de l'articulation.",
+      "page": "p. 144",
+      "image_origine": "c04/f4.9"
+    },
+    {
+      "question": "IRM, coupe frontale T1 des sacro-iliaques (spondylarthrite ankylosante). Quelle lésion ?",
+      "figure": "cotten-t1:fig4.13",
+      "options": [
+        "Ankylose complète à droite, partielle à gauche (lésion structurale)",
+        "Ostéite active bilatérale",
+        "Érosions infectieuses",
+        "Fracture de contrainte du sacrum"
+      ],
+      "reponse": 0,
+      "explication": "Légende : coupe frontale T1, ankylose droite complète, gauche partielle (même patient que la fig. 4.7) — lésion structurale, séquelle de l'inflammation.",
+      "page": "p. 145–146",
+      "image_origine": "c04/f4.13"
+    },
+    {
+      "question": "Profil et scanner : érosion des coins antérieurs avec coin condensé. Quel signe ?",
+      "figure": "cotten-t1:fig4.16c",
+      "options": [
+        "Spondylite de Romanus (shiny corner)",
+        "Syndesmophyte",
+        "Hernie intraspongieuse",
+        "Fracture-tassement"
+      ],
+      "reponse": 0,
+      "explication": "Érosion du coin antérieur (fibres de Sharpey) suivie d'une condensation réactionnelle.",
+      "page": "p. 146–147",
+      "image_origine": "c04/f4.16"
+    },
+    {
+      "question": "Profil thoracique : ossification du ligament longitudinal antérieur (flèches). Contexte le plus probable ?",
+      "figure": "cotten-t1:fig4.17b",
+      "options": [
+        "SA évoluée",
+        "Hyperostose vertébrale (DISH)",
+        "Rhumatisme psoriasique",
+        "Ochronose"
+      ],
+      "reponse": 0,
+      "explication": "Dans la SA, les syndesmophytes s'épaississent et se prolongent dans le LLA.",
+      "page": "p. 147",
+      "image_origine": "c04/f4.18"
+    },
+    {
+      "question": "Profil lombaire : ossification des disques intervertébraux sur un rachis ankylosé. Signification ?",
+      "figure": "cotten-t1:fig4.19a",
+      "options": [
+        "Ankylose du segment avec ossification discale",
+        "Calcifications d'apatite",
+        "Ochronose",
+        "Chondrocalcinose discale"
+      ],
+      "reponse": 0,
+      "explication": "Les disques s'ossifient lorsque le segment rachidien est ankylosé.",
+      "page": "p. 147",
+      "image_origine": "c04/f4.19"
+    },
+    {
+      "question": "Radiographie, scanner et IRM gadolinium : lésion discovertébrale érosive cerclée de condensation (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig4.21c",
+      "options": [
+        "Spondylodiscite d'Andersson",
+        "Spondylodiscite tuberculeuse",
+        "Métastase",
+        "Hernie de Schmorl banale"
+      ],
+      "reponse": 0,
+      "explication": "Lésion érosive focale cerclée de condensation : atteinte discovertébrale de la SA.",
+      "page": "p. 148–149",
+      "image_origine": "c04/f4.21"
+    },
+    {
+      "question": "Rachis cervical de profil : diastasis C1-C2 avec ankylose zygapophysaire pluriétagée. Contexte ?",
+      "figure": "cotten-t1:fig4.23",
+      "options": [
+        "SA évoluée",
+        "PR débutante",
+        "Os odontoideum",
+        "Fracture de l'odontoïde"
+      ],
+      "reponse": 0,
+      "explication": "L'atteinte de la charnière cervico-occipitale ne s'observe que dans les SA évoluées.",
+      "page": "p. 150",
+      "image_origine": "c04/f4.23"
+    },
+    {
+      "question": "Fracture horizontale avec impaction antérieure sur un rachis ankylosé, imagée en IRM. Quelle complication ?",
+      "figure": "cotten-t1:fig4.25f",
+      "options": [
+        "Fracture transversale instable",
+        "Spondylodiscite infectieuse",
+        "Andersson non compliquée",
+        "Tassement ostéoporotique simple"
+      ],
+      "reponse": 0,
+      "explication": "La fracture transversale traverse le disque et l'arc postérieur : très instable.",
+      "page": "p. 150",
+      "image_origine": "c04/f4.25"
+    },
+    {
+      "question": "IRM sagittale T2 (a) et T1 (b) de la charnière thoracolombaire, spondylarthrite ankylosante. Que montrent les corps vertébraux ?",
+      "figure": "cotten-t1:fig4.27b",
+      "options": [
+        "Mise au carré, coins peu inflammatoires en T2, signal graisseux en T1",
+        "Ostéite active des coins (Romanus inflammatoires)",
+        "Spondylodiscite pluriétagée",
+        "Métastases vertébrales"
+      ],
+      "reponse": 0,
+      "explication": "Légende : « mise au carré » de plusieurs corps vertébraux ; les coins sont peu inflammatoires en T2 et l'on observe essentiellement un signal de type graisseux en T1.",
+      "page": "p. 151–152",
+      "image_origine": "c04/f4.27"
+    },
+    {
+      "question": "IRM sagittale T1, T2 et T1 gadolinium : inflammation s'étendant sous le plateau à partir du coin. Signe ?",
+      "figure": "cotten-t1:fig4.29b",
+      "options": [
+        "Romanus magnétique",
+        "Modic 1 dégénératif",
+        "Spondylodiscite septique",
+        "Infarctus osseux"
+      ],
+      "reponse": 0,
+      "explication": "L'ostéite des coins peut s'étendre sous le plateau vertébral.",
+      "page": "p. 152",
+      "image_origine": "c04/f4.29"
+    },
+    {
+      "question": "IRM lombaire, spondylarthrite ankylosante : T1 (a), T2 (b), T1 gadolinium (c, d). Quelles lésions n'apparaissent qu'après injection ?",
+      "figure": "cotten-t1:fig4.33b",
+      "options": [
+        "Enthésite inter-/supraépineuse et synovite zygapophysaire pluriétagée",
+        "Hernie discale L3-L4",
+        "Spondylodiscite L3-L4",
+        "Fracture du coin antérosupérieur"
+      ],
+      "reponse": 0,
+      "explication": "Légende : enthésite des ligaments inter et supraépineux difficile à voir en T1 et T2, évidente après gadolinium ; ostéite des coins antérosupérieurs de L3-L4 ; synovite zygapophysaire pluriétagée détectable uniquement après injection.",
+      "page": "p. 153–155",
+      "image_origine": "c04/f4.33"
+    },
+    {
+      "question": "Bassin : ankylose coxofémorale associée à une ankylose sacro-iliaque. Diagnostic ?",
+      "figure": "cotten-t1:fig4.37",
+      "options": [
+        "SA sévère",
+        "PR",
+        "Coxarthrose",
+        "Ostéonécrose"
+      ],
+      "reponse": 0,
+      "explication": "La coxite témoigne d'une SA sévère ; l'ankylose est possible mais rare.",
+      "page": "p. 157",
+      "image_origine": "c04/f4.37"
+    },
+    {
+      "question": "IRM sagittale de cheville T1 et T2 : arthrite talonaviculaire chez un patient atteint de SA. Que traduit-elle ?",
+      "figure": null,
+      "options": [
+        "Arthrite périphérique de spondyloarthrite",
+        "Ostéonécrose du talus",
+        "Fracture de fatigue",
+        "Coalition"
+      ],
+      "reponse": 0,
+      "explication": "Les arthrites périphériques des membres inférieurs sont fréquentes dans les spondyloarthrites.",
+      "page": "p. 157",
+      "image_origine": "c04/f4.38"
+    },
+    {
+      "question": "Ostéocondensation et prolifération osseuse de la phalange distale de l'hallux. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig4.41",
+      "options": [
+        "Rhumatisme psoriasique",
+        "Ostéome ostéoïde",
+        "Goutte",
+        "Ostéomyélite"
+      ],
+      "reponse": 0,
+      "explication": "Atteinte proliférante de la phalange distale typique du rhumatisme psoriasique.",
+      "page": "p. 162",
+      "image_origine": "c04/f4.41"
+    },
+    {
+      "question": "Arthrite IPP et IPD d'un même doigt (têtes de flèches). Quel argument contre une PR ?",
+      "figure": "cotten-t1:fig4.43",
+      "options": [
+        "Atteinte de l'IPD",
+        "Pincement diffus",
+        "Érosion marginale",
+        "Tuméfaction des parties molles"
+      ],
+      "reponse": 0,
+      "explication": "Les IPD sont épargnées par la PR mais atteintes dans le rhumatisme psoriasique.",
+      "page": "p. 162",
+      "image_origine": "c04/f4.43"
+    },
+    {
+      "question": "Atteinte érosive et surtout hyperostosante (flèches) de plusieurs articulations d'un orteil. Diagnostic ?",
+      "figure": "cotten-t1:fig4.44",
+      "options": [
+        "Rhumatisme psoriasique",
+        "PR",
+        "Goutte",
+        "Arthrose"
+      ],
+      "reponse": 0,
+      "explication": "Érosions hyperostosantes avec efflorescences : rhumatisme psoriasique.",
+      "page": "p. 163",
+      "image_origine": "c04/f4.44"
+    },
+    {
+      "question": "Arthrite IPP avec appositions périostées des phalanges (flèches). Quel signe oriente vers le psoriasis ?",
+      "figure": "cotten-t1:fig4.50",
+      "options": [
+        "Périostite juxta-articulaire",
+        "Pincement asymétrique",
+        "Ostéophytes",
+        "Chondrocalcinose"
+      ],
+      "reponse": 0,
+      "explication": "Les appositions périostées sont un signe de reconstruction des spondyloarthrites.",
+      "page": "p. 164",
+      "image_origine": "c04/f4.50"
+    },
+    {
+      "question": "Poignet : arthropathie radiocarpienne et proliférations floues du bord radial du radius (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig4.52a",
+      "options": [
+        "Rhumatisme psoriasique",
+        "Ostéosarcome périosté",
+        "PR",
+        "Kienböck"
+      ],
+      "reponse": 0,
+      "explication": "Les proliférations exubérantes du bord radial du radius sont évocatrices du rhumatisme psoriasique.",
+      "page": "p. 163–165",
+      "image_origine": "c04/f4.52"
+    },
+    {
+      "question": "Pied : ankylose de plusieurs MTP et interphalangiennes. Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig4.54a",
+      "options": [
+        "Rhumatisme psoriasique",
+        "PR",
+        "Goutte",
+        "Arthropathie neurogène"
+      ],
+      "reponse": 0,
+      "explication": "L'ankylose des petites articulations est très évocatrice du rhumatisme psoriasique.",
+      "page": "p. 165",
+      "image_origine": "c04/f4.54"
+    },
+    {
+      "question": "Importante résorption des berges des articulations interphalangiennes, doigts raccourcis. Forme clinique ?",
+      "figure": "cotten-t1:fig4.57",
+      "options": [
+        "Arthrite mutilante psoriasique",
+        "PR robuste",
+        "Arthrose érosive",
+        "Sclérodermie"
+      ],
+      "reponse": 0,
+      "explication": "La résorption osseuse diaphysaire raccourcit le doigt : doigt en lorgnette de la forme mutilante.",
+      "page": "p. 165–166",
+      "image_origine": "c04/f4.57"
+    },
+    {
+      "question": "Calcanéus de profil : érosions hyperostosantes postérosupérieures et plantaires exubérantes. Orientation ?",
+      "figure": "cotten-t1:fig4.59",
+      "options": [
+        "Enthésite psoriasique",
+        "Enthésophyte mécanique",
+        "Fracture de fatigue",
+        "Maladie de Haglund"
+      ],
+      "reponse": 0,
+      "explication": "C'est l'abondance de la prolifération qui évoque l'origine psoriasique.",
+      "page": "p. 165–166",
+      "image_origine": "c04/f4.59"
+    },
+    {
+      "question": "Bassin : proliférations osseuses des grand et petit trochanters et de l'ischium. Signification ?",
+      "figure": "cotten-t1:fig4.60b",
+      "options": [
+        "Enthésites hyperostosantes (spondyloarthrite)",
+        "Exostoses multiples",
+        "Myosite ossifiante",
+        "Métastases condensantes"
+      ],
+      "reponse": 0,
+      "explication": "Enthésites du bassin associées au rhumatisme psoriasique.",
+      "page": "p. 166–167",
+      "image_origine": "c04/f4.60"
+    },
+    {
+      "question": "IRM sagittale T2 d'un doigt : œdème osseux étendu de P2. Contexte de psoriasis. Interprétation ?",
+      "figure": "cotten-t1:fig4.66b",
+      "options": [
+        "Ostéite enthésitique psoriasique",
+        "Ostéome ostéoïde",
+        "Fracture de fatigue",
+        "Enchondrome"
+      ],
+      "reponse": 0,
+      "explication": "L'ostéite extensive est très évocatrice du rhumatisme psoriasique.",
+      "page": "p. 169",
+      "image_origine": "c04/f4.66"
+    },
+    {
+      "question": "Spondylodiscite T7-T8 érosive et condensante avec parasyndesmophyte chez un psoriasique. Diagnostic ?",
+      "figure": "cotten-t1:fig4.71e",
+      "options": [
+        "Spondylodiscite d'Andersson psoriasique",
+        "Mal de Pott",
+        "Métastase",
+        "Hernie calcifiée"
+      ],
+      "reponse": 0,
+      "explication": "L'Andersson est plus rare dans le psoriasis que dans la SA mais possible, ici avec parasyndesmophyte.",
+      "page": "p. 171–172",
+      "image_origine": "c04/f4.71"
+    },
+    {
+      "question": "Échographie : fine apposition périostée diaphysaire hyperhémiée (flèche) en regard d'une ténosynovite. Signe ?",
+      "figure": "cotten-t1:fig4.76b",
+      "options": [
+        "Périostite psoriasique",
+        "Fracture de fatigue",
+        "Ostéophyte",
+        "Calcification d'apatite"
+      ],
+      "reponse": 0,
+      "explication": "La périostite se traduit par une apposition linéaire hyperéchogène avec Doppler dans la moitié des cas.",
+      "page": "p. 172–174",
+      "image_origine": "c04/f4.76"
+    },
+    {
+      "question": "Échographie longitudinale d'une MCP : érosions hyperostosantes et synovite hyperhémiée. Diagnostic ?",
+      "figure": "cotten-t1:fig4.78a",
+      "options": [
+        "Rhumatisme psoriasique",
+        "PR",
+        "Arthrose",
+        "Goutte"
+      ],
+      "reponse": 0,
+      "explication": "Les érosions marginales hyperostosantes sont très évocatrices.",
+      "page": "p. 173–175",
+      "image_origine": "c04/f4.78"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Un groupe, des critères",
+        "Spondylarthrite ankylosante : terrain et physiopathologie",
+        "Sacro-iliaques en radiographie : inflammation ou surcharge ?",
+        "Sacro-iliaques en IRM : la sacro-iliite active"
+      ],
+      "secs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "hs": [
+        "Rachis de la SA en radiographie",
+        "Complications du rachis ankylosé",
+        "Rachis de la SA en IRM"
+      ],
+      "secs": [
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        27
+      ]
+    },
+    {
+      "hs": [
+        "SA : articulations périphériques, enthèses et traitement",
+        "Rhumatisme psoriasique : clinique et critères",
+        "Rhumatisme psoriasique : mains et pieds en radiographie"
+      ],
+      "secs": [
+        7,
+        8,
+        9
+      ],
+      "qs": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "hs": [
+        "Rhumatisme psoriasique : bassin et rachis",
+        "Rhumatisme psoriasique : IRM et échographie",
+        "Arthrites réactionnelles et entérocolopathies"
+      ],
+      "secs": [
+        10,
+        11,
+        12
+      ],
+      "qs": [
+        15,
+        16,
+        25,
+        26,
+        28,
+        29
+      ]
+    }
+  ],
+  "ancien_id": "c04",
+  "images_non_rattachees": [
+    "c04/f4.24",
+    "c04/f4.3",
+    "c04/f4.38",
+    "c04/f4.5",
+    "c04/s4.8"
+  ]
+}

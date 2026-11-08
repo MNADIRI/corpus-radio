@@ -1,0 +1,873 @@
+{
+  "id": "cotten-t1:c13",
+  "domaine": "msk",
+  "livre": "cotten-t1",
+  "chapitre": 12,
+  "chapitre_libelle": "Ostéopathies et métabolisme",
+  "titre": "Ostéopathies : ostéoporose, rachitisme, ostéomalacie, Paget, os irradié",
+  "pages": "380–436",
+  "objectifs": [
+    "Relier la physiologie du remodelage (RANKL/OPG, PTH, vitamine D, œstrogènes) aux grandes ostéopathies, et maîtriser la densitométrie (T-score, limites de la DXA, FRAX)",
+    "Reconnaître une fracture vertébrale ostéoporotique (Genant, critères radiographiques, scanner et IRM de bénignité) et la distinguer d'un tassement malin",
+    "Identifier les signes du rachitisme, de l'ostéomalacie (stries de Looser-Milkman), de la maladie de Paget (4 signes cardinaux, signal graisseux, complications) et les remaniements osseux après radiothérapie"
+  ],
+  "essentiels": [
+    "Remodelage : couple ostéoclaste/ostéoblaste dans une BMU (unité de remodelage), cycle ~4 mois ; os trabéculaire renouvelé 25 %/an contre 3–4 % pour le cortical ; **RANKL** active les ostéoclastes, **OPG** est son récepteur leurre ; la sclérostine (ostéocyte) freine la formation (voie Wnt).",
+    "Ostéoporose OMS (DXA, femme ménopausée) : **T-score ≤ –2,5** ; ostéopénie entre –1 et –2,5 ; confirmée = + fracture. La DXA mesure une densité **surfacique** (g/cm²), faussement élevée par l'arthrose, la scoliose et les tassements.",
+    "Radiographie : il faut perdre **30–50 %** du minéral pour voir l'ostéopénie ; vertèbres **striées verticalement** sur plusieurs étages (pseudo-angiomateuses), puis vertèbres « fantômes ».",
+    "Fracture vertébrale (Genant) : perte de hauteur **> 20 %** ; grade 1 : 20–25 %, grade 2 : 25–40 %, grade 3 : > 40 % ; formes cunéiforme, biconcave, en galette ; seule 1 fracture sur 4 est reconnue cliniquement.",
+    "Bénignité : ostéopénie diffuse, sous T7, fractures multiples, **impaction de tout le plateau**, pas d'ostéolyse, **recul du coin postérosupérieur**, arc postérieur intact, **vide intrasomatique** (gaz) ou **fente liquidienne** ; IRM : œdème **en bande** sous le plateau, rehaussement homogène, signal graisseux normal à distance.",
+    "Rachitisme (squelette en croissance) : cartilage de croissance **élargi**, métaphyse **floue, frangée, en cupule**, « près du genou, loin du coude » ; cause commune = **hypophosphatémie** ; DD (diagnostic différentiel) : chondrodysplasie métaphysaire de Schmid (bilan normal).",
+    "Ostéomalacie : excès de tissu ostéoïde ; trame **floue, délavée** ; **stries de Looser-Milkman** bilatérales, symétriques, perpendiculaires à la corticale, sans cal (branches pubiennes, bord médial du col fémoral, bord axillaire de la scapula) ; hypophosphatémie liée à l'X : **ostéocondensation axiale et enthésopathies**.",
+    "Paget : **front de résorption en V** (os long) / ostéoporose circonscrite (crâne), puis 4 signes cardinaux (résorption, épaississement des travées, épaississement cortical, **élargissement**) ; IRM : moelle **graisseuse** ; sarcome < 1 % (remplacement de la moelle + masse) ; os irradié : moelle graisseuse en 6–8 semaines, ostéoradionécrose **sans expansion**, sarcome radio-induit après ≥ 4 ans."
+  ],
+  "introduction": "Ce chapitre regroupe les grandes maladies générales de l'os. Tout part du **remodelage osseux** : quand la résorption l'emporte, on aboutit à l'ostéoporose ; quand la minéralisation fait défaut, au rachitisme (enfant) ou à l'ostéomalacie (adulte) ; quand le remodelage s'emballe localement, à la maladie de Paget ; quand les cellules et les vaisseaux sont détruits, à l'os radique. Pour le radiologue, l'enjeu pratique est double : ne **jamais passer à côté d'une fracture vertébrale ostéoporotique** (sous-diagnostiquée dans 27 à 47 % des cas) et savoir **différencier ces atteintes bénignes d'une tumeur** (tassement malin, sarcome sur Paget, récidive après radiothérapie).",
+  "sections": [
+    {
+      "titre": "Physiologie : os cortical, os trabéculaire et cellules",
+      "texte": "L'os adulte est **lamellaire** ; l'os **tissé** (fibres anarchiques, peu résistant) se voit chez le jeune enfant, dans les cals, certaines tumeurs et la **maladie de Paget**.\n\n**Os cortical** (80 % du squelette, diaphyses, périphérie des os) : ostéons cylindriques autour des canaux de Havers, reliés par les canaux de Volkmann → résistance. **Os trabéculaire** (20 %, vertèbres, os plats, épiphyses, métaphyses) : grande surface d'échange, renouvellement bien plus rapide → premier touché par les maladies métaboliques.\n\n**Ostéoclaste** (lignée macrophagique, multinucléé) : adhère à l'os, acidifie (pompe à protons) et digère la matrice (cathepsine K) → lacune de Howship ; vit ~2 semaines. **Ostéoblaste** (cellule mésenchymateuse, facteurs Runx2, Ostérix) : fabrique le **tissu ostéoïde** (collagène de type 1) puis le minéralise grâce aux **phosphatases alcalines**. **Ostéocyte** : ostéoblaste emmuré, capteur mécanique, sécrète la **sclérostine** (inhibe la formation). **Cellules bordantes** : ostéoblastes au repos.\n\nMatrice : 65–70 % de minéral (hydroxyapatite), 30–35 % organique (90 % collagène de type 1).",
+      "figures": [
+        "cotten-t1:fig13.1"
+      ],
+      "legendes": [
+        "Extrémité proximale du fémur : **os cortical** en périphérie, **os trabéculaire** dans l'épiphyse et la métaphyse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "L'os trabéculaire a une surface 8 à 10 fois plus grande et beaucoup plus d'unités de remodelage : c'est pourquoi les vertèbres (surtout trabéculaires) fracturent les premières dans l'ostéoporose post-ménopausique.",
+      "verification": {
+        "q": "Quelle part du squelette est trabéculaire, et pourquoi est-elle la plus vulnérable ?",
+        "a": "~20 % ; elle a une grande surface d'échange et un remodelage rapide (25 %/an contre 3–4 % pour l'os cortical)."
+      }
+    },
+    {
+      "titre": "Remodelage et hormones : RANKL, OPG, PTH, vitamine D",
+      "texte": "Le remodelage se fait dans des **BMU** : activation des cellules bordantes → **résorption** ostéoclastique → **inversion** → **formation** (tissu ostéoïde puis minéralisation au front de minéralisation) → quiescence (minéralisation secondaire). Cycle ~**4 mois**.\n\n**RANKL** (ostéoblastes, lymphocytes T) se lie à **RANK** sur les précurseurs ostéoclastiques → différenciation, activation, survie. L'**OPG** est un **récepteur leurre** soluble de RANKL. La PTH, la vitamine D, l'IL-1/6, le TNF-α et les glucocorticoïdes augmentent le rapport RANKL/OPG ; les œstrogènes et la voie Wnt le diminuent. RANKL est surexprimé dans le myélome, les métastases lytiques, le pannus de la PR (polyarthrite rhumatoïde) et la carence œstrogénique (base du **dénosumab**, anticorps anti-RANKL).\n\n**Voie Wnt/β-caténine** : stimule la formation ; inhibée par la **sclérostine** et Dkk. Perte de la sclérostine → **sclérostéose**, maladie de van Buchem (os dense).\n\n**PTH** : résorption si continue, effet **anabolique** si intermittente (base du tériparatide) ; stimule la 1-α-hydroxylase rénale. **Vitamine D** : peau (UVB) → foie (**25(OH)D**, reflet des réserves) → rein (**1,25(OH)₂D**, forme active) ; absorption intestinale du calcium et du phosphate. Carence → hyperparathyroïdie secondaire → rachitisme / ostéomalacie. **Œstrogènes** : principaux freins de la résorption dans les deux sexes. **Calcitonine** : antirésorptive, rôle modeste.",
+      "figures": [],
+      "legendes": [],
+      "cle": "Toute hormone ostéorésorbante passe par le rapport RANKL/OPG fabriqué par l'ostéoblaste : c'est la clé pour comprendre l'ostéoporose post-ménopausique, cortisonique et les traitements.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Comment agit l'ostéoprotégérine (OPG) ?",
+        "a": "C'est un récepteur leurre soluble qui capte RANKL et l'empêche d'activer RANK sur les précurseurs ostéoclastiques : elle freine la résorption."
+      }
+    },
+    {
+      "titre": "Ostéoporose : définition, mécanismes et épidémiologie",
+      "texte": "Définition (2001) : maladie diffuse du squelette associant **faible masse osseuse** et **altération de la microarchitecture**, avec risque accru de fracture.\n\nMasse osseuse = **pic** atteint en fin d'adolescence (génétique pour 70–80 %) moins la perte après 35–40 ans (~0,4 %/an). À la **ménopause**, la carence œstrogénique accélère la perte (0,5–3 %/an pendant ~10 ans), touchant d'abord les **travées horizontales** non porteuses → fractures vertébrales. Chez le sujet âgé : moins de calcium et de vitamine D → **hyperparathyroïdie secondaire**.\n\nTypes : primitives (**post-ménopausique** = type I ; **sénile** = type II) et **secondaires** (20–30 % des ostéoporoses de la femme, 50–70 % chez l'homme) : Cushing/corticoïdes, hyperthyroïdie, hypogonadisme, hyperparathyroïdie, PR, malabsorption, myélome, ostéogenèse imparfaite, héparine, anti-aromatases, agonistes de la GnRH, IPP (inhibiteurs de la pompe à protons)…\n\nÉpidémiologie : 30 % des femmes ménopausées ; 40 % des femmes et 12 % des hommes de plus de 50 ans auront une fracture ostéoporotique. Une fracture vertébrale multiplie par **4–5** le risque d'une nouvelle fracture vertébrale (20 % dans l'année). La fracture de l'extrémité supérieure du fémur : **20 % de mortalité à 1 an**.",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": "La définition OMS ne vaut que pour la DXA chez la femme blanche ménopausée ; un T-score ≤ –2,5 n'impose pas à lui seul un traitement (évaluation globale du risque).",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quel bilan biologique demander devant toute ostéoporose ?",
+        "a": "NFS, VS, électrophorèse des protéines et protéinurie (myélome), calcémie, phosphorémie, calciurie, créatinine, phosphatases alcalines (ostéomalacie), 25(OH)D ; chez l'homme : testostérone, LH, FSH, saturation de la transferrine."
+      }
+    },
+    {
+      "titre": "Mesurer l'os : DXA, scanner quantitatif et radiographie",
+      "texte": "**DXA** (absorptiométrie biphotonique) : double énergie, modèle os/tissus mous ; densité **surfacique** (g/cm²) sur **L1–L4** et la hanche (**col** et **hanche totale**). T-score (comparé aux femmes jeunes) et Z-score (même âge). Avantages : fiable, rapide, peu irradiante (0,5–4 mSv). Limites : **surestimation** par arthrose, scoliose, **tassements** (exclure la vertèbre fracturée), matériel, opacification digestive ; 50 % des patientes fracturées ont un T-score au-dessus du seuil ; ni qualité osseuse ni distinction cortical/trabéculaire.\n\n**Scanner quantitatif** : densité **volumique** (g/cm³), cortical et trabéculaire séparés, plus sensible mais moins reproductible et **10 fois plus irradiant** ; faussé par la conversion graisseuse. Ultrasons (QUS) du calcanéum, HR-pQCT, IRM quantitative : recherche ou pratique limitée.\n\n**Radiographie** : peu sensible (perte de **30–50 %** nécessaire). Hypertransparence, amincissement cortical ; au rachis, disparition des travées horizontales → **aspect peigné pseudo-angiomateux**, sur **plusieurs étages** (≠ angiome) ; dans les formes sévères, vertèbres **« fantômes »** aussi transparentes que les disques avec plateaux bien dessinés. Stries intracorticales : plutôt ostéoporose d'**immobilisation** (remodelage rapide).\n\nMarqueurs : formation (ostéocalcine, PAL osseuses, PINP), résorption (**CTX** sérique) ; utiles pour le **suivi** des antirésorptifs, pas pour le diagnostic.",
+      "figures": [
+        "cotten-t1:fig13.10"
+      ],
+      "legendes": [
+        "Ostéoporose : aspect **peigné pseudo-angiomateux** de plusieurs corps vertébraux, plus transparents que les disques."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Une vertèbre tassée est plus dense et de surface projetée plus petite : la DXA la croit plus solide. Il faut l'exclure de l'analyse.",
+      "verification": {
+        "q": "Citez trois causes de surestimation de la DMO (densité minérale osseuse) en DXA lombaire.",
+        "a": "Arthrose (ostéophytes, sclérose), scoliose, tassement vertébral ; aussi matériel et produit de contraste digestif."
+      }
+    },
+    {
+      "titre": "Risque fracturaire (FRAX) et fractures périphériques",
+      "texte": "**FRAX®** (OMS 2008) : risque à 10 ans de fracture de hanche et de fracture « majeure » (hanche, humérus, poignet, vertèbre clinique) à partir de l'âge, du sexe, de l'IMC (indice de masse corporelle), des antécédents, du tabac, de l'alcool, des corticoïdes, de la PR et de la DMO du col. Inutile si l'indication est évidente (fracture sévère ou T-score ≤ –3) ; utile pour une fracture non sévère avec T-score > –3. Limites : pas d'effet dose (corticoïdes, nombre de fractures), site = col fémoral.\n\nFractures par insuffisance : **col fémoral**, radius distal, humérus proximal, mais aussi os **sous-chondral** (tête et condyles fémoraux). Consolidation dans les délais normaux.\n\n**Fracture fémorale atypique** sous **bisphosphonates au long cours** : sous-trochantérienne ou diaphysaire, **transverse ou oblique courte**, traumatisme minime, parfois **bilatérale** ; signes prodromiques : épaississement focal, fine strie et périostite de la **corticale latérale** chez une patiente douloureuse (radiographier le côté opposé).",
+      "figures": [
+        "cotten-t1:fig13.12",
+        "cotten-t1:fig13.14"
+      ],
+      "legendes": [
+        "L'outil **FRAX®** : questionnaire en ligne de calcul du risque fracturaire à 10 ans.",
+        "**Fracture fémorale atypique** transverse chez une patiente traitée par bisphosphonates au long cours."
+      ],
+      "cle": null,
+      "piege": "Une fracture diaphysaire transverse « simple » chez une patiente sous bisphosphonates n'est pas une fracture ostéoporotique banale : chercher la réaction corticale latérale controlatérale.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels sont les éléments radiographiques d'une fracture fémorale atypique ?",
+        "a": "Siège sous-trochantérien ou diaphysaire, trait transverse ou oblique court, épaississement/strie de la corticale latérale, parfois bilatérale, sous bisphosphonates au long cours."
+      }
+    },
+    {
+      "titre": "Fracture vertébrale : existe-t-elle ? quelle forme ? récente ?",
+      "texte": "On parle de **fracture** vertébrale (et non de « tassement », trop banalisé). Seule **1 sur 4** est reconnue cliniquement ; **27–47 %** sont manquées en radiologie. Une perte de taille > 4 cm est évocatrice.\n\n**1. Y a-t-il une fracture ?** Pièges : séquelles d'**épiphysite de croissance** (Scheuermann), vertèbre limbique, vertèbre en H (drépanocytose, Gaucher), remaniements dégénératifs, **pseudo-concavité** des plateaux sur un cliché non tangent (scoliose).\n\nMéthode semi-quantitative de **Genant** (T4–L4) : perte de hauteur > 20 % (et surface −10–20 %) = fracture ; **grade 1** 20–25 %, **grade 2** 25–40 %, **grade 3** > 40 %. Au rachis thoracique, différence mur antérieur/postérieur **> 4 mm** pour retenir une cunéiformisation.\n\nForme : **cunéiforme** (antérieure, thoracique), **biconcave** (centrale, lombaire), **en galette** (postérieure).\n\n**2. Récente ou ancienne ?** Une **solution de continuité** de la corticale ou de la lame sous-chondrale signe une fracture récente ; sinon comparer aux clichés antérieurs (ou IRM).",
+      "figures": [
+        "cotten-t1:fig13.17"
+      ],
+      "legendes": [
+        "Fracture ostéoporotique **récente** : rupture de la corticale antérieure (tête de flèche) et de l'os sous-chondral (flèche)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle perte de hauteur définit une fracture vertébrale de grade 2 de Genant ?",
+        "a": "25 à 40 % de perte de hauteur (grade 1 : 20–25 % ; grade 3 : > 40 %)."
+      }
+    },
+    {
+      "titre": "Fracture ostéoporotique ou maligne ? Critères radiographiques",
+      "texte": "**Ostéopénie diffuse et homogène** du rachis (critère peu sensible et peu spécifique).\n\n**Topographie** : rare au-dessus de **T7**, exceptionnelle au-dessus de **T4** ; prédomine à la jonction thoracolombaire. Fractures **multiples**, non forcément contiguës, de sévérité variable (≠ biconcavité harmonieuse de tous les étages dans l'ostéomalacie ou l'ostéogenèse imparfaite).\n\n**Impaction de l'ensemble du plateau**, tassement plutôt **symétrique de face** (asymétrie possible après chute latérale, avec compensation par les vertèbres voisines).\n\n**Contours** : petites ruptures corticales récentes mais **jamais d'effacement ni d'amincissement focal** (pas d'ostéolyse) ; **recul du coin postérosupérieur** fréquent et très évocateur ; pas de bombement des murs sauf tassement > 75 % ; **arc postérieur et pédicules intacts**.\n\nOs spongieux : bande de condensation ou d'hétérogénéité **parallèle au plateau** fracturé (impaction, cal), trame normale ailleurs ; cal exubérant sous corticoïdes ou Cushing.\n\n**Phénomène du vide intrasomatique** : clarté gazeuse linéaire sous le plateau (pseudarthrose, bâillement en extension), quasi pathognomonique de **bénignité** ; transitoire (le gaz est remplacé par du liquide en 10–20 min) ; aussi corticothérapie, alcool, Gaucher, radiothérapie.",
+      "figures": [
+        "cotten-t1:fig13.21",
+        "cotten-t1:fig13.22b",
+        "cotten-t1:fig13.19c"
+      ],
+      "legendes": [
+        "Tassement ostéoporotique : **ostéocondensation en bande** sous le plateau fracturé et **recul du coin postérosupérieur** (tête de flèche).",
+        "**Phénomène du vide intrasomatique** (flèche) : clarté gazeuse linéaire sous le plateau fracturé.",
+        "Tassement modérément asymétrique de face : l'impaction concerne **tout le plateau** (flèches)."
+      ],
+      "cle": "Malin = ostéolyse (contour effacé), pédicule ou arc postérieur atteint, au-dessus de T7, masse ; bénin = plateau impacté en entier, coin postérieur reculé, gaz/fente, arc intact.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelle valeur diagnostique a le vide intrasomatique ?",
+        "a": "Il est quasi pathognomonique d'un tassement bénin (pseudarthrose d'une fracture non consolidée) ; il n'a de valeur que s'il est présent."
+      }
+    },
+    {
+      "titre": "Scanner et IRM d'une fracture vertébrale",
+      "texte": "IRM si doute bénin/malin, signes neurologiques ou pour dater (avant vertébroplastie/cyphoplastie).\n\nFracture **aiguë** (< 2 mois) : dans > 90 % des cas, **œdème en bande** sous le plateau fracturé (hypo T1, hyper STIR), à limites floues, décroissant vers le centre ; arc postérieur respecté (sauf fines stries de fracture, 30–50 %) ; si l'œdème est étendu, il **respecte le coin postérieur opposé** ; après gadolinium **sans** saturation de graisse, la vertèbre retrouve un signal **homogène** proche des voisines. **Bande hypointense** sur toutes les séquences (impaction, nécrose) ; **fente liquidienne** (hyper STIR linéaire, équivalent IRM du vide) ; parfois gaz au-dessus du liquide, voire collection.\n\nDiscrète infiltration paravertébrale ou épidurale possible (fracture « traumatique ») ; un bombement du mur postérieur n'existe que si tassement > 75 %.\n\nFracture **ancienne** : signal graisseux identique ou supérieur aux vertèbres voisines (normalisation en **1–3 mois**).\n\nScanner : ruptures corticales **sans fragment manquant** (pas d'ostéolyse), recul du coin postérieur, gaz.",
+      "figures": [
+        "cotten-t1:fig13.23",
+        "cotten-t1:fig13.26c",
+        "cotten-t1:fig13.28",
+        "cotten-t1:fig13.29"
+      ],
+      "legendes": [
+        "Tassements multiétagés : **œdème en bande** sous les plateaux fracturés (L4 entièrement œdémateuse).",
+        "T12 et L1 en galette : **vide intrasomatique** en scanner (a), hyposignal T1 et signal mixte liquide/gaz en T2.",
+        "Tassements **anciens** : signal graisseux superposable ou supérieur à celui des vertèbres non fracturées.",
+        "Scanner : multiples traits de fracture identifiables et **recul du coin postérosupérieur**, sans ostéolyse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Qu'est-ce que la fente liquidienne en IRM ?",
+        "a": "Un hypersignal STIR linéaire de type liquide sous le plateau fracturé, équivalent IRM du vide intrasomatique : argument fort de bénignité."
+      }
+    },
+    {
+      "titre": "Traitement de l'ostéoporose et vertébroplastie",
+      "texte": "Prérequis : prévention des chutes, calcium (1 200 mg/j après 50 ans), 25(OH)D ≥ 30 ng/mL.\n\nTraitement recommandé quel que soit l'âge après une fracture **sévère** (fémur proximal ou distal, vertèbre, humérus proximal, bassin, tibia proximal, 3 côtes). Molécules : **bisphosphonates** (zolédronate, alendronate, risédronate), **dénosumab**, **tériparatide** (≥ 2 fractures vertébrales), raloxifène. Fracture non sévère : traiter si T-score ≤ –3, sinon selon FRAX.\n\nDurée : 3–5 ans (18 mois pour le tériparatide), arrêt possible après 5 ans (3 ans pour le zolédronate) si pas de fracture ni de perte de DMO (> 0,03 g/cm²). Prévenir l'**ostéonécrose de la mâchoire** (soins dentaires) et la fracture atypique.\n\n**Ostéoporose cortisonique** : prévenir dès ≥ 7,5 mg/j de prednisone pendant > 3 mois ; traiter si T-score < –1,5 (seuil plus haut car la perte est maximale dès les premiers mois).\n\n**Vertébroplastie** : ciment acrylique percutané sous scopie pour fracture hyperalgique ; rémission 90–100 % ; complications ~1 % (douleur transitoire, radiculalgie par fuite foraminale, embolie pulmonaire). **Cyphoplastie** : ballonnet pour restaurer la hauteur, coût plus élevé. Chirurgie si compression médullaire ou déformation majeure.",
+      "figures": [
+        "cotten-t1:fig13.30"
+      ],
+      "legendes": [
+        "**Vertébroplastie** d'un tassement ostéoporotique : remplissage du corps vertébral par du ciment."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi dater une fracture en IRM avant une vertébroplastie ?",
+        "a": "Seule une fracture récente, œdémateuse (non consolidée) tire bénéfice du ciment ; une vertèbre au signal graisseux est consolidée."
+      }
+    },
+    {
+      "titre": "Rachitisme : le cartilage de croissance malade",
+      "texte": "Défaut de minéralisation d'un **squelette en croissance**, toujours associé à une ostéomalacie ; cause commune : **hypophosphatémie**, qui empêche l'apoptose des chondrocytes de la **zone hypertrophique** → chondrocytes désorganisés, cartilage **élargi** en hauteur et en largeur, zone de calcification provisoire et spongieuse primaire mal minéralisées.\n\nClinique (forme carentielle, 6–18 mois) : craniotabès (4–6 mois), **chapelet costal** (6–10 mois), **nouures** métaphysaires, incurvations, hypotonie, retard de marche ; hypocalcémie (convulsions, tétanie). Les PAL (phosphatases alcalines) sont élevées (sauf hypophosphatasie).\n\nRadiographie (bilatérale, symétrique), aux cartilages les plus actifs (**« près du genou, loin du coude »** : fémur distal, tibia et humérus proximaux, radius et ulna distaux, jonctions chondrocostales) : **élargissement** du cartilage de croissance ; métaphyse **floue, irrégulière, frangée** ; métaphyse **élargie en cupule** ; **toit de pagode** (ossification périostée bordant le cartilage) dans les formes sévères.\n\nAutres : noyaux épiphysaires estompés, retard d'apparition du carpe/tarse ; crâne (< 3 mois) : fontanelles larges, sutures élargies ; déformations (genu varum, coxa vara, thorax aplati, vertèbres biconcaves) ; ostéopénie, corticale feuilletée, fractures (diaphyses, arcs costaux antérieurs et moyens).\n\nGuérison : **ligne dense** dans la zone de calcification provisoire visible **1 mois** après le début de la vitamine D, métaphyses normales à 3 mois. Score de sévérité de **Thacher** (poignet + genou, /10).",
+      "figures": [
+        "cotten-t1:fig13.33",
+        "cotten-t1:fig13.34b"
+      ],
+      "legendes": [
+        "Rachitisme : cartilage de croissance **élargi**, métaphyses **floues et frangées**, déformation **cupuliforme** de la métaphyse fibulaire.",
+        "Rachitisme à 15 mois : anomalies métaphysaires **bilatérales et symétriques** des poignets et retard d'ossification du carpe."
+      ],
+      "cle": null,
+      "piege": "Fractures chez un enfant rachitique ≠ maltraitance automatique : dans le rachitisme, pas de fracture des arcs **postérieurs** des côtes, des vertèbres ni du crâne, et les fractures métaphysaires sont proches de la diaphyse (≠ lésion métaphysaire classique). À l'inverse, la chondrodysplasie de **Schmid** a des métaphyses irrégulières mais un cartilage de hauteur normale, une minéralisation et un bilan normaux.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi le cartilage de croissance s'élargit-il dans le rachitisme ?",
+        "a": "L'hypophosphatémie bloque l'apoptose des chondrocytes de la zone hypertrophique : ils s'accumulent sans être remplacés par de l'os."
+      }
+    },
+    {
+      "titre": "Ostéomalacie : l'os mal minéralisé de l'adulte",
+      "texte": "Accumulation de **tissu ostéoïde** non minéralisé (volume > 10 %, épaisseur > 15 µm). Clinique insidieuse : **myopathie proximale** (démarche dandinante, signe du tabouret), douleurs osseuses diffuses (rachis, bassin, côtes), fractures proximales, déformations tardives (thorax en cloche, protrusion acétabulaire dans les séquelles de rachitisme).\n\nBiologie (carentielle) : hypocalcémie 60–70 %, **hypophosphatémie** 70 %, **hypocalciurie** précoce, **25(OH)D < 10 ng/mL**, PAL ↑, PTH ↑.\n\nRadiographie : raréfaction avec trame **floue, « délavée »**, corticale **feuilletée** ; **stries de Looser-Milkman** (50 %) : bandes claires de quelques mm, **perpendiculaires** à la corticale, à bords réguliers ± condensés, **sans cal**, bilatérales et symétriques, à des stades différents, sur des os même non porteurs : **branches ilio- et ischiopubiennes**, ilium postéromédial, **bord médial du col fémoral**, fémur proximal, **bord axillaire de la scapula**, côtes, clavicule, ulna ; vertèbres **« de poisson »** biconcaves harmonieuses ; impactions trabéculaires épiphysaires d'âges différents (sans dissection sous-chondrale, ≠ ostéonécrose) ; fractures de contrainte (sternum).\n\nIRM : stries moins hypointenses que la corticale, peu d'œdème ; fines lignes d'impaction d'âges différents. Scintigraphie : hyperfixations multiples symétriques, **costales alignées**, scapulas, branches pubiennes ; superscan si hyperparathyroïdie. DMO très basse mais inutile au diagnostic.\n\nTraitement : vitamine D (4 000 à 20 000 UI/j, 8 mois) + calcium ; d'abord régression des douleurs (2 mois) puis des stries.",
+      "figures": [
+        "cotten-t1:fig13.37",
+        "cotten-t1:fig13.39a"
+      ],
+      "legendes": [
+        "**Stries de Looser-Milkman** des branches iliopubienne (grande flèche) et ischiopubienne (petite flèche), à bords réguliers.",
+        "Ostéomalacie : multiples **fractures sous-chondrales d'âges différents** des deux compartiments du genou."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La strie de Looser est une microfracture de fatigue que l'os ne parvient pas à réparer : le cal est fait d'ostéoïde non minéralisé, d'où une bande claire stable dans le temps.",
+      "verification": {
+        "q": "Citez quatre sites typiques des stries de Looser-Milkman.",
+        "a": "Branches ilio/ischiopubiennes, bord médial du col fémoral (et fémur proximal), bord axillaire de la scapula, côtes ; aussi clavicule, ulna, ilium postéromédial."
+      }
+    },
+    {
+      "titre": "Étiologies du rachitisme et de l'ostéomalacie",
+      "texte": "**Calcipéniques** (anomalies de la vitamine D + hyperparathyroïdie secondaire) : manque de soleil et carence d'apport, **malabsorption** (maladie **cœliaque** : ostéomalacie dans 50–70 %, Crohn, résection), hépatopathies, **insuffisance rénale** (ostéodystrophie), anticonvulsivants et rifampicine, syndrome néphrotique, rachitismes **vitaminodépendants** de type 1 (1-α-hydroxylase, Prader) et de type 2 (récepteur).\n\n**Hypophosphatémiques** (fuite rénale de phosphate, souvent par excès de **FGF-23**) : **hypophosphatémie liée à l'X** (gène PHEX, 1/20 000, principale cause héréditaire) : retard de croissance, jambes arquées ; chez l'adulte **ostéocondensation axiale**, **enthésopathies hyperostosantes**, ossifications discoligamentaires (mime une DISH, hyperostose vertébrale), ossification des membranes interosseuses ; formes autosomiques ; **ostéomalacie oncogénique** (tumeur mésenchymateuse **phosphaturiante** souvent bénigne, petite, crâniofaciale ou des membres inférieurs ; localisation par scintigraphie à l'octréotide ; guérison par exérèse) ; syndrome de Fanconi.\n\n**Inhibition directe de la minéralisation** : **hypophosphatasie** (PAL **basses** ; enfant : métaphyses avec **encoches** radiotransparentes profondes ; adulte : stries de Looser, **chondrocalcinose**) ; toxiques (fluor, aluminium, bisphosphonates de 1re génération, strontium).\n\nMécanisme inconnu : ostéomalacie axiale, fibrogenèse imparfaite.",
+      "figures": [
+        "cotten-t1:fig13.40",
+        "cotten-t1:fig13.41"
+      ],
+      "legendes": [
+        "Hypophosphatémie liée à l'X : **condensation du bassin**, **enthésopathies hyperostosantes** et ossifications rachidiennes.",
+        "Hypophosphatasie infantile : cartilage élargi aux limites nettes et **encoches** radiotransparentes dans les métaphyses (flèches)."
+      ],
+      "cle": "PAL basses + ostéomalacie = hypophosphatasie ; hypophosphatémie isolée avec calcémie normale chez un adulte = penser à une tumeur phosphaturiante.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels signes radiographiques font évoquer une hypophosphatémie liée à l'X chez l'adulte ?",
+        "a": "Ostéocondensation prédominant au squelette axial, enthésopathies hyperostosantes, ossifications discoligamentaires (aspect de DISH), petite taille et membres arqués."
+      }
+    },
+    {
+      "titre": "Maladie de Paget : physiopathologie et terrain",
+      "texte": "Remodelage **anormal et excessif**, focal, d'étiologie inconnue (hypothèse virale paramyxovirus, facteurs génétiques familiaux, environnement). Prévalence 3–4 % après 45 ans (jusqu'à 10 % après 80 ans), en **baisse** ; fréquente en Grande-Bretagne et en France.\n\nTrois phases : **lytique** (ostéoclastes géants, très nombreux noyaux) → **mixte/active** (réparation ostéoblastique anarchique, os en **mosaïque**, moelle fibrovasculaire hypervascularisée) → **inactive/scléreuse** (moelle **graisseuse**, vaisseaux dilatés). Début **épiphysaire sous-chondral** puis extension vers la diaphyse (~**8 mm–1 cm/an**) ; ne franchit pas les articulations.\n\n**Polyostotique** dans 65–90 %, asymétrique : rachis lombaire, **bassin**, sacrum, fémur, crâne ; côtes, fibula, mains et pieds rares.\n\nClinique : > 90 % asymptomatiques (découverte radiologique ou biologique) ; chaleur locale, douleur (faire chercher fissure, fracture, arthropathie, **sarcome**), déformations, surdité/compressions ; insuffisance cardiaque à haut débit exceptionnelle. Biologie : **PAL élevées** (reflet de l'activité et de l'étendue), calcémie normale.",
+      "figures": [
+        "cotten-t1:fig13.51",
+        "cotten-t1:fig13.52a"
+      ],
+      "legendes": [
+        "Paget du fémur en **phase de résorption** : front de résorption nettement démarqué de l'os normal (flèches).",
+        "Aspect caractéristique : **front de résorption** (flèche), **élargissement** de l'os, **épaississement cortical et trabéculaire**."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quelles sont les trois phases de la maladie de Paget ?",
+        "a": "Lytique (résorption ostéoclastique), mixte/active (formation anarchique en mosaïque), inactive/scléreuse (moelle graisseuse)."
+      }
+    },
+    {
+      "titre": "Paget en radiographie, site par site",
+      "texte": "**4 signes cardinaux** : front de résorption, épaississement des travées, épaississement cortical (parfois poreux, dédifférenciation corticospongieuse), **élargissement de l'os**.\n\n**Os longs** : début sous-chondral, front de résorption **en V** (« flamme », « brin d'herbe ») pointant vers l'os sain ; tardivement, déformations (fémur arqué latéralement, coxa vara, **tibia en lame de sabre**).\n\n**Crâne** : phase précoce = **ostéoporose circonscrite** frontale ou occipitale nettement limitée ; puis plages de condensation floues **« cotonneuses »** surtout de la table interne, épaississement de la voûte ; tardivement **impression basilaire, platybasie**.\n\n**Rachis** (lombaire 58 %, L4–L5) : atteinte **de toute la vertèbre** (corps + arc), **élargissement** du corps, condensation périphérique **en cadre** (« picture frame »), parfois vertèbre **ivoire** : chercher la **perte de la concavité antérieure** pour la distinguer d'une métastase/lymphome ; surlignage des foramens sacrés.\n\n**Bassin** : élargissement, **épaississement des lignes iliopubienne et ilio-ischiatique** (signe précoce quasi pathognomonique), travées épaisses désorganisées ; tardivement **coxopathie avec protrusion acétabulaire**.",
+      "figures": [
+        "cotten-t1:fig13.44",
+        "cotten-t1:fig13.45",
+        "cotten-t1:fig13.48"
+      ],
+      "legendes": [
+        "Paget évoluée du crâne : condensations focales **« cotonneuses »** et épaississement de la voûte.",
+        "Vertèbre pagétique **élargie** (corps et processus épineux) avec aspect **en cadre**.",
+        "Paget débutante : branches iliopubienne et ilio-ischiatique gauches élargies, **lignes iliopubienne et ilio-ischiatique épaissies**."
+      ],
+      "cle": null,
+      "piege": "La vertèbre ivoire a trois grandes causes : Paget (vertèbre **élargie**, concavité antérieure perdue), métastase ostéocondensante et lymphome (taille normale).",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels sont les 4 signes radiographiques cardinaux de la maladie de Paget ?",
+        "a": "Front de résorption, épaississement des travées osseuses, épaississement cortical, élargissement de la pièce osseuse."
+      }
+    },
+    {
+      "titre": "Paget en scanner, IRM et scintigraphie",
+      "texte": "**Scanner** : corticale épaisse (dense ou fibrillaire), **travées moins nombreuses mais épaisses** (aspect aréolaire/en nid d'abeille), **plages de densité graisseuse** persistantes entre les travées, foyers très denses étoilés, élargissement de l'os.\n\n**IRM** : élargissement et épaississement corticotrabéculaire (moins nets qu'en TDM). Signal : **graisseux dans la grande majorité des cas** (souvent plus intense que la moelle saine) ; en phase de **résorption active** : tissu fibrovasculaire hypo T1, hyper T2, **rehaussé**, surtout cortical, parfois œdème des tissus mous (formes pseudo-tumorales), régressif sous bisphosphonates ; tardif : plages hypo T1/T2 (condensation). **Jamais de remplacement médullaire massif ni de masse** → argument contre un sarcome.\n\n**Scintigraphie** : fixation très intense et étendue, épousant la forme de l'os (« os entier ») ; 30 % de lésions de plus qu'en radiographie (côtes, sternum, scapulas) ; utile pour le bilan d'extension et le choix thérapeutique. TEP-FDG : fixation modérée, utile si suspicion de sarcome.",
+      "figures": [
+        "cotten-t1:fig13.55",
+        "cotten-t1:fig13.58",
+        "cotten-t1:fig13.61a",
+        "cotten-t1:fig13.65"
+      ],
+      "legendes": [
+        "Paget du bassin en scanner : **épaississement cortical** considérable, rares travées épaissies, **densité graisseuse** de la moelle, foyers denses (flèche).",
+        "Paget du fémur (T1) : fémur élargi, signal **graisseux plus intense** que celui du tibia sain.",
+        "**Front de résorption** pagétique mieux visible en T2 fat sat (a) qu'en T1 (b).",
+        "Paget **polyostotique** : hyperfixations intenses épousant la forme des os atteints."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La phase scléreuse correspond à une moelle redevenue graisseuse entre des travées épaisses : c'est pourquoi un os « dense » en radiographie peut être en hypersignal T1 en IRM.",
+      "verification": {
+        "q": "Quel est le signal IRM habituel de l'os pagétique, et pourquoi est-il rassurant ?",
+        "a": "Un signal graisseux (hyper T1) ; la conservation de la graisse exclut un remplacement médullaire tumoral (sarcome, métastase)."
+      }
+    },
+    {
+      "titre": "Paget : formes inhabituelles et complications",
+      "texte": "Formes inhabituelles : début **diaphysaire** (tibia, radius) ; aspect en **« chou-fleur »** (condensation focale stratifiée de la partie postérieure du corps vertébral) ; **raréfaction pseudo-tumorale** sur Paget connu après fracture, immobilisation, insuffisance rénale, ostéomalacie ou traitement inadapté (vertèbres prises à tort pour des angiomes) ; **pseudo-sarcome** (prolifération pagétique exubérante périostée ; IRM : graisse conservée ; biopsie au moindre doute) ; extension épidurale ou paravertébrale.\n\n**Fragilité** : **fissures transversales de la corticale convexe** (tibia antérieur, fémur latéral), enfouies sous une couche corticale continue (≠ Looser), persistantes ; fractures transverses « **en craie** » à consolidation difficile.\n\n**Arthropathies** : coxopathie à topographie inhabituelle (pincement supéromédial, **protrusion acétabulaire**).\n\n**Compressions neurologiques** : base du crâne (impression basilaire), **canal rachidien** et foramens (hypertrophie, ostéophytes pagétiques).\n\n**Dégénérescence sarcomateuse** : 0,15–0,95 % (5–10 % dans les formes polyostotiques sévères), homme > 50 ans ; bassin, fémur, **humérus** (surreprésenté), tibia, crâne ; ostéosarcome 50–60 % ; survie à 3 ans < 10 %. Signes : ostéolyse rapide, rupture corticale, masse, fracture, **pas de périostite** ; IRM : **remplacement médullaire hypo T1 + masse**. **TCG** (tumeur à cellules géantes) sur Paget : rare, sujets âgés, crâne/face, multiple, sensible aux corticoïdes.\n\nTraitement : **bisphosphonates** (risédronate, zolédronate, pamidronate IV avant chirurgie pour réduire le saignement) ; réponse si PAL −25 %, objectif normalisation ; surveillance radiographique.",
+      "figures": [
+        "cotten-t1:fig13.68a",
+        "cotten-t1:fig13.70b",
+        "cotten-t1:fig13.70a",
+        "cotten-t1:fig13.73a"
+      ],
+      "legendes": [
+        "Vertèbre pagétique **raréfiée** : vertèbre élargie, travées épaisses en TDM (à ne pas confondre avec un angiome).",
+        "Coxopathie pagétique avec **protrusion acétabulaire**, compliquée d'une fracture du grand trochanter.",
+        "Extension du processus pagétique dans le **canal rachidien** avec compression médullaire.",
+        "**Dégénérescence sarcomateuse** de l'aile iliaque droite : destruction corticale et **masse** remplaçant la moelle (scanner, T1, STIR, gadolinium)."
+      ],
+      "cle": "Douleur nouvelle sur un Paget connu : fissure, fracture, arthropathie… ou sarcome. L'IRM tranche : graisse conservée = bénin ; remplacement médullaire + masse = sarcome.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels signes doivent faire craindre une dégénérescence sarcomateuse d'un Paget ?",
+        "a": "Douleur inhabituelle, ostéolyse mal limitée d'évolution rapide, rupture corticale, masse des tissus mous, fracture pathologique ; en IRM remplacement médullaire hypo T1 avec masse."
+      }
+    },
+    {
+      "titre": "Os irradié : effets de la radiothérapie et complications",
+      "texte": "Moelle très radiosensible : semaines 1–2 = **œdème/hémorragie** (hyper STIR, rehaussement) ; semaines 2–6 = **transformation graisseuse** (hyper T1), complète chez 90 % à 6–8 semaines, **à bords nets épousant le champ d'irradiation** ; reconversion hématopoïétique de la moelle irradiée seulement après 2–23 ans et si dose ≤ 50 Gy. TEP : hypofixation. Œdème musculaire dès 4–6 semaines.\n\n**Croissance** (dès 12 Gy) : cartilage de croissance **élargi** (6 mois), épiphysiodèse, métaphyse irrégulière scléreuse « pseudo-rachitique », **épiphysiolyse** (tête fémorale/humérale, 1–8 ans) ; rachis : stries d'arrêt, « os dans l'os », vertèbres aplaties, **scoliose concave du côté irradié** ; bassin : hypoplasie iliaque, dysplasie acétabulaire.\n\n**Ostéoradionécrose** (> 50 Gy, 1–3 ans) : os hétérogène lytique et condensé **sans expansion** (≠ Paget), limité au champ, stable, sans masse ; **mandibule** surtout (hygiène dentaire), bassin, côtes, clavicule. Sacro-iliaque élargie et irrégulière (côté iliaque), symphyse.\n\n**Fractures** (3–12 mois) : sacrum, régions parasymphysaires, toit acétabulaire, côtes, col fémoral (2 % après cancer du col) ; trait hypo T2 dans un **œdème en bande** sans masse. **Infection** : ostéoarthrite de la **symphyse pubienne**.\n\n**Tumeurs radio-induites** : **ostéochondrome** (bénigne la plus fréquente, enfant irradié avant 2 ans, < 5 ans) ; **sarcome** : latence ≥ 4 ans (moyenne 11–14), dans le champ, histologie différente de la tumeur initiale, souvent > 30 Gy ; ~5 % des ostéosarcomes.\n\n**Récidive** : lyse corticale, **remplacement médullaire**, atteinte asymétrique du champ, **masse**, adénopathies ; TEP-FDG après 4–6 mois.",
+      "figures": [
+        "cotten-t1:fig13.77a",
+        "cotten-t1:fig13.75b"
+      ],
+      "legendes": [
+        "Antécédent d'irradiation pelvienne : moelle en **hypersignal T1** (déplétion graisseuse) du segment irradié, et fracture sacrée (flèche).",
+        "Ostéosarcome traité par chirurgie et radiothérapie : **fusion prématurée** du cartilage de croissance de la crête iliaque et trouble de croissance de l'aile iliaque."
+      ],
+      "cle": null,
+      "piege": "Une moelle en hypersignal T1 nettement limitée par une frontière rectiligne n'est pas une lésion : c'est le champ d'irradiation.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Quels critères définissent un sarcome radio-induit ?",
+        "a": "Latence d'au moins 4 ans, siège dans le champ d'irradiation, preuve histologique, histologie différente de la tumeur initiale."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Rachis lombaire de profil d'une femme de 78 ans : corps vertébraux aussi transparents que les disques, plateaux bien dessinés. Interprétation ?",
+      "figure": "cotten-t1:fig13.11",
+      "options": [
+        "Ostéoporose sévère (vertèbres « fantômes »)",
+        "Myélome diffus",
+        "Ostéomalacie",
+        "Angiomes vertébraux multiples"
+      ],
+      "reponse": 0,
+      "explication": "La raréfaction des corps vertébraux contrastant avec l'os sous-chondral préservé donne des vertèbres « fantomatiques » : ostéoporose sévère.",
+      "page": "p. 391",
+      "image_origine": "c13/f13.11"
+    },
+    {
+      "question": "Patiente âgée, chute de sa hauteur, douleur de hanche, radiographie douteuse. IRM frontale T1 ci-contre. Diagnostic ?",
+      "figure": "cotten-t1:fig13.13",
+      "options": [
+        "Fracture par insuffisance du col fémoral",
+        "Ostéonécrose de la tête fémorale",
+        "Œdème transitoire de la hanche",
+        "Métastase du col"
+      ],
+      "reponse": 0,
+      "explication": "Trait hypointense complet traversant le col : fracture par insuffisance ostéoporotique.",
+      "page": "p. 393",
+      "image_origine": "c13/f13.13"
+    },
+    {
+      "question": "Cyphose thoracique avec vertèbres cunéiformes allongées d'avant en arrière et plateaux irréguliers chez un homme jeune. Diagnostic ?",
+      "figure": "cotten-t1:fig13.15",
+      "options": [
+        "Séquelles d'épiphysite de croissance (Scheuermann)",
+        "Fractures ostéoporotiques multiples",
+        "Spondylodiscite tuberculeuse",
+        "Métastases"
+      ],
+      "reponse": 0,
+      "explication": "Diminution de hauteur mais augmentation de la profondeur des corps vertébraux : séquelles d'épiphysite, piège classique de fausse fracture.",
+      "page": "p. 394",
+      "image_origine": "c13/f13.15"
+    },
+    {
+      "question": "Radiographies du rachis lombaire : à chaque étage au moins un plateau est impacté dans sa globalité, sévérité variable. Interprétation ?",
+      "figure": "cotten-t1:fig13.51",
+      "options": [
+        "Fractures ostéoporotiques multiples",
+        "Ostéomalacie (vertèbres de poisson)",
+        "Métastases lytiques",
+        "Maladie de Paget"
+      ],
+      "reponse": 0,
+      "explication": "Fractures multiples d'importance variable, plateaux impactés en entier : ostéoporose. L'ostéomalacie donne une biconcavité harmonieuse de tous les étages.",
+      "page": "p. 396",
+      "image_origine": "c13/f13.18"
+    },
+    {
+      "question": "Cliché de face : tassements asymétriques de deux vertèbres adjacentes en sens opposé, impactant tout le plateau. Interprétation ?",
+      "figure": "cotten-t1:fig13.19d",
+      "options": [
+        "Tassements ostéoporotiques asymétriques qui se compensent",
+        "Métastases avec lyse pédiculaire",
+        "Scoliose congénitale par hémivertèbre",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Un tassement fortement asymétrique favorise un tassement controlatéral des vertèbres voisines ; l'impaction de tout le plateau et l'absence d'ostéolyse plaident pour la bénignité.",
+      "page": "p. 396",
+      "image_origine": "c13/f13.20"
+    },
+    {
+      "question": "IRM sagittale T1, T2 et TDM : tassements multiétagés avec recul du coin postérosupérieur de T12. Ce recul oriente vers :",
+      "figure": "cotten-t1:fig13.24c",
+      "options": [
+        "Une origine ostéoporotique",
+        "Une origine métastatique",
+        "Une spondylodiscite",
+        "Un myélome"
+      ],
+      "reponse": 0,
+      "explication": "Le recul d'un coin postérieur (sans bombement global du mur) est très évocateur d'un tassement ostéoporotique.",
+      "page": "p. 398",
+      "image_origine": "c13/f13.24"
+    },
+    {
+      "question": "T12 tassée en galette avec bombement du mur postérieur dans le canal. Quel élément explique ce bombement dans une fracture bénigne ?",
+      "figure": "cotten-t1:fig13.25c",
+      "options": [
+        "Un tassement très sévère (> 75 % de hauteur)",
+        "Une infiltration tumorale épidurale",
+        "Une ostéolyse du mur postérieur",
+        "Un abcès épidural"
+      ],
+      "reponse": 0,
+      "explication": "Un bombement du mur postérieur ne se voit dans le tassement ostéoporotique qu'en cas de perte de hauteur > 75 %.",
+      "page": "p. 399",
+      "image_origine": "c13/f13.25"
+    },
+    {
+      "question": "L1 en galette avec dissection sous-chondrale du plateau supérieur, deux tiers antérieurs du corps en hyposignal T1 et hypersignal T2. Quel signe est visible ?",
+      "figure": "cotten-t1:fig13.27c",
+      "options": [
+        "Une collection liquidienne intrasomatique (équivalent de fente liquidienne)",
+        "Une métastase nécrotique",
+        "Un abcès de spondylodiscite",
+        "Un angiome agressif"
+      ],
+      "reponse": 0,
+      "explication": "Collection liquidienne remplissant la partie antérieure d'une vertèbre fracturée : forme étendue de la fente liquidienne, argument de bénignité.",
+      "page": "p. 400",
+      "image_origine": "c13/f13.27"
+    },
+    {
+      "question": "Nourrisson : radiographie thoracique avec évasement des jonctions chondrocostales (flèches). Diagnostic ?",
+      "figure": "cotten-t1:fig13.32",
+      "options": [
+        "Rachitisme (chapelet costal)",
+        "Scorbut",
+        "Fractures costales de maltraitance",
+        "Achondroplasie"
+      ],
+      "reponse": 0,
+      "explication": "L'évasement des jonctions chondrocostales correspond au chapelet costal du rachitisme.",
+      "page": "p. 405",
+      "image_origine": "c13/f13.32"
+    },
+    {
+      "question": "Enfant de 15 mois : bassin avec noyau épiphysaire fémoral proximal non visible et rebords métaphysaires flous et irréguliers. Diagnostic ?",
+      "figure": "cotten-t1:fig13.35",
+      "options": [
+        "Rachitisme",
+        "Dysplasie de hanche isolée",
+        "Maladie de Legg-Perthes-Calvé",
+        "Ostéomyélite bilatérale"
+      ],
+      "reponse": 0,
+      "explication": "Retard d'apparition des noyaux et métaphyses floues bilatérales : rachitisme.",
+      "page": "p. 406",
+      "image_origine": "c13/f13.35"
+    },
+    {
+      "question": "Enfant : déformation bilatérale en varus des membres inférieurs avec anomalies métaphysaires aux genoux. Première hypothèse ?",
+      "figure": "cotten-t1:fig13.34a",
+      "options": [
+        "Rachitisme",
+        "Maladie de Blount unilatérale",
+        "Genu varum physiologique",
+        "Ostéogenèse imparfaite"
+      ],
+      "reponse": 0,
+      "explication": "Genu varum bilatéral avec métaphyses anormales : rachitisme (plasticité osseuse anormale).",
+      "page": "p. 406",
+      "image_origine": "c13/f13.36"
+    },
+    {
+      "question": "Adulte avec myopathie proximale : bande claire perpendiculaire au bord axillaire de la scapula, sans cal (flèche). Diagnostic ?",
+      "figure": "cotten-t1:fig13.38",
+      "options": [
+        "Strie de Looser-Milkman (ostéomalacie)",
+        "Fracture de fatigue ostéoporotique",
+        "Métastase lytique",
+        "Fissure pagétique"
+      ],
+      "reponse": 0,
+      "explication": "Le bord axillaire de la scapula est un site typique de strie de Looser-Milkman.",
+      "page": "p. 409",
+      "image_origine": "c13/f13.38"
+    },
+    {
+      "question": "Adulte aux fractures récurrentes : deux stries claires aux fémurs (flèches), PAL effondrées. Diagnostic ?",
+      "figure": "cotten-t1:fig13.42",
+      "options": [
+        "Hypophosphatasie de l'adulte",
+        "Ostéomalacie carentielle",
+        "Fractures atypiques sous bisphosphonates",
+        "Hypophosphatémie liée à l'X"
+      ],
+      "reponse": 0,
+      "explication": "Stries de Looser avec phosphatases alcalines basses : hypophosphatasie (souvent avec chondrocalcinose).",
+      "page": "p. 415",
+      "image_origine": "c13/f13.42"
+    },
+    {
+      "question": "Crâne de profil : plage radiotransparente frontale nettement délimitée (flèches), table interne préservée. Diagnostic ?",
+      "figure": "cotten-t1:fig13.43",
+      "options": [
+        "Ostéoporose circonscrite (Paget, phase lytique)",
+        "Métastase lytique",
+        "Histiocytose langerhansienne",
+        "Hyperparathyroïdie (crâne poivre et sel)"
+      ],
+      "reponse": 0,
+      "explication": "Grande plage lytique frontale à limite nette = ostéoporose circonscrite, phase initiale du Paget du crâne.",
+      "page": "p. 417",
+      "image_origine": "c13/f13.43"
+    },
+    {
+      "question": "Vertèbre lombaire dense (ivoire) avec discrète perte de la concavité antérieure (tête de flèche). Diagnostic le plus probable ?",
+      "figure": "cotten-t1:fig13.47",
+      "options": [
+        "Maladie de Paget",
+        "Métastase ostéocondensante",
+        "Lymphome",
+        "Ostéome géant"
+      ],
+      "reponse": 0,
+      "explication": "La perte de la concavité antérieure traduit l'élargissement de la vertèbre : Paget plutôt que métastase ou lymphome.",
+      "page": "p. 418",
+      "image_origine": "c13/f13.47"
+    },
+    {
+      "question": "Hémibassin gauche de 2 patients : ostéocondensation, épaississement cortical et trabéculaire, élargissement osseux. Diagnostic ?",
+      "figure": "cotten-t1:fig13.49a",
+      "options": [
+        "Maladie de Paget évoluée",
+        "Métastases ostéocondensantes de prostate",
+        "Dysplasie fibreuse",
+        "Ostéite condensante iliaque"
+      ],
+      "reponse": 0,
+      "explication": "Élargissement + épaississement cortical et trabéculaire d'un hémibassin : Paget. Les métastases n'élargissent pas l'os.",
+      "page": "p. 419",
+      "image_origine": "c13/f13.49"
+    },
+    {
+      "question": "Tibia (a) et ulna (b) déformés, élargis, à l'architecture désorganisée. Diagnostic ?",
+      "figure": "cotten-t1:fig13.54a",
+      "options": [
+        "Maladie de Paget (os déformés)",
+        "Syphilis tertiaire",
+        "Ostéogenèse imparfaite",
+        "Dysplasie fibreuse polyostotique"
+      ],
+      "reponse": 0,
+      "explication": "Incurvation, élargissement et désorganisation trabéculaire : os pagétiques à la phase tardive.",
+      "page": "p. 421",
+      "image_origine": "c13/f13.54"
+    },
+    {
+      "question": "Scanner de vertèbre lombaire : corps élargi, travées moins nombreuses mais épaisses, plages de densité graisseuse. Diagnostic ?",
+      "figure": "cotten-t1:fig13.56a",
+      "options": [
+        "Maladie de Paget",
+        "Hémangiome vertébral",
+        "Métastase mixte",
+        "Myélome"
+      ],
+      "reponse": 0,
+      "explication": "Élargissement + travées épaisses désorganisées + graisse entre elles : Paget. L'hémangiome n'élargit pas la vertèbre et donne des points (polka dots).",
+      "page": "p. 420",
+      "image_origine": "c13/f13.56"
+    },
+    {
+      "question": "Scanner du crâne : (a) plage de résorption de découverte fortuite ; (b) épaississement de la voûte aux dépens de la table interne. Diagnostic ?",
+      "figure": "cotten-t1:fig13.57a",
+      "options": [
+        "Maladie de Paget débutante puis évoluée",
+        "Hyperostose frontale interne",
+        "Méningiome en plaque",
+        "Dysplasie fibreuse"
+      ],
+      "reponse": 0,
+      "explication": "Résorption précoce puis épaississement prédominant à la table interne : Paget de la voûte.",
+      "page": "p. 421",
+      "image_origine": "c13/f13.57"
+    },
+    {
+      "question": "Tibia en IRM sagittale T1 et en TDM : épaississement corticotrabéculaire, moelle de signal essentiellement graisseux. Ce signal suggère :",
+      "figure": "cotten-t1:fig13.59a",
+      "options": [
+        "Un Paget sans transformation maligne",
+        "Un sarcome sur Paget",
+        "Une ostéomyélite chronique",
+        "Un lymphome osseux"
+      ],
+      "reponse": 0,
+      "explication": "La conservation du signal graisseux exclut un remplacement médullaire tumoral.",
+      "page": "p. 422",
+      "image_origine": "c13/f13.59"
+    },
+    {
+      "question": "Tibia pagétique : moelle graisseuse en T1 mais corticale antérieure épaissie en hypersignal T2 et rehaussée. Signification ?",
+      "figure": "cotten-t1:fig13.62c",
+      "options": [
+        "Activité de résorption pagétique (tissu fibrovasculaire)",
+        "Dégénérescence sarcomateuse",
+        "Ostéomyélite surajoutée",
+        "Fracture de fatigue"
+      ],
+      "reponse": 0,
+      "explication": "Le tissu fibrovasculaire de la résorption active, prédominant dans la corticale, est hyper T2 et rehaussé, sans masse ni remplacement médullaire.",
+      "page": "p. 424",
+      "image_origine": "c13/f13.62"
+    },
+    {
+      "question": "Forme active de Paget : importante résorption en radiographie, œdème fémoral et des tissus mous qui régresse après 6 mois de bisphosphonates. Que montre l'évolution ?",
+      "figure": "cotten-t1:fig13.64c",
+      "options": [
+        "Une forme pseudo-tumorale active sensible au traitement",
+        "Un sarcome répondant à la chimiothérapie",
+        "Une algodystrophie",
+        "Une infection traitée"
+      ],
+      "reponse": 0,
+      "explication": "Œdème médullaire et des tissus mous dans un Paget très actif, régressif sous bisphosphonates : pas de sarcome.",
+      "page": "p. 425",
+      "image_origine": "c13/f13.64"
+    },
+    {
+      "question": "Scanner : ostéocondensation focale, stratifiée, de la partie postérieure d'un corps vertébral sans épaississement cortical. Forme rare de quelle maladie ?",
+      "figure": "cotten-t1:fig13.66",
+      "options": [
+        "Paget (aspect en chou-fleur)",
+        "Énostose",
+        "Métastase ostéocondensante",
+        "Ostéome ostéoïde"
+      ],
+      "reponse": 0,
+      "explication": "L'aspect « en chou-fleur » est une atteinte pagétique focale de la partie postérieure du corps vertébral, diagnostic difficile sur une seule coupe.",
+      "page": "p. 426",
+      "image_origine": "c13/f13.66"
+    },
+    {
+      "question": "Patient pagétique connu : raréfaction très marquée de l'hémibassin droit après fracture de l'os iliaque. Interprétation ?",
+      "figure": "cotten-t1:fig13.67",
+      "options": [
+        "Raréfaction osseuse pseudo-tumorale sur Paget",
+        "Sarcome sur Paget",
+        "Métastase lytique",
+        "Phase lytique initiale du Paget"
+      ],
+      "reponse": 0,
+      "explication": "Après fracture ou immobilisation, l'os pagétique peut se raréfier massivement et mimer une tumeur.",
+      "page": "p. 426",
+      "image_origine": "c13/f13.67"
+    },
+    {
+      "question": "Paget du sacrum et de l'aile iliaque : masse présacrée de densité et de signal graisseux, superposables au sacrum. Diagnostic ?",
+      "figure": "cotten-t1:fig13.69a",
+      "options": [
+        "Extension pagétique pseudo-tumorale bénigne",
+        "Liposarcome",
+        "Chordome",
+        "Sarcome sur Paget"
+      ],
+      "reponse": 0,
+      "explication": "Une masse de signal graisseux identique à l'os pagétique adjacent correspond à une extension du processus pagétique (équivalent de pseudo-sarcome), pas à un sarcome.",
+      "page": "p. 427",
+      "image_origine": "c13/f13.69"
+    },
+    {
+      "question": "Sciatalgies bilatérales : L5 hypertrophiée en sagittal et en axial. Mécanisme ?",
+      "figure": "cotten-t1:fig13.72c",
+      "options": [
+        "Sténose canalaire/foraminale par hypertrophie pagétique",
+        "Hernie discale bilatérale",
+        "Épidurite métastatique",
+        "Spondylolisthésis"
+      ],
+      "reponse": 0,
+      "explication": "L'élargissement de la vertèbre pagétique rétrécit le canal et les foramens.",
+      "page": "p. 428",
+      "image_origine": "c13/f13.72"
+    },
+    {
+      "question": "Enfant traité par radiothérapie pour un Ewing de l'hémibassin gauche : cartilage de croissance élargi (flèche) et hypersignal T1 de la moelle. Explication ?",
+      "figure": "cotten-t1:fig13.75a",
+      "options": [
+        "Effets de la radiothérapie (trouble de croissance et conversion graisseuse)",
+        "Récidive tumorale",
+        "Ostéomyélite",
+        "Rachitisme"
+      ],
+      "reponse": 0,
+      "explication": "La radiothérapie élargit le cartilage de croissance (6 mois) et convertit la moelle irradiée en graisse.",
+      "page": "p. 431",
+      "image_origine": "c13/f13.74"
+    },
+    {
+      "question": "Métastase mammaire iliaque irradiée : scanner et IRM avec trabéculation désorganisée, plages graisseuses et travées épaissies. Aspect ?",
+      "figure": "cotten-t1:fig13.76a",
+      "options": [
+        "Pseudo-pagétique post-radique (lésion traitée)",
+        "Maladie de Paget associée",
+        "Progression tumorale",
+        "Ostéomyélite"
+      ],
+      "reponse": 0,
+      "explication": "Une métastase traitée peut prendre un aspect pseudo-pagétique ; l'absence d'élargissement osseux et de masse rassure.",
+      "page": "p. 432",
+      "image_origine": "c13/f13.76"
+    },
+    {
+      "question": "Masse pariétale (flèche) 14 ans après tumorectomie et radiothérapie d'un adénocarcinome du sein droit. Diagnostic à évoquer ?",
+      "figure": "cotten-t1:fig13.78",
+      "options": [
+        "Sarcome radio-induit",
+        "Récidive du carcinome mammaire",
+        "Ostéoradionécrose",
+        "Hématome"
+      ],
+      "reponse": 0,
+      "explication": "Latence > 4 ans, dans le champ, histologie différente (sarcome à cellules fusiformes) : sarcome radio-induit.",
+      "page": "p. 433",
+      "image_origine": "c13/f13.78"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Physiologie : os cortical, os trabéculaire et cellules",
+        "Remodelage et hormones : RANKL, OPG, PTH, vitamine D",
+        "Ostéoporose : définition, mécanismes et épidémiologie"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": []
+    },
+    {
+      "hs": [
+        "Mesurer l'os : DXA, scanner quantitatif et radiographie",
+        "Risque fracturaire (FRAX) et fractures périphériques",
+        "Fracture vertébrale : existe-t-elle ? quelle forme ? récente ?"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        0,
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "hs": [
+        "Fracture ostéoporotique ou maligne ? Critères radiographiques",
+        "Scanner et IRM d'une fracture vertébrale",
+        "Traitement de l'ostéoporose et vertébroplastie"
+      ],
+      "secs": [
+        6,
+        7,
+        8
+      ],
+      "qs": [
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "hs": [
+        "Rachitisme : le cartilage de croissance malade",
+        "Ostéomalacie : l'os mal minéralisé de l'adulte",
+        "Étiologies du rachitisme et de l'ostéomalacie"
+      ],
+      "secs": [
+        9,
+        10,
+        11
+      ],
+      "qs": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "hs": [
+        "Maladie de Paget : physiopathologie et terrain",
+        "Paget en radiographie, site par site"
+      ],
+      "secs": [
+        12,
+        13
+      ],
+      "qs": [
+        13,
+        14,
+        15,
+        16,
+        18
+      ]
+    },
+    {
+      "hs": [
+        "Paget en scanner, IRM et scintigraphie",
+        "Paget : formes inhabituelles et complications",
+        "Os irradié : effets de la radiothérapie et complications"
+      ],
+      "secs": [
+        14,
+        15,
+        16
+      ],
+      "qs": [
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "ancien_id": "c13",
+  "images_non_rattachees": [
+    "c13/s13.16",
+    "c13/s13.31",
+    "c13/s13.4"
+  ]
+}

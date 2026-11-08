@@ -1,0 +1,343 @@
+{
+  "id": "laredo-t4:m04",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 7,
+  "chapitre_libelle": "Chapitre 2 · Pseudo-tumeurs",
+  "titre": "Maladie de Paget, os long et rachis",
+  "pages": "2570–2614",
+  "objectifs": [
+    "Affirmer un Paget sur la triade forme-densité-structure",
+    "Innocenter une vertèbre ivoire",
+    "Reconnaître sarcome, fissures et pièges pseudo-tumoraux"
+  ],
+  "essentiels": [
+    "Paget = remodelage excessif : résorption ostéoclastique intense (cellules géantes anormales) puis reconstruction hyperactive en os tissé « en mosaïque ». Gène SQSTM1 dans les formes familiales. Rare avant 40 ans, jusqu'à 10 % après 80 ans.",
+    "Biologie : phosphatases alcalines élevées (meilleur marqueur), calcémie et VS normales. Marqueurs parfois normaux si atteinte unique.",
+    "Distribution : mono- ou polyostotique, asymétrique, JAMAIS diffuse. Bassin > rachis > crâne > fémur > tibia. Début à une extrémité de l'os, extension d'environ 8 mm/an, ne traverse pas les articulations (sauf vertèbres et sacro-iliaques via ponts osseux).",
+    "Diagnostic radiologique = triade : forme (hypertrophie, incurvation plastique), densité (front de progression raréfiant en « flamme » puis condensation), structure (travées grossières, corticale épaisse mais poreuse, dédifférenciation cortico-spongieuse). Les trois réunis valent une histologie.",
+    "Rachis : atteinte de toute la vertèbre, corps ET arc postérieur (85 %) ; vertèbre « en cadre », élargissement interpédiculaire, mur antérieur qui perd sa concavité. Examiner l'épineuse est la clé pour innocenter une vertèbre ivoire.",
+    "IRM : le Paget est une maladie de l'os, pas de la moelle. Moelle graisseuse conservée (parfois œdémateuse, 30 % au rachis). Une plage en hyposignal T1 franc qui remplace la moelle = métastase ou sarcome.",
+    "Complications : fissures horizontales des corticales convexes (face antérieure du tibia, latérale du fémur), fractures transversales « en craie », coxopathie, sténose canalaire osseuse, surdité. Sarcome rare (< 1 %, ostéosarcome de haut grade, parfois multifocal) : lyse + masse.",
+    "Pièges : raréfaction pseudo-tumorale après immobilisation ou fracture, « pumice bone », tumeur à cellules géantes sur Paget, extension extra-osseuse pagétique. Les bisphosphonates densifient et « gèlent » la maladie."
+  ],
+  "introduction": "Le Paget est une maladie du **remodelage** : l'os est détruit trop vite puis reconstruit trop vite, en désordre. Toutes ses images découlent de cette séquence. Si vous retenez la **triade forme, densité, structure** et le réflexe « **l'os est malade, pas la moelle** », vous reconnaîtrez le Paget et, surtout, vous saurez quand ce n'est plus seulement un Paget.",
+  "sections": [
+    {
+      "titre": "Résorption, puis reconstruction en mosaïque",
+      "texte": "Tout commence par une **résorption ostéoclastique intense**, menée par des ostéoclastes géants anormaux. Les ostéoblastes répondent par une **reconstruction hyperactive** en os tissé, remplacé ensuite par un os lamellaire **« en mosaïque »** : des fragments juxtaposés séparés par des lignes cémentantes irrégulières. L'os devient **plus gros, plus dense, mais plus fragile**.\n\nLe gène **SQSTM1** est muté dans environ 40 % des formes familiales. La maladie est rare avant 40 ans et touche jusqu'à 10 % des sujets après 80 ans. Biologiquement : **phosphatases alcalines élevées** (le meilleur marqueur), calcémie et VS normales.",
+      "figures": [
+        "laredo-t4:fig8.2",
+        "laredo-t4:fig7.1a"
+      ],
+      "legendes": [
+        "**Microradiographie d'un front de progression** : à droite, l'os normal (NL) ; à gauche, l'os pagétique, creusé par la résorption puis reconstruit de façon anarchique.",
+        "**Radiographie d'une tranche de vertèbre pagétique** (au centre) entre deux vertèbres normales : la pièce est plus grande, ses corticales épaissies, son spongieux grossier en réseau."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Pourquoi l'os pagétique est-il à la fois plus gros et plus fragile ?",
+        "a": "La résorption intense est suivie d'une reconstruction excessive en os tissé puis en mosaïque, désorganisée et poreuse."
+      }
+    },
+    {
+      "titre": "Une maladie qui avance d'un bout à l'autre",
+      "texte": "Le Paget est **mono- ou polyostotique, asymétrique, mais jamais diffus** : un squelette entièrement atteint évoque une ostéopathie métabolique, une hémopathie ou une carcinose. Les sièges les plus fréquents sont le bassin, le rachis, le crâne, le fémur et le tibia.\n\nSur un os long, il **débute à une extrémité** et avance de proche en proche d'environ **8 mm par an** : il faut 30 à 40 ans pour remanier tout un fémur. Il ne traverse pas les articulations des membres, mais il peut passer d'une vertèbre à l'autre ou à travers une sacro-iliaque par des ponts osseux.\n\nLe **front de progression** raréfiant, en forme de **flamme** ou de V, se voit bien dans les corticales des os longs ; dans le bassin et l'os spongieux, il manque souvent et le Paget apparaît comme une hyperostose progressive.",
+      "figures": [
+        "laredo-t4:fig8.4d",
+        "laredo-t4:fig8.4a"
+      ],
+      "legendes": [
+        "**Mode d'extension** : le remaniement part d'une extrémité et avance vers la diaphyse (schéma et radiographies successives du tibia). Les flèches marquent le front qui progresse d'année en année.",
+        "**Front de progression visible** à la partie inférieure du tibia (flèche) : la limite entre os remanié et os normal est franche, en biseau."
+      ],
+      "cle": "Paget polyostotique : oui. Paget diffus à tout le squelette : jamais.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Squelette entièrement condensé chez un homme de 75 ans : Paget ?",
+        "a": "Non : le Paget n'est jamais diffus. Penser ostéopathie métabolique, hémopathie ou carcinose."
+      }
+    },
+    {
+      "titre": "La triade : forme, densité, structure",
+      "texte": "Le diagnostic radiologique repose sur trois familles d'anomalies, qui, réunies, **valent une histologie** :\n\nIl ne suffit pas qu'un os soit dense : une métastase condensante aussi. Il faut que l'os soit **plus gros** et **déstructuré**.",
+      "figures": [
+        "laredo-t4:fig8.6b",
+        "laredo-t4:fig9.1ab"
+      ],
+      "legendes": [
+        "**Coupe anatomique d'un fémur pagétique** : travées grossières orientées selon les lignes de force, épaississement des corticales, os globalement élargi.",
+        "**Coupe transversale d'une corticale pagétique** : épaisse mais criblée de pores, et qui se confond avec le spongieux. C'est la dédifférenciation cortico-spongieuse."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "La corticale est épaisse parce que l'os est reconstruit en excès, mais poreuse parce que la résorption continue en permanence : d'où un os à la fois gros et fragile.",
+      "verification": {
+        "q": "Quels trois groupes de signes, réunis, valent une histologie de Paget ?",
+        "a": "Forme (hypertrophie, incurvation), densité (front raréfiant puis condensation), structure (travées grossières, dédifférenciation cortico-spongieuse)."
+      }
+    },
+    {
+      "titre": "Le rachis : regarder toute la vertèbre",
+      "texte": "Le Paget remanie **toute la pièce osseuse** : corps **et** arc postérieur (85 %). C'est l'argument le plus fort face à une métastase, qui n'occupe le plus souvent qu'une partie de la vertèbre. Devant une vertèbre ivoire, **examinez l'épineuse** : si elle est dense et épaissie, c'est probablement un Paget.\n\nAutres signes : vertèbre **« en cadre »** (condensation périphérique sous les plateaux et le long des murs), **élargissement** (distance interpédiculaire et diamètre antéro-postérieur augmentés), **mur antérieur qui perd sa concavité**. Au scanner, la trame est en réseau, vacuolaire, fibrillaire (travées qui convergent vers les pédicules) ou en mottes denses.\n\nFace à l'**hémangiome**, l'autre « vertèbre striée » : l'hémangiome a des travées verticales régulières, des corticales compactes, aucune hypertrophie, et reste limité au corps.",
+      "figures": [
+        "laredo-t4:fig9.16a",
+        "laredo-t4:fig9.4b",
+        "laredo-t4:fig9.24a"
+      ],
+      "legendes": [
+        "**Vertèbre pagétique au scanner** : la texture anormale atteint l'ensemble de la pièce, corps et arc postérieur, avec des travées épaisses et des corticales élargies.",
+        "**Trame fibrillaire** : travées épaissies en faisceaux qui convergent vers les pédicules (a), aspect quadrillé de l'arc postérieur (b).",
+        "**Bloc vertébral pagétique** : le remaniement a franchi le disque. Noter en IRM la conservation du signal graisseux de la moelle."
+      ],
+      "cle": null,
+      "piege": "Une vertèbre dense chez un patient qui a un cancer du sein ou de la prostate : cherchez l'atteinte de l'arc, l'hypertrophie et le cadre avant de conclure à une métastase.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Vertèbre ivoire chez un patient porteur d'un cancer de prostate : quel signe chercher en faveur du Paget ?",
+        "a": "L'atteinte de toute la vertèbre jusqu'à l'épineuse, avec hypertrophie et aspect en cadre."
+      }
+    },
+    {
+      "titre": "IRM : la moelle doit rester graisseuse",
+      "texte": "Le Paget est une maladie **de l'os**, pas de la moelle. En IRM, la cavité médullaire garde habituellement son **signal graisseux**, parfois même plus graisseux que les vertèbres voisines. Un signal **œdémateux** est possible (30 % au rachis : hypo T1 et hyper T2 modérés, respectant la trame), et une vertèbre ivoire est en hyposignal partout.\n\nLe signal d'alarme est la **perte du signal graisseux** : une plage de remplacement médullaire en hyposignal T1 franc, avec prise de contraste hétérogène ou masse des tissus mous. Elle signe une **métastase** ou une **dégénérescence sarcomateuse**.",
+      "figures": [
+        "laredo-t4:fig9.8a"
+      ],
+      "legendes": [
+        "**Signal œdémateux trompeur** d'une vertèbre pagétique : hyposignal T1, hypersignal T2. Le contexte radiographique et le respect de la trame évitent l'erreur."
+      ],
+      "cle": "Os pagétique + moelle graisseuse = rassurant. Os pagétique + plage tissulaire qui remplace la moelle = biopsie.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Fémur pagétique avec plage en hyposignal T1 franc qui remplace la moelle : conduite ?",
+        "a": "Biopsie : métastase ou dégénérescence sarcomateuse jusqu'à preuve du contraire."
+      }
+    },
+    {
+      "titre": "Complications",
+      "texte": "",
+      "figures": [
+        "laredo-t4:fig8.39",
+        "laredo-t4:fig9.27a"
+      ],
+      "legendes": [
+        "**Sténose canalaire d'origine osseuse** : l'affaissement et l'hypertrophie du corps vertébral pagétique rétrécissent le canal (scanner).",
+        "**Tumeur à cellules géantes sur Paget de l'os iliaque** : ostéolyse avec extension aux tissus mous, qui doit faire craindre une transformation et conduire à la biopsie."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Sur quelle face d'un tibia pagétique incurvé chercher les fissures ?",
+        "a": "Sur la corticale convexe (face antérieure du tibia, face latérale du fémur)."
+      }
+    },
+    {
+      "titre": "Pièges et effet du traitement",
+      "texte": "Après une **fracture ou une immobilisation**, un os pagétique déjà hyperactif peut se raréfier de façon spectaculaire : c'est la **raréfaction pseudo-tumorale**. Elle n'a pas de masse des tissus mous et la moelle reste graisseuse.\n\nLe **« pumice bone »** est un débord sous-périosté de tissu pagétique dans les tissus mous, qui simule un sarcome : le scanner montre une néocorticale, l'IRM une moelle graisseuse.\n\nLes **bisphosphonates** densifient les zones lytiques, surtout les fronts, et « gèlent » la maladie pendant des années.",
+      "figures": [
+        "laredo-t4:fig8.45a",
+        "laredo-t4:fig8.13d"
+      ],
+      "legendes": [
+        "**Raréfaction « pseudo-néoplasique »** d'un fémur pagétique après fracture et immobilisation prolongée.",
+        "**Effet des bisphosphonates** sur un Paget mixte du radius : avant (a) puis quelques mois après traitement (b), les plages lytiques se densifient."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Raréfaction spectaculaire d'un fémur pagétique après immobilisation, sans masse : faut-il craindre un sarcome ?",
+        "a": "Non si la moelle reste graisseuse et sans masse : c'est une raréfaction pseudo-tumorale."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Fémur : zone claire en flamme à la limite distale de l'os remanié (flèche). Comment l'appelle-t-on ?",
+      "figure": "laredo-t4:fig8.4a",
+      "options": [
+        "Front de progression raréfiant pagétique",
+        "Triangle de Codman",
+        "Séquestre",
+        "Ligne de Looser"
+      ],
+      "reponse": 0,
+      "explication": "Le Paget progresse depuis une extrémité, précédé d'un front de résorption lytique, d'environ 8 mm par an.",
+      "page": "2574",
+      "image_origine": "m04/p111_1"
+    },
+    {
+      "question": "Crâne : vaste plage claire bien limitée de la voûte (flèche) chez un sujet âgé. Diagnostic ?",
+      "figure": "laredo-t4:fig9.8a",
+      "options": [
+        "Ostéoporose circonscrite (Paget débutant)",
+        "Myélome",
+        "Histiocytose",
+        "Métastases lytiques"
+      ],
+      "reponse": 0,
+      "explication": "Phase initiale lytique du Paget du crâne. Après traitement elle devient condensante et hypertrophique.",
+      "page": "2576",
+      "image_origine": "m04/p113_0"
+    },
+    {
+      "question": "Rachis lombaire de profil : quelle vertèbre est pagétique et pourquoi (flèches) ?",
+      "figure": null,
+      "options": [
+        "Vertèbre « en cadre » : condensation prédominant près des corticales",
+        "Vertèbre homogène ivoire non systématisée",
+        "Vertèbre grillagée verticale",
+        "Vertèbre en H"
+      ],
+      "reponse": 0,
+      "explication": "La condensation pagétique prédomine à la périphérie (vertèbre en cadre), contrairement à la condensation non systématisée des métastases.",
+      "page": "2580",
+      "image_origine": "m04/p117_1"
+    },
+    {
+      "question": "Même question pour ces vertèbres denses (astérisques) chez un homme de 70 ans. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig8.22",
+      "options": [
+        "Métastases condensantes (prostate)",
+        "Paget",
+        "Hémangiome",
+        "Ostéopétrose"
+      ],
+      "reponse": 0,
+      "explication": "Condensation non systématisée, sans cadre ni hypertrophie : métastases de cancer de la prostate.",
+      "page": "2580",
+      "image_origine": "m04/p117_0"
+    },
+    {
+      "question": "Vertèbre à travées verticales épaissies (flèche), corticales compactes, taille normale. Diagnostic ?",
+      "figure": "laredo-t4:fig8.23a",
+      "options": [
+        "Hémangiome vertébral",
+        "Paget",
+        "Ostéoporose",
+        "Lymphome"
+      ],
+      "reponse": 0,
+      "explication": "Aspect grillagé vertical, sans hypertrophie, corticales normales : hémangiome. Le Paget hypertrophie la vertèbre et rend les corticales poreuses.",
+      "page": "2581",
+      "image_origine": "m04/p118_0"
+    },
+    {
+      "question": "Cliché de face du rachis (doubles flèches). Quel signe de forme du Paget est mesuré ?",
+      "figure": "laredo-t4:fig9.14",
+      "options": [
+        "Élargissement de la distance interpédiculaire",
+        "Tassement en galette",
+        "Pédicule borgne",
+        "Scalloping postérieur"
+      ],
+      "reponse": 0,
+      "explication": "L'hypertrophie de la vertèbre pagétique élargit la distance interpédiculaire ; l'épineuse est aussi hypertrophiée.",
+      "page": "2603",
+      "image_origine": "m04/p140_0"
+    },
+    {
+      "question": "Scanner axial vertébral : travées épaisses désorganisées en réseau aréolaire, atteinte de l'arc. Aspect ?",
+      "figure": "laredo-t4:fig9.1aa",
+      "options": [
+        "Réseau pagétique",
+        "Polka dot de l'hémangiome",
+        "Lyse mitée du myélome",
+        "Séquestre"
+      ],
+      "reponse": 0,
+      "explication": "Travées moins nombreuses mais plus épaisses et désorganisées, atteinte globale : aspect en réseau de la vertèbre pagétique.",
+      "page": "2597",
+      "image_origine": "m04/p134_1"
+    },
+    {
+      "question": "Corticale fémorale pagétique convexe (flèches). Que montrent les petites lignes transversales ?",
+      "figure": "laredo-t4:fig8.36a",
+      "options": [
+        "Fissures pagétiques",
+        "Canaux vasculaires",
+        "Lignes d'arrêt de croissance",
+        "Réaction périostée lamellaire"
+      ],
+      "reponse": 0,
+      "explication": "Fissures horizontales des corticales convexes, souvent enfouies sous une couche superficielle continue ; elles peuvent évoluer vers une fracture transversale.",
+      "page": "2588",
+      "image_origine": "m04/p125_1"
+    },
+    {
+      "question": "Paget connu, douleur croissante. Radiographie peu parlante, l'IRM et le scanner montrent une masse détruisant l'os. Diagnostic ?",
+      "figure": "laredo-t4:fig8.42",
+      "options": [
+        "Transformation sarcomateuse",
+        "Raréfaction d'immobilisation",
+        "Pumice bone",
+        "Extension pagétique bénigne"
+      ],
+      "reponse": 0,
+      "explication": "Remplacement médullaire et masse extra-osseuse : sarcome sur Paget. L'IRM est l'examen de choix pour le reconnaître tôt.",
+      "page": "2591",
+      "image_origine": "m04/p128_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Résorption, puis reconstruction en mosaïque",
+        "Une maladie qui avance d'un bout à l'autre"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": [
+        0,
+        1
+      ]
+    },
+    {
+      "hs": [
+        "La triade : forme, densité, structure",
+        "Le rachis : regarder toute la vertèbre",
+        "IRM : la moelle doit rester graisseuse"
+      ],
+      "secs": [
+        2,
+        3,
+        4
+      ],
+      "qs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "hs": [
+        "Complications",
+        "Pièges et effet du traitement"
+      ],
+      "secs": [
+        5,
+        6
+      ],
+      "qs": [
+        7
+      ]
+    }
+  ],
+  "ancien_id": "m04",
+  "images_non_rattachees": [
+    "m04/p117_1",
+    "m04/p120_1"
+  ]
+}

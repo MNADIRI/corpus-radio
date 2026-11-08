@@ -1,0 +1,328 @@
+{
+  "id": "laredo-t4:m22",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 42,
+  "chapitre_libelle": "Chapitre 6 · Localisations particulières",
+  "titre": "Lésion vertébrale unique (2) : tumeurs primitives du rachis",
+  "pages": "3125–3161",
+  "objectifs": [
+    "Placer chaque tumeur primitive du rachis selon l'âge et le siège (corps vs arc postérieur)",
+    "Différencier hémangiome quiescent, actif et agressif",
+    "Distinguer TBCN (tumeur bénigne à cellules notochordales) et chordome, plasmocytome et métastase"
+  ],
+  "essentiels": [
+    "Règle topographique : arc postérieur → ostéome ostéoïde (> 95 %), ostéoblastome (97 % centré sur l'arc), kyste anévrysmal (hémivertébral), ostéochondrome (C2), Ewing (70 %). Corps vertébral → hémangiome, TCG (tumeur à cellules géantes), chordome, plasmocytome, lymphome, ostéosarcome (83–90 %), métastase.",
+    "Hémangiome quiescent (10 % des autopsies, T12–L5) : travées verticales épaissies, « polka dot » en axial, graisse, arc postérieur et corticales respectés, pas de travées horizontales ni hypertrophie (≠ Paget). Actif (T3–T10) : tout le corps + arc postérieur, corticales amincies/discontinues, plages lytiques, contenu tissulaire vasculaire, extension épidurale en embrasse de rideaux ; 10 % se révèlent en fin de grossesse/post-partum ; compression → embolisation puis décompression et vertébroplastie.",
+    "Ostéome ostéoïde rachidien : 5–25 ans, H 2–3/1, lombaire 50 %, arc postérieur > 95 % (isthme, lame, articulaire) ; douleur nocturne sensible aux AINS, radiculalgie 1/2 ; SCOLIOSE DOULOUREUSE (nidus dans la concavité au sommet) ; scanner indispensable (nidus 5–15 mm calcifié 85–90 % avec liseré clair) ; rehaussement artériel ; laser si corticale protège le canal, sinon bisphosphonates.",
+    "Ostéoblastome : 30–40 % au rachis, 5–25 ans, thoracique > lombaire > cervical > sacrum ; 4 aspects (OO géant > 15–20 mm, soufflant pseudo-KA avec calcifications, lytique pseudo-malin, condensant) ; œdème péri-lésionnel important ; récidive 10–15 % (40–50 % formes agressives sacrées).",
+    "Kyste anévrysmal : 15 % des tumeurs primitives du rachis, 5–25 ans, arc postérieur ± corps, hémivertébral, extension à la vertèbre adjacente (15 %) ; 3 stades (lyse pseudo-maligne → fine coque → coque épaisse) ; niveaux liquide-liquide ; biopsier la partie charnue (ostéosarcome télangiectasique, KA secondaire) ; pas de radiothérapie.",
+    "TCG : 20–40 ans, sacrum 39–57 % (aileron, peut franchir la sacro-iliaque ; 2e tumeur sacrée après le chordome) ; au rachis mobile centrée sur le CORPS, lyse soufflante sans matrice, hyposignal ou signal intermédiaire T2 (63–96 %) évocateur ; dénosumab. Ostéochondrome : 3 % au rachis, C2, arc postérieur, continuité corticale et médullaire ; compression 34 % (77 % si maladie exostosante).",
+    "TBCN : médiane, 0,6–3 cm, condensation pâle sans ostéolyse, hypersignal T2, PAS de rehaussement ni d'hyperfixation, pas de masse. Chordome : > 50 ans (60 ans), H 1,8 ; sacro-coccygien 45–50 %, clivus 35–40 % ; lyse médiane, masse présacrée volumineuse bien limitée refoulant le rectum, calcifications, hypersignal T2 intense ; brachyurie + ; lombaire : lyse du tiers postérieur médian (canal chordal) + condensation ; exérèse monobloc.",
+    "Plasmocytome solitaire : 10 % des tumeurs primitives, > 60 ans, T7–T12 ; image multikystique « en amande » / « mini-brain », vertèbre et pédicule évidés, plateaux relativement conservés ; hypersignal T2 homogène ; bilan (myélogramme 2 sites, IRM) négatif ; protéine monoclonale 40 %. Ewing : sacrum 50 %, masse paravertébrale 91 %, signal T2 bas/iso (petites cellules rondes)."
+  ],
+  "introduction": "Les tumeurs primitives du rachis se trient d'abord par deux questions simples : **quel âge ?** et **corps vertébral ou arc postérieur ?** Avant 30 ans et sur l'arc postérieur : ostéome ostéoïde, ostéoblastome, kyste anévrysmal. Sur le corps : hémangiome à tout âge, TCG chez l'adulte jeune, chordome, plasmocytome et lymphome chez l'adulte plus âgé. Les signes d'imagerie viennent ensuite confirmer.",
+  "sections": [
+    {
+      "titre": "La carte : arc postérieur ou corps ?",
+      "texte": "",
+      "figures": [],
+      "legendes": [],
+      "cle": "Une TCG est presque toujours centrée sur le corps vertébral, contrairement à la plupart des tumeurs bénignes du rachis.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Tumeur bénigne vertébrale centrée sur le corps chez un adulte de 30 ans, sans matrice : laquelle ?",
+        "a": "TCG (la plupart des autres tumeurs bénignes du rachis sont centrées sur l'arc)."
+      }
+    },
+    {
+      "titre": "Hémangiome : quiescent, actif, agressif",
+      "texte": "L'**hémangiome quiescent** (10 % des autopsies, T12-L5) est une séquelle graisseuse : travées verticales épaissies (striation), **« polka dot »** en axial, graisse entre les travées, corticales et arc normaux, pas d'hypertrophie. Il ne demande aucune surveillance.\n\nL'**hémangiome actif** siège plutôt de T3 à T10, touche **tout le corps et l'arc**, amincit et interrompt les corticales, contient de vastes plages lytiques et un **tissu vasculaire** (non graisseux), et peut s'étendre dans le canal **en embrasse de rideaux**. Il se révèle dans 10 % des cas en fin de grossesse ou en post-partum. Une compression impose embolisation, décompression et vertébroplastie.",
+      "figures": [
+        "laredo-t4:fig42.31"
+      ],
+      "legendes": [
+        "**Hémangiome agressif lombaire** : large ostéolyse, discontinuité des plateaux (flèches), destruction de la corticale postérieure ; très difficile à distinguer d'un plasmocytome ou d'une TCG."
+      ],
+      "cle": null,
+      "piege": "Un hémangiome vasculaire peut fixer peu en scintigraphie et au TEP, alors qu'un hibernome intra-osseux (graisse brune) fixe : ne pas le prendre pour une métastase condensante.",
+      "pourquoi": null,
+      "verification": {
+        "q": "Hémangiome vertébral de T6 touchant l'arc, corticales discontinues, femme enceinte : quel risque ?",
+        "a": "Hémangiome actif/agressif avec risque de compression médullaire."
+      }
+    },
+    {
+      "titre": "Ostéome ostéoïde et ostéoblastome",
+      "texte": "L'**ostéome ostéoïde** (5-25 ans, 2 à 3 garçons pour une fille) siège sur l'**arc postérieur** dans plus de 95 % des cas, surtout lombaire (isthme, lame, articulaire inférieure). Il donne une douleur nocturne calmée par les AINS, une radiculalgie une fois sur deux et une **scoliose douloureuse** dont la concavité contient le nidus, au sommet. Le **scanner** est indispensable : nidus de 5 à 15 mm, calcifié dans 85-90 %, cerné d'un liseré clair. L'IRM montre l'œdème qui guide vers le nidus et son rehaussement artériel.\n\nL'**ostéoblastome** (30 à 40 % des ostéoblastomes sont rachidiens) est plus gros et polymorphe : ostéome ostéoïde géant, lésion soufflante pseudo-kyste anévrysmal avec calcifications, lyse pseudo-maligne, ou lésion condensante. Son **œdème péri-lésionnel** est caractéristique. Récidive 10 à 15 %, beaucoup plus dans les formes sacrées agressives.",
+      "figures": [
+        "laredo-t4:fig42.34a"
+      ],
+      "legendes": [
+        "**Ostéome ostéoïde sous-périosté de l'arc postérieur de L2** : lacune ronde infracentimétrique à calcification centrale avec hyperostose au scanner ; en IRM, nidus rehaussé précocement et œdème péri-lésionnel."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Adolescent avec scoliose douloureuse, radiographies normales : quel examen pour le nidus ?",
+        "a": "Le scanner (en coupes fines), guidé au besoin par l'œdème en IRM."
+      }
+    },
+    {
+      "titre": "Kyste anévrysmal et TCG",
+      "texte": "Le **kyste anévrysmal** (15 % des tumeurs primitives du rachis, 5-25 ans) est centré sur l'**arc postérieur**, souvent **hémivertébral**, et franchit le disque ou les articulaires vers la vertèbre voisine dans 15 %. Lésion soufflante d'évolution rapide, à fine coque, remplie de **niveaux liquide-liquide**. On biopsie la partie charnue (ostéosarcome télangiectasique, kyste secondaire), et on proscrit la radiothérapie.\n\nLa **TCG** (20-40 ans) siège surtout au **sacrum** (39 à 57 %), dans un aileron, et peut franchir la sacro-iliaque. Au rachis mobile, elle est **centrée sur le corps** : lyse soufflante polylobée sans matrice, et surtout un **signal T2 bas ou intermédiaire** (63 à 96 %) qui la distingue. Le dénosumab peut réduire les grosses tumeurs avant chirurgie.",
+      "figures": [
+        "laredo-t4:fig42.39b"
+      ],
+      "legendes": [
+        "**TCG de C2** : ostéolyse soufflante qui évide le corps et l'odontoïde, en signal T2 intermédiaire évocateur."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion soufflante de l'arc postérieur étendue à la vertèbre voisine avec niveaux : quel traitement proscrire ?",
+        "a": "La radiothérapie (kyste anévrysmal : risque de sarcome radio-induit)."
+      }
+    },
+    {
+      "titre": "Tumeurs cartilagineuses du rachis",
+      "texte": "L'**ostéochondrome** (3 % des ostéochondromes solitaires) préfère **C2** et l'arc postérieur ; il est souvent méconnu en radiographie. Le critère reste la continuité corticale et spongieuse avec l'os porteur. Il comprime la moelle dans 34 % des formes solitaires et 77 % des maladies exostosantes.\n\nLe **chondrosarcome périphérique** naît sur une exostose (rachis thoracique et lombaire) : volumineuse masse calcifiée à coiffe épaisse de plus de 2 cm, qui entre dans le canal par le foramen dans 35 %. Le **chondrosarcome central** (45 ans, 2 hommes pour 1 femme) est une lyse soufflante polycyclique calcifiée dans 70 %, en hypersignal T2 avec rehaussement septal, qui traverse volontiers le disque.\n\nAu squelette axial, toute lésion cartilagineuse centrale est **potentiellement maligne** : on vise une exérèse complète.",
+      "figures": [
+        "laredo-t4:fig42.40",
+        "laredo-t4:fig42.x681"
+      ],
+      "legendes": [
+        "**Ostéochondrome de l'épineuse de C4** : corticale et spongieux en continuité avec ceux de l'os d'implantation.",
+        "**Chondrosarcome central thoracique de grade 2** : lésion lobulée à calcifications cartilagineuses, avec double extension transdiscale et intracanalaire."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lésion cartilagineuse centrale d'une vertèbre thoracique d'aspect calme : que faire ?",
+        "a": "Exérèse complète : au squelette axial, toute lésion cartilagineuse centrale est potentiellement maligne."
+      }
+    },
+    {
+      "titre": "TBCN et chordome : la ligne médiane",
+      "texte": "La **tumeur bénigne à cellules notochordales** est médiane, petite (0,6 à 3 cm), réalise une condensation pâle **sans lyse**, en hypersignal T2, **sans rehaussement ni fixation**, sans masse.\n\nLe **chordome** (plus de 50 ans pour 80 %, homme) siège au sacro-coccyx (45-50 %) et au clivus (35-40 %), plus rarement au rachis mobile. Au sacrum : lyse médiane avec grosse masse présacrée bien limitée. Au rachis lombaire : lésion mixte, lyse médiane du **tiers postérieur** du corps (canal chordal) et condensation du reste, tassement, grosse masse. Au cervical : forme en sablier simulant un neurinome.",
+      "figures": [
+        "laredo-t4:fig42.47c",
+        "laredo-t4:fig42.48a"
+      ],
+      "legendes": [
+        "**TBCN de C2** : condensation nodulaire médiane de l'odontoïde, en hypersignal T2 franc, non rehaussée.",
+        "**Chordome sacro-coccygien** en T1 axial : masse médiane et paramédiane qui détruit le sacrum et refoule les organes pelviens ; les plages en hypersignal T1 spontané sont hémorragiques."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Condensation médiane non rehaussée de 1,5 cm vs lyse avec masse présacrée de 9 cm : diagnostics ?",
+        "a": "TBCN pour la première, chordome pour la seconde."
+      }
+    },
+    {
+      "titre": "Plasmocytome, lymphome, Ewing, ostéosarcome",
+      "texte": "Le **plasmocytome solitaire** (10 % des tumeurs primitives du rachis, plus de 60 ans, T7-T12) évide le corps et le pédicule, avec des cloisons verticales « en amande » et un aspect **« mini-brain »** en axial ; signal homogène, hyperfixation. Il faut prouver qu'il est seul (myélogramme sur deux sites, IRM).\n\nLe **lymphome osseux primitif** ressemble à une métastase lytique, avec une extension paravertébrale et épidurale fréquente ; l'IRM peut montrer un remplacement médullaire étendu alors que le scanner est presque normal.\n\nUne masse vertébrale **non calcifiée en hypo ou iso T2** évoque une tumeur à **petites cellules rondes** : **Ewing** chez le jeune (sacrum 50 %, masse paravertébrale 91 %), lymphome chez l'adulte. L'**ostéosarcome** rachidien est rare, plus tardif (4e décennie), centré sur le corps, mixte avec masse calcifiée nuageuse ; il peut compliquer un Paget ou une irradiation.",
+      "figures": [
+        "laredo-t4:fig42.53c",
+        "laredo-t4:fig42.x693a"
+      ],
+      "legendes": [
+        "**Plasmocytome solitaire de T2** étendu au canal, au disque et à la vertèbre sus-jacente : vertèbre évidée au scanner, signal homogène en IRM.",
+        "**Lymphome osseux primitif plurivertébral** : remplacement médullaire étendu des arcs postérieurs avec extension intracanalaire en IRM, contrastant avec un scanner presque normal."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Masse vertébrale non calcifiée en iso T2 chez un adolescent avec grosse masse paravertébrale : hypothèse ?",
+        "a": "Sarcome d'Ewing (tumeur à petites cellules rondes)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Découverte fortuite au scanner : vertèbre L4 à travées épaissies, aspect grillagé en sagittal, ponctué en axial, densité graisseuse entre les travées. Diagnostic ?",
+      "figure": "laredo-t4:fig42.30c",
+      "options": [
+        "Hémangiome vertébral",
+        "Maladie de Paget",
+        "Métastase condensante",
+        "Myélome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hémangiome vertébral de L4, aspect scanographique caractéristique — forme graisseuse quiescente, sans surveillance (texte).",
+      "page": "p. 3126–3127, 3130",
+      "image_origine": "m22/p660_0"
+    },
+    {
+      "question": "Hémangiome thoracique touchant tout le corps et l'arc, corticales discontinues, épidurite en embrasse de rideaux. Type ?",
+      "figure": "laredo-t4:fig42.32d",
+      "options": [
+        "Hémangiome actif/agressif",
+        "Hémangiome quiescent",
+        "Plasmocytome",
+        "Métastase de rein"
+      ],
+      "reponse": 0,
+      "explication": "T3–T10, atteinte globale, arc postérieur, extension intracanalaire et tissulaire vascularisée : hémangiome agressif.",
+      "page": "p. 3127–3129",
+      "image_origine": "m22/p663_0"
+    },
+    {
+      "question": "Adolescent, scoliose douloureuse lombaire nocturne calmée par l'aspirine. Diagnostic ?",
+      "figure": "laredo-t4:fig42.x667a",
+      "options": [
+        "Ostéome ostéoïde de l'arc postérieur",
+        "Scoliose idiopathique",
+        "Spondylolisthésis",
+        "Hernie discale"
+      ],
+      "reponse": 0,
+      "explication": "Scoliose douloureuse = ostéome ostéoïde jusqu'à preuve du contraire ; nidus dans la concavité au sommet.",
+      "page": "p. 3131–3132",
+      "image_origine": "m22/p666_0"
+    },
+    {
+      "question": "Lésion soufflante hémivertébrale de L1 étendue à l'arc de T12, niveaux liquide-liquide, cloisons rehaussées, patient de 15 ans. Diagnostic ?",
+      "figure": "laredo-t4:fig42.x672c",
+      "options": [
+        "Kyste anévrysmal",
+        "TCG",
+        "Chordome",
+        "Plasmocytome"
+      ],
+      "reponse": 0,
+      "explication": "Jeune, topographie hémivertébrale avec extension à la vertèbre adjacente, niveaux : kyste anévrysmal.",
+      "page": "p. 3136–3137",
+      "image_origine": "m22/p671_0"
+    },
+    {
+      "question": "Femme de 30 ans : lyse soufflante sans matrice du corps de L3 avec fracture, signal intermédiaire en T2. Diagnostic évocateur ?",
+      "figure": "laredo-t4:fig42.x674b",
+      "options": [
+        "Tumeur à cellules géantes",
+        "Hémangiome agressif",
+        "Ostéoblastome",
+        "Chondrosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Adulte jeune, centré sur le corps, sans minéralisation, T2 intermédiaire : TCG.",
+      "page": "p. 3139",
+      "image_origine": "m22/p673_0"
+    },
+    {
+      "question": "Condensation nodulaire médiane de L4, hypersignal T2, sans ostéolyse, sans rehaussement ni hyperfixation. Diagnostic ?",
+      "figure": "laredo-t4:fig42.46a",
+      "options": [
+        "Tumeur bénigne à cellules notochordales",
+        "Chordome",
+        "Métastase condensante",
+        "Îlot condensant bénin"
+      ],
+      "reponse": 0,
+      "explication": "Lésion médiane condensante pâle en hypersignal T2 sans rehaussement : TBCN.",
+      "page": "p. 3148–3149",
+      "image_origine": "m22/p683_0"
+    },
+    {
+      "question": "Homme de 65 ans : lyse sacrée médiane avec grosse masse présacrée bien limitée refoulant le rectum, hypersignal T2 intense. Diagnostic ?",
+      "figure": "laredo-t4:fig42.50b",
+      "options": [
+        "Chordome",
+        "TCG",
+        "Plasmocytome",
+        "Kyste anévrysmal"
+      ],
+      "reponse": 0,
+      "explication": "Sujet âgé, lésion médiane sacro-coccygienne avec volumineuse masse présacrée myxoïde : chordome.",
+      "page": "p. 3151–3152",
+      "image_origine": "m22/p686_1"
+    },
+    {
+      "question": "Lyse médiane du tiers postérieur d'un corps vertébral lombaire avec condensation antérieure et tassement localisé. Diagnostic ?",
+      "figure": "laredo-t4:fig42.50b",
+      "options": [
+        "Chordome lombaire",
+        "Ostéome ostéoïde",
+        "Hémangiome",
+        "Spondylodiscite"
+      ],
+      "reponse": 0,
+      "explication": "Topographie du canal chordal (tiers postérieur médian) + condensation réactionnelle : chordome.",
+      "page": "p. 3152–3153",
+      "image_origine": "m22/p687_1"
+    },
+    {
+      "question": "Patient de 68 ans : vertèbre et pédicule évidés, cloisons verticales en « amande », bilan d'extension négatif. Diagnostic ?",
+      "figure": "laredo-t4:fig42.52a",
+      "options": [
+        "Plasmocytome solitaire",
+        "Métastase pulmonaire",
+        "Hémangiome quiescent",
+        "TCG"
+      ],
+      "reponse": 0,
+      "explication": "Aspect évidé et cloisonné (« mini-brain ») chez le sujet âgé avec bilan négatif : plasmocytome solitaire.",
+      "page": "p. 3156–3157",
+      "image_origine": "m22/p690_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "La carte : arc postérieur ou corps ?",
+        "Hémangiome : quiescent, actif, agressif"
+      ],
+      "secs": [
+        0,
+        1
+      ],
+      "qs": [
+        0,
+        1
+      ]
+    },
+    {
+      "hs": [
+        "Ostéome ostéoïde et ostéoblastome",
+        "Kyste anévrysmal et TCG"
+      ],
+      "secs": [
+        2,
+        3
+      ],
+      "qs": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "hs": [
+        "Tumeurs cartilagineuses du rachis",
+        "TBCN et chordome : la ligne médiane",
+        "Plasmocytome, lymphome, Ewing, ostéosarcome"
+      ],
+      "secs": [
+        4,
+        5,
+        6
+      ],
+      "qs": [
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "ancien_id": "m22",
+  "images_non_rattachees": []
+}

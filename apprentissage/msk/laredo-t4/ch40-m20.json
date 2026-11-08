@@ -1,0 +1,353 @@
+{
+  "id": "laredo-t4:m20",
+  "domaine": "msk",
+  "livre": "laredo-t4",
+  "chapitre": 40,
+  "chapitre_libelle": "Chapitre 6 · Localisations particulières",
+  "titre": "Voûte du crâne : lacune et condensation",
+  "pages": "3065–3096",
+  "objectifs": [
+    "Analyser une lacune de la voûte : âge, nombre, taille, bords, contenu, tables",
+    "Reconnaître granulome éosinophile, kyste épidermoïde, hémangiome, Paget, métastases et myélome",
+    "Distinguer méningiome en plaque et dysplasie fibreuse devant une condensation de la voûte"
+  ],
+  "essentiels": [
+    "Lacunes de la voûte : surtout découvertes fortuites au scanner cérébral. Causes les plus fréquentes = variantes (veines diploïques tubulaires, granulations de Pacchioni : ronde/polylobée, s'ouvre à travers la table INTERNE près d'un sinus, signal liquidien). Probabilité de malignité ↑ avec l'âge ; > 3 lacunes → métastases ou myélome.",
+    "Bords : liseré de sclérose = quiescent (dysplasie fibreuse, kyste) ; aspect en « beignet » (doughnut) = DF, kystes dermoïde/épidermoïde ; bords flous mités/perméatifs = suspects. Lyse CONGRUENTE des deux tables = malignité ; lyse asymétrique à prédominance de la table externe = bénin (histiocytose). Spicules : hémangiome courts/fins/parallèles ; ostéosarcome longs/divergents ; méningiome « en brosse » ; neuroblastome spiculé.",
+    "Granulome éosinophile : enfant / adulte jeune, crâne 20 % des histiocytoses ; lacune unique 1–4 cm, bords nets sans sclérose « déchiquetés », « double contour » (table externe plus lysée), parfois « button sequestrum », rehaussement périphérique ± dure-mère. Guérison spontanée.",
+    "Kyste épidermoïde (latéral, liquide, diffusion +) / dermoïde (médian, graisse) : 20–40 ans, lacune 0,5–3 cm près d'une suture, sclérose fine sur les deux versants, peut souffler les tables. Hémangiome : femme, lacune unique (90 %), diploé vers la table externe, tables soufflées, travées « en rayons de miel », spicules radiaires, veine diploïque afférente, hypersignal T2 intense et rehaussement fort ; sclérose épaisse floue → craindre un sarcome.",
+    "Lacune très étendue : Paget (ostéoporose circonscrite, > 40 ans, crâne ~50–65 % des Paget) bipolaire frontale et occipitale, franchit les sutures, bords convexes avec liseré clair = front de résorption ; puis forme condensante (tables et diploé individualisables, voûte épaissie). Dysplasie fibreuse : < 30 ans, verre dépoli, table externe soufflée « en coque », lytique 10 %, sclérotique 35 %, mixte ailleurs.",
+    "Métastases : sein + poumon ~80 % des métastases de la voûte (neuroblastome chez l'enfant) ; lacunes multiples de taille inégale, asymétriques, bords flous ; unique (< 10 %) → rein ou thyroïde ; soufflante → rein/thyroïde/CHC (carcinome hépatocellulaire) ; condensante → prostate. Myélome : > 50 ans, lacunes nombreuses, petites (3–15 mm), régulières, à l'emporte-pièce, symétriques.",
+    "Méningiome en plaque (2–4 % des méningiomes, F 4/1, 40–50 ans) : hyperostose disproportionnée centrée sur le diploé, effaçant tables et diploé (os très dense finement granuleux), surface spiculée « en brosse » ; épaississement dure-mérien rehaussé = clé du diagnostic. Sphéno-orbitaire : compression optique = urgence. Récidive 25–50 %.",
+    "Dysplasie fibreuse de la voûte vs méningiome : DF = lésion soufflante, tables amincies mais VISIBLES encorbellant un tissu en verre dépoli (250–500 UH), pas de réaction périostée, méninges normales. Ostéome de la voûte : homme 40–50 ans, frontal, opacité corticale dense < 2 cm née du périoste. Hémangiome = tumeur primitive la plus fréquente de la voûte."
+  ],
+  "introduction": "La voûte du crâne se lit avec trois couches : **table externe, diploé, table interne**. Une lacune de la voûte s'analyse comme ailleurs (âge, nombre, taille, bords, contenu), avec un indice propre au crâne : **quelles tables sont touchées, et comment**. Pour les condensations, la question décisive est presque toujours : méningiome en plaque ou dysplasie fibreuse ?",
+  "sections": [
+    {
+      "titre": "Commencer par les variantes",
+      "texte": "Les lacunes de la voûte sont surtout des découvertes fortuites sur un scanner cérébral. Les deux causes les plus fréquentes sont des **variantes anatomiques** : les **veines intradiploïques**, structures tubulaires qu'on suit de coupe en coupe, et les **granulations arachnoïdiennes de Pacchioni**, lacunes rondes ou polylobées à bords nets qui s'ouvrent à travers la **table interne** près d'un sinus veineux et de la ligne médiane, de signal liquidien et sans rehaussement.",
+      "figures": [
+        "laredo-t4:fig40.x604a",
+        "laredo-t4:fig40.x604b"
+      ],
+      "legendes": [
+        "**Veines intradiploïques dilatées** (flèches) : clartés tubulaires du diploé, à ne pas prendre pour des lacunes.",
+        "**Granulations arachnoïdiennes** (flèches) : lacunes ouvertes vers l'intérieur à travers la table interne, près de la ligne médiane."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune ronde à bords nets ouverte à travers la table interne près du sinus sagittal : que conclure ?",
+        "a": "Granulation arachnoïdienne (Pacchioni), une variante."
+      }
+    },
+    {
+      "titre": "La grille de lecture d'une lacune",
+      "texte": "",
+      "figures": [],
+      "legendes": [],
+      "cle": null,
+      "piege": null,
+      "pourquoi": "Une lésion maligne détruit tout ce qu'elle rencontre, à la même vitesse : les deux tables disparaissent ensemble. Une lésion bénigne pousse à la vitesse que l'os peut suivre : elle souffle les tables ou les érode de façon inégale.",
+      "verification": {
+        "q": "Lacune unique du crâne aux bords en beignet (doughnut) : quelles hypothèses ?",
+        "a": "Dysplasie fibreuse, kystes dermoïde ou épidermoïde."
+      }
+    },
+    {
+      "titre": "Lacunes uniques de l'enfant et de l'adulte jeune",
+      "texte": "Le **granulome éosinophile** (crâne : 20 % des histiocytoses) donne une lacune unique de 1 à 4 cm, à bords nets sans sclérose, « déchiquetés », en **double contour** (la table externe est plus lysée que l'interne), parfois avec un **séquestre central** (« button sequestrum »). Il se rehausse surtout en périphérie et peut épaissir la dure-mère. Il guérit spontanément.\n\nLe **kyste épidermoïde** (latéral, liquide, diffusion positive) et le **kyste dermoïde** (médian, graisse) donnent une lacune de 0,5 à 3 cm près d'une suture, à sclérose fine nette sur ses deux versants ; ils peuvent souffler les tables sans franchir la dure-mère.",
+      "figures": [
+        "laredo-t4:fig40.x605b",
+        "laredo-t4:fig40.5"
+      ],
+      "legendes": [
+        "**Schéma du granulome éosinophile** : grande lacune polycyclique sans sclérose ; l'atteinte asymétrique des tables donne un double contour, et un séquestre central cerné d'un liseré clair peut s'y voir.",
+        "**Granulome éosinophile en IRM** : lésion arrondie lysant les deux tables, hypersignal T2, rehaussement périphérique avec épaississement du périoste et de la dure-mère (flèches)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacune pariétale déchiquetée en double contour chez un enfant de 6 ans : diagnostic ?",
+        "a": "Granulome éosinophile (histiocytose langerhansienne)."
+      }
+    },
+    {
+      "titre": "Hémangiome, Paget, dysplasie fibreuse",
+      "texte": "L'**hémangiome** est la tumeur primitive la plus fréquente de la voûte (femme, frontal ou pariétal) : lacune unique (90 %) centrée sur le diploé, qui souffle la **table externe**, contient des travées **en rayons de miel** et des **spicules radiaires**, avec souvent une veine diploïque afférente. Hypersignal T2 intense, rehaussement fort. Une sclérose épaisse et floue doit faire craindre un sarcome.\n\nLa **maladie de Paget** débute par l'**ostéoporose circonscrite** : vaste lacune **bipolaire** (frontale et occipitale), qui franchit les sutures, à bords convexes bordés d'un **liseré clair** (front de résorption). Plus tard vient la forme condensante, où tables et diploé restent individualisables.\n\nLa **dysplasie fibreuse** crânio-faciale (avant 30 ans) est lytique dans 10 %, sclérotique dans 35 %, mixte ailleurs : lésion soufflante en **verre dépoli**, table externe soufflée « en coque », liseré net.",
+      "figures": [
+        "laredo-t4:fig40.15b",
+        "laredo-t4:fig40.17d"
+      ],
+      "legendes": [
+        "**Ostéoporose circonscrite** en radiographie (plages lacunaires bipolaires confluentes, liseré clair périphérique) et au scanner (plage frontale à cheval sur la ligne médiane).",
+        "**Différentes formes de dysplasie fibreuse** au scanner : plage en verre dépoli (a), voûte hypertrophique avec alternance de verre dépoli et de calcifications (b), forme crânio-faciale très soufflante avec zones pseudo-kystiques (c, d)."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Vaste lacune frontale et occipitale franchissant les sutures, bordée d'un liseré clair chez un homme de 70 ans : diagnostic ?",
+        "a": "Ostéoporose circonscrite pagétique."
+      }
+    },
+    {
+      "titre": "Lacunes multiples : métastases ou myélome ?",
+      "texte": "Les **métastases** de la voûte viennent surtout du **sein et du poumon** (près de 80 %) ; chez l'enfant, du neuroblastome. Elles sont multiples mais moins nombreuses que celles du myélome, **de taille inégale**, réparties **asymétriquement**, à bords flous, et lysent volontiers les deux tables de façon congruente. Une métastase **unique** (moins de 10 %) évoque le rein ou la thyroïde ; une métastase soufflante, le rein, la thyroïde ou un CHC ; une condensante, la prostate.\n\nLe **myélome** (après 50 ans) donne des lacunes **très nombreuses, petites** (3 à 15 mm), **régulières**, de taille uniforme, **à l'emporte-pièce**, symétriques.",
+      "figures": [
+        "laredo-t4:fig40.18"
+      ],
+      "legendes": [
+        "**Myélome (en haut) et métastases (en bas)** : les lacunes du myélome sont plus nombreuses, plus petites, plus régulières et plus nettes."
+      ],
+      "cle": null,
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Lacunes innombrables, petites, régulières et de taille uniforme : métastases ou myélome ?",
+        "a": "Myélome."
+      }
+    },
+    {
+      "titre": "Condensation : méningiome en plaque ou dysplasie fibreuse ?",
+      "texte": "Le **méningiome en plaque** (2 à 4 % des méningiomes, femme de 40-50 ans) infiltre la voûte et provoque une **hyperostose disproportionnée** par rapport à la tumeur intracrânienne : centrée sur le diploé, elle **efface le diploé et les tables**, remplacés par un os très dense finement granuleux, dont la surface est hérissée de spicules trapus **« en brosse »**. L'**IRM injectée** confirme en montrant l'**épaississement dure-mérien** rehaussé en regard. Au sphéno-orbitaire, la compression du nerf optique est une urgence.\n\nLa **dysplasie fibreuse** est une lésion **soufflante** : les tables sont amincies mais **restent visibles** et encorbellent un tissu en **verre dépoli** (250-500 UH), sans réaction périostée, avec des méninges normales.\n\nL'**ostéome** de la voûte (homme de 40-50 ans, frontal) est une opacité de type cortical, très dense, homogène, née du périoste, en général de moins de 2 cm.",
+      "figures": [
+        "laredo-t4:fig41.7b",
+        "laredo-t4:fig41.x622"
+      ],
+      "legendes": [
+        "**Méningiomes (a-c) et dysplasie fibreuse (d-e)** comparés : hyperostose diffuse sans tables visibles et épaississement méningé rehaussé (flèches) pour le méningiome ; verre dépoli avec tables visibles et sans réaction périostée pour la dysplasie fibreuse.",
+        "**Méningiome de la voûte** évoluant depuis des années : volumineuse masse ossifiée frontale, de surface spiculée."
+      ],
+      "cle": "Hyperostose qui efface les tables + surface en brosse + dure-mère épaissie = méningiome. Lésion soufflante en verre dépoli avec tables visibles = dysplasie fibreuse.",
+      "piege": null,
+      "pourquoi": null,
+      "verification": {
+        "q": "Hyperostose frontale qui efface les tables, surface en brosse : quel examen confirme ?",
+        "a": "L'IRM injectée : épaississement dure-mérien rehaussé (méningiome en plaque)."
+      }
+    }
+  ],
+  "cartes": [],
+  "quiz": [
+    {
+      "question": "Enfant, lacune pariétale arrondie à bords nets sans sclérose avec opacité centrale cernée d'un liseré clair. Diagnostic le plus probable ?",
+      "figure": "laredo-t4:fig40.x605a",
+      "options": [
+        "Granulome éosinophile (button sequestrum)",
+        "Kyste épidermoïde",
+        "Métastase de neuroblastome",
+        "Granulation de Pacchioni"
+      ],
+      "reponse": 0,
+      "explication": "Lacune unique « déchiquetée » sans sclérose, séquestre central unique cerné d'un liseré clair : évocateur d'histiocytose langerhansienne.",
+      "page": "p. 3070",
+      "image_origine": "m20/p604_1"
+    },
+    {
+      "question": "Lacune frontale soufflant la table externe, contenant des cloisons fines en rayons de miel, sans sclérose. Diagnostic ?",
+      "figure": "laredo-t4:fig40.8b",
+      "options": [
+        "Hémangiome de la voûte",
+        "Méningiome intra-osseux",
+        "Plasmocytome",
+        "Ostéosarcome"
+      ],
+      "reponse": 0,
+      "explication": "Lacune diploïque soufflante à trabéculations en rayons de miel : hémangiome (malformation vasculaire à flux lent).",
+      "page": "p. 3073–3074",
+      "image_origine": "m20/p608_1_38_0_100_100"
+    },
+    {
+      "question": "Femme de 60 ans, cancer du sein : lacunes multiples de taille inégale, réparties sans ordre, certaines floues. Diagnostic ?",
+      "figure": "laredo-t4:fig40.19",
+      "options": [
+        "Métastases",
+        "Myélome multiple",
+        "Ostéoporose granuleuse d'hyperparathyroïdie",
+        "Paget lytique"
+      ],
+      "reponse": 0,
+      "explication": "Lacunes multiples de taille inégale, asymétriques, bords variables : métastases (sein + poumon ~80 %).",
+      "page": "p. 3081",
+      "image_origine": "m20/p615_1"
+    },
+    {
+      "question": "Homme de 65 ans : innombrables petites lacunes régulières à l'emporte-pièce, de taille uniforme. Diagnostic ?",
+      "figure": "laredo-t4:fig40.21",
+      "options": [
+        "Myélome multiple",
+        "Métastases de cancer bronchique",
+        "Granulomes éosinophiles multiples",
+        "Ostéoporose circonscrite"
+      ],
+      "reponse": 0,
+      "explication": "Lacunes nombreuses, petites, régulières et uniformes, sans sclérose : myélome.",
+      "page": "p. 3082",
+      "image_origine": "m20/p616_0"
+    },
+    {
+      "question": "Coupe axiale du crâne : plages lytiques et condensantes, avec une limite nette de résorption. Quelle affection ?",
+      "figure": "laredo-t4:fig41.11b",
+      "options": [
+        "Maladie de Paget (forme mixte)",
+        "Dysplasie fibreuse",
+        "Méningiome en plaque",
+        "Métastases condensantes"
+      ],
+      "reponse": 0,
+      "explication": "Coexistence d'ostéoporose circonscrite (front d'ostéolyse) et de nodules de condensation : Paget de la voûte.",
+      "page": "p. 3096",
+      "image_origine": "m20/p630_1"
+    },
+    {
+      "question": "Patiente de 58 ans suivie pour otite chronique : bosse osseuse temporale gauche, hyperostose avec perte de différenciation diploé/tables et réaction périostée spiculée « en brosse ». Diagnostic ?",
+      "figure": null,
+      "options": [
+        "Méningiome en plaque",
+        "Maladie de Paget",
+        "Dysplasie fibreuse",
+        "Métastase condensante"
+      ],
+      "reponse": 0,
+      "explication": "Légende : aspect classique de méningiome en plaque (hyperostose, perte de différenciation diploé/tables, réaction en brosse) ; l'IRM injectée confirme le diagnostic (épaississement dure-mérien rehaussé).",
+      "page": "p. 3087–3088",
+      "image_origine": "m20/p622_0_0_33_100_60"
+    },
+    {
+      "question": "Lésion fronto-faciale soufflante en verre dépoli (≈500 UH), tables amincies mais visibles, sans réaction périostée. Diagnostic ?",
+      "figure": "laredo-t4:fig41.5b",
+      "options": [
+        "Dysplasie fibreuse",
+        "Méningiome en plaque",
+        "Maladie de Paget condensante",
+        "Ostéome"
+      ],
+      "reponse": 0,
+      "explication": "Lésion soufflante, verre dépoli, tables visibles encorbellant le tissu dysplasique : dysplasie fibreuse.",
+      "page": "p. 3090–3091",
+      "image_origine": "m20/p625_1"
+    },
+    {
+      "question": "IRM coronale T2, T1 et T1 gadolinium FS : lésion soufflant les tables de la voûte, signal liquidien non rehaussé, fine prise de contraste des bords. Diagnostic ?",
+      "figure": "laredo-t4:fig40.7c",
+      "options": [
+        "Kyste épidermoïde de la voûte",
+        "Hémangiome de la voûte",
+        "Granulome éosinophile",
+        "Métastase"
+      ],
+      "reponse": 0,
+      "explication": "Légende : kyste épidermoïde ; lésion soufflant les tables (prédominance externe), contenu liquidien (hypersignal T2, hyposignal T1) non rehaussé, fine prise de contraste des bords et du périoste externe.",
+      "page": "p. 3070",
+      "image_origine": "m20/p606_0"
+    },
+    {
+      "question": "Enfant, TDM et IRM : ostéolyse vermoulue de la voûte avec importante masse des tissus mous exo- et intracrânienne en partie nécrotique. Diagnostic ?",
+      "figure": "laredo-t4:fig40.12g",
+      "options": [
+        "Sarcome d'Ewing de la voûte",
+        "Kyste épidermoïde",
+        "Hémangiome de la voûte",
+        "Méningiome"
+      ],
+      "reponse": 0,
+      "explication": "Légende : sarcome d'Ewing de la voûte crânienne ; aspect vermoulu avec importante masse des tissus mous exo- et intracrânienne, réaction périostée modérée.",
+      "page": "p. 3074",
+      "image_origine": "m20/p610_0"
+    },
+    {
+      "question": "Condensation dense, homogène, bien limitée, développée à la surface de la voûte (a–c) ; lésion analogue du sinus frontal (d). Diagnostic ?",
+      "figure": "laredo-t4:fig41.x628b",
+      "options": [
+        "Ostéome",
+        "Méningiome en plaque",
+        "Dysplasie fibreuse",
+        "Métastase condensante"
+      ],
+      "reponse": 0,
+      "explication": "Légende : ostéome de la voûte, lésion développée à la surface de l'os, dense ; (d) ostéome du sinus frontal.",
+      "page": "p. 3091",
+      "image_origine": "m20/p627_0"
+    },
+    {
+      "question": "Homme de 38 ans, bosse dure indolore croissante : lacune de la voûte avec ossification en nid d'abeille, fort rehaussement et hypersignal T2 intense. Diagnostic ?",
+      "figure": "laredo-t4:fig41.9a",
+      "options": [
+        "Hémangiome de la voûte",
+        "Kyste épidermoïde",
+        "Granulome éosinophile",
+        "Méningiome intra-osseux"
+      ],
+      "reponse": 0,
+      "explication": "Légende : hémangiome de la voûte ; ossification en nid d'abeille caractéristique au sein d'une lacune, prise de contraste intense, hypersignal T2.",
+      "page": "p. 3092",
+      "image_origine": "m20/p628_0"
+    },
+    {
+      "question": "Crâne : atteinte diffuse de la voûte et de la base, voûte épaissie et condensée, tables et diploé encore individualisables ; atteinte de C1. Diagnostic ?",
+      "figure": "laredo-t4:fig41.10c",
+      "options": [
+        "Maladie de Paget, forme condensante",
+        "Méningiome en plaque",
+        "Dysplasie fibreuse",
+        "Métastases condensantes diffuses"
+      ],
+      "reponse": 0,
+      "explication": "Légende : maladie de Paget du crâne dans sa forme condensante ; condensation et hypertrophie de la voûte, atteinte pagétique de C1.",
+      "page": "p. 3095",
+      "image_origine": "m20/p629_0"
+    }
+  ],
+  "sous_parties": [
+    {
+      "hs": [
+        "Commencer par les variantes",
+        "La grille de lecture d'une lacune",
+        "Lacunes uniques de l'enfant et de l'adulte jeune"
+      ],
+      "secs": [
+        0,
+        1,
+        2
+      ],
+      "qs": [
+        0,
+        7
+      ]
+    },
+    {
+      "hs": [
+        "Hémangiome, Paget, dysplasie fibreuse",
+        "Lacunes multiples : métastases ou myélome ?",
+        "Condensation : méningiome en plaque ou dysplasie fibreuse ?"
+      ],
+      "secs": [
+        3,
+        4,
+        5
+      ],
+      "qs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "ancien_id": "m20",
+  "images_non_rattachees": [
+    "m20/p606_1",
+    "m20/p608_0",
+    "m20/p612_1",
+    "m20/p622_0_0_33_100_60"
+  ]
+}
