@@ -15,45 +15,56 @@ function lireDb(path) {
   }
   return docCache.get(path);
 }
-async function idAsset(path) {
-  const i = path.indexOf("/"), pre = path.slice(0, i), rest = path.slice(i + 1), c = (S.manifest && S.manifest.carte) || {};
-  if (pre === "ix" || pre === "lx") return (c[pre] || [])[+rest];
-  if (pre === "ent" || pre === "ed") return (c[pre] || {})[rest];
+/* Corpus : fichiers déposés dans la Library du Project Claude Code, lus par morceaux (offset, longueur).
+   Le sommaire (petit) donne la position de chaque morceau ; rien n'est lu en entier. */
+S.files = null; S.chemins = new Map();
+async function lireOctets(nom, [offset, length]) {
+  const path = S.chemins.get(nom); if (!path) throw { code: "not_found", message: nom };
+  for (let k = 0; ; k++) {
+    try { const r = await avecDelai(S.files.read(path, { offset, length })); S.lus.docs++; S.lus.octets += r.bytes.length; return r.bytes; }
+    catch (e) { if (k < 2 && e && (e.code === "rate_limited" || e.code === "changed")) { await new Promise((r) => setTimeout(r, e.retryAfterMs || 800)); continue; } throw e; }
+  }
+}
+const dec = new TextDecoder();
+function position(path) {
+  const i = path.indexOf("/"), pre = path.slice(0, i), rest = path.slice(i + 1), m = S.manifest;
+  if (["ix", "lx", "ent", "ed"].includes(pre)) { const t = m.index[pre]; return [m.index.fichier, Array.isArray(t) ? t[+rest] : t[rest]]; }
   const lid = pre === "fx" ? rest : rest.slice(0, rest.lastIndexOf("-")), k = rest.slice(rest.lastIndexOf("-") + 1);
-  const m = await lireDb("corpus/livre-" + lid); if (!m) return null;
-  return pre === "fx" ? m.fx : (m[pre] || {})[k];
+  const b = S.bookById.get(lid); if (!b) return [null, null];
+  return [b.pack.fichier, pre === "fx" ? b.pack.fx : b.pack[pre][k]];
 }
 function lireDoc(path) {
   if (/^(corpus|im)\//.test(path)) return lireDb(path);
   if (!docCache.has(path)) {
-    const p = (async () => {
-      const id = await idAsset(path); if (!id) return null;
-      const r = await avecDelai(fetch("/_blob/" + id));
-      if (!r.ok) throw { code: "http_" + r.status };
-      const txt = await r.text(); S.lus.docs++; S.lus.octets += txt.length;
-      return JSON.parse(txt);
-    })();
+    const p = (async () => { const [nom, pos] = position(path); if (!nom || !pos) return null; return JSON.parse(dec.decode(await lireOctets(nom, pos))); })();
     p.catch(() => docCache.delete(path)); docCache.set(path, p);
   }
   return docCache.get(path);
+}
+async function trouverSommaire() {
+  const tous = []; let cursor;
+  do { const r = await avecDelai(S.files.list({ recursive: true, cursor })); tous.push(...r.entries); cursor = r.cursor; } while (cursor);
+  for (const e of tous) if (!e.isDirectory) S.chemins.set(e.path.split("/").pop(), e.path);
+  const v = (e) => +(e.path.match(/radiologie-sommaire-v(\d+)\.json$/) || [0, -1])[1];
+  return tous.filter((e) => !e.isDirectory && v(e) >= 0).sort((a, b) => v(b) - v(a))[0] || null;
 }
 S.dom = "tous";
 try { const d = localStorage.getItem("rad-dom"); if (d) S.dom = d; } catch {}
 S.codeBook = new Map(); S.bookById = new Map();
 async function loadCorpusMeta() {
-  if (!S.owner) { S.manifest = null; render(); return; }
+  if (!S.owner || !S.files) { S.manifest = null; S.metaErr = S.owner ? "files" : null; render(); return; }
   try {
-    docCache.delete("corpus/manifeste");
-    const m = await lireDoc("corpus/manifeste");
-    S.manifest = m || null;
-    if (m) {
-      S.books = m.livres.map((b) => ({ ...b, court: b.court }));
-      S.codeBook = new Map(m.livres.map((b) => [b.code, b]));
-      S.bookById = new Map(m.livres.map((b) => [b.id, b]));
-      S.STOPW = new Set(m.mots_vides || []);
-      S.textsState = "ready";
-    }
-  } catch { S.manifest = null; S.metaErr = true; }
+    const som = await trouverSommaire();
+    if (!som) { S.manifest = null; S.metaErr = "absent"; render(); return; }
+    const r = await avecDelai(S.files.read(som.path)); S.lus.docs++; S.lus.octets += r.bytes.length;
+    const m = JSON.parse(dec.decode(r.bytes));
+    S.manifest = m;
+    S.books = m.livres.map((b) => ({ ...b }));
+    S.codeBook = new Map(m.livres.map((b) => [b.code, b]));
+    S.bookById = new Map(m.livres.map((b) => [b.id, b]));
+    S.STOPW = new Set(m.mots_vides || []);
+    S.textsState = "ready";
+  } catch (e) { S.manifest = null; S.metaErr = e && e.code === "not_granted" ? "refus" : e && e.code === "not_found" ? "acces" : "lecture"; }
   render();
   if (S.manifest) chargerEntites().catch(() => {});
 }
@@ -119,7 +130,7 @@ function windowFor(d, phrases, qs, size = 3200) {
 function figAncien(b, ch, g) {
   const c = chapitre(b, ch);
   return { b: b.id, ch, ct: c ? c.t : "", id: g.id, fig: g.n, pa: g.pa || "", pn: g.pn || [], pg: g.pg, pp: g.pp,
-    cap: g.capfr || g.cap || "", capo: g.cap || "", m: g.m || [], r: g.r, d: g.d || [], e: g.e || [], role: g.role, v: g.v, l: g.l, vd: g.vd, ld: g.ld };
+    cap: g.capfr || g.cap || "", capo: g.cap || "", m: g.m || [], r: g.r, d: g.d || [], e: g.e || [], role: g.role, pos: g.pos };
 }
 async function figsChapitre(b, ch) {
   const d = await lireDoc(`fm/${b.id}-${ch}`).catch(() => null);
@@ -170,7 +181,7 @@ async function figsCitedIn(passages, k) {
   return figsParId(ids);
 }
 function mergeFigs(...lists) { const seen = new Set(), out = []; for (const l of lists) for (const f of l) if (!seen.has(f.id)) { seen.add(f.id); out.push(f); } return out; }
-const ficheImgCache = new Map(), imgSrc = new Map();
+const ficheImgCache = new Map(), imgSrc = new Map(), blobUrls = new Map();
 async function figImage(id, slug, full) {
   const aid = slug && S.fiches.get(slug)?.imgAssets?.[id];
   if (aid) { const u = "/_blob/" + aid; imgSrc.set(id, u); return u; }
@@ -180,10 +191,10 @@ async function figImage(id, slug, full) {
   }
   if (!S.owner || !S.manifest) return null;
   const f = S.figById.get(id) || (await figsParId([id]))[0]; if (!f) return null;
-  let src = null;
-  const a = full ? (f.l || f.v) : (f.v || f.l);
-  if (a) src = "/_blob/" + a;
-  else { const p = full ? (f.ld || f.vd) : (f.vd || f.ld); if (p) { const d = await lireDoc(p).catch(() => null); src = d && d.data; } }
+  const pos = f.pos && (full ? (f.pos.l || f.pos.v) : (f.pos.v || f.pos.l)); if (!pos) return null;
+  const cle = f.id + (full ? "#l" : "#v");
+  if (!blobUrls.has(cle)) { const p = lireOctets(S.bookById.get(f.b).pack.fichier, pos).then((b) => URL.createObjectURL(new Blob([b], { type: "image/webp" }))); p.catch(() => blobUrls.delete(cle)); blobUrls.set(cle, p); }
+  const src = await blobUrls.get(cle);
   if (src) imgSrc.set(id, src);
   return src;
 }

@@ -90,7 +90,8 @@ rep('''$("q").oninput = () => { S.query = $("q").value;''', '''$("q").oninput = 
 rep('''  if (user) { try { S.owner = !!(await user.isOwner()); } catch {} try { S.uid = await user.id(); } catch {} }''',
     '''  if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }''')
 rep('''  loadCorpusMeta();
-})();''', '''  loadCorpusMeta().then(() => { if (location.hash === "#importer") ouvrirImport(); setTimeout(reparerImagesFiches, 3000); });
+})();''', '''  S.files = await window.claude.use("files").catch(() => null);
+  loadCorpusMeta().then(() => setTimeout(reparerImagesFiches, 3000));
   chargerProgression();
 })();''')
 
@@ -100,13 +101,12 @@ rep("</style>\n\n<header", css + "\n</style>\n\n<header")
 vues = (ICI / "vues.js").read_text(encoding="utf-8")
 evts = '''
 document.addEventListener("click", (e) => {
-  const t = e.target.closest("[data-tab],[data-ent],[data-imp],[data-runimp],[data-progimp],[data-genent],[data-retry-ent],[data-fiche]");
+  const t = e.target.closest("[data-tab],[data-ent],[data-progimp],[data-genent],[data-retry-ent],[data-retry-meta],[data-fiche]");
   if (!t) return;
   const d = t.dataset;
   if (d.tab) { S.tab = d.tab; S.detail = false; $("q").value = d.tab === "biblio" ? S.bq : S.query; if (d.tab === "biblio" && S.entState === "idle") chargerEntites(); history.replaceState(null, "", d.tab === "biblio" ? "#bibliotheque" : location.pathname + location.search); render(); }
   else if (d.ent) ouvrirEntite(d.ent);
-  else if (d.imp) ouvrirImport();
-  else if (d.runimp) lancerImport();
+  else if (d.retryMeta) { S.manifest = undefined; render(); loadCorpusMeta(); }
   else if (d.progimp) importerProgression();
   else if (d.retryEnt) { S.entState = "idle"; chargerEntites(); }
   else if (d.genent) {
