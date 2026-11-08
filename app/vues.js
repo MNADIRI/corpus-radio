@@ -3,13 +3,32 @@ S.tab = "notes"; S.bq = ""; S.entSel = null; S.entView = null; S.prog = undefine
 const CAT = { tumeur: "Tumeur", infection: "Infection", inflammatoire: "Inflammatoire", traumatique: "Traumatique", degeneratif: "Dégénératif", congenital: "Congénital", vasculaire: "Vasculaire", metabolique: "Métabolique", autre: "Autre" };
 function libDomaine(id) { return id === "tous" ? "Tous les domaines" : ((S.manifest?.domaines || []).find((d) => d.id === id) || {}).libelle || id; }
 function libRegion(id) { return ((S.manifest?.regions || []).find((r) => r.id === id) || {}).libelle || id; }
+function domainesDisponibles() {
+  const n = new Map();
+  for (const b of S.books) for (const c of b.chapitres) for (const d of c.d) n.set(d, (n.get(d) || 0) + 1);
+  return [...n.entries()].sort((a, b) => b[1] - a[1]).map(([id, k]) => ({ id, lib: libDomaine(id), n: k }));
+}
 function majDomaines() {
-  const sel = $("domSel"); if (!sel) return;
-  const ids = S.manifest ? ["tous", ...Object.keys(S.manifest.entites?.docs || {}).sort((a, b) => libDomaine(a).localeCompare(libDomaine(b), "fr"))] : ["tous"];
-  const sig = ids.join();
-  if (sel.dataset.sig !== sig) { sel.dataset.sig = sig; sel.innerHTML = ids.map((d) => `<option value="${esc(d)}">${esc(libDomaine(d))}</option>`).join(""); }
-  sel.value = ids.includes(S.dom) ? S.dom : "tous";
-  sel.disabled = !S.manifest;
+  const ds = S.manifest ? domainesDisponibles() : [];
+  if (S.dom !== "tous" && S.manifest && !ds.some((d) => d.id === S.dom)) S.dom = "tous";
+  const opts = `<option value="tous">Tous les domaines</option>` + ds.map((d) => `<option value="${esc(d.id)}">${esc(d.lib)} · ${d.n} chap.</option>`).join("");
+  for (const sel of [$("domSel"), document.getElementById("domGlobal")]) {
+    if (!sel) continue;
+    if (sel.dataset.sig !== opts) { sel.dataset.sig = opts; sel.innerHTML = opts; }
+    sel.value = S.dom; sel.disabled = !S.manifest;
+  }
+}
+function changerDomaine(d) {
+  if (d === S.dom) return;
+  S.dom = d; try { localStorage.setItem("rad-dom", d); } catch {}
+  S.entView = null; S.entSel = null; S.bib.livre = null; S.bib.ch = null; S.detail = false;
+  if (S.manifest) chargerEntites();
+  S.rev.construit = false;
+  const mode = S.cas.mode; S.cas = { mode, etat: "vide" };
+  if (S.tab === "cas" && mode === "alea") tirerCas();
+  remplirReserve();
+  if (window.LR) window.LR.domaine(d);
+  render();
 }
 function majOnglets() {
   for (const b of document.querySelectorAll("[data-tab]")) b.setAttribute("aria-current", b.dataset.tab === S.tab ? "page" : "false");

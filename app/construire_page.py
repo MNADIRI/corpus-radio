@@ -122,7 +122,7 @@ document.addEventListener("click", (e) => {
 });
 $("right").addEventListener("change", () => {});
 $("left").addEventListener("change", (e) => { if (e.target.id === "bReg") { S.bib.reg = e.target.value; render(); } });
-$("domSel").onchange = () => { S.dom = $("domSel").value; try { localStorage.setItem("rad-dom", S.dom); } catch {} S.entView = null; S.entSel = null; chargerEntites(); render(); };
+$("domSel").onchange = () => changerDomaine($("domSel").value);
 if (location.hash === "#bibliotheque") S.tab = "biblio";
 '''
 rep("/* ================= boot ================= */", vues + evts + "\n/* ================= boot ================= */")

@@ -31,7 +31,7 @@ css += """
 :host{padding:0!important;display:block}
 .top{top:var(--esp-h,0px)!important;background:var(--bg)!important}
 .topin,.desk{max-width:1180px!important}
-.domwrap select{max-width:none!important}
+.domwrap{display:none!important}
 .desk.cas{grid-template-columns:minmax(0,1fr)!important}
 .desk.cas .pane-left{display:none!important}
 .desk.cas .pane-right{display:grid!important;max-width:980px;width:100%;margin:0 auto}
@@ -51,7 +51,7 @@ js = rep(js, 'if (location.hash === "#bibliotheque") S.tab = "biblio";', '')
 js = rep(js, 'html = progressionHtml() + homeHtml();', 'html = homeHtml();')
 js = rep(js, 'history.replaceState(null, "", d.tab === "biblio" ? "#bibliotheque" : location.pathname + location.search); ', '')
 js += '''
-window.OUTILS = { onglet(t) { S.tab = t; HOTE.classList.toggle("hors-notes", t !== "notes"); S.detail = false; $("desk").classList.toggle("cas", t === "cas");
+window.OUTILS = { domaine: (d) => changerDomaine(d), domaines: () => (S.manifest ? domainesDisponibles() : []), livreDomaines: (id) => { const b = S.bookById.get(id); return b ? b.domaines : null; }, onglet(t) { S.tab = t; HOTE.classList.toggle("hors-notes", t !== "notes"); S.detail = false; $("desk").classList.toggle("cas", t === "cas");
   if (t === "biblio" && S.entState === "idle") chargerEntites();
   if (t === "cas" && S.cas.mode === "alea" && S.cas.etat === "vide" && S.manifest) tirerCas();
   $("q").value = t === "biblio" ? S.bq : t === "notes" ? S.query : ""; $("q").closest(".searchwrap").hidden = t === "cas"; render(); } };
@@ -72,7 +72,7 @@ ICO = {
 }
 LIB = {"apprentissage": "Apprentissage", "notes": "Notes", "cas": "Cas", "biblio": "Bibliothèque"}
 boutons = "".join(f'<button data-esp="{k}"{" aria-current=\"page\"" if k == "apprentissage" else ""}>{ICO[k]}<span>{v}</span></button>' for k, v in LIB.items())
-L = rep(L, '<header class="top">', f'''<nav class="espaces" id="espaces" aria-label="Espaces"><div class="esp-in"><span class="esp-brand">Radiologie</span><div class="esp-tabs">{boutons}</div></div></nav>
+L = rep(L, '<header class="top">', f'''<nav class="espaces" id="espaces" aria-label="Espaces"><div class="esp-in"><span class="esp-brand">Radiologie</span><div class="esp-tabs">{boutons}</div><label class="esp-dom"><span class="sr">Domaine</span><select id="domGlobal" aria-label="Domaine"><option value="tous">Tous les domaines</option></select></label></div></nav>
 <header class="top">''')
 L = rep(L, '<main class="wrap" id="app"></main>', '<main class="wrap" id="app"></main>\n<div id="outils" hidden></div>')
 ds = L.index("<script>")
@@ -96,6 +96,7 @@ css_esp = '''
 .espaces{position:sticky;top:0;z-index:12;margin-inline:-16px;padding:8px 16px;padding-top:calc(8px + env(safe-area-inset-top,0px));background:var(--bg);border-bottom:1px solid var(--line)}
 .esp-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:16px}
 .esp-brand{font-family:var(--display,Georgia,serif);font-weight:650;font-size:17px;color:var(--fg);margin-right:auto}
+.esp-tabs{order:2}.esp-dom{order:3}
 .esp-tabs{display:flex;gap:2px;background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:3px}
 .espaces button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;color:var(--muted);font:500 13.5px var(--body,system-ui);padding:6px 14px;border-radius:999px;cursor:pointer}
 .espaces button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -105,13 +106,28 @@ css_esp = '''
 body.esp-outils header.top,body.esp-outils #app,body.esp-outils #fab{display:none!important}
 header.top{top:var(--esp-h,0px)}
 .domh{font-family:var(--display,Georgia,serif);font-size:20px;margin:22px 0 8px;grid-column:1/-1}
+.esp-dom select{font:500 13px var(--body,system-ui);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 30px 6px 12px;max-width:260px}
+header.top{background:var(--bg)!important;padding-block:8px!important}
+header.top .brand b{font-family:var(--display,Georgia,serif);font-size:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.navlivre{display:grid;grid-template-columns:1fr;gap:8px;align-items:center;margin:28px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+.navlivre button{font:500 13.5px var(--body,system-ui);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 12px;cursor:pointer;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.navlivre button{text-align:center}.navlivre button[data-som]{color:var(--accent);font-weight:600}
+.navlivre button:disabled{opacity:.4;cursor:default}.navlivre button:not(:disabled):hover{border-color:var(--accent)}
+.somm{position:fixed;inset:0;z-index:40;display:grid;grid-template-columns:1fr min(420px,92vw);background:rgba(5,8,12,.45)}
+.somm>div{background:var(--bg);border-left:1px solid var(--line);overflow:auto;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px))}
+.somm h2{font-family:var(--display,Georgia,serif);font-size:20px;margin:4px 0 2px}.somm ol{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:4px}
+.somm li button{width:100%;display:grid;grid-template-columns:2em 1fr auto;gap:8px;align-items:center;text-align:left;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg);font:13.5px var(--body,system-ui);cursor:pointer}
+.somm li button.cur{border-color:var(--accent);background:var(--accent-soft)}.somm li button:disabled{opacity:.55;cursor:default}
+.somm .st{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}.somm .ok{color:var(--good)}.somm .n{font-family:var(--mono,monospace);color:var(--muted)}
 @media (max-width:720px){
-  .espaces{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);border-bottom:0;background:var(--surface)}
-  .esp-brand{display:none}.esp-tabs{flex:1;background:none;border:0;padding:0;justify-content:space-around}
+  .esp-in{gap:10px}.esp-brand{font-size:16px}.esp-dom{margin-left:auto}.esp-dom select{max-width:52vw}
+  .esp-tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-around;margin:0;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));background:var(--surface);border:0;border-top:1px solid var(--line);border-radius:0}
   .espaces button{flex:1;flex-direction:column;gap:2px;font-size:11px;padding:6px 2px;border-radius:10px}
   .espaces button svg{width:21px;height:21px}
   .espaces button[aria-current="page"]{background:var(--accent-soft);color:var(--accent);box-shadow:none}
   body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}
+  .navlivre button[data-som]{text-align:center}
 }
 '''
 L = rep(L, "</style>", css_esp + "</style>", L.count("</style>")) if False else L
@@ -142,6 +158,9 @@ window.LR = { etat: () => S, sauver: save, aller: go, startReview, startRapid, r
   image(k) { if (!k) return Promise.resolve(null); if (IMG[k]) return Promise.resolve(IMG[k]); return Promise.resolve(loadBundle(String(k).includes(":") ? k : k.split("/")[0])).then(() => IMG[k] || null); } };
 function libDomaineLR(d) { return ({ msk: "Musculosquelettique", neuro: "Neuroradiologie", "tete-cou": "Tête et cou", thorax: "Thorax", "cardio-vasc": "Cardiovasculaire", "abdo-digestif": "Abdomen et digestif", "uro-genital": "Urogénital", sein: "Sein", pediatrie: "Pédiatrie", interventionnel: "Radiologie interventionnelle" })[d] || d; }
 function parDomaine(books, carte) {
+  const vis = books.filter(livreDansDomaine);
+  if (!vis.length) return `<p class="muted" style="grid-column:1/-1">Aucun ouvrage d'apprentissage dans ce domaine pour l'instant. Choisis « Tous les domaines » dans la barre du haut.</p>`;
+  books = vis;
   const g = {}; for (const b of books) (g[b.domaine || "msk"] = g[b.domaine || "msk"] || []).push(b);
   return Object.entries(g).map(([d, bs]) => `<h2 class="domh">${esc(libDomaineLR(d))}</h2>` + bs.map(carte).join("")).join("");
 }
@@ -165,6 +184,44 @@ function renderStub(app, m) {
   if (!window.OUTILS_GEN || !window.OUTILS_GEN.pret()) { if (k < 60) setTimeout(() => chargerGeneres(k + 1), 500); return; }
   window.OUTILS_GEN.chargerModulesGeneres().then((lst) => { let n = 0; for (const g of lst) { const m = modById[g.id]; if (m && m.stub) { Object.assign(m, g, { stub: false }); n++; } } if (n) render(); });
 })(0);
+var DOM_LR = "tous"; try { DOM_LR = localStorage.getItem("rad-dom") || "tous"; } catch (er) {}
+var SRC_LR = { cotten: "cotten-t1", laredo: "laredo-t4", cotten2: "cotten-t2", laredo5: "laredo-t5" };
+function livreDansDomaine(b) {
+  if (!DOM_LR || DOM_LR === "tous") return true;
+  const ds = (window.OUTILS && window.OUTILS.livreDomaines((SRC_LR && SRC_LR[b.id]) || b.id)) || [b.domaine];
+  return ds.includes(DOM_LR);
+}
+window.LR.domaine = (d) => { DOM_LR = d; if (view.name === "lib") render(); };
+document.getElementById("domGlobal").addEventListener("change", (ev) => { if (window.OUTILS) window.OUTILS.domaine(ev.target.value); });
+const _renderLR = render;
+render = function () { _renderLR(); try { navLivre(); } catch (er) {} };
+function etatModule(m) { if (m.stub) return "Leçon à créer"; if (isDone(m)) return "Validé"; if (!isOpenM(m)) return "Verrouillé"; const p = prog(m).all; return p ? p + " %" : "À commencer"; }
+function navLivre() {
+  document.querySelectorAll(".navlivre").forEach((x) => x.remove());
+  if (!["module", "cards", "quiz"].includes(view.name) || view.daily || view.review) return;
+  const m = modOf(view); if (!m) return;
+  const L = BOOK[m.book].modules, i = L.indexOf(m), prev = L[i - 1], next = L[i + 1];
+  const bar = document.createElement("nav"); bar.className = "navlivre"; bar.setAttribute("aria-label", "Navigation dans le livre");
+  bar.innerHTML = `<button data-som="${esc(m.book)}">Sommaire du livre · module ${i + 1} sur ${L.length}</button>`;
+  document.getElementById("app").appendChild(bar);
+}
+function sommaire(bid) {
+  const bk = BOOK[bid], cur = modOf(view);
+  const el = document.createElement("div"); el.className = "somm"; el.id = "somm";
+  el.innerHTML = `<button aria-label="Fermer le sommaire" data-somclose="1" style="border:0;background:none"></button><div role="dialog" aria-label="Sommaire du livre"><div class="label">${esc(bk.author)}</div><h2>${esc(bk.title)}</h2><p class="muted" style="margin:0">${bk.modules.filter(isDone).length} / ${bk.modules.length} modules validés</p>
+    <ol>${bk.modules.map((m, k) => `<li><button data-nl="${m.id}" class="${cur === m ? "cur" : ""}" ${isOpenM(m) || m.stub ? "" : "disabled"}><span class="n">${k + 1}</span><span>${esc(m.title)}</span><span class="st ${isDone(m) ? "ok" : ""}">${etatModule(m)}</span></button></li>`).join("")}</ol>
+    <div class="row" style="margin-top:14px"><button class="btn" data-somhome="${esc(bid)}">Page du livre</button><button class="btn" data-somclose="1">Fermer</button></div></div>`;
+  document.body.appendChild(el);
+}
+document.addEventListener("click", (ev) => {
+  const t = ev.target.closest("[data-nl],[data-som],[data-somclose],[data-somhome]"); if (!t || t.disabled) return;
+  const s = document.getElementById("somm");
+  if (t.dataset.som) { if (s) s.remove(); else sommaire(t.dataset.som); return; }
+  if (s) s.remove();
+  if (t.dataset.nl) go({ name: "module", id: t.dataset.nl });
+  else if (t.dataset.somhome) go({ name: "home", book: t.dataset.somhome });
+});
+document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") { const s = document.getElementById("somm"); if (s) s.remove(); } });
 window.ESPACE = function (e) {
   const outils = e !== "apprentissage";
   document.body.classList.toggle("esp-outils", outils);

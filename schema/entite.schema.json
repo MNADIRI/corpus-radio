@@ -83,6 +83,9 @@
         "string",
         "null"
       ]
+    },
+    "masque": {
+      "type": "boolean"
     }
   },
   "required": [

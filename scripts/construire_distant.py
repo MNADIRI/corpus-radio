@@ -93,7 +93,7 @@ def main():
         e = entites[eid]
         details[k_detail[eid]][eid] = {"p": e["passages"], "f": e["figures"], "l": e["entites_liees"],
                                        "ab": e["abreviations"], "en": e["synonymes_en"], "rp": e.get("remplace_par")}
-        if not e.get("remplace_par"):
+        if not e.get("remplace_par") and not e.get("masque"):
             c = {"i": eid, "n": e["nom_fr"], "s": e["synonymes_fr"] + e["synonymes_en"], "a": [x["sigle"] for x in e["abreviations"]],
                  "c": e["categorie"], "r": e["regions"], "d": e["domaines"], "np": len(e["passages"]), "nf": len(e["figures"]), "k": k_detail[eid]}
             for d in e["domaines"]:
@@ -122,8 +122,6 @@ def main():
           f"plus gros {max(f.stat().st_size for f in fichiers) / 1e3:.0f} Ko · seaux ix {n_ix}, lx {n_lx}")
 
 
-if __name__ == "__main__" and "--citations" not in __import__("sys").argv:
-    main()
 
 
 def construire_blocs_chapitres():
@@ -155,3 +153,7 @@ def construire_citations():
 if __name__ == "__main__" and "--citations" in __import__("sys").argv:
     construire_citations()
     construire_blocs_chapitres()
+
+
+if __name__ == "__main__" and "--citations" not in __import__("sys").argv:
+    main()

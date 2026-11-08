@@ -66,7 +66,8 @@ async function preparerCas(source, livreId, etape) {
   const r = JSON.parse(JSON.stringify(r0 || {}));
   const desc = new Map((r.images || []).map((x) => [String(x.panneau || "").toLowerCase().replace(/[^a-z]/g, ""), x.description || ""]));
   const images = panels.map((p) => ({ id: p.id, lettre: p.pa || "", description: desc.get(String(p.pa || "").toLowerCase()) || (panels.length === 1 ? desc.get("") || [...desc.values()][0] || "" : "") }));
-  return { f, panels: panels.map((p) => ({ id: p.id, pa: p.pa })), images, extraits, ctx: r, source: source && source.origine, livre: f.b, prepare: Date.now() };
+  const cb = chapitre(S.bookById.get(f.b), f.ch);
+  return { f, panels: panels.map((p) => ({ id: p.id, pa: p.pa })), images, extraits, ctx: r, source: source && source.origine, livre: f.b, doms: cb ? cb.d : [], prepare: Date.now() };
 }
 function PROMPT_CAS(f, lettres, extraits) {
   return `Tu construis un cas d'entraînement de radiologie pour un interne de 4e année, comme une vacation de lecture.
@@ -100,7 +101,7 @@ function sauverReserve() {
   S.reserve.items = S.reserve.items.slice(-18);
   S.db.doc(`data/users/${S.uid}/casprets`).set({ items: JSON.parse(JSON.stringify(S.reserve.items)) }).catch(() => {});
 }
-const dansCol = (it, col) => col === "melange" || it.livre === col;
+const dansCol = (it, col) => (col === "melange" || it.livre === col) && (S.dom === "tous" || (it.doms || []).includes(S.dom));
 function nbPrets(col) { return S.reserve.items.filter((it) => dansCol(it, col)).length; }
 async function remplirReserve() {
   if (reserveEnCours || !S.manifest || !S.sample || !S.reserve.charge) return;
@@ -157,17 +158,22 @@ ${(c.extraits || []).map((x) => `Extrait du livre (${x.src}) : ${x.t}`).join("\n
 RÉPONSE DE L'INTERNE
 ${rep}
 
-CONSIGNES
-- Note sur 10 = sémiologie /4 + diagnostic /4 + diagnostic différentiel /2. Ne donne pas de points pour un élément vague ou non argumenté.
-- Compare la réponse à la référence élément par élément. Classe chaque élément de l'interne en "justes" ou "erreurs" (affirmation fausse ou non soutenue par la référence) ; liste dans "manques" ce que la référence décrit et que l'interne n'a pas dit.
-- "semiologie_par_image" : pour chaque image affichée, les signes attendus d'après la légende ; si la légende ne précise rien pour une image, écris « non précisé par la légende ».
-- "differentiels" : 2 à 4 diagnostics à discuter, chacun avec l'élément de la référence qui l'écarte ; si la référence ne permet pas d'écarter, dis-le.
+CONSIGNES DE NOTATION
+- Le diagnostic est l'objectif. Barème sur 10 : diagnostic /6, sémiologie /3, diagnostic différentiel /1.
+- Si l'interne donne d'emblée le bon diagnostic (ou un synonyme exact), il obtient les 6 points de diagnostic. La sémiologie n'est alors exigée que pour le ou les signes clés qui justifient ce diagnostic : 3 points s'il en cite au moins un juste, sinon 2 points (le diagnostic juste suffit à montrer la lecture). Le différentiel n'est pas exigé : 1 point d'office.
+- Si le diagnostic est faux, incomplet ou hésitant, note la démarche : sémiologie juste (jusqu'à 3), différentiel pertinent qui contient le bon diagnostic (1), et 0 à 3 points de diagnostic selon la proximité (bonne famille, bon mécanisme).
+- Une affirmation fausse sur l'image retire des points de sémiologie.
+- "justes" / "erreurs" : les éléments de l'interne, classés. "manques" : seulement ce qui aurait changé la conclusion ; laisse vide si le diagnostic est juste et argumenté.
+- "semiologie_par_image" : les signes clés attendus, image par image, d'après la légende ; « non précisé par la légende » si rien.
+- "differentiels" : 2 à 3 diagnostics à discuter, chacun avec l'élément de la référence qui l'écarte. Présente-les comme un complément si le diagnostic est juste.
+- "diagnostic_juste" : true si l'interne a donné le bon diagnostic.
 - N'invente aucune donnée absente de la référence. Français, chaque acronyme développé entre parenthèses à sa première occurrence, phrases courtes.
 
-Réponds uniquement par {"note":0,"bareme":{"semiologie":0,"diagnostic":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
+Réponds uniquement par {"note":0,"diagnostic_juste":false,"bareme":{"diagnostic":0,"semiologie":0,"differentiel":0},"verdict":"une phrase de synthèse","diagnostic":"diagnostic de référence","arguments":["signe ou donnée qui porte le diagnostic"],"semiologie_par_image":[{"panneau":"a","signes":["…"]}],"justes":["…"],"erreurs":["…"],"manques":["…"],"differentiels":[{"diagnostic":"…","contre":"…"}],"piege":"le piège classique de ce cas","a_retenir":"une phrase"}`, { modelTier: "complex", cache: false }), 120000);
     r = JSON.parse(JSON.stringify(r || {}));
     const B = r.bareme || {}, borne = (x, m) => Math.max(0, Math.min(m, Number(x) || 0));
-    r.bareme = { semiologie: borne(B.semiologie, 4), diagnostic: borne(B.diagnostic, 4), differentiel: borne(B.differentiel, 2) };
+    r.bareme = { diagnostic: borne(B.diagnostic, 6), semiologie: borne(B.semiologie, 3), differentiel: borne(B.differentiel, 1) };
+    if (r.diagnostic_juste) { r.bareme.diagnostic = 6; r.bareme.semiologie = Math.max(r.bareme.semiologie, 2); r.bareme.differentiel = 1; }
     r.note = Math.round((r.bareme.semiologie + r.bareme.diagnostic + r.bareme.differentiel) * 10) / 10;
     c.corr = r; c.etat = "corrige";
     S.casHist.hist.push({ fid: c.f.id, note: r.note, at: Date.now(), dx: r.diagnostic || "" });
@@ -235,7 +241,7 @@ function casDroite() {
   const c = S.cas;
   const rates0 = S.casHist.hist.filter((h) => h.note < 6).length, moy0 = S.casHist.hist.slice(-20);
   const barre = `<div class="cas-top"><div class="seg" role="tablist"><button role="tab" aria-selected="${c.mode === "alea"}" data-casmode="alea">Aléatoire</button><button role="tab" aria-selected="${c.mode === "revision"}" data-casmode="revision">Révision</button></div>
-    <span class="hint">${esc(libDomaine(S.dom))}${moy0.length ? ` · moyenne ${(moy0.reduce((a, h) => a + h.note, 0) / moy0.length).toFixed(1)} / 10 sur les ${moy0.length} derniers cas` : ""}${rates0 ? ` · ${rates0} à refaire` : ""}</span></div>`;
+    <span class="hint">${moy0.length ? `Moyenne ${(moy0.reduce((a, h) => a + h.note, 0) / moy0.length).toFixed(1)} / 10 sur les ${moy0.length} derniers cas` : ""}${rates0 ? `${moy0.length ? " · " : ""}${rates0} à refaire` : ""}</span></div>`;
   const cols = c.mode === "alea" ? `<div class="chips cols">${[["melange", "Mélange"], ...livresVisibles().map((b) => [b.id, b.court])].map(([id, lib]) => `<button class="chip${S.reserve.col === id ? " on" : ""}" data-col="${esc(id)}">${esc(lib)}<span class="nb">${nbPrets(id)}</span></button>`).join("")}</div>` : "";
   return barre + cols + casContenu();
 }
@@ -263,7 +269,7 @@ function casContenu() {
     <div class="casctx"><p><b>Clinique.</b> ${esc(c.ctx.contexte || "")}</p></div>${galerie}`;
   if (c.etat === "question" || c.etat === "correction") return tete + `
     <div class="casform"><label class="label" for="casRep">${esc(c.ctx.question || "Décris la sémiologie, puis donne ton diagnostic et ton diagnostic différentiel.")}</label>
-    <textarea id="casRep" rows="6" placeholder="Sémiologie : …&#10;Diagnostic : …&#10;Différentiel : …">${esc(c.rep || "")}</textarea>
+    <textarea id="casRep" rows="6" placeholder="Ton diagnostic, avec le ou les signes qui le justifient. Si tu hésites, décris la sémiologie et propose un différentiel.">${esc(c.rep || "")}</textarea>
     <div class="row"><button class="btn primary" data-corriger="1" ${c.etat === "correction" ? "disabled" : ""}>${c.etat === "correction" ? "Correction en cours…" : "Soumettre"}</button><button class="btn small" data-tirer="1">Passer ce cas</button></div></div>`;
   const r = c.corr || {}, B = r.bareme || {};
   const barre = (lib, v, m) => `<div class="bar-l"><span>${lib}</span><span class="bar"><i style="width:${Math.round(100 * (v || 0) / m)}%"></i></span><b>${v ?? 0} / ${m}</b></div>`;
@@ -271,12 +277,12 @@ function casContenu() {
   return tete + `
     <section class="feedback">
       <div class="fb-score"><div class="note ${r.note >= 7 ? "ok" : r.note >= 5 ? "moy" : "ko"}">${esc(String(r.note ?? "?"))}<small>/10</small></div>
-        <div class="fb-bars">${barre("Sémiologie", B.semiologie, 4)}${barre("Diagnostic", B.diagnostic, 4)}${barre("Différentiel", B.differentiel, 2)}</div></div>
+        <div class="fb-bars">${barre("Diagnostic", B.diagnostic, 6)}${barre("Sémiologie", B.semiologie, 3)}${barre("Différentiel", B.differentiel, 1)}</div></div>
       <p class="verdict">${esc(r.verdict || "")}</p>
       <div class="fb-dx"><span class="label">Diagnostic</span><h3>${esc(r.diagnostic || "")}</h3>${(r.arguments || []).length ? `<ul>${r.arguments.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</div>
       <div class="fb-cols">${liste("Bien vu", r.justes, "ok")}${liste("Erreurs", r.erreurs, "ko")}${liste("Manques", r.manques, "moy")}</div>
       ${(r.semiologie_par_image || []).length ? `<div class="fb"><h3>Sémiologie attendue</h3><dl class="semio">${r.semiologie_par_image.map((x) => `<dt>${x.panneau ? "Image " + esc(x.panneau) : "Image"}</dt><dd>${esc((x.signes || []).join(" · "))}</dd>`).join("")}</dl></div>` : ""}
-      ${(r.differentiels || []).length ? `<div class="fb"><h3>Diagnostic différentiel</h3><table class="ddx"><tbody>${r.differentiels.map((x) => `<tr><th>${esc(x.diagnostic || "")}</th><td>${esc(x.contre || "")}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      ${(r.differentiels || []).length ? `<div class="fb"><h3>${r.diagnostic_juste ? "Pour aller plus loin : différentiel" : "Diagnostic différentiel"}</h3><table class="ddx"><tbody>${r.differentiels.map((x) => `<tr><th>${esc(x.diagnostic || "")}</th><td>${esc(x.contre || "")}</td></tr>`).join("")}</tbody></table></div>` : ""}
       ${r.piege ? `<div class="fb moy"><h3>Piège</h3><p>${esc(r.piege)}</p></div>` : ""}
       ${r.a_retenir ? `<div class="fb cle"><h3>À retenir</h3><p>${esc(r.a_retenir)}</p></div>` : ""}
       <details class="fb src"><summary>Ta réponse et la source du livre</summary><p><b>Ta réponse :</b> ${esc(c.rep)}</p><p><b>Légende (${esc(bookShort(f.b))}, fig. ${esc(f.fig)}${f.pg ? `, p. ${esc(f.pg)}` : ""}) :</b> ${esc(f.capo || f.cap)}</p>${(c.extraits || []).map((x) => `<p class="hint">${esc(x.src)}</p>`).join("")}</details>
