@@ -127,5 +127,17 @@ if (location.hash === "#bibliotheque") S.tab = "biblio";
 '''
 rep("/* ================= boot ================= */", vues + evts + "\n/* ================= boot ================= */")
 
+# 14. une session par utilisateur : fiches et images de fiches dans l'espace privé ; toutes les fonctions
+#     ouvertes à chaque lecteur connecté (l'accès aux livres passe par son propre connecteur GitHub)
+n = src.count('S.db.collection("fiches")') + src.count('db.collection("fiches").onSnapshot')
+src = src.replace('S.db.collection("fiches")', "ficheCol()").replace('db.collection("fiches").onSnapshot', "ficheCol().onSnapshot")
+src = src.replace('S.db.collection("fiche_img")', "ficheImgCol()").replace('S.db.doc("fiche_img/" + slug)', "ficheImgCol().doc(slug)")
+assert n >= 5 and 'collection("fiches")' not in src and '"fiche_img/"' not in src, "fiches non toutes redirigées"
+rep("/* ================= state ================= */", """/* ================= state ================= */
+const ficheCol = () => S.db.collection(`data/users/${S.uid || "anonyme"}/espace/fiches`);
+const ficheImgCol = () => S.db.collection(`data/users/${S.uid || "anonyme"}/espace/fiche_img`);""")
+rep("if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }",
+    "if (user) { try { S.uid = await user.id(); } catch {} try { S.proprio = !!(await user.isOwner()); } catch {} }\n  S.owner = !!S.uid;")
+rep('toast("Seul le propriétaire du corpus peut créer une fiche.", 6000)', 'toast("Connecte-toi à claude.ai pour créer des fiches.", 6000)')
 Path(sys.argv[2]).write_text(src, encoding="utf-8")
 print(f"{sys.argv[2]} : {len(src) / 1024:.0f} Ko")

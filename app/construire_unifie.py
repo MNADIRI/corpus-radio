@@ -81,6 +81,19 @@ script = script.replace('"Bibliothèque MSK"', '"Apprentissage"').replace("<h1>B
 tete = tete.replace(">Bibliothèque MSK<", ">Apprentissage<").replace(">Bibliothèque<", ">Ouvrages<")
 L = tete + script
 L = L.replace('<button data-esp="biblio">' + ICO["biblio"] + '<span>Ouvrages</span>', '<button data-esp="biblio">' + ICO["biblio"] + '<span>Bibliothèque</span>')
+# classement : progression calculée sur les modules qui ont une leçon (les chapitres « à créer » ne pèsent pas)
+L = rep(L, """function playerSummary(){
+  const all=Math.round(ALL.reduce((s,m)=>s+prog(m).all,0)/ALL.length);
+  const books={}; BOOKS.forEach(b=>books[b.id]=bookProg(b).all);
+  return {pseudo:(S.pseudo||"").slice(0,40), all, books, done:ALL.filter(isDone).length, nmod:ALL.length,
+    ans:ALL.reduce((s,m)=>s+quizAns(m),0), nq:ALL.reduce((s,m)=>s+m.quiz.length,0),
+    steps:ALL.reduce((s,m)=>s+stepsDone(m),0), nsteps:ALL.reduce((s,m)=>s+steps(m).length,0),""", """function playerSummary(){
+  const AR=ALL.filter(m=>!m.stub);
+  const all=Math.round(AR.reduce((s,m)=>s+prog(m).all,0)/Math.max(1,AR.length));
+  const books={}; BOOKS.filter(b=>b.modules.some(m=>!m.stub)).forEach(b=>books[b.id]=bookProg(b).all);
+  return {pseudo:(S.pseudo||"").slice(0,40), all, books, done:AR.filter(isDone).length, nmod:AR.length,
+    ans:AR.reduce((s,m)=>s+quizAns(m),0), nq:AR.reduce((s,m)=>s+m.quiz.length,0),
+    steps:AR.reduce((s,m)=>s+stepsDone(m),0), nsteps:AR.reduce((s,m)=>s+steps(m).length,0),""")
 # révision : déplacée dans Cas
 i = L.index("function rapidSection(){")
 j = L.index("\nfunction ", i + 10)

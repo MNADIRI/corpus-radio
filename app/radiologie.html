@@ -384,6 +384,8 @@ ol.steps li.fail::before{border-color:var(--bad);background:var(--bad)}
 <script>
 "use strict";
 /* ================= state ================= */
+const ficheCol = () => S.db.collection(`data/users/${S.uid || "anonyme"}/espace/fiches`);
+const ficheImgCol = () => S.db.collection(`data/users/${S.uid || "anonyme"}/espace/fiche_img`);
 const S = {
   db: null, user: null, sample: null, mcp: null, assets: null, uid: null, owner: false, booted: false,
   manifest: undefined, books: [], figIndex: [], figById: new Map(), packs: new Map(),
@@ -630,7 +632,7 @@ async function figImage(id, slug, full, prio = 1) {
   const aid = slug && S.fiches.get(slug)?.imgAssets?.[id];
   if (aid) { const u = "/_blob/" + aid; imgSrc.set(id, u); return u; }
   if (slug) {
-    if (!ficheImgCache.has(slug)) ficheImgCache.set(slug, S.db.doc("fiche_img/" + slug).get().then((d) => (d.exists ? d.data().imgs || {} : {})).catch(() => ({})));
+    if (!ficheImgCache.has(slug)) ficheImgCache.set(slug, ficheImgCol().doc(slug).get().then((d) => (d.exists ? d.data().imgs || {} : {})).catch(() => ({})));
     const m = await ficheImgCache.get(slug); if (m[id]) { imgSrc.set(id, m[id]); return m[id]; }
   }
   if (!S.owner || !S.manifest) return null;
@@ -875,7 +877,7 @@ async function runNote(noteId, { force = false } = {}) {
     const existing = !force && !id.question && findFiche(slugs);
     if (existing) { patchNote(noteId, { slug: existing.slug, status: "ok" }); done(job); return; }
 
-    if (!S.owner) { done(job); patchNote(noteId, { status: "err" }); toast("Seul le propriétaire du corpus peut créer une fiche.", 6000); return; }
+    if (!S.owner) { done(job); patchNote(noteId, { status: "err" }); toast("Connecte-toi à claude.ai pour créer des fiches.", 6000); return; }
 
     step(job, 1, "on", "Recherche dans les livres");
     const hits = (await searchTexts(id.termes.concat(id.question ? [id.question] : []), 9)).filter((h) => h.score > 2);
@@ -965,18 +967,18 @@ async function saveFiche(doc, job) {
       const data = await figImage(m.id); if (!data || size + data.length > 230000) continue;
       imgs[m.id] = data; size += data.length; if (Object.keys(imgs).length >= 8) break;
     }
-    await S.db.collection("fiche_img").doc(doc.slug).set({ imgs });
+    await ficheImgCol().doc(doc.slug).set({ imgs });
     ficheImgCache.set(doc.slug, Promise.resolve(imgs));
   }
   const body = JSON.parse(JSON.stringify(doc));
   S.fiches.set(doc.slug, body);
-  await S.db.collection("fiches").doc(doc.slug).set(body);
+  await ficheCol().doc(doc.slug).set(body);
 }
 async function verifyInBackground(doc, hits, figs) {
   try { const n = await verifyFiche(doc, hits, figs); doc.verif = "ok"; doc.retires = n; }
   catch { doc.verif = "echec"; }
   const used = citedRefs(doc.fiche); for (const k of Object.keys(doc.refs)) if (!used.has(k)) delete doc.refs[k];
-  try { const body = JSON.parse(JSON.stringify(doc)); S.fiches.set(doc.slug, body); await S.db.collection("fiches").doc(doc.slug).set(body); } catch {}
+  try { const body = JSON.parse(JSON.stringify(doc)); S.fiches.set(doc.slug, body); await ficheCol().doc(doc.slug).set(body); } catch {}
   render();
 }
 function sampleCopy(e) {
@@ -1376,7 +1378,7 @@ async function complete(slug, btn) {
     const pm = await pubmedSynthesis(doc.entite, doc.alias || [], empty.length ? empty : null);
     const next = { ...doc, complement: pm };
     S.fiches.set(slug, next); render();
-    await S.db.collection("fiches").doc(slug).set(JSON.parse(JSON.stringify(next)));
+    await ficheCol().doc(slug).set(JSON.parse(JSON.stringify(next)));
   } catch (e) { toast(e && ["not_granted", "rate_limited", "invalid_json"].includes(e.code) ? sampleCopy(e) : mcpCopy(e), 6000); btn.disabled = false; btn.textContent = "Compléter avec PubMed"; }
 }
 
@@ -1478,7 +1480,7 @@ async function reparerImagesFiches() {
     }
     if (!Object.keys(ajout).length) continue;
     const next = { ...f, imgAssets: { ...(f.imgAssets || {}), ...ajout } };
-    try { await S.db.collection("fiches").doc(f.slug).set(JSON.parse(JSON.stringify(next))); S.fiches.set(f.slug, next); } catch {}
+    try { await ficheCol().doc(f.slug).set(JSON.parse(JSON.stringify(next))); S.fiches.set(f.slug, next); } catch {}
   }
   render();
 }
@@ -2205,11 +2207,12 @@ render();
 (async () => {
   const [db, user, sample, mcp, assets] = await Promise.all(["db", "user", "sample", "mcp", "assets"].map((n) => window.claude.use(n).catch(() => null)));
   S.db = db; S.user = user; S.sample = sample; S.mcp = mcp; S.assets = assets;
-  if (user) { try { S.owner = !!(await user.isOwner()) || !!(await user.canEdit()); } catch {} try { S.uid = await user.id(); } catch {} }
+  if (user) { try { S.uid = await user.id(); } catch {} try { S.proprio = !!(await user.isOwner()); } catch {} }
+  S.owner = !!S.uid;
   S.booted = true;
   if (!db) { toast("La base de l'artefact ne répond pas : les fiches ne peuvent pas s'afficher."); render(); return; }
   const slow = setTimeout(() => toast("La base met du temps à répondre : la connexion est peut-être lente."), 10000);
-  db.collection("fiches").onSnapshot((snap) => {
+  ficheCol().onSnapshot((snap) => {
     clearTimeout(slow);
     for (const ch of snap.docChanges()) { if (ch.type === "removed") S.fiches.delete(ch.doc.id); else S.fiches.set(ch.doc.id, { slug: ch.doc.id, ...ch.doc.data() }); }
     if (S.pendingSlug && S.fiches.has(S.pendingSlug)) { const s = S.pendingSlug; S.pendingSlug = null; S.view = { type: "fiche", slug: s }; S.detail = true; }
