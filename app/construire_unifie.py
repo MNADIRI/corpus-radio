@@ -46,6 +46,9 @@ js = rep(js, 'window.addEventListener("hashchange", routeFromHash);', '')
 js = rep(js, '\nrouteFromHash();\n', '\n')
 js = rep(js, 'document.addEventListener("click"', 'ROOT.addEventListener("click"', 2)
 js = rep(js, 'document.addEventListener("keydown", (e) => {', 'document.addEventListener("keydown", (e) => { if (!window.OUTILS_VISIBLE) return;')
+# la zone de saisie réelle est dans le composant isolé : on la retrouve par le chemin de l'événement
+js = rep(js, 'const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "") || document.activeElement?.isContentEditable;',
+         'const cible = (e.composedPath && e.composedPath()[0]) || e.target; const typing = !!cible && (/^(INPUT|TEXTAREA|SELECT)$/.test(cible.tagName || "") || cible.isContentEditable);')
 js = rep(js, 'document.querySelectorAll("[data-tab]")', 'ROOT.querySelectorAll("[data-tab]")')
 js = rep(js, 'if (location.hash === "#bibliotheque") S.tab = "biblio";', '')
 js = rep(js, 'html = progressionHtml() + homeHtml();', 'html = homeHtml();')
@@ -94,6 +97,9 @@ L = rep(L, """function playerSummary(){
   return {pseudo:(S.pseudo||"").slice(0,40), all, books, done:AR.filter(isDone).length, nmod:AR.length,
     ans:AR.reduce((s,m)=>s+quizAns(m),0), nq:AR.reduce((s,m)=>s+m.quiz.length,0),
     steps:AR.reduce((s,m)=>s+stepsDone(m),0), nsteps:AR.reduce((s,m)=>s+steps(m).length,0),""")
+# raccourcis clavier d'Apprentissage : coupés hors de l'espace, et jamais pendant une saisie (même dans le composant isolé)
+L = rep(L, 'if(e.target.closest&&e.target.closest("input,textarea")) return;',
+        'if(window.OUTILS_VISIBLE) return; { const c=(e.composedPath&&e.composedPath()[0])||e.target; if(c&&c.closest&&c.closest("input,textarea,select,[contenteditable]")) return; }')
 # révision : déplacée dans Cas
 i = L.index("function rapidSection(){")
 j = L.index("\nfunction ", i + 10)
