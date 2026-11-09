@@ -69,7 +69,7 @@ function renderBiblio() {
   $("left").dataset.h = "";
   if (sig !== biblioSig) { biblioSig = sig; $("left").innerHTML = biblioGauche(); }
   const html = biblioDroite();
-  if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); }
+  if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); observerImages(); }
 }
 async function chargerImagesVisibles() {
   for (const img of $("right").querySelectorAll("img[data-lrimg]")) { if (img.src || !window.LR) continue; window.LR.image(img.dataset.lrimg).then((s) => { if (s) img.src = s; }).catch(() => {}); }

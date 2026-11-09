@@ -331,6 +331,30 @@ ol.steps li.fail::before{border-color:var(--bad);background:var(--bad)}
 .revhead{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;margin-bottom:10px}
 .revbar{grid-column:1/-1;height:4px;border-radius:2px;background:var(--sunk);overflow:hidden}.revbar i{display:block;height:100%;background:var(--accent);transition:width .3s}
 
+/* ---- Lecture d'un livre ---- */
+.lect-tete{max-width:72ch;margin:4px 0 10px}.lect-titre{font-family:var(--display);font-weight:650;font-size:clamp(26px,3.4vw,36px);line-height:1.15;margin:4px 0 0;text-wrap:balance}
+.lect{max-width:72ch;font-family:var(--display);font-weight:500;font-size:17px;line-height:1.72;color:var(--fg)}
+.lect p{margin:0 0 1em;hyphens:auto;text-wrap:pretty}.lect ul{margin:0 0 1em;padding-left:1.2em}.lect li{margin:.25em 0}
+.lect-sec{font-family:var(--body);font-weight:600;font-size:20px;line-height:1.3;margin:1.8em 0 .6em;scroll-margin-top:calc(var(--esp-h,0px) + var(--hdr,0px) + 16px)}
+.lect-ss{font-family:var(--body);font-weight:600;font-size:16px;margin:1.3em 0 .4em}
+.figref{color:var(--accent);font-family:var(--body);font-size:.9em;font-weight:500}
+.fig-l{margin:1.4em 0 1.8em;display:grid;gap:8px;max-width:72ch}
+.fig-pan{display:grid;gap:6px;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}.fig-pan.n1{grid-template-columns:1fr}
+.fig-img{position:relative;display:grid;place-items:center;min-height:160px;padding:0;border:0;border-radius:8px;background:var(--film);overflow:hidden;cursor:zoom-in}
+.fig-img img{max-width:100%;max-height:520px;object-fit:contain}.fig-pan:not(.n1) .fig-img img{max-height:300px}
+.fig-img span{position:absolute;left:6px;top:6px;font:600 11px var(--body);color:var(--film);background:var(--film-fg);border-radius:4px;padding:1px 6px}
+.fig-l figcaption{font-family:var(--body);font-size:13.5px;line-height:1.5;color:var(--muted)}.fig-l figcaption b{color:var(--fg)}
+.lect-toc{max-width:72ch;margin:0 0 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:8px 12px}
+.lect-toc summary{cursor:pointer;font:600 13px var(--body);color:var(--muted)}.lect-toc ol{margin:8px 0 2px;padding-left:1.3em;display:grid;gap:2px}
+.lect-toc button{border:0;background:none;color:var(--accent);font:14px var(--body);text-align:left;padding:2px 0;cursor:pointer}
+.lect-pied{max-width:72ch;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:30px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+.lect-pied button{font:500 14px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;text-align:left;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lect-pied button:last-child{text-align:right}.lect-pied button:hover{border-color:var(--accent)}
+.toc-livre{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:2px}
+.toc-livre button{width:100%;display:grid;grid-template-columns:2em 1fr auto;gap:6px;align-items:baseline;text-align:left;padding:7px 8px;border:1px solid transparent;border-radius:8px;background:none;color:var(--fg);font:13.5px var(--body);cursor:pointer}
+.toc-livre button:hover{background:var(--sunk)}.toc-livre button.on{border-color:var(--accent);background:var(--accent-soft)}.toc-livre .n{font-family:var(--mono);color:var(--muted);font-size:12px}
+@media (max-width:720px){.lect{font-size:16.5px}.lect-pied{grid-template-columns:1fr}.lect-pied button:last-child{text-align:left}}
+
 </style>
 
 <header class="top" id="top"><div class="topin">
@@ -1383,7 +1407,7 @@ function renderBiblio() {
   $("left").dataset.h = "";
   if (sig !== biblioSig) { biblioSig = sig; $("left").innerHTML = biblioGauche(); }
   const html = biblioDroite();
-  if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); }
+  if ($("right").dataset.h !== html) { $("right").dataset.h = html; $("right").innerHTML = html; chargerImagesVisibles(); observerImages(); }
 }
 async function chargerImagesVisibles() {
   for (const img of $("right").querySelectorAll("img[data-lrimg]")) { if (img.src || !window.LR) continue; window.LR.image(img.dataset.lrimg).then((s) => { if (s) img.src = s; }).catch(() => {}); }
@@ -1833,6 +1857,7 @@ function biblioGauche() {
   const lv = livresVisibles(), tot = lv.reduce((a, b) => [a[0] + b.passages, a[1] + b.figures], [0, 0]);
   const seg = `<div class="seg" role="tablist"><button role="tab" aria-selected="${S.bib.vue === "ouvrages"}" data-bvue="ouvrages">Ouvrages</button><button role="tab" aria-selected="${S.bib.vue === "entites"}" data-bvue="entites">Entités</button></div>`;
   const stats = `<div class="bstats"><span><b>${lv.length}</b> ouvrages</span><span><b>${tot[0].toLocaleString("fr-BE")}</b> passages</span><span><b>${tot[1].toLocaleString("fr-BE")}</b> figures</span><span><b>${entitesVisibles().length.toLocaleString("fr-BE")}</b> entités</span></div>`;
+  if (S.bib.vue === "ouvrages" && S.bib.livre && S.bookById.get(S.bib.livre)) return tocLivreGauche(S.bookById.get(S.bib.livre));
   if (S.bib.vue === "ouvrages") {
     const g = {}; for (const b of lv) (g[b.domaine] = g[b.domaine] || []).push(b);
     return seg + stats + Object.entries(g).map(([d, bs]) => `<h3 class="grp">${esc(libDomaine(d))}</h3><ul class="entlist">${bs.map((b) => `<li><button class="item${S.bib.livre === b.id ? " on" : ""}" data-livre="${esc(b.id)}"><b>${esc(b.court)}</b><span>${esc(b.titre)}</span><span class="mono">${b.chapitres.length} chapitres · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures${b.id === "top3-msk" ? " · banque de cas" : ""}</span></button></li>`).join("")}</ul>`).join("");
@@ -1889,8 +1914,10 @@ function biblioDroite() {
     const b = S.bookById.get(v.id); if (!b) return "";
     return back + `<span class="label">${esc(libDomaine(b.domaine))}${b.id === "top3-msk" ? " · banque de cas" : ""}</span><h1 class="btitle">${esc(b.titre)}</h1>
       <p class="hint">${esc(b.auteurs.join(", "))}${b.annee ? ` · ${b.annee}` : ""} · ${b.langue === "fr" ? "français" : "anglais"} · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures</p>
-      <ol class="chaps">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button data-livre="${esc(b.id)}" data-chap="${c.n}"><span class="n">${c.n}</span><span class="t">${esc(c.t)}</span><span class="p mono">${c.p && c.p[0] ? `p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span>${c.d.length > 1 ? `<span class="d">${esc(c.d.filter((x) => x !== b.domaine).map(libDomaine).join(", "))}</span>` : ""}</button></li>`).join("")}</ol>`;
+      <div class="row"><button class="btn primary small" data-livre="${esc(b.id)}" data-lire="${(() => { try { return +localStorage.getItem("rad-lecture-" + b.id) || b.chapitres[0].n; } catch { return b.chapitres[0].n; } })()}">Lire le livre</button></div>
+      <ol class="chaps">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button data-livre="${esc(b.id)}" data-lire="${c.n}"><span class="n">${c.n}</span><span class="t">${esc(c.t)}</span><span class="p mono">${c.p && c.p[0] ? `p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span>${c.d.length > 1 ? `<span class="d">${esc(c.d.filter((x) => x !== b.domaine).map(libDomaine).join(", "))}</span>` : ""}</button></li>`).join("")}</ol>`;
   }
+  if (v.type === "lecture") return lectureHtml(v);
   if (v.type === "chap") {
     const b = S.bookById.get(v.id), c = chapitre(b, v.ch);
     const head = back + `<button class="btn small" data-livre="${esc(b.id)}">‹ ${esc(b.court)}</button><span class="label">${esc(b.court)} · chapitre ${v.ch}</span><h1 class="btitle">${esc(c ? c.t : "")}</h1>`;
@@ -1916,6 +1943,8 @@ function clicBiblio(t) {
   const d = t.dataset;
   if (d.bvue) { S.bib.vue = d.bvue; if (d.bvue === "entites" && S.entState === "idle") chargerEntites(); render(); return true; }
   if (d.bcat !== undefined && t.matches("[data-bcat]")) { S.bib.cat = d.bcat; render(); return true; }
+  if (d.bretour) { S.bib.livre = null; S.bib.ch = null; S.entView = null; render(); return true; }
+  if (d.livre && d.lire != null) { ouvrirLecture(d.livre, +d.lire); return true; }
   if (d.livre) { ouvrirLivre(d.livre, d.chap != null ? +d.chap : null); return true; }
   return false;
 }
@@ -1992,10 +2021,104 @@ function revContenu() {
     ${c != null ? `<div class="fb ${c === q.reponse ? "ok" : "ko"}"><h3>${c === q.reponse ? "Bonne réponse" : "Réponse attendue : " + esc(q.options[q.reponse] || "")}</h3><p>${esc(q.explication || "")}</p>${q.ref ? `<p class="hint">${esc(q.ref)}</p>` : ""}</div><div class="row"><button class="btn primary" data-rsuiv="1">Élément suivant</button></div>` : ""}`;
 }
 
+/* ================= Bibliothèque : lecture du livre, chapitre par chapitre =================
+   Texte des passages remis en ordre et en forme (sections, paragraphes, listes), figures insérées
+   après le premier passage qui les cite, images chargées au défilement. */
+function nettoyerTexte(t) {
+  return String(t || "").replace(/(\p{Ll})-\s+(\p{Ll})/gu, "$1$2").replace(/\s+/g, " ").trim();
+}
+function estPlanBrut(t) { return (t.match(/\.\s\.\s\./g) || []).length > 3 || /P\s?L\s?A\s?N\s+D\s?U/.test(t); }
+function lienFigures(html) {
+  return html.replace(/\b(fig(?:ure)?s?\.?\s*\d+(?:[.\-]\d+)?[a-z]?(?:\s*(?:,|et|à|-)\s*\d*(?:[.\-]\d+)?[a-z]?)*)/gi, '<span class="figref">$1</span>');
+}
+function blocsTexte(t) {
+  const morceaux = nettoyerTexte(t).split(/\s*(?=[■•▪●]\s)/);
+  const out = [];
+  for (const m of morceaux) {
+    if (/^[■•▪●]\s/.test(m)) { out.push({ li: m.replace(/^[■•▪●]\s*/, "") }); continue; }
+    const phrases = m.split(/(?<=[.!?…»])\s+(?=[«A-ZÀ-ÖØ-Þ0-9(])/);
+    let cur = [], n = 0;
+    for (const ph of phrases) { cur.push(ph); n += ph.split(" ").length; if (n > 110) { out.push({ p: cur.join(" ") }); cur = []; n = 0; } }
+    if (cur.length) out.push({ p: cur.join(" ") });
+  }
+  return out;
+}
+function htmlBlocs(blocs) {
+  let h = "", liste = false;
+  for (const b of blocs) {
+    if (b.li) { if (!liste) { h += "<ul>"; liste = true; } h += `<li>${lienFigures(esc(b.li))}</li>`; }
+    else { if (liste) { h += "</ul>"; liste = false; } h += `<p>${lienFigures(esc(b.p))}</p>`; }
+  }
+  return h + (liste ? "</ul>" : "");
+}
+function groupeFigure(figs, i0) {
+  const f = figs[i0], g = figs.map((x, i) => [x, i]).filter(([x]) => x.fig === f.fig);
+  const cap = f.cap || "";
+  return `<figure class="fig-l" id="fig-${esc(f.fig.replace(/[^0-9A-Za-z]/g, "-"))}"><div class="fig-pan n${Math.min(g.length, 4)}">${g.map(([x, i]) => `<button class="fig-img" data-lb="${i}" aria-label="Agrandir la figure ${esc(x.fig)}${esc(x.pa || "")}"><img data-limg="${esc(x.id)}" alt="Figure ${esc(x.fig)}${esc(x.pa || "")}">${g.length > 1 && x.pa ? `<span>${esc(x.pa)}</span>` : ""}</button>`).join("")}</div>
+    <figcaption><b>Figure ${esc(f.fig)}</b> ${esc(nettoyerTexte(cap.replace(/^fig(?:ure)?\.?\s*[\d.]+\s*/i, "")))}</figcaption></figure>`;
+}
+async function ouvrirLecture(id, ch) {
+  S.bib.livre = id; S.bib.ch = ch; S.entSel = null; S.detail = true;
+  S.entView = { type: "lecture", id, ch, state: "loading" }; render();
+  try { localStorage.setItem("rad-lecture-" + id, String(ch)); } catch {}
+  const b = S.bookById.get(id);
+  try {
+    const [ps, figs] = await Promise.all([passagesChapitre(id, ch), figsChapitre(b, ch)]);
+    if (S.bib.ch !== ch || S.bib.livre !== id) return;
+    S.entView = { type: "lecture", id, ch, state: "ok", ps: ps.filter((p) => !estPlanBrut(p.t)), figs };
+  } catch (e) { S.entView = { type: "lecture", id, ch, state: "err", err: messageErreur(e) }; }
+  render();
+  const r = $("right"); if (r) r.scrollIntoView({ block: "start" }); window.scrollTo(0, 0);
+}
+function lectureHtml(v) {
+  const b = S.bookById.get(v.id), c = chapitre(b, v.ch);
+  const chs = b.chapitres.filter((x) => S.dom === "tous" || x.d.includes(S.dom)), k = chs.findIndex((x) => x.n === v.ch);
+  const prev = chs[k - 1], next = chs[k + 1];
+  const tete = `<button class="btn small bback" data-livre="${esc(b.id)}">‹ Sommaire</button>
+    <header class="lect-tete"><span class="label">${esc(b.court)} · chapitre ${v.ch}${c && c.p && c.p[0] ? ` · p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span><h1 class="lect-titre">${esc(c ? c.t : "")}</h1></header>`;
+  const pied = `<nav class="lect-pied">${prev ? `<button data-livre="${esc(b.id)}" data-lire="${prev.n}">‹ ${esc(prev.t)}</button>` : "<span></span>"}${next ? `<button data-livre="${esc(b.id)}" data-lire="${next.n}">${esc(next.t)} ›</button>` : "<span></span>"}</nav>`;
+  if (v.state === "loading") return tete + `<p class="hint">Lecture du chapitre dans l'index…</p>`;
+  if (v.state === "err") return tete + `<div class="alert"><b>Lecture impossible</b><span>${esc(v.err)} <button class="btn small" data-livre="${esc(b.id)}" data-lire="${v.ch}">Réessayer</button></span></div>`;
+  S.lb = { list: v.figs.map((g) => ({ id: g.id, cap: g.cap, src: `${bookShort(g.b)}, fig. ${g.fig}${g.pa || ""}${g.pg ? `, p. ${g.pg}` : ""}`, dd: "", slug: null, ent: c ? c.t : "" })), i: 0 };
+  const idx = new Map(v.figs.map((g, i) => [g.id, i])), placees = new Set();
+  let corps = "", secCour = null, sections = [];
+  for (const p of v.ps) {
+    const sec = p.sec && p.sec !== (c && c.t) ? p.sec : null;
+    if (sec && sec !== secCour) { secCour = sec; const ancre = "sec-" + sections.length; sections.push({ ancre, t: sec }); corps += `<h2 class="lect-sec" id="${ancre}">${esc(sec)}</h2>`; }
+    if (p.ss) corps += `<h3 class="lect-ss">${esc(p.ss)}</h3>`;
+    corps += htmlBlocs(blocsTexte(p.t));
+    for (const fid of p.f || []) {
+      const i = idx.get(fid); if (i == null) continue;
+      const num = v.figs[i].fig; if (placees.has(num)) continue;
+      placees.add(num); corps += groupeFigure(v.figs, i);
+    }
+  }
+  const restes = [];
+  v.figs.forEach((g, i) => { if (!placees.has(g.fig)) { placees.add(g.fig); restes.push(groupeFigure(v.figs, i)); } });
+  if (restes.length) { sections.push({ ancre: "sec-figs", t: "Autres figures du chapitre" }); corps += `<h2 class="lect-sec" id="sec-figs">Autres figures du chapitre</h2>${restes.join("")}`; }
+  const toc = sections.length > 1 ? `<details class="lect-toc" ${sections.length <= 12 ? "open" : ""}><summary>Dans ce chapitre · ${sections.length} sections</summary><ol>${sections.map((s) => `<li><button data-goto="${s.ancre}">${esc(s.t)}</button></li>`).join("")}</ol></details>` : "";
+  return tete + toc + `<article class="lect">${corps || `<p class="hint">Aucun texte pour ce chapitre.</p>`}</article>` + pied;
+}
+function tocLivreGauche(b) {
+  const lu = (() => { try { return +localStorage.getItem("rad-lecture-" + b.id); } catch { return 0; } })();
+  return `<button class="btn small" data-bvue="ouvrages" data-bretour="1">‹ Tous les ouvrages</button>
+    <h3 class="grp">${esc(b.court)} · table des matières</h3>
+    <ol class="toc-livre">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button class="${S.bib.ch === c.n ? "on" : ""}" data-livre="${esc(b.id)}" data-lire="${c.n}"><span class="n">${c.n}</span><span>${esc(c.t)}</span>${lu === c.n && S.bib.ch !== c.n ? `<span class="hint">reprendre</span>` : ""}</button></li>`).join("")}</ol>`;
+}
+let obsImages = null;
+function observerImages() {
+  const r = $("right"); if (!r) return;
+  if (!obsImages) obsImages = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { const img = e.target; obsImages.unobserve(img); figImage(img.dataset.limg, null, true).then((s) => { if (s) img.src = s; }).catch(() => {}); }
+  }, { rootMargin: "600px 0px" });
+  const imgs = [...r.querySelectorAll("img[data-limg]:not([src])")];
+  imgs.forEach((img, k) => { if (k < 6) { figImage(img.dataset.limg, null, true).then((s) => { if (s) img.src = s; }).catch(() => {}); } else obsImages.observe(img); });
+}
+
 document.addEventListener("click", (e) => {
   const tc = e.target.closest("[data-casmode],[data-tirer],[data-corriger],[data-qrep],[data-qnext],[data-col],[data-rrep],[data-rsuiv],[data-revnouv]");
   if (tc && !tc.disabled && clicCas(tc)) return;
-  const tb = e.target.closest("[data-bvue],[data-bcat],[data-livre]");
+  const tb = e.target.closest("[data-bretour],[data-bvue],[data-bcat],[data-livre]");
   if (tb && clicBiblio(tb)) return;
   const t = e.target.closest("[data-tab],[data-ent],[data-progimp],[data-genent],[data-retry-ent],[data-retry-meta],[data-fiche]");
   if (!t) return;

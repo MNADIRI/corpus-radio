@@ -16,6 +16,7 @@ function biblioGauche() {
   const lv = livresVisibles(), tot = lv.reduce((a, b) => [a[0] + b.passages, a[1] + b.figures], [0, 0]);
   const seg = `<div class="seg" role="tablist"><button role="tab" aria-selected="${S.bib.vue === "ouvrages"}" data-bvue="ouvrages">Ouvrages</button><button role="tab" aria-selected="${S.bib.vue === "entites"}" data-bvue="entites">Entités</button></div>`;
   const stats = `<div class="bstats"><span><b>${lv.length}</b> ouvrages</span><span><b>${tot[0].toLocaleString("fr-BE")}</b> passages</span><span><b>${tot[1].toLocaleString("fr-BE")}</b> figures</span><span><b>${entitesVisibles().length.toLocaleString("fr-BE")}</b> entités</span></div>`;
+  if (S.bib.vue === "ouvrages" && S.bib.livre && S.bookById.get(S.bib.livre)) return tocLivreGauche(S.bookById.get(S.bib.livre));
   if (S.bib.vue === "ouvrages") {
     const g = {}; for (const b of lv) (g[b.domaine] = g[b.domaine] || []).push(b);
     return seg + stats + Object.entries(g).map(([d, bs]) => `<h3 class="grp">${esc(libDomaine(d))}</h3><ul class="entlist">${bs.map((b) => `<li><button class="item${S.bib.livre === b.id ? " on" : ""}" data-livre="${esc(b.id)}"><b>${esc(b.court)}</b><span>${esc(b.titre)}</span><span class="mono">${b.chapitres.length} chapitres · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures${b.id === "top3-msk" ? " · banque de cas" : ""}</span></button></li>`).join("")}</ul>`).join("");
@@ -72,8 +73,10 @@ function biblioDroite() {
     const b = S.bookById.get(v.id); if (!b) return "";
     return back + `<span class="label">${esc(libDomaine(b.domaine))}${b.id === "top3-msk" ? " · banque de cas" : ""}</span><h1 class="btitle">${esc(b.titre)}</h1>
       <p class="hint">${esc(b.auteurs.join(", "))}${b.annee ? ` · ${b.annee}` : ""} · ${b.langue === "fr" ? "français" : "anglais"} · ${b.passages.toLocaleString("fr-BE")} passages · ${b.figures.toLocaleString("fr-BE")} figures</p>
-      <ol class="chaps">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button data-livre="${esc(b.id)}" data-chap="${c.n}"><span class="n">${c.n}</span><span class="t">${esc(c.t)}</span><span class="p mono">${c.p && c.p[0] ? `p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span>${c.d.length > 1 ? `<span class="d">${esc(c.d.filter((x) => x !== b.domaine).map(libDomaine).join(", "))}</span>` : ""}</button></li>`).join("")}</ol>`;
+      <div class="row"><button class="btn primary small" data-livre="${esc(b.id)}" data-lire="${(() => { try { return +localStorage.getItem("rad-lecture-" + b.id) || b.chapitres[0].n; } catch { return b.chapitres[0].n; } })()}">Lire le livre</button></div>
+      <ol class="chaps">${b.chapitres.filter((c) => S.dom === "tous" || c.d.includes(S.dom)).map((c) => `<li><button data-livre="${esc(b.id)}" data-lire="${c.n}"><span class="n">${c.n}</span><span class="t">${esc(c.t)}</span><span class="p mono">${c.p && c.p[0] ? `p. ${esc(c.p[0])}–${esc(c.p[1])}` : ""}</span>${c.d.length > 1 ? `<span class="d">${esc(c.d.filter((x) => x !== b.domaine).map(libDomaine).join(", "))}</span>` : ""}</button></li>`).join("")}</ol>`;
   }
+  if (v.type === "lecture") return lectureHtml(v);
   if (v.type === "chap") {
     const b = S.bookById.get(v.id), c = chapitre(b, v.ch);
     const head = back + `<button class="btn small" data-livre="${esc(b.id)}">‹ ${esc(b.court)}</button><span class="label">${esc(b.court)} · chapitre ${v.ch}</span><h1 class="btitle">${esc(c ? c.t : "")}</h1>`;
@@ -99,6 +102,8 @@ function clicBiblio(t) {
   const d = t.dataset;
   if (d.bvue) { S.bib.vue = d.bvue; if (d.bvue === "entites" && S.entState === "idle") chargerEntites(); render(); return true; }
   if (d.bcat !== undefined && t.matches("[data-bcat]")) { S.bib.cat = d.bcat; render(); return true; }
+  if (d.bretour) { S.bib.livre = null; S.bib.ch = null; S.entView = null; render(); return true; }
+  if (d.livre && d.lire != null) { ouvrirLecture(d.livre, +d.lire); return true; }
   if (d.livre) { ouvrirLivre(d.livre, d.chap != null ? +d.chap : null); return true; }
   return false;
 }
