@@ -222,7 +222,9 @@ document.addEventListener("click", (ev) => {
   else if (t.dataset.somhome) go({ name: "home", book: t.dataset.somhome });
 });
 document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") { const s = document.getElementById("somm"); if (s) s.remove(); } });
+var ESP_COUR = "apprentissage", ESP_Y = {};
 window.ESPACE = function (e) {
+  ESP_Y[ESP_COUR] = window.scrollY; const memeEspace = e === ESP_COUR; ESP_COUR = e;
   const outils = e !== "apprentissage";
   document.body.classList.toggle("esp-outils", outils);
   document.getElementById("outils").hidden = !outils;
@@ -231,7 +233,8 @@ window.ESPACE = function (e) {
   if (outils && window.OUTILS) window.OUTILS.onglet(e);
   if (!outils) render();
   try { localStorage.setItem("rad-espace", e); } catch (er) {}
-  window.scrollTo(0, 0);
+  const y = memeEspace ? 0 : (ESP_Y[e] || 0);
+  setTimeout(() => window.scrollTo(0, y), 30);
 };
 document.getElementById("espaces").addEventListener("click", (ev) => { const b = ev.target.closest("[data-esp]"); if (b) window.ESPACE(b.dataset.esp); });
 document.addEventListener("click", (ev) => { if (ev.target.closest("[data-vers-cas]")) { window.ESPACE("cas"); if (window.OUTILS) { window.OUTILS.onglet("cas"); } } });

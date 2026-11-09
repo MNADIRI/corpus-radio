@@ -114,6 +114,7 @@ async function remplirReserve() {
       const it = await preparerCas(null, cible === "melange" ? null : cible).catch(() => null);
       if (!it) break;
       S.reserve.items.push(it); sauverReserve(); render();
+      for (const im of it.images || []) { figImage(im.id, null, false, 2).catch(() => {}); figImage(im.id, null, true, 2).catch(() => {}); }
     }
   } finally { reserveEnCours = false; }
 }

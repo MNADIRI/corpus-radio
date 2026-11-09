@@ -65,8 +65,21 @@ function grilleFigures(figs, ent) {
 function listePassages(ps) {
   return ps.map((p) => `<article class="psg"><span class="mono">${esc(srcLabel(p))}</span><p>${esc(p.t.length > 700 ? p.t.slice(0, 700) + " …" : p.t)}</p><button class="btn small" data-ref="${esc(p.id)}">Lire en entier</button></article>`).join("") || `<p class="hint">Aucun passage.</p>`;
 }
+function filAriane(v) {
+  const parts = [`<button data-bretour="1">Bibliothèque</button>`];
+  const b = v && v.id && S.bookById.get(v.id);
+  if (v && (v.type === "livre" || v.type === "lecture" || v.type === "chap") && b) {
+    parts.push(v.type === "livre" ? `<span>${esc(b.court)}</span>` : `<button data-livre="${esc(b.id)}">${esc(b.court)}</button>`);
+    if (v.ch != null) { const c = chapitre(b, v.ch); parts.push(`<span>Chapitre ${v.ch}${c ? " · " + esc(c.t) : ""}</span>`); }
+  } else if (v && v.type === "ent") { const e = S.ent.get(v.id); parts.push(`<button data-bvue="entites">Entités</button>`, `<span>${esc(e ? e.n : "")}</span>`); }
+  return `<nav class="ariane" aria-label="Fil d'Ariane">${parts.join('<i aria-hidden="true">›</i>')}</nav>`;
+}
 function biblioDroite() {
   const v = S.entView;
+  if (v) return filAriane(v) + biblioDroiteCorps(v);
+  return biblioDroiteCorps(v);
+}
+function biblioDroiteCorps(v) {
   if (!v) return `<div class="bempty"><h2>Bibliothèque</h2><p>Tout ce que l'application peut lire dans l'index : les ouvrages et leurs chapitres, les figures avec leur légende, et le catalogue des entités pathologiques. Choisis un ouvrage ou une entité à gauche.</p>${S.manifest ? `<p class="hint">Index version ${esc(S.manifest.version)} · lu depuis l'ouverture : ${S.lus.docs} fichiers, ${(S.lus.octets / 1024).toFixed(0)} Ko.</p>` : ""}</div>`;
   const back = `<button class="btn small bback" data-back="1">‹ Liste</button>`;
   if (v.type === "livre") {
@@ -100,9 +113,9 @@ function biblioDroite() {
 }
 function clicBiblio(t) {
   const d = t.dataset;
-  if (d.bvue) { S.bib.vue = d.bvue; if (d.bvue === "entites" && S.entState === "idle") chargerEntites(); render(); return true; }
+  if (d.bretour) { S.bib.vue = "ouvrages"; S.bib.livre = null; S.bib.ch = null; S.entView = null; S.detail = false; render(); window.scrollTo(0, 0); return true; }
+  if (d.bvue) { S.bib.vue = d.bvue; S.bib.livre = null; S.bib.ch = null; if (S.entView && S.entView.type !== "ent") S.entView = null; if (d.bvue === "entites" && S.entState === "idle") chargerEntites(); render(); return true; }
   if (d.bcat !== undefined && t.matches("[data-bcat]")) { S.bib.cat = d.bcat; render(); return true; }
-  if (d.bretour) { S.bib.livre = null; S.bib.ch = null; S.entView = null; render(); return true; }
   if (d.livre && d.lire != null) { ouvrirLecture(d.livre, +d.lire); return true; }
   if (d.livre) { ouvrirLivre(d.livre, d.chap != null ? +d.chap : null); return true; }
   return false;

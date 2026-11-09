@@ -23,15 +23,45 @@ function blocRessource(res) {
   for (const b of (res && res.content) || []) if (b && b.resource) return b.resource;
   return null;
 }
-async function lireGitHub(path) {
+/* Cache persistant (IndexedDB) : un fichier déjà lu dans le dépôt n'est plus redemandé à GitHub,
+   même après fermeture. Les JSON de l'index sont rangés par version du corpus ; les images par chemin. */
+const CACHE = (() => {
+  let base = null;
+  const ouvrir = () => base || (base = new Promise((res, rej) => {
+    try { const r = indexedDB.open("radiologie-cache", 1); r.onupgradeneeded = () => r.result.createObjectStore("f"); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); }
+  }));
+  return {
+    async lire(k) { try { const d = await ouvrir(); return await new Promise((res) => { const q = d.transaction("f").objectStore("f").get(k); q.onsuccess = () => res(q.result || null); q.onerror = () => res(null); }); } catch { return null; } },
+    async ecrire(k, v) { try { const d = await ouvrir(); d.transaction("f", "readwrite").objectStore("f").put(v, k); } catch {} },
+  };
+})();
+/* File d'appels au connecteur : au plus 6 en parallèle, par priorité (0 données, 1 image visible, 2 arrière-plan). */
+const FILE_GH = []; let ghActifs = 0;
+function planifier(fn, prio) {
+  return new Promise((res, rej) => { FILE_GH.push({ fn, prio, res, rej, t: performance.now() }); FILE_GH.sort((a, b) => a.prio - b.prio || a.t - b.t); pomperGH(); });
+}
+function pomperGH() {
+  while (ghActifs < 6 && FILE_GH.length) { const t = FILE_GH.shift(); ghActifs++; t.fn().then(t.res, t.rej).finally(() => { ghActifs--; pomperGH(); }); }
+}
+async function appelGitHub(path) {
   for (let k = 0; ; k++) {
     try {
-      const res = await avecDelai(S.mcp.callTool("GitHub", "get_file_contents", { owner: DEPOT.owner, repo: DEPOT.repo, path }), 15000);
+      const res = await avecDelai(S.mcp.callTool("GitHub", "get_file_contents", { owner: DEPOT.owner, repo: DEPOT.repo, path }), 20000);
       const r = blocRessource(res); if (!r) throw { code: "vide", message: path };
       S.lus.docs++; S.lus.octets += (r.text || r.blob || "").length;
-      return r;
+      return { text: r.text, blob: r.blob, mimeType: r.mimeType };
     } catch (e) { if (k < 2 && e && (e.code === "rate_limited" || e.code === "upstream_error" || e.code === "timeout")) { await new Promise((r) => setTimeout(r, 900 * (k + 1))); continue; } throw e; }
   }
+}
+const ghEnVol = new Map();
+async function lireGitHub(path, prio = 0) {
+  const versionne = path.endsWith(".json") && !path.endsWith("sommaire.json");
+  const cle = versionne ? `${(S.manifest && S.manifest.version) || "0"}|${path}` : path;
+  if (!path.endsWith("sommaire.json")) { const c = await CACHE.lire(cle); if (c) return c; }
+  if (ghEnVol.has(cle)) return ghEnVol.get(cle);
+  const p = planifier(() => appelGitHub(path), prio).then((r) => { if (!path.endsWith("sommaire.json")) CACHE.ecrire(cle, r); return r; });
+  ghEnVol.set(cle, p); p.finally(() => ghEnVol.delete(cle));
+  return p;
 }
 function cheminDistant(path) {
   if (path === "sommaire") return DEPOT.base + "sommaire.json";
@@ -179,7 +209,16 @@ async function figsCitedIn(passages, k) {
 }
 function mergeFigs(...lists) { const seen = new Set(), out = []; for (const l of lists) for (const f of l) if (!seen.has(f.id)) { seen.add(f.id); out.push(f); } return out; }
 const ficheImgCache = new Map(), imgSrc = new Map(), blobUrls = new Map();
-async function figImage(id, slug, full) {
+function b64Url(r) {
+  const bin = atob(r.blob), u8 = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+  return URL.createObjectURL(new Blob([u8], { type: r.mimeType || "image/webp" }));
+}
+function imageChemin(chemin, prio) {
+  if (!blobUrls.has(chemin)) { const p = lireGitHub(chemin, prio).then(b64Url); p.catch(() => blobUrls.delete(chemin)); blobUrls.set(chemin, p); }
+  return blobUrls.get(chemin);
+}
+async function figImage(id, slug, full, prio = 1) {
   const aid = slug && S.fiches.get(slug)?.imgAssets?.[id];
   if (aid) { const u = "/_blob/" + aid; imgSrc.set(id, u); return u; }
   if (slug) {
@@ -189,13 +228,14 @@ async function figImage(id, slug, full) {
   if (!S.owner || !S.manifest) return null;
   const f = S.figById.get(id) || (await figsParId([id]))[0]; if (!f) return null;
   const chemin = full ? (f.il || f.iv) : (f.iv || f.il); if (!chemin) return null;
-  if (!blobUrls.has(chemin)) {
-    const p = lireGitHub(chemin).then((r) => { const bin = atob(r.blob), u8 = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i); return URL.createObjectURL(new Blob([u8], { type: r.mimeType || "image/webp" })); });
-    p.catch(() => blobUrls.delete(chemin)); blobUrls.set(chemin, p);
-  }
-  const src = await blobUrls.get(chemin);
+  const src = await imageChemin(chemin, prio);
   if (src) imgSrc.set(id, src);
   return src;
+}
+/* Affiche la vignette tout de suite, puis la remplace par la pleine résolution. */
+function imageProgressive(img, id, prio = 1) {
+  figImage(id, null, false, prio).then((s) => { if (s && !img.dataset.hd) img.src = s; }).catch(() => {});
+  figImage(id, null, true, prio + 1).then((s) => { if (s) { img.dataset.hd = "1"; img.src = s; } }).catch(() => {});
 }
 async function blobDe(src) { if (src.startsWith("data:")) return dataUrlBlob(src); const r = await fetch(src); return r.blob(); }
 

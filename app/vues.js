@@ -75,6 +75,7 @@ async function chargerImagesVisibles() {
   for (const img of $("right").querySelectorAll("img[data-lrimg]")) { if (img.src || !window.LR) continue; window.LR.image(img.dataset.lrimg).then((s) => { if (s) img.src = s; }).catch(() => {}); }
   for (const img of $("right").querySelectorAll("img[data-img]")) {
     if (img.src) continue;
+    if (img.dataset.full && !img.dataset.slug) { imageProgressive(img, img.dataset.img, 1); continue; }
     figImage(img.dataset.img, img.dataset.slug || null, !!img.dataset.full).then((src) => { if (src) img.src = src; }).catch(() => {});
   }
 }

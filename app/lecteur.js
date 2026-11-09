@@ -86,8 +86,8 @@ let obsImages = null;
 function observerImages() {
   const r = $("right"); if (!r) return;
   if (!obsImages) obsImages = new IntersectionObserver((es) => {
-    for (const e of es) if (e.isIntersecting) { const img = e.target; obsImages.unobserve(img); figImage(img.dataset.limg, null, true).then((s) => { if (s) img.src = s; }).catch(() => {}); }
+    for (const e of es) if (e.isIntersecting) { const img = e.target; obsImages.unobserve(img); imageProgressive(img, img.dataset.limg, 1); }
   }, { rootMargin: "600px 0px" });
   const imgs = [...r.querySelectorAll("img[data-limg]:not([src])")];
-  imgs.forEach((img, k) => { if (k < 6) { figImage(img.dataset.limg, null, true).then((s) => { if (s) img.src = s; }).catch(() => {}); } else obsImages.observe(img); });
+  imgs.forEach((img, k) => { if (k < 6) imageProgressive(img, img.dataset.limg, 1); else obsImages.observe(img); });
 }
